@@ -1,0 +1,14 @@
+{
+  "name": "Elternlexikon",
+  "short_name": "Elternlexikon",
+  "description": "Erziehungsratgeber als Lexikon für Kinder von 0 bis 10 Jahren.",
+  "lang": "de",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f3fa",
+  "theme_color": "#5a49b0",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

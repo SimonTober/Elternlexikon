@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Elternlexikon</title>
+  <meta name="description" content="Erziehungsratgeber als Lexikon für Kinder von 0 bis 10 Jahren – mit Quellen aus vier Elternpodcasts.">
+  <meta name="theme-color" content="#f5f3fa" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#16141f" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="stylesheet" href="styles.css?v=20">
+  <script>
+    // Theme vor dem ersten Rendern setzen, damit nichts aufblitzt
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
+
+  <header class="top">
+    <div class="top-inner">
+      <a class="brand" href="#/" aria-label="Elternlexikon – Startseite">
+        <img src="icon.svg" alt="" width="32" height="32">
+        <span>Elternlexikon</span>
+      </a>
+      <button class="icon-btn" id="theme-btn" type="button" aria-label="Farbschema wechseln" title="Farbschema wechseln">
+        <svg class="i-sun" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+        <svg class="i-moon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z"/></svg>
+      </button>
+    </div>
+    <nav class="menu" aria-label="Hauptmenü">
+      <div class="menu-inner">
+        <a href="#/" class="menu-link" data-ziel="start"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 11l8-7 8 7v9H4z"/></svg>Start</a>
+        <a href="#/" class="menu-link" data-ziel="soforthilfe"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M13 3L5 14h6l-1 7 8-11h-6z"/></svg>Soforthilfe</a>
+        <a href="#/" class="menu-link" data-ziel="bereiche"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/></svg>Bereiche</a>
+        <a href="#/" class="menu-link" data-ziel="az"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 7h14M5 12h14M5 17h9"/></svg>A–Z</a>
+        <a href="#/podcasts" class="menu-link" id="nav-podcasts"><svg aria-hidden="true" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>Podcasts</a>
+        <a href="#/favoriten" class="menu-link" id="nav-fav"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 4h12v17l-6-4-6 4z"/></svg>Favoriten</a>
+        <a href="#/" class="menu-link menu-hilfe" data-ziel="hilfe"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Notruf</a>
+      </div>
+    </nav>
+  </header>
+
+  <div id="placeholder-banner" class="banner" hidden>
+    Vorschau: Die Artikel sind noch Platzhalter. Die echten Inhalte entstehen aus den Podcast-Transkripten.
+  </div>
+
+  <main id="main" tabindex="-1">
+    <section class="search-area" id="search-area">
+      <h1 class="hero-title" id="hero-title">Was beschäftigt euch gerade?</h1>
+      <form class="search" role="search" onsubmit="return false">
+        <svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
+        <input id="q" type="search" autocomplete="off" spellcheck="false"
+               placeholder="Frage oder Thema suchen"
+               aria-label="Thema oder Frage suchen">
+        <button type="button" id="q-clear" class="q-clear" aria-label="Suche leeren" hidden>×</button>
+      </form>
+
+      <div class="filters" id="filters" aria-label="Filter">
+        <div class="filter-row" data-group="alter"><span class="filter-label">Alter</span><div class="chips"></div></div>
+        <details class="filter-more">
+          <summary>Weitere Filter</summary>
+          <div class="filter-row" data-group="bereich"><span class="filter-label">Bereich</span><div class="chips"></div></div>
+          <div class="filter-row" data-group="podcast"><span class="filter-label">Podcast</span><div class="chips"></div></div>
+        </details>
+      </div>
+    </section>
+
+    <section id="view" aria-live="polite"></section>
+  </main>
+
+  <footer class="foot">
+    <p><strong>Wichtig:</strong> Dieses Lexikon ersetzt keine ärztliche oder therapeutische Beratung.
+      Bei Fieber, Fragen zur Entwicklung oder in Krisen wendet euch an eure Kinderärztin oder euren Kinderarzt
+      oder an eine Beratungsstelle. Im Notfall: <a href="tel:112">112</a> ·
+      Elterntelefon (kostenlos, anonym): <a href="tel:08001110550">0800 111 0 550</a>.</p>
+    <p class="muted">Inhalte sind eigene Zusammenfassungen von Podcast-Folgen mit Quellenangabe. Kein Tracking, alle Daten bleiben auf diesem Gerät.
+      <span id="stand"></span></p>
+    <p class="muted"><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></p>
+  </footer>
+
+  <div class="player" id="player" hidden role="region" aria-label="Podcast-Player">
+    <div class="player-inner">
+      <button type="button" class="pl-btn pl-skip" id="pl-back" aria-label="15 Sekunden zurück">−15</button>
+      <button type="button" class="pl-btn pl-main" id="pl-toggle" aria-label="Abspielen">
+        <svg class="i-play" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z" fill="currentColor" stroke="none"/></svg>
+        <svg class="i-pause" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 4.5h3.5v15H7zM13.5 4.5H17v15h-3.5z" fill="currentColor" stroke="none"/></svg>
+      </button>
+      <button type="button" class="pl-btn pl-skip" id="pl-fwd" aria-label="15 Sekunden vor">+15</button>
+      <div class="pl-info">
+        <div class="pl-title" id="pl-title"></div>
+        <div class="pl-meta"><span id="pl-pod"></span> · <span id="pl-time">0:00</span> / <span id="pl-dur">–</span></div>
+        <input type="range" id="pl-seek" min="0" max="1000" value="0" step="1" aria-label="Position in der Folge">
+      </div>
+      <button type="button" class="pl-btn pl-close" id="pl-close" aria-label="Player schließen">×</button>
+    </div>
+    <audio id="pl-audio" preload="none"></audio>
+  </div>
+
+  <div class="sheet-backdrop" id="sheet-backdrop" hidden></div>
+  <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-titel" hidden>
+    <div class="sheet-head">
+      <h2 id="sheet-titel">Themen</h2>
+      <button type="button" class="icon-btn" id="sheet-close" aria-label="Schließen"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <a href="#/" class="sheet-notruf" data-ziel="hilfe">Notruf &amp; akute Hilfe</a>
+    <div class="sheet-quick">
+      <a href="#/" data-ziel="soforthilfe">Soforthilfe</a>
+      <a href="#/" data-ziel="az">A–Z</a>
+      <a href="#/podcasts" id="sheet-podcasts">Podcasts</a>
+    </div>
+    <div class="sheet-label">Nach Bereich</div>
+    <div class="sheet-grid" id="sheet-grid"></div>
+  </div>
+
+  <nav class="tabbar" aria-label="Hauptmenü">
+    <a href="#/" class="tab" id="tab-start" data-ziel="start">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 11l8-7 8 7v9H4z"/></svg><span>Start</span></a>
+    <button type="button" class="tab" id="tab-suche">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><span>Suche</span></button>
+    <button type="button" class="tab" id="tab-themen" aria-haspopup="dialog" aria-expanded="false">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/></svg><span>Themen</span></button>
+    <a href="#/favoriten" class="tab" id="tab-fav">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 4h12v17l-6-4-6 4z"/></svg><span>Merkliste</span></a>
+  </nav>
+
+  <script src="wissen.js"></script>
+  <script src="folgen.js"></script>
+  <script src="suche.js?v=20"></script>
+  <script src="app.js?v=20"></script>
+</body>
+</html>
