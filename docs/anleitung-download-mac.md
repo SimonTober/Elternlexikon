@@ -1,6 +1,6 @@
 # Anleitung: Podcast-Folgen auf dem Mac laden
 
-Das Skript `tools/podcast_download.py` lädt alle Folgen der vier Podcasts über die offiziellen RSS-Feeds.
+Das Skript `tools/podcast_download.py` lädt alle Folgen der vier Podcasts über die offiziellen RSS-Feeds und kann sie mit `--transkribieren` direkt auf dem Mac in Text umwandeln (Whisper, offline, kostenlos).
 
 ## Umfang (Stand 22.11.2026)
 
@@ -48,7 +48,29 @@ Die Dateien landen in `~/Erziehungsratgeber/podcasts/<kürzel>/`:
 - Anderer Zielordner: `--ziel ~/Desktop/Podcasts`
 - SSL-Fehler: Im Programme-Ordner unter „Python 3.x“ einmal `Install Certificates.command` doppelklicken.
 
-## Nach dem Transkribieren
+## Transkribieren direkt auf dem Mac
+
+Einmalig eine eigene Python-Umgebung anlegen (Python 3.12, weil die Whisper-Pakete für ganz neue Python-Versionen oft noch fehlen):
+```
+brew install python@3.12
+python3.12 -m venv ~/Erziehungsratgeber/venv
+~/Erziehungsratgeber/venv/bin/pip install mlx-whisper av
+```
+
+Test mit 2 Folgen:
+```
+~/Erziehungsratgeber/venv/bin/python ~/Downloads/podcast_download.py --podcast mutti --anzahl 2 --transkribieren
+```
+
+Alles (Mac bleibt dank `caffeinate` wach, MP3s werden nach dem Transkribieren gelöscht):
+```
+caffeinate -i ~/Erziehungsratgeber/venv/bin/python ~/Downloads/podcast_download.py --transkribieren --mp3-loeschen
+```
+
+Transkripte landen in `~/Erziehungsratgeber/transkripte/<kürzel>/` mit Kopfblock (Podcast, Nr., Titel, Datum) und Zeitstempeln etwa alle 30 Sekunden.
+Beim ersten Start lädt Whisper das Modell (ca. 1,5 GB).
+
+## Eigene Transkripte (falls du doch deine App nutzt)
 
 **Benenne jedes Transkript genau wie die MP3**, nur mit `.txt` statt `.mp3`, z. B.
 `2024-11-19_001_Was-bedeutet-Gefuehle-begleiten.txt`.
