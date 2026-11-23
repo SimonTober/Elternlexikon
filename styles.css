@@ -609,3 +609,34 @@ details.mehr .views .view { background: var(--surface); }
 .tag { font-weight: 500; font-size: 12.5px; }
 .tag.age { background: var(--accent-soft); color: var(--accent-deep); box-shadow: none; }
 .tag:not(.age) { background: transparent; color: var(--muted); box-shadow: inset 0 0 0 1px var(--line); }
+
+
+/* ---------- Podcast-Leiste, Wisch-Karussell, saubere Chips ---------- */
+.pod-strip { margin: 0 0 22px; }
+.pod-strip-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 8px; font-size: 13px; color: var(--muted); }
+.pod-strip-head a { color: var(--accent); text-decoration: none; font-weight: 600; }
+.pod-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.pod-pill { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--text); border-radius: 999px; padding: 6px 14px 6px 8px; font-size: 14px; min-height: 40px; cursor: pointer; }
+.pod-pill[aria-expanded="true"] { border-color: var(--pc, var(--accent)); background: color-mix(in srgb, var(--pc, var(--accent)) 12%, var(--surface)); }
+.pod-info { margin-top: 10px; }
+.pod-info-in { display: flex; flex-direction: column; gap: 4px; background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--pc, var(--accent)); border-radius: 12px; padding: 14px 16px; font-size: 15px; animation: podin .2s var(--ease, ease-out); }
+.pod-info-in strong { font: 600 18px/1.25 var(--serif); }
+.pod-info-in .s-links { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 6px; }
+@keyframes podin { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+
+.chips { flex-wrap: wrap; overflow: visible; }
+.swipe-dots { display: none; }
+@media (max-width: 719px) {
+  .swipe-wrap { margin: 0 -16px; }
+  .swipe-areas {
+    display: grid; grid-auto-flow: column; grid-template-rows: repeat(2, auto); grid-template-columns: none; grid-auto-columns: calc(50% - 15px);
+    gap: 10px; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scroll-padding: 0 16px;
+    padding: 2px 16px 6px; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  }
+  .swipe-areas::-webkit-scrollbar { display: none; }
+  .swipe-areas .area-tile { scroll-snap-align: start; }
+  .swipe-dots { display: flex; justify-content: center; gap: 6px; margin-top: 10px; }
+  .swipe-dots[hidden] { display: none; }
+  .swipe-dots span { width: 7px; height: 7px; border-radius: 50%; background: var(--line); transition: width .2s, background-color .2s; }
+  .swipe-dots span.on { width: 20px; border-radius: 4px; background: var(--accent); }
+}

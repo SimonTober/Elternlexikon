@@ -214,6 +214,13 @@
       }
     });
   }
+  function podcastFilterSetzen(k) {
+    zustand.q = ""; input.value = ""; $("#q-clear").hidden = true;
+    zustand.filter.alter.clear(); zustand.filter.bereich.clear(); zustand.filter.podcast.clear();
+    zustand.filter.podcast.add(k);
+    aktualisiereChips(); geheZurListe();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
   function filterAktiv() {
     return Object.keys(zustand.filter).some(function (g) { return zustand.filter[g].size > 0; });
   }
@@ -299,8 +306,27 @@
     return '<div class="hint"><span>' + text + '</span><button type="button" class="hint-x" data-install-zu aria-label="Hinweis schließen">×</button></div>';
   }
 
+  function podStrip() {
+    var html = '<section class="pod-strip" aria-label="Die Podcasts hinter dem Lexikon"><div class="pod-strip-head"><span>Aus diesen Podcasts</span><a href="#/podcasts">Alle ansehen</a></div><div class="pod-pills">';
+    Object.keys(W.podcasts).forEach(function (k) {
+      html += '<button type="button" class="pod-pill pod-' + esc(k) + '" data-podinfo="' + esc(k) + '" aria-expanded="false">' + monogramm(k) + esc(kurzName(k)) + "</button>";
+    });
+    return html + '</div><div class="pod-info" id="pod-info" hidden></div></section>';
+  }
+  function podInfoHtml(k) {
+    var p = W.podcasts[k];
+    var n = W.artikel.filter(function (x) { return podcastsVon(x).indexOf(k) >= 0; }).length;
+    var folgen = Object.keys(FOLGEN[k] || {}).length;
+    var links = [];
+    if (sicherUrl(p.spotify)) links.push(plattformBtn("spotify", p.spotify, "Spotify"));
+    if (sicherUrl(p.apple)) links.push(plattformBtn("apple", p.apple, "Apple Podcasts"));
+    return '<div class="pod-info-in pod-' + esc(k) + '"><strong>' + esc(p.name) + '</strong><span class="muted">von ' + esc(p.hosts || "") + "</span>" +
+      "<span>" + (n ? n + (n === 1 ? " Thema" : " Themen") + " im Lexikon" : "Wird gerade ausgewertet, folgt bald") + (folgen ? " · " + folgen + " Folgen" : "") + "</span>" +
+      '<div class="s-links">' + (n ? '<button type="button" class="link-btn" data-podfilter="' + esc(k) + '">Themen anzeigen</button>' : "") + links.join("") + "</div></div>";
+  }
+
   function zeigeStart() {
-    var html = installHinweis();
+    var html = installHinweis() + podStrip();
 
     html += '<h2 class="section-title" id="soforthilfe">Gerade akut?</h2><div class="sos">' +
       SOFORT.filter(function (x) { return NACH_ID[x[0]]; }).map(function (x) {
@@ -329,12 +355,12 @@
       html += '<h2 class="section-title">Zuletzt angesehen</h2>' + kartenListe(verlauf.map(function (id) { return NACH_ID[id]; }).slice(0, 4));
     }
 
-    html += '<h2 class="section-title" id="bereiche">Nach Bereich</h2><div class="grid-areas">' +
+    html += '<h2 class="section-title" id="bereiche">Nach Bereich</h2><div class="swipe-wrap"><div class="grid-areas swipe-areas">' +
       Object.keys(W.bereiche).map(function (k) {
         var n = W.artikel.filter(function (a) { return (a.bereiche || []).indexOf(k) >= 0; }).length;
         return '<button type="button" class="area-tile" data-bereich="' + esc(k) + '"><strong>' + esc(W.bereiche[k]) +
           "</strong><span>" + n + (n === 1 ? " Thema" : " Themen") + "</span></button>";
-      }).join("") + "</div>";
+      }).join("") + '</div><div class="swipe-dots" aria-hidden="true"></div></div>';
 
     var az = W.artikel.slice().sort(function (a, b) { return a.titel.localeCompare(b.titel, "de"); });
     html += '<details class="alle" id="az"><summary>Alle ' + az.length + ' Themen von A bis Z</summary>' + kartenListe(az) + "</details>";
@@ -343,6 +369,29 @@
       "<span>Schick ihnen das Elternlexikon, zum Beispiel wer gerade ein Baby bekommt.</span></div>" +
       '<button type="button" class="primary-btn" data-share-app>Weitersagen</button></div>';
     view.innerHTML = html;
+    richteWischEin();
+  }
+
+  function richteWischEin() {
+    var sc = view.querySelector(".swipe-areas"), dots = view.querySelector(".swipe-dots");
+    if (!sc || !dots) return;
+    var seiten = 0;
+    function bau() {
+      var n = Math.max(1, Math.round(sc.scrollWidth / Math.max(sc.clientWidth, 1)));
+      if (sc.scrollWidth <= sc.clientWidth + 4) n = 1;
+      if (n === seiten) return;
+      seiten = n; dots.innerHTML = "";
+      for (var i = 0; i < n; i++) dots.appendChild(document.createElement("span"));
+      dots.hidden = n < 2; akt();
+    }
+    function akt() {
+      var max = sc.scrollWidth - sc.clientWidth;
+      var i = max > 0 ? Math.round(sc.scrollLeft / max * (seiten - 1)) : 0;
+      Array.prototype.forEach.call(dots.children, function (d, j) { d.className = j === i ? "on" : ""; });
+    }
+    sc.addEventListener("scroll", akt, { passive: true });
+    window.addEventListener("resize", bau);
+    bau();
   }
 
   function zeigeSoforthilfe(id) {
@@ -593,6 +642,14 @@
       var ar = NACH_ID[decodeURIComponent((/^#\/artikel\/(.+)$/.exec(location.hash) || [])[1] || "")];
       teilen(ar ? ar.titel : "Elternlexikon", ar ? ar.kurz : "", location.href); return;
     }
+    if ((t = e.target.closest("[data-podinfo]"))) {
+      var box = $("#pod-info"), k = t.dataset.podinfo, offen = t.getAttribute("aria-expanded") === "true";
+      document.querySelectorAll("[data-podinfo]").forEach(function (b) { b.setAttribute("aria-expanded", "false"); });
+      if (offen) { box.hidden = true; box.innerHTML = ""; }
+      else { t.setAttribute("aria-expanded", "true"); box.innerHTML = podInfoHtml(k); box.hidden = false; }
+      return;
+    }
+    if ((t = e.target.closest("[data-podfilter]"))) { podcastFilterSetzen(t.dataset.podfilter); return; }
     if (e.target.closest("[data-print]")) { window.print(); return; }
     if ((t = e.target.closest("[data-tip]"))) { tipUmschalten(t); return; }
     if (e.target.closest(".card, .related a, .sos-btn")) kamVonListe = true;
