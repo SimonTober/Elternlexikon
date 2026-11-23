@@ -5,15 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Elternlexikon</title>
   <meta name="description" content="Erziehungsratgeber als Lexikon für Kinder von 0 bis 10 Jahren – mit Quellen aus vier Elternpodcasts.">
-  <meta name="theme-color" content="#f5f3fa" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#16141f" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f5f3fa">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.svg">
   <link rel="stylesheet" href="styles.css?v=20">
   <script>
     // Theme vor dem ersten Rendern setzen, damit nichts aufblitzt
-    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+    try { var t = localStorage.getItem("theme"); document.documentElement.dataset.theme = t || "light"; } catch (e) { document.documentElement.dataset.theme = "light"; }
   </script>
 </head>
 <body>
