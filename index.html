@@ -9,7 +9,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css?v=21">
+  <link rel="stylesheet" href="styles.css?v=22">
   <script>
     // Theme vor dem ersten Rendern setzen, damit nichts aufblitzt
     try { var t = localStorage.getItem("theme"); document.documentElement.dataset.theme = t || "light"; } catch (e) { document.documentElement.dataset.theme = "light"; }
@@ -57,6 +57,7 @@
         <button type="button" id="q-clear" class="q-clear" aria-label="Suche leeren" hidden>×</button>
       </form>
 
+      <div class="pod-strip" id="pod-slot" aria-label="Podcasts"></div>
       <div class="filters" id="filters" aria-label="Filter">
         <div class="filter-row" data-group="alter"><span class="filter-label">Alter</span><div class="chips"></div></div>
         <details class="filter-more">
@@ -128,6 +129,6 @@
   <script src="wissen.js"></script>
   <script src="folgen.js"></script>
   <script src="suche.js?v=20"></script>
-  <script src="app.js?v=21"></script>
+  <script src="app.js?v=23"></script>
 </body>
 </html>

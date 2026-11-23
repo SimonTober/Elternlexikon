@@ -228,9 +228,10 @@
     document.querySelectorAll(".chip").forEach(function (b) {
       b.setAttribute("aria-pressed", zustand.filter[b.dataset.group].has(b.dataset.key) ? "true" : "false");
     });
+    podLeisteAktualisieren();
     var reset = $(".filter-reset");
     var mehr = $(".filter-more");
-    if (mehr && (zustand.filter.bereich.size || zustand.filter.podcast.size)) mehr.open = true;
+    if (mehr && zustand.filter.bereich.size) mehr.open = true;
     if (filterAktiv() && !reset) {
       $("#filters").insertAdjacentHTML("beforeend", '<button type="button" class="filter-reset">Filter zurücksetzen</button>');
     } else if (!filterAktiv() && reset) {
@@ -306,12 +307,34 @@
     return '<div class="hint"><span>' + text + '</span><button type="button" class="hint-x" data-install-zu aria-label="Hinweis schließen">×</button></div>';
   }
 
-  function podStrip() {
-    var html = '<section class="pod-strip" aria-label="Die Podcasts hinter dem Lexikon"><div class="pod-strip-head"><span>Aus diesen Podcasts</span><a href="#/podcasts">Alle ansehen</a></div><div class="pod-pills">';
+  function podLeiste() {
+    var slot = $("#pod-slot");
+    if (!slot) return;
+    var html = '<div class="pod-strip-head"><span>Nur einen Podcast ansehen</span><a href="#/podcasts">Alle Podcasts</a></div><div class="pod-pills">';
     Object.keys(W.podcasts).forEach(function (k) {
-      html += '<button type="button" class="pod-pill pod-' + esc(k) + '" data-podinfo="' + esc(k) + '" aria-expanded="false">' + monogramm(k) + esc(kurzName(k)) + "</button>";
+      html += '<button type="button" class="pod-pill pod-' + esc(k) + '" data-podinfo="' + esc(k) + '" aria-pressed="false">' + monogramm(k) + esc(kurzName(k)) + "</button>";
     });
-    return html + '</div><div class="pod-info" id="pod-info" hidden></div></section>';
+    slot.innerHTML = html + '</div><div class="pod-info" id="pod-info" hidden></div>';
+    slot.addEventListener("click", function (e) {
+      var t = e.target.closest("[data-podinfo]");
+      if (t) {
+        var k = t.dataset.podinfo, set = zustand.filter.podcast;
+        if (set.size === 1 && set.has(k)) set.clear(); else { set.clear(); set.add(k); }
+        aktualisiereChips(); geheZurListe(); return;
+      }
+      if (e.target.closest("[data-podalle]")) { zustand.filter.podcast.clear(); aktualisiereChips(); geheZurListe(); }
+    });
+  }
+  function podLeisteAktualisieren() {
+    var slot = $("#pod-slot");
+    if (!slot) return;
+    var set = zustand.filter.podcast;
+    slot.querySelectorAll("[data-podinfo]").forEach(function (b) {
+      b.setAttribute("aria-pressed", set.has(b.dataset.podinfo) ? "true" : "false");
+    });
+    var box = $("#pod-info");
+    if (set.size === 1) { box.innerHTML = podInfoHtml(Array.from(set)[0]); box.hidden = false; }
+    else { box.hidden = true; box.innerHTML = ""; }
   }
   function podInfoHtml(k) {
     var p = W.podcasts[k];
@@ -321,12 +344,12 @@
     if (sicherUrl(p.spotify)) links.push(plattformBtn("spotify", p.spotify, "Spotify"));
     if (sicherUrl(p.apple)) links.push(plattformBtn("apple", p.apple, "Apple Podcasts"));
     return '<div class="pod-info-in pod-' + esc(k) + '"><strong>' + esc(p.name) + '</strong><span class="muted">von ' + esc(p.hosts || "") + "</span>" +
-      "<span>" + (n ? n + (n === 1 ? " Thema" : " Themen") + " im Lexikon" : "Wird gerade ausgewertet, folgt bald") + (folgen ? " · " + folgen + " Folgen" : "") + "</span>" +
-      '<div class="s-links">' + (n ? '<button type="button" class="link-btn" data-podfilter="' + esc(k) + '">Themen anzeigen</button>' : "") + links.join("") + "</div></div>";
+      "<span>" + (n ? "Es werden nur die " + n + (n === 1 ? " Thema" : " Themen") + " aus diesem Podcast gezeigt" : "Wird gerade ausgewertet, folgt bald") + (folgen ? " · " + folgen + " Folgen" : "") + "</span>" +
+      '<div class="s-links"><button type="button" class="link-btn" data-podalle>Alle Themen zeigen</button>' + links.join("") + "</div></div>";
   }
 
   function zeigeStart() {
-    var html = installHinweis() + podStrip();
+    var html = installHinweis();
 
     html += '<h2 class="section-title" id="soforthilfe">Gerade akut?</h2><div class="sos">' +
       SOFORT.filter(function (x) { return NACH_ID[x[0]]; }).map(function (x) {
@@ -642,14 +665,6 @@
       var ar = NACH_ID[decodeURIComponent((/^#\/artikel\/(.+)$/.exec(location.hash) || [])[1] || "")];
       teilen(ar ? ar.titel : "Elternlexikon", ar ? ar.kurz : "", location.href); return;
     }
-    if ((t = e.target.closest("[data-podinfo]"))) {
-      var box = $("#pod-info"), k = t.dataset.podinfo, offen = t.getAttribute("aria-expanded") === "true";
-      document.querySelectorAll("[data-podinfo]").forEach(function (b) { b.setAttribute("aria-expanded", "false"); });
-      if (offen) { box.hidden = true; box.innerHTML = ""; }
-      else { t.setAttribute("aria-expanded", "true"); box.innerHTML = podInfoHtml(k); box.hidden = false; }
-      return;
-    }
-    if ((t = e.target.closest("[data-podfilter]"))) { podcastFilterSetzen(t.dataset.podfilter); return; }
     if (e.target.closest("[data-print]")) { window.print(); return; }
     if ((t = e.target.closest("[data-tip]"))) { tipUmschalten(t); return; }
     if (e.target.closest(".card, .related a, .sos-btn")) kamVonListe = true;
@@ -764,6 +779,7 @@
   }
   if (W.meta && W.meta.stand) $("#stand").textContent = "Stand: " + datumDe(W.meta.stand) + ".";
   baueFilter();
+  podLeiste();
   zeigeFavZahl();
   player.init();
   route();
