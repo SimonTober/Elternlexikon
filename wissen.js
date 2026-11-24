@@ -745,7 +745,7 @@ window.WISSEN = {
   },
   {
    "id": "aggression-kinder",
-   "titel": "Aggression bei Kindern",
+   "titel": "Aggression bei Kindern: Wut verstehen und begleiten",
    "synonyme": [
     "aggressives Kind",
     "Aggressionen",
@@ -775,7 +775,7 @@ window.WISSEN = {
     "grenzen",
     "entwicklung"
    ],
-   "kurz": "Laut einem Gast (Kinder- und Jugendpsychiater) ist Aggression eine normale Emotion; bei kleinen Kindern geht es meist ums Durchsetzen und Grenzenausprobieren, nicht um bewusstes Schädigen. Er rät, sie weder zu leugnen noch zu dulden: klare, liebevolle und konsequente Grenzen, ein Vorbild ohne eigene Aggression und eine wertschätzende Streitkultur. Bei Dauerproblemen, die sich nicht ändern, kann man eine Kinderpsychologin oder einen Kinderpsychiater hinzuziehen.",
+   "kurz": "Hier geht es um Aggression insgesamt, auch bei größeren Kindern; zum akuten Hauen, Beißen und Schubsen bei Kleinkindern gibt es den Artikel „Mein Kind haut“. Laut einem Gast (Kinder- und Jugendpsychiater) ist Aggression eine normale Emotion; bei kleinen Kindern geht es meist ums Durchsetzen und Grenzenausprobieren, nicht um bewusstes Schädigen. Er rät, sie weder zu leugnen noch zu dulden: klare, liebevolle und konsequente Grenzen, ein Vorbild ohne eigene Aggression und eine wertschätzende Streitkultur. Bei Dauerproblemen, die sich nicht ändern, kann man eine Kinderpsychologin oder einen Kinderpsychiater hinzuziehen.",
    "tipps": [
     "Setzt klare Grenzen (bis hierhin und nicht weiter) liebevoll und konsequent, ohne sie selbst aggressiv durchzusetzen.",
     "Tut nicht so, als gäbe es keine Aggression, sondern geht offen damit um; sie ganz zu unterbinden, verhindert, dass das Kind den Umgang damit lernt.",
@@ -1262,12 +1262,12 @@ window.WISSEN = {
     }
    ],
    "verwandt": [
-    "verantwortung-uebertragen",
-    "ausmisten-wertschaetzung",
     "selbststaendigkeit",
+    "ausmisten-wertschaetzung",
     "spielen",
     "regeln-ohne-schimpfen",
-    "belohnungssysteme"
+    "belohnungssysteme",
+    "elterliche-wut"
    ],
    "medizinisch": false,
    "einleitung": "Spielzeug, Jacken und Teller bleiben liegen, und das Aufräumen endet oft in Streit oder darin, dass die Eltern es doch selbst erledigen. Viele fragen sich, wie ihr Kind dauerhaft im Haushalt mithelfen kann."
@@ -2138,16 +2138,16 @@ window.WISSEN = {
     "grenzen-setzen",
     "gefuehle-begleiten",
     "erziehungsstile",
-    "wunsch-oder-beduerfnis",
+    "beduerfnisse-erkennen",
     "erschoepfte-eltern",
-    "beduerfnisse-erkennen"
+    "bindung"
    ],
    "medizinisch": false,
    "einleitung": "Bedürfnisorientierte Erziehung gilt vielen als Ideal, kann Eltern im Alltag aber überfordern und auslaugen. Manche fragen sich, ob wirklich hinter jedem Verhalten ein Bedürfnis steckt."
   },
   {
    "id": "beduerfnisse-erkennen",
-   "titel": "Bedürfnisse erkennen und erfüllen",
+   "titel": "Bedürfnisse erkennen: Wunsch, Strategie, Bedürfnis",
    "synonyme": [
     "Bedürfnisse erkennen",
     "Bedürfnisdetektiv",
@@ -2158,35 +2158,46 @@ window.WISSEN = {
     "Bedürfnisse benennen",
     "Alleinzeit Kind",
     "Eisbergmodell",
-    "Nahsignale Baby"
+    "Nahsignale Baby",
+    "Bedürfnisse von Kindern",
+    "Wünsche erfüllen",
+    "Wunsch und Bedürfnis unterscheiden",
+    "Grundbedürfnisse",
+    "Bedürfnismodell",
+    "Kind verwöhnen",
+    "bedürfnisorientiert"
    ],
    "fragen": [
     "Wie erkenne ich, was mein Kind wirklich braucht?",
     "Was ist der Unterschied zwischen Bedürfnis und Strategie?",
     "Was steckt hinter dem Nein meines Kindes?",
     "Wie bekomme ich meine Bedürfnisse und die meiner Kinder unter einen Hut?",
-    "Wie lernt mein Kind, sich um sich selbst zu kümmern?"
+    "Wie lernt mein Kind, sich um sich selbst zu kümmern?",
+    "Wie unterscheide ich Wunsch und Bedürfnis bei meinem Kind?",
+    "Muss ich jeden Wunsch meines Kindes erfüllen?"
    ],
    "alter": [
+    "0-1",
     "1-3",
     "3-6",
     "6-10"
    ],
    "bereiche": [
     "gefuehle",
-    "eltern"
+    "eltern",
+    "grenzen"
    ],
-   "kurz": "Nach der GfK haben alle Menschen dieselben Bedürfnisse, nur die Rangfolge ist je nach Situation verschieden. Kathy Weber erklärt: Eltern sind für ihre eigenen Bedürfnisse zuständig und dafür, die ihrer Kinder herauszufinden. Wer ein Verhalten als Strategie für ein Bedürfnis liest, versteht oft besser, was los ist.",
+   "kurz": "Nach der GfK haben alle Menschen dieselben Bedürfnisse; der konkrete Weg dahin ist die Strategie, der Wunsch die Vorstellung, wie es sein soll, etwa auf dem Arm statt in der Trage. Kathy Weber erklärt: Eltern sind für ihre eigenen Bedürfnisse zuständig und dafür, die ihrer Kinder herauszufinden. Die mutti-Hosts warnen, hinter jedem Verhalten ein Bedürfnis zu vermuten und deshalb jeden Wunsch zu erfüllen. Weint ein Kind wegen eines nicht erfüllten Wunsches, heißt das nicht, dass ihr unfeinfühlig seid.",
    "tipps": [
     "Werdet Bedürfnisdetektive: Fragt euch, welches Bedürfnis hinter dem Verhalten steckt und wozu euer Kind mit seinem Nein gerade Ja sagt.",
-    "Übersetzt Wünsche in Bedürfnisse, etwa \"in den Tierpark\" in Spiel und Spaß, und fragt nach, ob auch Gemeinschaft dahintersteht.",
-    "Seid unsicher? Prüft, ob das genannte Bedürfnis das wirkliche ist oder etwas anderes dahintersteht.",
+    "Übersetzt Wünsche in Bedürfnisse, etwa „in den Tierpark“ in Spiel und Spaß, und fragt nach, ob auch Gemeinschaft dahintersteht. Fragt euch, ob das Bedürfnis auch auf einem anderen Weg erfüllt werden kann als dem gewünschten, etwa Hunger mit einem Brot statt mit einem Keks.",
+    "Seid ihr unsicher, prüft, ob das genannte Bedürfnis das wirkliche ist. Probiert mehrere Strategien aus und schreibt sie ruhig auf; stellt sich eure Vermutung als falsch heraus, ist das normal.",
     "Zeigt eurem Kind, dass ihr eigene Bedürfnisse habt und euch darum kümmert, und sucht gemeinsam Lösungen, wenn Bedürfnisse aufeinandertreffen.",
     "Benennt Bedürfnisse in Kindersprache, zum Beispiel Alleinzeit, und klärt, wer in dieser Zeit für das Kind zuständig ist.",
     "Bei Sicherheit und Schutz, etwa beim Geschwisterstreit mit Schlagen, geht dazwischen und trennt, ohne zu verurteilen.",
     "Seid ihr bei Spiel und Spaß blockiert, gebt euch erst Empathie und schaut dann, wie ihr bereit werden könnt mitzumachen.",
-    "Plant am Wochenende nur die wichtigsten Bedürfnisse, höchstens drei pro Person, und erfüllt andere schon unter der Woche.",
-    "Fragt am Abend, was gefeiert und was bedauert wird: erfüllte Bedürfnisse feiern, unerfüllte bedauern."
+    "Plant am Wochenende nur die wichtigsten Bedürfnisse, höchstens drei pro Person, und erfüllt andere schon unter der Woche. Fragt am Abend, was gefeiert und was bedauert wird.",
+    "Versucht nicht, für jedes Verhalten ein Bedürfnis zu konstruieren, und setzt euch nicht unter Druck, alles sofort zu erfüllen. Protestiert ein Baby kurz in der Trage, dürft ihr es trotzdem tragen und begleiten; schreit es länger oder wirkt es schmerzerfüllt, lasst das ärztlich abklären."
    ],
    "sichtweisen": [
     {
@@ -2194,8 +2205,12 @@ window.WISSEN = {
      "text": "Kathy Weber erklärt nach Rosenberg: Alle Menschen haben dieselben Bedürfnisse, jeder ist selbst dafür zuständig, dass sie erfüllt werden, und es gibt immer mindestens eine Möglichkeit dazu. Davon trennt sie die Strategie, also den konkreten Weg; Wochenende, Zeit oder ein bestimmter Ort sind für sie Strategien, keine Bedürfnisse. Für Kinder tragen die Eltern die Verantwortung, ihre Bedürfnisse herauszufinden und für Erfüllung zu sorgen, auch wenn sie müde sind; bei Konflikten entscheiden sie die Rangfolge, weil sie die Führung haben. Niemand solle zurückstecken, und Eltern kommen laut ihr an erster Stelle, weil dauerhaft unerfüllte Elternbedürfnisse sich als Wut gegen die Kinder entladen. Sie betont, dass es nicht um hundert Prozent geht und dass Kinder auch bei gut erfüllten Bedürfnissen weiter Nein sagen werden. Kinder lernen ihre Bedürfnisse durch Vorleben, nicht durch Beibringen; Kathy Weber beschreibt drei Autonomiephasen, in der zweiten behalten Eltern teils die Führung, wenn ein Kind Schutz braucht."
     },
     {
+     "podcast": "mutti",
+     "text": "Beide Hosts sehen bedürfnisorientierte Erziehung inzwischen kritisch und sagen, dass sie früher selbst Wünsche mit Bedürfnissen verwechselt haben. Die Umstellung war für ihre Kinder anfangs mit viel Frust verbunden, danach sei der Alltag deutlich ruhiger geworden. Sie erklären, es gebe keine einheitliche Definition von Bedürfnissen: Sie fanden über zehn Modelle, die meist philosophisch entstanden und kaum empirisch belegt seien. Als besser untersucht nennen sie nur die Selbstbestimmungstheorie mit drei Grundbedürfnissen. Was als Bedürfnis gilt, hänge von Kultur und Umständen ab. Ständiges Analysieren sei verkopft und koste Energie, und viele Entscheidungen und Gewohnheiten liefen ohnehin automatisch ab, etwa Nörgeln beim Aufbrechen. Einig sind sie sich nicht ganz: Ein Host findet einzelne Modelle brauchbar und das Konzept schlüssig, die andere stellt stärker in Frage, ob es Bedürfnisse in dieser Form überhaupt gibt. Beide betonen, dass ihre Kritik nicht bedeutet, autoritär oder gewaltvoll zu erziehen. Eltern könnten gute Voraussetzungen schaffen, seien aber nicht allein dafür verantwortlich, ob ihr Kind glücklich wird."
+    },
+    {
      "podcast": "wunschkind",
-     "text": "Bei Danielle Graf und Katja Seide taucht das Thema in mehreren Folgen auf, meist als Bild: Katia Saalfrank beschreibt einen Eisberg, bei dem das Verhalten nur die Spitze ist und darunter Gefühle und Bedürfnisse liegen; als wichtigste Grundbedürfnisse nennt sie Sicherheit, Autonomie und Verbindung. Eine Gästin in einer anderen Folge ergänzt bei Eltern eine Interpretation zwischen Gefühl und Verhalten, die oft aus eigenen früheren Erfahrungen stammt. Das deckt sich mit der GfK-Sicht, dass Verhalten eine Strategie für ein Bedürfnis ist; neu sind der Bezug auf Maslows Pyramide in einer Gordon-Folge und der Hinweis, dass Eltern oft Lösungen vorschlagen, die ihre eigenen Bedürfnisse erfüllen. Bei Babys sprechen die Hosts von leisen Nahsignalen (Schmatzen, Kopf wenden), die man vor dem lauten Schreien lesen kann. Eine Gästin betont, Bedürfnisorientierung schütze vor allem, wenn sie früh beginnt, späterer Einstieg sei aber trotzdem wertvoll."
+     "text": "Bei Danielle Graf und Katja Seide taucht das Thema in mehreren Folgen auf, meist als Bild: Katia Saalfrank beschreibt einen Eisberg, bei dem das Verhalten nur die Spitze ist und darunter Gefühle und Bedürfnisse liegen; als wichtigste Grundbedürfnisse nennt sie Sicherheit, Autonomie und Verbindung. Eine Gästin in einer anderen Folge ergänzt bei Eltern eine Interpretation zwischen Gefühl und Verhalten, die oft aus eigenen früheren Erfahrungen stammt. Das deckt sich mit der GfK-Sicht, dass Verhalten eine Strategie für ein Bedürfnis ist; neu sind der Bezug auf Maslows Pyramide in einer Gordon-Folge und der Hinweis, dass Eltern oft Lösungen vorschlagen, die ihre eigenen Bedürfnisse erfüllen. Bei Babys sprechen die Hosts von leisen Nahsignalen (Schmatzen, Kopf wenden), die man vor dem lauten Schreien lesen kann. Eine Gästin betont, Bedürfnisorientierung schütze vor allem, wenn sie früh beginnt, späterer Einstieg sei aber trotzdem wertvoll. Zum Unterschied von Wunsch und Bedürfnis sagen die Hosts mit ihren Gästen: Das Bedürfnis ist das, was Menschen grundsätzlich brauchen, der Wunsch eine mögliche Strategie dafür; wer das Bedürfnis dahinter erkennt, kann einschätzen, ob es jetzt oder später erfüllt werden muss. Eltern dürfen raten und ausprobieren, und sie warnen vor dem Druck, alles sofort erfüllen zu müssen."
     }
    ],
    "quellen": [
@@ -2225,22 +2240,6 @@ window.WISSEN = {
     },
     {
      "podcast": "gfk",
-     "nr": 138,
-     "titel": "Bedürfnisse in der Familie: Wie du die Balance zwischen deinen und den Bedürfnissen deiner Kinder findest",
-     "datum": "2024-12-02",
-     "minute": "19:36",
-     "thema": "Schaffen wir, was wir brauchen statt alles schaffen"
-    },
-    {
-     "podcast": "gfk",
-     "nr": 139,
-     "titel": "Eigenverantwortung bei Kindern fördern - Herzensmomente mit Kindern",
-     "datum": "2024-12-09",
-     "minute": "15:36",
-     "thema": "Vorleben statt Beibringen, Bedürfnisse in Kindersprache"
-    },
-    {
-     "podcast": "gfk",
      "nr": 139,
      "titel": "Eigenverantwortung bei Kindern fördern - Herzensmomente mit Kindern",
      "datum": "2024-12-09",
@@ -2256,24 +2255,42 @@ window.WISSEN = {
      "thema": "Eisbergmodell erklärt"
     },
     {
+     "podcast": "mutti",
+     "nr": 7,
+     "titel": "Wunsch oder Bedürfnis? So können Eltern unterscheiden!",
+     "datum": "2024-12-17",
+     "minute": "02:21",
+     "thema": "Warum Eltern Wünsche und Bedürfnisse verwechseln"
+    },
+    {
+     "podcast": "mutti",
+     "nr": 7,
+     "titel": "Wunsch oder Bedürfnis? So können Eltern unterscheiden!",
+     "datum": "2024-12-17",
+     "minute": "32:08",
+     "thema": "Beispiel Babytrage"
+    },
+    {
      "podcast": "wunschkind",
-     "nr": 126,
-     "titel": "Gemeinsam aus dem Mamsterrad",
-     "datum": "2023-11-14",
-     "minute": "08:03",
-     "thema": "Mamsterrad-Pyramide: Verhalten, Gefühl, Bedürfnis"
+     "nr": 234,
+     "titel": "Zwischen Nein und Nähe: Wie wir in stressigen Momenten mit unseren Kindern verbunden bleiben",
+     "datum": "2026-05-05",
+     "minute": "06:03",
+     "thema": "Bedürfnis versus Wunsch"
     }
    ],
    "verwandt": [
-    "wunsch-oder-beduerfnis",
     "gfk-grundannahmen",
     "beduerfnisorientierte-erziehung",
     "eltern-selbstregulation",
     "selbststaendigkeit",
-    "aergern-provozieren"
+    "frustrationstoleranz",
+    "grenzen-setzen",
+    "erziehungsstile",
+    "morgenroutine"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie erkenne ich, was mein Kind wirklich braucht?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Kinder äußern Wünsche oft lautstark, und Eltern fragen sich, ob dahinter ein echtes Bedürfnis steckt, das sie erfüllen müssen. Wird jeder Wunsch erfüllt, entsteht schnell Überforderung, wird er verweigert, plagt viele das schlechte Gewissen."
   },
   {
    "id": "beikost",
@@ -4271,7 +4288,7 @@ window.WISSEN = {
    "verwandt": [
     "mental-load",
     "vaterrolle",
-    "verantwortung-uebertragen",
+    "selbststaendigkeit",
     "erziehungsstile",
     "mutterinstinkt",
     "dorf-unterstuetzung"
@@ -5180,7 +5197,7 @@ window.WISSEN = {
     "zu-streng",
     "bindung",
     "regeln-ohne-schimpfen",
-    "eltern-als-team"
+    "beduerfnisse-erkennen"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern fragen sich, ob sie zu nachgiebig oder zu streng sind und wie viel Erziehung ein Kind überhaupt braucht."
@@ -8540,135 +8557,6 @@ window.WISSEN = {
    "einleitung": "Großeltern erziehen oft anders als die Eltern, und das führt schnell zu Spannungen. Eltern fragen sich, wie viel Einmischung sie hinnehmen und wo sie Grenzen setzen sollen."
   },
   {
-   "id": "kind-lehnt-papa-ab",
-   "titel": "Großes Kind lehnt Papa ab, seit das Baby da ist",
-   "synonyme": [
-    "Kind will nur Mama",
-    "Kind will nicht zum Papa",
-    "Mamakind",
-    "zweite Bezugsperson wird abgelehnt",
-    "Papa wird weggeschoben",
-    "Kind klebt an der Mama",
-    "Bindungshierarchie",
-    "Kind bevorzugt Mama",
-    "Kind lehnt mich ab"
-   ],
-   "fragen": [
-    "Mein Kind lehnt den Papa ab, seit das Baby da ist, was tun?",
-    "Mein Kleinkind will nur die Mama, wie kann der Papa helfen?",
-    "Verliert der Papa die Bindung zum Kind, wenn es ihn ablehnt?",
-    "Mein Kind lehnt mich ab, ist das normal?"
-   ],
-   "alter": [
-    "0-1",
-    "1-3",
-    "3-6"
-   ],
-   "bereiche": [
-    "familie",
-    "geschwister",
-    "eltern",
-    "gefuehle"
-   ],
-   "kurz": "Wenn ein Baby da ist, schiebt ein Kind von etwa zwei bis vier Jahren den Papa oft weg und will nur die Mama. Laut Nicola Schmidt lehnt es nicht den Papa als Person ab, sondern will seine wichtigste Bezugsperson, die gerade mit dem Baby beschäftigt ist. Die Bindung zum Papa geht dadurch nicht verloren.",
-   "tipps": [
-    "Sorgt weiter dafür, dass der Papa eine gute Bindung zum Kind hat.",
-    "Prüft, ob der Papa statt des großen Kindes das Baby übernimmt, denn das Große braucht in dieser Zeit oft die Mama.",
-    "Das kleine Kind ist oft flexibler und lässt sich leichter abgeben, so wird die Mama entlastet.",
-    "Kommt dem großen Kind so weit entgegen, wie es möglich ist.",
-    "Habt Zuversicht: Kinder schaffen diese Zeit, solange eine Bindungsperson den Frust mit ihnen durchsteht.",
-    "Übernehmt als zweite Bezugsperson feste Rituale wie Wickeln, Abendroutine oder Vorlesen; mit dem Alter wird diese Rolle wichtiger.",
-    "Gebt das Kind bei Protest nicht sofort zurück, außer es schreit aus Leibeskräften.",
-    "Wenn der Schmerz der Zurückweisung aufkommt, wendet euch zuerst euch selbst zu, mit Selbstmitgefühl oder Hilfe einer anderen erwachsenen Person, statt das Kind ändern zu wollen."
-   ],
-   "sichtweisen": [
-    {
-     "podcast": "artgerecht",
-     "text": "Nicola Schmidt greift Zuschriften auf, in denen ältere Kinder den Papa ablehnen, während das Baby die Mama braucht. Das sei für alle schwer: Das große Kind sei im Widerstand, das Baby bekomme weniger, und dem Papa breche das Herz. Der Wechsel gelinge eher, wenn sich die Eltern von Anfang an viel geteilt haben, könne aber auch bei sehr engagierten Papas scheitern. Aus Sicht des Kindes sei der Mensch, der Sicherheit gibt, nun beim Baby. Sie nennt aus der Forschung, der beste Geburtenabstand für wenig Stress liege bei etwa drei Jahren, weil Dreijährige ihre wichtigste Bezugsperson besser abgeben können. Sie nimmt die zweiten Bezugspersonen in Schutz: Sie machten wahrscheinlich einen guten Job, auch wenn sie in solchen Momenten nichts richtig machen können. Sie räumt ein, dass Entgegenkommen nicht immer möglich ist."
-    },
-    {
-     "podcast": "wunschkind",
-     "text": "Die Hosts Danielle Graf und Katja Seide behandeln das Thema allgemeiner: Ein Kind bevorzugt ein Elternteil, und das andere wird abgelehnt, nicht nur nach der Geburt eines Geschwisterchens. Sie erklären es mit einer Bindungshierarchie nach Bowlby: Die Bindungsperson Nummer eins werde in Stress und Not bevorzugt, weil sich das Kind bei ihr am schnellsten beruhige, Nummer zwei tröste langsamer. Das ist keine bewusste Ablehnung, sondern eine Überlebensstrategie, was zu Nicola Schmidts Deutung passt, das Kind wolle seine wichtigste Bezugsperson. Die Hosts betonen stärker, dass Nummer zwei dranbleiben und feste Rituale übernehmen soll, und dass Protest bei der Übergabe kein Grund zum sofortigen Zurückgeben ist. Zusätzlich thematisieren sie den Schmerz der Zurückweisung: Ein Gast (Psychologe) rät, sich zuerst um diesen Schmerz selbst zu kümmern, statt das Kind ändern zu wollen."
-    }
-   ],
-   "quellen": [
-    {
-     "podcast": "artgerecht",
-     "nr": 35,
-     "titel": "Hilfe, mein Kind lehnt den Papa ab! Was tun?",
-     "datum": "2025-04-08",
-     "minute": "00:00",
-     "thema": "Zuschriften: ältere Kinder lehnen Papa ab, Baby braucht Mama"
-    },
-    {
-     "podcast": "artgerecht",
-     "nr": 35,
-     "titel": "Hilfe, mein Kind lehnt den Papa ab! Was tun?",
-     "datum": "2025-04-08",
-     "minute": "01:13",
-     "thema": "Wann Papa gut übernehmen kann, und warum es trotzdem scheitern kann"
-    },
-    {
-     "podcast": "artgerecht",
-     "nr": 35,
-     "titel": "Hilfe, mein Kind lehnt den Papa ab! Was tun?",
-     "datum": "2025-04-08",
-     "minute": "03:24",
-     "thema": "Perspektive des älteren Kindes"
-    },
-    {
-     "podcast": "artgerecht",
-     "nr": 35,
-     "titel": "Hilfe, mein Kind lehnt den Papa ab! Was tun?",
-     "datum": "2025-04-08",
-     "minute": "04:11",
-     "thema": "Papa nicht als Person abgelehnt, Bindung geht nicht verloren"
-    },
-    {
-     "podcast": "artgerecht",
-     "nr": 35,
-     "titel": "Hilfe, mein Kind lehnt den Papa ab! Was tun?",
-     "datum": "2025-04-08",
-     "minute": "02:04",
-     "thema": "Warum das so ist: Geburtenabstand von drei Jahren"
-    },
-    {
-     "podcast": "wunschkind",
-     "nr": 191,
-     "titel": "Mein Kind lehnt mich ab - warum ist das so und was kann ich tun?",
-     "datum": "2025-07-08",
-     "minute": "02:00",
-     "thema": "Bindungspyramide erklärt"
-    },
-    {
-     "podcast": "wunschkind",
-     "nr": 191,
-     "titel": "Mein Kind lehnt mich ab - warum ist das so und was kann ich tun?",
-     "datum": "2025-07-08",
-     "minute": "09:48",
-     "thema": "Nicht persönlich nehmen, nicht zurückziehen"
-    },
-    {
-     "podcast": "wunschkind",
-     "nr": 98,
-     "titel": "Wenn dir dein eigenes Kind fremd ist – mit Dr. Oliver Dierssen",
-     "datum": "2022-10-18",
-     "minute": "38:48",
-     "thema": "Warum der Schmerz so heftig sein kann, und was hilft"
-    }
-   ],
-   "verwandt": [
-    "geschwister-vorbereiten",
-    "eifersucht-baby",
-    "vaterrolle",
-    "mehrere-bezugspersonen",
-    "bindung",
-    "mama-phase"
-   ],
-   "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind lehnt den Papa ab, seit das Baby da ist, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
-  },
-  {
    "id": "gfk-grundannahmen",
    "titel": "Grundannahmen der Gewaltfreien Kommunikation",
    "synonyme": [
@@ -8778,8 +8666,8 @@ window.WISSEN = {
     "sprache-formulierungen",
     "ansagen-positiv-formulieren",
     "grenzen-setzen",
-    "wunsch-oder-beduerfnis",
-    "kind-sozial-entwicklung"
+    "kind-sozial-entwicklung",
+    "luegen"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Was sind die Grundannahmen der gewaltfreien Kommunikation?“. Hier steht, was dahinter stecken kann und was helfen kann."
@@ -9657,7 +9545,7 @@ window.WISSEN = {
     }
    ],
    "verwandt": [
-    "verantwortung-uebertragen",
+    "selbststaendigkeit",
     "vaterrolle",
     "eltern-als-team",
     "gefuehle-begleiten",
@@ -10494,7 +10382,7 @@ window.WISSEN = {
   },
   {
    "id": "ausschliessen-mitspielen",
-   "titel": "Kind schließt andere vom Spielen aus",
+   "titel": "Kind schließt andere vom Spielen aus (im Alltag)",
    "synonyme": [
     "Ausgrenzen",
     "nicht mitspielen lassen",
@@ -10518,7 +10406,7 @@ window.WISSEN = {
     "gefuehle",
     "grenzen"
    ],
-   "kurz": "Ausschließen ist nicht akzeptabel, und Kinder sollen klar hören, dass bei euch niemand ausgeschlossen wird. Bevor ihr eingreift, lohnt die Frage nach dem Grund; das Thema verdient Ernst, aber keine Überbewertung, weil kleine Kinder soziales Verhalten noch ausprobieren. Mehr als Haltung zeigen, das Gefühl spiegeln und Konsequenzen ziehen können Eltern kaum.",
+   "kurz": "Hier geht es um das alltägliche Ausschließen beim Spielen; zu anhaltender Ausgrenzung gibt es den Artikel „Mobbing“. Ausschließen ist nicht akzeptabel, und Kinder sollen klar hören, dass bei euch niemand ausgeschlossen wird. Bevor ihr eingreift, lohnt die Frage nach dem Grund; das Thema verdient Ernst, aber keine Überbewertung, weil kleine Kinder soziales Verhalten noch ausprobieren. Mehr als Haltung zeigen, das Gefühl spiegeln und Konsequenzen ziehen können Eltern kaum.",
    "tipps": [
     "Fragt zuerst nach, was passiert ist, bevor ihr urteilt; manchmal gab es einen Grund, etwa Ärgern oder ein Spiel, das nur zu zweit geht.",
     "Sagt eurem Kind klar, dass bei euch niemand ausgeschlossen wird.",
@@ -10808,6 +10696,156 @@ window.WISSEN = {
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind will sich nicht von der Oma verabschieden“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "mama-phase",
+   "titel": "Kind will nur zu einem Elternteil",
+   "synonyme": [
+    "Mama-Kind",
+    "Kind lehnt Papa ab",
+    "Papa darf nichts machen",
+    "Kind schreit bei Papa",
+    "Papa-Phase",
+    "Elternteil bevorzugen",
+    "Fremdeln mit Papa",
+    "Bezugsperson",
+    "Kind will nur Mama",
+    "Kind will nicht zum Papa",
+    "Mamakind",
+    "zweite Bezugsperson wird abgelehnt",
+    "Papa wird weggeschoben",
+    "Kind klebt an der Mama",
+    "Bindungshierarchie",
+    "Kind bevorzugt Mama",
+    "Kind lehnt mich ab",
+    "Mama-Phase",
+    "Geschwisterbaby Papa abgelehnt"
+   ],
+   "fragen": [
+    "Mein Kind will nur zur Mama, was tun?",
+    "Zweijährige lässt sich nicht vom Papa ins Bett bringen",
+    "Kind beruhigt sich nicht beim Papa",
+    "Ist es normal, dass mein Kind ein Elternteil bevorzugt?",
+    "Wie baut der Papa Bindung zum Kind auf?",
+    "Mein Kind lehnt den Papa ab, seit das Baby da ist, was tun?",
+    "Mein Kleinkind will nur die Mama, wie kann der Papa helfen?",
+    "Verliert der Papa die Bindung zum Kind, wenn es ihn ablehnt?",
+    "Mein Kind lehnt mich ab, ist das normal?"
+   ],
+   "alter": [
+    "0-1",
+    "1-3",
+    "3-6"
+   ],
+   "bereiche": [
+    "familie",
+    "gefuehle",
+    "eltern",
+    "geschwister"
+   ],
+   "kurz": "Zeitweise bevorzugt ein Kind einen Elternteil, meist die Mama, und weist den anderen zurück. Die Hosts und Nicola Schmidt sehen darin keine Ablehnung der Person, sondern den Wunsch nach der wichtigsten Bezugsperson; die Bindung zum anderen Elternteil geht nicht verloren. Das Weinen ist Frustration, die ein Kind aushalten kann, deshalb sollte der andere Elternteil dranbleiben. Ein häufiger Auslöser ist ein neues Geschwisterbaby: Dann ist die Mama gerade mit dem Baby beschäftigt.",
+   "tipps": [
+    "Der andere Elternteil übernimmt bewusst einzelne Situationen, in denen die Mama keine Option ist, etwa das Ins-Bett-Bringen, und bleibt trotz Protest dabei. Beschränkt euch auf höchstens eine solche Situation pro Tag.",
+    "Gebt das weinende Kind nicht sofort zurück, sondern begleitet die Frustration gemeinsam mit dem Kind. Nur wenn es aus Leibeskräften schreit, kann Zurückgeben richtig sein.",
+    "Geht als Mama in dieser Zeit spazieren oder auch mal ein Wochenende weg, damit das Kind nicht zu euch zurückgebracht werden kann.",
+    "Wechselt euch so ab, wie es für euch passt, und bleibt bei der Entscheidung, auch wenn das Kind protestiert. Rechnet mit Drama beim ersten Mal, etwas weniger beim zweiten und oft schon gutem Klappen beim dritten, so wie es bei einer Mutter war.",
+    "Gibt der Partner immer nach, sprecht das als Paar offen an. Möchte die Familie bewusst den leichteren Weg gehen, kann die Mutter in kritischen Situationen übernehmen und der Vater andere Dinge, etwa Vorlesen oder Baden.",
+    "Ist ein Baby da, prüft, ob der Papa statt des großen Kindes das Baby übernimmt, denn das Große braucht in dieser Zeit oft die Mama. Das kleine Kind ist flexibler und lässt sich leichter abgeben. Kommt dem großen Kind so weit entgegen, wie es möglich ist.",
+    "Übernehmt als zweite Bezugsperson feste Rituale wie Wickeln, Abendroutine oder Vorlesen und sorgt weiter für eine gute Bindung; mit dem Alter wird diese Rolle wichtiger.",
+    "Habt Zuversicht: Kinder schaffen diese Zeit, solange eine Bindungsperson den Frust mit ihnen durchsteht.",
+    "Wenn der Schmerz der Zurückweisung aufkommt, wendet euch zuerst euch selbst zu, mit Selbstmitgefühl oder Hilfe einer anderen erwachsenen Person, statt das Kind ändern zu wollen."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "mutti",
+     "text": "Die Hosts glauben nicht, dass ein Kind eine fürsorgliche Bezugsperson wirklich ablehnt. Meist hat es sich daran gewöhnt, dass Mama bestimmte Dinge macht, und zieht Option A der Option B vor. Sie sind sich einig, dass der andere Elternteil dranbleiben muss, und sehen das Problem oft bei Vätern, die nicht konsequent dabeibleiben. Bei der Ursache sind sie uneinig: Eine Hostin führt die Vorliebe vor allem auf mehr gemeinsame Zeit und bessere Kenntnis der Signale des Kindes zurück, nicht auf einen Instinkt. Der andere Host hält auch angeborene Vorlieben oder einen besonderen Draht für möglich, unabhängig davon, wer mehr Zeit verbringt. Die Hosts betonen, dass die Eltern und nicht das Kind über die Abläufe entscheiden. Sie erleben, dass die Phase mit etwa vier Jahren abebbt und später milder wiederkommen kann. Außerdem merken sie an, dass das Thema meist nur diskutiert wird, wenn das Kind zur Mutter will."
+    },
+    {
+     "podcast": "artgerecht",
+     "text": "Nicola Schmidt greift Zuschriften auf, in denen ältere Kinder den Papa ablehnen, während das Baby die Mama braucht. Das sei für alle schwer: Das große Kind sei im Widerstand, das Baby bekomme weniger, und dem Papa breche das Herz. Der Wechsel gelinge eher, wenn sich die Eltern von Anfang an viel geteilt haben, könne aber auch bei sehr engagierten Papas scheitern. Aus Sicht des Kindes sei der Mensch, der Sicherheit gibt, nun beim Baby. Sie nennt aus der Forschung, der beste Geburtenabstand für wenig Stress liege bei etwa drei Jahren, weil Dreijährige ihre wichtigste Bezugsperson besser abgeben können. Sie nimmt die zweiten Bezugspersonen in Schutz: Sie machten wahrscheinlich einen guten Job, auch wenn sie in solchen Momenten nichts richtig machen können. Sie räumt ein, dass Entgegenkommen nicht immer möglich ist."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Die Hosts Danielle Graf und Katja Seide behandeln das Thema allgemeiner: Ein Kind bevorzugt ein Elternteil, und das andere wird abgelehnt, nicht nur nach der Geburt eines Geschwisterchens. Sie erklären es mit einer Bindungshierarchie nach Bowlby: Die Bindungsperson Nummer eins werde in Stress und Not bevorzugt, weil sich das Kind bei ihr am schnellsten beruhige, Nummer zwei tröste langsamer. Das ist keine bewusste Ablehnung, sondern eine Überlebensstrategie, was zu Nicola Schmidts Deutung passt, das Kind wolle seine wichtigste Bezugsperson. Die Hosts betonen stärker, dass Nummer zwei dranbleiben und feste Rituale übernehmen soll, und dass Protest bei der Übergabe kein Grund zum sofortigen Zurückgeben ist. Zusätzlich thematisieren sie den Schmerz der Zurückweisung: Ein Gast (Psychologe) rät, sich zuerst um diesen Schmerz selbst zu kümmern, statt das Kind ändern zu wollen."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "mutti",
+     "nr": 60,
+     "titel": "Q&A Mama-Phase, Jungen zu Verantwortung erziehen, sind Federwiegen okay?",
+     "datum": "2026-09-30",
+     "minute": "20:52",
+     "thema": "Vater muss sich trotzdem kümmern, Bindung aufbauen"
+    },
+    {
+     "podcast": "mutti",
+     "nr": 60,
+     "titel": "Q&A Mama-Phase, Jungen zu Verantwortung erziehen, sind Federwiegen okay?",
+     "datum": "2026-09-30",
+     "minute": "25:18",
+     "thema": "Warum das Kind Option A bevorzugt, Diskussion über Ursachen"
+    },
+    {
+     "podcast": "mutti",
+     "nr": 21,
+     "titel": "Kann mein Kind das schon? - Mythen über kindliche Hirnentwicklung",
+     "datum": "2025-05-13",
+     "minute": "1:01:02",
+     "thema": "Klar bleiben und abwechseln"
+    },
+    {
+     "podcast": "artgerecht",
+     "nr": 35,
+     "titel": "Hilfe, mein Kind lehnt den Papa ab! Was tun?",
+     "datum": "2025-04-08",
+     "minute": "01:13",
+     "thema": "Wann Papa gut übernehmen kann, und warum es trotzdem scheitern kann"
+    },
+    {
+     "podcast": "artgerecht",
+     "nr": 35,
+     "titel": "Hilfe, mein Kind lehnt den Papa ab! Was tun?",
+     "datum": "2025-04-08",
+     "minute": "04:11",
+     "thema": "Papa nicht als Person abgelehnt, Bindung geht nicht verloren"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 191,
+     "titel": "Mein Kind lehnt mich ab - warum ist das so und was kann ich tun?",
+     "datum": "2025-07-08",
+     "minute": "02:00",
+     "thema": "Bindungspyramide erklärt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 191,
+     "titel": "Mein Kind lehnt mich ab - warum ist das so und was kann ich tun?",
+     "datum": "2025-07-08",
+     "minute": "09:48",
+     "thema": "Nicht persönlich nehmen, nicht zurückziehen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 98,
+     "titel": "Wenn dir dein eigenes Kind fremd ist – mit Dr. Oliver Dierssen",
+     "datum": "2022-10-18",
+     "minute": "38:48",
+     "thema": "Warum der Schmerz so heftig sein kann, und was hilft"
+    }
+   ],
+   "verwandt": [
+    "bindung",
+    "vaterrolle",
+    "eltern-als-team",
+    "mutterinstinkt",
+    "mehrere-bezugspersonen",
+    "geschwister-vorbereiten",
+    "eifersucht-baby"
+   ],
+   "medizinisch": false,
+   "einleitung": "Manche Kinder wollen in bestimmten Phasen nur noch zur Mama und weinen, sobald der andere Elternteil übernimmt, besonders oft, wenn ein Geschwisterbaby da ist. Der andere Elternteil fühlt sich abgelehnt, und die Mutter ist ständig gefragt."
   },
   {
    "id": "aergern-provozieren",
@@ -11375,118 +11413,6 @@ window.WISSEN = {
    "einleitung": "Manche Situationen, etwa Arztbesuche oder Medizin, machen Kindern große Angst. Eltern wissen dann oft nicht, wie sie ihr Kind darauf vorbereiten können."
   },
   {
-   "id": "verantwortung-uebertragen",
-   "titel": "Kindern Verantwortung übertragen",
-   "synonyme": [
-    "Verantwortung für Kinder",
-    "Kinder mithelfen lassen",
-    "Selbstwirksamkeit",
-    "Zutrauen",
-    "Mitarbeit im Haushalt",
-    "Lasst Kinder Kinder sein",
-    "Parentifizierung",
-    "Kind zutrauen"
-   ],
-   "fragen": [
-    "Wie viel Verantwortung kann ich meinem Kind geben?",
-    "Mein Kind macht morgens nichts selbst, was tun?",
-    "Nimmt Verantwortung dem Kind die Kindheit?",
-    "Was ist der Unterschied zu Parentifizierung?"
-   ],
-   "alter": [
-    "1-3",
-    "3-6",
-    "6-10"
-   ],
-   "bereiche": [
-    "routinen",
-    "entwicklung",
-    "grenzen"
-   ],
-   "kurz": "Kinder sollten altersgerecht echte Verantwortung bekommen, weil sie so Selbstwirksamkeit erleben. Dem Kind alles abzunehmen und Frust zu vermeiden ist keine Liebe, sondern nimmt ihm Zutrauen. Die Eltern bleiben dabei insgesamt verantwortlich, und es geht um Kooperation, nicht um Zwang, Strafe oder Überforderung.",
-   "tipps": [
-    "Seid wie ein guter Bergführer: Traut zu, bleibt in der Nähe und helft, wenn euer Kind fragt, greift aber nicht ungefragt in seinen Verantwortungsbereich ein.",
-    "Überlegt, was euer Kind schon kann, etwa die Jacke aufhängen, und nehmt es ihm dann nicht mehr ab. Weist nur darauf hin, wenn sie am Boden liegt.",
-    "Gebt Kindern von klein auf Aufgaben in die Hand, etwa Schuhe wegräumen. Dann braucht es oft keine Ansage mehr.",
-    "Sagt bei älteren Kindern klar, was ab jetzt ihre Verantwortung ist, zum Beispiel Wecker stellen und anziehen, und nennt eine feste Abfahrtszeit.",
-    "Wartet geduldig, bevor ihr selbst eingreift. Oft reichen zwei bis vier Stunden, Kinder wollen manchmal erst etwas fertig machen.",
-    "Bindet Kinder in euren Tag ein, zum Beispiel beim Kochen, statt sie in die Spielecke zu schicken.",
-    "Haltet euer Kind nicht für überfordert, nur weil es frustriert ist. Traut ihm mehr zu und schaut, wie es das löst.",
-    "Verknüpft Aufgaben nicht mit Strafen wie Taschengeld- oder Fernsehentzug.",
-    "Probiert bei Grundschulkindern kleine Schritte aus, etwa nur noch den halben Schulweg mitzugehen, und geht im Zweifel einen Schritt zurück. Lasst das Kind den Weg entdecken (Wo musst du aufpassen?), statt Regeln aufzuzählen."
-   ],
-   "sichtweisen": [
-    {
-     "podcast": "mutti",
-     "text": "Die Hosts erzählen eine Bergführer-Metapher: Ein guter Führer traut erst wenig, dann mehr zu, hilft zurück, wenn es zu schwer wird, und übergibt am Ende die Führung. Der andere Führer unterhält ständig, vermeidet Frust und trägt, sodass man sich am Ende nicht bereit für die schweren Wege fühlt. Sie halten die Annahme für falsch, Verantwortung wegzunehmen sei Kinderschutz, und kritisieren das Motto „Lasst Kinder Kinder sein“ und Teile der bedürfnisorientierten Erziehung. Sie selbst sehen sich rückblickend früher in dieser abnehmenden, anleitungsarmen Richtung. Laut ihrer Deutung stärkt Wiederholung Nervenbahnen, und wer nie Verantwortung übt, entwickle weniger Empathie und werde unzufriedener. Das ist ihre persönliche These und nicht belegt. Von Parentifizierung grenzen sie ab: Gemeint sei etwa, dass kleine Kinder tagelang für sich selbst sorgen müssen, ein Geschwisterkind um Schuhe zu bitten gehöre nicht dazu. Gleichzeitig distanzieren sie sich von Zwang, Strafe und Rache. Es sei nie zu spät, anzufangen, bei kleinen Kindern gehe es aber leichter und ohne große Ansage."
-    },
-    {
-     "podcast": "wunschkind",
-     "text": "Im Podcast der Hosts Danielle Graf und Katja Seide kommt das Thema nur am Rand vor, und zwar in einer Folge zur Grundschulzeit. Die Gästin Inke Hummel sagt, das richtige Maß bei Verantwortung und Loslassen lasse sich nur ausprobieren, es sei ein Klassiker in der Grundschulzeit und noch einmal in der Pubertät. Wer Kinder ständig in Watte packe, erfahre gar nicht, ob es schon klappen würde. Das deckt sich mit der Linie des Mutti-Podcasts, Zutrauen statt Abnehmen. Anders als dort geht es hier nicht um Haltung oder Kritik an anderen Erziehungsansätzen, sondern um kleine, ausprobierende Schritte, etwa beim Schulweg, mit dem Zurückgehen als Option."
-    }
-   ],
-   "quellen": [
-    {
-     "podcast": "mutti",
-     "nr": 13,
-     "titel": "Warum Kinder Verantwortung brauchen",
-     "datum": "2025-03-12",
-     "minute": "04:04",
-     "thema": "Bergführer-Metapher"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 13,
-     "titel": "Warum Kinder Verantwortung brauchen",
-     "datum": "2025-03-12",
-     "minute": "22:38",
-     "thema": "Verantwortung, Selbstwirksamkeit und Selbstwert"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 13,
-     "titel": "Warum Kinder Verantwortung brauchen",
-     "datum": "2025-03-12",
-     "minute": "36:56",
-     "thema": "Elfjähriger will morgens nicht, Liebe heißt zutrauen"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 13,
-     "titel": "Warum Kinder Verantwortung brauchen",
-     "datum": "2025-03-12",
-     "minute": "44:21",
-     "thema": "Parentifizierung und altersgerechte Verantwortung"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 13,
-     "titel": "Warum Kinder Verantwortung brauchen",
-     "datum": "2025-03-12",
-     "minute": "54:02",
-     "thema": "Selbstregulation, Konsequenzen, Überforderung"
-    },
-    {
-     "podcast": "wunschkind",
-     "nr": 147,
-     "titel": "Beziehungsorientiert durch die Grundschulzeit",
-     "datum": "2024-09-03",
-     "minute": "20:05",
-     "thema": "Das richtige Mittelmaß bei Verantwortung"
-    }
-   ],
-   "verwandt": [
-    "selbststaendigkeit",
-    "aufraeumen-haushalt",
-    "kooperation-zuhoeren",
-    "beduerfnisorientierte-erziehung",
-    "frustrationstoleranz",
-    "schulstart"
-   ],
-   "medizinisch": false,
-   "einleitung": "Viele Eltern erleben, dass ihr Kind im Alltag wenig selbst übernimmt, und fragen sich, wie viel Verantwortung ihm zusteht."
-  },
-  {
    "id": "kita-allgemein",
    "titel": "Kita und Fremdbetreuung",
    "synonyme": [
@@ -11630,7 +11556,7 @@ window.WISSEN = {
   },
   {
    "id": "kita-eingewoehnung",
-   "titel": "Kita-Eingewöhnung und Abschied",
+   "titel": "Kita-Eingewöhnung: Ablauf und Abschied",
    "synonyme": [
     "Eingewöhnung",
     "Kind weint beim Abgeben",
@@ -11665,7 +11591,7 @@ window.WISSEN = {
     "kita",
     "gefuehle"
    ],
-   "kurz": "Weinen beim Abgeben ist normal und sagt nichts über die Qualität der Kita aus; hilfreich sind eine Eingewöhnung, die so lange dauert, wie das Kind sie braucht (Gäste von wunschkind nennen vier bis acht Wochen), und ein klarer, liebevoller Abschied, wobei manche Kinder ein kurzes Ritual und andere erklärte Schritte brauchen. Auch nach den Ferien ist Klammern laut Nicola Schmidt nichts Ungewöhnliches und vergeht oft nach wenigen Tagen. Unsicherheit und Zuversicht der Eltern übertragen sich laut den Hosts von mutti auf das Kind.",
+   "kurz": "Hier geht es um den Ablauf der Eingewöhnung in Kita und Tagespflege; zum Umgang mit Abschiedsschmerz allgemein gibt es den Artikel „Trennungsschmerz und Abschied“. Weinen beim Abgeben ist normal und sagt nichts über die Qualität der Kita aus; hilfreich sind eine Eingewöhnung, die so lange dauert, wie das Kind sie braucht (Gäste von wunschkind nennen vier bis acht Wochen), und ein klarer, liebevoller Abschied, wobei manche Kinder ein kurzes Ritual und andere erklärte Schritte brauchen. Auch nach den Ferien ist Klammern laut Nicola Schmidt nichts Ungewöhnliches und vergeht oft nach wenigen Tagen. Unsicherheit und Zuversicht der Eltern übertragen sich laut den Hosts von mutti auf das Kind.",
    "tipps": [
     "Macht die Eingewöhnung so lang, wie euer Kind sie braucht, damit es Einrichtung und Erzieher kennenlernt, bevor ihr das erste Mal geht.",
     "Verabschiedet euch kurz mit einmal trösten, kuscheln, einem Kuss und dann gehen, denn ständiges Hin und Her hält das Kind im Abschied fest.",
@@ -13119,98 +13045,6 @@ window.WISSEN = {
    "einleitung": "Viele Eltern kennen diese Situation: „Was ist elterliche Führung?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
-   "id": "mama-phase",
-   "titel": "Mama-Phase: Kind will nur zur Mama",
-   "synonyme": [
-    "Mama-Kind",
-    "Kind lehnt Papa ab",
-    "Papa darf nichts machen",
-    "Kind schreit bei Papa",
-    "Papa-Phase",
-    "Elternteil bevorzugen",
-    "Fremdeln mit Papa",
-    "Bezugsperson"
-   ],
-   "fragen": [
-    "Mein Kind will nur zur Mama, was tun?",
-    "Zweijährige lässt sich nicht vom Papa ins Bett bringen",
-    "Kind beruhigt sich nicht beim Papa",
-    "Ist es normal, dass mein Kind ein Elternteil bevorzugt?",
-    "Wie baut der Papa Bindung zum Kind auf?"
-   ],
-   "alter": [
-    "0-1",
-    "1-3",
-    "3-6"
-   ],
-   "bereiche": [
-    "familie",
-    "gefuehle",
-    "eltern"
-   ],
-   "kurz": "Das Kind lehnt den anderen Elternteil meist nicht ab, sondern bevorzugt einfach die erste Wahl. Das Weinen ist Frustration, die ein Kind aushalten kann. Der andere Elternteil sollte deshalb dranbleiben und das Kind nicht beim ersten Weinen zurückgeben. Die Phase dauert, geht aber vorbei.",
-   "tipps": [
-    "Der andere Elternteil übernimmt bewusst einzelne Situationen, in denen die Mama keine Option ist, etwa das Ins-Bett-Bringen, und bleibt trotz Protest dabei.",
-    "Beschränkt euch auf höchstens eine solche Situation pro Tag.",
-    "Gebt das weinende Kind nicht sofort zurück, sondern begleitet die Frustration gemeinsam mit dem Kind.",
-    "Geht als Mama in dieser Zeit spazieren oder auch mal ein Wochenende weg, damit das Kind nicht zu euch zurückgebracht werden kann.",
-    "Wechselt euch so ab, wie es für euch passt, und bleibt bei der Entscheidung, auch wenn das Kind protestiert.",
-    "Rechnet mit Drama beim ersten Mal, etwas weniger beim zweiten und oft schon gutem Klappen beim dritten, so wie es bei einer Mutter war.",
-    "Gibt der Partner immer nach, sprecht das als Paar offen an.",
-    "Möchte die Familie bewusst den leichteren Weg gehen, kann die Mutter in kritischen Situationen übernehmen und der Vater andere Dinge, etwa Vorlesen oder Baden."
-   ],
-   "sichtweisen": [
-    {
-     "podcast": "mutti",
-     "text": "Die Hosts glauben nicht, dass ein Kind eine fürsorgliche Bezugsperson wirklich ablehnt. Meist hat es sich daran gewöhnt, dass Mama bestimmte Dinge macht, und zieht Option A der Option B vor. Sie sind sich einig, dass der andere Elternteil dranbleiben muss, und sehen das Problem oft bei Vätern, die nicht konsequent dabeibleiben. Bei der Ursache sind sie uneinig: Eine Hostin führt die Vorliebe vor allem auf mehr gemeinsame Zeit und bessere Kenntnis der Signale des Kindes zurück, nicht auf einen Instinkt. Der andere Host hält auch angeborene Vorlieben oder einen besonderen Draht für möglich, unabhängig davon, wer mehr Zeit verbringt. Die Hosts betonen, dass die Eltern und nicht das Kind über die Abläufe entscheiden. Sie erleben, dass die Phase mit etwa vier Jahren abebbt und später milder wiederkommen kann. Außerdem merken sie an, dass das Thema meist nur diskutiert wird, wenn das Kind zur Mutter will."
-    }
-   ],
-   "quellen": [
-    {
-     "podcast": "mutti",
-     "nr": 60,
-     "titel": "Q&A Mama-Phase, Jungen zu Verantwortung erziehen, sind Federwiegen okay?",
-     "datum": "2026-09-30",
-     "minute": "20:52",
-     "thema": "Vater muss sich trotzdem kümmern, Bindung aufbauen"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 60,
-     "titel": "Q&A Mama-Phase, Jungen zu Verantwortung erziehen, sind Federwiegen okay?",
-     "datum": "2026-09-30",
-     "minute": "25:18",
-     "thema": "Warum das Kind Option A bevorzugt, Diskussion über Ursachen"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 21,
-     "titel": "Kann mein Kind das schon? - Mythen über kindliche Hirnentwicklung",
-     "datum": "2025-05-13",
-     "minute": "1:01:02",
-     "thema": "Klar bleiben und abwechseln"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 26,
-     "titel": "Gibt es einen Mutterinstinkt?",
-     "datum": "2025-07-29",
-     "minute": "40:07",
-     "thema": "Wie eine Ablehnung durchgestanden wurde"
-    }
-   ],
-   "verwandt": [
-    "bindung",
-    "vaterrolle",
-    "eltern-als-team",
-    "mutterinstinkt",
-    "mehrere-bezugspersonen",
-    "kind-lehnt-papa-ab"
-   ],
-   "medizinisch": false,
-   "einleitung": "Manche Kinder wollen in bestimmten Phasen nur noch zur Mama und weinen, sobald der Papa übernimmt. Der andere Elternteil fühlt sich abgelehnt, und die Mutter ist ständig gefragt."
-  },
-  {
    "id": "mehrere-bezugspersonen",
    "titel": "Mehrere Bezugspersonen und das Dorf",
    "synonyme": [
@@ -13323,7 +13157,7 @@ window.WISSEN = {
   },
   {
    "id": "kind-haut",
-   "titel": "Mein Kind haut",
+   "titel": "Mein Kind haut, beißt oder schubst (akut)",
    "synonyme": [
     "Hauen",
     "Beißen",
@@ -13356,7 +13190,7 @@ window.WISSEN = {
     "grenzen",
     "entwicklung"
    ],
-   "kurz": "Hauen, Beißen und Schubsen sind bei kleinen Kindern normal und kein Erziehungsfehler. Alle Podcasts raten zu einer ruhigen, klaren Reaktion ohne Vortrag: Verhalten stoppen, notfalls festhalten und eine Alternative zeigen, später mit Geschichten oder Rollenspiel üben. Uneinig sind sie vor allem bei der Frage, wie viel Konsequenz es zusätzlich braucht.",
+   "kurz": "Hier geht es um die akute Situation bei kleinen Kindern; zum Hintergrund von Aggression insgesamt gibt es den Artikel „Aggression bei Kindern“. Hauen, Beißen und Schubsen sind bei kleinen Kindern normal und kein Erziehungsfehler. Alle Podcasts raten zu einer ruhigen, klaren Reaktion ohne Vortrag: Verhalten stoppen, notfalls festhalten und eine Alternative zeigen, später mit Geschichten oder Rollenspiel üben. Uneinig sind sie vor allem bei der Frage, wie viel Konsequenz es zusätzlich braucht.",
    "tipps": [
     "Bleibt beim Hauen ruhig, sagt wenig oder nichts und haltet die Hände des Kindes fest. Wenn es schlägt, beißt oder sich oder andere verletzen könnte, haltet es mit ruhigem Atem fest und sagt, dass ihr loslasst, sobald es aufhört.",
     "Sagt klar, dass ihr nicht gehauen werden wollt, beendet die Situation, zum Beispiel das gemeinsame Spiel, und macht dann ruhig eure Sache weiter, ohne das Kind zu ignorieren.",
@@ -13729,7 +13563,7 @@ window.WISSEN = {
    "verwandt": [
     "eltern-als-team",
     "vaterrolle",
-    "verantwortung-uebertragen",
+    "selbststaendigkeit",
     "erschoepfte-eltern",
     "aufraeumen-haushalt",
     "adhs-eltern"
@@ -14309,7 +14143,7 @@ window.WISSEN = {
   },
   {
    "id": "mobbing",
-   "titel": "Mobbing und Ausgrenzung",
+   "titel": "Mobbing (dauerhafte Ausgrenzung und Schikane)",
    "synonyme": [
     "Mobbing",
     "Ausgrenzung",
@@ -14341,7 +14175,7 @@ window.WISSEN = {
     "kita",
     "grenzen"
    ],
-   "kurz": "Kathy Weber und ihr Gast Daniel Dudek sehen Mobbing nicht als Frage von Gut und Böse, sondern als Folge unerfüllter Bedürfnisse, etwa nach Zugehörigkeit oder Wahrgenommenwerden. Ausgrenzung beginnt aus ihrer Sicht schon im Kindergarten. Schutz bietet vor allem ein sicherer Hafen zu Hause, in dem alle Gefühle sein dürfen und das Kind sich wertvoll erlebt. Gemobbte Kinder und Kinder, die andere ausgrenzen, brauchen beide liebevolle Begleitung.",
+   "kurz": "Hier geht es um Mobbing, also anhaltende Ausgrenzung und Schikane; zum einzelnen Ausschließen beim Spielen gibt es den Artikel „Kind schließt andere vom Spielen aus“. Kathy Weber und ihr Gast Daniel Dudek sehen Mobbing nicht als Frage von Gut und Böse, sondern als Folge unerfüllter Bedürfnisse, etwa nach Zugehörigkeit oder Wahrgenommenwerden. Ausgrenzung beginnt aus ihrer Sicht schon im Kindergarten. Schutz bietet vor allem ein sicherer Hafen zu Hause, in dem alle Gefühle sein dürfen und das Kind sich wertvoll erlebt. Gemobbte Kinder und Kinder, die andere ausgrenzen, brauchen beide liebevolle Begleitung.",
    "tipps": [
     "Seid für euer Kind ein sicherer Hafen: Es soll erzählen können, ohne bewertet oder in eine Schublade gesteckt zu werden. Daniel Dudek vergleicht das mit einem Energietank, an dem man schwer zu ärgern ist, wer viel davon hat.",
     "Fragt nicht nur, ob euer Kind gemobbt wird, sondern schaut, ob ihm etwas fehlt. Warnzeichen wie Rückzug sind laut Daniel Dudek unzuverlässig, manche Kinder wirken sogar besonders fröhlich. Beobachtet Veränderungen und fragt echt interessiert nach, ohne zu kontrollieren.",
@@ -16995,10 +16829,10 @@ window.WISSEN = {
    "verwandt": [
     "selbststaendigkeit",
     "frustrationstoleranz",
-    "verantwortung-uebertragen",
     "erwartungen-zuschreibungen",
     "kita-allgemein",
-    "schulreife-rueckstellung"
+    "schulreife-rueckstellung",
+    "adhs-kind"
    ],
    "medizinisch": false,
    "einleitung": "Vor der Einschulung fragen sich viele Eltern, was ihr Kind schon können muss und ob sie vorab Lesen und Schreiben üben sollten. Auch die eigene Rolle bei Aufbruchszeiten und Hausaufgaben verunsichert sie."
@@ -17365,7 +17199,7 @@ window.WISSEN = {
   },
   {
    "id": "selbststaendigkeit",
-   "titel": "Selbstständigkeit fördern",
+   "titel": "Selbstständigkeit fördern und Verantwortung übertragen",
    "synonyme": [
     "Verantwortung übertragen",
     "Eigenverantwortung",
@@ -17381,7 +17215,12 @@ window.WISSEN = {
     "Selber machen wollen",
     "Verwöhnen Selbstständigkeit",
     "Verbundenheit statt Selbstständigkeit",
-    "Aufgaben im Haushalt"
+    "Aufgaben im Haushalt",
+    "Parentifizierung",
+    "Lasst Kinder Kinder sein",
+    "Zutrauen",
+    "Mitarbeit im Haushalt",
+    "Kinder mithelfen lassen"
    ],
    "fragen": [
     "Wie fördere ich Selbstständigkeit bei meinem Kind?",
@@ -17390,7 +17229,10 @@ window.WISSEN = {
     "Wie nah muss ich auf dem Spielplatz beim Kind sein?",
     "Wie helfe ich einem unsicheren Kind, mehr allein zu tun?",
     "Wie bringe ich meinem Kind bei mitzudenken?",
-    "Wie viel kann ich meinem Kind zutrauen?"
+    "Wie viel kann ich meinem Kind zutrauen?",
+    "Mein Kind macht morgens nichts selbst, was tun?",
+    "Nimmt Verantwortung dem Kind die Kindheit?",
+    "Was ist der Unterschied zu Parentifizierung?"
    ],
    "alter": [
     "1-3",
@@ -17402,22 +17244,22 @@ window.WISSEN = {
     "entwicklung",
     "eltern"
    ],
-   "kurz": "Selbstständigkeit wächst, wenn Eltern Kindern früh und schrittweise Aufgaben und Verantwortung übertragen, statt alles abzunehmen oder ständig zu erinnern. Nicola Schmidt ergänzt, dass Kinder mitdenken lernen, wenn Eltern ihre eigenen Gedanken im Alltag laut aussprechen. Dafür müssen Eltern etwas Frust, Chaos und Abstand aushalten.",
+   "kurz": "Selbstständigkeit wächst, wenn Eltern Kindern früh und schrittweise echte, altersgerechte Aufgaben und Verantwortung übertragen, statt alles abzunehmen oder ständig zu erinnern. Dem Kind Frust zu ersparen nimmt ihm Zutrauen; die Eltern bleiben dabei insgesamt verantwortlich, und es geht um Kooperation, nicht um Zwang oder Überforderung. Nicola Schmidt ergänzt, dass Kinder mitdenken lernen, wenn Eltern ihre Gedanken laut aussprechen.",
    "tipps": [
-    "Nehmt Kinder von klein auf mit und gebt ihnen kleine Aufträge, sobald sie laufen können, etwa etwas holen, bringen oder eine Tür schließen.",
-    "Bindet sie im Haushalt ein, zum Beispiel beim gemeinsamen Wäschefalten, wobei Dreijährige schon falten und Zweijährige beim Zusammenlegen und Einräumen helfen können, und habt Geduld, auch wenn es länger dauert.",
-    "Sprecht eure Gedanken und Handlungsschritte laut aus, wenn keine Gefahr im Verzug ist, zum Beispiel beim umgekippten Glas: Wasser auf dem Tisch, erst Lappen holen, Malsachen weg. Bezieht das Kind ein, gebt ihm einen Lappen und erklärt auch die Folgeschritte, etwa dass der nasse Lappen aufgehängt werden muss.",
-    "Sagt etwas einmal und erinnert nicht ständig, denn vergisst das Kind etwas, trägt es die Folgen.",
-    "Lasst größere Kinder Aufgaben ohne Anleitung lösen und fragt „Was müssen wir jetzt machen?“, statt Anweisungen zu geben, damit das Kind mitdenkt.",
-    "Gebt kleine Aufgaben außer Haus: Tasche für die Kita packen, den Tisch decken, in der Bäckerei bestellen, bei der Nachbarin etwas fragen.",
-    "Bei unsicheren Kindern helft mit kleinen Mutproben im Alltag, etwa indem das Kind auch mal allein ein Stück vorausgeht.",
+    "Nehmt Kinder von klein auf mit und gebt ihnen kleine Aufträge, sobald sie laufen können, etwa etwas holen, die Schuhe wegräumen oder die Tür schließen. Später können sie auch außer Haus etwas übernehmen: die Kitatasche packen, in der Bäckerei bestellen, bei der Nachbarin etwas fragen. Dann braucht es oft keine Ansage mehr.",
+    "Bindet sie im Haushalt ein, zum Beispiel beim gemeinsamen Wäschefalten (Dreijährige falten schon, Zweijährige helfen beim Zusammenlegen und Einräumen) oder beim Kochen statt in der Spielecke, und habt Geduld, auch wenn es länger dauert.",
+    "Sprecht eure Gedanken und Handlungsschritte laut aus, wenn keine Gefahr im Verzug ist, zum Beispiel beim umgekippten Glas: Wasser auf dem Tisch, erst Lappen holen, Malsachen weg. Gebt dem Kind einen Lappen und erklärt auch die Folgeschritte, etwa dass der nasse Lappen aufgehängt werden muss.",
+    "Seid wie ein guter Bergführer: Traut zu, bleibt in der Nähe und helft, wenn euer Kind fragt, greift aber nicht ungefragt in seinen Verantwortungsbereich ein. Überlegt, was es schon kann, etwa die Jacke aufhängen, und nehmt es ihm dann nicht mehr ab.",
+    "Sagt etwas einmal und erinnert nicht ständig, denn vergisst das Kind etwas, trägt es die Folgen. Sagt bei älteren Kindern klar, was ab jetzt ihre Verantwortung ist, zum Beispiel Wecker stellen und anziehen, und nennt eine feste Abfahrtszeit. Verknüpft Aufgaben nicht mit Strafen wie Taschengeld- oder Fernsehentzug.",
+    "Lasst größere Kinder Aufgaben ohne Anleitung lösen und fragt „Was müssen wir jetzt machen?“, statt Anweisungen zu geben, damit das Kind mitdenkt. Wartet geduldig, bevor ihr selbst eingreift, denn Kinder wollen manchmal erst etwas fertig machen.",
+    "Bei unsicheren Kindern und Grundschulkindern helfen kleine Schritte: das Kind geht auch mal allein ein Stück voraus, oder ihr begleitet nur noch den halben Schulweg und geht im Zweifel einen Schritt zurück. Lasst das Kind den Weg entdecken („Wo musst du aufpassen?“), statt Regeln aufzuzählen.",
     "Haltet euch auf dem Spielplatz möglichst unsichtbar, bleibt im Umkreis, beobachtet und kommt nur bei Gefahr oder Konflikten dazu, damit das Kind weiß, wo ihr seid.",
-    "Haltet bei einer Umstellung eine Übergangsphase mit mehr Frust und Wut aus. Stört euch beim Zuschauen die Unordnung, verlasst kurz den Raum und lasst das Kind machen."
+    "Haltet bei einer Umstellung eine Übergangsphase mit mehr Frust und Wut aus, und haltet das Kind nicht für überfordert, nur weil es frustriert ist. Stört euch beim Zuschauen die Unordnung, verlasst kurz den Raum und lasst das Kind machen."
    ],
    "sichtweisen": [
     {
      "podcast": "mutti",
-     "text": "Die Hosts sehen Selbstständigkeit und Verantwortung als zusammengehörig und als Kern der Schulvorbereitung. Sie setzen sich bewusst von Eltern ab, die Kindern alles abnehmen: Wer immer erinnert, nimmt dem Kind das eigene Mitdenken, und wer Aufräumen in Ruhe erledigt, während das Kind spielt, weist ihm die Rolle des Zuschauers zu. Ihr Bild ist der Bergführer, der Wege zeigt, statt das Kind oben abzusetzen. Sie vermuten, dass Eltern oft den Moment verpassen, in dem ein Kind etwas allein kann. Beim Abstand halten plädieren sie für deutlich mehr Freiraum und bedauern, dass Stadtkinder weniger allein unterwegs sind. Zwei- und Dreijährige brauchen laut ihnen aber noch ständige Aufmerksamkeit. Zum kurzen Alleinlassen zu Hause geben sie bewusst keine Empfehlung, da das je nach Kind und Familie verschieden sei. Ist ein älteres Kind dauerhaft so ängstlich, dass es nichts allein schafft, sehen sie psychologische Hilfe als sinnvoll an."
+     "text": "Die Hosts sehen Selbstständigkeit und Verantwortung als zusammengehörig und als Kern der Schulvorbereitung. Sie setzen sich bewusst von Eltern ab, die Kindern alles abnehmen, und kritisieren das Motto „Lasst Kinder Kinder sein“: Wer immer erinnert, nimmt dem Kind das eigene Mitdenken, und wer Aufräumen in Ruhe erledigt, während das Kind spielt, weist ihm die Rolle des Zuschauers zu. Ihr Bild ist der Bergführer, der erst wenig, dann mehr zutraut, bei Bedarf zurückhilft und am Ende die Führung übergibt, im Gegensatz zum Führer, der Frust vermeidet und trägt. Wiederholung stärke Nervenbahnen, meinen sie; das ist ihre persönliche These und nicht belegt. Von Parentifizierung grenzen sie ab: Gemeint sei etwa, dass kleine Kinder tagelang für sich selbst sorgen müssen, ein Geschwisterkind um Schuhe zu bitten gehöre nicht dazu. Zwang, Strafe und Rache lehnen sie ab, und es sei nie zu spät anzufangen. Sie vermuten, dass Eltern oft den Moment verpassen, in dem ein Kind etwas allein kann. Beim Abstand halten plädieren sie für deutlich mehr Freiraum und bedauern, dass Stadtkinder weniger allein unterwegs sind. Zwei- und Dreijährige brauchen laut ihnen aber noch ständige Aufmerksamkeit. Zum kurzen Alleinlassen zu Hause geben sie bewusst keine Empfehlung. Ist ein älteres Kind dauerhaft so ängstlich, dass es nichts allein schafft, sehen sie psychologische Hilfe als sinnvoll an."
     },
     {
      "podcast": "artgerecht",
@@ -17429,18 +17271,10 @@ window.WISSEN = {
     },
     {
      "podcast": "wunschkind",
-     "text": "In „Das gewünschteste Wunschkind“ tauchen zwei Linien auf. Zum einen fordern Gast und Hosts, Kindern echte Aufgaben im Haushalt zu geben und dabei zu bleiben, auch wenn das Kind zunächst nicht will; in den zwei Jahren vor der Schule solle die Haltung zu „Du bist jetzt größer“ kippen, und Konflikte darum lehre das Aushandeln. Eltern, die sofort springen, nähmen dem Kind laut den Hosts die Chance auf Impulskontrolle, und sie sagen, Eltern trauten Kindern oft zu wenig zu. Das liegt nah bei mutti. Zum anderen sagt ein Gast, viele alte Glaubenssätze („nicht verwöhnen“, früh allein schlafen) drehten sich um ein überholtes Selbstständigkeitsverständnis; Nähe- oder Liebesentzug führe nicht zu Selbstständigkeit. Er stellt Verbundenheit in den Mittelpunkt, Eltern sollten beim Regulieren helfen, damit das Kind seine Kräfte entwickelt. Das ähnelt Kathy Webers Blick auf das Bedürfnis. Eine Gästin erinnert außerdem daran, dass Selbstständigkeit viele Hirnleistungen voraussetzt und Eltern Druck von außen nicht ungefiltert weitergeben sollten."
+     "text": "In „Das gewünschteste Wunschkind“ tauchen zwei Linien auf. Zum einen fordern Gast und Hosts, Kindern echte Aufgaben im Haushalt zu geben und dabei zu bleiben, auch wenn das Kind zunächst nicht will; in den zwei Jahren vor der Schule solle die Haltung zu „Du bist jetzt größer“ kippen, und Konflikte darum lehre das Aushandeln. Eltern, die sofort springen, nähmen dem Kind laut den Hosts die Chance auf Impulskontrolle, und sie sagen, Eltern trauten Kindern oft zu wenig zu. Das liegt nah bei mutti. Zum anderen sagt ein Gast, viele alte Glaubenssätze („nicht verwöhnen“, früh allein schlafen) drehten sich um ein überholtes Selbstständigkeitsverständnis; Nähe- oder Liebesentzug führe nicht zu Selbstständigkeit. Er stellt Verbundenheit in den Mittelpunkt, Eltern sollten beim Regulieren helfen, damit das Kind seine Kräfte entwickelt. Das ähnelt Kathy Webers Blick auf das Bedürfnis. Eine Gästin erinnert außerdem daran, dass Selbstständigkeit viele Hirnleistungen voraussetzt und Eltern Druck von außen nicht ungefiltert weitergeben sollten. Die Gästin Inke Hummel sagt zudem, das richtige Maß beim Loslassen, etwa auf dem Schulweg, lasse sich nur ausprobieren; wer Kinder in Watte packe, erfahre nicht, ob es schon klappen würde."
     }
    ],
    "quellen": [
-    {
-     "podcast": "mutti",
-     "nr": 54,
-     "titel": "So bereiten wir unser Kind auf die Schule vor",
-     "datum": "2026-07-07",
-     "minute": "08:44",
-     "thema": "Aufgaben wie Spülmaschine ausräumen und Verantwortung übertragen"
-    },
     {
      "podcast": "mutti",
      "nr": 20,
@@ -17474,14 +17308,6 @@ window.WISSEN = {
      "thema": "Die drei Autonomiephasen, erste Phase: selber machen"
     },
     {
-     "podcast": "gfk",
-     "nr": 62,
-     "titel": "83 V – wie Verantwortung: Wie dein Kind verantwortliches Handeln lernt",
-     "datum": "2022-07-10",
-     "minute": "05:19",
-     "thema": "Kein fester Altersrichtwert, Selbstständigkeit ohne Druck"
-    },
-    {
      "podcast": "wunschkind",
      "nr": 73,
      "titel": "\"GOOD ENOUGH PARENTS\" mit Domenik Schuster und Susanne Mierau",
@@ -17491,20 +17317,37 @@ window.WISSEN = {
     },
     {
      "podcast": "wunschkind",
-     "nr": 10,
-     "titel": "Schul(hof)reife Teil 2 - Emotioner und sozialer Bereich",
-     "datum": "2019-04-09",
-     "minute": "22:09",
-     "thema": "Haushaltsaufgaben und Aufgaben als Schulvorbereitung"
+     "nr": 147,
+     "titel": "Beziehungsorientiert durch die Grundschulzeit",
+     "datum": "2024-09-03",
+     "minute": "20:05",
+     "thema": "Das richtige Mittelmaß bei Verantwortung"
+    },
+    {
+     "podcast": "mutti",
+     "nr": 13,
+     "titel": "Warum Kinder Verantwortung brauchen",
+     "datum": "2025-03-12",
+     "minute": "04:04",
+     "thema": "Bergführer-Metapher"
+    },
+    {
+     "podcast": "mutti",
+     "nr": 13,
+     "titel": "Warum Kinder Verantwortung brauchen",
+     "datum": "2025-03-12",
+     "minute": "44:21",
+     "thema": "Parentifizierung und altersgerechte Verantwortung"
     }
    ],
    "verwandt": [
-    "verantwortung-uebertragen",
     "schulstart",
     "aufraeumen-haushalt",
     "risiko-freiheit",
     "anziehen",
-    "abenteuer-mut"
+    "kooperation-zuhoeren",
+    "beduerfnisorientierte-erziehung",
+    "frustrationstoleranz"
    ],
    "medizinisch": false,
    "einleitung": "Eltern nehmen ihren Kindern im Alltag oft vieles ab und erinnern sie ständig an alles. Das kostet Nerven, und die Kinder bleiben trotzdem abhängig."
@@ -17638,8 +17481,7 @@ window.WISSEN = {
     "trigger-inneres-kind",
     "mobbing",
     "aussehen-schoenheitsideale",
-    "selbststaendigkeit",
-    "verantwortung-uebertragen"
+    "selbststaendigkeit"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind sagt „Ich bin dumm“, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
@@ -19132,7 +18974,7 @@ window.WISSEN = {
     "schulstart",
     "kooperation-zuhoeren",
     "selbststaendigkeit",
-    "wunsch-oder-beduerfnis"
+    "beduerfnisse-erkennen"
    ],
    "medizinisch": false,
    "einleitung": "Morgens kommt es in vielen Familien zu Hektik, Trödeln und Streit, und das Haus wird oft zu spät verlassen. Eltern gehen schon mit der Erwartung hinein, dass es schiefgeht."
@@ -19389,7 +19231,6 @@ window.WISSEN = {
     "trotz-autonomie",
     "selbststaendigkeit",
     "suessigkeiten",
-    "verantwortung-uebertragen",
     "aussehen-schoenheitsideale"
    ],
    "medizinisch": false,
@@ -19801,7 +19642,7 @@ window.WISSEN = {
   },
   {
    "id": "trennungsschmerz-abschied",
-   "titel": "Trennungsschmerz und Abschied begleiten",
+   "titel": "Trennungsschmerz und Abschied begleiten (Gefühle und Rituale)",
    "synonyme": [
     "Abschiedsschmerz",
     "Trennungsangst",
@@ -19833,7 +19674,7 @@ window.WISSEN = {
     "gefuehle",
     "eltern"
    ],
-   "kurz": "Kathy Weber sagt, dass Kinder traurig sein und beim Abschied weinen dürfen. Entscheidend ist für sie die Klarheit der Eltern: vorher Nähe auftanken, klar übergeben, gehen, und dem Kind Nähe-Strategien wie Kussglas oder ein getragenes T-Shirt mitgeben. Das Kind entscheidet nicht, ob ihr geht, eure Führung und Empathie helfen ihm, den Abschied zu schaffen.",
+   "kurz": "Hier geht es um die Gefühle des Kindes beim Abschied und was Eltern dabei tun können, auch außerhalb der Kita; zum Ablauf der Eingewöhnung gibt es den Artikel „Kita-Eingewöhnung“. Kathy Weber sagt, dass Kinder traurig sein und beim Abschied weinen dürfen. Entscheidend ist für sie die Klarheit der Eltern: vorher Nähe auftanken, klar übergeben, gehen, und dem Kind Nähe-Strategien wie Kussglas oder ein getragenes T-Shirt mitgeben. Das Kind entscheidet nicht, ob ihr geht, eure Führung und Empathie helfen ihm, den Abschied zu schaffen.",
    "tipps": [
     "Klärt vorher mit dem anderen Elternteil, wie der Morgen für alle machbar abläuft, und sagt es dem Kind. Ältere Kinder können mitreden oder es im Rollenspiel durchspielen.",
     "Haltet eine klare Reihenfolge ein: Zeit und Rituale mit jedem Kind, Übergabe an den anderen Elternteil mit klaren Worten („Papa ist jetzt für dich zuständig, du hast alles, was du brauchst“), dann gehen, ohne umzukehren.",
@@ -21826,116 +21667,6 @@ window.WISSEN = {
    ],
    "medizinisch": true,
    "einleitung": "Nach der Geburt hört man widersprüchliche Ratschläge, ob das Wochenbett vor allem im Bett verbracht werden muss. Frauen fühlen sich dabei schnell unter Druck, es richtig zu machen."
-  },
-  {
-   "id": "wunsch-oder-beduerfnis",
-   "titel": "Wunsch oder Bedürfnis?",
-   "synonyme": [
-    "Bedürfnisse von Kindern",
-    "Wünsche erfüllen",
-    "Wunsch und Bedürfnis unterscheiden",
-    "Grundbedürfnisse",
-    "Bedürfnismodell",
-    "Kind verwöhnen",
-    "bedürfnisorientiert"
-   ],
-   "fragen": [
-    "Wie unterscheide ich Wunsch und Bedürfnis bei meinem Kind?",
-    "Muss ich jeden Wunsch meines Kindes erfüllen?",
-    "Steckt hinter jedem Verhalten ein Bedürfnis?",
-    "Baby will nicht in die Trage, nur auf den Arm"
-   ],
-   "alter": [
-    "0-1",
-    "1-3",
-    "3-6",
-    "6-10"
-   ],
-   "bereiche": [
-    "grenzen",
-    "gefuehle",
-    "eltern"
-   ],
-   "kurz": "Das Bedürfnis ist das, was ein Kind braucht, etwa Nähe, und der Wunsch die konkrete Vorstellung, wie es erfüllt werden soll, etwa auf dem Arm statt in der Trage. Wer glaubt, hinter jedem Verhalten stecke ein Bedürfnis, erfüllt schnell jeden Wunsch, und Kinder lernen dann schlechter, Frust auszuhalten. Weint ein Kind wegen eines nicht erfüllten Wunsches, heißt das nicht, dass ihr unfeinfühlig seid.",
-   "tipps": [
-    "Fragt euch, ob das eigentliche Bedürfnis, zum Beispiel Nähe oder Hunger, auch auf einem anderen Weg erfüllt werden kann als auf dem, den sich das Kind wünscht, etwa Hunger mit einem Brot statt mit einem Keks.",
-    "Protestiert euer Baby kurz, weil es in die Trage statt auf den Arm kommt, dürft ihr es trotzdem tragen und liebevoll begleiten, bis es sich beruhigt.",
-    "Schreit das Kind in der Trage länger oder wirkt es schmerzerfüllt, lasst das ärztlich abklären und holt euch gegebenenfalls eine Trageberatung.",
-    "Versucht nicht, für jedes Verhalten ein Bedürfnis zu konstruieren, und nutzt es nicht als Entschuldigung für alles.",
-    "Fragt euch lieber, aus welchen Beweggründen ihr selbst gerade handelt, als ständig die Bedürfnisse eures Kindes zu analysieren.",
-    "Probiert bei einem vermuteten Bedürfnis mehrere Strategien aus und schreibt sie ruhig auf; stellt sich eure Vermutung als falsch heraus, ist das normal.",
-    "Lest eine Bedürfnisliste durch, um zu sehen, was bei euch oder dem Kind gerade fehlen könnte. Setzt euch dabei nicht unter Druck, jedes Bedürfnis sofort erfüllen zu müssen."
-   ],
-   "sichtweisen": [
-    {
-     "podcast": "mutti",
-     "text": "Beide Hosts sehen bedürfnisorientierte Erziehung inzwischen kritisch und sagen, dass sie früher selbst Wünsche mit Bedürfnissen verwechselt haben. Die Umstellung war für ihre Kinder anfangs mit viel Frust verbunden, danach sei der Alltag deutlich ruhiger geworden. Sie erklären, es gebe keine einheitliche Definition von Bedürfnissen: Sie fanden über zehn Modelle, die meist philosophisch entstanden und kaum empirisch belegt seien. Als besser untersucht nennen sie nur die Selbstbestimmungstheorie mit drei Grundbedürfnissen. Was als Bedürfnis gilt, hänge von Kultur und Umständen ab. Ständiges Analysieren sei verkopft und koste Energie, und viele Entscheidungen und Gewohnheiten liefen ohnehin automatisch ab, etwa Nörgeln beim Aufbrechen. Einig sind sie sich nicht ganz: Ein Host findet einzelne Modelle brauchbar und das Konzept schlüssig, die andere stellt stärker in Frage, ob es Bedürfnisse in dieser Form überhaupt gibt. Beide betonen, dass ihre Kritik nicht bedeutet, autoritär oder gewaltvoll zu erziehen. Eltern könnten gute Voraussetzungen schaffen, seien aber nicht allein dafür verantwortlich, ob ihr Kind glücklich wird."
-    },
-    {
-     "podcast": "wunschkind",
-     "text": "Danielle Graf und Katja Seide sind hier eher auf der Seite der Entlastung: Mit ihren Gästen betonen sie, dass Eltern Bedürfnisse nicht sofort sicher erkennen müssen, sondern raten und ausprobieren dürfen. Eine Gästin erklärt das Bedürfnis als das, was Menschen grundsätzlich brauchen, den Wunsch als eine mögliche Strategie dafür. Das entspricht der Unterscheidung im mutti-Podcast, der den Begriff selbst kritischer sieht und Bedürfnismodelle anzweifelt. Eine andere Gästin sagt, wer das Bedürfnis hinter dem Wunsch erkennt, könne einschätzen, ob es jetzt oder später erfüllt werden muss. Ausdrücklich warnen die Hosts und ihre Gäste davor, dass das Wissen um Bedürfnisse zu Druck führt, alles sofort erfüllen zu müssen."
-    }
-   ],
-   "quellen": [
-    {
-     "podcast": "mutti",
-     "nr": 7,
-     "titel": "Wunsch oder Bedürfnis? So können Eltern unterscheiden!",
-     "datum": "2024-12-17",
-     "minute": "02:21",
-     "thema": "Warum Eltern Wünsche und Bedürfnisse verwechseln"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 7,
-     "titel": "Wunsch oder Bedürfnis? So können Eltern unterscheiden!",
-     "datum": "2024-12-17",
-     "minute": "28:03",
-     "thema": "Was ist ein Wunsch, was eine Strategie?"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 7,
-     "titel": "Wunsch oder Bedürfnis? So können Eltern unterscheiden!",
-     "datum": "2024-12-17",
-     "minute": "32:08",
-     "thema": "Beispiel Babytrage"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 7,
-     "titel": "Wunsch oder Bedürfnis? So können Eltern unterscheiden!",
-     "datum": "2024-12-17",
-     "minute": "15:09",
-     "thema": "Bedürfnismodelle im Vergleich"
-    },
-    {
-     "podcast": "wunschkind",
-     "nr": 234,
-     "titel": "Zwischen Nein und Nähe: Wie wir in stressigen Momenten mit unseren Kindern verbunden bleiben",
-     "datum": "2026-05-05",
-     "minute": "06:03",
-     "thema": "Bedürfnis versus Wunsch"
-    },
-    {
-     "podcast": "wunschkind",
-     "nr": 121,
-     "titel": "Kinder verstehen statt bestrafen - mit Julia Scharnowski",
-     "datum": "2023-09-05",
-     "minute": "17:37",
-     "thema": "Wunsch und Bedürfnis unterscheiden, auch am Morgen"
-    }
-   ],
-   "verwandt": [
-    "beduerfnisorientierte-erziehung",
-    "frustrationstoleranz",
-    "grenzen-setzen",
-    "erziehungsstile",
-    "morgenroutine",
-    "beduerfnisse-erkennen"
-   ],
-   "medizinisch": false,
-   "einleitung": "Kinder äußern Wünsche oft lautstark, und Eltern fragen sich, ob dahinter ein echtes Bedürfnis steckt, das sie erfüllen müssen. Wird jeder Wunsch erfüllt, entsteht schnell Überforderung, wird er verweigert, plagt viele das schlechte Gewissen."
   },
   {
    "id": "wutanfaelle",
