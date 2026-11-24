@@ -45,8 +45,11 @@ window.WISSEN = {
   "kita": "Kita & Schule",
   "medien": "Medien",
   "sauberkeit": "Sauberkeit",
-  "grenzen": "Grenzen",
-  "alltag": "Alltag & Gewohnheiten",
+  "grenzen": "Erziehung & Grenzen",
+  "routinen": "Routinen & Haushalt",
+  "familie": "Familie & Beziehungen",
+  "spielen": "Spielen & Lernen",
+  "gesundheit": "Gesundheit & Sicherheit",
   "baby": "Baby & Stillen",
   "entwicklung": "Entwicklung",
   "eltern": "Eltern-Selbstfürsorge"
@@ -427,9 +430,9 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "spielen",
     "gefuehle",
-    "entwicklung",
-    "alltag"
+    "entwicklung"
    ],
    "kurz": "Abenteuer ist laut Kathy Weber ein eigenes Bedürfnis, eng verbunden mit Autonomie und Sicherheit. Jedes Kind erlebt es anders: Manche suchen Nervenkitzel, andere brauchen Orientierung und Bekanntes. Eltern gestalten das Abenteuer so, dass es für ihr Kind machbar ist.",
    "tipps": [
@@ -875,8 +878,8 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "gesundheit",
     "gefuehle",
-    "alltag",
     "entwicklung"
    ],
    "kurz": "Meist ist nicht der Pieks das Schlimme, sondern die Angst davor, und Hinauszögern verlängert sie nur. Hilfreich sind eine ehrliche Ankündigung des Termins, Rollenspiele zum Üben und für wichtige Medizin ein Plan A, B und C; Kathy Weber (gfk) rät zusätzlich, die Angst mitfühlend zu begleiten und das Bedürfnis dahinter zu suchen, etwa Orientierung. Festhalten beim Impfen gilt in den Podcasts als vertretbar, wenn euch die Impfung wichtig ist und das Kind gut vorbereitet wurde; das sind Erfahrungen, kein ärztlicher Rat.",
@@ -1016,7 +1019,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "routinen",
     "grenzen",
     "gefuehle"
    ],
@@ -1158,7 +1161,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "routinen",
     "grenzen",
     "entwicklung"
    ],
@@ -1290,7 +1293,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "routinen",
     "entwicklung"
    ],
    "kurz": "Viele Kinderzimmer sind überfüllt, deshalb ist weniger Besitz sinnvoll: Das erleichtert das Aufräumen und die Wertschätzung für einzelne Dinge. Als Hilfe eignet sich eine Wichtelchen-Geschichte, bei der lange ungenutztes Spielzeug in eine durchsichtige Kiste wandert und später weitergegeben wird. Sie soll eine Geschichte bleiben und kein Druckmittel sein.",
@@ -1471,6 +1474,7 @@ window.WISSEN = {
     "0-1"
    ],
    "bereiche": [
+    "gesundheit",
     "baby",
     "essen"
    ],
@@ -1705,9 +1709,9 @@ window.WISSEN = {
     "1-3"
    ],
    "bereiche": [
+    "gesundheit",
     "baby",
-    "entwicklung",
-    "alltag"
+    "entwicklung"
    ],
    "kurz": "Daniel Graf und Katja Seide raten deutlich von Gehfrei, Babywalker und Türhopser ab: Laut den Hosts fördern sie das Laufenlernen nicht, können die Entwicklung belasten und sind unfallträchtig. Babys sollten sich auf ihrem eigenen Weg hinsetzen, hochziehen und laufen lernen; auch langes Liegen in der Babyschale und Laufen an der Hand sehen die Hosts kritisch. Bei der übrigen Ausstattung gilt: erst ausprobieren, gebraucht kaufen oder mieten.",
    "tipps": [
@@ -1913,6 +1917,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "gesundheit",
     "baby",
     "essen",
     "entwicklung"
@@ -2169,7 +2174,6 @@ window.WISSEN = {
    ],
    "bereiche": [
     "gefuehle",
-    "alltag",
     "eltern"
    ],
    "kurz": "Nach der GfK haben alle Menschen dieselben Bedürfnisse, nur die Rangfolge ist je nach Situation verschieden. Kathy Weber erklärt: Eltern sind für ihre eigenen Bedürfnisse zuständig und dafür, die ihrer Kinder herauszufinden. Wer ein Verhalten als Strategie für ein Bedürfnis liest, versteht oft besser, was los ist.",
@@ -2440,7 +2444,6 @@ window.WISSEN = {
    ],
    "bereiche": [
     "grenzen",
-    "alltag",
     "essen"
    ],
    "kurz": "Belohnungssysteme sind laut den Hosts von mutti nicht pauschal schlecht. Sie helfen vor allem dabei, Gewohnheiten aufzubauen oder festgefahrene Muster zu durchbrechen, sollten aber nicht für Dinge eingesetzt werden, die das Kind ohnehin gern macht. Nicola Schmidt lehnt Belohnungen fürs Mithelfen im Haushalt ab, weil dort die Zugehörigkeit zählt, und Kathy Weber (gfk) verzichtet auf Belohnung und Bestrafung ganz und setzt auf Wertschätzung. In den Gesprächen von Daniel Graf und Katja Seide gelten Pläne allenfalls als Hilfe, Erfolge sichtbar zu machen, und sollen Kommunikation und Beziehung nicht ersetzen.",
@@ -2589,7 +2592,6 @@ window.WISSEN = {
    ],
    "bereiche": [
     "medien",
-    "alltag",
     "eltern"
    ],
    "kurz": "Ganz selbstbestimmter Medienkonsum bei Kindern gilt den Hosts von mutti inzwischen als Fehler, deshalb sollten Eltern Grenzen setzen; Nicola Schmidt nennt als Faustregel: je jünger das Kind, desto weniger Bildschirmzeit. Kathy Weber (gfk) lehnt pauschale Minutenangaben ab, Eltern legen den Rahmen fest und begleiten den Protest, und auch Daniel Graf und Katja Seide mit ihren Gästen schauen eher auf Inhalt, Alter und einen klaren Ausstiegspunkt als auf die Uhr. Kritisch zu sehen sind überreizende, konfliktlastige Kinderserien, und auch die eigene Bildschirmzeit der Eltern ist ein Zeitfresser.",
@@ -2724,8 +2726,7 @@ window.WISSEN = {
    ],
    "bereiche": [
     "grenzen",
-    "eltern",
-    "alltag"
+    "eltern"
    ],
    "kurz": "Auf die Frage, ob man zu streng ist, gibt es keine eindeutige Antwort, nur Indizien. Strenge bei bestehender Wärme ist nicht das Hauptproblem. Kritisch wird es, wenn die liebevolle Haltung wegfällt, das Kind zu stark kontrolliert wird, seine Meinung keine Rolle spielt oder die Anforderungen nicht zum Alter passen.",
    "tipps": [
@@ -2971,7 +2972,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "routinen",
     "eltern",
     "entwicklung"
    ],
@@ -3110,8 +3111,8 @@ window.WISSEN = {
     "3-6"
    ],
    "bereiche": [
+    "gesundheit",
     "baby",
-    "alltag",
     "entwicklung"
    ],
    "kurz": "Laut einer Expertin (Kindersitz-Fachhändlerin) nützt der Testsieger nichts, wenn er nicht zu Kind und Auto passt; deshalb sollte man Sitze probesitzen und probeweise einbauen. Die größte Fehlerquelle sei die falsche Installation, gefolgt von zu lockeren oder zu hoch eingestellten Gurten. Später empfiehlt sie, so lange wie möglich rückwärts zu fahren und auf mitwachsende Allroundsitze zu verzichten.",
@@ -3908,8 +3909,8 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "eltern",
-    "alltag"
+    "familie",
+    "eltern"
    ],
    "kurz": "Ein Dorf ist laut Nicola Schmidt eine Gemeinschaft, in der man Verantwortung übernimmt, gibt und nimmt, und zwar in dieser Reihenfolge. Wer erschöpft ist, braucht oft zuerst etwas anderes, etwa Entlastung im Haushalt, Betreuung oder Schlaf; der Weg ins Dorf führt darum zuerst zu euch selbst. Die Hosts von „Das gewünschteste Wunschkind“ ergänzen, dass Isolation ein strukturelles Problem ist und es hilft, konkret um Hilfe zu bitten.",
    "tipps": [
@@ -4033,6 +4034,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "familie",
     "eltern",
     "baby"
    ],
@@ -4167,8 +4169,8 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "eltern",
-    "alltag"
+    "familie",
+    "eltern"
    ],
    "kurz": "Ob Eltern ein Team sind, entscheidet vor allem die Haltung: Beide fühlen sich verantwortlich und blicken wohlwollend auf den anderen. Wichtiger als eine 50-50-Aufteilung ist, dass nicht einer die Verantwortung trägt, während der andere nur hilft. Alle Podcasts raten, bei Ärger zuerst bei sich selbst zu schauen und dann ruhig zu sprechen, statt den Partner zu belehren. Kathy Weber (gfk) ergänzt, dass jeder seinen eigenen Weg gehen darf und der Partner Nein sagen kann, außer wenn ein Kind geschützt werden muss.",
    "tipps": [
@@ -4312,9 +4314,9 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "familie",
     "eltern",
-    "gefuehle",
-    "alltag"
+    "gefuehle"
    ],
    "kurz": "Als größte Hürden im Familienalltag nennen Eltern mit eigener ADHS-Diagnose die Emotionsregulation, die Impulskontrolle und ein überlastetes Nervensystem. Aus ihrer Erfahrung helfen Diagnostik, Bewegung, weniger Reize, einfache Ernährung, kleine Gewohnheiten und realistische Planung. Medikamente gelten ihnen als Hilfsmittel und nicht als Schande; die Aussagen stammen aus eigener Erfahrung, nicht von Fachleuten.",
    "tipps": [
@@ -4577,7 +4579,6 @@ window.WISSEN = {
    ],
    "bereiche": [
     "eltern",
-    "alltag",
     "schlaf"
    ],
    "kurz": "Elternsein ist ein Marathon: Wer dauerhaft über seinen Kräften lebt, steuert auf einen Zusammenbruch zu. Beide Podcasts raten deshalb, für sich zu sorgen (Schlaf, Essen, Pausen), den Alltag und die Termine zu vereinfachen und Grenzen ehrlich anzusagen. In einer akuten Krise reicht „ausreichend“, nichts muss perfekt sein.",
@@ -4716,7 +4717,7 @@ window.WISSEN = {
     "3-6"
    ],
    "bereiche": [
-    "alltag",
+    "gesundheit",
     "baby",
     "entwicklung"
    ],
@@ -5309,8 +5310,8 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "familie",
     "geschwister",
-    "alltag",
     "eltern"
    ],
    "kurz": "Exklusivzeit ist Zeit, in der ein Kind die volle Aufmerksamkeit eines Erwachsenen hat. Sie muss kein Ausflug sein, und Alltagsmomente reichen. Die Hosts von Mutti halten eine halbe Stunde ungestörtes Spielen für realitätsfern; Daniel Graf und Katja Seide empfehlen sie ausdrücklich, lassen aber auch zehn Minuten oder einmal pro Woche gelten, solange das Kind merkt, dass die Zeit nur ihm gehört.",
@@ -5408,8 +5409,8 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "familie",
     "eltern",
-    "alltag",
     "kita"
    ],
    "kurz": "In mehreren Folgen sprechen Daniel Graf und Katja Seide mit Gästen darüber, dass Erschöpfung und Streit in Familien oft strukturelle Ursachen haben: wenig Rücksicht im Alltag, schwer vereinbare Arbeitszeiten, Steuer- und Rentenregeln, ungleiche Chancen für Kinder. Die Gäste fordern politische Veränderungen und werben für Vernetzung unter Eltern. Zahlen und Rechtsangaben sind Aussagen der Gäste, keine geprüften Fakten; bei Steuer-, Renten- oder Arbeitsrechtsfragen holt euch fachlichen Rat.",
@@ -5655,7 +5656,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "familie",
     "gefuehle",
     "grenzen"
    ],
@@ -5932,6 +5933,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "gesundheit",
     "baby",
     "eltern",
     "entwicklung"
@@ -6176,7 +6178,6 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
     "grenzen",
     "eltern"
    ],
@@ -6302,7 +6303,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "routinen",
     "gefuehle",
     "eltern"
    ],
@@ -6719,9 +6720,9 @@ window.WISSEN = {
     "3-6"
    ],
    "bereiche": [
+    "gesundheit",
     "entwicklung",
-    "baby",
-    "alltag"
+    "baby"
    ],
    "kurz": "Zwei Gäste des Podcasts betrachten Kindergesundheit aus unterschiedlicher Richtung: Eine Gästin sieht Gesundheit als Zusammenspiel von Körper, Psyche und Beziehung, das zu Hause beginnt. Ein anderer Gast bewertet Osteopathie bei Babys und Kindern kritisch, weil er keinen belegten Nutzen sieht. Bei Sorgen ist laut ihm die Kinderärztin oder der Kinderarzt die erste Anlaufstelle; alles hier sind Aussagen der Gäste, kein medizinischer Rat.",
    "tipps": [
@@ -7099,8 +7100,7 @@ window.WISSEN = {
    ],
    "bereiche": [
     "gefuehle",
-    "entwicklung",
-    "alltag"
+    "entwicklung"
    ],
    "kurz": "Laut den Gästen von Daniel Graf und Katja Seide sind gefühlsstarke, hochsensible und wilde Kinder keine Erziehungsfehler, sondern haben ein angeborenes Temperament, das sich nicht wegerziehen lässt. Wie gut es ihnen später damit geht, hängt von Verständnis, Bindung und Begleitung ab. Die Hosts betonen, dass diese Begriffe keine wissenschaftlich gesicherten Kategorien sind, sondern vielen Eltern beim Verstehen helfen. Bei Unsicherheit sollte eine Fachperson dazugeholt werden.",
    "tipps": [
@@ -7211,7 +7211,6 @@ window.WISSEN = {
    ],
    "bereiche": [
     "geschwister",
-    "alltag",
     "gefuehle"
    ],
    "kurz": "Kathy Weber trennt Gerechtigkeit von Gleichheit: Kinder müssen nicht gleich, sondern nach dem behandelt werden, was jedes gerade braucht. Gerechtigkeit zählt für sie zum Bedürfnis nach Sicherheit, und wenn Eltern Führung übernehmen und eine nachvollziehbare Reihenfolge herstellen, beruhigen sich Kinder eher. Frust darf dabei sein und wird begleitet.",
@@ -7349,7 +7348,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "spielen",
     "grenzen",
     "gefuehle"
    ],
@@ -7484,9 +7483,9 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "familie",
     "entwicklung",
-    "gefuehle",
-    "alltag"
+    "gefuehle"
    ],
    "kurz": "Die Gäste im Podcast raten, das Thema ruhig anzugehen: Kinder nach Namen und Pronomen fragen, nicht auf wenige Farben, Spielzeuge und Rollen begrenzen und früh ärztliche und schulische Unterstützung suchen, wenn ein Kind sich nicht im zugewiesenen Geschlecht wiederfindet. Sie sagen auch, geschlechtsoffene Erziehung verwirre Kinder nicht und mache sie nicht trans. Medizinische Angaben sind Aussagen der Gäste und ersetzen keine ärztliche Beratung.",
    "tipps": [
@@ -7723,8 +7722,7 @@ window.WISSEN = {
    ],
    "bereiche": [
     "geschwister",
-    "gefuehle",
-    "alltag"
+    "gefuehle"
    ],
    "kurz": "Kathy Weber sieht Wettkampf bei Kindern nicht negativ: Er erfülle vor allem das Bedürfnis nach Autonomie und helfe Kindern, groß und stark zu werden. Eltern sollen das Kind im Erstsein-Wollen unterstützen und das andere bei seinem Frust begleiten, statt zu maßregeln. Frust gehört laut ihr dazu.",
    "tipps": [
@@ -7950,7 +7948,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "routinen",
     "gefuehle",
     "entwicklung"
    ],
@@ -8037,8 +8035,8 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "gefuehle",
-    "alltag"
+    "familie",
+    "gefuehle"
    ],
    "kurz": "Wutanfälle nach einem Wechsel zum anderen Elternteil halten die Hosts von mutti für normal: Das Kind muss den Wechsel und die Trennung verarbeiten und kommt oft aus viel Action und kindzentrierter Zeit. Kathy Weber (gfk) stellt Sicherheit, Struktur und Orientierung in den Vordergrund und sieht ein 50-50-Wechselmodell direkt nach der Trennung kritisch; in wunschkind sagt eine Gästin, das passende Modell hänge von Alter, Bedürfnissen des Kindes und der Elternkommunikation ab. Das sind Einschätzungen der Hosts und Gäste und keine Rechtsberatung; bei Fragen zu Sorgerecht oder Unterhalt solltet ihr juristischen Rat einholen.",
    "tipps": [
@@ -8291,7 +8289,6 @@ window.WISSEN = {
    ],
    "bereiche": [
     "grenzen",
-    "alltag",
     "gefuehle"
    ],
    "kurz": "Klare Grenzen geben Kindern Orientierung: Eltern entscheiden, was für die Familie nötig ist, und bleiben ruhig und zugewandt dabei, auch wenn das Kind frustriert ist. Beide Podcasts verstehen Orientierung als Bedürfnis der Kinder und nicht als Gegensatz zu Zuwendung; Nicola Schmidt ergänzt, dass Regeln sinnvoll und dem Alter angemessen sein sollten. Sagt nur Nein, wenn ihr es meint.",
@@ -8435,8 +8432,8 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "familie",
     "eltern",
-    "alltag",
     "entwicklung"
    ],
    "kurz": "Kinder profitieren von mehreren Bezugspersonen, und Unterschiede zwischen Eltern und Großeltern sind normal und sogar wichtig. Kleine Differenzen sind kein Grund, Großeltern auszuschließen. Wichtig sind Zeit, Vertrauen und wertschätzende Gespräche über Erwartungen. Im Podcast „Das gewünschteste Wunschkind“ kommt dazu: Hinter Kritik steckt oft Sorge, und vor einem Kontaktabbruch gibt es Zwischenlösungen; bei rechtlichen Fragen wie dem Umgangsrecht sollte juristischer Rat eingeholt werden.",
@@ -8568,6 +8565,7 @@ window.WISSEN = {
     "3-6"
    ],
    "bereiche": [
+    "familie",
     "geschwister",
     "eltern",
     "gefuehle"
@@ -8815,7 +8813,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "grenzen",
     "gefuehle",
     "eltern"
    ],
@@ -9052,6 +9050,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "familie",
     "eltern",
     "gefuehle"
    ],
@@ -9374,9 +9373,9 @@ window.WISSEN = {
     "3-6"
    ],
    "bereiche": [
+    "familie",
     "eltern",
-    "baby",
-    "alltag"
+    "baby"
    ],
    "kurz": "Mit Intensive Parenting ist ein kindzentrierter Alltag gemeint, in dem Eltern Förderung, Spiel und Exklusivzeit als Pflicht erleben und dabei ausbrennen. Stattdessen empfiehlt sich ein familienorientierter Ansatz: Das Kind bekommt, was es braucht, steht aber nicht ständig im Mittelpunkt, und der Alltag richtet sich danach, was für die ganze Familie gut ist.",
    "tipps": [
@@ -9482,7 +9481,6 @@ window.WISSEN = {
    ],
    "bereiche": [
     "baby",
-    "alltag",
     "grenzen"
    ],
    "kurz": "Schon Babys haben einen eigenen Willen, und bei Krabbelkindern ist der Forscherdrang laut Nicola Schmidt stärker als jedes Nein. Ihre beste Empfehlung ist eine Ja-Umgebung: Räumt weg, was nicht angefasst werden soll, und gebt eurem Kind stattdessen Dinge zum Ausräumen.",
@@ -9566,9 +9564,9 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "familie",
     "entwicklung",
-    "gefuehle",
-    "alltag"
+    "gefuehle"
    ],
    "kurz": "Mädchen werden früh zu Rücksicht und Kümmern erzogen, Jungen eher dazu, dass für sie gesorgt wird. Deshalb solltet ihr Jungen genauso Empathie beibringen und sie früh in Haushalt und Verantwortung einbinden. Wichtiger als das Geschlecht des Vorbilds ist, dass es kein schlechtes Vorbild gibt und dass Jungen Verantwortung wirklich übernehmen dürfen.",
    "tipps": [
@@ -9811,8 +9809,7 @@ window.WISSEN = {
    ],
    "bereiche": [
     "geschwister",
-    "baby",
-    "alltag"
+    "baby"
    ],
    "kurz": "Kinder lassen sich nur begrenzt auf ein Geschwisterchen vorbereiten, ähnlich wie Eltern selbst. Hilfreich ist laut den Hosts und Nicola Schmidt (artgerecht), früh und ehrlich zu erklären, was passiert, und auch zu sagen, dass ein Baby viel Arbeit bedeutet; die Hosts geben dem großen Kind zusätzlich eine Rolle und finden die Rede von einer Geschwisterkrise übertrieben.",
    "tipps": [
@@ -9962,7 +9959,6 @@ window.WISSEN = {
    ],
    "bereiche": [
     "schlaf",
-    "alltag",
     "eltern"
    ],
    "kurz": "Das Einschlafen gelingt leichter, wenn ihr selbst entspannt seid und weniger Druck auf die Uhrzeit legt. Dauert die Begleitung länger als eine halbe Stunde, ist das Kind laut mutti schon übermüdet oder noch nicht müde; Nicola Schmidt sieht abendliches Aufdrehen meist als Übermüdung, manchmal aber auch als Hinweis, dass das Kind noch nicht müde ist oder Kontakt braucht. Ein festes Ritual ist nicht nötig.",
@@ -10094,7 +10090,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "spielen",
     "gefuehle",
     "entwicklung"
    ],
@@ -10190,7 +10186,6 @@ window.WISSEN = {
    ],
    "bereiche": [
     "grenzen",
-    "alltag",
     "entwicklung"
    ],
    "kurz": "Kinder wollen grundsätzlich gern kooperieren, doch Stress, Hunger, Müdigkeit, Impulse oder ein Gehirn, das Anweisungen noch nicht leicht umsetzen kann, stehen dem oft im Weg. Hosts, Nicola Schmidt (artgerecht) und Kathy Weber (gfk) raten übereinstimmend zu klaren Ansagen, weniger Reden und Kontakt vor Anweisung; Nicola Schmidt ergänzt, dass viele Neins Kinder dichtmachen lassen und bei Schulkindern Verhandeln statt Druck hilft. Kathy Weber liest Nichthören nicht als Ungehorsam, sondern als Zeichen, dass das Kind mehr Gesehenwerden und Führung braucht. Herbert Renz-Polster hält den Satz, Kinder kooperierten immer, dagegen für einen Mythos, der Eltern unter Druck setzt.",
@@ -10326,8 +10321,7 @@ window.WISSEN = {
    ],
    "bereiche": [
     "grenzen",
-    "gefuehle",
-    "alltag"
+    "gefuehle"
    ],
    "kurz": "Laut Kathy Weber gehört es zu jeder gesunden Kindheit, dass Kinder Dinge mitnehmen, die anderen gehören. Sie sieht darin eine Strategie, mit der das Kind ein Bedürfnis erfüllen will, und reagiert ohne Strafe und Verurteilung: zuhören, Empathie geben, das Bedürfnis finden und gemeinsam eine andere Lösung suchen.",
    "tipps": [
@@ -10634,7 +10628,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "gesundheit",
     "grenzen"
    ],
    "kurz": "Bei einem Siebenjährigen, der seine herausnehmbare Zahnspange nicht trägt, ist eine Konsequenz wie der Entzug von Süßigkeiten nicht zu empfehlen, weil der Zusammenhang fehlt und es willkürlich wirkt. Besser sind zuerst Erklären, Nachfragen, positive Verstärkung und das Gespräch mit dem Kieferorthopäden. Das ist eine Einschätzung, kein ärztlicher Rat.",
@@ -10709,7 +10703,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "spielen",
     "entwicklung",
     "gefuehle"
    ],
@@ -10772,8 +10766,8 @@ window.WISSEN = {
     "3-6"
    ],
    "bereiche": [
-    "gefuehle",
-    "alltag"
+    "familie",
+    "gefuehle"
    ],
    "kurz": "Kathy Weber sieht die Verweigerung des Abschieds als Schutzstrategie, weil Abschiede für Kinder schwer sind. Das Kind ist nicht für die Gefühle der Oma verantwortlich. Eltern können als Schutzschild dienen und selbst danken und Tschüss sagen.",
    "tipps": [
@@ -10993,7 +10987,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "grenzen",
     "entwicklung"
    ],
    "kurz": "Starkes Lob kann laut den Hosts wie eine Belohnung wirken und die Freude an einer Tätigkeit verdrängen; sie raten, den Prozess zu loben und ehrlich zu bleiben, ehrliche Freude ist erlaubt. Nicola Schmidt (artgerecht) geht weiter: Auch positive Bewertungen sind für sie Urteile von außen, stattdessen empfiehlt sie, zu beobachten, zu benennen und das Kind im Kontakt zu begleiten.",
@@ -11135,9 +11129,9 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "gesundheit",
     "entwicklung",
-    "grenzen",
-    "alltag"
+    "grenzen"
    ],
    "kurz": "Laut den Gästen im wunschkind-Podcast geschehen die meisten Übergriffe im nahen Umfeld, nicht durch Fremde. Nicola Schmidt (artgerecht) sagt, dass sich Missbrauch nicht sicher verhindern lässt und Eltern keine Schuld trifft, wenn trotz aller Vorsicht etwas passiert. Schützen könnt ihr aber viel: durch ein starkes Selbstbewusstsein eures Kindes und dadurch, dass es im Alltag über seinen eigenen Körper bestimmen darf, zum Beispiel keine Küsschen geben, nicht auf den Schoß und keine Hand reichen muss.",
    "tipps": [
@@ -11275,8 +11269,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "gefuehle",
-    "alltag"
+    "gefuehle"
    ],
    "kurz": "Bei Angst arbeitet ihr an der Angst des Kindes, nicht an der Situation selbst. Rollenspiele, Geschichten und Fantasie helfen, die Situation vorher im Kopf durchzuspielen, sodass das Kind sich ihr eher stellt, auch wenn noch Angst da ist. Von einem Dreijährigen dürft ihr nicht erwarten, dass es die Angst allein überwindet. Wenn die Angst den Alltag deutlich einschränkt, sollte ärztlicher oder fachlicher Rat eingeholt werden.",
    "tipps": [
@@ -11406,7 +11399,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "routinen",
     "entwicklung",
     "grenzen"
    ],
@@ -11808,9 +11801,9 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "spielen",
     "entwicklung",
-    "gefuehle",
-    "alltag"
+    "gefuehle"
    ],
    "kurz": "Kathy Weber sagt, kleine Kinder seien erst einmal egoistisch und unsozial. Teilen und Rücksicht lernen sie nur, wenn sie auf Augenhöhe in ihrem Entwicklungsstand gesehen werden, und wann sie dazu reif sind, bestimme die biologische Uhr. Zwang führe laut ihr dazu, dass Kinder nur nach außen sozial funktionieren, rebellieren oder sich zurückziehen.",
    "tipps": [
@@ -11928,9 +11921,8 @@ window.WISSEN = {
     "3-6"
    ],
    "bereiche": [
-    "entwicklung",
     "grenzen",
-    "alltag"
+    "entwicklung"
    ],
    "kurz": "Kleine Kinder wissen oft, was sie nicht sollen, können ihren Forscherimpuls aber nicht unterdrücken. Nicola Schmidt erklärt das Grinsen als Zeichen von sozialem Druck, nicht von Bosheit; hilfreich ist, das Kind zu stoppen, das Bedürfnis anzuerkennen und eine passende Alternative anzubieten.",
    "tipps": [
@@ -12040,7 +12032,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "spielen",
     "entwicklung",
     "eltern"
    ],
@@ -12172,9 +12164,9 @@ window.WISSEN = {
     "3-6"
    ],
    "bereiche": [
+    "spielen",
     "gefuehle",
-    "grenzen",
-    "alltag"
+    "grenzen"
    ],
    "kurz": "Kathy Weber löst Spielplatzkonflikte ohne Zwang: Bei kleinen Kindern führen die Eltern und nehmen das Kind notfalls selbst heraus, bei älteren fragen sie, ob es bereit ist, und lassen auch ein Nein zu. Beide Kinder bekommen Empathie, und Gefühle wie Frust sind erlaubt. Sie lehnt Drohungen und Druck ab, greift aber bei Gefahr sofort ein.",
    "tipps": [
@@ -12392,8 +12384,8 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "entwicklung",
-    "alltag"
+    "spielen",
+    "entwicklung"
    ],
    "kurz": "Eine Gästin im Podcast sagt: Gestalten steckt in Kindern von klein auf, schon das Schmieren mit Brei. Statt Bastelsets nach Rezept bieten Eltern am besten freies Material, Zeit und Raum und lassen den Weg wichtiger sein als das Ergebnis. Sets und Malbücher sind nicht verboten, aber eine Frage des Einsatzes.",
    "tipps": [
@@ -12504,7 +12496,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "routinen",
     "baby",
     "medien"
    ],
@@ -12622,7 +12614,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "spielen",
     "medien",
     "entwicklung"
    ],
@@ -12706,9 +12698,8 @@ window.WISSEN = {
     "3-6"
    ],
    "bereiche": [
-    "alltag",
-    "entwicklung",
-    "grenzen"
+    "grenzen",
+    "entwicklung"
    ],
    "kurz": "Wie laut ein Kind ist, hängt von Temperament und Impulskontrolle ab. Bei Babys und kleinen Kleinkindern lässt sich dagegen wenig tun, aktives Üben geht nach den Erfahrungen der Autoren eher ab drei bis vier Jahren. Am besten übt ihr in ruhigen Momenten und spielerisch und rechnet damit, dass es oft ein Jahr dauert.",
    "tipps": [
@@ -12796,8 +12787,8 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "routinen",
     "eltern",
-    "alltag",
     "gefuehle"
    ],
    "kurz": "Leichtigkeit ist laut Kathy Weber ein Bedürfnis, für das Eltern selbst zuständig sind und nicht ihre Kinder. Sie beginnt mit der Entscheidung, es sich leicht zu machen, mit Prioritäten statt Müssen und mit kleinen Dingen, die Freude bringen. Je mehr Leichtigkeit bei den Eltern erfüllt ist, desto eher machen Kinder nach ihrer Erfahrung von sich aus mit.",
@@ -12910,9 +12901,9 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "spielen",
     "entwicklung",
-    "gefuehle",
-    "alltag"
+    "gefuehle"
    ],
    "kurz": "Laut den Gästen der Folgen haben nicht wenige Kinder Mühe mit Lesen, Rechtschreiben oder Rechnen; Eltern spüren das oft früh, etwa wenn Üben nicht hilft und am nächsten Tag alles weg ist. Die Hosts und Gäste raten, genau hinzusehen, früh Hilfe zu suchen und das Kind emotional zu stützen, statt immer mehr zu üben. Das Kind ist dabei nie faul oder dumm, es braucht andere Wege und mehr Zeit. Bei Verdacht gehört die Abklärung in fachliche Hände (ärztlich, psychologisch oder förderdiagnostisch).",
    "tipps": [
@@ -13026,8 +13017,7 @@ window.WISSEN = {
    ],
    "bereiche": [
     "grenzen",
-    "eltern",
-    "alltag"
+    "eltern"
    ],
    "kurz": "Kathy Weber erklärt, dass Kinder Führung brauchen: Eltern sind die Erfahrenen und tragen die Verantwortung dafür, dass der Alltag gelingt. Sie bezeichnet das als fürsorglich eingesetzte Macht und grenzt es von autoritärer Erziehung (Machtmissbrauch) und antiautoritärer Erziehung (Verantwortung beim Kind) ab. Ihre Faustregel: Eltern entscheiden das Was, das Kind darf beim Wie mitgestalten.",
    "tipps": [
@@ -13154,9 +13144,9 @@ window.WISSEN = {
     "3-6"
    ],
    "bereiche": [
+    "familie",
     "gefuehle",
-    "eltern",
-    "alltag"
+    "eltern"
    ],
    "kurz": "Das Kind lehnt den anderen Elternteil meist nicht ab, sondern bevorzugt einfach die erste Wahl. Das Weinen ist Frustration, die ein Kind aushalten kann. Der andere Elternteil sollte deshalb dranbleiben und das Kind nicht beim ersten Weinen zurückgeben. Die Phase dauert, geht aber vorbei.",
    "tipps": [
@@ -13637,8 +13627,8 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "eltern",
-    "alltag"
+    "familie",
+    "eltern"
    ],
    "kurz": "Mütter zermürbt weniger die einzelne Aufgabe als das Gefühl, für alles allein verantwortlich zu sein. Eine gerechte Aufteilung auf dem Papier reicht nicht, wenn einer sich verantwortlich fühlt und der andere nur hilft. Nicola Schmidt ergänzt, dass Spannung oft entsteht, wenn Paare ohne gemeinsame Strategie vorbereiten oder improvisieren, und dass man bei langen To-do-Listen auf der eigenen Seite bleiben sollte.",
    "tipps": [
@@ -13772,8 +13762,8 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "gesundheit",
     "entwicklung",
-    "alltag",
     "kita"
    ],
    "kurz": "Laut einem Kinderneurologen im Podcast ist Migräne bei Kindern häufiger, als viele denken, und zeigt sich bei jüngeren eher mit Bauchschmerzen, Übelkeit und Erbrechen. Wiederkehrende, ähnlich ablaufende Beschwerden mit Ruhebedürfnis sind ein Hinweis. Lasst sie einmal fachärztlich abklären; die Angaben im Podcast sind seine Einschätzung und ersetzen keine ärztliche Beratung.",
@@ -13881,7 +13871,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "spielen",
     "eltern",
     "entwicklung",
     "kita"
@@ -14005,9 +13995,9 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "familie",
     "gefuehle",
-    "entwicklung",
-    "alltag"
+    "entwicklung"
    ],
    "kurz": "Laut den Gästen der Folge (Autor:innen eines Kinderbuchs zum Thema) werden Kinder nicht rassistisch geboren, sondern lernen aus Medien, Büchern und Alltag, wer als Norm gilt und wer abgewertet wird. Sie raten, früh, sachlich und immer wieder zu sprechen und zuerst die eigene Prägung zu betrachten. Betroffene Kinder sollen gestärkt werden, nicht betroffene Kinder verstehen und einen Auftrag bekommen, nicht nur danebenzustehen.",
    "tipps": [
@@ -14107,7 +14097,6 @@ window.WISSEN = {
    ],
    "bereiche": [
     "grenzen",
-    "alltag",
     "entwicklung"
    ],
    "kurz": "Mitbestimmung heißt laut den Gästen der Folgen, dass Kinder schon früh bei dem mitentscheiden dürfen, was sie selbst betrifft, etwa Hunger, Kleidung, Nähe oder Wickeln. Bei Gesundheit und Sicherheit entscheiden Eltern, im übrigen Alltag gibt es viel Spielraum. Ewiges Diskutieren und Erklären kann Kinder dagegen überfordern; die Gäste sehen hier einen schmalen Grat, der von Kind und Haltung der Eltern abhängt.",
@@ -14480,8 +14469,8 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "spielen",
     "entwicklung",
-    "alltag",
     "gefuehle"
    ],
    "kurz": "Laut einer Gästin von Daniel Graf und Katja Seide fördert Musik im Vorschulalter Gehör, Sprache, Konzentration, Motorik und soziale Fähigkeiten und hilft Kindern, Gefühle auszudrücken. Schräges Singen ist dabei besser als gar keins, denn es geht um Freude und nicht um Perfektion. CDs sind in Ordnung, ersetzen aber laut Katja Seide nicht das gemeinsame Singen.",
@@ -14584,7 +14573,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "spielen",
     "entwicklung",
     "eltern"
    ],
@@ -14840,7 +14829,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "spielen",
     "entwicklung",
     "gefuehle"
    ],
@@ -15074,7 +15063,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "familie",
     "gefuehle",
     "geschwister"
    ],
@@ -15438,7 +15427,6 @@ window.WISSEN = {
    ],
    "bereiche": [
     "grenzen",
-    "alltag",
     "eltern"
    ],
    "kurz": "Kinder brauchen einen verlässlichen Rahmen, der Orientierung und Sicherheit gibt; wer ihn neu einführt, muss den Frust des Kindes meist mehrmals aushalten, danach läuft vieles ohne Diskussion. Nicola Schmidt (artgerecht) stimmt zu, dass Regeln bestehen bleiben und konsequent sein sollen, lehnt aber Gewalt, Beschämung und Druck ab und rät, hinter dem Verhalten das Bedürfnis zu suchen und eine Alternative anzubieten.",
@@ -15574,7 +15562,6 @@ window.WISSEN = {
    ],
    "bereiche": [
     "gefuehle",
-    "alltag",
     "entwicklung"
    ],
    "kurz": "Das Nervensystem lässt sich wie ein Konto betrachten: Manches leert es, etwa Bildschirm, Lärm, viele Entscheidungen und Dauerprogramm, anderes füllt es wieder auf, etwa Schlaf, Bewegung, Wald, Ruhe und Routinen. Wer vorbeugen will, sorgt für Auffüllendes und dosiert die Reize. Das sind Einschätzungen, und wie viel ein Kind verträgt, ist individuell.",
@@ -15933,7 +15920,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "routinen",
     "gefuehle"
    ],
    "kurz": "Rituale werden oft unterschätzt: Gemeinsames Tun, Singen oder Sprechen stärkt nach einem Buch, das Eltern zitieren, die Verbindung in der Familie. Rituale können leisten, was Routinen leisten, etwa Sicherheit und Übergänge, oft aber mit mehr Gemeinschaft. Eine saubere Abgrenzung zur Routine fällt den Eltern selbst noch schwer.",
@@ -16208,7 +16195,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "routinen",
     "gefuehle",
     "entwicklung"
    ],
@@ -16293,8 +16280,8 @@ window.WISSEN = {
     "1-3"
    ],
    "bereiche": [
-    "eltern",
-    "alltag"
+    "familie",
+    "eltern"
    ],
    "kurz": "Laut Kathy Weber sind Arbeit und Zeit mit dem Kind zwei gültige Strategien, die verschiedene Bedürfnisse erfüllen. Das Hin- und Hergerissensein entsteht, wenn auf einer Seite zu wenig erfüllt wird. Sie rät zu einem Pendel, das sich in der Mitte einpendelt, statt zu Entweder-oder.",
    "tipps": [
@@ -16389,8 +16376,8 @@ window.WISSEN = {
     "0-1"
    ],
    "bereiche": [
-    "baby",
-    "alltag"
+    "gesundheit",
+    "baby"
    ],
    "kurz": "Viele Babys nehmen den Schnuller nicht von allein, deshalb müsst ihr es aktiv üben und es auch wirklich wollen. Er kann Eltern entlasten, wenn das Baby ein großes Nuckelbedürfnis hat, gilt aber als pragmatische Hilfe, nicht als Dauerlösung. Wann ihr ihn abgewöhnt, sehen die Hosts und ein Zahnarzt als Gast unterschiedlich; bei Zahn- und Stillfragen holt euch im Zweifel ärztlichen Rat.",
    "tipps": [
@@ -16568,6 +16555,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "spielen",
     "gefuehle",
     "kita",
     "entwicklung"
@@ -16679,9 +16667,9 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "spielen",
     "entwicklung",
     "gefuehle",
-    "alltag",
     "kita"
    ],
    "kurz": "Laut Daniel Graf, Katja Seide und ihren Gästen lernen Kinder vor allem dann gern, wenn sie Sinn, Selbstwirksamkeit und Zuwendung erleben, und weniger durch Druck, Noten oder Belohnung. Eltern können viel bewirken, indem sie Gefühle ernst nehmen, Anstrengung statt Ergebnis würdigen und bei anhaltender Belastung früh hinschauen.",
@@ -16785,6 +16773,7 @@ window.WISSEN = {
     "3-6"
    ],
    "bereiche": [
+    "spielen",
     "entwicklung",
     "kita"
    ],
@@ -16902,9 +16891,9 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "spielen",
     "entwicklung",
     "eltern",
-    "alltag",
     "kita"
    ],
    "kurz": "Die Schulvorbereitung beginnt nicht erst kurz vor der Einschulung, sondern in der ganzen Erziehung. Wichtiger als Schulstoff sind Selbstständigkeit, Verantwortung, Frustrationstoleranz, Impulskontrolle und soziale Kompetenz. Kathy Weber (gfk) ergänzt, dass die Eltern zuerst ihre eigenen Sorgen bei sich klären und dem Kind in diesem großen Übergang viel Orientierung, Nähe und Sicherheit geben sollten. Bei Hausaufgaben raten Nicola Schmidt (artgerecht) und Kathy Weber, mit dem Kind gemeinsam nach Lösungen zu suchen, statt Machtkämpfe zu führen.",
@@ -17170,9 +17159,9 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "familie",
     "eltern",
-    "gefuehle",
-    "alltag"
+    "gefuehle"
    ],
    "kurz": "In mehreren Folgen berichten betroffene Eltern von einer Krebserkrankung in der Familie und vom Leben mit einem schwerstkranken Kind. Gemeinsam ist ihnen: offen und kindgerecht sprechen, den Alltag auf das Wesentliche zusammenstreichen und früh Hilfe annehmen. Es sind persönliche Erfahrungen, keine allgemeingültigen Ratschläge und kein medizinischer oder rechtlicher Rat; Fragen zu Behandlung, Anträgen und Ansprüchen klärt mit Ärzten, Beratungsstellen oder Krankenkasse.",
    "tipps": [
@@ -17409,7 +17398,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "routinen",
     "entwicklung",
     "eltern"
    ],
@@ -17814,7 +17803,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "spielen",
     "gefuehle",
     "entwicklung",
     "kita"
@@ -18032,7 +18021,6 @@ window.WISSEN = {
    ],
    "bereiche": [
     "grenzen",
-    "alltag",
     "eltern"
    ],
    "kurz": "Laut Nicola Schmidt hören Kinder bei Sätzen wie „Wirf nicht mit dem Essen“ vor allem den Inhalt, also das Werfen, und überhören das Nicht. Sie rät, statt des Verbots zu sagen, was ihr stattdessen möchtet. Dafür müsst ihr zuerst selbst klären, was ihr von eurem Kind wollt, und das braucht Übung.",
@@ -18283,8 +18271,8 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "routinen",
     "essen",
-    "alltag",
     "grenzen"
    ],
    "kurz": "Jede Familie legt selbst fest, was am Tisch passt, und die Grundregel ist, dass sich alle wohlfühlen. Etwas Zappeln ist erlaubt, Lärm, Gefahr fürs Geschirr, Herumlaufen mit Essen und Aufstehen und Wiederkommen nicht. Kinder können lernen, sitzen zu bleiben, bis sie fertig sind, aber Tischmanieren lernen sie nicht von allein.",
@@ -18424,8 +18412,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "grenzen",
-    "alltag"
+    "grenzen"
    ],
    "kurz": "Eine Konsequenz hängt inhaltlich mit dem Verhalten zusammen und kommt ohne Rache aus; was keinen Bezug hat, ist eher eine Strafe. Die Hosts von mutti halten sparsam und ruhig eingesetzte Konsequenzen für einen legitimen Teil von Erziehung, Nicola Schmidt hält Strafen für wenig sinnvoll und setzt auf frühe Grenzen. Kathy Weber (gfk) geht weiter: Für sie ist alles, was Eltern festlegen, eine Strafe, und sie setzt auf klare Führung und das Bedürfnis hinter dem Verhalten.",
    "tipps": [
@@ -18691,9 +18678,9 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "familie",
     "eltern",
-    "gefuehle",
-    "alltag"
+    "gefuehle"
    ],
    "kurz": "Kathy Weber erklärt: Ziel ist nicht, nie vor den Kindern zu streiten, sondern so, dass man es vertreten kann, in Verbindung statt in Trennung. Kinder brauchen die Sicherheit, dass die Eltern sich kümmern und der Konflikt bei den Eltern bleibt. Wird es zu heftig, vertagt man.",
    "tipps": [
@@ -18817,9 +18804,9 @@ window.WISSEN = {
     "3-6"
    ],
    "bereiche": [
+    "familie",
     "grenzen",
-    "eltern",
-    "alltag"
+    "eltern"
    ],
    "kurz": "Wenn euer Kind auf dem Spielplatz einem anderen etwas wegnimmt oder es schubst, erwarten andere Eltern oft Schimpfen oder eine erzwungene Entschuldigung. Nicola Schmidt rät, zuerst anzuerkennen, was die andere Person braucht, statt euch zu rechtfertigen, euch selbst zu entschuldigen und die Situation mit dem Gedanken zu verlassen, dass euer Kind es lernen wird.",
    "tipps": [
@@ -18936,8 +18923,7 @@ window.WISSEN = {
    ],
    "bereiche": [
     "entwicklung",
-    "gefuehle",
-    "alltag"
+    "gefuehle"
    ],
    "kurz": "Streit beginnt laut Nicola Schmidt mit etwa anderthalb bis zwei Jahren, meist um Spielzeug oder Orte, und die Auslöser werden mit dem Alter komplexer. Zuverlässig lösen Kinder Konflikte erst mit etwa zehn Jahren. Sie rät, nicht per Machtwort zu entscheiden, sondern beide Kinder zu fragen, was sie brauchen, auch wenn das im Moment länger dauert. Auch Kathrin Hohmann rät, zuerst zu beruhigen und dann zu moderieren statt zu richten, bei Gewalt aber immer einzugreifen.",
    "tipps": [
@@ -19044,7 +19030,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "routinen",
     "eltern",
     "grenzen"
    ],
@@ -19181,8 +19167,7 @@ window.WISSEN = {
    ],
    "bereiche": [
     "essen",
-    "grenzen",
-    "alltag"
+    "grenzen"
    ],
    "kurz": "Beim Süßen ist ein Mittelweg sinnvoll: kein Totalverbot, aber auch kein unbegrenzter Zugang. Entscheidend sind ein klarer Rahmen, feste Zeiten für Süßes und das eigene Vorbild der Eltern; für die Zähne zählt laut Nicola Schmidt auch, wie oft am Tag Zucker im Mund ist. Sie rät unter drei Jahren zu möglichst keinem weißen Zucker, die mutti-Hosts sehen es entspannter.",
    "tipps": [
@@ -19317,7 +19302,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "routinen",
     "entwicklung"
    ],
    "kurz": "Kathy Weber sieht Taschengeld als gute Strategie für das Bedürfnis nach Autonomie. Sie hält es ab etwa drei Jahren für ein Thema. Die Eltern entscheiden über Höhe und festen Zahltag, das Geld gehört dann dem Kind, und es entscheidet selbst, was es kauft.",
@@ -19524,8 +19509,8 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "eltern",
-    "alltag"
+    "familie",
+    "eltern"
    ],
    "kurz": "Laut einer Gästin im Podcast regelt das Gesetz vieles, entspricht aber oft nicht dem, was Eltern wollen: Ohne Testament entsteht eine Erbengemeinschaft, nicht verheiratete Partner gehen leer aus, und Kinder kommen nicht automatisch zu Großeltern oder Paten. Mit Testament, Sorgerechtsverfügung und ggf. einem Testamentsvollstrecker lässt sich das gezielt regeln. Das sind Aussagen der Gästin und keine verbindliche Rechtsberatung; lasst euch von einer Anwältin, einem Anwalt oder einem Notar beraten.",
    "tipps": [
@@ -19731,9 +19716,9 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "familie",
     "eltern",
-    "gefuehle",
-    "alltag"
+    "gefuehle"
    ],
    "kurz": "Laut den Gästen der Folgen schadet eine Trennung Kindern nicht automatisch; entscheidend sind wenig Streit, Ehrlichkeit auf Kinderebene und verlässliche Alltagsstrukturen. Kinder brauchen die Botschaft, dass sie keine Schuld haben und die Eltern ihre Eltern bleiben, und Raum für alle Gefühle. Eltern sollten dabei auch gut für sich sorgen, denn nur stabile Eltern können ihr Kind stützen. Bei rechtlichen oder finanziellen Fragen empfehlen die Hosts, sich beraten zu lassen.",
    "tipps": [
@@ -19844,8 +19829,8 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "familie",
     "gefuehle",
-    "alltag",
     "eltern"
    ],
    "kurz": "Kathy Weber sagt, dass Kinder traurig sein und beim Abschied weinen dürfen. Entscheidend ist für sie die Klarheit der Eltern: vorher Nähe auftanken, klar übergeben, gehen, und dem Kind Nähe-Strategien wie Kussglas oder ein getragenes T-Shirt mitgeben. Das Kind entscheidet nicht, ob ihr geht, eure Führung und Empathie helfen ihm, den Abschied zu schaffen.",
@@ -20121,8 +20106,7 @@ window.WISSEN = {
    ],
    "bereiche": [
     "sauberkeit",
-    "entwicklung",
-    "alltag"
+    "entwicklung"
    ],
    "kurz": "Spätes Trockenwerden ist laut den Hosts überwiegend kulturell bedingt, weil Wegwerfwindeln trocken bleiben; sie raten, die Windel ab etwa zwei Jahren ohne Druck wegzulassen und nicht zu warten, bis das Kind sie abgibt. Nicola Schmidt (artgerecht) hält die Aussage, vor 24 Monaten gehe es nicht, für unbelegt und rät, früh auf Signale einzugehen. Beide lehnen Zwang und Druck ab.",
    "tipps": [
@@ -20259,9 +20243,8 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "gefuehle",
-    "alltag",
-    "grenzen"
+    "grenzen",
+    "gefuehle"
    ],
    "kurz": "Autonomie bedeutet vor allem weniger Kontrolle, nicht nur die Wahl zwischen zwei Optionen; wer Kinder ständig anleitet, erzeugt laut den Hosts von mutti Widerstand oder Anpassung. Hilfreich ist es, Anweisungen zu reduzieren, Unwichtiges wegzulassen und Konflikte gar nicht erst entstehen zu lassen. Kathy Weber (gfk) sieht im Nein ein unerfülltes Bedürfnis nach Sicherheit und rät zu viel Selbermachen und klarer elterlicher Führung; bei Gesundheit und Sicherheit dürfen Eltern auch gegen Protest entscheiden.",
    "tipps": [
@@ -20394,7 +20377,7 @@ window.WISSEN = {
     "3-6"
    ],
    "bereiche": [
-    "alltag",
+    "familie",
     "gefuehle",
     "entwicklung"
    ],
@@ -20599,7 +20582,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "gesundheit",
     "baby",
     "entwicklung"
    ],
@@ -20711,7 +20694,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "routinen",
     "grenzen",
     "geschwister"
    ],
@@ -20836,7 +20819,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "routinen",
     "schlaf",
     "eltern"
    ],
@@ -21215,7 +21198,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "gesundheit",
     "entwicklung",
     "baby"
    ],
@@ -21323,8 +21306,8 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "familie",
     "gefuehle",
-    "alltag",
     "grenzen"
    ],
    "kurz": "Die Hosts sehen im Weihnachtsmann und im Christkind vor allem Magie und Kultur, ähnlich wie bei Zahnfee und Osterhase, und kein Lügen im harten Sinn, solange die Geschichte positiv bleibt. Drohen mit der Figur lehnen sie klar ab. Wenn Kinder zweifeln, müssen sie sich nicht sofort entscheiden; wer von Anfang an die Wahrheit sagt, geht laut den Hosts auch keinen schlechten Weg.",
@@ -21542,7 +21525,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "familie",
     "gefuehle",
     "eltern"
    ],
@@ -22136,7 +22119,6 @@ window.WISSEN = {
    ],
    "bereiche": [
     "essen",
-    "alltag",
     "grenzen"
    ],
    "kurz": "Es wird nicht mehr extra für einzelne Kinder gekocht: Es gibt ein Essen, die Kinder sind eingeladen mitzuessen, gezwungen wird niemand. Wer immer nachgibt, bringt dem Kind das Nörgeln bei. Zusätzlich helfen Fantasie und kindgerechte Bilder, um Gemüse interessanter zu machen.",
@@ -22381,8 +22363,8 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
+    "familie",
     "eltern",
-    "alltag",
     "grenzen"
    ],
    "kurz": "Zeit für sich verschiebt man besser nicht auf die Schlafenszeit, sondern fordert sie mitten im Alltag ein. Kinder dürfen bei den Interessen der Eltern dabei sein, müssen aber nicht bespaßt werden und können den Frust aushalten, wenn Mama oder Papa gerade Ruhe braucht. Der Anfang können zehn Minuten am Tag sein.",
@@ -22513,7 +22495,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "routinen",
     "eltern",
     "gefuehle"
    ],
@@ -22740,7 +22722,7 @@ window.WISSEN = {
     "3-6"
    ],
    "bereiche": [
-    "alltag",
+    "gesundheit",
     "grenzen",
     "sauberkeit"
    ],
@@ -22880,7 +22862,7 @@ window.WISSEN = {
     "6-10"
    ],
    "bereiche": [
-    "alltag",
+    "routinen",
     "grenzen",
     "gefuehle"
    ],
