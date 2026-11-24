@@ -1379,7 +1379,7 @@
       eliLogo("wk-eulen") +
       '<div class="wk-blase">' +
       '<p style="--i:0"><strong id="wk-titel">Hallo, schön, dass du da bist!</strong> Ich bin Eli, dein Elternlexikon.</p>' +
-      '<p style="--i:1">Ich sammle das Wissen aus vier Eltern-Podcasts und sortiere es nach Themen.</p>' +
+      '<p style="--i:1">Ich sammle das Wissen aus ausgewählten Eltern-Podcasts und sortiere es nach Themen.</p>' +
       '<p style="--i:2">Stell mir deine Frage in eigenen Worten, stöbere nach Alter oder Bereich, oder hör direkt an der passenden Stelle in die Folge rein.</p></div>' +
       '<div class="wk-aktionen"><button type="button" class="primary-btn" data-wk="weiter">Weiter</button></div></section>' +
       '<section class="wk-slide" id="wk-s2" aria-label="Seite 2 von 2" inert>' +
