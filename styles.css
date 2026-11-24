@@ -757,3 +757,11 @@ body.start .filters { margin-top: 4px; }
 h1, h2, h3, .card h3, .answer, .tips li, .stimme p, .s-topic, .s-title, .weiter-card strong, .related a { overflow-wrap: anywhere; hyphens: auto; -webkit-hyphens: auto; }
 @media (max-width: 380px) { .article h1 { font-size: 26px; line-height: 1.2; } }
 .tag.tag-link { font: 500 12.5px/1.4 var(--sans); padding: 2px 9px; }
+
+/* ---- Desktop-Seitenleiste: Logo oben, Knöpfe darunter, nichts ragt über den Rand ---- */
+@media (min-width: 1000px) {
+  .top-inner { flex-wrap: wrap; row-gap: 6px; }
+  .top-inner .brand { flex: 1 0 100%; }
+  .top-inner #size-btn { margin-left: 0; }
+  .top-inner .icon-btn { min-width: 40px; min-height: 40px; }
+}
