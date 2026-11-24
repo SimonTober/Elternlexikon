@@ -973,11 +973,7 @@ body.start .search input { min-height: 60px; font-size: 19px; border-width: 2px;
 .eli .eye { transform-box: fill-box; transform-origin: center; animation: wkBlink 4.5s infinite; }
 .eli .bob { animation: wkBob 3s ease-in-out infinite; }
 .eli .pulse { transform-box: fill-box; transform-origin: center; animation: wkPuls 2s ease-in-out infinite; }
-.eli .winkt { transform-box: fill-box; transform-origin: 30% 90%; animation: eliWink 2.6s ease-in-out 3; }
 @keyframes eliWink { 0%, 100% { transform: rotate(0); } 25%, 75% { transform: rotate(-22deg); } 50% { transform: rotate(8deg); } }
-.eli-mond { display: none; }
-:root[data-theme="dark"] .eli-mond { display: inline; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme]) .eli-mond { display: inline; } }
 .empty-eli { display: block; width: 120px; height: 120px; margin: 0 auto 12px; }
 .gruss { display: flex; align-items: center; gap: 10px; }
 .gruss-eli { width: 46px; height: 46px; flex: none; }
@@ -992,3 +988,8 @@ body.start .search input { min-height: 60px; font-size: 19px; border-width: 2px;
 .foot-eli span { font-size: 14px; color: var(--muted); }
 @media (min-width: 1000px) { .foot-eli { margin-left: 0; } }
 @media (prefers-reduced-motion: reduce) { .eli * { animation: none !important; } }
+
+/* Logo-Eulen: keine geerbten Linien (globale svg-Regel), daher kein heller Rand */
+.eli { stroke: none; stroke-width: 0; fill: initial; }
+.gruss-eli { width: 44px; height: 44px; flex: none; }
+.empty-eli { width: 110px; height: 110px; }

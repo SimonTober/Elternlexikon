@@ -49,35 +49,9 @@
   }
 
 
-  /* ---------- Eli, die Eulen (kleine Grafiken) ---------- */
-  var EULE_LILA = { t: "#9C8CDB", b: "#CFC4F0", y: "#EEE8FB", sc: "#BFB2EC", w: "#B3A5E8", f: "#E6DFF9" };
-  var EULE_PFIRSICH = { t: "#E39A78", b: "#F6C7B0", y: "#FCEAE1", sc: "#F2C3AE", w: "#EBAA8E", f: "#FBE1D4" };
-  function euleTeile(c, winkt) {
-    var ohr = '<path d="M58 48C48 44 41 36 41 27c0-5 4-7 8-4 6 5 12 11 19 17z" fill="' + c.t + '"/>';
-    var r = ohr + '<g transform="translate(160 0) scale(-1 1)">' + ohr + "</g>" +
-      '<ellipse cx="80" cy="92" rx="46" ry="50" fill="' + c.b + '"/><ellipse cx="80" cy="112" rx="27" ry="28" fill="' + c.y + '"/>' +
-      '<path d="M64 106q4 5 8 0q4 5 8 0q4 5 8 0q4 5 8 0M68 118q4 5 8 0q4 5 8 0q4 5 8 0" fill="none" stroke="' + c.sc + '" stroke-width="2.6" stroke-linecap="round"/>' +
-      '<ellipse cx="40" cy="100" rx="12" ry="27" fill="' + c.w + '"/>' +
-      (winkt ? '<g class="winkt"><ellipse cx="128" cy="76" rx="11" ry="26" fill="' + c.w + '" transform="rotate(35 128 76)"/></g>' : '<ellipse cx="120" cy="100" rx="12" ry="27" fill="' + c.w + '"/>') +
-      '<circle cx="62" cy="67" r="24" fill="' + c.f + '"/><circle cx="98" cy="67" r="24" fill="' + c.f + '"/>';
-    [62, 98].forEach(function (x) {
-      r += '<circle cx="' + x + '" cy="67" r="15" fill="#fff"/><g class="eye"><circle cx="' + (x + 1) + '" cy="68" r="9.3" fill="#2A2350"/><circle cx="' + (x - 2) + '" cy="64" r="3.3" fill="#fff"/><circle cx="' + (x + 4) + '" cy="71" r="1.5" fill="#fff"/></g>';
-    });
-    return r + '<ellipse cx="46" cy="83" rx="6" ry="4.5" fill="#F4A8B8" opacity=".9"/><ellipse cx="114" cy="83" rx="6" ry="4.5" fill="#F4A8B8" opacity=".9"/>' +
-      '<path d="M75 80q5-3 10 0q-2 7-5 9q-3-2-5-9z" fill="#F2B84B"/>' +
-      '<path d="M64 140v8m-4-2l4 2 4-2M96 140v8m-4-2l4 2 4-2" stroke="#F2B84B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>';
-  }
-  // Große und kleine Eule (wie im Logo), optional mit Herz oder Mond (Dunkelmodus)
-  function eliPaar(cls, herz) {
-    return '<svg class="eli ' + (cls || "") + '" viewBox="0 0 160 160" aria-hidden="true">' +
-      '<path class="eli-mond" transform="translate(' + (herz ? -116 : 0) + ' 0)" d="M138 20a14 14 0 1 0 10 24 11 11 0 1 1-10-24z" fill="#F7D774"/>' +
-      (herz ? '<g transform="translate(118 36)"><path class="pulse" d="M0 12C-16 2-16-10-8-10c4 0 6 3 8 6 2-3 4-6 8-6 8 0 8 12-8 22z" fill="#EE7F5B"/></g>' : "") +
-      '<g transform="translate(8 42.8) scale(.6)">' + euleTeile(EULE_LILA) + "</g>" +
-      '<g transform="translate(79.2 84.88) scale(.36)"><g class="bob">' + euleTeile(EULE_PFIRSICH) + "</g></g></svg>";
-  }
-  function eliKlein(cls) {
-    return '<svg class="eli ' + (cls || "") + '" viewBox="0 0 160 160" aria-hidden="true"><g class="bob">' + euleTeile(EULE_PFIRSICH, true) + "</g></svg>";
-  }
+  /* ---------- Eli: immer genau das Logo (große und kleine Eule), nie abgewandelt ---------- */
+  var ELI_LOGO = '<rect width="160" height="160" rx="36" fill="#5a49b0"/><rect x="86" y="20" width="56" height="38" rx="15.8" fill="#F5F3FA"/><path d="M98 56l-4 14 16-14z" fill="#F5F3FA"/><g transform="translate(114 40)"><path class="pulse" d="M0 12C-16 2-16-10-8-10c4 0 6 3 8 6 2-3 4-6 8-6 8 0 8 12-8 22z" fill="#E2603A"/></g><g transform="translate(8 42.8) scale(0.6)"><path d="M58 48C48 44 41 36 41 27c0-5 4-7 8-4 6 5 12 11 19 17z" fill="#CFC4F0"/><g transform="translate(160 0) scale(-1 1)"><path d="M58 48C48 44 41 36 41 27c0-5 4-7 8-4 6 5 12 11 19 17z" fill="#CFC4F0"/></g><ellipse cx="80" cy="92" rx="46" ry="50" fill="#F5F3FA"/><ellipse cx="80" cy="112" rx="27" ry="28" fill="#ECE7FB"/><path d="M64 106q4 5 8 0q4 5 8 0q4 5 8 0q4 5 8 0M68 118q4 5 8 0q4 5 8 0q4 5 8 0" fill="none" stroke="#D6CCF3" stroke-width="2.6" stroke-linecap="round"/><ellipse class="wing" cx="40" cy="100" rx="12" ry="27" fill="#DCD3F5"/><ellipse class="wing" cx="120" cy="100" rx="12" ry="27" fill="#DCD3F5"/><circle cx="62" cy="67" r="24" fill="#E6DFF9"/><circle cx="98" cy="67" r="24" fill="#E6DFF9"/><circle cx="62" cy="67" r="15" fill="#fff"/><g class="eye"><circle cx="63" cy="68" r="9.3" fill="#2A2350"/><circle cx="60" cy="64" r="3.3" fill="#fff"/><circle cx="66" cy="71" r="1.5" fill="#fff"/></g><circle cx="98" cy="67" r="15" fill="#fff"/><g class="eye"><circle cx="99" cy="68" r="9.3" fill="#2A2350"/><circle cx="96" cy="64" r="3.3" fill="#fff"/><circle cx="102" cy="71" r="1.5" fill="#fff"/></g><ellipse cx="46" cy="83" rx="6" ry="4.5" fill="#F4A8B8" opacity=".9"/><ellipse cx="114" cy="83" rx="6" ry="4.5" fill="#F4A8B8" opacity=".9"/><path d="M75 80q5-3 10 0q-2 7-5 9q-3-2-5-9z" fill="#F2B84B"/><path d="M64 140v8m-4-2l4 2 4-2M96 140v8m-4-2l4 2 4-2" stroke="#F2B84B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><g transform="translate(79.2 84.88) scale(0.36)"><g class="bob"><path d="M58 48C48 44 41 36 41 27c0-5 4-7 8-4 6 5 12 11 19 17z" fill="#EBAA8E"/><g transform="translate(160 0) scale(-1 1)"><path d="M58 48C48 44 41 36 41 27c0-5 4-7 8-4 6 5 12 11 19 17z" fill="#EBAA8E"/></g><ellipse cx="80" cy="92" rx="46" ry="50" fill="#F6C7B0"/><ellipse cx="80" cy="112" rx="27" ry="28" fill="#FCEAE1"/><path d="M64 106q4 5 8 0q4 5 8 0q4 5 8 0q4 5 8 0M68 118q4 5 8 0q4 5 8 0q4 5 8 0" fill="none" stroke="#F2C3AE" stroke-width="2.6" stroke-linecap="round"/><ellipse class="wing" cx="40" cy="100" rx="12" ry="27" fill="#EBAA8E"/><ellipse class="wing" cx="120" cy="100" rx="12" ry="27" fill="#EBAA8E"/><circle cx="62" cy="67" r="24" fill="#FBE1D4"/><circle cx="98" cy="67" r="24" fill="#FBE1D4"/><circle cx="62" cy="67" r="15" fill="#fff"/><g class="eye"><circle cx="63" cy="68" r="9.3" fill="#2A2350"/><circle cx="60" cy="64" r="3.3" fill="#fff"/><circle cx="66" cy="71" r="1.5" fill="#fff"/></g><circle cx="98" cy="67" r="15" fill="#fff"/><g class="eye"><circle cx="99" cy="68" r="9.3" fill="#2A2350"/><circle cx="96" cy="64" r="3.3" fill="#fff"/><circle cx="102" cy="71" r="1.5" fill="#fff"/></g><ellipse cx="46" cy="83" rx="6" ry="4.5" fill="#F4A8B8" opacity=".9"/><ellipse cx="114" cy="83" rx="6" ry="4.5" fill="#F4A8B8" opacity=".9"/><path d="M75 80q5-3 10 0q-2 7-5 9q-3-2-5-9z" fill="#F2B84B"/><path d="M64 140v8m-4-2l4 2 4-2M96 140v8m-4-2l4 2 4-2" stroke="#F2B84B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g></g>';
+  function eliLogo(cls) { return '<svg class="eli ' + (cls || "") + '" viewBox="0 0 160 160" aria-hidden="true">' + ELI_LOGO + "</svg>"; }
 
   /* ---------- Helfer ---------- */
   var $ = function (sel, el) { return (el || document).querySelector(sel); };
@@ -484,7 +458,7 @@
     }
 
     if (!liste.length) {
-      view.innerHTML = '<div class="empty">' + eliPaar("empty-eli") + '<strong>Eli hat dazu noch nichts gefunden.</strong>' +
+      view.innerHTML = '<div class="empty">' + eliLogo("empty-eli") + '<strong>Eli hat dazu noch nichts gefunden.</strong>' +
         "Versucht ein anderes Wort, zum Beispiel „Schlaf“ statt „Nickerchen“" +
         (filterAktiv() ? ", oder setzt die Filter zurück." : ".") + "</div>";
       return;
@@ -1053,7 +1027,7 @@
     var liste = favoriten.map(function (id) { return NACH_ID[id]; }).filter(Boolean);
     view.innerHTML = '<div class="article"><h1>Favoriten</h1></div>' + (liste.length
       ? '<p class="result-meta">' + liste.length + " gemerkt</p>" + kartenListe(liste)
-      : '<div class="empty">' + eliPaar("empty-eli", true) + '<strong>Noch nichts gemerkt</strong>Tippt in einem Artikel auf das Herz, dann merkt Eli sich das Thema hier für euch.<a class="primary-btn empty-btn" href="#/check">Eltern-Check starten</a></div>');
+      : '<div class="empty">' + eliLogo("empty-eli") + '<strong>Noch nichts gemerkt</strong>Tippt in einem Artikel auf das Herz, dann merkt Eli sich das Thema hier für euch.<a class="primary-btn empty-btn" href="#/check">Eltern-Check starten</a></div>');
     // Ausprobierte Tipps: alles, was in Artikeln abgehakt wurde, an einem Ort
     var erl = lies("erledigt", {}), zeilen = "", anzahl = 0;
     Object.keys(erl).forEach(function (id) {
@@ -1358,7 +1332,7 @@
   if (!profil || typeof profil !== "object") profil = {};
   function profilName() { return String(profil.name || "").trim(); }
   function gruss() {
-    return profilName() ? '<p class="gruss">' + eliKlein("gruss-eli") + '<span>Hallo <span class="gruss-name">' + esc(profilName()) + "</span>!</span></p>" : "";
+    return profilName() ? '<p class="gruss">' + eliLogo("gruss-eli") + '<span>Hallo <span class="gruss-name">' + esc(profilName()) + "</span>!</span></p>" : "";
   }
   var wk = $("#wk"), wkBox = $("#wk-box"), wkFokusZurueck = null;
   var wkPflicht = false;
@@ -1368,7 +1342,7 @@
       (wkPflicht ? "" : '<button type="button" class="icon-btn wk-x" data-wk="zu" aria-label="Schließen"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>') +
       '<div class="wk-slides" id="wk-slides">' +
       '<section class="wk-slide" aria-label="Seite 1 von 2">' +
-      '<svg class="wk-eulen" viewBox="0 0 160 160" aria-hidden="true"><rect width="160" height="160" rx="36" fill="#5a49b0"/><rect x="86" y="20" width="56" height="38" rx="15.8" fill="#F5F3FA"/><path d="M98 56l-4 14 16-14z" fill="#F5F3FA"/><g transform="translate(114 40)"><path class="pulse" d="M0 12C-16 2-16-10-8-10c4 0 6 3 8 6 2-3 4-6 8-6 8 0 8 12-8 22z" fill="#E2603A"/></g><g transform="translate(8 42.8) scale(0.6)"><path d="M58 48C48 44 41 36 41 27c0-5 4-7 8-4 6 5 12 11 19 17z" fill="#CFC4F0"/><g transform="translate(160 0) scale(-1 1)"><path d="M58 48C48 44 41 36 41 27c0-5 4-7 8-4 6 5 12 11 19 17z" fill="#CFC4F0"/></g><ellipse cx="80" cy="92" rx="46" ry="50" fill="#F5F3FA"/><ellipse cx="80" cy="112" rx="27" ry="28" fill="#ECE7FB"/><path d="M64 106q4 5 8 0q4 5 8 0q4 5 8 0q4 5 8 0M68 118q4 5 8 0q4 5 8 0q4 5 8 0" fill="none" stroke="#D6CCF3" stroke-width="2.6" stroke-linecap="round"/><ellipse class="wing" cx="40" cy="100" rx="12" ry="27" fill="#DCD3F5"/><ellipse class="wing" cx="120" cy="100" rx="12" ry="27" fill="#DCD3F5"/><circle cx="62" cy="67" r="24" fill="#E6DFF9"/><circle cx="98" cy="67" r="24" fill="#E6DFF9"/><circle cx="62" cy="67" r="15" fill="#fff"/><g class="eye"><circle cx="63" cy="68" r="9.3" fill="#2A2350"/><circle cx="60" cy="64" r="3.3" fill="#fff"/><circle cx="66" cy="71" r="1.5" fill="#fff"/></g><circle cx="98" cy="67" r="15" fill="#fff"/><g class="eye"><circle cx="99" cy="68" r="9.3" fill="#2A2350"/><circle cx="96" cy="64" r="3.3" fill="#fff"/><circle cx="102" cy="71" r="1.5" fill="#fff"/></g><ellipse cx="46" cy="83" rx="6" ry="4.5" fill="#F4A8B8" opacity=".9"/><ellipse cx="114" cy="83" rx="6" ry="4.5" fill="#F4A8B8" opacity=".9"/><path d="M75 80q5-3 10 0q-2 7-5 9q-3-2-5-9z" fill="#F2B84B"/><path d="M64 140v8m-4-2l4 2 4-2M96 140v8m-4-2l4 2 4-2" stroke="#F2B84B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><g transform="translate(79.2 84.88) scale(0.36)"><g class="bob"><path d="M58 48C48 44 41 36 41 27c0-5 4-7 8-4 6 5 12 11 19 17z" fill="#EBAA8E"/><g transform="translate(160 0) scale(-1 1)"><path d="M58 48C48 44 41 36 41 27c0-5 4-7 8-4 6 5 12 11 19 17z" fill="#EBAA8E"/></g><ellipse cx="80" cy="92" rx="46" ry="50" fill="#F6C7B0"/><ellipse cx="80" cy="112" rx="27" ry="28" fill="#FCEAE1"/><path d="M64 106q4 5 8 0q4 5 8 0q4 5 8 0q4 5 8 0M68 118q4 5 8 0q4 5 8 0q4 5 8 0" fill="none" stroke="#F2C3AE" stroke-width="2.6" stroke-linecap="round"/><ellipse class="wing" cx="40" cy="100" rx="12" ry="27" fill="#EBAA8E"/><ellipse class="wing" cx="120" cy="100" rx="12" ry="27" fill="#EBAA8E"/><circle cx="62" cy="67" r="24" fill="#FBE1D4"/><circle cx="98" cy="67" r="24" fill="#FBE1D4"/><circle cx="62" cy="67" r="15" fill="#fff"/><g class="eye"><circle cx="63" cy="68" r="9.3" fill="#2A2350"/><circle cx="60" cy="64" r="3.3" fill="#fff"/><circle cx="66" cy="71" r="1.5" fill="#fff"/></g><circle cx="98" cy="67" r="15" fill="#fff"/><g class="eye"><circle cx="99" cy="68" r="9.3" fill="#2A2350"/><circle cx="96" cy="64" r="3.3" fill="#fff"/><circle cx="102" cy="71" r="1.5" fill="#fff"/></g><ellipse cx="46" cy="83" rx="6" ry="4.5" fill="#F4A8B8" opacity=".9"/><ellipse cx="114" cy="83" rx="6" ry="4.5" fill="#F4A8B8" opacity=".9"/><path d="M75 80q5-3 10 0q-2 7-5 9q-3-2-5-9z" fill="#F2B84B"/><path d="M64 140v8m-4-2l4 2 4-2M96 140v8m-4-2l4 2 4-2" stroke="#F2B84B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g></g></svg>' +
+      eliLogo("wk-eulen") +
       '<h2 id="wk-titel">Hallo, schön, dass du da bist!</h2>' +
       '<p>Eli, das Elternlexikon, sammelt das Wissen aus vier Eltern-Podcasts und sortiert es nach Themen. So findest du im Alltag schnell, was dir gerade hilft.</p>' +
       '<ul class="wk-liste">' +
