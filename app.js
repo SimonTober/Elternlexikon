@@ -987,6 +987,21 @@
     try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
   });
 
+  /* ---------- Schriftgröße ---------- */
+  var STUFEN = [1, 1.15, 1.3], stufe = Number(lies("schrift", 0)) || 0;
+  if (stufe < 0 || stufe >= STUFEN.length) stufe = 0;
+  function schriftSetzen() {
+    $("#main").style.zoom = STUFEN[stufe] === 1 ? "" : String(STUFEN[stufe]);
+    var b = $("#size-btn");
+    b.setAttribute("aria-label", "Schriftgröße: " + ["normal", "größer", "am größten"][stufe] + ". Zum Ändern tippen.");
+    b.dataset.stufe = String(stufe);
+  }
+  $("#size-btn").addEventListener("click", function () {
+    stufe = (stufe + 1) % STUFEN.length; schreib("schrift", stufe); schriftSetzen();
+    toast(["Normale Schrift", "Größere Schrift", "Größte Schrift"][stufe]);
+  });
+  schriftSetzen();
+
   /* ---------- Start ---------- */
   if (W.meta && (W.meta.hinweis || W.meta.platzhalter)) {
     var bn = $("#placeholder-banner"), bnZu = lies("bannerZu", "");

@@ -16,7 +16,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css?v=38">
+  <link rel="stylesheet" href="styles.css?v=40">
   <script>
     // Theme vor dem ersten Rendern setzen, damit nichts aufblitzt
     try { var t = localStorage.getItem("theme"); document.documentElement.dataset.theme = t || (window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"); } catch (e) { document.documentElement.dataset.theme = "light"; }
@@ -31,6 +31,7 @@
         <img src="icon.svg" alt="" width="32" height="32">
         <span>Elternlexikon</span>
       </a>
+      <button class="icon-btn" id="size-btn" type="button" aria-label="Schrift größer oder kleiner" title="Schriftgröße"><span aria-hidden="true">Aa</span></button>
       <button class="icon-btn" id="theme-btn" type="button" aria-label="Farbschema wechseln" title="Farbschema wechseln">
         <svg class="i-sun" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
         <svg class="i-moon" aria-hidden="true" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z"/></svg>
@@ -136,6 +137,6 @@
   <script src="wissen.js"></script>
   <script src="folgen.js"></script>
   <script src="suche.js?v=24"></script>
-  <script src="app.js?v=49"></script>
+  <script src="app.js?v=50"></script>
 </body>
 </html>

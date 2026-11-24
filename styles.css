@@ -728,3 +728,10 @@ body.start .filters { margin-top: 4px; }
 /* ---- Leerzustände ---- */
 .empty-icon { display: block; width: 44px; height: 44px; margin: 0 auto 14px; padding: 10px; box-sizing: content-box; border-radius: 50%; background: var(--accent-soft); fill: none; stroke: var(--accent); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
 .empty-btn { display: inline-flex; margin-top: 18px; text-decoration: none; }
+
+/* ---- Schriftgröße-Knopf ---- */
+#size-btn { font: 700 15px/1 var(--serif); color: var(--text); }
+#size-btn[data-stufe="1"] { color: var(--accent); }
+#size-btn[data-stufe="2"] { color: var(--accent); font-size: 18px; }
+.top-inner { gap: 4px; }
+#size-btn { margin-left: auto; }
