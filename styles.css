@@ -1011,7 +1011,11 @@ body.start .search input { min-height: 60px; font-size: 19px; border-width: 2px;
 @media (prefers-reduced-motion: reduce) { .wk-box .wk-blase p { opacity: 1; animation: none !important; } }
 
 /* Pop-up: Höhe passt sich der Seite an, dunklerer Schleier, Eulen ohne Kachel */
-.wk-slides { align-items: flex-start; transition: height .3s var(--ease); }
+.wk-slides { align-items: stretch; }
+.wk-slide { display: flex; flex-direction: column; }
+.wk-slide .wk-blase { flex: 1 1 auto; }
+.wk-slide .wk-check { min-height: 48px; }
+.wk-tipp { margin: 16px 0 0 !important; min-height: 48px; display: flex; align-items: center; font-size: 14px; color: var(--muted); }
 .wk-backdrop { background: rgba(14, 10, 28, .74); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); }
 .wk-slide .wk-eulen { width: 92px; height: 92px; margin: 0 0 12px; padding: 4px; box-sizing: content-box; border-radius: 50%; background: var(--surface-2); }
 .wk-blase::before { left: 41px; }

@@ -1379,15 +1379,17 @@
       eliLogo("wk-eulen", true) +
       '<div class="wk-blase">' +
       '<p style="--i:0"><strong id="wk-titel">Hallo, schön, dass du da bist!</strong> Ich bin Eli, dein Elternlexikon.</p>' +
-      '<p style="--i:1">Ich sammle das Wissen aus ausgewählten Eltern-Podcasts und sortiere es nach Themen.</p>' +
-      '<p style="--i:2">Stell mir deine Frage in eigenen Worten, stöbere nach Alter oder Bereich, oder hör direkt an der passenden Stelle in die Folge rein.</p></div>' +
-      '<div class="wk-aktionen"><button type="button" class="primary-btn" data-wk="weiter">Weiter</button></div></section>' +
+      '<p style="--i:1">Ich sammle das Wissen aus ausgewählten Eltern-Podcasts und sortiere es nach Themen, vom Baby bis ins Grundschulalter.</p>' +
+      '<p style="--i:2">Stell mir deine Frage in eigenen Worten, stöbere nach Alter oder Bereich, oder hör direkt an der passenden Stelle in die Folge rein.</p>' +
+      '<p style="--i:3">Und was dir gefällt, merke ich mir gern für dich.</p></div>' +
+      '<div class="wk-aktionen"><button type="button" class="primary-btn" data-wk="weiter">Weiter</button></div>' +
+      '<p class="wk-tipp">Wisch nach links oder tipp auf „Weiter“.</p></section>' +
       '<section class="wk-slide" id="wk-s2" aria-label="Seite 2 von 2" inert>' +
       eliLogo("wk-eulen", true) +
       '<div class="wk-blase">' +
-      '<p style="--i:0"><strong>Gut zu wissen:</strong> Was du hier liest, sind Meinungen und Erfahrungen aus den Podcasts, nicht wissenschaftlich belegt. Wir sind keine Ärztinnen oder Mediziner. Im Notfall hilft die Notfall-Seite.</p>' +
-      '<p style="--i:1">Die Suche läuft nur auf deinem Gerät, ohne KI. Beim Zusammenfassen der Folgen haben wir KI als Werkzeug genutzt.</p>' +
-      '<p style="--i:2">Dein Profil und deine Merkliste bleiben bei dir. Etwa alle zwei Wochen kommen neue Folgen dazu.</p></div>' +
+      '<p style="--i:0"><strong>Gut zu wissen:</strong> Hier stehen Erfahrungen und Meinungen aus den Podcasts, keine wissenschaftlichen Belege. Wir sind keine Ärztinnen oder Mediziner. Im Notfall hilft die Notfall-Seite.</p>' +
+      '<p style="--i:1">Die Suche läuft nur auf deinem Gerät, ohne KI. Beim Zusammenfassen haben wir KI als Werkzeug genutzt.</p>' +
+      '<p style="--i:2">Profil und Merkliste bleiben bei dir. Etwa alle zwei Wochen kommen neue Folgen dazu.</p></div>' +
       '<div class="wk-aktionen"><button type="button" class="primary-btn" data-wk="profil">' + (hatProfil ? "Profil ansehen" : "Profil anlegen") + '</button>' +
       '<button type="button" class="wk-sek" data-wk="zu">Los geht\'s</button></div>' +
       '<label class="wk-check"><input type="checkbox" id="wk-nie"' + (lies("willkommen_aus", false) || !lies("willkommen_gesehen", false) ? " checked" : "") + '> Dieses Fenster nicht mehr von selbst zeigen</label></section></div>' +
@@ -1397,11 +1399,8 @@
       var idx = sl.scrollLeft > sl.clientWidth / 2 ? 1 : 0;
       pk.forEach(function (p, n) { p.classList.toggle("an", n === idx); });
       if (idx === 1) { s2.removeAttribute("inert"); s2.classList.add("wk-los"); }
-      wkHoehe(idx);
     }
-    function wkHoehe(idx) { var s = sl.children[idx]; if (s) sl.style.height = s.offsetHeight + "px"; }
     sl.addEventListener("scroll", zeigt, { passive: true });
-    requestAnimationFrame(function () { wkHoehe(0); });
     if (startSeite === 2) { s2.removeAttribute("inert"); s2.classList.add("wk-los"); requestAnimationFrame(function () { sl.scrollLeft = sl.clientWidth; zeigt(); }); }
   }
   var wkKinder = [], wkNameVal = "";
