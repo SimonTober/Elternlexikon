@@ -1329,18 +1329,38 @@
     return profilName() ? '<p class="gruss">Hallo ' + esc(profilName()) + "!</p>" : "";
   }
   var wk = $("#wk"), wkBox = $("#wk-box"), wkFokusZurueck = null;
-  function wkInfo() {
+  var wkPflicht = false;
+  function wkInfo(startSeite) {
+    var hatProfil = profilName() || kindalter || kinderProfil().length;
     wkBox.innerHTML =
+      (wkPflicht ? "" : '<button type="button" class="icon-btn wk-x" data-wk="zu" aria-label="Schließen"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>') +
+      '<div class="wk-slides" id="wk-slides">' +
+      '<section class="wk-slide" aria-label="Seite 1 von 2">' +
       '<h2 id="wk-titel">Hallo und herzlich willkommen!</h2>' +
-      '<p>Das Elternlexikon sammelt das Wissen aus vier Eltern-Podcasts und sortiert es nach Themen, damit du im Alltag schnell findest, was dir gerade hilft. Du kannst suchen, nach Alter und Bereich stöbern und direkt in die passende Stelle der Folge hineinhören.</p>' +
+      '<p>Das Elternlexikon sammelt das Wissen aus vier Eltern-Podcasts und sortiert es nach Themen. So findest du im Alltag schnell, was dir gerade hilft.</p>' +
       '<ul class="wk-liste">' +
-      '<li><strong>Keine Wissenschaft, keine Ärzte:</strong> Das hier sind Meinungen und Erfahrungen aus den Podcasts, nicht wissenschaftlich belegt. Wir sind keine Ärztinnen oder Mediziner und ersetzen keinen Rat von Fachleuten. Im Notfall helfen die Notrufnummern in der App.</li>' +
-      '<li><strong>Keine KI-Suche:</strong> Die Suche läuft direkt auf deinem Gerät, ohne KI-Dienst und ohne Server. Es ist eine Wissensdatenbank aus den Podcasts. (Beim Zusammenfassen der Folgen haben wir KI als Werkzeug genutzt.)</li>' +
-      '<li><strong>Deine Daten bleiben bei dir:</strong> Profil, Merkliste und Einstellungen liegen nur auf deinem Handy oder Computer.</li>' +
-      '<li><strong>Immer frisch:</strong> Neue Folgen und Themen kommen etwa alle zwei Wochen dazu.</li></ul>' +
-      '<div class="wk-aktionen"><button type="button" class="primary-btn" data-wk="profil">' + (profilName() || kindalter || kinderProfil().length ? "Profil ansehen" : "Profil anlegen (optional)") + '</button>' +
+      '<li><strong>Suchen:</strong> Stell deine Frage in eigenen Worten, zum Beispiel „Mein Kind will nicht schlafen“.</li>' +
+      '<li><strong>Stöbern:</strong> nach Alter, Bereich oder von A bis Z.</li>' +
+      '<li><strong>Reinhören:</strong> Du springst direkt an die passende Stelle in der Folge.</li></ul>' +
+      '<div class="wk-aktionen"><button type="button" class="primary-btn" data-wk="weiter">Weiter</button></div></section>' +
+      '<section class="wk-slide" id="wk-s2" aria-label="Seite 2 von 2" inert>' +
+      '<h2>Gut zu wissen</h2>' +
+      '<ul class="wk-liste">' +
+      '<li><strong>Keine Wissenschaft, keine Ärzte:</strong> Das sind Meinungen und Erfahrungen aus den Podcasts, nicht wissenschaftlich belegt. Wir sind keine Ärztinnen oder Mediziner. Im Notfall hilft die Notfall-Seite in der App.</li>' +
+      '<li><strong>Keine KI-Suche:</strong> Die Suche läuft auf deinem Gerät, ohne KI-Dienst. (Beim Zusammenfassen der Folgen haben wir KI als Werkzeug genutzt.)</li>' +
+      '<li><strong>Deine Daten bleiben bei dir:</strong> Profil und Merkliste liegen nur auf deinem Gerät. Neue Folgen kommen etwa alle zwei Wochen dazu.</li></ul>' +
+      '<div class="wk-aktionen"><button type="button" class="primary-btn" data-wk="profil">' + (hatProfil ? "Profil ansehen" : "Profil anlegen") + '</button>' +
       '<button type="button" class="wk-sek" data-wk="zu">Los geht\'s</button></div>' +
-      '<label class="wk-check"><input type="checkbox" id="wk-nie"' + (lies("willkommen_aus", false) || !lies("willkommen_gesehen", false) ? " checked" : "") + '> Dieses Fenster nicht mehr von selbst zeigen</label>';
+      '<label class="wk-check"><input type="checkbox" id="wk-nie"' + (lies("willkommen_aus", false) || !lies("willkommen_gesehen", false) ? " checked" : "") + '> Dieses Fenster nicht mehr von selbst zeigen</label></section></div>' +
+      '<div class="wk-punkte" aria-hidden="true"><span class="an"></span><span></span></div>';
+    var sl = $("#wk-slides"), s2 = $("#wk-s2"), pk = wkBox.querySelectorAll(".wk-punkte span");
+    function zeigt() {
+      var idx = sl.scrollLeft > sl.clientWidth / 2 ? 1 : 0;
+      pk.forEach(function (p, n) { p.classList.toggle("an", n === idx); });
+      if (idx === 1) s2.removeAttribute("inert");
+    }
+    sl.addEventListener("scroll", zeigt, { passive: true });
+    if (startSeite === 2) { s2.removeAttribute("inert"); requestAnimationFrame(function () { sl.scrollLeft = sl.clientWidth; zeigt(); }); }
   }
   var wkKinder = [], wkNameVal = "";
   function wkLies() {
@@ -1372,13 +1392,15 @@
       '<button type="button" class="wk-sek" data-wk="info">Zurück</button></div>' +
       (profilName() || kindalter || kinderProfil().length ? '<button type="button" class="wk-loeschen" data-wk="loeschen">Profil löschen</button>' : "");
   }
-  function wkOeffne(seite) {
+  function wkOeffne(seite, pflicht) {
     wkFokusZurueck = document.activeElement;
+    wkPflicht = !!pflicht;
     (seite === "profil" ? wkProfil : wkInfo)();
     wk.hidden = false; document.body.classList.add("sheet-open");
     wkBox.focus();
   }
   function wkSchliessen() {
+    wkPflicht = false;
     var nie = $("#wk-nie");
     if (nie) schreib("willkommen_aus", nie.checked);
     else if (!lies("willkommen_gesehen", false)) schreib("willkommen_aus", true); // Profil gespeichert: kein erneutes Pop-up
@@ -1389,7 +1411,7 @@
   function wkNeuZeichnen() { if (!document.body.classList.contains("im-artikel") && /^(#\/)?$/.test(location.hash)) zeigeListe(); }
   wk.addEventListener("click", function (e) {
     var t;
-    if (e.target === wk) return wkSchliessen();
+    if (e.target === wk) { if (!wkPflicht) wkSchliessen(); return; }
     if ((t = e.target.closest("[data-wk-alter]"))) {
       var pa = t.dataset.wkAlter.split("|"), ki = Number(pa[0]);
       wkKinder[ki].alter = wkKinder[ki].alter === pa[1] ? "" : pa[1];
@@ -1402,9 +1424,10 @@
     if (!(t = e.target.closest("[data-wk]"))) return;
     var a = t.dataset.wk;
     if (a === "zu") wkSchliessen();
-    else if (a === "profil") wkProfil();
+    else if (a === "weiter") { var sl2 = $("#wk-slides"); $("#wk-s2").removeAttribute("inert"); sl2.scrollTo({ left: sl2.clientWidth, behavior: "smooth" }); setTimeout(function () { var b = $("#wk-s2 button"); if (b) b.focus({ preventScroll: true }); }, 350); }
+    else if (a === "profil") { wkPflicht = false; wkProfil(); }
     else if (a === "kind-plus") { wkLies(); wkKinder.push({ name: "", alter: "" }); wkProfil(false); var ns = wkBox.querySelectorAll("[data-wk-kname]"); if (ns.length) ns[ns.length - 1].focus(); }
-    else if (a === "info") wkInfo();
+    else if (a === "info") wkInfo(2);
     else if (a === "speichern") {
       wkLies();
       var ks = wkKinder.filter(function (c) { return c.alter || c.name.trim(); }).map(function (c) { return { name: c.name.trim(), alter: c.alter }; });
@@ -1421,7 +1444,7 @@
     }
   });
   document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape" && !wk.hidden) wkSchliessen();
+    if (e.key === "Escape" && !wk.hidden && !wkPflicht) wkSchliessen();
     if (e.key === "Tab" && !wk.hidden) { // Fokus im Fenster halten
       var f = wkBox.querySelectorAll("button, input, a[href]");
       if (!f.length) return;
@@ -1432,7 +1455,7 @@
   });
   $("#profil-btn").addEventListener("click", function () { wkOeffne(profilName() || kindalter || kinderProfil().length ? "profil" : "info"); });
   // „Über die App“ in der Fußzeile und im Profil bleibt über das Profil erreichbar
-  if (!lies("willkommen_aus", false)) setTimeout(function () { if (wk.hidden) wkOeffne("info"); }, 500);
+  if (!lies("willkommen_aus", false)) setTimeout(function () { if (wk.hidden) wkOeffne("info", true); }, 500);
 
   /* ---------- Start ---------- */
   // Testversion-Hinweis (W.meta.hinweis) bewusst nicht mehr eingeblendet; Fachprüfung siehe Fußzeile

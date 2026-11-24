@@ -941,3 +941,16 @@ body.start .search input { min-height: 60px; font-size: 19px; border-width: 2px;
 .wk-weg { background: none; border: 0; color: var(--warm); text-decoration: underline; font-size: 14px; cursor: pointer; min-height: 36px; }
 .wk-plus { margin-top: 12px; width: 100%; }
 .wk-box .alter-wahl { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; overflow: visible; } .wk-box .alter-wahl .alter-chip { width: 100% !important; text-align: center; justify-content: center; }
+
+.wk-box { position: relative; overflow-x: hidden; }
+.wk-slides { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-x: contain; margin: 0 -22px; }
+.wk-slides::-webkit-scrollbar { display: none; }
+.wk-slide { flex: 0 0 100%; scroll-snap-align: start; padding: 0 22px; box-sizing: border-box; }
+.wk-slide[inert] { visibility: visible; }
+.wk-punkte { display: flex; justify-content: center; gap: 8px; margin-top: 16px; }
+.wk-punkte span { width: 8px; height: 8px; border-radius: 50%; background: var(--line); transition: background .2s, width .2s; }
+.wk-punkte span.an { background: var(--accent); width: 22px; border-radius: 4px; }
+.wk-x { position: absolute; top: 10px; right: 10px; z-index: 2; }
+@media (max-width: 520px) { .wk-slides { margin: 0 -16px; } .wk-slide { padding: 0 16px; } }
+.alter-wahl + .cards { margin-top: 16px; }
+.gruss { margin: 22px 0 -6px; }
