@@ -1,6 +1,6 @@
 /* Service Worker: hält die App offline verfügbar.
  * Bei jeder neuen Version von wissen.js oder der App VERSION hochzählen. */
-var VERSION = "elternlexikon-v100";
+var VERSION = "elternlexikon-v101";
 var DATEIEN = ["./", "index.html", "styles.css?v=54", "fonts/fraunces-latin.woff2", "fonts/inter-latin.woff2", "app.js?v=63", "suche.js?v=25", "wissen.js", "folgen.js", "icon.svg", "apple-touch-icon.png", "icon-192.png", "icon-512.png", "manifest.webmanifest", "impressum.html", "datenschutz.html", "cover/mutti.jpg", "cover/artgerecht.webp", "cover/gfk.jpg", "cover/wunschkind.jpg"];
 
 self.addEventListener("install", function (e) {
