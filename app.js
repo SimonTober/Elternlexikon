@@ -614,14 +614,14 @@
   }
 
   function zeigeStart() {
-    var html = installHinweis() + weiterHoerenKarte();
+    var html = gruss() + installHinweis() + weiterHoerenKarte();
 
     var sos = '<h2 class="section-title" id="soforthilfe">Gerade akut?</h2><div class="sos">' +
       SOFORT.filter(function (x) { return NACH_ID[x[0]]; }).map(function (x) {
         return '<a class="sos-btn" href="#/soforthilfe/' + x[0] + '">' + esc(x[1]) + "</a>";
       }).join("") + "</div>";
 
-    var altersBlock = '<h2 class="section-title">' + (kindalter ? "Das ist jetzt dran" : "Wie alt ist dein Kind?") + "</h2>" +
+    var altersBlock = '<h2 class="section-title">' + (kindalter ? (profilName() ? "Für dich: Das ist jetzt dran" : "Das ist jetzt dran") : "Wie alt ist dein Kind?") + "</h2>" +
       (kindalter ? '<p class="dran-sub">Passend für dein Kind mit ' + esc(W.alter[kindalter]) + ". Alter ändern:</p>" : "") +
       '<div class="alter-wahl" role="group" aria-label="Alter des Kindes">' +
       Object.keys(W.alter).map(function (k) {
@@ -1297,6 +1297,98 @@
     toast(["Normale Schrift", "Größere Schrift", "Größte Schrift"][stufe]);
   });
   schriftSetzen();
+
+
+  /* ---------- Willkommen & Profil (alles bleibt auf diesem Gerät) ---------- */
+  var profil = lies("profil", {});
+  if (!profil || typeof profil !== "object") profil = {};
+  function profilName() { return String(profil.name || "").trim(); }
+  function gruss() {
+    return profilName() ? '<p class="gruss">Hallo ' + esc(profilName()) + "!</p>" : "";
+  }
+  var wk = $("#wk"), wkBox = $("#wk-box"), wkFokusZurueck = null, wkAlter = "";
+  function wkInfo() {
+    wkBox.innerHTML =
+      '<h2 id="wk-titel">Hallo und herzlich willkommen!</h2>' +
+      '<p>Das Elternlexikon sammelt das Wissen aus vier Eltern-Podcasts und sortiert es nach Themen, damit du im Alltag schnell findest, was dir gerade hilft. Du kannst suchen, nach Alter und Bereich stöbern und direkt in die passende Stelle der Folge hineinhören.</p>' +
+      '<ul class="wk-liste">' +
+      '<li><strong>Keine Wissenschaft, keine Ärzte:</strong> Das hier sind Meinungen und Erfahrungen aus den Podcasts, nicht wissenschaftlich belegt. Wir sind keine Ärztinnen oder Mediziner und ersetzen keinen Rat von Fachleuten. Im Notfall helfen die Notrufnummern in der App.</li>' +
+      '<li><strong>Keine KI-Suche:</strong> Die Suche läuft direkt auf deinem Gerät, ohne KI-Dienst und ohne Server. Es ist eine Wissensdatenbank aus den Podcasts. (Beim Zusammenfassen der Folgen haben wir KI als Werkzeug genutzt.)</li>' +
+      '<li><strong>Deine Daten bleiben bei dir:</strong> Profil, Merkliste und Einstellungen liegen nur auf deinem Handy oder Computer.</li>' +
+      '<li><strong>Immer frisch:</strong> Neue Folgen und Themen kommen etwa alle zwei Wochen dazu.</li></ul>' +
+      '<div class="wk-aktionen"><button type="button" class="primary-btn" data-wk="profil">' + (profilName() || kindalter ? "Profil ansehen" : "Profil anlegen (optional)") + '</button>' +
+      '<button type="button" class="wk-sek" data-wk="zu">Los geht\'s</button></div>' +
+      '<label class="wk-check"><input type="checkbox" id="wk-nie"' + (lies("willkommen_aus", false) || !lies("willkommen_gesehen", false) ? " checked" : "") + '> Dieses Fenster nicht mehr von selbst zeigen</label>';
+  }
+  function wkProfil() {
+    wkAlter = kindalter;
+    wkBox.innerHTML =
+      '<h2 id="wk-titel">Dein Profil</h2>' +
+      '<p>Alles optional. Mit Namen begrüße ich dich, mit dem Alter zeige ich dir passende Themen direkt auf der Startseite. Die Angaben bleiben auf diesem Gerät.</p>' +
+      '<label class="wk-feld" for="wk-name">Wie dürfen wir dich nennen?</label>' +
+      '<input id="wk-name" class="wk-input" type="text" maxlength="30" autocomplete="given-name" placeholder="Dein Vorname" value="' + esc(profilName()) + '">' +
+      '<div class="wk-feld" id="wk-alter-label">Wie alt ist dein Kind?</div>' +
+      '<div class="alter-wahl" role="group" aria-labelledby="wk-alter-label">' +
+      Object.keys(W.alter).map(function (k) {
+        return '<button type="button" class="alter-chip" data-wk-alter="' + k + '" aria-pressed="' + (wkAlter === k) + '">' + esc(W.alter[k]) + "</button>";
+      }).join("") + "</div>" +
+      '<div class="wk-aktionen"><button type="button" class="primary-btn" data-wk="speichern">Speichern</button>' +
+      '<button type="button" class="wk-sek" data-wk="info">Zurück</button></div>' +
+      (profilName() || kindalter ? '<button type="button" class="wk-loeschen" data-wk="loeschen">Profil löschen</button>' : "");
+  }
+  function wkOeffne(seite) {
+    wkFokusZurueck = document.activeElement;
+    (seite === "profil" ? wkProfil : wkInfo)();
+    wk.hidden = false; document.body.classList.add("sheet-open");
+    wkBox.focus();
+  }
+  function wkSchliessen() {
+    var nie = $("#wk-nie");
+    if (nie) schreib("willkommen_aus", nie.checked);
+    else if (!lies("willkommen_gesehen", false)) schreib("willkommen_aus", true); // Profil gespeichert: kein erneutes Pop-up
+    schreib("willkommen_gesehen", true);
+    wk.hidden = true; document.body.classList.remove("sheet-open");
+    if (wkFokusZurueck && wkFokusZurueck.focus) wkFokusZurueck.focus();
+  }
+  function wkNeuZeichnen() { if (!document.body.classList.contains("im-artikel") && /^(#\/)?$/.test(location.hash)) zeigeListe(); }
+  wk.addEventListener("click", function (e) {
+    var t;
+    if (e.target === wk) return wkSchliessen();
+    if ((t = e.target.closest("[data-wk-alter]"))) {
+      wkAlter = wkAlter === t.dataset.wkAlter ? "" : t.dataset.wkAlter;
+      wkBox.querySelectorAll("[data-wk-alter]").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.wkAlter === wkAlter); });
+      return;
+    }
+    if (!(t = e.target.closest("[data-wk]"))) return;
+    var a = t.dataset.wk;
+    if (a === "zu") wkSchliessen();
+    else if (a === "profil") wkProfil();
+    else if (a === "info") wkInfo();
+    else if (a === "speichern") {
+      profil = { name: $("#wk-name").value.trim().slice(0, 30) };
+      kindalter = wkAlter; schreib("profil", profil); schreib("kindalter", kindalter);
+      wkSchliessen(); wkNeuZeichnen();
+      toast(profilName() ? "Gespeichert, " + profilName() + "!" : "Gespeichert");
+    } else if (a === "loeschen") {
+      if (!confirm("Profil wirklich löschen? Name und Alter werden von diesem Gerät entfernt. Deine Merkliste bleibt.")) return;
+      profil = {}; kindalter = ""; wkAlter = "";
+      try { localStorage.removeItem("profil"); localStorage.removeItem("kindalter"); } catch (x) {}
+      wkSchliessen(); wkNeuZeichnen(); toast("Profil gelöscht");
+    }
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !wk.hidden) wkSchliessen();
+    if (e.key === "Tab" && !wk.hidden) { // Fokus im Fenster halten
+      var f = wkBox.querySelectorAll("button, input, a[href]");
+      if (!f.length) return;
+      var erst = f[0], letzt = f[f.length - 1];
+      if (e.shiftKey && (document.activeElement === erst || document.activeElement === wkBox)) { e.preventDefault(); letzt.focus(); }
+      else if (!e.shiftKey && document.activeElement === letzt) { e.preventDefault(); erst.focus(); }
+    }
+  });
+  $("#profil-btn").addEventListener("click", function () { wkOeffne(profilName() || kindalter ? "profil" : "info"); });
+  // „Über die App“ in der Fußzeile und im Profil bleibt über das Profil erreichbar
+  if (!lies("willkommen_aus", false)) setTimeout(function () { if (wk.hidden) wkOeffne("info"); }, 500);
 
   /* ---------- Start ---------- */
   // Testversion-Hinweis (W.meta.hinweis) bewusst nicht mehr eingeblendet; Fachprüfung siehe Fußzeile
