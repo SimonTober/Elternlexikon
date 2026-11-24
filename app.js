@@ -411,6 +411,24 @@
       '<div class="s-links"><button type="button" class="link-btn" data-podalle>Alle Themen zeigen</button>' + links.join("") + "</div></div>";
   }
 
+  var BEREICH_ICON = {
+    schlaf: '<path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z"/>',
+    gefuehle: '<path d="M12 20s-7-4.500-7-10a4 4 0 0 1 7-2.500A4 4 0 0 1 19 10c0 5.500-7 10-7 10z"/>',
+    essen: '<path d="M5 8h12v5a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5zM17 9h2a2 2 0 0 1 0 4h-2M8 3v2M12 3v2"/>',
+    geschwister: '<circle cx="8" cy="8" r="3"/><circle cx="16.500" cy="9" r="2.500"/><path d="M3 19c0-3 2.500-5 5-5s5 2 5 5M14 19c0-2 1.500-4 3.500-4s3.500 2 3.500 4"/>',
+    kita: '<path d="M4 20V10l8-6 8 6v10zM10 20v-5h4v5"/>',
+    medien: '<rect x="7" y="3" width="10" height="18" rx="2"/><path d="M11 18h2"/>',
+    sauberkeit: '<path d="M12 3s6 6.500 6 11a6 6 0 0 1-12 0c0-4.500 6-11 6-11z"/>',
+    grenzen: '<path d="M12 3l8 3v6c0 4.500-3.500 7.500-8 9-4.500-1.500-8-4.500-8-9V6z"/>',
+    alltag: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+    baby: '<circle cx="12" cy="12" r="9"/><path d="M9 10h.01M15 10h.01M9 15c1 1 2 1.500 3 1.500s2-.500 3-1.500"/>',
+    entwicklung: '<path d="M5 20v-8M12 20V6M19 20V9"/>',
+    eltern: '<circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.600 5.600L7 7M17 17l1.400 1.400M5.600 18.400L7 17M17 7l1.400-1.400"/>'
+  };
+  function bereichIcon(k) {
+    return BEREICH_ICON[k] ? '<svg class="area-icon" aria-hidden="true" viewBox="0 0 24 24">' + BEREICH_ICON[k] + "</svg>" : "";
+  }
+
   function zeigeStart() {
     var html = installHinweis();
 
@@ -456,7 +474,7 @@
     html += '<h2 class="section-title" id="bereiche">Nach Bereich</h2><div class="swipe-wrap"><div class="grid-areas swipe-areas">' +
       Object.keys(W.bereiche).map(function (k) {
         var n = W.artikel.filter(function (a) { return (a.bereiche || []).indexOf(k) >= 0; }).length;
-        return '<button type="button" class="area-tile" data-bereich="' + esc(k) + '"><strong>' + esc(W.bereiche[k]) +
+        return '<button type="button" class="area-tile" data-bereich="' + esc(k) + '">' + bereichIcon(k) + "<strong>" + esc(W.bereiche[k]) +
           "</strong><span>" + n + (n === 1 ? " Thema" : " Themen") + "</span></button>";
       }).join("") + '</div><div class="swipe-dots" aria-hidden="true"></div></div>';
 
