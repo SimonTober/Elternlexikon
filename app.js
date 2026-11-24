@@ -231,7 +231,7 @@
     podLeisteAktualisieren();
     var reset = $(".filter-reset");
     var mehr = $(".filter-more");
-    if (mehr && zustand.filter.bereich.size) mehr.open = true;
+    if (mehr && zustand.filter.bereich.size && window.innerWidth > 700) mehr.open = true;
     if (filterAktiv() && !reset) {
       $("#filters").insertAdjacentHTML("beforeend", '<button type="button" class="filter-reset">Filter zurücksetzen</button>');
     } else if (!filterAktiv() && reset) {
@@ -270,12 +270,19 @@
     setzeNav("");
     var q = zustand.q.trim();
 
+    document.body.classList.toggle("start", !q && !filterAktiv());
     if (!q && !filterAktiv()) return zeigeStart();
 
     var liste = q
       ? Suche.suche(INDEX, q).map(function (t) { return t.artikel; })
       : W.artikel.slice().sort(function (a, b) { return a.titel.localeCompare(b.titel, "de"); });
     liste = liste.filter(passtZuFilter);
+    if (q && kindalter && liste.length > 2 && !zustand.filter.alter.size) {
+      // Bester Treffer bleibt vorn, danach kommen Themen zuerst, die zum Alter des Kindes passen (Reihenfolge sonst unverändert)
+      var rest = liste.slice(1).map(function (a, i) { return { a: a, i: i, p: (a.alter || []).indexOf(kindalter) >= 0 ? 0 : 1 }; });
+      rest.sort(function (x, y) { return x.p - y.p || x.i - y.i; });
+      liste = [liste[0]].concat(rest.map(function (r) { return r.a; }));
+    }
 
     if (!liste.length) {
       view.innerHTML = '<div class="empty"><strong>Dazu haben wir noch nichts gefunden.</strong>' +
@@ -283,9 +290,31 @@
         (filterAktiv() ? ", oder setzt die Filter zurück." : ".") + "</div>";
       return;
     }
+    var nurBereich = !q && zustand.filter.bereich.size === 1 && !zustand.filter.alter.size && !zustand.filter.podcast.size ? Array.from(zustand.filter.bereich)[0] : "";
+    if (nurBereich && liste.length > 8) {
+      var top = liste.slice().sort(function (x, y) { return (x.medizinisch ? 1 : 0) - (y.medizinisch ? 1 : 0) || relevanz(x, y); }).slice(0, 4);
+      view.innerHTML = '<div class="bereich-kopf"><h2>' + esc(W.bereiche[nurBereich]) + "</h2><p>" + esc(BEREICH_TEXT[nurBereich] || "") + "</p></div>" +
+        '<h3 class="section-title">Zuerst lesen</h3>' + kartenListe(top) +
+        '<h3 class="section-title">Alle ' + liste.length + " Themen</h3>" + kartenListe(liste);
+      return;
+    }
     view.innerHTML = '<p class="result-meta">' + liste.length + (liste.length === 1 ? " Thema" : " Themen") +
       (q ? " zu „" + esc(q) + "“" : "") + "</p>" + kartenListe(liste);
   }
+  var BEREICH_TEXT = {
+    schlaf: "Einschlafen, Durchschlafen, Mittagsschlaf und das Familienbett.",
+    essen: "Beikost, wählerisches Essen, Süßes und Mahlzeiten ohne Streit.",
+    gefuehle: "Wut, Angst, Trotz und große Gefühle begleiten, bei Kindern und bei euch.",
+    geschwister: "Streit, Eifersucht und Bindung zwischen Geschwistern.",
+    kita: "Eingewöhnung, Kita-Alltag, Schulstart und Hausaufgaben.",
+    medien: "Bildschirmzeit, Handy und Medienerziehung.",
+    sauberkeit: "Trocken werden und Töpfchen.",
+    grenzen: "Regeln, Konsequenzen und Grenzen setzen, ohne zu schimpfen.",
+    alltag: "Routinen, Anziehen, Aufräumen und der ganz normale Wahnsinn.",
+    baby: "Schwangerschaft, Geburt, Stillen und die ersten Monate.",
+    entwicklung: "Was Kinder wann können, Besonderheiten und Gesundheit.",
+    eltern: "Erschöpfung, Wut, Mental Load und Zeit für euch."
+  };
 
   var SOFORT = [
     ["wutanfaelle", "Wutanfall"], ["kind-haut", "Mein Kind haut"], ["geschwisterstreit", "Geschwister streiten"],
@@ -296,7 +325,17 @@
   var installEvent = null, installZu = lies("installZu", false);
   window.addEventListener("beforeinstallprompt", function (e) { e.preventDefault(); installEvent = e; if (!location.hash || location.hash === "#/") zeigeListe(); });
   function istApp() { return (window.matchMedia && matchMedia("(display-mode: standalone)").matches) || navigator.standalone === true; }
-  function relevanz(x, y) { return (y.quellen || []).length - (x.quellen || []).length || x.titel.localeCompare(y.titel, "de"); }
+  // Themen, nach denen Eltern im Alltag am häufigsten suchen. Sie stehen bei gleicher Quellenlage zuerst.
+  var KERN = ["wutanfaelle", "einschlafen", "durchschlafen", "grenzen-setzen", "geschwisterstreit", "kooperation-zuhoeren", "bildschirmzeit",
+    "waehlerisches-essen", "trotz-autonomie", "gefuehle-begleiten", "kita-eingewoehnung", "trocken-werden", "elterliche-wut", "schulstart",
+    "erschoepfte-eltern", "loben", "belohnungssysteme", "angst-kind", "kind-haut", "luegen", "selbststaendigkeit", "morgenroutine", "beikost", "stillen"];
+  var BABY_KERN = ["babyschlaf", "stillen", "beikost", "baby-weinen", "erste-zeit-mit-baby", "wochenbett", "bindung", "tragen", "zahnen-zaehne", "flaeschchen", "familienbett"];
+  function kernRang(a) { var i = KERN.indexOf(a.id); return i < 0 ? 999 : i; }
+  function relevanz(x, y) {
+    return Math.min(8, (y.sichtweisen || []).length) - Math.min(8, (x.sichtweisen || []).length) ||
+      kernRang(x) - kernRang(y) ||
+      (y.quellen || []).length - (x.quellen || []).length || x.titel.localeCompare(y.titel, "de");
+  }
 
   function installHinweis() {
     if (istApp() || installZu) return "";
@@ -351,20 +390,30 @@
   function zeigeStart() {
     var html = installHinweis();
 
-    html += '<h2 class="section-title" id="soforthilfe">Gerade akut?</h2><div class="sos">' +
+    var sos = '<h2 class="section-title" id="soforthilfe">Gerade akut?</h2><div class="sos">' +
       SOFORT.filter(function (x) { return NACH_ID[x[0]]; }).map(function (x) {
         return '<a class="sos-btn" href="#/soforthilfe/' + x[0] + '">' + esc(x[1]) + "</a>";
       }).join("") + "</div>";
 
-    html += '<h2 class="section-title">Wie alt ist dein Kind?</h2><div class="alter-wahl" role="group" aria-label="Alter des Kindes">' +
+    var altersBlock = '<h2 class="section-title">' + (kindalter ? "Das ist jetzt dran" : "Wie alt ist dein Kind?") + "</h2>" +
+      (kindalter ? '<p class="dran-sub">Passend für dein Kind mit ' + esc(W.alter[kindalter]) + ". Alter ändern:</p>" : "") +
+      '<div class="alter-wahl" role="group" aria-label="Alter des Kindes">' +
       Object.keys(W.alter).map(function (k) {
         return '<button type="button" class="alter-chip" data-kindalter="' + k + '" aria-pressed="' + (kindalter === k) + '">' + esc(W.alter[k]) + "</button>";
       }).join("") + "</div>";
     if (kindalter) {
-      var passend = W.artikel.filter(function (a) { return (a.alter || []).indexOf(kindalter) >= 0; }).sort(relevanz);
-      html += '<p class="result-meta">Am häufigsten gefragt für ' + esc(W.alter[kindalter]) + "</p>" + kartenListe(passend.slice(0, 5)) +
+      var passend = W.artikel.filter(function (a) { return (a.alter || []).indexOf(kindalter) >= 0; })
+        .sort(function (x, y) {
+          var ax = (x.alter || []).length >= 4 ? 1 : 0, ay = (y.alter || []).length >= 4 ? 1 : 0; // für alle Altersstufen getaggte Themen später
+          var bx = kindalter === "0-1" && (x.bereiche || []).indexOf("baby") >= 0 ? 0 : 1, by = kindalter === "0-1" && (y.bereiche || []).indexOf("baby") >= 0 ? 0 : 1;
+          var rx = kindalter === "0-1" ? BABY_KERN.indexOf(x.id) : -1, ry = kindalter === "0-1" ? BABY_KERN.indexOf(y.id) : -1;
+          if (rx >= 0 || ry >= 0) return (rx < 0 ? 999 : rx) - (ry < 0 ? 999 : ry);
+          return (x.medizinisch ? 1 : 0) - (y.medizinisch ? 1 : 0) || bx - by || ax - ay || ((x.alter || []).length - (y.alter || []).length) || kernRang(x) - kernRang(y) || relevanz(x, y);
+        });
+      altersBlock += kartenListe(passend.slice(0, 5)) +
         '<button type="button" class="alle-btn" data-alle-alter>Alle ' + passend.length + " Themen für diese Altersgruppe</button>";
     }
+    html += kindalter ? altersBlock + sos : sos + altersBlock;
 
     html += '<h2 class="section-title">Häufige Fragen</h2><div class="suggestions">' +
       BEISPIELE.map(function (b) { return '<button type="button" class="suggestion" data-q="' + esc(b) + '">' + esc(b) + "</button>"; }).join("") +
@@ -372,7 +421,7 @@
 
     html += '<aside class="notfall" id="hilfe"><strong>Bei akuten Sorgen</strong> (Fieber, Entwicklung, Krise): Kinderarzt oder Kinderärztin, ' +
       'Beratungsstellen oder das Elterntelefon <a href="tel:08001110550">0800 111 0 550</a> (kostenlos, anonym). ' +
-      'Im Notfall <a href="tel:112">112</a>.</aside>';
+      'Im Notfall <a href="tel:112">112</a>. <a href="#/notfall"><strong>Alle Notfall-Nummern</strong></a></aside>';
 
     if (verlauf.length) {
       html += '<h2 class="section-title">Zuletzt angesehen</h2>' + kartenListe(verlauf.map(function (id) { return NACH_ID[id]; }).slice(0, 4));
@@ -415,6 +464,37 @@
     sc.addEventListener("scroll", akt, { passive: true });
     window.addEventListener("resize", bau);
     bau();
+  }
+
+  function zeigeNotfall() {
+    document.body.classList.add("compact");
+    $("#search-area").hidden = true;
+    setzeNav("");
+    var nummern = [
+      ["112", "tel:112", "Notruf", "Bei Atemnot, Bewusstlosigkeit, Krampfanfall, schweren Verletzungen oder wenn ihr euch große Sorgen macht. Sofort anrufen, nicht erst nachlesen."],
+      ["116 117", "tel:116117", "Ärztlicher Bereitschaftsdienst", "Wenn die Praxis geschlossen ist und es nicht lebensbedrohlich wirkt, zum Beispiel nachts oder am Wochenende."],
+      ["Giftinformation", "", "Giftnotruf", "Bei Verdacht auf verschluckte Reinigungsmittel, Medikamente oder Pflanzen: Die Nummer des Giftinformationszentrums eurer Region am besten schon jetzt ins Handy speichern."],
+      ["0800 111 0 550", "tel:08001110550", "Elterntelefon", "Kostenlos und anonym, wenn ihr am Ende eurer Kräfte seid oder jemanden zum Reden braucht."]
+    ];
+    var themen = [["erste-hilfe", "Erste Hilfe bei Kindern"], ["fieber", "Fieber beim Kind"], ["baby-hitze", "Hitze beim Baby"], ["unfaelle-vorbeugen", "Unfälle vorbeugen"], ["wassersicherheit", "Wassersicherheit"], ["kindersitz", "Kindersitz im Auto"]]
+      .filter(function (t) { return NACH_ID[t[0]]; });
+    view.innerHTML = '<article class="article notfall-seite"><button type="button" class="back" data-back>← Zurück</button>' +
+      '<p class="sos-label">Notfall</p><h1>Wen ihr jetzt anrufen könnt</h1>' +
+      '<ul class="nummern">' + nummern.map(function (n) {
+        return "<li>" + (n[1] ? '<a class="nummer" href="' + n[1] + '">' + esc(n[0]) + "</a>" : '<span class="nummer ohne">' + esc(n[0]) + "</span>") +
+          "<div><strong>" + esc(n[2]) + "</strong><span>" + esc(n[3]) + "</span></div></li>";
+      }).join("") + "</ul>" +
+      '<h2>Kurz nachgelesen</h2><p class="muted">Aussagen von Gästen und Hosts aus den Podcasts. Sie ersetzen keinen Erste-Hilfe-Kurs und keine ärztliche Beratung.</p>' +
+      '<div class="karten-notfall">' + ["erste-hilfe", "fieber", "baby-hitze"].filter(function (k) { return NACH_ID[k]; }).map(function (k) {
+        var a = NACH_ID[k];
+        return '<details class="nkarte"><summary>' + esc(a.titel) + "</summary><p>" + esc(a.kurz) + "</p>" +
+          '<ol class="tips">' + (a.tipps || []).slice(0, 4).map(function (t) { return "<li>" + esc(t) + "</li>"; }).join("") + "</ol>" +
+          '<a class="primary-btn" href="#/artikel/' + encodeURIComponent(a.id) + '">Ganzen Artikel lesen</a></details>';
+      }).join("") + "</div>" +
+      '<h2>Weitere Themen</h2>' +
+      '<div class="related">' + themen.map(function (t) { return '<a href="#/artikel/' + t[0] + '">' + esc(t[1]) + "</a>"; }).join("") + "</div></article>";
+    window.scrollTo(0, 0);
+    document.title = "Notfall · Elternlexikon";
   }
 
   function zeigeSoforthilfe(id) {
@@ -500,11 +580,16 @@
 
     // Mehr dazu: eingeklappt, damit die Antwort oben bleibt
     var mehr = "";
+    var stimmen = "";
     if ((a.sichtweisen || []).length) {
-      mehr += "<h3>Was die Podcasts dazu sagen</h3><div class=\"views\">" +
+      var n = a.sichtweisen.length;
+      stimmen = '<section class="stimmen"><h2>Was die Podcasts dazu sagen</h2>' +
+        '<p class="stimmen-sub">' + (n > 1 ? n + " Podcasts, " + n + " Blickwinkel. Wischt oder scrollt zum Vergleichen." : "Die Sicht des Podcasts auf dieses Thema.") + "</p>" +
+        '<div class="stimmen-grid' + (n > 1 ? " mehrere" : "") + '">' +
         a.sichtweisen.map(function (s) {
-          return '<div class="view pod-' + esc(s.podcast) + '">' + podLabel(s.podcast) + "<p>" + esc(s.text) + "</p></div>";
-        }).join("") + "</div>";
+          return '<div class="stimme pod-' + esc(s.podcast) + '"><div class="stimme-kopf">' + podLabel(s.podcast) + "</div><p>" + esc(s.text) + "</p>" +
+            (s.text.length > 260 ? '<button type="button" class="stimme-mehr" data-stimme-mehr aria-expanded="false">Weiterlesen</button>' : "") + "</div>";
+        }).join("") + "</div></section>";
     }
     var nachhoeren = "";
     if ((a.quellen || []).length) {
@@ -545,13 +630,14 @@
         }).join("") + "</ul></section>";
     }
     var verwandt = (a.verwandt || []).map(function (v) { return NACH_ID[v]; }).filter(Boolean);
+    var verwandtHtml = "";
     if (verwandt.length) {
-      mehr += "<h3>Passt auch dazu</h3><div class=\"related\">" +
-        verwandt.map(function (v) { return '<a href="#/artikel/' + encodeURIComponent(v.id) + '">' + esc(v.titel) + "</a>"; }).join("") + "</div>";
+      verwandtHtml = '<section class="passt-dazu"><h2>Passt auch dazu</h2><div class="related">' +
+        verwandt.map(function (v) { return '<a href="#/artikel/' + encodeURIComponent(v.id) + '">' + esc(v.titel) + "</a>"; }).join("") + "</div></section>";
     }
-    html += nachhoeren;
+    html += stimmen + nachhoeren + verwandtHtml;
     if (mehr) {
-      html += '<details class="mehr"><summary><span>Mehr dazu<small>Was die Podcasts dazu sagen, verwandte Themen</small></span></summary>' + mehr + "</details>";
+      html += '<details class="mehr"><summary><span>Mehr dazu<small>Weitere Hinweise</small></span></summary>' + mehr + "</details>";
     }
     html = html.replace('<div class="tags">', vertrauen + '<div class="tags">');
     html += "</article>";
@@ -595,11 +681,12 @@
   function route() {
     var h = location.hash || "#/";
     document.title = "Elternlexikon";
-    document.body.classList.toggle("im-artikel", /^#\/artikel\//.test(h));
+    document.body.classList.toggle("im-artikel", /^#\/(artikel|notfall)/.test(h));
     var m;
     if ((m = /^#\/artikel\/(.+)$/.exec(h))) return zeigeArtikel(decodeURIComponent(m[1]));
     if (h === "#/favoriten") return zeigeFavoriten();
     if (h === "#/podcasts") return zeigePodcasts();
+    if (h === "#/notfall") return zeigeNotfall();
     if ((m = /^#\/soforthilfe\/(.+)$/.exec(h))) return zeigeSoforthilfe(decodeURIComponent(m[1]));
     kamVonListe = false;
     zeigeListe();
@@ -666,6 +753,11 @@
       teilen(ar ? ar.titel : "Elternlexikon", ar ? ar.kurz : "", location.href); return;
     }
     if (e.target.closest("[data-print]")) { window.print(); return; }
+    var sm = e.target.closest("[data-stimme-mehr]");
+    if (sm) {
+      var st = sm.closest(".stimme"), offen = st.classList.toggle("offen");
+      sm.textContent = offen ? "Weniger" : "Weiterlesen"; sm.setAttribute("aria-expanded", offen ? "true" : "false"); return;
+    }
     if ((t = e.target.closest("[data-tip]"))) { tipUmschalten(t); return; }
     if (e.target.closest(".card, .related a, .sos-btn")) kamVonListe = true;
   });
@@ -774,8 +866,13 @@
 
   /* ---------- Start ---------- */
   if (W.meta && (W.meta.hinweis || W.meta.platzhalter)) {
-    if (W.meta.hinweis) $("#placeholder-banner").textContent = W.meta.hinweis;
-    $("#placeholder-banner").hidden = false;
+    var bn = $("#placeholder-banner"), bnZu = lies("bannerZu", "");
+    if (W.meta.hinweis && bnZu !== W.meta.hinweis) {
+      bn.innerHTML = '<span></span><button type="button" class="hint-x" aria-label="Hinweis schließen">×</button>';
+      bn.firstChild.textContent = W.meta.hinweis;
+      bn.querySelector("button").addEventListener("click", function () { bn.hidden = true; schreib("bannerZu", W.meta.hinweis); });
+      bn.hidden = false;
+    }
   }
   if (W.meta && W.meta.stand) $("#stand").textContent = "Stand: " + datumDe(W.meta.stand) + ".";
   baueFilter();

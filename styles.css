@@ -644,3 +644,61 @@ details.mehr .views .view { background: var(--surface); }
 .pod-strip { margin: 14px 0 6px; }
 .filter-row[data-group="podcast"] { display: none; }
 .pod-pill[aria-pressed="true"] { color: var(--text); font-weight: 600; box-shadow: 0 3px 12px color-mix(in srgb, var(--pc, var(--accent)) 30%, transparent); }
+
+/* ---- Startseite entrümpelt (mobil) ---- */
+.banner { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+.banner .hint-x { flex: none; min-width: 32px; min-height: 32px; margin: -4px -6px 0 0; }
+body.start .filter-row[data-group="alter"] { display: none; }
+body.start .filters { margin-top: 4px; }
+@media (max-width: 700px) {
+  .pod-pills { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin: 0 -16px; padding: 2px 16px 6px; scroll-snap-type: x proximity; }
+  .pod-pills::-webkit-scrollbar { display: none; }
+  .pod-pill { flex: none; scroll-snap-align: start; }
+}
+
+/* ---- Vergleichsansicht: Was die Podcasts dazu sagen ---- */
+.stimmen { margin: 28px 0 8px; }
+.stimmen h2 { margin-bottom: 4px; }
+.stimmen-sub { margin: 0 0 12px; color: var(--muted); font-size: 14px; }
+.stimmen-grid { display: grid; gap: 12px; }
+.stimme { background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--pc, var(--line)); border-radius: 14px; padding: 14px 16px 16px; box-shadow: var(--shadow, none); }
+.stimme-kopf { margin-bottom: 8px; font-weight: 600; }
+.stimme p { margin: 0; line-height: 1.55; }
+@media (max-width: 700px) {
+  .stimmen-grid.mehrere { display: flex; overflow-x: auto; margin: 0 -16px; padding: 2px 16px 10px; gap: 12px; scroll-snap-type: x mandatory; scrollbar-width: none; }
+  .stimmen-grid.mehrere::-webkit-scrollbar { display: none; }
+  .stimmen-grid.mehrere .stimme { flex: 0 0 84%; scroll-snap-align: center; }
+}
+@media (min-width: 701px) {
+  .stimmen-grid.mehrere { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); align-items: start; }
+}
+.stimme p { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 9; line-clamp: 9; overflow: hidden; }
+.stimme:not(:has(.stimme-mehr)) p, .stimme.offen p { display: block; -webkit-line-clamp: unset; line-clamp: unset; overflow: visible; }
+.stimme-mehr { margin-top: 10px; min-height: 44px; padding: 0 2px; background: none; border: 0; color: var(--accent); font: 600 15px/1 var(--sans, inherit); cursor: pointer; }
+.dran-sub { margin: -4px 0 10px; color: var(--muted); font-size: 14px; }
+.bereich-kopf { background: var(--accent-soft); border-radius: var(--radius, 16px); padding: 18px 18px 14px; margin: 4px 0 8px; }
+.bereich-kopf h2 { margin: 0 0 4px; font-family: var(--serif); }
+.bereich-kopf p { margin: 0; color: var(--muted); }
+
+/* ---- Notfall-Seite ---- */
+.nummern { list-style: none; margin: 16px 0 24px; padding: 0; display: grid; gap: 12px; }
+.nummern li { display: flex; gap: 14px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; }
+.nummern li > div { display: grid; gap: 2px; font-size: 15px; }
+.nummern li span { color: var(--muted); }
+.nummer { flex: none; min-width: 96px; text-align: center; padding: 12px 10px; border-radius: 12px; background: var(--warm, #e8704a); color: #fff; font-weight: 700; text-decoration: none; font-size: 17px; }
+.nummer.ohne { background: var(--accent-soft); color: var(--text); font-size: 13px; }
+@media (max-width: 460px) { .nummern li { flex-direction: column; align-items: stretch; } .nummer { min-width: 0; } }
+:root[data-theme="dark"] .nummer:not(.ohne) { color: #20120b; }
+.passt-dazu { margin: 28px 0 8px; }
+.passt-dazu h2 { margin-bottom: 10px; }
+.karten-notfall { display: grid; gap: 10px; margin: 12px 0 24px; }
+.nkarte { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 4px 16px; }
+.nkarte summary { cursor: pointer; min-height: 48px; display: flex; align-items: center; font-weight: 600; font-size: 17px; }
+.nkarte[open] { padding-bottom: 16px; }
+.nkarte p { margin: 4px 0 10px; }
+.banner .hint-x { min-width: 44px; min-height: 44px; margin: -12px -10px -8px 0; }
+.pod-strip-head a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 4px; margin: -10px -4px; }
+@media (max-width: 520px) {
+  .alter-wahl { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .alter-wahl .alter-chip { width: 100%; text-align: center; justify-content: center; }
+}

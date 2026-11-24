@@ -2,8 +2,8 @@
  * Format der Artikel: siehe arbeit/ANLEITUNG_ARTIKEL.md */
 window.WISSEN = {
  "meta": {
-  "stand": "2026-11-23",
-  "hinweis": "Probeversion: Bisher ausgewertet sind die Podcasts „Mutti ist die Beste“, „artgerecht“ und „Familie Verstehen“. Weitere Podcasts folgen."
+  "stand": "2026-11-24",
+  "hinweis": "Testversion: ausgewertet sind „Mutti ist die Beste“, „artgerecht“, „Familie Verstehen“ und „Das gewünschteste Wunschkind“. Gesundheits- und Rechtsthemen sind noch nicht fachlich geprüft."
  },
  "podcasts": {
   "mutti": {
@@ -58,7 +58,15 @@ window.WISSEN = {
    "einschlafen",
    "durchschlafen",
    "nickerchen",
-   "mittagsschlaf"
+   "mittagsschlaf",
+   "schläft",
+   "schlaf",
+   "schlafprobleme",
+   "nachts",
+   "aufwachen",
+   "wach",
+   "einschlafprobleme",
+   "durchschlafprobleme"
   ],
   [
    "wut",
@@ -124,7 +132,8 @@ window.WISSEN = {
    "krippe",
    "kindergarten",
    "tagesmutter",
-   "eingewöhnung"
+   "eingewöhnung",
+   "abschied"
   ],
   [
    "schule",
@@ -149,14 +158,25 @@ window.WISSEN = {
    "beißen",
    "treten",
    "kratzen",
-   "schubsen"
+   "schubsen",
+   "schlägt",
+   "beißt",
+   "tritt",
+   "kneift",
+   "prügeln",
+   "prügelt",
+   "gewalt"
   ],
   [
    "essen",
    "mäkelig",
    "wählerisch",
    "gemüse",
-   "isst"
+   "isst",
+   "esse",
+   "mahlzeit",
+   "kein appetit",
+   "mag nicht essen"
   ],
   [
    "windel",
@@ -206,7 +226,9 @@ window.WISSEN = {
     "Eltern werten Erziehung ab",
     "Erziehungskritik Oma",
     "Generationenkonflikt",
-    "Selbsteinfühlung"
+    "Selbsteinfühlung",
+    "Oma sagt",
+    "Klaps"
    ],
    "fragen": [
     "Was antworte ich auf \"Das hat uns auch nicht geschadet\"?",
@@ -227,12 +249,17 @@ window.WISSEN = {
     "Übt Selbsteinfühlung zuerst in Ruhe: Schreibt auf, was der Satz ausgelöst hat, sucht aus einer Gefühlsliste drei bis sechs Gefühle und ordnet jedem das Bedürfnis zu.",
     "Zeigt im nächsten Gespräch Einfühlung (\"Du findest das gerade komisch\"), nennt euer Bedürfnis nach Verständnis und ladet ein, euch zuzuhören.",
     "Betont, dass ihr das Frühere nicht verurteilt, sondern es selbst anders machen möchtet.",
-    "Rechnet damit, dass solche Gespräche emotional werden und Tränen fließen können."
+    "Rechnet damit, dass solche Gespräche emotional werden und Tränen fließen können.",
+    "Überlegt, wie nah euch die Person steht: Fragt nach oder antwortet kurz, ohne alte Wunden aufzureißen, etwa: Dir hat es vielleicht nicht geschadet, weil du robust bist, aber nicht alle Kinder sind so robust."
    ],
    "sichtweisen": [
     {
      "podcast": "gfk",
      "text": "Kathy Weber betont, dass die Selbsteinfühlung bei ihr erst durch zwölf Jahre Übung so schnell geht; Ungeübte sollten sie nicht in Millisekunden im Konflikt erwarten. In ihrem Rollenspiel mit der eigenen Mutter reagiert diese zuerst mit Unverständnis und Verunsicherung, dann mit Interesse. Sie selbst wäre bei dem Satz erschrocken und traurig, weil ihr Verbindung und Gesehenwerden wichtig sind."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "In zwei Folgen suchen Daniel Graf und Katja Seide mit Gästen nach einer Erwiderung. Stefanie Stahl vermutet, der Satz sei psychologische Abwehr, weil das Infragestellen der eigenen Eltern wehtue; Erinnerungslücken sprächen eher für eine schwierige Kindheit. Yossi weist darauf hin, dass der Satz auch verrät, wie die Person selbst behandelt wurde, und vergleicht mit Rauchen: Ein Onkel, der 90 wird, widerlegt kein Risiko. Beide betonen Empathie für das Gegenüber. Anders als die GfK-Sicht, die zuerst Selbsteinfühlung übt, bieten sie eher kurze Antworten wie: Dir hat es vielleicht nicht geschadet, weil du robust bist, aber nicht alle Kinder sind so. Stahl und die Hosts räumen ein, keine fertige Antwort zu haben."
     }
    ],
    "quellen": [
@@ -259,12 +286,29 @@ window.WISSEN = {
      "datum": "2019-09-01",
      "minute": "28:05",
      "thema": "Wie man Selbsteinfühlung übt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 151,
+     "titel": "Selbstbewusst bedürfnisorientiert begleiten",
+     "datum": "2024-10-01",
+     "minute": "24:08",
+     "thema": "Wie reagiere ich auf Uns hat es auch nicht geschadet?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 30,
+     "titel": "Stefanie Stahl – Nestwärme, die Flügel verleiht",
+     "datum": "2020-01-28",
+     "minute": "23:10",
+     "thema": "Warum sagen Menschen das hat mir nicht geschadet?"
     }
    ],
    "verwandt": [
     "grosseltern",
     "eltern-selbstregulation",
-    "trigger-inneres-kind"
+    "trigger-inneres-kind",
+    "eigene-kindheit-praegung"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Was antworte ich auf \"Das hat uns auch nicht geschadet\"?“. Hier steht, was dahinter stecken kann und was helfen kann."
@@ -355,7 +399,7 @@ window.WISSEN = {
     "reizueberflutung-vorbeugen",
     "bildschirmzeit",
     "routinen",
-    "mittagsschlaf"
+    "familienbett"
    ],
    "medizinisch": true,
    "einleitung": "Viele Eltern erleben, dass ihr Kind abends nicht zur Ruhe kommt, überdreht ist oder keinen festen Tag-Nacht-Rhythmus findet."
@@ -461,7 +505,12 @@ window.WISSEN = {
     "Strategien bei ADHS",
     "Hochsensibilität",
     "Neurodivergenz",
-    "gefühlsstarkes Kind"
+    "gefühlsstarkes Kind",
+    "Träumerchen",
+    "Wirbelwind",
+    "ADS",
+    "Abenteuergehirn",
+    "ADHS Mädchen"
    ],
    "fragen": [
     "Soll ich meinem Kind mit ADHS Medikamente geben?",
@@ -469,7 +518,9 @@ window.WISSEN = {
     "Was kann ich tun, bevor ich über Medikamente nachdenke?",
     "Hilft eine frühe Diagnose?",
     "Hat mein Kind starke Gefühle oder ADHS?",
-    "Brauche ich eine Diagnose für die Förderung in der Schule?"
+    "Brauche ich eine Diagnose für die Förderung in der Schule?",
+    "Warum bekommt mein Kind so viel negative Rückmeldung in der Schule?",
+    "Wirkt Elternberatung bei ADHS?"
    ],
    "alter": [
     "6-10"
@@ -486,7 +537,9 @@ window.WISSEN = {
     "Bleibt mit dem Kind im Gespräch über die Wirkung, denn Kinder können Veränderungen nicht immer gut benennen.",
     "Beobachtet, in welchen Situationen euer Kind stärker reagiert (Lärm, neue Menschen, Veränderungen) und was es dort braucht, statt gleich ein Etikett zu suchen (Kathy Weber).",
     "Bereitet neue Situationen vorab ausführlich vor (wer, was, wann, wo, wie) und nutzt feste Abläufe; bei Lärm helfen Ohrstöpsel oder der Gang aus dem Raum.",
-    "Sprecht vor einer Diagnostik mit Erzieherinnen und Lehrkräften und entscheidet selbst, ob ihr eine Diagnose für die Förderung in der Schule braucht."
+    "Sprecht vor einer Diagnostik mit Erzieherinnen und Lehrkräften und entscheidet selbst, ob ihr eine Diagnose für die Förderung in der Schule braucht.",
+    "Holt euch bei Verhaltensproblemen Elternberatung oder -coaching, denn laut den Fachleuten wirkt die Arbeit mit den Eltern oft besser als Training allein mit dem Kind.",
+    "Nutzt Bilder für Abläufe, eine Karte pro Schritt, und macht Erfolge sichtbar, etwa in einem Glas oder einer Collage; das entlastet das Arbeitsgedächtnis und stärkt Kinder, die oft negative Rückmeldungen bekommen."
    ],
    "sichtweisen": [
     {
@@ -496,6 +549,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber betont, dass sie weder Medizinerin noch Diagnostikerin noch Therapeutin ist, sondern aus der Gewaltfreien Kommunikation berät; Medikamente sind bei ihr kein Thema. Für sie haben alle Menschen dieselben Gefühle und Bedürfnisse, bei gefühlsstarken, hochsensiblen oder neurodivergenten Kindern ist nur die Bedürftigkeit, vor allem nach Sicherheit, Orientierung und Führung, höher. Eine Diagnose braucht es für die Beziehung aus ihrer Sicht nicht, es reicht, zu beobachten, was das Kind in welcher Situation braucht; sie ist aber keine Gegnerin von Diagnostik, etwa weil es in der Schule ohne Diagnose oft keine Förderung gibt. Skeptisch ist sie bei Ratschlägen, die mit Belohnung und Bestrafung arbeiten, und sie wirbt dafür, Kinder nicht in Schubladen zu stecken. Überreiztes Verhalten versteht sie als Überforderung, nicht als Absicht, und sie rät zu viel Vorbereitung, festen Abläufen und Schutz bei Lärm. Anders als in der mutti-Sicht steht also die elterliche Führung statt der Frage nach Medikation im Mittelpunkt."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide holen bei diesem Thema vor allem Fachleute und Betroffene ins Gespräch, die Mutti in der Haltung nahe sind: Medikamente sind eine mögliche Option, nie der einzige Baustein. Ein Kinder- und Jugendpsychiater rät, sich nicht von einem schnellen Etikett verunsichern zu lassen und gründlich abklären zu lassen, weil Konzentrationsprobleme viele Ursachen haben können; laut ihm wirkt Arbeit mit den Eltern oft besser als Training allein mit dem Kind. Ein anderer Kinder- und Jugendpsychiater, der zur Behandlung Stellung nimmt, sagt, Medikamente müssten nicht in jedem Fall gegeben werden und dienten der sozialen Eingliederung, nicht besseren Noten; er rät zu ausführlicher Aufklärung über Nebenwirkungen und dazu, nur zu tun, wofür Eltern selbst gut einstehen können. Eine Psychologin versteht ADHS als Problem der Aufmerksamkeitslenkung und betont Stärken wie Kreativität und Empathie; ein Gast sieht es als Spektrum, das weder reine Störung noch reine Superkraft ist. Anders als bei Kathy Weber stehen also Diagnostik, Elternberatung und Medikation klarer im Zentrum. Das sind Einschätzungen der Gäste, kein ärztlicher Rat; Einzelheiten zu Präparaten und Dosis klärt ihr mit Ärztin oder Arzt."
     }
    ],
    "quellen": [
@@ -506,14 +563,6 @@ window.WISSEN = {
      "datum": "2025-08-18",
      "minute": "03:43",
      "thema": "Starke Gefühle oder ADHS, und wann Diagnostik sinnvoll sein kann"
-    },
-    {
-     "podcast": "gfk",
-     "nr": 175,
-     "titel": "ADHS & Co.: Wie du gefühlsstarken und hochsensiblen Kindern Sicherheit und Orientierung schenkst",
-     "datum": "2025-08-18",
-     "minute": "19:27",
-     "thema": "Überreiztes Kind: Beispiele wie Kindergeburtstag und neue Menschen"
     },
     {
      "podcast": "gfk",
@@ -546,17 +595,253 @@ window.WISSEN = {
      "datum": "2025-01-07",
      "minute": "49:39",
      "thema": "Wann ist Medikation für Kinder sinnvoll?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 26,
+     "titel": "Mein Kind kann sich in der Schule nicht konzentrieren: ADHS??",
+     "datum": "2019-11-19",
+     "minute": "01:49",
+     "thema": "Typischer Fall in der Praxis und Elternerwartungen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 120,
+     "titel": "Kinder mit ADS und ADHS begleiten",
+     "datum": "2023-08-22",
+     "minute": "03:51",
+     "thema": "Träumerchen und Wirbelwinde: Symptome und Stärken"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 156,
+     "titel": "Wie kann ADS/ADHS behandelt werden?",
+     "datum": "2024-11-05",
+     "minute": "01:19",
+     "thema": "Sollten Medikamente bei ADHS immer gegeben werden?"
     }
    ],
    "verwandt": [
     "adhs-eltern",
     "schulstart",
     "selbststaendigkeit",
+    "neurodivergenz",
     "frustrationstoleranz",
-    "trocken-werden"
+    "drogen-alkohol-rauchen"
    ],
    "medizinisch": true,
    "einleitung": "Eltern von Kindern mit ADHS stehen vor der Frage, ob und wann Medikamente sinnvoll sind. Dabei sind sie unsicher, wie sie vorgehen und was sie vorher versuchen können."
+  },
+  {
+   "id": "adoption-pflegekind",
+   "titel": "Adoption und Pflegekind",
+   "synonyme": [
+    "Kind adoptieren",
+    "Adoptivkind",
+    "Pflegekind aufnehmen",
+    "Pflegeeltern werden",
+    "Dauerpflege",
+    "Bereitschaftspflege",
+    "Inkognito-Adoption",
+    "offene Adoption",
+    "Herkunftsfamilie",
+    "Jugendamt Adoption"
+   ],
+   "fragen": [
+    "Wie läuft eine Adoption in Deutschland ab?",
+    "Wie werde ich Pflegemutter oder Pflegevater?",
+    "Was ist der Unterschied zwischen Adoption und Pflegekind?",
+    "Wann sage ich meinem Kind, dass es adoptiert ist?",
+    "Hat ein Pflegekind weiter Kontakt zu den leiblichen Eltern?"
+   ],
+   "alter": [
+    "0-1",
+    "1-3",
+    "3-6"
+   ],
+   "bereiche": [
+    "eltern",
+    "entwicklung",
+    "gefuehle"
+   ],
+   "kurz": "Adoption und Dauerpflege sind laut den Gästinnen zwei verschiedene Wege zu einer Familie: Bei der Adoption wird das Kind rechtlich einem leiblichen Kind gleichgestellt, beim Pflegekind bleibt das Band zur Herkunftsfamilie bestehen. Beide Wege brauchen viel Geduld, ein längeres Prüfverfahren beim Jugendamt und die Bereitschaft, mit früheren Bindungsabbrüchen des Kindes umzugehen. Rechtliche Angaben sind Schilderungen der Gäste; Auskunft gibt das örtliche Jugendamt.",
+   "tipps": [
+    "Informiert euch früh beim örtlichen Jugendamt (Adoptionsvermittlung oder Pflegekinderdienst), etwa über Infoabende; das Verfahren dauert laut einer Gästin oft schon bis zur Warteliste ein Jahr.",
+    "Schließt vorher mit dem Wunsch nach einem leiblichen Kind und der Kinderwunschbehandlung ab; laut einer Gästin sieht das Jugendamt Zweigleisigkeit ungern, weil man die Trauer erst verarbeiten muss, um sich für ein ganz anderes Kind zu öffnen.",
+    "Geht mit der Haltung in den Prozess: Gesucht wird eine Familie für das Kind, nicht ein Kind für die Eltern.",
+    "Seid ehrlich zu euch selbst und zum Jugendamt, auch bei Herausforderungen, denen ihr euch nicht gewachsen fühlt, und nutzt den Lebensbericht, um euch mit euren Wünschen und eurer Beziehung auseinanderzusetzen.",
+    "Bei einem Pflegekind: Öffnet euch dafür, die Herkunftsfamilie als Teil des Lebens des Kindes anzunehmen und Umgangskontakte zu unterstützen.",
+    "Rechnet damit, dass Adoptiv- und Pflegekinder einen oder mehrere Bindungsabbrüche erlebt haben, und plant ein, das über lange Zeit aufzufangen.",
+    "Sprecht früh und in kleinen Schritten mit einem Adoptivkind über seine Herkunft, ohne ein einziges großes Gespräch, und signalisiert, dass es nachfragen und später auch die leiblichen Eltern suchen darf.",
+    "Wendet euch bei Fragen oder Problemen nach der Vermittlung selbst ans Jugendamt; es meldet sich laut einer Gästin nicht von allein."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "In zwei Folgen sprechen Daniel Graf und Katja Seide mit Gästinnen, die selbst adoptiert oder ein Pflegekind aufgenommen haben, sowie einer Expertin. Sie betonen, dass Adoption keine einfache Alternative zur eigenen Schwangerschaft ist: Es gebe deutlich mehr anerkannte Bewerber als Kinder, die zur Adoption stehen (Zahlen nennen die Hosts aus eigener Recherche). Die Hosts hinterfragen, warum Zweigleisigkeit mit Kinderwunschbehandlung abgelehnt wird, und lassen sich von der Begründung überzeugen. Beim Thema Aufklärung sind sich die Gästinnen einig: offen und früh erzählen, die heutige Empfehlung gilt auch rechtlich als Recht des Kindes auf Kenntnis seiner Abstammung. Eine Pflegemutter erklärt, dass Pflegekinder meist den Namen der Herkunftsfamilie behalten, Rückführung als Möglichkeit über der Familie schwebt und es unter erfahrenen Pflegeeltern auch kritische Stimmen zu Menschen mit unerfülltem Kinderwunsch gibt; sie selbst hält sie für gut geeignet, solange die Erwartungen nicht überhöht sind. Die Gäste schildern ihre persönlichen Erfahrungen, keine verbindliche Rechtsberatung."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 115,
+     "titel": "Ein Kind adoptieren - alles über die Voraussetzungen und den Ablauf einer Adoption",
+     "datum": "2023-06-13",
+     "minute": "03:20",
+     "thema": "Rechtliches und Ablauf, Acht-Wochen-Frist"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 115,
+     "titel": "Ein Kind adoptieren - alles über die Voraussetzungen und den Ablauf einer Adoption",
+     "datum": "2023-06-13",
+     "minute": "12:24",
+     "thema": "Voraussetzungen für Bewerberpaare"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 115,
+     "titel": "Ein Kind adoptieren - alles über die Voraussetzungen und den Ablauf einer Adoption",
+     "datum": "2023-06-13",
+     "minute": "24:03",
+     "thema": "Soll man dem Kind von der Adoption erzählen?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 116,
+     "titel": "Dauerpflegschaft - alles über die Aufnahme eines Pflegekindes",
+     "datum": "2023-06-27",
+     "minute": "09:12",
+     "thema": "Was ist Dauerpflege, Bereitschaftspflege"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 116,
+     "titel": "Dauerpflegschaft - alles über die Aufnahme eines Pflegekindes",
+     "datum": "2023-06-27",
+     "minute": "11:47",
+     "thema": "Rechtliche Unterschiede: Sorgerecht, Name, Umgang"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 116,
+     "titel": "Dauerpflegschaft - alles über die Aufnahme eines Pflegekindes",
+     "datum": "2023-06-27",
+     "minute": "21:58",
+     "thema": "Was Pflegekinder oft mitbringen"
+    }
+   ],
+   "verwandt": [
+    "kinderwunsch-verlust",
+    "bindung",
+    "schock-trauma-begleiten",
+    "patchwork-familie",
+    "familie-gesellschaft"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Wie läuft eine Adoption in Deutschland ab?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "aggression-kinder",
+   "titel": "Aggression bei Kindern",
+   "synonyme": [
+    "aggressives Kind",
+    "Aggressionen",
+    "Beißen",
+    "Hauen",
+    "Schubsen",
+    "Kind schlägt",
+    "Prügeln",
+    "Wut rauslassen",
+    "Anti-Aggressions-Training",
+    "Wutraum"
+   ],
+   "fragen": [
+    "Mein Kind ist aggressiv, was kann ich tun?",
+    "Mein Kind beißt in der Kita, muss es zum Psychiater?",
+    "Wann ist aggressives Verhalten auffällig?",
+    "Hilft Sport oder ein Wutraum gegen Aggressionen?",
+    "Mein Kind spielt gewalttätige Spiele vom Schulhof nach, was tun?"
+   ],
+   "alter": [
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "gefuehle",
+    "grenzen",
+    "entwicklung"
+   ],
+   "kurz": "Laut einem Gast (Kinder- und Jugendpsychiater) ist Aggression eine normale Emotion; bei kleinen Kindern geht es meist ums Durchsetzen und Grenzenausprobieren, nicht um bewusstes Schädigen. Er rät, sie weder zu leugnen noch zu dulden: klare, liebevolle und konsequente Grenzen, ein Vorbild ohne eigene Aggression und eine wertschätzende Streitkultur. Bei Dauerproblemen, die sich nicht ändern, kann man eine Kinderpsychologin oder einen Kinderpsychiater hinzuziehen.",
+   "tipps": [
+    "Setzt klare Grenzen (bis hierhin und nicht weiter) liebevoll und konsequent, ohne sie selbst aggressiv durchzusetzen.",
+    "Tut nicht so, als gäbe es keine Aggression, sondern geht offen damit um; sie ganz zu unterbinden, verhindert, dass das Kind den Umgang damit lernt.",
+    "Seid euch eurer Vorbildfunktion bewusst, denn laut dem Gast übernehmen Kinder aggressives Verhalten, wenn sie Aggression als Erziehungsmittel erleben.",
+    "Pflegt zu Hause eine Streitkultur mit Wertschätzung und Kompromissen.",
+    "Ein einmaliges Beißen in der Kita ist laut dem Gast noch keine psychische Auffälligkeit; schaut, woran es liegt, und holt erst bei Wiederholung ohne Besserung fachliche Hilfe.",
+    "Mannschaftssport oder Kampfsport wie Judo können helfen, Aggression zu kanalisieren; einen Wutraum zum Zerstören nur nutzen, wenn er pädagogisch oder therapeutisch begleitet wird.",
+    "In Gruppe oder Schule können Rollenspiele und positive Beispiele für Konfliktlösung helfen.",
+    "Greift ein, wenn Kinder sich beim Nachspielen von Serien oder Spielen körperlich verletzen oder prügeln; harmlose Spiele pauschal zu verbieten halten Gäste nicht für nötig.",
+    "Bei Verdacht auf Gewalt in der Familie behutsam vorgehen, das Vertrauen des Kindes nicht verlieren, nicht ohne sein Wissen mit den Eltern sprechen und Hilfsangebote nennen."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Die Hosts sprechen vor allem mit einem Gast (Kinder- und Jugendpsychiater), der Aggression als normale Emotion einordnet und davor warnt, sie zu leugnen oder zu dulden. Er erklärt, dass jüngere Kinder ihren Körper einsetzen, weil sie weniger Ausdrucksmöglichkeiten haben, und Aggression in der Jugend eher subtil wird (ausgrenzen, beleidigen, Hass im Netz). Daniel Graf nennt eine Studie, nach der Aggression mit etwa dreieinhalb Jahren am höchsten sei; der Gast findet das überraschend und ist unsicher, ob es stimmt. Zu Ernährung formuliert er vorsichtig, Zucker und Energydrinks könnten über Heißhunger aggressiv machen, bei ausgewogener Kost führe nichts unbedingt zu Aggression. Katja Seide berichtet als Lehrerin, wie schwierig Gespräche mit Eltern bei Verdacht auf Gewalt sind. In einer anderen Folge raten Gäste zu Augenmaß bei Serien-Spielen auf dem Schulhof und zum Eingreifen erst, wenn es körperlich wird."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 149,
+     "titel": "Aggressionen bei Kindern",
+     "datum": "2024-09-17",
+     "minute": "01:10",
+     "thema": "Was ist aggressives Verhalten bei Kindern?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 149,
+     "titel": "Aggressionen bei Kindern",
+     "datum": "2024-09-17",
+     "minute": "04:00",
+     "thema": "Beißen, Kneifen, Hauen in der Kita: Psychiater nötig?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 149,
+     "titel": "Aggressionen bei Kindern",
+     "datum": "2024-09-17",
+     "minute": "08:18",
+     "thema": "Wie Kinder den Umgang mit Aggression lernen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 149,
+     "titel": "Aggressionen bei Kindern",
+     "datum": "2024-09-17",
+     "minute": "37:21",
+     "thema": "Wutraum mit Baseballschläger"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 74,
+     "titel": "Aufregung um die Netflix-Serie \"Squid Game\" mit Alu Kitzerow und Konstantin Manthey",
+     "datum": "2021-11-02",
+     "minute": "52:40",
+     "thema": "Wann Lehrkräfte eingreifen müssen"
+    }
+   ],
+   "verwandt": [
+    "wutanfaelle",
+    "impulskontrolle-kleinkind",
+    "grenzen-setzen",
+    "streit-unter-kindern",
+    "gefuehle-begleiten"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind ist aggressiv, was kann ich tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "arztbesuch",
@@ -571,7 +856,10 @@ window.WISSEN = {
     "Medizin geben",
     "Kind will Medizin nicht nehmen",
     "Angst in den Arm nehmen",
-    "Impftermin vorbereiten"
+    "Impftermin vorbereiten",
+    "Zahnarzt Angst",
+    "Kinderarzt Vorbereitung",
+    "Zahnarztbesuch Kind"
    ],
    "fragen": [
     "Mein Kind hat Angst vor dem Arzt, was tun?",
@@ -579,7 +867,8 @@ window.WISSEN = {
     "Wie bereite ich mein Kind auf eine Spritze oder Blutabnahme vor?",
     "Kind will seine Medizin nicht nehmen",
     "Mein Kind kommt nach dem Arzttermin nicht mehr runter",
-    "Wie begleite ich die Angst vor dem Arzt, statt sie wegzureden?"
+    "Wie begleite ich die Angst vor dem Arzt, statt sie wegzureden?",
+    "Wie bereite ich mein Kind auf den Zahnarzt vor?"
    ],
    "alter": [
     "1-3",
@@ -611,6 +900,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber will dem Kind die Angst nicht nehmen, sondern in den Arm nehmen: Angst ist ein Gefühl wie jedes andere und weist auf ein unerfülltes Bedürfnis hin, zum Beispiel Orientierung, Geborgenheit oder Nähe. Die Eltern entscheiden, dass der Termin stattfindet, aber als Information und nicht als Verhandlung, und sie sind das Schutzschild des Kindes gegenüber der Praxis. Anders als mutti lehnt sie Belohnung, Drohung und Ablenken ab; ein Gummibärchen beim Impfen schiebt sie weg, und Lob der Praxis übersetzt sie hinterher als Dank fürs Mitmachen. Bei Panik rät sie, Wochen oder Monate vorher zu üben, und hält Festhalten für vertretbar, wenn das Kind gründlich vorbereitet und mit allen Gefühlen abgeholt wurde, sieht es dann als Schutz und nicht als Zwang. Hörerinnen berichten in den Folgen von Impfterminen ohne Tränen nach Vorbereitung, eine Hörerin erlebte das Festhalten beim ersten Mal im Rückblick als schrecklich. Medizinische Fragen wie das Impfen selbst lässt sie bewusst aus."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide holen sich einen Kinderarzt als Gast, der in der Vorbereitung ähnlich wie mutti auf Ehrlichkeit und Praxis-Normalisieren setzt: Der Arztbesuch wird zunächst positiv vermittelt, ein Satz wie Das tut nicht weh sei bei einer Impfung gelogen und räche sich beim nächsten Mal, besser sage man, dass es kurz wehtut und man dabei ist. Zum Üben nennt er Rollenspiele mit Arztkoffer und Büchern sowie Besuche in der Praxis ohne Untersuchung. Anders als Kathy Weber (gfk) hält er Ablenkung und kleine Hilfen für in Ordnung, etwa Stillen oder eine Zuckerlösung bei Säuglingen und ein Gummibärchen bei Größeren. Er sieht Resilienz: Kinder, die mit ein oder zwei Jahren ungern zum Arzt gehen, tun es mit vier oder fünf oft gern. Die Hosts erwähnen, dass bindungsorientierte Eltern Untersuchungen manchmal meiden, weil Kinder sich wehren; Daniel Graf hält unabhängig von der Impfentscheidung bestimmte Untersuchungen für nötig. Bei Zahnarztangst raten die Hosts, das Kind früh zu eigenen Terminen mitzunehmen und den Besuch vorher mit Kuscheltieren und Zahnspiegel zu spielen."
     }
    ],
    "quellen": [
@@ -661,6 +954,22 @@ window.WISSEN = {
      "datum": "2019-09-29",
      "minute": "07:39",
      "thema": "Vorbereitung: Selbsteinfühlung, Information, Buch, Arztkoffer"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 104,
+     "titel": "Besuch beim Kinderarzt – wie man Kinder darauf vorbereitet und worauf man achten sollte",
+     "datum": "2023-01-10",
+     "minute": "03:14",
+     "thema": "Positive Vorbereitung auf den Kinderarztbesuch und Impfungen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 56,
+     "titel": "Alles rund um Zähne und Zähneputzen",
+     "datum": "2021-02-09",
+     "minute": "20:21",
+     "thema": "Kinder auf den Zahnarztbesuch vorbereiten"
     }
    ],
    "verwandt": [
@@ -668,7 +977,8 @@ window.WISSEN = {
     "kooperation-zuhoeren",
     "gefuehle-begleiten",
     "belohnungssysteme",
-    "uebergriffe-schutz"
+    "uebergriffe-schutz",
+    "erste-hilfe"
    ],
    "medizinisch": true,
    "einleitung": "Viele Kinder haben Angst vor Arztbesuchen, Spritzen oder Blutabnahmen, und Eltern wissen nicht, wie sie damit umgehen sollen. Auch das Festhalten beim Impfen oder das Verweigern von Medizin führt oft zu Konflikten."
@@ -688,7 +998,9 @@ window.WISSEN = {
     "Schlafanzug ausziehen",
     "Kleidung wechseln",
     "Anziehen Machtkampf",
-    "Mama-Tankstelle"
+    "Mama-Tankstelle",
+    "Anziehstraße",
+    "selbst anziehen lernen"
    ],
    "fragen": [
     "Mein Kind will sich nicht anziehen, was tun?",
@@ -696,7 +1008,8 @@ window.WISSEN = {
     "Mein Kind rastet beim Anziehen aus",
     "Darf mein Kind im Schlafanzug in die Kita?",
     "Wie komme ich morgens pünktlich aus der Tür?",
-    "Muss mein Kind einen Schlafanzug tragen?"
+    "Muss mein Kind einen Schlafanzug tragen?",
+    "Ab wann kann sich mein Kind allein anziehen?"
    ],
    "alter": [
     "1-3",
@@ -714,11 +1027,11 @@ window.WISSEN = {
     "Bietet angewärmte Kleidung an, etwa Socken, die kurz auf der Heizung lagen, denn morgens aus der warmen Decke in kalte Sachen zu müssen, ist unangenehm.",
     "Spart euch das Umziehen am Morgen: Lasst das Kind in dem schlafen oder zieht ihm schon abends oder nachmittags an, was es am nächsten Tag braucht, und Kleidung darf auch zwei bis drei Tage getragen werden.",
     "Aktiviert nur kurz, etwa indem ihr ein Shirt überstülpt oder eine Socke anzieht. Danach machen Kinder oft allein weiter.",
-    "Macht eine Anziehparty: Musik an, und wenn das Lied vorbei ist, soll das Kind angezogen sein.",
-    "Stellt einen Timer und lasst das Kind gegen euch antreten, aber nicht Geschwister gegeneinander, das befeuert Konkurrenz.",
+    "Macht eine Anziehparty (Musik an, und wenn das Lied vorbei ist, soll das Kind angezogen sein) oder stellt einen Timer und lasst das Kind gegen euch antreten, aber nicht Geschwister gegeneinander, das befeuert Konkurrenz.",
     "Geht nonverbal vor: Hand nehmen, hinstellen, Oberteil über den Kopf ziehen, ohne darüber zu reden.",
-    "Nehmt Schuhe und Jacke notfalls mit und zieht sie draußen oder im Auto an, solange es dem Kind nicht schadet.",
-    "Prüft bei plötzlichen Wutanfällen, ob die Kleidung nach einem Wachstumsschub zu eng ist. Sucht gemeinsam passende Sachen aus und probiert sie an."
+    "Nehmt Schuhe und Jacke notfalls mit und zieht sie draußen oder im Auto an, solange es dem Kind nicht schadet Geht es um die Jacke, nehmt sie mit und sagt, dass das Kind sie anziehen kann, wenn ihm kalt wird; Kälte wird laut Susanne Mierau unterschiedlich empfunden, ein Machtkampf steckt meist nicht dahinter.",
+    "Prüft bei plötzlichen Wutanfällen, ob die Kleidung nach einem Wachstumsschub zu eng ist. Sucht gemeinsam passende Sachen aus und probiert sie an.",
+    "Übt das Selbstanziehen schrittweise als Anziehstraße: Legt die Kleidung immer in derselben Reihenfolge hin, das Kind zieht zuerst ein Teil selbst an, jede Woche kommt ein Stück dazu, und ihr dürft den Erfolg feiern."
    ],
    "sichtweisen": [
     {
@@ -732,6 +1045,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber erklärt, dass hinter dem Nein zum Anziehen ein Bedürfnis steckt: oft Geborgenheit und Mama- oder Papa-Nähe, außerdem Autonomie (selbst machen, selbst entscheiden), Berührung, Spiel und Spaß oder Zugehörigkeit bei älteren Kindern. Sie rät, zuerst die eigenen Urteile im Kopf zu bemerken und in Bedürfnisse zu übersetzen, dann das Kind einzufühlen und dem Kind Empathie zu geben, bis es sich gehört fühlt. Erst danach teilt man sich mit. Sie lehnt Drohen, Strafen, Belohnen und Ablenkung ab, auch Erfahrungs-Konsequenzen wie ohne Jacke rausgehen, weil Erfahrungen sammeln erst später dran sei. Die Verantwortung für Gesundheit und Aufbruch bleibt aber bei den Eltern: Das Kind zieht sich an, wie es zum Wetter passt, ihr führt klar und liebevoll und sucht Kompromisse, etwa die Jacke mitnehmen. Im Unterschied zu Mutti, die auf Spiel, Timer und wenig Druck setzt, sieht sie Spiel als Trick auf einem schmalen Grat zur Manipulation. Sie räumt ein, dass der empathische Weg anfangs mehr Zeit braucht."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "In wunschkind kommt das Anziehen nur am Rand vor, mit zwei Blickwinkeln. Ein Gast zur Schulreife sieht das selbstständige Anziehen als Kompetenz, die dem Kind Selbstsicherheit und Körperwahrnehmung gibt; er schlägt eine Anziehstraße vor, bei der das Kind Stück für Stück mehr übernimmt, und sagt, dass es trotzdem normal ist, wenn Eltern mal müde sind und helfen. Er nennt außerdem eine Diskrepanz: Erzieherinnen sagen, mit drei Jahren sei es möglich, Eltern eher mit fünf; Katja Seide ergänzt, dass es auch bei ihnen in der Kita schneller ging als zu Hause. Susanne Mierau sieht beim Jackenstreit keinen Machtkampf: Kinder spürten Kälte oft einfach nicht, deshalb solle man die Jacke mitnehmen statt zu zwingen. Das ergänzt mutti und gfk, die mehr auf Übergänge und Bedürfnisse achten, um einen Hinweis auf Kompetenz und Körperwahrnehmung."
     }
    ],
    "quellen": [
@@ -742,22 +1059,6 @@ window.WISSEN = {
      "datum": "2026-04-20",
      "minute": "04:51",
      "thema": "Rollenspiel: Nein hören, Mama-Nähe als Bedürfnis erkennen"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 20,
-     "titel": "Wie gelingt ein stressfreier Morgen mit Kindern?",
-     "datum": "2025-05-06",
-     "minute": "14:34",
-     "thema": "Anziehparty und Aktivieren als Initialzündung"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 20,
-     "titel": "Wie gelingt ein stressfreier Morgen mit Kindern?",
-     "datum": "2025-05-06",
-     "minute": "16:28",
-     "thema": "Spiele, Timer, Wettkampf-Warnung, Schlafanzugmonster"
     },
     {
      "podcast": "mutti",
@@ -798,6 +1099,22 @@ window.WISSEN = {
      "datum": "2023-12-26",
      "minute": "01:22",
      "thema": "Angewärmte Kleidung und vorher anziehen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 9,
+     "titel": "Schulreife Teil 1 - Motorischer und kognitiver Bereich",
+     "datum": "2019-03-26",
+     "minute": "08:00",
+     "thema": "U8, Diskrepanz Eltern und Erzieherinnen, Anziehstraße"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 59,
+     "titel": "Frei und unverbogen - mit Susanne Mierau",
+     "datum": "2021-03-23",
+     "minute": "23:26",
+     "thema": "Warum Kinder die Kälte nicht empfinden und was Eltern tun können"
     }
    ],
    "verwandt": [
@@ -824,7 +1141,9 @@ window.WISSEN = {
     "Jacke aufhängen",
     "Kinder helfen beim Kochen",
     "Hausarbeit mit Kindern",
-    "Ministerposten"
+    "Ministerposten",
+    "Küchenmeeting",
+    "Unordnung aushalten"
    ],
    "fragen": [
     "Mein Kind lässt alles liegen, was tun?",
@@ -851,7 +1170,7 @@ window.WISSEN = {
     "Sagt statt „Hilf mir“ lieber, dass ihr das gemeinsam macht, weil ihr eine Familie seid; laut Nicola Schmidt klingt „Hilf mir“, als wäre der Haushalt die Aufgabe eines anderen.",
     "Lasst das Kind mitwählen, wo es hilft, und gebt ihm nicht nur Aufgaben, die sonst keiner will; die Aufgabe soll zu seinem Können passen und nicht überwältigen.",
     "Lasst Liegengelassenes erst einmal liegen und weist nur ruhig darauf hin, ohne Drohung und ohne Ankündigung einer Strafe. Im Kinderzimmer räumt ihr nicht ungefragt auf; nach Kathy Weber (gfk) ist es der Rückzugsort des Kindes, und fremde Sachen legt ihr stattdessen in eine Kiste und sagt Bescheid.",
-    "Macht es spielerisch, etwa mit Lied oder Musik, und freut euch danach gemeinsam über das Ergebnis; zusammen seid ihr schneller fertig und habt Zeit zum Spielen.",
+    "Macht es spielerisch, etwa mit Lied oder Musik, und freut euch danach gemeinsam über das Ergebnis. Sagt konkret, was gemeint ist (Legos in die Kiste, Wäsche in den Korb), denn bei „Räum bitte auf“ wissen Kinder oft nicht, was sie tun sollen.",
     "Kommt euer Kind nicht in Gang, fragt, ob ihr zusammen anfangen sollt, oder bietet eine leichtere Variante an. Fragt in gemeinschaftlich genutzten Räumen nach der Bereitschaft und nennt euer Bedürfnis, statt zu befehlen; Kathy Weber (gfk) rät zudem, Aufgaben wie Ministerposten nach Stärken zu verteilen.",
     "Probiert die Wichtelchen-Kiste, in die alles Nicht-Aufgeräumte kommt, das zuerst im Flur steht und später in den Keller wandert, wobei das Kind um vermisste Dinge bitten kann.",
     "Plant Phasen ein, in denen es schlechter klappt, und nehmt dem Kind dann zeitweise mehr ab, um die Aufgaben später wieder zurückzugeben."
@@ -868,6 +1187,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber vertritt, dass Aufräumen für Kinder freiwillig sein darf und dass hinter dem Nicht-Mitmachen oft ein Bedürfnis nach Mitbestimmung, Nähe oder Zeit zum Abschied vom Spiel steckt. Ordnung versteht sie eher als Strategie; als Bedürfnis nennt sie Orientierung, und sie hält es für übergriffig, wenn Eltern das eigene Ordnungsbedürfnis im Kinderzimmer ausleben. Für Gemeinschaftsräume schlägt sie vor, gemeinsam zu klären, was Ordnung für jeden heißt, und Zuständigkeiten wie Ministerposten zu verteilen. Kleinen Kindern zeigt man Aufräumen durch Vorleben und Mitmachen statt durch Ansagen von weitem; bei einem Elfjährigen setzt sie auf ein Experiment mit späterer Auswertung statt auf Drohung oder Belohnung. Ihr Satz, der Haushalt habe keine Bedürfnisse, soll entlasten: Verbindung zu den Kindern steht bei ihr vor Ordnung, wobei sie nicht sagt, dass man nie mehr putzt. Anders als mutti, die Starthilfe und ruhiges Dranbleiben betonen, verzichtet sie auf Pflicht und grenzt sich zugleich von anti-autoritärer Erziehung ab: Eltern bleiben für Hygiene und Gesundheit verantwortlich. Sie räumt ein, dass das Thema Partner und andere triggern kann."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide kommen mit mehreren Gästen zu einer ähnlich gelassenen Haltung: Unordnung sei kein Verbrechen und bei kleinen Kindern eine Lebensphase, wenn sie belastet, lohnt die Frage, wessen Ansprüche dahinterstehen. Zwei Gästinnen nennen Ordnung einen kognitiven Erwachsenenbegriff und das Stören der Unordnung ein Bedürfnis der Erwachsenen, für das diese selbst verantwortlich sind; das deckt sich mit der GfK-Sicht. Eine Gästin rät zu konkreten Ansagen (Legos in die Kiste) statt Räum bitte auf und zu Küchenmeeting, Arbeitspaketen und Eskalationsklammern für herumliegende Socken. Abweichend von Nicola Schmidt und mutti, die Mithelfen als Gemeinschaftssache betonen, nennen die Gäste auch Studien (als deren Aussage), nach denen früh eingebundene Kinder später profitieren. Bei Älteren raten mehrere zu geschlossener Tür, wobei Essensreste und Verderbliches regelmäßig geholt werden."
     }
    ],
    "quellen": [
@@ -896,36 +1219,12 @@ window.WISSEN = {
      "thema": "Wichtelchen-Kiste und natürliche Konsequenzen"
     },
     {
-     "podcast": "mutti",
-     "nr": 13,
-     "titel": "Warum Kinder Verantwortung brauchen",
-     "datum": "2025-03-12",
-     "minute": "45:11",
-     "thema": "Jacke und Teller, Verantwortung ohne Ankündigung"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 7,
-     "titel": "Wunsch oder Bedürfnis? So können Eltern unterscheiden!",
-     "datum": "2024-12-17",
-     "minute": "52:28",
-     "thema": "Teig im Badezimmer: Grenze liebevoll durchsetzen"
-    },
-    {
      "podcast": "artgerecht",
      "nr": 52,
      "titel": "Fastfood für Haushaltshilfe? Echt jetzt?",
      "datum": "2026-03-19",
      "minute": "03:50",
      "thema": "Wir machen das gemeinsam statt „Hilf mir“"
-    },
-    {
-     "podcast": "artgerecht",
-     "nr": 52,
-     "titel": "Fastfood für Haushaltshilfe? Echt jetzt?",
-     "datum": "2026-03-19",
-     "minute": "01:17",
-     "thema": "Volle Kinderkalender und Beitragen zur Gemeinschaft"
     },
     {
      "podcast": "gfk",
@@ -942,6 +1241,22 @@ window.WISSEN = {
      "datum": "2025-08-04",
      "minute": "08:43",
      "thema": "Der Haushalt hat keine Bedürfnisse"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 183,
+     "titel": "Familie als Team - Aufgaben effizient und liebevoll managen",
+     "datum": "2025-05-13",
+     "minute": "22:09",
+     "thema": "Warum und wie Kinder im Haushalt helfen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 126,
+     "titel": "Gemeinsam aus dem Mamsterrad",
+     "datum": "2023-11-14",
+     "minute": "29:35",
+     "thema": "Kinder verstehen Ordnung nicht"
     }
    ],
    "verwandt": [
@@ -1032,6 +1347,194 @@ window.WISSEN = {
    "einleitung": "Das Kinderzimmer quillt über, Aufräumen wird zum Dauerthema und einzelne Spielsachen verlieren an Wert. Gemeinsames Aussortieren stößt bei Kindern allerdings oft auf Widerstand."
   },
   {
+   "id": "aussehen-schoenheitsideale",
+   "titel": "Aussehen und Schönheitsideale bei Mädchen",
+   "synonyme": [
+    "Schönheitsideale",
+    "Filter Social Media",
+    "künstliche Nägel Kind",
+    "Mädchen Aussehen",
+    "Kinder schminken",
+    "Social Media Tochter",
+    "Körperbild",
+    "Skinny Talk",
+    "Aussehen egal",
+    "Schönheitsdruck"
+   ],
+   "fragen": [
+    "Wie gehe ich mit Schönheitsidealen bei meiner Tochter um?",
+    "Meine Tochter will künstliche Nägel, was tun?",
+    "Wie begleite ich mein Kind bei Filtern und Social Media?",
+    "Wie stärke ich mein Mädchen gegen Schönheitsdruck?"
+   ],
+   "alter": [
+    "6-10"
+   ],
+   "bereiche": [
+    "medien",
+    "entwicklung",
+    "gefuehle"
+   ],
+   "kurz": "Kathy Weber setzt bei Aussehen und Filtern auf Ausprobieren, offene Fragen und Begleitung statt Verbote. Zwei Gästinnen im Podcast „Das gewünschteste Wunschkind“ sehen Schönheitsdruck vor allem bei Mädchen, die früh lernen, dass Aussehen Wert bringt, und raten ebenfalls zu Gesprächen statt Verboten. Sie empfehlen, den Blick auf das zu lenken, was ein Körper kann, und den eigenen Körper wohlwollend vorzuleben.",
+   "tipps": [
+    "Lasst euer Kind ausprobieren und die Folgen selbst erfahren, zum Beispiel bei Nägeln, die im Alltag stören.",
+    "Sprecht mit dem Kind über Filter und Echtheit, ohne zu bewerten, und stellt offene Fragen: Wie möchtest du dich zeigen, wie gesehen werden?",
+    "Erklärt Gefahren im Alltag mit einem konkreten Beispiel, etwa einem Radfahrer ohne Licht.",
+    "Lebt vor, dass der Körper kein Projekt ist, sondern ein Zuhause: Sprecht wohlwollend über den eigenen Körper.",
+    "Statt „du bist so hübsch“ oder „alle sind schön“ lenkt den Blick darauf, was der Körper kann und was ihr gemeinsam erlebt; achtet dabei darauf, nicht in Perfektionismus zu kippen.",
+    "Schaut mit dem Blick auf euch selbst, mit dem ihr Menschen anschaut, die ihr liebt: Dort zählen Nase oder Gewicht nicht.",
+    "Schaut gemeinsam alte Fotos an, die ihr damals doof fandet, um zu spüren, dass sich die eigene Bewertung später verschiebt."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "gfk",
+     "text": "Kathy Weber macht sich bei ihrer achtjährigen Tochter aktuell keine großen Sorgen, weil sie sie als relativ reflektiert erlebt. Sich auszuprobieren und darzustellen gehöre seit jeher dazu. Sie habe nicht zu bestimmen, was schön ist. Ihre Tochter kaufte sich von ihrem Taschengeld künstliche Nägel und nahm sie nach zwei Stunden wieder ab, weil sie damit beim Pferd nichts machen konnte. Dass ihr älterer Sohn die Nutzung von Handy und Social Media schon früher selbst reflektiert hat, sieht sie als Beleg für diesen Weg."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Die Hosts besprechen das Thema nicht selbst, sondern über zwei Gästinnen in Folgen zu Essstörungen und Gleichberechtigung. Eine Gästin sieht gefilterte Körperbilder und Trends wie Skinny Talk in sozialen Netzwerken als Gefahr, weil Algorithmen immer extremere Inhalte nachliefern. Verbieten hält sie nicht für machbar; sie rät zu Gesprächen auf Augenhöhe und zu Zeitregeln je nach Alter. Das deckt sich mit Kathy Weber (gfk), die auf Neugier und Begleitung statt Verbote setzt. Eine zweite Gästin geht weiter: Mädchen lernen von klein auf, dass Schönsein Wert bringt, und selbst das gut gemeinte „alle sind schön“ bleibe im Schönheitsdenken hängen. Sie schlägt „Aussehen egal“ vor und den Blick auf das, was ein Körper kann. Eine der Hosts merkt an, ihr eigener erster Impuls wäre genau dieses „alle sind schön“ gewesen."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "gfk",
+     "nr": 143,
+     "titel": "Bereust du es, Mutter zu sein? Über Zweifel, Wachstum und das Verlassen der Komfortzone",
+     "datum": "2025-01-06",
+     "minute": "1:17:57",
+     "thema": "Sich zurechtmachen, Schönheit und die künstlichen Nägel"
+    },
+    {
+     "podcast": "gfk",
+     "nr": 143,
+     "titel": "Bereust du es, Mutter zu sein? Über Zweifel, Wachstum und das Verlassen der Komfortzone",
+     "datum": "2025-01-06",
+     "minute": "1:15:44",
+     "thema": "Sorgen um Social Media und Schönheitsideale bei der Tochter"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 217,
+     "titel": "Musterbruch – warum Gleichberechtigung mit uns selbst beginnt",
+     "datum": "2026-01-06",
+     "minute": "07:34",
+     "thema": "Wie Mädchen lernen, über Schönheit Wert zu bekommen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 217,
+     "titel": "Musterbruch – warum Gleichberechtigung mit uns selbst beginnt",
+     "datum": "2026-01-06",
+     "minute": "10:58",
+     "thema": "Warum „alle sind schön“ nicht reicht: Aussehen egal"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 198,
+     "titel": "Essstörungen bei Kindern",
+     "datum": "2025-08-26",
+     "minute": "18:12",
+     "thema": "Schönheitsdruck und Skinny Talk"
+    }
+   ],
+   "verwandt": [
+    "bildschirmzeit",
+    "selbstwert-kind",
+    "koerper-aufklaerung",
+    "taschengeld",
+    "essstoerungen",
+    "geschlechtsidentitaet"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Wie gehe ich mit Schönheitsidealen bei meiner Tochter um?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "baby-hitze",
+   "titel": "Baby bei Hitze: Wasser geben?",
+   "synonyme": [
+    "Baby Wasser geben",
+    "Baby Hitze trinken",
+    "Wasservergiftung Baby",
+    "Wasserintoxikation",
+    "Tee Baby Sommer",
+    "Baby Durst",
+    "Flüssigkeitsmangel Baby",
+    "Austrocknung Baby"
+   ],
+   "fragen": [
+    "Muss ich meinem gestillten Baby bei Hitze Wasser geben?",
+    "Warum ist zusätzliches Wasser für Babys gefährlich?",
+    "Wie viel sollen Babys nach der Beikost trinken?",
+    "Woran erkenne ich, ob mein Baby zu wenig trinkt?",
+    "Wie viele nasse Windeln sind normal?"
+   ],
+   "alter": [
+    "0-1"
+   ],
+   "bereiche": [
+    "baby",
+    "essen"
+   ],
+   "kurz": "Laut den Hosts reicht Muttermilch (und Flaschennahrung) auch an heißen Tagen aus, zusätzliches Wasser oder Tee sei im ersten Halbjahr nicht nötig und könne sogar gefährlich werden. Stattdessen soll man häufiger nach Bedarf stillen oder füttern. Bei Anzeichen von Flüssigkeitsmangel, etwa sehr wenigen nassen Windeln, sollte man ärztlichen Rat einholen.",
+   "tipps": [
+    "Stillt oder füttert bei Hitze häufiger nach Bedarf, statt Wasser oder Tee zusätzlich anzubieten.",
+    "Wenn ihr unsicher seid, prüft die Fontanelle und achtet auf die nassen Windeln. Genaue Richtwerte, wie viele es sein sollten, klärt ihr mit Hebamme oder Kinderärztin.",
+    "Bleibt die Windel länger leer, wirkt das Baby schläfrig oder will trotz Anzeichen nicht trinken, geht zügig zum Arzt.",
+    "Nach Beginn der Beikost ist zusätzliches Wasser sinnvoll; bietet Getränke regelmäßig an, drängt sie aber nicht auf.",
+    "Lasst Getränke für ältere Kinder jederzeit erreichbar, dann holen sie sich, was sie brauchen.",
+    "Bei Sorgen von Großeltern hilft es, ihnen zu erklären, dass sich Babys beim Stillen selbst regulieren."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Die Hosts widersprechen der verbreiteten Sorge älterer Generationen, ein Baby brauche im Sommer dringend Wasser. Laut ihnen passt sich Muttermilch dem Kind an und ist im Sommer wässriger. Zu Beginn einer Mahlzeit fließe fettarme Milch, der Fettgehalt steige im Verlauf, sodass das Baby selbst steuere. Sie verweisen auf eine Warnung des Berufsverbands der Kinder- und Jugendärzte vor Wasserintoxikation, weil die Nieren im ersten Lebensjahr noch unreif seien, und nennen mögliche Warnzeichen. Zusätzliches Wasser könne zudem die Milchmenge senken. Beim Flüssigkeitsmangel wollen sie keine Panik verbreiten: Sie geben die Einschätzung eines Kinderarztes wieder, in Deutschland sei das ein Thema zum Kennen, nicht zum Sorgenmachen. Alle Angaben sind Aussagen der Hosts, keine ärztliche Beratung."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 68,
+     "titel": "Brauchen Babys bei Hitze zusätzlich Wasser?",
+     "datum": "2021-08-10",
+     "minute": "03:05",
+     "thema": "Muttermilch reicht, kein zusätzliches Wasser"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 68,
+     "titel": "Brauchen Babys bei Hitze zusätzlich Wasser?",
+     "datum": "2021-08-10",
+     "minute": "06:17",
+     "thema": "Gefahr der Wasserintoxikation"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 68,
+     "titel": "Brauchen Babys bei Hitze zusätzlich Wasser?",
+     "datum": "2021-08-10",
+     "minute": "16:16",
+     "thema": "Wie erkenne ich Flüssigkeitsmangel"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 68,
+     "titel": "Brauchen Babys bei Hitze zusätzlich Wasser?",
+     "datum": "2021-08-10",
+     "minute": "12:37",
+     "thema": "Trinkmenge nach Beikost"
+    }
+   ],
+   "verwandt": [
+    "stillen",
+    "beikost",
+    "fieber",
+    "flaeschchen",
+    "wassersicherheit"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Muss ich meinem gestillten Baby bei Hitze Wasser geben?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
    "id": "babyschlaf",
    "titel": "Baby schläft nur mit Körperkontakt",
    "synonyme": [
@@ -1046,7 +1549,11 @@ window.WISSEN = {
     "Schreien lassen",
     "Schlaftraining",
     "Müdigkeitszeichen Baby",
-    "Schlaflernmethode"
+    "Schlaflernmethode",
+    "Schlafzyklen",
+    "Pucken",
+    "5 S",
+    "Schlaftagebuch"
    ],
    "fragen": [
     "Ist eine Federwiege schlecht?",
@@ -1054,7 +1561,8 @@ window.WISSEN = {
     "Soll ich Grenzen setzen, wenn mein Baby nur mit Körperkontakt schläft?",
     "Darf ich mein Baby schreien lassen?",
     "Gibt es die 4-Monats-Schlafregression wirklich?",
-    "Woran erkenne ich, dass mein Baby müde ist?"
+    "Woran erkenne ich, dass mein Baby müde ist?",
+    "Wie viel Schlaf braucht mein Baby?"
    ],
    "alter": [
     "0-1"
@@ -1073,7 +1581,8 @@ window.WISSEN = {
     "Haltet einen immer gleichen Ablauf vor dem Schlafen ein, etwa Baden, Massieren oder Kuscheln im selben Sessel, und wechselt ihn nicht bei jedem vermeintlichen Entwicklungsschub.",
     "Wenn das Baby weint, haltet es nach Möglichkeit im Arm, denn laut Nicola Schmidt ist Weinen am Körper weniger stressig als allein. Wenn ihr selbst am Ende seid, legt das Baby sicher ab und holt Hilfe.",
     "Achtet auf erste Müdigkeitszeichen wie schneller auf- und zugehende Augen und legt das Kind dann schlafen, nicht erst, wenn es in den Alltag passt.",
-    "Prüft, ob Hände und Füße warm sind und das Kind nicht zu kalt oder zu warm liegt; das ist eine Einschätzung von Kathy Weber, kein ärztlicher Rat."
+    "Prüft, ob Hände und Füße warm sind und das Kind nicht zu kalt oder zu warm liegt; das ist eine Einschätzung von Kathy Weber, kein ärztlicher Rat.",
+    "Baut Bedingungen wie im Mutterleib nach (eng wickeln, Wiegen, gleichförmiges Rauschen, Saugen), und wacht das Baby nach etwa einer halben Stunde immer wieder auf, stellt dort die Einschlafbedingung wieder her."
    ],
    "sichtweisen": [
     {
@@ -1087,17 +1596,13 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber sieht Schlafprobleme als Zeichen, dass ein für das Schlafen nötiges Bedürfnis, vor allem nach Geborgenheit und Sicherheit, nicht erfüllt ist. Eltern seien dafür zuständig, dass das Kind schläft, wenn es Schlaf braucht, nicht erst, wenn es in den Alltag passt. Nicht jedes Kind bekomme Sicherheit auf die gleiche Art: Manche brauchen viel Nähe im selben Zimmer, andere schlafen im eigenen besser, dafür gebe es keine Gesetze. Von Schlaflernmethoden hält sie wenig bis nichts, verurteilt aber niemanden, der sie nutzt. Schlafmangel nennt sie eine Foltermethode. Das passt zur Linie der anderen Podcasts, setzt aber stärker beim Bedürfnis hinter dem Schlafproblem an."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide stimmen mit den anderen Podcasts darin überein, dass Babys Nähe zum Schlafen brauchen und Tragen und Bewegung in Ordnung sind; ihr eigenes Motto laut den Notizen: tragen, bis man selbst nicht mehr mag. Sie erklären das mit dem Mutterleib: Enge, Schaukeln, gleichförmiges Rauschen, Saugen und Bewegung beruhigen, und die fünf S (Pucken, Seitenlage, Schhh, Schuckeln, Saugen) halfen ihnen als persönliche Erfahrung. Eine Besonderheit ist der Blick auf Schlafzyklen: Wacht ein Baby an den Zyklusgrenzen auf, kann man dort die Einschlafbedingung wiederherstellen. Schreienlassen lehnen sie und mehrere Gästinnen deutlich ab. Anders als Nicola Schmidt nennt eine Gästin fünf Schlafregressionen in den ersten zwei Jahren, nach denen der Schlafbedarf nach einigen Wochen zurückkehrt, und rät zu Tagschlaf und Schlafplan als Orientierung; sie bewirbt ihr eigenes Angebot. Mehrere Gästinnen betonen, Durchschnittswerte sagten wenig über das eigene Kind."
     }
    ],
    "quellen": [
-    {
-     "podcast": "mutti",
-     "nr": 60,
-     "titel": "Q&A Mama-Phase, Jungen zu Verantwortung erziehen, sind Federwiegen okay?",
-     "datum": "2026-09-30",
-     "minute": "36:42",
-     "thema": "Hörerfrage zu Federwiege und Schlafhilfen"
-    },
     {
      "podcast": "mutti",
      "nr": 60,
@@ -1113,14 +1618,6 @@ window.WISSEN = {
      "datum": "2026-09-30",
      "minute": "38:38",
      "thema": "Körperkontakt-Schlaf ist normal"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 60,
-     "titel": "Q&A Mama-Phase, Jungen zu Verantwortung erziehen, sind Federwiegen okay?",
-     "datum": "2026-09-30",
-     "minute": "43:29",
-     "thema": "Mach, was für deine Familie passt"
     },
     {
      "podcast": "artgerecht",
@@ -1153,18 +1650,352 @@ window.WISSEN = {
      "datum": "2019-03-03",
      "minute": "36:18",
      "thema": "Müdigkeit erkennen, Schlafumgebung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 1,
+     "titel": "Wie kann man Babys beim Ein- und Durchschlafen helfen",
+     "datum": "2018-12-04",
+     "minute": "02:33",
+     "thema": "Warum Babys Nähe brauchen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 167,
+     "titel": "Wie Kinder entspannt ein- und altersgerecht durchschlafen",
+     "datum": "2025-01-21",
+     "minute": "08:39",
+     "thema": "Schlafregressionen und Schlafbedarf"
     }
    ],
    "verwandt": [
     "durchschlafen",
     "einschlafen",
+    "familienbett",
     "erste-zeit-mit-baby",
     "erschoepfte-eltern",
-    "hirnentwicklung-mythen",
-    "licht-tag-nacht-rhythmus"
+    "baby-weinen"
    ],
    "medizinisch": true,
    "einleitung": "Manche Babys schlafen nur auf dem Arm, in der Trage oder mit Körperkontakt und wachen beim Ablegen sofort auf. Eltern fragen sich, ob sie etwas falsch gemacht haben und ob Hilfsmittel wie eine Federwiege schaden."
+  },
+  {
+   "id": "baby-ausstattung-motorik",
+   "titel": "Babyausstattung: Gehfrei, Hopser und Co.",
+   "synonyme": [
+    "Gehfrei",
+    "Babywalker",
+    "Lauflernhilfe",
+    "Lauflernwagen",
+    "Türhopser",
+    "Maxi-Cosi Gestell",
+    "Babyerstausstattung",
+    "Laufen lernen",
+    "Baby hinsetzen",
+    "gebraucht kaufen"
+   ],
+   "fragen": [
+    "Ist ein Gehfrei schlecht für mein Baby?",
+    "Ist ein Türhopser gefährlich?",
+    "Wie lange darf mein Baby in der Babyschale liegen?",
+    "Soll ich mein Baby hinsetzen oder an der Hand laufen lassen?",
+    "Was braucht ein Baby wirklich an Ausstattung?"
+   ],
+   "alter": [
+    "0-1",
+    "1-3"
+   ],
+   "bereiche": [
+    "baby",
+    "entwicklung",
+    "alltag"
+   ],
+   "kurz": "Daniel Graf und Katja Seide raten deutlich von Gehfrei, Babywalker und Türhopser ab: Laut den Hosts fördern sie das Laufenlernen nicht, können die Entwicklung belasten und sind unfallträchtig. Babys sollten sich auf ihrem eigenen Weg hinsetzen, hochziehen und laufen lernen; auch langes Liegen in der Babyschale und Laufen an der Hand sehen die Hosts kritisch. Bei der übrigen Ausstattung gilt: erst ausprobieren, gebraucht kaufen oder mieten.",
+   "tipps": [
+    "Verzichtet auf Gehfrei, Babywalker und Türhopser; laut den Hosts spricht alles gegen sie, auch wenn Kinder sie mögen und ein Gütesiegel drauf ist.",
+    "Lasst euer Baby selbst lernen, sich hochzuziehen, zu stehen und zu laufen; es übt dabei Gleichgewicht und Muskulatur. Die Hosts sagen, das Gras wachse nicht schneller, wenn man daran zieht.",
+    "Setzt ein Baby erst hin, wenn es das selbst kann; sonst sind Muskeln und Wirbelsäule laut den Hosts noch nicht bereit und das Kind kippt nach hinten.",
+    "Führt ein Kind nicht über längere Zeit an der Hand, weil dabei eine Hand höher gehalten wird und die Haltung ungünstig werden kann.",
+    "Wenn ihr einen Lauflernwagen nutzt: besser einen mit einstellbarer Bremse und genug Widerstand, zu leichte Wagen lassen sich mit schweren Büchern stabilisieren. Katja Seide hält ihn für etwas besser als ein Gehfrei.",
+    "Nutzt die Babyschale auf dem Fahrgestell bei Neugeborenen und Babys bis vier Monate laut den Hosts höchstens kurz (etwa 20 Minuten am Tag) und für längere Strecken lieber Kinderwagen oder Tragetuch.",
+    "Wenn Verwandte ein Gehfrei schenken möchten, kann der Hinweis auf die Kinderärztin oder den Kinderarzt das Gespräch beenden.",
+    "Probiert Trage, Federwiege oder Wagen aus, bevor ihr viel Geld ausgebt, und kauft gebraucht oder mietet Dinge wie Beistellbett oder Wiege."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide sind sich in der Ablehnung von Gehfrei und Türhopser einig und sehr deutlich. Sie führen an, dass der Fußgreifreflex im Gerät zu Zehengang führen könne, dass das Kind sich nicht abrollen kann und es viele Treppenunfälle gibt; die Unfallzahlen und Studien nennen sie dabei aus eigener Recherche. Sie zeigen aber Verständnis dafür, dass Eltern und Großeltern in gutem Glauben kaufen, und betonen, die Entscheidung liege bei den Eltern, man solle nur die Fakten kennen. Bei Lauflernwagen und Babyschalen auf Gestell sind sie milder: nicht verteufeln, aber Risiken kennen. Beim Thema Ausstattung erzählen sie belustigt von eigenen überflüssigen Käufen; eine Gästin erklärt, dass Eltern sich mit Anschaffungen das Baby real machen wollen, und rät zum Ausprobieren, Mieten und gebraucht Kaufen. Die medizinischen Aussagen geben die Hosts als Laien wieder."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 81,
+     "titel": "Babywalker und Türhopser sind gefährlich",
+     "datum": "2022-02-22",
+     "minute": "05:49",
+     "thema": "Greifreflex, Fußhaltung und warum das Laufenlernen behindert wird"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 81,
+     "titel": "Babywalker und Türhopser sind gefährlich",
+     "datum": "2022-02-22",
+     "minute": "15:03",
+     "thema": "Gütesiegel, Unfallzahlen und Treppenstürze"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 81,
+     "titel": "Babywalker und Türhopser sind gefährlich",
+     "datum": "2022-02-22",
+     "minute": "22:01",
+     "thema": "An der Hand laufen und die drei natürlichen Wege"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 31,
+     "titel": "Was für Babys lebensgefährlich und gesundheitsschädlich sein kann",
+     "datum": "2020-02-11",
+     "minute": "25:28",
+     "thema": "Türhopser und Maxi-Cosi"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 31,
+     "titel": "Was für Babys lebensgefährlich und gesundheitsschädlich sein kann",
+     "datum": "2020-02-11",
+     "minute": "28:58",
+     "thema": "Zu frühes Hinsetzen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 78,
+     "titel": "WOW MOM - Schwangerschaft mit Lisa Harmann",
+     "datum": "2022-01-11",
+     "minute": "27:22",
+     "thema": "Mieten und gebraucht kaufen"
+    }
+   ],
+   "verwandt": [
+    "tragen",
+    "unfaelle-vorbeugen",
+    "erste-zeit-mit-baby",
+    "kindersitz"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Ist ein Gehfrei schlecht für mein Baby?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "tragen",
+   "titel": "Babys tragen: Nähe, Haltung, Trage",
+   "synonyme": [
+    "Tragetuch",
+    "Babytrage",
+    "Tragling",
+    "Trageberatung",
+    "Hüftsitz",
+    "Babys tragen",
+    "Körperkontakt",
+    "Anhock-Spreiz-Haltung",
+    "Tragen verwöhnt"
+   ],
+   "fragen": [
+    "Warum wollen Babys getragen werden?",
+    "Verwöhne ich mein Baby, wenn ich es viel trage?",
+    "Wie sitzt ein Baby richtig in der Trage?",
+    "Ist Tragen mit Blick nach vorn schlecht für die Hüfte?",
+    "Mein Baby schreit in der Trage, bin ich eine schlechte Mutter?",
+    "Wie finde ich die richtige Trage?"
+   ],
+   "alter": [
+    "0-1"
+   ],
+   "bereiche": [
+    "baby",
+    "entwicklung",
+    "eltern"
+   ],
+   "kurz": "Die Gästin Dr. Evelin Kirkilionis erklärt, dass der Mensch biologisch ein Tragling ist: Babys sind darauf angewiesen, mitgenommen zu werden, und Körperkontakt beruhigt sie. Tragen ist aber weder Voraussetzung noch Garantie für eine gute Bindung, und niemand muss es tun. Wichtig ist eine gute Haltung mit angehockten Beinen und gestütztem Kopf. Bei gesundheitlichen Fragen, etwa zur Hüfte, sollten Eltern Fachleute fragen.",
+   "tipps": [
+    "Tragt euer Kind, wenn es Nähe braucht oder ihr unterwegs seid. Ihr habt dann die Hände frei und spürt Stimmung und Bedürfnisse eures Kindes besser.",
+    "Achtet auf angehockte Beine, deutlich über 90 Grad abgewinkelt, mit dem Gesäß tiefer als die Kniekehlen. Hängende Beinchen sind laut der Gästin ein Zeichen für eine ungeeignete Trage.",
+    "Stützt den Kopf in den ersten Monaten, wenn er nicht gestützt ist, und haltet ihn bei heftigen Bewegungen mit der Hand fest.",
+    "Haltet das Kind sichtbar und zieht ihm keine dicken Jacken an, die die Luftzirkulation behindern.",
+    "Probiert vor dem Kauf Modelle in einer Trageberatung aus, etwa über Trageschulen, das Tragenetzwerk oder Hebammen, statt im Internet das Falsche zu bestellen.",
+    "Gebt dem Kind zusätzlich Zeit am Boden, um seinen Körper selbst zu erkunden. Tragen ersetzt das nicht.",
+    "Wenn Tragen nicht klappt, lasst eine andere Person es versuchen oder gebt Nähe auf dem Schoß und im Arm. Verspannte Eltern tun laut der Gästin weder sich noch dem Kind einen Gefallen."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Evelin Kirkilionis argumentiert biologisch und mit Bindungsforschung: Der Mensch sei ein Tragling, Körperkontakt setze Oxytocin frei und fördere die Entwicklung. Sie hält Vorwürfe wie, das Kind lerne nie laufen oder verlasse den Rockzipfel nicht, für nicht haltbar. Zur Haltung sagt sie, das Tragen mit Blick nach außen sei bei vielen Tragehilfen ungünstig, weil die Beine hängen, und sie räumt ein, damit zu den wenigen zu gehören, die das so sagen. Ersticken im Tragetuch hält sie für praktisch ausgeschlossen. Zugleich nimmt sie Druck heraus: Ein Kind könne glücklich aufwachsen, ohne je getragen worden zu sein, aber nicht ohne Nähe und Sicherheit. Katja Seide erzählt, dass sie Schuldgefühle hatte, weil ihr Kind im Tragetuch schrie, Daniel Graf berichtet von Kritik älterer Generationen am Tragen. Alle Aussagen zu Hüfte, Wirbelsäule und Sauerstoff stammen von der Gästin."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 100,
+     "titel": "Alles über das Tragen und seine Vorteile mit Dr. Evelin Kirklionis",
+     "datum": "2022-11-15",
+     "minute": "04:56",
+     "thema": "Nesthocker, Nestflüchter und Tragling"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 100,
+     "titel": "Alles über das Tragen und seine Vorteile mit Dr. Evelin Kirklionis",
+     "datum": "2022-11-15",
+     "minute": "14:17",
+     "thema": "Anhock-Spreiz-Haltung erklärt, drei Kriterien für eine gute Haltung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 100,
+     "titel": "Alles über das Tragen und seine Vorteile mit Dr. Evelin Kirklionis",
+     "datum": "2022-11-15",
+     "minute": "32:11",
+     "thema": "Erstickungsgefahr im Tragetuch"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 100,
+     "titel": "Alles über das Tragen und seine Vorteile mit Dr. Evelin Kirklionis",
+     "datum": "2022-11-15",
+     "minute": "43:04",
+     "thema": "Schuldgefühle, wenn Tragen schwerfällt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 100,
+     "titel": "Alles über das Tragen und seine Vorteile mit Dr. Evelin Kirklionis",
+     "datum": "2022-11-15",
+     "minute": "49:15",
+     "thema": "Woran erkenne ich eine gute Trage?"
+    }
+   ],
+   "verwandt": [
+    "bindung",
+    "baby-ausstattung-motorik",
+    "erste-zeit-mit-baby",
+    "baby-weinen",
+    "mutterinstinkt"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Warum wollen Babys getragen werden?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "bauch-verdauung",
+   "titel": "Bauch und Verdauung bei Babys und Kindern",
+   "synonyme": [
+    "Blähungen Baby",
+    "Bauchweh",
+    "Dreimonatskoliken",
+    "Stuhlgang Baby",
+    "Verstopfung Kind",
+    "Laktoseintoleranz",
+    "Kuhmilchallergie",
+    "Probiotika",
+    "Darmflora",
+    "Bauchweh vor der Schule"
+   ],
+   "fragen": [
+    "Wie sieht normaler Stuhlgang beim Baby aus?",
+    "Mein Baby hat Blähungen, was hilft?",
+    "Mein Kind hat Verstopfung, was hilft?",
+    "Hat mein Baby eine Laktoseintoleranz oder Kuhmilchallergie?",
+    "Soll ich meinem Kind Probiotika geben?",
+    "Hat mein Kind wirklich Bauchweh oder keine Lust auf Schule?"
+   ],
+   "alter": [
+    "0-1",
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "baby",
+    "essen",
+    "entwicklung"
+   ],
+   "kurz": "Laut einer Kinderärztin im Podcast ist der Darm in den ersten Monaten noch unreif, deshalb sind Blähungen, Bauchweh und ein breites Spektrum an normalem Stuhl häufig. Darm und Gehirn hängen zusammen: Stress und Druck können Verstopfung und Bauchschmerzen mitverursachen. Alarmzeichen wie Blut oder weißer Stuhl, schlechtes Zunehmen oder anhaltende Beschwerden gehören ärztlich abgeklärt; die Angaben hier sind Aussagen der Gäste und kein ärztlicher Rat.",
+   "tipps": [
+    "Macht ein Foto vom Stuhl oder bringt die Windel mit, wenn ihr unsicher seid, das hilft bei der Einschätzung.",
+    "Lasst schwarzen Stuhl nach den ersten zwei Lebenstagen, ganz weißen Stuhl, Blut im Stuhl, Gewichtsabnahme oder dauerhafte Unzufriedenheit ärztlich abklären.",
+    "Bei Blähungen kann Tragen, Abhalten, Beinchen-Radfahren oder sanfte Bauchmassage helfen; die Ärztin nennt außerdem Kümmelzäpfchen, Fenchel-, Kümmel- oder Anisöl und ein Wärmekissen.",
+    "Entschäumer sind für den akuten Fall in Ordnung, bekämpfen aber nur das Symptom und sollten nicht der einzige Schritt sein.",
+    "Vermeidet Druck beim Sauberwerden, damit das Kind nicht anfängt, den Stuhl einzuhalten; bei anhaltender Verstopfung ärztlich beraten lassen.",
+    "Bei Verdacht auf Kuhmilchallergie, etwa bei Blutschlieren im Stuhl, abklären lassen statt selbst Lebensmittel wegzulassen.",
+    "Bei Verdacht auf Unverträglichkeiten beim älteren Kind kann ein Ernährungstagebuch helfen, das Essen und Befinden festhält.",
+    "Bei Bauchweh, das vor allem bei Belastungen auftritt, erst Organisches abklären lassen und das Kind ernst nehmen, statt ihm Unlust zu unterstellen.",
+    "Setzt für die Darmgesundheit auf Vielfalt, Ballaststoffe, Bewegung, Natur und Schlaf und kauft Probiotika gezielt für Beschwerden statt auf Verdacht."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Eine Kinderärztin beruhigt häufig und betont, wie viel im Säuglingsalter normal ist, nennt aber konkrete Warnzeichen. Verdauungs- und Regulationsstörung seien kaum zu trennen, weil Stress die Darmbeweglichkeit beeinflusst und viel schreiende Babys mehr Luft schlucken. Echte Unverträglichkeiten seien bei Säuglingen selten: Relevant sei vor allem die Kuhmilcheiweißallergie, Laktose- und Fruktoseintoleranz kämen eher später. Psychosomatische Bauchschmerzen seien real und kein Vorspielen; Eltern gibt sie keine Schuld, der Einfluss gehe wechselseitig. Beim Mikrobiom warnt sie vor Hype: Die Forschung stehe am Anfang, nachweisliche Wirkung gebe es nur für einige Probiotika-Stämme, und ein unperfekter Start sei kein Grund zu verzweifeln. Die Hosts teilen eigene Schrecken, etwa eine rötliche Windel durch Ziegelmehl, und fragen nach der Einordnung. In einer früheren Folge sehen die Hosts Unverträglichkeiten als eine mögliche Ursache hinter wählerischem Essen, aber nicht als Regelfall."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 251,
+     "titel": "Wenn der Bauch Probleme macht - von Blähungen bis Unverträglichkeiten",
+     "datum": "2026-09-01",
+     "minute": "05:05",
+     "thema": "Stuhl: Bandbreite und Alarmzeichen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 251,
+     "titel": "Wenn der Bauch Probleme macht - von Blähungen bis Unverträglichkeiten",
+     "datum": "2026-09-01",
+     "minute": "02:26",
+     "thema": "Warum die Verdauung in den ersten Monaten auffällig ist"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 251,
+     "titel": "Wenn der Bauch Probleme macht - von Blähungen bis Unverträglichkeiten",
+     "datum": "2026-09-01",
+     "minute": "38:17",
+     "thema": "Entschäumer, Kümmelzäpfchen, Tragen und weitere Hilfen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 251,
+     "titel": "Wenn der Bauch Probleme macht - von Blähungen bis Unverträglichkeiten",
+     "datum": "2026-09-01",
+     "minute": "26:46",
+     "thema": "Verstopfung und der Zusammenhang mit der Sauberkeitsentwicklung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 251,
+     "titel": "Wenn der Bauch Probleme macht - von Blähungen bis Unverträglichkeiten",
+     "datum": "2026-09-01",
+     "minute": "33:33",
+     "thema": "Was psychosomatisch heißt und wie man es erkennt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 251,
+     "titel": "Wenn der Bauch Probleme macht - von Blähungen bis Unverträglichkeiten",
+     "datum": "2026-09-01",
+     "minute": "29:04",
+     "thema": "Antibiotika, Pro- und Präbiotika"
+    }
+   ],
+   "verwandt": [
+    "trocken-werden",
+    "waehlerisches-essen",
+    "schreibaby",
+    "beikost",
+    "schulangst",
+    "migraene-kinder"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Wie sieht normaler Stuhlgang beim Baby aus?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "beduerfnisorientierte-erziehung",
@@ -1179,7 +2010,10 @@ window.WISSEN = {
     "Baby-Bs",
     "Wunsch oder Bedürfnis",
     "bedürfnisorientierte Elternschaft",
-    "Bedürfnisse nicht sofort erfüllen"
+    "Bedürfnisse nicht sofort erfüllen",
+    "Doppelkern",
+    "Mythos sanfte Erziehung",
+    "Konflikte trotz Bedürfnisorientierung"
    ],
    "fragen": [
     "Funktioniert bedürfnisorientierte Erziehung wirklich?",
@@ -1187,7 +2021,8 @@ window.WISSEN = {
     "Bedürfnisorientierte Erziehung macht mich fertig, ist das normal?",
     "Muss ich immer die Gefühle meines Kindes begleiten?",
     "Muss ich jeden Wunsch meines Kleinkinds erfüllen?",
-    "Soll ich mein Kind fragen, was es braucht?"
+    "Soll ich mein Kind fragen, was es braucht?",
+    "Warum gibt es trotz liebevoller Erziehung so viele Konflikte?"
    ],
    "alter": [
     "1-3",
@@ -1223,6 +2058,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber nennt es das größte Missverständnis, bedürfnisorientierte Elternschaft heiße, nur die Bedürfnisse der Kinder sofort und immer zu erfüllen; nach ihrer Erfahrung werden Kinder dann zu Tyrannen und Eltern zu Zombies. Gemeint seien alle Bedürfnisse in der Familie, auch die der Eltern, bestmöglich erfüllt, aber nicht sofort. Sie sieht den Ansatz weder als autoritär noch als antiautoritär, sondern als Mitte aus Empathie und Führung. Wie die mutti-Hosts und Nicola Schmidt trennt sie Bedürfnisse (für alle Menschen gleich, nicht verhandelbar) von Wünschen, die nur mögliche Strategien sind. Anders als mutti verteidigt sie den Ansatz selbst und sieht das Problem im Missverständnis; sie verzichtet zudem auf Belohnung, Strafe und ein globales Richtig und Falsch, will Kindern aber Orientierung über die Werte der Eltern und das Warum geben. Ein zwölfjähriger Sohn erzählt in einer Folge, ihn nerve nicht die GfK, sondern zu viel Reden und Gefühlsanalyse."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide stehen klar hinter bedürfnis- und beziehungsorientierter Begleitung, die Katja Seide nach eigener Aussage selbst von Lob und Strafe weggeführt hat. Wie Mutti, Nicola Schmidt und Kathy Weber kritisieren sie aber Missverständnisse: Bedürfnisorientierung meine die Bedürfnisse aller in der Familie, auch der Eltern, sei keine Kindzentrierung, keine Grenzenlosigkeit und keine Konfliktfreiheit. Im Unterschied zu den mutti-Hosts sehen sie das Problem eher im verzerrten Verständnis und im Druck der Szene als im Ansatz selbst. Mehrere Gäste differenzieren: Herbert Renz-Polster beschreibt einen Doppelkern aus sichernder Beziehung und Freiheit, der heute zu stark auf Nähe zielt, und warnt vor absoluten Idealen wie immer kooperierenden Kindern oder Zwang-Verzicht. Nina Grimm sieht Bedürfnisorientierung manchmal als Ausrede, Konflikte nicht auszuhalten, und Daniel Graf ergänzt, dass dahinter oft eher Unsicherheit stehe. Die Autorin Nora Imlau nennt es einen Mythos, liebevoll erzogene Kinder seien engelsgleich; sie hätten oft ein starkes Nein. Das sind Einschätzungen der Gäste, keine belegten Tatsachen."
     }
    ],
    "quellen": [
@@ -1273,6 +2112,22 @@ window.WISSEN = {
      "datum": "2022-02-06",
      "minute": "43:37",
      "thema": "Bedürfnisse übersetzen statt kleine Kinder zu fragen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 141,
+     "titel": "Wie Erziehung heute gelingt mit Herbert Renz-Polster",
+     "datum": "2024-06-11",
+     "minute": "13:09",
+     "thema": "Der Doppelkern: Beziehung und Freiheit"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 151,
+     "titel": "Selbstbewusst bedürfnisorientiert begleiten",
+     "datum": "2024-10-01",
+     "minute": "35:10",
+     "thema": "Was oft fälschlich für bedürfnisorientiert gehalten wird"
     }
    ],
    "verwandt": [
@@ -1297,7 +2152,9 @@ window.WISSEN = {
     "Strategie oder Bedürfnis",
     "Selbstfürsorge Eltern",
     "Bedürfnisse benennen",
-    "Alleinzeit Kind"
+    "Alleinzeit Kind",
+    "Eisbergmodell",
+    "Nahsignale Baby"
    ],
    "fragen": [
     "Wie erkenne ich, was mein Kind wirklich braucht?",
@@ -1333,6 +2190,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber erklärt nach Rosenberg: Alle Menschen haben dieselben Bedürfnisse, jeder ist selbst dafür zuständig, dass sie erfüllt werden, und es gibt immer mindestens eine Möglichkeit dazu. Davon trennt sie die Strategie, also den konkreten Weg; Wochenende, Zeit oder ein bestimmter Ort sind für sie Strategien, keine Bedürfnisse. Für Kinder tragen die Eltern die Verantwortung, ihre Bedürfnisse herauszufinden und für Erfüllung zu sorgen, auch wenn sie müde sind; bei Konflikten entscheiden sie die Rangfolge, weil sie die Führung haben. Niemand solle zurückstecken, und Eltern kommen laut ihr an erster Stelle, weil dauerhaft unerfüllte Elternbedürfnisse sich als Wut gegen die Kinder entladen. Sie betont, dass es nicht um hundert Prozent geht und dass Kinder auch bei gut erfüllten Bedürfnissen weiter Nein sagen werden. Kinder lernen ihre Bedürfnisse durch Vorleben, nicht durch Beibringen; Kathy Weber beschreibt drei Autonomiephasen, in der zweiten behalten Eltern teils die Führung, wenn ein Kind Schutz braucht."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Bei Daniel Graf und Katja Seide taucht das Thema in mehreren Folgen auf, meist als Bild: Katia Saalfrank beschreibt einen Eisberg, bei dem das Verhalten nur die Spitze ist und darunter Gefühle und Bedürfnisse liegen; als wichtigste Grundbedürfnisse nennt sie Sicherheit, Autonomie und Verbindung. Eine Gästin in einer anderen Folge ergänzt bei Eltern eine Interpretation zwischen Gefühl und Verhalten, die oft aus eigenen früheren Erfahrungen stammt. Das deckt sich mit der GfK-Sicht, dass Verhalten eine Strategie für ein Bedürfnis ist; neu sind der Bezug auf Maslows Pyramide in einer Gordon-Folge und der Hinweis, dass Eltern oft Lösungen vorschlagen, die ihre eigenen Bedürfnisse erfüllen. Bei Babys sprechen die Hosts von leisen Nahsignalen (Schmatzen, Kopf wenden), die man vor dem lauten Schreien lesen kann. Eine Gästin betont, Bedürfnisorientierung schütze vor allem, wenn sie früh beginnt, späterer Einstieg sei aber trotzdem wertvoll."
     }
    ],
    "quellen": [
@@ -1383,6 +2244,22 @@ window.WISSEN = {
      "datum": "2024-12-09",
      "minute": "10:29",
      "thema": "Ein Kind nimmt sich Alleinzeit"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 70,
+     "titel": "\"Die Reise zu einer glücklichen Eltern-Kind-Beziehung\" mit Katia Saalfrank",
+     "datum": "2021-09-07",
+     "minute": "08:31",
+     "thema": "Eisbergmodell erklärt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 126,
+     "titel": "Gemeinsam aus dem Mamsterrad",
+     "datum": "2023-11-14",
+     "minute": "08:03",
+     "thema": "Mamsterrad-Pyramide: Verhalten, Gefühl, Bedürfnis"
     }
    ],
    "verwandt": [
@@ -1408,14 +2285,21 @@ window.WISSEN = {
     "Beikostplan",
     "Fingerfood",
     "mit Essen spielen",
-    "Stillmahlzeit ersetzen"
+    "Stillmahlzeit ersetzen",
+    "Beikostreife",
+    "Reifezeichen Beikost",
+    "Zungenstreckreflex",
+    "Würgen beim Essen",
+    "Gläschen"
    ],
    "fragen": [
     "Darf mein Baby mit Essen spielen?",
     "Baby matscht und wirft Essen, was tun?",
     "Wie ersetze ich Stillmahlzeiten durch Brei?",
     "Mein Baby nimmt weder Flasche noch Brei, nur Brust",
-    "Ab wann ist ein Baby beikostreif?"
+    "Ab wann ist ein Baby beikostreif?",
+    "Ab wann darf mein Baby Brei essen?",
+    "Mein Baby würgt beim Essen, was tun?"
    ],
    "alter": [
     "0-1",
@@ -1425,19 +2309,26 @@ window.WISSEN = {
     "essen",
     "baby"
    ],
-   "kurz": "Spielen mit Essen ist in Ordnung, Werfen und Verschwenden nicht, und klassische Beikostpläne sind weniger falsch, als in manchen Kreisen gesagt wird. Beim Ersetzen von Stillmahlzeiten durch Brei kann es helfen, nach dem Brei nicht sofort die Brust zu geben. Das sind Erfahrungen und Einschätzungen, kein ärztlicher Rat.",
+   "kurz": "Spielen mit Essen ist in Ordnung, Werfen und Verschwenden nicht, und klassische Beikostpläne sind weniger falsch, als in manchen Kreisen gesagt wird. Wann ihr startet, hängt laut den Hosts von wunschkind von Reifezeichen und dem Kind ab; Brei, Gläschen und Fingerfood sind für sie gleichwertige Wege. Beim Ersetzen von Stillmahlzeiten durch Brei kann es helfen, nach dem Brei nicht sofort die Brust zu geben. Das sind Erfahrungen und Einschätzungen, kein ärztlicher Rat.",
    "tipps": [
     "Setzt das Baby beim eigenen Essen neben euch und gebt ihm immer nur ein Stück von eurem Teller, das nächste erst, wenn es fertig ist.",
     "Esst selbst dasselbe vor, damit das Baby sieht, was man mit dem Essen macht.",
     "Erlaubt Erkunden und kreatives Spielen, solange nichts verschwendet wird und das Essen respektvoll behandelt wird; Werfen ist nicht in Ordnung.",
     "Schreibt auf, wann ihr stillt, und ersetzt dann einzelne Mahlzeiten durch Brei.",
     "Gebt nach dem Brei nicht sofort die Brust, wenn ihr abstillen möchtet; isst das Baby gut, schiebt die nächste Stillmahlzeit um etwa eine halbe Stunde nach hinten.",
-    "Ist das Baby noch nicht beikostreif, reduziert die Stillabstände auf das Nötige und füllt den Rest mit der Flasche."
+    "Ist das Baby noch nicht beikostreif, reduziert die Stillabstände auf das Nötige und füllt den Rest mit der Flasche.",
+    "Wartet auf Reifezeichen wie Interesse, Greifen und einen schwächer werdenden Zungenstreckreflex, statt dem Alter auf dem Gläschen zu folgen; die Hosts und eine Gästin nennen als Spanne etwa den fünften bis siebten Monat.",
+    "Beim Fingerfood sind laut den Hosts gedünstete, fingerlange Stücke geeignet, runde glatte Stücke wie Weintrauben oder Erbsen nicht. Husten oder verschluckt sich euer Kind häufig, lasst es ärztlich abklären.",
+    "Die Hosts nennen im ersten Jahr als ungeeignet unter anderem Honig, rohe Eier, Nüsse und Salz; das ist ihre Einschätzung, bei Fragen hilft die Kinderärztin oder der Kinderarzt."
    ],
    "sichtweisen": [
     {
      "podcast": "mutti",
      "text": "Die Hosts erzählen, dass sie selbst mit Baby-led Weaning begonnen haben, würden heute aber auch bei Babys nicht mehr viel mit Essen spielen lassen. Sie kritisieren Teile der Baby-led-Weaning-Szene, in der das Erkunden mit allen Sinnen so weit gehe, dass viel Essen verschwendet wird, und nennen die Haltung, Verschwendung sei egal, privilegiert. Essen sei für sie eine wertvolle Ressource, besonders bei Fleisch halten sie Herumspielen für unangemessen. Ein voller Teller überfordere Babys und lade zum Draufhauen ein. Die klassischen Beikostpläne der Elterngeneration halten sie für nachvollziehbar und bedauern, dass die bindungsorientierte Szene Brei als Ersatz für Stillmahlzeiten oft ablehnt; sie bitten um Korrektur, falls sie dabei etwas falsch verstanden haben. Laut einer Host ist ein sechs Monate altes Baby nicht unbedingt beikostreif, und das Hineinfinden dauere etwa zwei Monate. Schwere Brei-Sorten wie Kartoffel würden eventuell schlechter vertragen als Karotte. Nach dem Brei direkt zu stillen, lehre das Baby laut den Hosts, dass nur die Brust eine richtige Mahlzeit ist."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Bei wunschkind ist Beikost ein Hauptthema der frühen Folge 7. Daniel Graf und Katja Seide beschreiben Reifezeichen (Interesse am Essen, Greifen, nachlassender Zungenstreckreflex, Kaubewegungen) und sehen die Milch im ersten Jahr weiter als Hauptnahrung. Das starre deutsche Stufenschema halten sie für einen Fahrplan, nicht für etwas von der Natur Vorgesehenes; Brei aus dem Gläschen sei in Ordnung, nur einen Glaubenskrieg wollen sie nicht. Wie die mutti-Hosts lehnen sie keine Breipläne grundsätzlich ab, sind aber beim Baby-led Weaning (Fingerfood statt Brei) offener und erklären es als Möglichkeit, nicht als Pflicht, und sie mischen beide Wege. Anders als die mutti-Hosts, die vor Verschwendung warnen, geht es ihnen vor allem um Vertrauen in das Kind und um die Rollenteilung: Eltern entscheiden, was auf den Tisch kommt, das Kind, was und wie viel es isst. Zu Eisen, Honig, Nüssen, Wasser und Reiswaffeln geben die Hosts und Gästinnen eigene Einschätzungen ab, die kein ärztlicher Rat sind."
     }
    ],
    "quellen": [
@@ -1472,13 +2363,47 @@ window.WISSEN = {
      "datum": "2025-04-09",
      "minute": "16:24",
      "thema": "Ein Stück nach dem anderen statt voller Babyteller"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 7,
+     "titel": "Die Einführung von Beikost",
+     "datum": "2019-02-25",
+     "minute": "05:02",
+     "thema": "Reifezeichen und Zungenstreckreflex"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 7,
+     "titel": "Die Einführung von Beikost",
+     "datum": "2019-02-25",
+     "minute": "17:13",
+     "thema": "Was ist Baby-led Weaning?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 7,
+     "titel": "Die Einführung von Beikost",
+     "datum": "2019-02-25",
+     "minute": "20:14",
+     "thema": "Würgereflex erklärt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 165,
+     "titel": "Kindergesundheit heute - Schluss mit gefährlichem Halbwissen",
+     "datum": "2025-01-07",
+     "minute": "11:32",
+     "thema": "Reifezeichen für Beikost"
     }
    ],
    "verwandt": [
     "stillen",
     "waehlerisches-essen",
     "stillsitzen-tischmanieren",
-    "flaeschchen"
+    "flaeschchen",
+    "baby-hitze",
+    "bauch-verdauung"
    ],
    "medizinisch": true,
    "einleitung": "Viele Eltern sind unsicher, wie sie mit Matschen, Werfen und dem Umstieg von der Brust auf Brei umgehen sollen."
@@ -1496,7 +2421,10 @@ window.WISSEN = {
     "Sticker fürs Zähneputzen",
     "Habit-Tracking",
     "Belohnung fürs Mithelfen",
-    "Wertschätzung statt Belohnung"
+    "Wertschätzung statt Belohnung",
+    "Verstärkerplan",
+    "Sonne-Wolken-Kalender",
+    "Klassenampel"
    ],
    "fragen": [
     "Sind Belohnungssysteme schlecht?",
@@ -1504,7 +2432,8 @@ window.WISSEN = {
     "Wie mache ich ein Belohnungssystem richtig?",
     "Sind Sticker fürs Zähneputzen sinnvoll?",
     "Soll mein Kind Taschengeld oder Belohnung fürs Mithelfen bekommen?",
-    "Mein Kind will für jede Mithilfe einen Stern, was tun?"
+    "Mein Kind will für jede Mithilfe einen Stern, was tun?",
+    "Sind Klassenampeln sinnvoll?"
    ],
    "alter": [
     "1-3",
@@ -1516,7 +2445,7 @@ window.WISSEN = {
     "alltag",
     "essen"
    ],
-   "kurz": "Belohnungssysteme sind laut den Hosts von mutti nicht pauschal schlecht. Sie helfen vor allem dabei, Gewohnheiten aufzubauen oder festgefahrene Muster zu durchbrechen, sollten aber nicht für Dinge eingesetzt werden, die das Kind ohnehin gern macht. Nicola Schmidt lehnt Belohnungen fürs Mithelfen im Haushalt ab, weil dort die Zugehörigkeit zählt, und Kathy Weber (gfk) verzichtet auf Belohnung und Bestrafung ganz und setzt auf Wertschätzung.",
+   "kurz": "Belohnungssysteme sind laut den Hosts von mutti nicht pauschal schlecht. Sie helfen vor allem dabei, Gewohnheiten aufzubauen oder festgefahrene Muster zu durchbrechen, sollten aber nicht für Dinge eingesetzt werden, die das Kind ohnehin gern macht. Nicola Schmidt lehnt Belohnungen fürs Mithelfen im Haushalt ab, weil dort die Zugehörigkeit zählt, und Kathy Weber (gfk) verzichtet auf Belohnung und Bestrafung ganz und setzt auf Wertschätzung. In den Gesprächen von Daniel Graf und Katja Seide gelten Pläne allenfalls als Hilfe, Erfolge sichtbar zu machen, und sollen Kommunikation und Beziehung nicht ersetzen.",
    "tipps": [
     "Belohnt nichts, was euer Kind ohnehin gern macht, zum Beispiel Malen, denn das kann die Motivation langfristig senken.",
     "Macht Erfolge mit Stickern, Sternchen oder Steinchen sichtbar, denn schon das Zählen wirkt belohnend.",
@@ -1540,6 +2469,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber verzichtet nach eigener Aussage ganz auf Belohnung und Bestrafung, auch bei ihren eigenen Kindern, und hält beides für kurzfristig wirksam, aber für Liebe mit Bedingungen. Laut ihr machen Eltern dabei den Richter über das Verhalten, Kinder handeln für Lob statt aus eigener Freude, und Belohnung kann süchtig machen. Damit steht sie quer zu den mutti-Hosts, die Belohnung als Gewohnheitshilfe und Verstärkungslernen vertretbar finden, und geht weiter als Nicola Schmidt, die nur die Belohnung fürs Mithelfen ablehnt. Als Alternative nennt sie Wertschätzung, also zu beschreiben, was man sieht, und zu fragen, ob das Kind stolz ist. Pragmatisch bleibt sie bei Belohnungen anderer, etwa einer Kiste in der Arztpraxis: Sie übersetzt sie als Dank fürs Mitmachen, statt sie zu verurteilen. Eltern, die bisher belohnt haben, wirft sie nichts vor und räumt ein, dass das Thema in ihren Kursen auf Widerstand stößt."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Bei Daniel Graf und Katja Seide gibt es keine einheitliche Linie, die Stimmen reichen von skeptisch bis ablehnend. Ein Gast (Fachperson) hält Token- und Verstärkerpläne nur für wirksam, wenn sie sehr individuell zugeschnitten sind, und sieht gute Pläne vor allem als Mittel, Erfolge sichtbar zu machen (zum Beispiel einen Sonne-Wolken-Kalender); Klassenampeln lehnt er klar ab, und Tauschsysteme zu Hause gehen laut ihm um Macht. Er rät, sich als Coach des Kindes statt als Wächter zu verstehen. Eine andere Gästin sieht Lob und Belohnung wie Strafe als Konditionierung und meint, Belohnung zerstöre die innere Motivation; für den Familienalltag lehnt sie beides ab. Eine weitere Gästin hält Systeme sporadisch für vertretbar, warnt aber, sie dürften keine Kommunikation ersetzen und Sterne für soziales Verhalten oder Abzüge könnten die Bindung belasten. Damit liegen die Hosts nahe bei gfk und artgerecht und weiter weg vom pragmatischen Ansatz der mutti-Hosts; Katja Seide ergänzt als Lehrerin, Belohnungssysteme wirkten schnell, Beziehungsaufbau dauere."
     }
    ],
    "quellen": [
@@ -1590,6 +2523,22 @@ window.WISSEN = {
      "datum": "2024-09-09",
      "minute": "10:09",
      "thema": "Das Kind will Sterne für das Abräumen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 45,
+     "titel": "Bestrafungen und Belohnungen",
+     "datum": "2020-08-25",
+     "minute": "50:55",
+     "thema": "Token- und Verstärkerpläne: wann sie funktionieren"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 210,
+     "titel": "Kinder bindungsorientiert begleiten, ohne sich selbst zu verlieren",
+     "datum": "2025-11-18",
+     "minute": "41:53",
+     "thema": "Sind Belohnungssysteme okay?"
     }
    ],
    "verwandt": [
@@ -1616,7 +2565,12 @@ window.WISSEN = {
     "Handy und Baby",
     "Medien unter drei",
     "Medienregeln",
-    "Tablet"
+    "Tablet",
+    "Fortnite",
+    "Computerspiele",
+    "Gaming",
+    "erstes Handy",
+    "Ausstiegspunkt"
    ],
    "fragen": [
     "Wie viel Fernsehen ist okay?",
@@ -1624,7 +2578,8 @@ window.WISSEN = {
     "Darf ich vor meinem Baby aufs Handy schauen?",
     "Warum ist mein Kind nach Kinderserien aggressiv?",
     "Wie verbringe ich selbst weniger Zeit am Handy?",
-    "Mein Kind hängt zu viel am Bildschirm, was tun?"
+    "Mein Kind hängt zu viel am Bildschirm, was tun?",
+    "Ab wann darf mein Kind ein Smartphone haben?"
    ],
    "alter": [
     "0-1",
@@ -1637,17 +2592,17 @@ window.WISSEN = {
     "alltag",
     "eltern"
    ],
-   "kurz": "Ganz selbstbestimmter Medienkonsum bei Kindern gilt den Hosts von mutti inzwischen als Fehler, deshalb sollten Eltern Grenzen setzen. Nicola Schmidt rät ebenfalls zu einem klaren Rahmen und nennt als Faustregel: je jünger das Kind, desto weniger Bildschirmzeit. Kathy Weber (gfk) lehnt pauschale Minutenangaben ab: Eltern legen den Rahmen fest und begleiten den Protest, das Kind bekommt Spielraum innerhalb davon. Kritisch zu sehen sind überreizende, konfliktlastige Kinderserien, und auch die eigene Bildschirmzeit der Eltern ist ein Zeitfresser.",
+   "kurz": "Ganz selbstbestimmter Medienkonsum bei Kindern gilt den Hosts von mutti inzwischen als Fehler, deshalb sollten Eltern Grenzen setzen; Nicola Schmidt nennt als Faustregel: je jünger das Kind, desto weniger Bildschirmzeit. Kathy Weber (gfk) lehnt pauschale Minutenangaben ab, Eltern legen den Rahmen fest und begleiten den Protest, und auch Daniel Graf und Katja Seide mit ihren Gästen schauen eher auf Inhalt, Alter und einen klaren Ausstiegspunkt als auf die Uhr. Kritisch zu sehen sind überreizende, konfliktlastige Kinderserien, und auch die eigene Bildschirmzeit der Eltern ist ein Zeitfresser.",
    "tipps": [
     "Lasst Medienkonsum nicht komplett selbstbestimmt laufen, denn auch Erwachsenen tut eine äußere Grenze manchmal gut.",
     "Legt wenige klare Grundregeln fest, die nicht verhandelbar sind, zum Beispiel keine Handys am Tisch, keine eigenen Geräte im Kinderzimmer und keine Bildschirme vor der Schule oder vor dem Frühstück am Wochenende.",
-    "Schaut euch eure eigene Bildschirmzeit an, probiert als Experiment eine Woche ohne Handy und Serien und gebt nicht jedem Piepen nach, denn Kinder lernen den Umgang von euch. Ladet Geräte nachts zentral statt neben dem Bett.",
-    "Setzt euch beim Scrollen vorher ein Ziel, etwa drei Videos, und hört dann auf.",
+    "Schaut euch eure eigene Bildschirmzeit an, probiert als Experiment eine Woche ohne Handy und Serien und gebt nicht jedem Piepen nach, denn Kinder lernen den Umgang von euch. Ladet Geräte nachts zentral statt neben dem Bett. Setzt euch beim Scrollen vorher ein Ziel, etwa drei Videos, und hört dann auf.",
     "Löst die Gewohnheit auf, Ruhe nur durch Fernsehen zu bekommen, sonst fordert das Kind bei jedem Ruhewunsch den Bildschirm.",
-    "Zeigt Babys keine schnell geschnittenen, bunten Kinderserien, wobei ein Videoanruf mit den Großeltern nicht als Bildschirmzeit zählt.",
     "Achtet bei Serien darauf, wie viel Raum die Lösung bekommt, und probiert bei aggressivem Verhalten danach Sendungen mit mehr Lösungsfokus oder erzählt selbst Geschichten.",
     "Gebt kreativem Spielen den Vorzug vor Berieselung, damit Fernsehen nicht zur Strategie oder Gewohnheit wird, und koppelt Medienzeit an Bewegung, damit sich das Kind danach wieder abregt.",
-    "Setzt Bildschirme nicht als Belohnung oder Babysitter ein, und übt mit dem Kind, Bildschirmaktivitäten bewusst zu beenden. Legt die Zeit vorher fest, geht zum Kind hin, würdigt, dass es Spaß macht, und begleitet den Protest, statt zu drohen."
+    "Setzt Bildschirme nicht als Belohnung oder Babysitter ein, und übt mit dem Kind, Bildschirmaktivitäten bewusst zu beenden. Legt die Zeit vorher fest, geht zum Kind hin, würdigt, dass es Spaß macht, und begleitet den Protest, statt zu drohen, und vereinbart statt einer festen Minutenzahl lieber einen klaren Ausstiegspunkt wie Folge, Kapitel oder Level; lasst das Kind den Knopf möglichst selbst drücken.",
+    "Schaut nicht nur auf die Uhr, sondern darauf, was euer Kind tut (Konsum oder Kreatives) und was es sieht; kleine Kinder führt ihr am besten zuerst mit Bilderbüchern, Hörbüchern und Hörspielen heran.",
+    "Erlaubt euch bei hoher Belastung auch mal eine Folge ohne schlechtes Gewissen, und passt die Bildschirmzeit an die aktuelle Lage an, solange Bewegung, Natur und gemeinsames Spielen nicht zu kurz kommen."
    ],
    "sichtweisen": [
     {
@@ -1661,6 +2616,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber vertritt eine eher medienkritische, aber verbotsfreie Linie: je weniger, desto besser, mit klarer elterlicher Führung. Pauschale Minutenangaben pro Alter lehnt sie ab; sie schaut, wie es dem einzelnen Kind geht. Für Eltern beschreibt sie fünf Schritte zu einer klaren Haltung: das eigene Warum klären, sich informieren, die Bedürfnisse des Kindes einbeziehen, selbst entscheiden und es gemeinsam umsetzen. Hinter dem Wunsch nach Medien sieht sie Bedürfnisse wie Spiel und Spaß, Zugehörigkeit oder Austausch. Die Eltern tragen die Verantwortung für die Gesundheit des Kindes und setzen die Gesamtzeit, das Kind darf mitentscheiden, wie es sie einteilt; Wutausbrüche beim Ausmachen werden begleitet. Sie hält komplettes Laissez-faire für meist nicht tragfähig, lehnt aber Strafen und Belohnung durch Medien ab. Medien sind für sie weder grundsätzlich schädlich noch harmlos. Anders als Nicola Schmidt stützt sie sich nicht auf Altersgrenzen, sondern auf Beobachtung des Kindes."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide argumentieren in frühen Folgen bedürfnisorientiert: Eine feste halbe Stunde führe oft zu Streit, besser seien Absprachen im Einzelfall, und sie raten von Timern und Kontroll-Apps ab, weil das Kind das Ausschalten selbst üben soll; laut den Hosts schläft die Impulskontrolle nach langem Konsum gewissermaßen ein, Wut beim Ausschalten sei daher normal. Wie mutti nennen sie Medien echte Zeitfresser, setzen aber eher auf Begleiten, Mitspielen und Interesse als auf Verbote. Gäste differenzieren später: Medienpädagoginnen raten, auf Inhalt, Alter und Ausstiegspunkt statt auf Minuten zu schauen und kleine Kinder erst über Bücher, Hörbücher und Hörspiele heranzuführen. Herbert Renz-Polster nennt die Idee, gute Bindung schütze vor Medienfolgen, Unsinn, und Nora Imlau sagt, ein moderater Platz für Bildschirme, auch zur Entlastung der Eltern, sei ohne schlechtes Gewissen in Ordnung. Aussagen zu Sucht, Gehirn und Studien sind Darstellungen der Hosts und Gäste, keine gesicherten Fakten. Für das erste Handy nennen Gästinnen keine feste Altersregel, entscheidend sei, ob Eltern bereit sind, es aktiv zu begleiten."
     }
    ],
    "quellen": [
@@ -1677,24 +2636,8 @@ window.WISSEN = {
      "nr": 45,
      "titel": "So bekommen Eltern mehr Zeit für sich",
      "datum": "2026-05-05",
-     "minute": "24:04",
-     "thema": "Bildschirmzeit der Eltern, Spielautomat-Vergleich"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 45,
-     "titel": "So bekommen Eltern mehr Zeit für sich",
-     "datum": "2026-05-05",
      "minute": "44:52",
      "thema": "Selbstexperiment ohne Handy, Zielsetzung beim Scrollen"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 65,
-     "titel": "Intensive Parenting - wenn sich alles um das Baby dreht",
-     "datum": "2026-11-04",
-     "minute": "38:54",
-     "thema": "Was als Bildschirmzeit zählt"
     },
     {
      "podcast": "mutti",
@@ -1713,20 +2656,36 @@ window.WISSEN = {
      "thema": "Faustregel Alter und Bildschirmzeit"
     },
     {
-     "podcast": "artgerecht",
-     "nr": 55,
-     "titel": "Mein Kind hängt zu viel am Bildschirm – was soll ich tun?",
-     "datum": "2026-04-28",
-     "minute": "03:03",
-     "thema": "Grundregeln für die Familie"
-    },
-    {
      "podcast": "gfk",
      "nr": 33,
      "titel": "047 M- wie Umgang mit Medien Teil 1: Wie du in deine Klarheit kommst",
      "datum": "2021-01-11",
      "minute": "04:18",
      "thema": "Klare Haltung zu Medien finden, Bedürfnisse hinter dem Medienwunsch"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 117,
+     "titel": "Wie kann man Klein- und Vorschulkinder an Medien heranführen?",
+     "datum": "2023-07-11",
+     "minute": "15:15",
+     "thema": "Zeit als Richtlinie? Ausstiegspunkte statt Zeitlimit"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 180,
+     "titel": "Begleiten statt verbieten - kompetent und sicher durch die digitale Welt",
+     "datum": "2025-04-22",
+     "minute": "17:30",
+     "thema": "Medienzeit-Empfehlungen und was wirklich zählt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 4,
+     "titel": "Digitale Medien - Teil 2: Aggressionen und Impulskontrolle",
+     "datum": "2019-01-15",
+     "minute": "11:15",
+     "thema": "Eltern-Kontroll-Apps und Timer"
     }
    ],
    "verwandt": [
@@ -1845,7 +2804,11 @@ window.WISSEN = {
     "Kontakt im Konflikt",
     "Mama-Liebe",
     "Liebst du mich",
-    "Kind vermisst Mama"
+    "Kind vermisst Mama",
+    "Bindungsnetz",
+    "Bonding",
+    "Haupt-Bezugsperson",
+    "Kind lehnt Papa ab"
    ],
    "fragen": [
     "Was ist eine sichere Bindung?",
@@ -1853,7 +2816,8 @@ window.WISSEN = {
     "Mein Kind weint bei der Abgabe nicht, ist es unsicher gebunden?",
     "Ist es schlimm, wenn mein Kind lieber bei Oma ist?",
     "Muss ich dem zweiten Kind genauso viel Bindung geben?",
-    "Ist die Bindung zu meinem Kind kaputt, wenn ich Fehler mache?"
+    "Ist die Bindung zu meinem Kind kaputt, wenn ich Fehler mache?",
+    "Kann man Bonding nach der Geburt nachholen?"
    ],
    "alter": [
     "0-1",
@@ -1866,17 +2830,17 @@ window.WISSEN = {
     "eltern",
     "gefuehle"
    ],
-   "kurz": "Die mutti-Hosts sind nach ihrer Recherche sehr skeptisch gegenüber der Bindungstheorie: Die Bindungstypen stammen aus einem standardisierten Experiment und lassen sich nicht auf den Alltag übertragen. Nicola Schmidt hält Bindung dagegen für wichtig, versteht sie aber als etwas Organisches, das man nach Fehlern reparieren kann, und als Kontakt auch im Konflikt. Einig sind alle, dass einzelne Situationen die Beziehung nicht zerstören und ein liebevoller, gewaltfreier Umgang zählt.",
+   "kurz": "Die mutti-Hosts sind nach ihrer Recherche sehr skeptisch gegenüber der Bindungstheorie: Die Bindungstypen stammen aus einem standardisierten Experiment und lassen sich nicht auf den Alltag übertragen. Nicola Schmidt hält Bindung dagegen für wichtig, versteht sie aber als etwas Organisches, das man nach Fehlern reparieren kann, und als Kontakt auch im Konflikt; in den Gesprächen von Daniel Graf und Katja Seide gilt Bindung als nachholbar und von einem Netz mehrerer Bezugspersonen getragen. Einig sind alle, dass einzelne Situationen die Beziehung nicht zerstören und ein liebevoller, gewaltfreier Umgang zählt.",
    "tipps": [
     "Schließt aus einzelnen Verhaltensweisen eures Kindes, etwa bei der Abgabe in der Kita, nicht auf einen Bindungstyp.",
     "Konzentriert euch auf eine authentische Beziehung zum Kind statt auf Maßnahmen, die angeblich die Bindung sichern.",
     "Tut nichts allein der Bindung zuliebe, was ihr eigentlich nicht wollt, denn das kann der Beziehung eher schaden.",
-    "Freut euch, wenn euer Kind sich bei Großeltern, Erzieherinnen oder anderen wohlfühlt, denn eine neue Beziehung nimmt euch nichts weg.",
-    "Wenn euer Kind am Wochenende in die Kita will, zeigt das, dass es dort gut aufgehoben ist, und nicht, dass es euch weniger mag.",
+    "Freut euch, wenn euer Kind sich bei Großeltern, Erzieherinnen oder anderen wohlfühlt, denn eine neue Beziehung nimmt euch nichts weg. Will euer Kind am Wochenende in die Kita, zeigt das, dass es dort gut aufgehoben ist, und nicht, dass es euch weniger mag.",
     "Entschuldigt euch nach Fehlern und zeigt echte Reue; sich nicht zu entschuldigen ist laut Nicola Schmidt schlimmer. Verurteilt wenn möglich die Situation, nicht die Person.",
     "Bleibt im Konflikt im Kontakt, etwa so: Ich trage dich nicht, aber ich lasse dich nicht allein.",
     "Fragt euer Kind altersgerecht, wie sich seine Mama- oder Papa-Liebe gerade erfüllt, und hört ohne Erwartung zu; erfüllt dann bewusst, was es nennt.",
-    "Wenn euer Kind „Liebst du mich?“ fragt, fragt nach dem Gefühl dahinter (einsam, unsicher, traurig?) und schaut, ob gerade etwas Neues im Alltag passiert ist."
+    "Wenn euer Kind „Liebst du mich?“ fragt, fragt nach dem Gefühl dahinter (einsam, unsicher, traurig?) und schaut, ob gerade etwas Neues im Alltag passiert ist.",
+    "Bevorzugt euer Kind eine Bezugsperson, gebt als erste Bezugsperson bewusst Raum und Verantwortung ab, und die zweite Person sucht entspannte Momente mit Blickkontakt, Spiel und Alltag teilen."
    ],
    "sichtweisen": [
     {
@@ -1890,6 +2854,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber spricht kaum über Bindungstheorie, sondern über Bindung als gelebte Verbindung in ihrem Konzept „lila Liebe“: Eltern sorgen für Fürsorge, Führung, Liebe und Achtung. Liebe zählt sie, wie jedes andere Bedürfnis, nicht zu den Gefühlen; sie ist ein Bedürfnis, das über sehr verschiedene Strategien erfüllt wird (Berührung, gemeinsame Zeit, Zuverlässigkeit, Worte). Ohne Sicherheit und liebevolle Führung kann Liebe laut ihr beim Kind gar nicht ankommen. Die Frage „Liebst du mich?“ muss nicht auf das Bedürfnis Liebe zeigen; sie rät, nach Gefühl und aktueller Lage zu fragen und das Kind selbst erzählen zu lassen, wie sich seine Mama- oder Papa-Liebe erfüllt. Bei Trennung und Abwesenheit schlägt sie Rituale wie Bedürfnisglas, Kussglas oder feste Abendanrufe vor, als Inspiration und nicht als Pflicht. Anders als die skeptischen mutti-Hosts nimmt sie Bindung als Ziel ernst, teilt aber mit ihnen und mit artgerecht, dass es nicht um Technik oder Perfektion geht, sondern um echte Zuwendung ohne Belohnung und Strafe."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide nehmen Bindung in ihren Gesprächen ernster als die mutti-Hosts, stellen aber vor allem Entlastung in den Mittelpunkt. Eine Gästin (Martina Stotz) rät, Bindungstypen nicht selbst zu diagnostizieren; unsichere Bindung sei selten und gehöre zu Fachleuten. Bonding nach der Geburt lasse sich nachholen, und schon das spürbare Bemühen, das Baby zu verstehen, gelte als feinfühlig. Nora Imlau betont als Gästin ein Bindungsnetz aus mehreren Bezugspersonen, in dem familienergänzende Bindungen keine Bindungen zweiter Klasse sind, und eine Psychologin sagt, die Rangfolge der Bezugspersonen habe nichts mit Liebe zu tun. Neurobiologische Aussagen zu Oxytocin und die Bowlby-Bindungsmuster stammen von Gästinnen und werden dort teils selbst als hypothetisch eingeordnet. Gäste wie Dierssen nennen harte, unberechenbare Erziehung als Risiko für Ängste; mit Nicola Schmidt teilen sie, dass Kontakt auch im Konflikt zählt, und mit mutti, dass es nicht um Perfektion geht."
     }
    ],
    "quellen": [
@@ -1906,14 +2874,6 @@ window.WISSEN = {
      "nr": 6,
      "titel": "Was Eltern über Bindung wissen sollten",
      "datum": "2024-12-10",
-     "minute": "12:02",
-     "thema": "Die vier Bindungsmuster"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 6,
-     "titel": "Was Eltern über Bindung wissen sollten",
-     "datum": "2024-12-10",
      "minute": "40:35",
      "thema": "Fremde-Situations-Test und seine Grenzen"
     },
@@ -1924,14 +2884,6 @@ window.WISSEN = {
      "datum": "2024-12-10",
      "minute": "1:07:13",
      "thema": "Andere Kulturen mit vielen Bezugspersonen und Fazit"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 43,
-     "titel": "Ist Kita schlecht für mein Kind?",
-     "datum": "2026-04-21",
-     "minute": "14:19",
-     "thema": "Ainsworths Experiment, nicht auf die Kita übertragbar"
     },
     {
      "podcast": "artgerecht",
@@ -1956,6 +2908,22 @@ window.WISSEN = {
      "datum": "2025-07-21",
      "minute": "01:56",
      "thema": "Liebe als Bedürfnis, Fürsorge, Führung, Liebe, Achtung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 154,
+     "titel": "Bindung und Urvertrauen aufbauen und stärken",
+     "datum": "2024-10-22",
+     "minute": "02:04",
+     "thema": "Warum Eltern Bindungstypen nicht selbst bestimmen sollten"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 94,
+     "titel": "Bindung und Betreuung mit Nora Imlau",
+     "datum": "2022-08-23",
+     "minute": "03:33",
+     "thema": "Das Dorf und das Bindungsnetz"
     }
    ],
    "verwandt": [
@@ -1984,7 +2952,9 @@ window.WISSEN = {
     "Pausen",
     "Ruhepause Kind",
     "Wochenplan Kinder",
-    "Orientierung geben"
+    "Orientierung geben",
+    "Rituale Kind",
+    "Ablaufkarten"
    ],
    "fragen": [
     "Brauchen Kinder feste Routinen?",
@@ -1992,7 +2962,8 @@ window.WISSEN = {
     "Die Routine wird zum Stress, was tun?",
     "Was ist der Unterschied zwischen Routine und Gewohnheit?",
     "Mein Kind ist nachmittags überdreht, was tun?",
-    "Mein Kind fragt ständig, wer es abholt, was braucht es?"
+    "Mein Kind fragt ständig, wer es abholt, was braucht es?",
+    "Mein Kind besteht auf seinem Ritual, ist das Trotz?"
    ],
    "alter": [
     "1-3",
@@ -2004,17 +2975,17 @@ window.WISSEN = {
     "eltern",
     "entwicklung"
    ],
-   "kurz": "Die mutti-Hosts sehen strikte Routinen skeptisch, denn sie geben vor allem Eltern Sicherheit und können zur Stressroutine werden. Vorhersehbarkeit nützt dem Gehirn, deshalb ist ein entspannter Mittelweg sinnvoll. Nicola Schmidt ergänzt, dass feste Rituale wie eine Pause nach der Kita Kindern helfen, nicht überreizt in den Abend zu gehen.",
+   "kurz": "Die mutti-Hosts sehen strikte Routinen skeptisch, denn sie geben vor allem Eltern Sicherheit und können zur Stressroutine werden. Vorhersehbarkeit nützt dem Gehirn, deshalb ist ein entspannter Mittelweg sinnvoll. Nicola Schmidt ergänzt, dass feste Rituale wie eine Pause nach der Kita Kindern helfen. In einer Folge mit André Stern suchen Kinder Rhythmen und Rituale selbst, weil sie ihnen Sicherheit geben.",
    "tipps": [
     "Sagt klar und ruhig, dass es jetzt losgeht, und geht dann los, statt herunterzuzählen, denn das Zählen baut oft Stress auf beiden Seiten auf.",
     "Prüft, ob eine Routine euch oder dem Kind wirklich hilft oder nur ein Kampf ums Einhalten ist, und nehmt im Zweifel lieber den Stress heraus.",
-    "Legt Familiengewohnheiten fest (zum Beispiel kaum Saft, Süßes nur manchmal), statt jede Situation neu zu verhandeln.",
     "Lasst Kinder nicht ständig Entscheidungen treffen, etwa wann der Spielplatz endet oder was gekocht wird, denn das überfordert sie.",
-    "Wollt ihr Routinen, verbindet sie mit einem gemeinsamen Ritual, etwa einem Zahnputzlied.",
     "Bindet Abläufe nicht starr an die Uhrzeit, denn sie können sich auch an Dunkelheit oder Müdigkeit orientieren.",
     "Führt Rituale für Pausen ein, etwa nach der Kita erst kurz draußen, dann Snack, dann zehn bis zwanzig Minuten Pause, und macht die Zeit mit Sanduhr oder Hörspiel sichtbar.",
     "Pause heißt nicht still liegen, sondern Reize reduzieren: ruhige Musik, Kuscheln, Massage oder eine Höhle. Geht am besten mit, damit ihr das Kind mit herunterfahrt.",
-    "Gestaltet gemeinsam mit dem Kind einen Wochenplan mit Farben für die zuständige Person und Symbolen und hängt ihn auf Augenhöhe auf."
+    "Gestaltet gemeinsam mit dem Kind einen Wochenplan mit Farben für die zuständige Person und Symbolen und hängt ihn auf Augenhöhe auf.",
+    "Seht das Festhalten eures Kindes an einem Ritual nicht als Trotz, sondern sucht eine Lösung für beide; Ausnahmen nimmt es leichter an, wenn es sonst oft zuschauen oder mitmachen darf.",
+    "Macht Abläufe mit Symbolkarten sichtbar, eine Karte pro Schritt in der Reihenfolge, und lasst das Kind erledigte Karten umdrehen; dann drängt nicht ihr, sondern der Ablauf."
    ],
    "sichtweisen": [
     {
@@ -2028,6 +2999,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber sieht Routinen und Rituale als Unterbedürfnisse von Sicherheit und Orientierung: Sie geben Kindern Halt, weil jemand weiß, wie es geht, und die Kooperationsbereitschaft steigt. Ständige Fragen („Wer holt mich ab?“, „Wann fahren wir?“) oder häufiges Nein können laut ihr zeigen, dass Orientierung fehlt. Sie empfiehlt, gemeinsam mit dem Kind einen Tages- oder Wochenplan mit Farben für die zuständige Person und Symbolen zu gestalten und sichtbar aufzuhängen. Auch kleine Listen und Rituale (Stimmungsuhr, Feiern und Bedauern, ein festes Ritual mit Berührung in immer gleicher Reihenfolge) nennt sie als Strategien. Im Unterschied zu den Mutti-Hosts, die strikte Routinen skeptisch sehen, weil sie vor allem Eltern Sicherheit geben, versteht sie Routine als Bedürfnis des Kindes, die Eltern aber führen und entscheiden das Was. Sie betont, dass ihre Ideen nur Anregungen sind und Eltern sie umgestalten dürfen. Zudem sollen Rituale nicht dazu dienen, das Kind funktionieren zu lassen."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "In einer Folge mit André Stern ist die Richtung eine andere als bei den mutti-Hosts: Kinder suchen Rhythmen und Rituale von sich aus, weil sie ihnen Sicherheit geben wie ein Gerüst. Wenn ein Kind hartnäckig an einem Ritual festhält (etwa am Heimweg oder am gewohnten Salat), sieht Stern darin Loyalität zu Strukturen und keinen Trotz; Eltern sollten das ernst nehmen. Er gibt ausdrücklich keine Ratschläge, nur Geschichten, und die Hosts Daniel Graf und Katja Seide stimmen weitgehend zu, ohne die Grenzen dieser Sicht zu hinterfragen. In einer anderen Folge nennt eine Gästin Struktur und Tagesabläufe als Sicherheit für gestresste, hochsensible Kinder, eine weitere Gästin zeigt Ablaufkarten mit Symbolen als Hilfe, die sie ausdrücklich kein Wundermittel nennt. Das deckt sich mit gfk und artgerecht und widerspricht der Skepsis der mutti-Hosts, Routinen entlasteten vor allem die Eltern. Gemeinsam ist allen die Frage, ob eine Routine dem Kind oder nur den Erwachsenen dient."
     }
    ],
    "quellen": [
@@ -2064,14 +3039,6 @@ window.WISSEN = {
      "thema": "Stressroutinen"
     },
     {
-     "podcast": "mutti",
-     "nr": 19,
-     "titel": "Brauchen Kinder Routinen?",
-     "datum": "2025-04-29",
-     "minute": "23:48",
-     "thema": "Gewohnheiten statt Routinen"
-    },
-    {
      "podcast": "artgerecht",
      "nr": 45,
      "titel": "Pausen – wie wir sie artgerecht durchsetzen",
@@ -2080,20 +3047,28 @@ window.WISSEN = {
      "thema": "Pausen wirken langweilig, Rituale und Sanduhr"
     },
     {
-     "podcast": "artgerecht",
-     "nr": 45,
-     "titel": "Pausen – wie wir sie artgerecht durchsetzen",
-     "datum": "2025-11-04",
-     "minute": "06:03",
-     "thema": "Ko-Regulation und Körperpausen"
+     "podcast": "wunschkind",
+     "nr": 60,
+     "titel": "André Stern \"Die Rhythmen und Rituale unserer Kinder\"",
+     "datum": "2021-04-06",
+     "minute": "06:46",
+     "thema": "Warum Kinder Rhythmen und Rituale suchen"
     },
     {
-     "podcast": "gfk",
-     "nr": 119,
-     "titel": "Umzug, neuer Job und Co.: Wie du dein Kind bei Veränderungen im Familienleben begleitest",
-     "datum": "2024-07-22",
-     "minute": "25:50",
-     "thema": "Ritual mit Berührung in fester Reihenfolge einführen"
+     "podcast": "wunschkind",
+     "nr": 60,
+     "titel": "André Stern \"Die Rhythmen und Rituale unserer Kinder\"",
+     "datum": "2021-04-06",
+     "minute": "12:05",
+     "thema": "Wenn Rituale für Erwachsene schwierig sind"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 240,
+     "titel": "Mit Bildern schreiben - wie kleine Symbole den Familienalltag erleichtern",
+     "datum": "2026-06-16",
+     "minute": "10:14",
+     "thema": "Ablaufkarten und Zeitplan, wo Worte allein nicht helfen"
     }
    ],
    "verwandt": [
@@ -2106,6 +3081,116 @@ window.WISSEN = {
    ],
    "medizinisch": false,
    "einleitung": "Viele Ratgeber verlangen feste Routinen für Schlafen, Essen und Alltag, doch im Familienleben werden sie schnell zum Stress. Eltern fragen sich, ob ihr Kind wirklich so viel Struktur braucht."
+  },
+  {
+   "id": "kindersitz",
+   "titel": "Den richtigen Kindersitz finden",
+   "synonyme": [
+    "Babyschale",
+    "Autositz",
+    "Reboarder",
+    "Isofix",
+    "Sitzerhöhung",
+    "Folgesitz",
+    "Kindersitz gebraucht",
+    "Kindersitz Flugzeug",
+    "Maxi-Cosi"
+   ],
+   "fragen": [
+    "Welche Babyschale ist die richtige?",
+    "Wie lange sollte mein Kind rückwärts fahren?",
+    "Isofix oder Gurt bei der Babyschale?",
+    "Darf ich einen gebrauchten Kindersitz kaufen?",
+    "Muss ich den Kindersitz nach einem Unfall tauschen?",
+    "Darf die Babyschale mit ins Flugzeug?"
+   ],
+   "alter": [
+    "0-1",
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "baby",
+    "alltag",
+    "entwicklung"
+   ],
+   "kurz": "Laut einer Expertin (Kindersitz-Fachhändlerin) nützt der Testsieger nichts, wenn er nicht zu Kind und Auto passt; deshalb sollte man Sitze probesitzen und probeweise einbauen. Die größte Fehlerquelle sei die falsche Installation, gefolgt von zu lockeren oder zu hoch eingestellten Gurten. Später empfiehlt sie, so lange wie möglich rückwärts zu fahren und auf mitwachsende Allroundsitze zu verzichten.",
+   "tipps": [
+    "Leiht die Babyschale vor dem Kauf aus oder lasst euch beim Fachhändler mit Baby und eigenem Auto beraten, inklusive Probe-Einbau.",
+    "Schaut bei Tests auf das reine Sicherheitsergebnis, nicht nur auf die Gesamtnote.",
+    "Das Baby sollte möglichst aufrecht sitzen, ohne dass der Kopf nach vorn fällt oder der Hals abknickt.",
+    "Stellt die Gurte beim Neugeborenen in die unterste Einstellung, zieht sie fest an und lasst keine dicke Kleidung wie einen Schneeanzug darunter; die Beine gehören nicht auf das Gurtschloss.",
+    "Kontrolliert bei gegurteten Schalen den Gurtverlauf (Beckengurt übers Becken, Schultergurt hinten um die Schale) und lest die Anleitungen von Auto und Sitz, besonders zum Airbag.",
+    "Nach der Babyschale kann ein Reboarder (rückwärtsgerichteter Sitz) laut der Expertin lange genutzt werden; prüft beim Probesitzen auch Platz für Beine und Mitfahrende.",
+    "Nutzt später einen Folgesitz so lange wie möglich, statt ihn schon bei der Mindestgröße zu wechseln, und gebt dem Kind bei Unlust mindestens eine Sitzerhöhung mit Gurtführung.",
+    "Kauft gebrauchte Sitze nur aus verlässlicher Quelle mit bekannter Vorgeschichte und beachtet die Herstellerangaben zu Lebensdauer und Unfall.",
+    "Wollt ihr fliegen, besorgt für die Babyschale eine Flugzulassung oder leiht, tauscht oder mietet einen zugelassenen Sitz."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Die Folge lebt von einer Expertin, die individuelle Beratung statt pauschaler Empfehlungen betont. Eine der Hosts erzählt, dass der Testsieger bei ihrem Neugeborenen schlecht passte, der andere räumt ein, früher nicht viel nachgedacht zu haben. Die Expertin sagt, Isofix-Basen seien für unsichere Eltern oder wenn Großeltern mitfahren sicherer, ein korrekt gegurteter Sitz sei bei den Crashwerten aber gleichwertig oder sogar etwas besser. Bei Reboardern ist sie deutlich: Je jünger das Kind, desto schwerer der Kopf im Verhältnis zum Körper, und Kinder könnten bis fünf oder sechs Jahre rückwärts fahren. Von mitwachsenden Sitzen für alle Gruppen rät sie ab. Dass Kinder im Flugzeug weniger gesichert sind als Erwachsene, finden Hosts und Gäste unverständlich. Es handelt sich um die Einschätzung der Expertin, nicht um eine Rechtsauskunft."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 129,
+     "titel": "Wie finde ich den passenden Kindersitz?",
+     "datum": "2023-12-26",
+     "minute": "03:01",
+     "thema": "Wie wählt man die Babyschale aus, Testsieger reicht nicht"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 129,
+     "titel": "Wie finde ich den passenden Kindersitz?",
+     "datum": "2023-12-26",
+     "minute": "10:15",
+     "thema": "Isofix-Basisstation oder gegurtet, Fehlerquellen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 129,
+     "titel": "Wie finde ich den passenden Kindersitz?",
+     "datum": "2023-12-26",
+     "minute": "25:29",
+     "thema": "Was ist ein Reboarder und warum rückwärts"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 129,
+     "titel": "Wie finde ich den passenden Kindersitz?",
+     "datum": "2023-12-26",
+     "minute": "32:10",
+     "thema": "Folgesitz ab 100 cm, Passform, bis 12 Jahre"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 129,
+     "titel": "Wie finde ich den passenden Kindersitz?",
+     "datum": "2023-12-26",
+     "minute": "21:22",
+     "thema": "Gebraucht kaufen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 129,
+     "titel": "Wie finde ich den passenden Kindersitz?",
+     "datum": "2023-12-26",
+     "minute": "17:25",
+     "thema": "Babyschalen-Zulassung im Flugzeug"
+    }
+   ],
+   "verwandt": [
+    "autofahrten",
+    "baby-ausstattung-motorik",
+    "urlaub-reisen",
+    "unfaelle-vorbeugen"
+   ],
+   "medizinisch": false,
+   "einleitung": "Viele Eltern kennen diese Situation: „Welche Babyschale ist die richtige?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "koerper-aufklaerung",
@@ -2122,7 +3207,10 @@ window.WISSEN = {
     "Sexualerziehung",
     "Kinder zeigen sich nackt",
     "Menstruation erklären",
-    "Wo kommen Babys her"
+    "Wo kommen Babys her",
+    "Aufklärung",
+    "Penis und Vulva",
+    "Verniedlichungen"
    ],
    "fragen": [
     "Meine Kinder spielen Doktor, ist das normal?",
@@ -2130,7 +3218,8 @@ window.WISSEN = {
     "Ab wann sollte ich bei Doktorspielen eingreifen?",
     "Mein Kind befriedigt sich selbst, ist das normal?",
     "Kind fasst sich beim Einschlafen in den Intimbereich",
-    "Welche Regeln gelten für Doktorspiele?"
+    "Welche Regeln gelten für Doktorspiele?",
+    "Wie nenne ich die Geschlechtsteile meines Kindes?"
    ],
    "alter": [
     "0-1",
@@ -2143,7 +3232,7 @@ window.WISSEN = {
     "grenzen",
     "schlaf"
    ],
-   "kurz": "Die Körpererkundung von Kindern gehört laut Nicola Schmidt zur normalen Entwicklung, auch Doktorspiele, die sie von erwachsener Sexualität unterscheidet. Beide Podcasts setzen auf Gelassenheit plus klare Grenzen: Regeln, Freiwilligkeit, Augenhöhe und Privatsphäre. Zur Selbstberührung beim Einschlafen geben die Hosts von mutti den Rat einer Fachfrau wieder, das ist keine ärztliche oder fachliche Empfehlung.",
+   "kurz": "Die Körpererkundung von Kindern gehört laut Nicola Schmidt und einer Gästin im wunschkind-Podcast zur normalen Entwicklung, auch Doktorspiele, die sie von erwachsener Sexualität unterscheiden. Die Podcasts setzen auf Gelassenheit plus klare Grenzen: Regeln, Freiwilligkeit, Augenhöhe und Privatsphäre, dazu richtige Wörter für Körperteile. Zur Selbstberührung beim Einschlafen geben die Hosts von mutti den Rat einer Fachfrau wieder, das ist keine ärztliche oder fachliche Empfehlung.",
    "tipps": [
     "Bleibt gelassen: Doktorspiele und Körpererkunden sind laut Nicola Schmidt normal, und sie rät weder zum Wegsehen noch zu Verboten aus Angst.",
     "Vermittelt Regeln: Jedes Kind entscheidet selbst, mit wem es spielt, und darf jederzeit Nein sagen. Niemand wird gedrängt, gezwungen oder überredet, und bei Aua oder Nein wird sofort aufgehört.",
@@ -2153,7 +3242,7 @@ window.WISSEN = {
     "Erklärt, dass es für bestimmte Dinge Orte und Zeiten gibt, und gebt dem Kind eine geschützte Privatsphäre: zu Hause okay, in Kita oder Öffentlichkeit nicht passend.",
     "Wenn sich das Kind beim Einschlafen selbst berührt, sagt klar: Entweder du hörst auf und ich bleibe, oder du machst weiter und ich gehe.",
     "Vermittelt, dass bei der Selbstberührung kein Erwachsener dabei sein soll, auch nicht Mama, Papa, Onkel oder Opa.",
-    "Rechnet damit, dass dieselbe Frage mehrmals kommt, und beantwortet sie jedes Mal wieder."
+    "Beantwortet Fragen knapp und ehrlich, auch wenn dieselbe mehrmals kommt, und nennt Körperteile mit richtigen Wörtern statt nur mit Verniedlichungen, damit Außenstehende euer Kind verstehen, wenn es von Schmerzen oder Übergriffen erzählt."
    ],
    "sichtweisen": [
     {
@@ -2167,6 +3256,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber lebt nach dem Motto, dass jedes fragende Kind eine Antwort bekommt, so kindgerecht und zugleich so realitätsnah wie möglich. Sie benutzt die richtigen Begriffe, sagt ihrer Tochter auch, dass das Sex heißt und dass beide dazu bereit sein müssen. Wiederholte Fragen deutet sie als Nachdenken, nicht als Überforderung; versteht das Kind etwas nicht, erklärt sie es mit anderen Worten. Mit ihrem Sohn spricht sie seit Jahren offen über Drogen und Pornos und hält Unbehagen eines Jugendlichen für normal; wer früh offen spricht, bleibe auch später im Gespräch. Auch die Menstruation will sie nicht heimlich behandeln, Kinder dürften sie kennen. Sie nennt das ausdrücklich ihre persönliche Erfahrung, keine Studie, und geht damit offener auf Fragen ein als die Hosts von mutti, die stärker auf Privatsphäre und Schutz achten."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide besprechen das Thema mit Gästinnen und stimmen mit artgerecht und mutti in der gelassenen Grundhaltung überein: Interesse am eigenen und an anderen Körpern gehört laut einer Gästin zur Entwicklung, besonders im Kita-Alter, und Ekel, Beschämen oder Strafen sind typische Fehlreaktionen. Ebenso wichtig sind ihnen klare Regeln, etwa Freiwilligkeit, jederzeit aufhören dürfen, keine älteren Kinder oder Erwachsenen und nichts in Körperöffnungen. Mehr als bei den anderen Podcasts geht es um die Sprache: Die Gäste raten zu den richtigen Wörtern für Geschlechtsteile, weil Verniedlichungen Außenstehende verwirren und Scham auf das ganze Thema übertragen können, und die Hosts betonen, dass die Scham von den Erwachsenen kommt. Wie gfk setzen sie auf offenes Sprechen, aber stärker auf Konsens und Selbstbestimmung des Kindes, auch bei der Hygiene. Bei Fragen zum Kinderwunsch oder Pornografie im Netz sehen die Gäste Aufklärung statt Verbote als besten Schutz; das sind ihre Einschätzungen und keine fachliche Empfehlung."
     }
    ],
    "quellen": [
@@ -2219,22 +3312,140 @@ window.WISSEN = {
      "thema": "Wie Kathy Weber mit ihrer Tochter über Sexualität spricht"
     },
     {
-     "podcast": "gfk",
-     "nr": 121,
-     "titel": "Zyklus: So kümmerst du dich um dich und deine Bedürfnisse",
-     "datum": "2024-08-05",
-     "minute": "23:35",
-     "thema": "Kinder offen in die Menstruation einbeziehen"
+     "podcast": "wunschkind",
+     "nr": 218,
+     "titel": "Kindliche Sexualität verstehen und kindgerecht erklären",
+     "datum": "2026-01-13",
+     "minute": "15:12",
+     "thema": "Kindliche Sexualität und Doktorspiele: Was ist normal?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 50,
+     "titel": "Aufklärung und Sexualität von Kindern",
+     "datum": "2020-11-03",
+     "minute": "03:13",
+     "thema": "Aufklärung im Alltag: Fragen beantworten und Körperteile benennen"
     }
    ],
    "verwandt": [
     "einschlafen",
     "grenzen-setzen",
     "schlechte-gewohnheiten",
-    "uebergriffe-schutz"
+    "uebergriffe-schutz",
+    "aussehen-schoenheitsideale",
+    "drogen-alkohol-rauchen"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern sind unsicher, wie sie reagieren sollen, wenn Kinder ihren Körper entdecken, sich anfassen oder mit anderen Kindern Doktor spielen."
+  },
+  {
+   "id": "drogen-alkohol-rauchen",
+   "titel": "Drogen, Alkohol, Rauchen: Mit Kindern sprechen",
+   "synonyme": [
+    "Rauchen",
+    "Alkohol",
+    "Kiffen",
+    "Drogenprävention",
+    "Suchtprävention",
+    "Kind raucht",
+    "Drogen Jugendliche",
+    "Sucht vorbeugen",
+    "Wohlfühlklavier"
+   ],
+   "fragen": [
+    "Wie spreche ich mit Kindern über Drogen?",
+    "Was tun, wenn mein Kind raucht?",
+    "Wie kann ich mein Kind vor Drogen schützen?"
+   ],
+   "alter": [
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "entwicklung",
+    "grenzen"
+   ],
+   "kurz": "Mehrere Gäste und die Hosts setzen auf Vorbeugung und Vertrauen statt auf Verbote: früh über Wirkung und Gefahren reden, dem Kind Selbstwert und viele Quellen für Wohlgefühl mitgeben und ansprechbar bleiben, damit es auch von Fehlern erzählt. Laut den Hosts fehlt ihnen eigene Erfahrung mit Jugendlichen, vieles sind Überlegungen und Einschätzungen. Wenn ihr nicht weiterkommt, holt euch Hilfe, zum Beispiel bei einer Beratungsstelle.",
+   "tipps": [
+    "Sprecht früh und klar darüber, warum ihr Rauchen und Drogen schlecht findet.",
+    "Erklärt Folgen in einem Zeitraum, der für euer Kind greifbar ist, statt mit Warnungen wie Lungenkrebs in 50 Jahren.",
+    "Sagt eurem Kind, dass es lieber ehrlich sein soll, und bleibt ansprechbar, auch wenn ihr den Konsum ablehnt.",
+    "Veranschaulicht es als Tauschgeschäft: ein kurzer Kick jetzt gegen schlechteres Befinden danach.",
+    "Stärkt von klein auf den Selbstwert eures Kindes und öffnet ihm verschiedene Lebenswelten, damit es viele Dinge hat, die ihm guttun (das Bild vom Wohlfühlklavier laut einer Gästin).",
+    "Lebt den Umgang mit Rauschmitteln und Handy selbst vor; vereinbarte Regeln wie handyfreie Mahlzeiten gelten auch für euch.",
+    "Wenn Sorgen bleiben oder ein Kind sich nur noch zurückzieht, holt Hilfe von außen, zunächst auch ohne das Jugendliche selbst, etwa bei einer Beratungsstelle."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "mutti",
+     "text": "Die Hosts beantworten eine Hörerfrage und weisen darauf hin, dass sie nur Überlegungen teilen und keine Erfahrung mit Jugendlichen haben. Allgemeine Warnungen vor späten Folgen sind ihrer Ansicht nach für Jugendliche zu abstrakt. Uneinig sind sie beim Angstmachen: Ein Host fand es bei sich selbst wirksam und würde ein Kind nach dem Rauchen laufen schicken, damit es die Wirkung auf die Lunge spürt. Die Hostin hält Angstmachen für wenig glaubwürdig, sobald Jugendliche Gleichaltrige ohne sichtbare Schäden erleben, und für kleine Kinder zu krass. Beide stellen Vertrauen über alles andere. Sie vermuten, dass Drogenkonsum oft eine Form von Selbstmedikation ist, etwa bei unbehandeltem ADHS. Sie ziehen eine Parallele zum Süßigkeitenschrank: Die Kinder kennen die Haltung der Eltern, werden aber nicht gezwungen."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide behandeln das Thema fast nur über Gäste und fast nur mit Blick auf Jugendliche; für Kinder bis 10 ist vor allem die Vorbeugung relevant. Eine Gästin (Karoline Schulen) sagt, Vorbeugung beginne ab Geburt mit stabilem Selbstwert, gutem Zugang zu den eigenen Gefühlen und einem tragfähigen Umfeld; Experimentieren gehöre zum Jugendalter, Sucht zeige sich oft erst später. Eine andere Gästin würde nichts verbieten, sondern früh aufklären und auf eine Beziehung hoffen, in der das Kind von Problemen erzählt; Elpers setzt ebenfalls auf Aufklärung und Vertrauen statt Verbote. Das deckt sich mit dem Vertrauensgedanken von mutti, setzt aber weniger auf Abschreckung. Mehrere Gäste betonen die Vorbildrolle der Eltern, und eine Gästin sagt ausdrücklich, dass jede Familie ihre Grenzen anders zieht."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "mutti",
+     "nr": 41,
+     "titel": "Weniger Stress im Haushalt - so helfen Kinder mit",
+     "datum": "2026-04-07",
+     "minute": "1:14:22",
+     "thema": "Hörerfrage zu Drogen, Alkohol, Rauchen"
+    },
+    {
+     "podcast": "mutti",
+     "nr": 41,
+     "titel": "Weniger Stress im Haushalt - so helfen Kinder mit",
+     "datum": "2026-04-07",
+     "minute": "1:16:23",
+     "thema": "Greifbar erklären statt ferner Folgen"
+    },
+    {
+     "podcast": "mutti",
+     "nr": 41,
+     "titel": "Weniger Stress im Haushalt - so helfen Kinder mit",
+     "datum": "2026-04-07",
+     "minute": "1:20:03",
+     "thema": "Ehrlichkeit und Vertrauen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 231,
+     "titel": "Jugend unter Druck – wie Eltern bei Überforderung, Ängsten und Belastungen unterstützen können",
+     "datum": "2026-04-14",
+     "minute": "12:09",
+     "thema": "Sucht bei Jugendlichen und Prävention"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 47,
+     "titel": "Miteinander durch die Pubertät mit Inke Hummel",
+     "datum": "2020-09-22",
+     "minute": "35:32",
+     "thema": "Rauchen, Alkohol, Drogen: Prophylaxe und Gespräch"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 149,
+     "titel": "Aggressionen bei Kindern",
+     "datum": "2024-09-17",
+     "minute": "52:32",
+     "thema": "Wie kann ich Jugendliche davon abhalten, Drogen zu nehmen?"
+    }
+   ],
+   "verwandt": [
+    "suessigkeiten",
+    "adhs-kind",
+    "koerper-aufklaerung",
+    "risiko-freiheit",
+    "eltern-psyche-hilfe",
+    "psychische-gesundheit-kind"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Wie spreche ich mit Kindern über Drogen?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "durchschlafen",
@@ -2250,14 +3461,20 @@ window.WISSEN = {
     "Schlaffee",
     "Schnullerfee",
     "nächtliches Aufwachen",
-    "Schlafprobleme"
+    "Schlafprobleme",
+    "Schlafbrücke",
+    "Schlafzyklus",
+    "Nachtwachen normal"
    ],
    "fragen": [
     "Wie gewöhne ich mein Kind an das eigene Bett?",
     "Kind kommt nachts in unser Bett, was tun?",
     "Mein Baby wacht alle 40 Minuten auf, was tun?",
     "Wie beruhige ich mein Baby nachts ohne Stillen?",
-    "Ist es schlimm, wenn mein Baby beim Umgewöhnen weint?"
+    "Ist es schlimm, wenn mein Baby beim Umgewöhnen weint?",
+    "Brauchen Babys nach sechs Monaten nachts keine Milch mehr?",
+    "Mein Kind schreit nachts",
+    "Kind wacht nachts ständig auf"
    ],
    "alter": [
     "0-1",
@@ -2289,6 +3506,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber hält nächtliches Aufwachen kleiner Kinder für altersgemäß und erklärt es evolutionär: Kinder rufen nachts nach Schutz und Sicherheit, dass sie allein schlafen müssen, sei eine gesellschaftliche Annahme. Schlafprobleme zeigen für sie ein unerfülltes Bedürfnis, meist nach Nähe, Sicherheit oder Raum, Erlebtes zu verarbeiten; als Faustregel gilt bei ihr, dass sich der Alltag im Schlaf spiegelt. Eltern können Kindern beim Schlafen helfen, aber es nicht erzwingen, und sie hält nichts davon, dem Kind Schnuller, Flasche oder Nähe einfach zu entziehen. Die Einschlafhilfe selbst sieht sie nicht als das eigentliche Problem. Aus eigener Erfahrung berichtet sie, dass ihr Baby besser schlief, nachdem sie Reize reduziert, für Wärme gesorgt und einen geschützten Schlafplatz im eigenen Zimmer eingerichtet hatte. Das steht im Gegensatz zu den schrittweisen Gewöhnungsmethoden der mutti-Hosts und ist eine persönliche Erfahrung, kein ärztlicher Rat."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "„Das gewünschteste Wunschkind“ bringt mehrere Stimmen. Die Hosts sagen, Durchschlafen sei ein Prozess und Aufwachen normal; auch Erwachsene wachten mehrmals auf, ohne es zu merken, und sie raten, sich nicht mit anderen Eltern zu vergleichen. Nach einer im Podcast genannten Definition schlafen schon junge Babys „durch“, die Erwartungen der Eltern seien oft zu hoch, und die Aussage, Kinder bräuchten mit sechs Monaten nachts keine Milch mehr, nennt eine Gästin willkürlich. Nicola Schmidt rät als Gästin, Kindern zu sagen, dass sie nicht schlafen müssen, aber leise sein sollen. Eine andere Gästin sieht häufiges Aufwachen meist als Schlafassoziation (Brust, Flasche, Schnuller) und hält ein sanftes schrittweises Lösen tagsüber für möglich, ohne abzustillen; das liegt nah bei mutti und weicht von Kathy Weber ab, die die Einschlafhilfe nicht als das eigentliche Problem sieht. Mit der Familie als System als Maßstab sucht eine weitere Gästin Kompromisse, wenn die Erschöpfung der Eltern das Problem ist. Alles sind Erfahrungen der Gäste, kein ärztlicher Rat."
     }
    ],
    "quellen": [
@@ -2307,14 +3528,6 @@ window.WISSEN = {
      "datum": "2026-10-28",
      "minute": "58:13",
      "thema": "Weinen reduziert sich schnell, Kind schläft allein ein"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 40,
-     "titel": "Eifersucht aufs Baby? So klappt’s mit Geschwistern",
-     "datum": "2026-03-31",
-     "minute": "44:52",
-     "thema": "Eigene Betten und Einschlafbegleitung schon vor dem Baby aufbauen"
     },
     {
      "podcast": "mutti",
@@ -2341,17 +3554,34 @@ window.WISSEN = {
      "thema": "Einschlafhilfe ist nicht das Problem, Nähe im Alltag auffüllen"
     },
     {
-     "podcast": "gfk",
-     "nr": 35,
-     "titel": "49 K- wie Kathy und die GfK: Meine Antworten auf eure Fragen",
-     "datum": "2021-02-08",
-     "minute": "49:47",
-     "thema": "Was Kathy Weber und ihr Mann beim schlecht schlafenden Baby verändert haben"
+     "podcast": "wunschkind",
+     "nr": 13,
+     "titel": "Wie Kinder schlafen - Familienbett, Einschlafbegleitung und Durchschlafen",
+     "datum": "2019-05-29",
+     "minute": "09:06",
+     "thema": "Was heißt Durchschlafen, Druck vermeiden"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 167,
+     "titel": "Wie Kinder entspannt ein- und altersgerecht durchschlafen",
+     "datum": "2025-01-21",
+     "minute": "01:51",
+     "thema": "Warum wachen Kinder oft auf? Schlafassoziationen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 131,
+     "titel": "Kinder beim Ein- und Durchschlafen bedürfnisorientiert begleiten",
+     "datum": "2024-01-23",
+     "minute": "10:31",
+     "thema": "Mythos: mit sechs Monaten keine Milch mehr nachts"
     }
    ],
    "verwandt": [
     "einschlafen",
     "babyschlaf",
+    "familienbett",
     "schnuller",
     "stillen",
     "mittagsschlaf"
@@ -2374,7 +3604,9 @@ window.WISSEN = {
     "Zweijähriger tritt Baby",
     "Spielzeug teilen mit Baby",
     "Kind haut Geschwister",
-    "Kind will Baby hauen"
+    "Kind will Baby hauen",
+    "Dauerkränkung Geschwister",
+    "SOS-Signal Kind"
    ],
    "fragen": [
     "Mein Kind ist eifersüchtig auf das Baby, was tun?",
@@ -2383,7 +3615,8 @@ window.WISSEN = {
     "Soll ich beim Weinen zuerst das Baby oder das Kleinkind trösten?",
     "Mein großes Kind wird aggressiv, seit das Baby da ist",
     "Muss mein großes Kind sein Spielzeug dem Baby geben?",
-    "Mein Kind sagt, es will das Baby hauen"
+    "Mein Kind sagt, es will das Baby hauen",
+    "Braucht mein Kind Aufmerksamkeit oder Zuwendung?"
    ],
    "alter": [
     "0-1",
@@ -2419,6 +3652,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber liest das Hauen des älteren Kindes als Hinweis auf unerfüllte Bedürfnisse, zum Beispiel nach Nähe zur Mama oder danach, nicht zurückgesetzt zu sein; sie betont, das sei eine Interpretation und keine sichere Aussage. Sie rät, in der Familie die Reihenfolge im Blick zu behalten und das ältere Kind bei Engpässen wie Losgehen oder Einschlafen zuerst zu versorgen. Den Bewegungsimpuls will sie nicht wegnehmen, sondern umleiten und dabei körperlich dabei sein, zum Beispiel mit weichen Wollknäueln zum Werfen; das Kind darf auf dem Arm alles herauslassen. Sie lobt ein Kind, das vorher ansagt, dass es hauen möchte, und empfiehlt feste, auch nur wenige Minuten lange Exklusivzeiten, sichtbar in einem Kalender. Im Gegensatz zu den Hosts von mutti, die stärker auf klare Konsequenz bei Regelverstößen setzen, steht bei ihr das Begleiten der Gefühle im Vordergrund."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "In „Das gewünschteste Wunschkind“ taucht das Thema in zwei Folgen auf. Die Hosts sehen einen großen Teil von Geschwisterstreit, Nörgeln und Ärgern in einer nicht verarbeiteten nachgeburtlichen Geschwisterkrise, und das erste Jahr nach der Geburt sei entscheidend; die Krise lasse sich aber auch Monate oder Jahre später noch auflösen. Das Verhalten des großen Kindes lesen sie als SOS-Signal und raten zu Aufmerksamkeit, Spielen (etwa Bindungsspiele) und aktivem Zuhören. Eine Gästin ergänzt, Kinder suchten nie nur Aufmerksamkeit, sondern Zuwendung, Kontakt und Beziehung, und ein Geschwisterkind könne eine Dauerkränkung sein; wer das Kind in dem Moment ausschimpfe oder ihm das Baby wegnehme, beruhige es nicht. Damit liegen sie näher bei Kathy Weber und dem Blick hinter das Verhalten als bei den Hosts von mutti, die stärker auf klare Konsequenz setzen. Die Hosts erlauben dem großen Kind ausdrücklich, das Baby auch mal doof zu finden."
     }
    ],
    "quellen": [
@@ -2455,14 +3692,6 @@ window.WISSEN = {
      "thema": "Geschwisterkrise und wie sie sich äußert"
     },
     {
-     "podcast": "mutti",
-     "nr": 5,
-     "titel": "Geschwisterbindung stärken",
-     "datum": "2024-12-09",
-     "minute": "12:34",
-     "thema": "Verantwortung als Einladung"
-    },
-    {
      "podcast": "artgerecht",
      "nr": 25,
      "titel": "Mein Kleinkind attackiert das Baby – was tun?",
@@ -2479,21 +3708,29 @@ window.WISSEN = {
      "thema": "Ich will dich hauen: Hauen umleiten und Exklusivzeiten"
     },
     {
-     "podcast": "gfk",
-     "nr": 69,
-     "titel": "90  G - wie Grenzen: Wie du deinem Kind bedürfnisorientiert Grenzen setzen kannst. Teil 1.",
-     "datum": "2022-11-06",
-     "minute": "14:24",
-     "thema": "Hierarchie und Gesehenwerden des älteren Kindes"
+     "podcast": "wunschkind",
+     "nr": 44,
+     "titel": "Das neue Geschwisterbuch und das Bilderbuch für Geschwister",
+     "datum": "2020-08-11",
+     "minute": "06:05",
+     "thema": "Die nachgeburtliche Geschwisterkrise"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 2,
+     "titel": "Erziehung ohne Strafen",
+     "datum": "2018-12-17",
+     "minute": "23:29",
+     "thema": "Geschwisterkind als Dauerkränkung, Zuwendung statt Aufmerksamkeit"
     }
    ],
    "verwandt": [
     "geschwister-vorbereiten",
     "geschwisterstreit",
     "geschwisterbindung",
+    "exklusivzeit",
     "wutanfaelle",
-    "frustrationstoleranz",
-    "gerechtigkeit-geschwister"
+    "frustrationstoleranz"
    ],
    "medizinisch": false,
    "einleitung": "Nach der Geburt eines Geschwisterkindes reagieren große Kinder oft mit Wut, Aggression oder Rückzug. Eltern sind verunsichert, wie sie zwischen dem Baby und dem eifersüchtigen Kind gerecht handeln sollen."
@@ -2511,7 +3748,10 @@ window.WISSEN = {
     "Wut als Mutter",
     "Wut als Vater",
     "Ungeduld",
-    "Elternwut"
+    "Elternwut",
+    "Mama-Wut",
+    "Wut auf das Baby",
+    "ausrasten"
    ],
    "fragen": [
     "Wie gehe ich mit meiner Wut auf mein Kind um?",
@@ -2519,7 +3759,10 @@ window.WISSEN = {
     "Warum werde ich plötzlich so wütend, wenn mein Kind trödelt?",
     "Was tun, wenn ich nicht aus dem Raum kann und kurz vor dem Ausrasten bin?",
     "Hilft es, in ein Kissen zu schlagen?",
-    "Darf ich als Elternteil schreien?"
+    "Darf ich als Elternteil schreien?",
+    "Wie viel Wut darf ich vor meinem Kind zeigen?",
+    "Ich schreie mein Kind an",
+    "Ich werde laut und ärgere mich danach"
    ],
    "alter": [
     "1-3",
@@ -2536,7 +3779,7 @@ window.WISSEN = {
     "Bemerkt früh, dass ihr angespannt, ungeduldig oder genervt werdet, und schafft sofort einen Break: innehalten, weder sprechen noch handeln und die Wut wahrnehmen wie Wind oder Feuer, das durch euch hindurchzieht, statt sie mit weiteren Gedanken zu füttern.",
     "Atmet langsam und länger aus als ein, zählt bis zehn oder stur rückwärts, ballt und öffnet die Fäuste, entspannt Kiefer und Hände oder benennt fünf Dinge, die ihr seht, bis die Wut abklingt.",
     "Sagt, was los ist, bevor es überkocht („Es nervt mich gerade“, „Ich bin gerade wütend“ statt „Du machst mich wütend“). Das muss nicht nett sein, aber ehrlich und in Ich-Form, ohne das Kind abzuwerten.",
-    "Prüft danach eure Gedanken, etwa ob ihr müde oder hungrig seid, ob euer Kind euch wirklich ärgern will und ob wirklich etwas Schlimmes passiert, wenn es eine Minute länger dauert.",
+    "Prüft danach eure Gedanken, etwa ob ihr müde oder hungrig seid, ob euer Kind euch wirklich ärgern will und ob wirklich etwas Schlimmes passiert, wenn es eine Minute länger dauert, und schaut, zu welchen Uhrzeiten und in welchen Situationen es immer wieder knallt.",
     "Erwartet nur das Ziel (pünktlich losgehen), nicht jeden Teilschritt, und nehmt im Notfall die Schuhe in die Hand und geht.",
     "Wenn ihr den Raum nicht verlassen könnt, helfen Zunge beißen, ein beruhigendes Mantra, ein paar Burpees oder das Kind kurz mit offener Tür im Kinderzimmer abzusetzen und selbst durchzuatmen, danach räumt ihr gemeinsam auf.",
     "Fragt euch, welches Gefühl und welches unerfüllte eigene Bedürfnis hinter der Wut steckt (zum Beispiel Ruhe, Unterstützung, Gesehenwerden oder Führung), und kümmert euch selbst darum, statt es vom Kind zu erwarten.",
@@ -2551,6 +3794,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber erklärt, dass euer Kind euch nicht wütend macht, sondern nur ein Gefühl auslöst, dessen Ursache bei euch liegt: Hinter jeder Wut steht mindestens ein unerfülltes eigenes Bedürfnis, etwa nach Ruhe, Wirksamkeit, Unterstützung oder liebevoller elterlicher Führung. Dieses Hinschauen nennt sie Selbstempathie (Selbsteinfühlung): erst das eigene Gefühl und Bedürfnis klären, dann das des Kindes. Oft wecken Situationen laut ihr alte Erfahrungen aus der Kindheit; im Moment einer solchen Auslösung reagiere das Nervensystem wie im Notfall mit Kampf, Flucht oder Erstarren, was sie mit dem Bild des „Wolfs“ beschreibt. Anders als die mutti-Hosts, die Wut stark über Gedanken und Denkfehler angehen, setzt sie bei den Bedürfnissen und bei innerer Kindarbeit an. Schreien erlaubt sie ausdrücklich, solange ihr euch nicht über das Kind stellt: Der „Giraffenschrei“ bleibt bei Ich-Aussagen mit Gefühl und Bedürfnis, der „Wolfsschrei“ verurteilt. Auch Türknallen ist für sie nicht schlimm, wenn ihr zurückkommt und für das Kind da seid. Nach einem Ausraster rät sie, zu bedauern statt sich zu entschuldigen, weil Schuld ein Richtig und Falsch voraussetze. Sie rastet nach eigener Aussage selbst aus und betont, dass es um Prozess statt um Perfektion geht."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide beschreiben starke Wut auf das eigene Kind als überwältigend und tabubesetzt, und Katja Seide erkennt aus eigener Erfahrung, dass vor allem eigener Stress den Ausschlag gibt. In vielen Folgen erklären Gäste, dass das Kind die Wut nur auslöst und Erwachsene für ihre Gefühle zuständig sind; das deckt sich mit gfk und mutti. Mehrere Gäste sehen Wut außerdem als Hinweisgeber auf Überlastung, fehlende Pausen oder alte Kindheitserfahrungen und raten, sie nicht einfach wegzuatmen. Uneinig sind sich die Gäste, wie viel Wut vor dem Kind erlaubt ist: Eine Gästin hält Wut zeigen für in Ordnung, überbordende, getriggerte Wut aber nicht für authentisch; auch bei Atemübungen gehen die Meinungen auseinander (eine Gästin findet sie für sich weniger hilfreich, andere halten sie für wirksam, ein Gast lehnt reine Regulationstechniken als alleinige Lösung ab). Hohmann nennt wie gfk das Bedauern statt der Entschuldigung. Gegenüber mutti betonen die Gäste stärker den Blick auf die eigene Kindheit und die Frühwarnzeichen im Körper."
     }
    ],
    "quellen": [
@@ -2601,6 +3848,22 @@ window.WISSEN = {
      "datum": "2024-06-24",
      "minute": "02:24",
      "thema": "Was Trigger sind und woher sie kommen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 33,
+     "titel": "Gefühlskunde für Eltern",
+     "datum": "2020-03-10",
+     "minute": "11:24",
+     "thema": "Die ersten fünf Sekunden überbrücken, was im Gehirn passiert"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 88,
+     "titel": "Mama-Wut: Gelassen durch die Autonomiephase mit Julia Eichelmann-Freise",
+     "datum": "2022-05-31",
+     "minute": "17:51",
+     "thema": "Drei Schritte: Kindheit, Konflikte, Routine"
     }
    ],
    "verwandt": [
@@ -2625,12 +3888,17 @@ window.WISSEN = {
     "Gemeinschaft",
     "Hilfe finden",
     "Hilfe als Mama",
-    "niemand hilft mir"
+    "niemand hilft mir",
+    "Hilfe annehmen",
+    "um Hilfe bitten",
+    "Leihoma",
+    "Mehrgenerationenhaus"
    ],
    "fragen": [
     "Wie finde ich ein Dorf für mein Kind?",
     "Wo bekomme ich als Mama Unterstützung?",
-    "Ich habe niemanden, der mir hilft, was tun?"
+    "Ich habe niemanden, der mir hilft, was tun?",
+    "Warum fällt es mir so schwer, um Hilfe zu bitten?"
    ],
    "alter": [
     "0-1",
@@ -2642,19 +3910,26 @@ window.WISSEN = {
     "eltern",
     "alltag"
    ],
-   "kurz": "Ein Dorf ist laut Nicola Schmidt eine Gemeinschaft, in der man Verantwortung übernimmt, gibt und nimmt, und zwar in dieser Reihenfolge. Wer erschöpft ist, braucht oft zuerst etwas anderes, etwa Entlastung im Haushalt, Betreuung oder Schlaf; der Weg ins Dorf führt darum zuerst zu euch selbst.",
+   "kurz": "Ein Dorf ist laut Nicola Schmidt eine Gemeinschaft, in der man Verantwortung übernimmt, gibt und nimmt, und zwar in dieser Reihenfolge. Wer erschöpft ist, braucht oft zuerst etwas anderes, etwa Entlastung im Haushalt, Betreuung oder Schlaf; der Weg ins Dorf führt darum zuerst zu euch selbst. Die Hosts von „Das gewünschteste Wunschkind“ ergänzen, dass Isolation ein strukturelles Problem ist und es hilft, konkret um Hilfe zu bitten.",
    "tipps": [
     "Fragt euch zuerst, was ihr wirklich braucht: ein Dorf oder eher eine mütterliche Person, bei der ihr einmal pro Woche weinen und schimpfen könnt.",
     "Prüft, ob ihr gerade etwas zu geben habt oder erst eure Basis stabilisieren müsst.",
     "Reduziert euren Stress, damit ihr andere Menschen wieder besser einschätzen und euch abgrenzen könnt.",
     "Lernt, eure Grenzen zu setzen und auszubalancieren, wo ihr gebt und wo ihr nehmt, bevor ihr aktiv ein Dorf aufbaut.",
     "Holt euch bei starker Überlastung zuerst Entlastung wie Kur oder Reha, Hilfe im Haushalt, mehr Kinderbetreuung oder mehr Schlaf.",
-    "Belastet das Dorf nicht dauernd, aber entlastet auch nicht ständig alle anderen, sonst brennt ihr aus."
+    "Belastet das Dorf nicht dauernd, aber entlastet auch nicht ständig alle anderen, sonst brennt ihr aus.",
+    "Bittet konkret um Hilfe und nehmt Angebote an, etwa mit dem Satz „Danke, da komme ich gern darauf zurück“; fragt später nach und bittet die helfende Person, es zu sagen, wenn es zu viel wird.",
+    "Tut euch mit befreundeten Eltern zusammen und rotiert die Betreuung, zum Beispiel samstags reihum alle Kinder bei einer Familie.",
+    "Sucht Mehrgenerationenhäuser, Leihoma-Projekte oder Nachbarschaftsnetzwerke; Alleinerziehende sollten einen Notfallkontakt mit abgesprochenem Plan festlegen, den auch die Kita kennt."
    ],
    "sichtweisen": [
     {
      "podcast": "artgerecht",
      "text": "Nicola Schmidt beschreibt ein Dorf als Gemeinschaft von Menschen, die gemeinsam etwas machen wollen und in der man Verantwortung trägt, nicht nur Hilfe bekommt. Gegenseitigkeit ist für sie der Kern: Man gibt und nimmt, in genau dieser Reihenfolge. Jemanden, der immer zuhört und nie etwas zurückwünscht, nennt sie bedingungslose Unterstützung, kein Dorf. Als Beispiel führt sie eine Instagram-Nutzerin an, die sich Menschen wünschte, die immer da sind. Stark gestresste Eltern sehen laut ihr oft alle anderen als verrückt, was sie mit einem normalen Effekt im Gehirn erklärt. Der Weg ins Dorf sei deshalb zuerst der Weg zu sich selbst."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Die Hosts und ihre Gäste rücken eine andere Seite in den Vordergrund: Nicht Eltern sind zu wenig bereit, sondern die isolierte Kleinfamilie sei historisch ein Sonderfall. Eine Autorin erklärt, Menschen zögen Kinder von jeher gemeinschaftlich auf, die heutige Isolation gebe es erst seit etwa 200 Jahren, und sie sieht in überlasteten Eltern ein Signal für die Gesellschaft. Darum sagen die Hosts, eine schwer empfundene Elternschaft sei oft kein persönliches Scheitern. Gäste betonen außerdem, dass es vielen schwerfällt, um Hilfe zu bitten, obwohl Helfen glücklich macht und die Beziehung vertieft; konkrete Bitten wirken besser als „Sag Bescheid“. Das ergänzt Nicola Schmidt (artgerecht), die zuerst die eigene Basis klären will, stellt aber deren Reihenfolge „erst geben, dann nehmen“ etwas in Frage: Hier steht das mutige Bitten am Anfang."
     }
    ],
    "quellen": [
@@ -2689,6 +3964,30 @@ window.WISSEN = {
      "datum": "2024-01-23",
      "minute": "00:43",
      "thema": "Frage nach dem Dorf und warum es oft fehlt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 211,
+     "titel": "Gemeinsam statt einsam - die Weisheit der Urzeitmütter",
+     "datum": "2025-11-25",
+     "minute": "02:15",
+     "thema": "Menschen als gemeinschaftliche Aufzieher"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 211,
+     "titel": "Gemeinsam statt einsam - die Weisheit der Urzeitmütter",
+     "datum": "2025-11-25",
+     "minute": "18:39",
+     "thema": "Initiativen: Mehrgenerationenhäuser, Leihoma, Nachbarschaftsnetzwerke"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 89,
+     "titel": "Erschöpfte Eltern - was hilft und wie können wir vorbeugen? Mit Michéle Liussi und Katharina Spangler",
+     "datum": "2022-06-14",
+     "minute": "39:09",
+     "thema": "Warum fällt es so schwer, um Hilfe zu bitten?"
     }
    ],
    "verwandt": [
@@ -2696,7 +3995,8 @@ window.WISSEN = {
     "zeit-fuer-sich",
     "mental-load",
     "grosseltern",
-    "eltern-als-team"
+    "eltern-als-team",
+    "eltern-psyche-hilfe"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Wie finde ich ein Dorf für mein Kind?“. Hier steht, was dahinter stecken kann und was helfen kann."
@@ -2712,14 +4012,18 @@ window.WISSEN = {
     "moderne Väter",
     "Väter in der Familie",
     "Papa Verantwortung",
-    "Partner im Wochenbett"
+    "Partner im Wochenbett",
+    "Elternzeit Väter",
+    "Gatekeeping",
+    "Care-Gap"
    ],
    "fragen": [
     "Was macht einen guten Vater aus?",
     "Wie kann ich als Vater mehr Verantwortung übernehmen?",
     "Was kann mein Partner im Wochenbett tun?",
     "Warum wacht mein Mann nachts nicht auf, wenn das Baby schreit?",
-    "Wie verhindere ich, dass ich nur der Helfer bin?"
+    "Wie verhindere ich, dass ich nur der Helfer bin?",
+    "Wie viel Elternzeit sollte ich als Vater nehmen?"
    ],
    "alter": [
     "0-1",
@@ -2747,6 +4051,10 @@ window.WISSEN = {
     {
      "podcast": "mutti",
      "text": "Die Hosts, ein Elternpaar, sind sich einig und sehen die Verantwortung klar bei den Vätern, aus anerzogenem Egozentrismus auszusteigen. Das verbreitete Bild des guten Vaters ist ihrer Darstellung nach der berufstätige Sonntagspapa, der spielt und der Mutter hilft und dafür viel Lob bekommt. Der Vater schildert selbstkritisch, wie er von dieser Rolle zu echter Verantwortung kam; das Paar stritt trotz gleicher Aufgabenteilung, bis klar wurde, dass er unterschwellig noch Dankbarkeit für sein Helfen erwartete. Die Mutter betont, selbst durch Perfektionismus zur Dynamik beigetragen zu haben. Aufgabenlisten helfen aus Sicht der Hosts höchstens für den Start, ohne Empathie fehle immer etwas, und Präsenz hängt nicht von den Stunden ab, die ein Vater zu Hause ist. Berufstätigkeit verdiene Anerkennung, die Haltung, man schulde dem Arbeitenden danach etwas, halten sie für falsch. Dass Väter nachts oft weiterschlafen, erklären sie damit, dass das Gehirn Reize ausfiltert, für die man sich nicht verantwortlich fühlt; mit übernommener Verantwortung ändere sich das. Zu Testosteron und Hirnregionen verweisen sie auf Studien, räumen aber teils Unsicherheit ein. Sie kritisieren außerdem das gängige Bild von Selbstfürsorge für Frauen und das Etikett People-Pleasing und sehen Hilfsbereitschaft als natürlichen Drang zur Kooperation, der nur problematisch wird, wenn jemand ihn ausnutzt."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide teilen mit mutti die Grundlinie, dass aktive Vaterschaft echte Verantwortung und Präsenz heißt und nicht Helfen mit Lob. Ihre Gäste ergänzen mehrere Blickwinkel: Ein Autor und ein weiterer Vater betonen, den eigenen Vater zu reflektieren, also was man übernehmen und was man anders machen will, und offen mit der Partnerin über Wünsche und Aufgaben zu sprechen. Letzterer verweist zudem auf strukturelle Hintergründe wie Care-Gap und Pay-Gap und sagt, es helfe nicht, nur abends zu toben und am Wochenende Highlights zu bieten. Eine Gästin sieht laut Studien, die sie nennt, keine magische Mutter-Kind-Verbindung, sondern eine Eltern-Kind-Verbindung, die auch Väter, Adoptiv- und Co-Eltern entwickeln können; das deckt sich mit mutti beim Thema Mutterinstinkt. Sie räumt ein, dass die Väterforschung noch jung ist. Anders als mutti, das stark auf Perspektivübernahme in der Paarbeziehung setzt, geht es hier öfter um Prägung, Elternzeit und gesellschaftliche Strukturen."
     }
    ],
    "quellen": [
@@ -2789,6 +4097,30 @@ window.WISSEN = {
      "datum": "2025-03-04",
      "minute": "51:52",
      "thema": "Gefühle regulieren, Dominanz ablegen, nachts aufwachen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 189,
+     "titel": "Rollenbilder überwinden - zu aktiver Vaterschaft finden",
+     "datum": "2025-06-24",
+     "minute": "08:26",
+     "thema": "Kommunikation und Reflexion in der Partnerschaft"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 66,
+     "titel": "Selbstbestimmte Vaterschaft mit Carsten Vonnoh",
+     "datum": "2021-07-13",
+     "minute": "03:13",
+     "thema": "Prägung durch den eigenen Vater und Elternzeit"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 178,
+     "titel": "Mythos Mutterinstinkt - wie moderne Hirnforschung uns Elternschaft neu denken lässt",
+     "datum": "2025-04-08",
+     "minute": "27:58",
+     "thema": "Eltern-Kind-Verbindung statt Mutter-Kind-Zauber"
     }
    ],
    "verwandt": [
@@ -2815,7 +4147,9 @@ window.WISSEN = {
     "Care-Arbeit",
     "Codewort Eltern",
     "Partner reinreden",
-    "unterschiedliche Erziehungsvorstellungen"
+    "unterschiedliche Erziehungsvorstellungen",
+    "Paarzeit",
+    "an einem Strang ziehen"
    ],
    "fragen": [
     "Wie werden wir als Eltern ein gutes Team?",
@@ -2835,7 +4169,7 @@ window.WISSEN = {
     "eltern",
     "alltag"
    ],
-   "kurz": "Ob Eltern ein Team sind, entscheidet vor allem die Haltung: Beide fühlen sich verantwortlich und blicken wohlwollend auf den anderen. Wichtiger als eine 50-50-Aufteilung ist, dass nicht einer die Verantwortung trägt, während der andere nur hilft. Alle drei Podcasts raten, bei Ärger zuerst bei sich selbst zu schauen und dann ruhig zu sprechen, statt den Partner zu belehren. Kathy Weber (gfk) ergänzt, dass jeder seinen eigenen Weg gehen darf und der Partner Nein sagen kann, außer wenn ein Kind geschützt werden muss.",
+   "kurz": "Ob Eltern ein Team sind, entscheidet vor allem die Haltung: Beide fühlen sich verantwortlich und blicken wohlwollend auf den anderen. Wichtiger als eine 50-50-Aufteilung ist, dass nicht einer die Verantwortung trägt, während der andere nur hilft. Alle Podcasts raten, bei Ärger zuerst bei sich selbst zu schauen und dann ruhig zu sprechen, statt den Partner zu belehren. Kathy Weber (gfk) ergänzt, dass jeder seinen eigenen Weg gehen darf und der Partner Nein sagen kann, außer wenn ein Kind geschützt werden muss.",
    "tipps": [
     "Klärt pro Situation, wer verantwortlich ist, zum Beispiel einer macht die Küche und der andere bringt die Kinder ins Bett, und lasst den anderen machen, ohne bei jeder Abweichung einzuspringen.",
     "Greift nur ein, wenn es eskaliert, etwa wenn der andere das Kind anschreit oder selbst weint, und sagt dann klar „Stopp, ich übernehme“. Sonst fragt vorher, ob er Unterstützung möchte, und vereinbart ein Codewort für den Wechsel, das auch für ihn passt.",
@@ -2859,6 +4193,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber sagt, dass fast alle Eltern Erziehungsunterschiede haben und nicht einer Meinung sein müssen: Jeder darf sein eigenes Richtig haben, und neben dem eigenen Weg gibt es einen gemeinsamen als Elternteam. Wünsche an den Partner (er soll Gespräche führen oder Tipps annehmen) seien keine Bedürfnisse; das Bedürfnis dahinter erfülle man sich unabhängig von ihm. Der Partner dürfe Nein sagen, und je mehr er das darf, desto eher sage er irgendwann Ja. Solange keine Grenze überschritten wird, ist laut ihr der Elternteil zuständig, der gerade beim Kind ist; bei einer krassen Grenzüberschreitung gehe man ohne Rückfrage dazwischen, aber als Schutzschild für die Kinder und nicht gegen den Partner. Sie lehnt Belehren und ständiges Korrigieren ab und rät, zuerst zu fragen, ob der Partner eine Rückmeldung hören will. Mit artgerecht teilt sie Selbstfürsorge zuerst und Ich-Form; Fragen wie Aufgabenverteilung, Care-Arbeit oder Maternal Gatekeeping, die bei mutti breit vorkommen, behandeln die gfk-Notizen kaum. Auch Harmonie ohne Konflikte sieht sie kritisch: Konflikte dürfen sein, wichtig sei die Verbindung."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Bei Daniel Graf und Katja Seide ziehen sich Paarthemen durch viele Folgen mit Gästen. Übereinstimmung mit den anderen Podcasts: Eltern müssen nicht in allem einig sein, Kinder halten unterschiedliche Stile aus, und bei großen Werten sollte man an einem Strang ziehen (Yossi), bei kleinen Dingen nicht. Weiter gehen mehrere Gäste: Ein Gast hält die geschlossene Front sogar für anstrengend, und Stefanie Stahl hält Dauerstreit vor dem Kind für schlimmer als weichere und härtere Eltern. Neu sind der Blick auf Paarpflege und Konflikte (kurze tägliche Gespräche, geplante Paarabende, Pausenzeichen im Streit) und die Idee, Erziehungsstreit als Stellvertreter für alte Kindheitsthemen oder fehlende Wertschätzung zu lesen. Abweichend vom Ruf nach Gleichverteilung sagt Carsten Vonnoh, eine strikte 50-50-Aufteilung sei wenig realistisch; wichtiger sei, offen zu sagen, wenn es nicht mehr geht. Eine Gästin rät als Reihenfolge: erst man selbst, dann das Paar, dann die Kinder."
     }
    ],
    "quellen": [
@@ -2909,6 +4247,22 @@ window.WISSEN = {
      "datum": "2024-11-18",
      "minute": "09:55",
      "thema": "Schutzschild sein, Kinder lernen Grenzen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 151,
+     "titel": "Selbstbewusst bedürfnisorientiert begleiten",
+     "datum": "2024-10-01",
+     "minute": "43:17",
+     "thema": "Wertesäulen und Alltagsdinge"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 204,
+     "titel": "Bindungsorientierte Erziehung als Team - gemeinsam Konflikte bewältigen und als Elternpaar gestärkt aus ihnen hervorgehen",
+     "datum": "2025-10-07",
+     "minute": "03:23",
+     "thema": "Stellvertreterthemen und alte Schmerzpunkte"
     }
    ],
    "verwandt": [
@@ -2935,7 +4289,11 @@ window.WISSEN = {
     "Neurodivergenz Eltern",
     "ADHS Medikamente Eltern",
     "ADS Mutter",
-    "GfK bei ADHS"
+    "GfK bei ADHS",
+    "Neurodivergenz Mutter",
+    "späte ADHS-Diagnose",
+    "Masking",
+    "Vergesslichkeit Mama"
    ],
    "fragen": [
     "Ich habe ADHS und bin mit den Kindern überfordert, was hilft?",
@@ -2943,7 +4301,8 @@ window.WISSEN = {
     "Hilft Sport bei ADHS und Reizüberflutung?",
     "Darf ich als Mutter mit ADHS Medikamente nehmen?",
     "Wann sollte ich als Elternteil mit ADHS zum Arzt?",
-    "Kann ich als Mama mit ADS gewaltfrei kommunizieren?"
+    "Kann ich als Mama mit ADS gewaltfrei kommunizieren?",
+    "Ich vergesse ständig Dinge, seit ich Mutter bin, ist das ADHS?"
    ],
    "alter": [
     "0-1",
@@ -2960,13 +4319,13 @@ window.WISSEN = {
    "tipps": [
     "Lasst bei starker Belastung eine ADHS-Diagnostik machen und sprecht mit einer Psychiaterin oder einem Psychiater über Medikation; ergänzend werden ADHS-spezifische Ergotherapie und Verhaltenstherapie genannt.",
     "Bewegt euch täglich, am besten Ausdauer an der frischen Luft und früh am Tag; Spazieren mit kurzen Läufen reicht, denn es geht um Bewegung, nicht um Leistung.",
-    "Geht kurz an die frische Luft, atmet tief durch und tankt Tageslicht, wenn die Konzentration fehlt.",
     "Reduziert Reize wie Medien, Musik und Handy, auch wenn das bei Antriebslosigkeit schwer ist.",
     "Setzt bei der Ernährung auf wenig Zucker, viel Protein und einfache, schnelle Mahlzeiten; kleine Schritte statt Perfektion.",
     "Plant realistisch, etwa zwei bis drei Aktivitäten pro Tag, orientiert an guten Tagen, und lernt eure Grenzen kennen und kommuniziert sie.",
-    "Schreibt vorher auf, was euch guttut, und plant es aktiv ein; vermeidet Stressiges, wenn möglich.",
     "Kommuniziert mit den Kindern öfter nonverbal und redet weniger, das spart Energie.",
-    "Sprecht mit dem Kind über Gefühle und Bedürfnisse und sucht gemeinsam Strategien."
+    "Sprecht mit dem Kind über Gefühle und Bedürfnisse und sucht gemeinsam Strategien.",
+    "Schreibt alles auf und setzt Erinnerungen (Handy, Zettel), statt euch aufs Merken zu verlassen; macht Arzttermine direkt vor Ort aus und speichert sie ein.",
+    "Gebt schwierige Bereiche wie Zeitplanung an den Partner oder die Partnerin ab und sprecht Unterstützung ehrlich an, statt es zu verstecken."
    ],
    "sichtweisen": [
     {
@@ -2976,6 +4335,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber beantwortet die Frage einer Mutter mit ADS, ob Gewaltfreie Kommunikation (GfK) für sie passt. Ihre Antwort: GfK kenne keine Abstufungen und bewerte nicht, und Empathiefähigkeit trage jeder in sich wie einen Muskel, der trainierbar ist. Unabhängig von einer Diagnose hätten alle dieselben Gefühle und Bedürfnisse, für die sich Strategien finden lassen. Wer die Besonderheit selbst in sich trägt, könne dem Kind besser helfen, sich zu verstehen. Überreagieren Eltern schnell oder werden laut, rät sie, die eigene höhere Bedürftigkeit anzuschauen und innere Kindarbeit zu machen. Sie räumt ein, dass es mit mehr Beteiligten und besonderen Herausforderungen schwerer wird. Im Gegensatz zu den Mutti-Hosts geht sie nicht auf Medikation oder Alltagsstrukturen ein."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "In der Folge zu neurodivergenten Müttern beschreibt eine Gästin aus eigener Erfahrung, wie ihre Eigenheiten (Verlegen, Vergessen, Reizempfindlichkeit) mit der Mutterschaft wie auf einem Verstärker stärker wurden, weil Routine fehlte und ständig Unterbrechungen kamen. Sie nennt als typische Belastungen Unterbrechungen, viel Körperkontakt und Reize, Schlafmangel, fehlende Pausen und das Mitregulieren der Kindergefühle, und sie berichtet auch von Stärken wie Gerechtigkeitssinn, Feinfühligkeit und Kreativität. Eine ADHS-Diagnose im Erwachsenenalter wird in zwei Folgen als Entlastung beschrieben, weil die Besonderheit einen Namen bekommt; die Hosts Daniel Graf und Katja Seide stimmen dem zu. Damit liegt der Podcast nah bei den mutti-Hosts, setzt aber stärker auf praktische Gedächtnisstützen und Aufgabenabgabe an die Partnerschaft als auf Medikation und Bewegung. Die Gästin betont, dass Neurodivergenz sehr individuell ist; ihre Gehirn-Metaphern seien nur Bilder, und eine Gesprächspartnerin korrigiert ihre Dopamin-Erklärung."
     }
    ],
    "quellen": [
@@ -3028,12 +4391,20 @@ window.WISSEN = {
      "thema": "Mama mit ADS und GfK"
     },
     {
-     "podcast": "gfk",
-     "nr": 175,
-     "titel": "ADHS & Co.: Wie du gefühlsstarken und hochsensiblen Kindern Sicherheit und Orientierung schenkst",
-     "datum": "2025-08-18",
-     "minute": "29:47",
-     "thema": "Eigene höhere Bedürftigkeit und innere Kindarbeit"
+     "podcast": "wunschkind",
+     "nr": 239,
+     "titel": "Neurodivergente Mütter - was sie entlastet und stärkt",
+     "datum": "2026-06-09",
+     "minute": "09:39",
+     "thema": "Typische Belastungen neurodivergenter Mütter im Familienalltag"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 239,
+     "titel": "Neurodivergente Mütter - was sie entlastet und stärkt",
+     "datum": "2026-06-09",
+     "minute": "30:59",
+     "thema": "Alltagsstrategien gegen Vergesslichkeit und Chaos"
     }
    ],
    "verwandt": [
@@ -3041,7 +4412,8 @@ window.WISSEN = {
     "erschoepfte-eltern",
     "reizueberflutung-vorbeugen",
     "mental-load",
-    "zeit-fuer-sich"
+    "zeit-fuer-sich",
+    "neurodivergenz"
    ],
    "medizinisch": true,
    "einleitung": "Viele Eltern mit eigener ADHS erleben den Familienalltag als Dauerbelastung, weil Emotionen, Impulse und Reize schnell zu viel werden."
@@ -3056,14 +4428,18 @@ window.WISSEN = {
     "Fehler eingestehen",
     "Bedauern",
     "Entschuldigung erzwingen",
-    "sich beim Kind entschuldigen"
+    "sich beim Kind entschuldigen",
+    "nach dem Schimpfen",
+    "Codewort",
+    "Kind angeschrien"
    ],
    "fragen": [
     "Soll mein Kind sich entschuldigen müssen?",
     "Wie entschuldige ich mich bei meinem Kind?",
     "Was ist falsch am Wort Entschuldigung?",
     "Andere Eltern wollen, dass sich mein Kind entschuldigt, was tun?",
-    "Soll ich mich beim Kind entschuldigen, wenn ich gebrüllt habe?"
+    "Soll ich mich beim Kind entschuldigen, wenn ich gebrüllt habe?",
+    "Ich habe mein Kind angeschrien, was jetzt?"
    ],
    "alter": [
     "1-3",
@@ -3075,7 +4451,7 @@ window.WISSEN = {
     "grenzen",
     "eltern"
    ],
-   "kurz": "Kathy Weber erklärt, dass es in der Gewaltfreien Kommunikation keinen Schuldigen gibt und das Wort Entschuldigung deshalb nicht recht passt. Sie bedauert lieber ein konkretes Verhalten und überlegt, was sie künftig anders machen will. Von Kindern eine Entschuldigung zu verlangen, lehnt sie klar ab.",
+   "kurz": "Kathy Weber erklärt, dass es in der Gewaltfreien Kommunikation keinen Schuldigen gibt und das Wort Entschuldigung deshalb nicht recht passt. Sie bedauert lieber ein konkretes Verhalten und überlegt, was sie künftig anders machen will. Auch die Hosts von wunschkind und ihre Gäste betonen, dass bei Ausrastern die Verantwortung bei den Erwachsenen liegt, nicht beim Kind; von Kindern eine Entschuldigung zu verlangen, lehnt Kathy Weber klar ab.",
    "tipps": [
     "Benennt das Verhalten, das ihr bedauert, etwa: \"Ich bedauere, dass ich gebrüllt habe; ich habe gesehen, dass du dich erschrocken hast.\" Fragt danach, wie es dem Kind ergangen ist.",
     "Sagt dem Kind ausdrücklich, dass euer Ausbruch nichts mit ihm zu tun hatte, damit es nicht meint, es müsse sich ändern.",
@@ -3083,12 +4459,18 @@ window.WISSEN = {
     "Sagt euer Kind von sich aus \"Entschuldigung\", fragt, ob es bedauert, was passiert ist, oder wie es das gern anders gemacht hätte.",
     "Fordert andere Eltern gegenüber keine Diskussion ein: Zeigt eurem Kind die Werte, die ihr lebt, und besprecht die Situation zu Hause.",
     "Bei einem sehr kleinen Kind genügen Schutz, Stopp und Hilfe; Bedauern kann mit dem Alter dazukommen.",
-    "Übung: Schreibt auf, wofür ihr euch schuldig fühlt, und formuliert einen Satz mit \"Ich bedauere, dass ich gerade ... gemacht habe\"."
+    "Übung: Schreibt auf, wofür ihr euch schuldig fühlt, und formuliert einen Satz mit \"Ich bedauere, dass ich gerade ... gemacht habe\".",
+    "Beruhigt euch zuerst selbst, etwa mit einem Schluck Wasser oder kaltem Wasser im Gesicht, bevor ihr mit dem Kind sprecht.",
+    "Vereinbart mit dem Kind ein Codewort, mit dem es euch warnen darf, wenn ihr gleich im roten Bereich seid (Nicola Schmidt)."
    ],
    "sichtweisen": [
     {
      "podcast": "gfk",
      "text": "Kathy Weber erklärt, Entschuldigen heiße wörtlich, sich von Schuld zu befreien. In der GfK nach Rosenberg gibt es aber keine Schuld, kein Richtig oder Falsch, weil jeder in jedem Moment das tut, was er kann. Wer schnell \"Entschuldigung\" sagt, schaut ihrer Ansicht nach oft nicht hin, was er zum Konflikt beigetragen hat, und das Kind übernimmt dann die Verantwortung. Sie bedauert deshalb lieber ein Verhalten und wird dadurch klarer, was sie anders machen will. Sie sagt aber auch, Entschuldigung sei kein falsches Wort, sondern eine Einladung zum Nachdenken, und sie bezeichnet die Unterscheidung selbst als Kommunikationsstrategie, bei der man auf Wörtern herumreitet. Erzwungene Entschuldigungen von Kindern lehnt sie ab; hinter jedem Verhalten stehe ein Bedürfnis, das vielleicht auf eine Art erfüllt wurde, die andere stört. Ihr Gesprächspartner in einer Folge nimmt das Wort unbefangen und meint damit die ehrliche Geste."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide beschäftigen sich weniger mit dem Wort als mit dem Moment danach. Nicola Schmidt rät, sich zuerst selbst zu beruhigen und dem Kind dann zu sagen, dass es nicht schuld ist; Kinder nähmen laut ihr grundsätzlich alle Schuld auf sich. Sie schlägt ein Codewort vor, mit dem Kinder Eltern warnen dürfen, und hält dauerhafte Scham für schädlich. Eine Gästin ergänzt, dass eine Entschuldigung ohne Aber auskommen und die Verantwortung klar bei den Erwachsenen lassen sollte, und rät zu Milde mit sich selbst. Eine andere Autorin hält eine gute Entschuldigung für schlicht, ohne Rechtfertigung, und findet, dass manche Kinder sich zu oft entschuldigen. Anders als Kathy Weber sprechen sie unbefangen von Entschuldigung und Es-tut-mir-leid; in der Sache, nämlich Verantwortung ohne Schuldzuweisung ans Kind, stimmen sie weitgehend überein."
     }
    ],
    "quellen": [
@@ -3123,6 +4505,30 @@ window.WISSEN = {
      "datum": "2019-03-17",
      "minute": "39:12",
      "thema": "Was ihr stattdessen sagen könnt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 25,
+     "titel": "Erziehen ohne Schimpfen -  mit Nicola Schmidt",
+     "datum": "2019-11-12",
+     "minute": "17:40",
+     "thema": "Codewort und Entschulden"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 203,
+     "titel": "Wut, Trauer und Frustration - Gefühlsstürme von Kindern liebevoll begleiten",
+     "datum": "2025-09-30",
+     "minute": "36:25",
+     "thema": "Was tun, wenn man doch laut geworden ist"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 87,
+     "titel": "Vergleich der Schulsysteme Neuseelands mit Deutschland mit Verena Hasel",
+     "datum": "2022-05-17",
+     "minute": "47:18",
+     "thema": "Eine gute Entschuldigung"
     }
    ],
    "verwandt": [
@@ -3148,7 +4554,11 @@ window.WISSEN = {
     "Selbstfürsorge",
     "am Limit",
     "Self-Care",
-    "alle wollen etwas von mir"
+    "alle wollen etwas von mir",
+    "Mamsterrad",
+    "Burnout Mutter",
+    "Tagesklinik",
+    "Erschöpfung erkennen"
    ],
    "fragen": [
     "Ich bin als Mutter am Limit, was tun?",
@@ -3156,7 +4566,8 @@ window.WISSEN = {
     "Ich fühle mich nie gut genug, was hilft?",
     "Wie vereinfache ich den Haushalt mit Baby und Kleinkind?",
     "Abends Serie schauen statt schlafen, ist das schlimm?",
-    "Darf ich auch mal nicht mit meinem Kind spielen?"
+    "Darf ich auch mal nicht mit meinem Kind spielen?",
+    "Woran erkenne ich, dass ich in einen Burnout rutsche?"
    ],
    "alter": [
     "0-1",
@@ -3192,6 +4603,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber erklärt, dass in der Gewaltfreien Kommunikation zuerst die eigene Situation geklärt wird (Selbsteinfühlung): Gefühle wie erschöpft, überfordert oder genervt zeigen unerfüllte Bedürfnisse wie Schlaf, Unterstützung oder Verlässlichkeit, und das ist für sie völlig legitim. Belastende Gedanken wie „Ich bin eine schlechte Mutter“ sollen nicht verurteilt, sondern in Gefühle und Bedürfnisse übersetzt werden. Sie stellt die Bedürfnisse der Eltern an die erste Stelle, weil Kinder davon abhängen, nennt Selbstfürsorge Arbeit im Kleinen und Täglichen und sieht darin keinen Egoismus. Wie die anderen Podcasts rät sie zu Hilfe aus dem Umfeld und zum Abgeben von To-dos; ihr eigener Schwerpunkt ist aber die Eigenverantwortung: Eltern erfüllen ihre Bedürfnisse selbst, dürfen andere bitten, die auch Nein sagen dürfen, und sollen von Kindern nicht erwarten, dass sie diese Bedürfnisse wahrnehmen. Bedürfnisse müssten nicht zu hundert Prozent erfüllt sein, wichtig sei, anzufangen. Schlafmangel bezeichnet sie als Foltermethode."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "„Das gewünschteste Wunschkind“ legt den Schwerpunkt stärker auf die Rahmenbedingungen und auf Warnzeichen. Gäste und Hosts sagen, mütterliche Erschöpfung werde gesellschaftlich oft als normal oder sogar schön verklärt und sei ein Tabu; die Ansprüche seien gestiegen, viele Rollen kämen zusammen und Unterstützung fehle. Eine Gästin sieht darin auch ein Missverständnis bedürfnisorientierter Erziehung: Wenn nur die Bedürfnisse des Kindes zählen, führe das schnell in Überforderung, und Mütter seien keine Superheldinnen. Übereinstimmend mit mutti, artgerecht und Kathy Weber raten sie, für sich zu sorgen (Schlaf, Essen, Pausen), Dinge abzugeben und öfter Nein zu sagen. Anders als diese betonen mehrere Gäste, Erschöpfung ernst zu nehmen und rechtzeitig fachliche Hilfe zu suchen, etwa bei Dauergereiztheit, innerer Leere oder körperlichen Warnzeichen, und schildern Wege wie die Tagesklinik. Eine Host sagt, der Satz „gelassene Eltern haben gelassene Kinder“ habe sie unter Druck gesetzt. Bei akuter Überlastung mit Gefahr für das Baby wird geraten, sofort Hilfe zu holen; das sind Erfahrungen der Gäste, kein ärztlicher Rat."
     }
    ],
    "quellen": [
@@ -3220,14 +4635,6 @@ window.WISSEN = {
      "thema": "Belastende Gedanken als Hinweis auf unerfüllte Bedürfnisse"
     },
     {
-     "podcast": "gfk",
-     "nr": 19,
-     "titel": "029: F-wie Fürsorge statt Meckern. Strategien für mehr Selbstliebe im Alltag. Teil 2",
-     "datum": "2020-04-05",
-     "minute": "03:27",
-     "thema": "Was sind Strategien? Selbstfürsorge im Alltag"
-    },
-    {
      "podcast": "artgerecht",
      "nr": 15,
      "titel": "Alle wollen was von mir - Tricks für den Alltag",
@@ -3242,6 +4649,30 @@ window.WISSEN = {
      "datum": "2023-12-19",
      "minute": "02:03",
      "thema": "Tagsüber entlasten, Kinder brauchen abends Nähe"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 89,
+     "titel": "Erschöpfte Eltern - was hilft und wie können wir vorbeugen? Mit Michéle Liussi und Katharina Spangler",
+     "datum": "2022-06-14",
+     "minute": "05:26",
+     "thema": "Warum Eltern so ausgelaugt sind und was entlastet"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 153,
+     "titel": "Bindung ohne Burnout - mit Nora Imlau",
+     "datum": "2024-10-15",
+     "minute": "08:48",
+     "thema": "Erschöpfung erkennen und Energie schonen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 172,
+     "titel": "Bedürfnisse und Grenzen - wie wir Kraft im stressigen Mama-Alltag tanken",
+     "datum": "2025-02-25",
+     "minute": "02:37",
+     "thema": "Eigene Bedürfnisse im Elternalltag, Stress und Grundbedürfnisse"
     }
    ],
    "verwandt": [
@@ -3254,6 +4685,116 @@ window.WISSEN = {
    ],
    "medizinisch": true,
    "einleitung": "Eltern von Babys und Kleinkindern sind oft dauerhaft müde und an der Belastungsgrenze. Der Haushalt, das Spielen und die eigenen Bedürfnisse scheinen sich kaum noch vereinbaren zu lassen."
+  },
+  {
+   "id": "erste-hilfe",
+   "titel": "Erste Hilfe bei Kindern",
+   "synonyme": [
+    "Notfall Kind",
+    "Kindernotfall",
+    "Wiederbelebung Kind",
+    "Kind verschluckt sich",
+    "Kind auf den Kopf gefallen",
+    "Vergiftung Kind",
+    "Notaufnahme Kind",
+    "Fieberkrampf",
+    "Zeckenbiss",
+    "Katzenbiss"
+   ],
+   "fragen": [
+    "Mein Kind hat sich verschluckt, was tue ich jetzt?",
+    "Wann fahre ich mit meinem Kind in die Notaufnahme und wann rufe ich den Rettungswagen?",
+    "Mein Kind ist auf den Kopf gefallen. Abwarten oder zum Arzt?",
+    "Mein Kind hat etwas Giftiges getrunken, wen rufe ich an?",
+    "Wie funktioniert Wiederbelebung bei einem Baby?",
+    "Was tun bei Verbrühung oder Katzenbiss?"
+   ],
+   "alter": [
+    "0-1",
+    "1-3",
+    "3-6"
+   ],
+   "bereiche": [
+    "alltag",
+    "baby",
+    "entwicklung"
+   ],
+   "kurz": "In den Folgen von Daniel Graf und Katja Seide erklären Notärztinnen, Kinderärzte und eine Erste-Hilfe-Trainerin, was bei Kindernotfällen zu tun ist. Ihr Tenor: Die meisten Unfälle sind harmlos, im echten Notfall zählt Ruhe, und ein Kurs speziell für Kinder gibt Sicherheit. Das ist Erfahrungswissen aus dem Podcast und ersetzt weder einen Kurs noch ärztlichen Rat; bei Unsicherheit ruft in der Praxis an, beim Giftnotruf oder den Rettungsdienst.",
+   "tipps": [
+    "Besucht einen Erste-Hilfe-Kurs speziell für Babys und Kinder. Laut einer Gästin kommt das im normalen Führerscheinkurs nicht vor, und Eltern könnten im Ernstfall mehr, als sie sich zutrauen.",
+    "Bleibt möglichst ruhig. Kinder übernehmen die Stimmung der Eltern, und ruhige Eltern erleichtern alles Weitere.",
+    "Beim Verschlucken: Greift nicht in den Mund. Solange das Kind hustet, Luft holen oder schreien kann, abwarten. Klappt das nicht mehr, folgen laut der Trainerin Rückenschläge, bei Babys dann Brustkorbkompressionen, ab einem Jahr der Oberbauchgriff, und der Rettungsdienst wird gerufen.",
+    "Bei einem Kind ohne Atmung beginnt die Wiederbelebung nach Schilderung der Gästin mit fünf Beatmungen, danach im Wechsel 30 Mal drücken und zweimal beatmen. Ruft den Rettungsdienst (112), sobald ihr könnt, am besten per Lautsprecher, und macht ohne Pause weiter. Ein Baby wird dabei mit Neutralstellung des Kopfes und zwei Fingern behandelt. Ein Kurs übt genau das.",
+    "Bei einem Krampfanfall legt das Kind sicher hin, haltet es nicht fest, steckt nichts in den Mund und schaut auf die Uhr. Beim ersten Anfall oder ohne Notfallmedikament ruft den Rettungsdienst.",
+    "Bei Verdacht auf Vergiftung: Entfernt die Substanz aus der Reichweite des Kindes und ruft sofort die Giftinformationszentrale an. Folgt ihren Anweisungen und gebt nichts ein, ohne vorher nachzufragen. Speichert die Nummer schon jetzt im Handy.",
+    "Nach einem Sturz auf den Kopf beobachtet das Kind auf verändertes Wesen, Erbrechen, Gedächtnislücken und starke Kopfschmerzen. Bei Babys unter sechs Monaten seien die Ärzte vorsichtiger.",
+    "Entfernt Zecken sofort mit einer Zeckenpinzette und notiert das Datum. Einen Katzenbiss lasst laut den Ärztinnen und Ärzten lieber gleich anschauen. Bei Verbrennungen kühlt kurz mit lauwarmem Wasser und verzichtet auf Hausmittel wie Quark oder Zahnpasta.",
+    "Im Zweifel ruft in der Kinderarztpraxis an, statt zu Hause weiter zu grübeln. Die Notaufnahme sei laut den Ärzten für echte Notfälle gedacht; bei Säuglingen sei Zurückhaltung weniger angebracht."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide sprechen in mehreren Folgen mit Fachleuten über Notfälle: mit Ärztinnen und Ärzten aus der Kindernotaufnahme, einer Erste-Hilfe-Trainerin und einem Kinderarzt. Alle wollen vor allem entwarnen. Die meisten Kopfverletzungen, Wunden und Stürze seien harmlos, und Eltern hätten oft ein gutes Gespür für den Zustand ihres Kindes. Die Ärzte wünschen sich zugleich weniger unnötige Notaufnahmebesuche, räumen aber ein, dass die Kommunikation dort besser sein könnte und lange Wartezeiten auf der Triage beruhen, bei der die Dringlichkeit bewertet wird. Die Hosts erzählen, dass sie selbst eher aus Vorsicht zum Arzt gehen würden. Mehrfach betonen die Gäste, dass ihre Hinweise einen Kurs nicht ersetzen und Dosierungen oder Einzelfälle immer ärztlich geklärt werden müssen."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 130,
+     "titel": "Erste Hilfe bei Babys und Kindern",
+     "datum": "2024-01-09",
+     "minute": "21:30",
+     "thema": "Verschlucken, Würgen und Notfall unterscheiden"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 130,
+     "titel": "Erste Hilfe bei Babys und Kindern",
+     "datum": "2024-01-09",
+     "minute": "42:52",
+     "thema": "Besonderheiten der Wiederbelebung bei Kindern"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 102,
+     "titel": "Unfälle und Notfälle – wann muss mein Kind in eine Klinik?",
+     "datum": "2022-12-13",
+     "minute": "06:58",
+     "thema": "Wann der Rettungswagen wirklich nötig ist"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 130,
+     "titel": "Erste Hilfe bei Babys und Kindern",
+     "datum": "2024-01-09",
+     "minute": "37:48",
+     "thema": "Vergiftungen und Giftinformationszentrale"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 102,
+     "titel": "Unfälle und Notfälle – wann muss mein Kind in eine Klinik?",
+     "datum": "2022-12-13",
+     "minute": "22:32",
+     "thema": "Sturz auf den Kopf: Kriterien"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 130,
+     "titel": "Erste Hilfe bei Babys und Kindern",
+     "datum": "2024-01-09",
+     "minute": "54:44",
+     "thema": "Zecken, Katzen- und Hundebisse"
+    }
+   ],
+   "verwandt": [
+    "unfaelle-vorbeugen",
+    "wassersicherheit",
+    "arztbesuch",
+    "fieber"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind hat sich verschluckt, was tue ich jetzt?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "erste-zeit-mit-baby",
@@ -3314,6 +4855,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber erklärt, dass die Gewaltfreie Kommunikation (GfK: Beobachtung, Gefühl, Bedürfnis, Bitte) ihrer Überzeugung nach schon mit Neugeborenen funktioniert, auch nonverbal. Studien dazu gebe es nicht, sie bejaht es aus eigener Erfahrung. Als Bedürfnisse von Säuglingen nennt sie Nahrung, Schlaf, Ausscheidung, Nähe und Vertrauen, und das Baby brauche nach dem engen, warmen, dunklen Mutterleib Geborgenheit und gedämpfte Reize. In den ersten Wochen stellt sie die Bedürfnisse des Babys zunächst vor die eigenen, betont aber, dass Eltern trotzdem für sich sorgen. Wichtiger als die Reihenfolge der vier Schritte ist ihr die Haltung, dass das Baby so okay ist, wie es ist. Sie warnt davor, das Kind totzureden, und betont, dass es kein Richtig oder Falsch gibt; wie die anderen Podcasts arbeitet sie bedürfnisorientiert."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Bei wunschkind steht weniger die Gelassenheit beim Weinen im Mittelpunkt als die Ehrlichkeit über die ersten Wochen. Die Hosts und Gästinnen sagen, abendliches Schreien sei normal, werde aber kaum erwähnt, und viele Eltern seien trotz viel Lesen überfordert. Eine Gästin nennt Müttergruppen und Stillcafés hilfreich, weil man merkt, dass andere das Problem auch kennen; bei Schmerzen beim Stillen rät sie, früh eine Stillberatung zu holen. Eine der Hosts schildert offen Überforderung und eine nachgeburtliche Depression, die sie lange nicht bemerkt habe und über die sie nach etwa acht Monaten mit ihrer Ärztin sprach. Das ergänzt die Haltung von mutti und artgerecht um den Aspekt, Hilfe zu holen, und widerspricht dem Bild der entspannten Erstlingseltern. Es sind persönliche Erfahrungen, keine Anleitung."
     }
    ],
    "quellen": [
@@ -3342,22 +4887,6 @@ window.WISSEN = {
      "thema": "Frage: Bin ich gemein, wenn ich mein Baby ablege?"
     },
     {
-     "podcast": "mutti",
-     "nr": 55,
-     "titel": "Konsequenzen, Intensive Parenting, Grenzen setzen Q&A",
-     "datum": "2026-07-15",
-     "minute": "36:23",
-     "thema": "Ablegen, Traglinge und Kulturvergleich"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 47,
-     "titel": "Was tun bei Hauen, Ausschließen und Wutanfällen? - 100 Folgen Special",
-     "datum": "2026-05-19",
-     "minute": "19:26",
-     "thema": "Tipp: Sich vorher bei anderen Babys einbringen"
-    },
-    {
      "podcast": "artgerecht",
      "nr": 44,
      "titel": "Zeitmanagement mit Baby – so wirst du nicht verrückt",
@@ -3380,6 +4909,22 @@ window.WISSEN = {
      "datum": "2019-03-03",
      "minute": "03:27",
      "thema": "Funktioniert GfK schon mit Babys?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 142,
+     "titel": "Mother guilt - elterliche Schuldgefühle mit Marie Nasemann",
+     "datum": "2024-06-25",
+     "minute": "03:57",
+     "thema": "Niemand spricht über die anstrengende Phase"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 36,
+     "titel": "Elternschaft: Anforderungen vs. Realität. Scheitern an den eigenen Ansprüchen",
+     "datum": "2020-04-21",
+     "minute": "10:22",
+     "thema": "Ich schaffe es nicht alleine"
     }
    ],
    "verwandt": [
@@ -3388,10 +4933,114 @@ window.WISSEN = {
     "intensive-parenting",
     "gefuehle-begleiten",
     "hirnentwicklung-mythen",
-    "baby-weinen"
+    "baby-ausstattung-motorik"
    ],
    "medizinisch": true,
    "einleitung": "Gerade beim ersten Baby sind Eltern verunsichert, wie sie Weinen und Meckern deuten sollen und ob Ablegen dem Kind schadet. Viele wünschen sich die Gelassenheit, die erfahrene Eltern bei späteren Kindern zeigen."
+  },
+  {
+   "id": "erwartungen-zuschreibungen",
+   "titel": "Erwartungen und Zuschreibungen",
+   "synonyme": [
+    "Pygmalion-Effekt",
+    "Zuschreibungen",
+    "positive Erwartung",
+    "Kind als schwierig sehen",
+    "Salienznetzwerk",
+    "Fokus auf Positives",
+    "Etiketten",
+    "Schublade",
+    "Selbstbild Kind",
+    "Familiensätze",
+    "schüchtern"
+   ],
+   "fragen": [
+    "Sehe ich nur noch das schlechte Verhalten meines Kindes?",
+    "Wie kann ich mein Kind positiv beeinflussen, ohne es zu loben?",
+    "Wirkt sich meine Erwartung auf das Verhalten meines Kindes aus?",
+    "Darf ich mein Kind schüchtern nennen?"
+   ],
+   "alter": [
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "gefuehle",
+    "eltern",
+    "entwicklung"
+   ],
+   "kurz": "Laut den mutti-Hosts beeinflusst das, was Eltern von ihrem Kind erwarten, wie es sich verhält: Wer ein Kind für schwierig hält, sieht eher das schlechte Verhalten und übersieht das gute. Die Hosts raten, gute Momente bewusst wahrzunehmen und kurz und ehrlich zu benennen. In wunschkind erklärt eine Gästin, dass auch liebevolle oder positive Zuschreibungen („schüchtern“, „die Schlaue“) zum Selbstbild werden und Druck erzeugen können; sie rät, Verhalten zu beschreiben statt Identität festzulegen.",
+   "tipps": [
+    "Schreibt euch abends drei Momente auf, in denen sich die Kinder gut verhalten haben, oder macht Striche auf einer Liste.",
+    "Benennt gutes Verhalten, das ihr bemerkt, kurz und ehrlich, zum Beispiel wie liebevoll das Kind mit dem Geschwisterkind ist.",
+    "Sprecht Wertschätzung zwischendurch aus, nicht mitten im Konflikt und nicht, um Leistung zu erzwingen.",
+    "Beschreibt Verhalten und lasst Identität offen: „Du brauchst in neuen Situationen oft etwas mehr Zeit“ statt „Du bist schüchtern“.",
+    "Dreht Zuschreibungen nicht ins Gegenteil („Du bist überhaupt nicht schüchtern“), das wäre die nächste Schublade; macht lieber Ausnahmen sichtbar: „Heute hast du ganz allein nachgefragt.“",
+    "Achtet auf Familiensätze wie „Bei uns kann keiner Mathe“ und öffnet sie: „Bei einigen von uns war Mathe nicht so einfach, finde für dich heraus, wie es dir damit geht.“"
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "mutti",
+     "text": "Die Hosts verweisen auf ein bekanntes Experiment, in dem Lehrkräfte von zufällig ausgewählten Kindern Gutes erwarteten und diese sich besser entwickelten (Pygmalion-Effekt). Sie erklären, dass das Salienznetzwerk als Filter des Gehirns bestimmt, was wir wahrnehmen, sodass ein als schwierig erlebtes Kind vor allem mit schlechtem Verhalten wahrgenommen wird. Wer ständig für ein Verhalten ausgeschimpft wird, könne sich als schwarzes Schaf fühlen und das Verhalten erst recht zeigen. Zuschreibungen von Eigenschaften können dazu führen, dass ein Kind sich damit identifiziert. Loben als Methode halten die Hosts nicht für optimal, hier gehe es um echtes Feststellen von Verhalten, das das Kind steuern kann."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "In wunschkind geht es um die andere Seite derselben Medaille: Corinna Weber erklärt, dass liebevoll gemeinte Zuschreibungen wie „schüchtern“ oder „sensibel“ irgendwann Teil des Selbstbildes werden, sodass aus Verhalten Identität wird. Auch positive Etiketten („die Schlaue“) können Druck machen und dazu führen, dass Kinder Herausforderungen meiden, um die Rolle zu halten. Das stützt die Sicht von mutti, dass Zuschreibungen das Kind prägen, und ergänzt sie um den Blick auf Familiengeschichten wie „bei uns kann niemand Mathe“, die auf kleine Kinder wie Fakten wirken. Die Gästin betont, dass alle Eltern Zuschreibungen benutzen und kein Grund für Schuldgefühle besteht; Daniel Graf stimmt zu, dass solche Sätze meist nicht böse gemeint sind. Im Unterschied zu mutti, wo es auch um bewusste Aufmerksamkeit für gute Momente geht, liegt der Schwerpunkt hier auf der Sprache und dem Selbstbild."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "mutti",
+     "nr": 23,
+     "titel": "Das hilft, wenn Kinder ärgern und provozieren",
+     "datum": "2025-05-27",
+     "minute": "39:46",
+     "thema": "Pygmalion-Effekt und Experiment"
+    },
+    {
+     "podcast": "mutti",
+     "nr": 23,
+     "titel": "Das hilft, wenn Kinder ärgern und provozieren",
+     "datum": "2025-05-27",
+     "minute": "43:38",
+     "thema": "Salienznetzwerk und Fokus"
+    },
+    {
+     "podcast": "mutti",
+     "nr": 23,
+     "titel": "Das hilft, wenn Kinder ärgern und provozieren",
+     "datum": "2025-05-27",
+     "minute": "47:01",
+     "thema": "Guten Momenten bewusst Aufmerksamkeit geben"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 262,
+     "titel": "\"Ich kann das doch sowieso nicht!\" - wie das Selbstbild unsere Kinder prägt",
+     "datum": "2026-11-17",
+     "minute": "06:06",
+     "thema": "Liebevolle Zuschreibungen werden zur Identität"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 262,
+     "titel": "\"Ich kann das doch sowieso nicht!\" - wie das Selbstbild unsere Kinder prägt",
+     "datum": "2026-11-17",
+     "minute": "29:29",
+     "thema": "Familienerzählungen verändern, Ausnahmen sichtbar machen"
+    }
+   ],
+   "verwandt": [
+    "aergern-provozieren",
+    "loben",
+    "perfektionismus-fehler",
+    "gefuehle-begleiten",
+    "sprache-formulierungen",
+    "selbstwert-kind"
+   ],
+   "medizinisch": false,
+   "einleitung": "Viele Eltern kennen diese Situation: „Sehe ich nur noch das schlechte Verhalten meines Kindes?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "erziehungsstile",
@@ -3408,14 +5057,18 @@ window.WISSEN = {
     "wertebasierte Erziehung",
     "autoritär antiautoritär",
     "bedürfnisorientiert",
-    "Erziehungsmuster der Eltern"
+    "Erziehungsmuster der Eltern",
+    "beziehungsorientiert",
+    "zu eng zu locker",
+    "angepasste und autonome Eltern"
    ],
    "fragen": [
     "Was ist der Unterschied zwischen autoritär und autoritativ?",
     "Bin ich zu nachgiebig mit meinem Kind?",
     "Muss man Kinder überhaupt erziehen?",
     "Reicht eine sichere Bindung für ein glückliches Kind?",
-    "Ist das nur eine Phase oder muss ich reagieren?"
+    "Ist das nur eine Phase oder muss ich reagieren?",
+    "Wie erkenne ich, ob ich zu eng oder zu locker führe?"
    ],
    "alter": [
     "1-3",
@@ -3447,6 +5100,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber unterscheidet dominanzorientierte und bedürfnisorientierte Systeme: In einer bedürfnisorientierten Familie werden alle Bedürfnisse im Einklang gesehen und der Mensch wird mit seiner Würde angenommen. Verbundenheit und Autonomie ergänzen sich laut ihr: Im autoritären Stil findet keines von beiden Platz, im antiautoritären nur Autonomie, die ohne Verbundenheit nicht erfüllt werden kann. Sie grenzt sich also von beiden Extremen ab und rät, sich zu fragen, was das Kind für sichere Bindung braucht und wie das zu seinem Bedürfnis nach Autonomie passt. In einer anderen Folge erzählt ihr Vater von einer strengen Erziehung mit körperlichen Strafen, die er nicht weitergab; geblieben seien aber Schweigen und Rückzug im Streit. Sie schließt daraus, dass jede Generation Muster ein Stück weit durchbrechen kann, und rät, die eigenen Eltern nicht zu verurteilen, sondern ins Gespräch zu kommen."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide holen in mehreren Folgen Fachleute dazu, die den Mittelweg ähnlich beschreiben wie Mutti, aber mit anderen Begriffen. Die Familienberaterin Inke Hummel unterscheidet vier Typen (herrisch, verwöhnend-überfürsorglich, abwesend, beziehungsorientiert) und fasst den Mittelweg als aktiv annehmen und zugewandt zumuten; sie räumt ein, dass das bewusst zugespitzt ist und die meisten Eltern nur zeitweise in einen Stil rutschen. Die Gästin Leandra Vogt mag feste Konzepte nicht, sieht aber im autoritativen Stil eine sinnvolle Mischung aus Führung auf Augenhöhe und sicherem Rahmen. Eine weitere Gästin warnt davor, aus einem autoritären Elternhaus ungeprüft ins Laissez-faire zu kippen, und rät, am Kind abzulesen, wohin man gerade ausschlägt. Stefanie Stahl ergänzt, dass Eltern eher zur Anpassung oder zur Autonomie neigen und das Optimum in der Mitte liege. Anders als bei Kathy Weber steht also weniger die Frage nach Macht und Bedürfnissen im Mittelpunkt als die Selbstreflexion der Eltern."
     }
    ],
    "quellen": [
@@ -3460,27 +5117,11 @@ window.WISSEN = {
     },
     {
      "podcast": "mutti",
-     "nr": 50,
-     "titel": "Bin ich zu streng zu meinem Kind?",
-     "datum": "2026-06-09",
-     "minute": "07:05",
-     "thema": "Bergführer-Metapher"
-    },
-    {
-     "podcast": "mutti",
      "nr": 37,
      "titel": "Welche Fehler machen wir?",
      "datum": "2026-03-10",
      "minute": "16:21",
      "thema": "Erziehung ist nötig, Kritik an der Idee, Erziehung sei Gewalt"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 37,
-     "titel": "Welche Fehler machen wir?",
-     "datum": "2026-03-10",
-     "minute": "25:16",
-     "thema": "Phasen als Entwicklungsaufgaben"
     },
     {
      "podcast": "mutti",
@@ -3505,6 +5146,30 @@ window.WISSEN = {
      "datum": "2021-06-13",
      "minute": "04:49",
      "thema": "Muster der Elterngeneration: Was wird weitergegeben, was durchbrochen?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 82,
+     "titel": "Nicht zu streng, nicht zu eng – der Weg zwischen Schimpfen und falschem Verwöhnen mit Inke Hummel",
+     "datum": "2022-03-08",
+     "minute": "04:44",
+     "thema": "Die vier Erziehungstypen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 71,
+     "titel": "Resilienz - 8 Schlüssel für Eltern und Kinder mit Leandra Vogt",
+     "datum": "2021-09-21",
+     "minute": "08:17",
+     "thema": "Erziehungsstile und Resilienz"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 176,
+     "titel": "Cycle Breaker - toxische Verhaltensmuster in der Familie durchbrechen",
+     "datum": "2025-03-25",
+     "minute": "36:29",
+     "thema": "Autoritativer Stil und Kontakt zum Kind"
     }
    ],
    "verwandt": [
@@ -3519,6 +5184,449 @@ window.WISSEN = {
    "einleitung": "Viele Eltern fragen sich, ob sie zu nachgiebig oder zu streng sind und wie viel Erziehung ein Kind überhaupt braucht."
   },
   {
+   "id": "essstoerungen",
+   "titel": "Essstörungen bei Kindern erkennen",
+   "synonyme": [
+    "Magersucht",
+    "Anorexie",
+    "Bulimie",
+    "Binge-Eating",
+    "Orthorexie",
+    "Kind isst heimlich",
+    "Kind isst zu wenig",
+    "Essstörung Anzeichen",
+    "Family-Based-Treatment"
+   ],
+   "fragen": [
+    "Woran erkenne ich eine Essstörung bei meinem Kind?",
+    "Mein Kind isst heimlich, was steckt dahinter?",
+    "Bin ich schuld, dass mein Kind eine Essstörung hat?",
+    "Wohin wende ich mich bei Verdacht?",
+    "Was sollte ich zu meinem Kind auf keinen Fall sagen?"
+   ],
+   "alter": [
+    "6-10"
+   ],
+   "bereiche": [
+    "essen",
+    "gefuehle",
+    "eltern"
+   ],
+   "kurz": "Laut einer Gästin der Hosts ist eine Essstörung keine Entscheidung gegen das Essen, sondern ein unbewusster Umgang mit innerem Druck, und sie beginnt oft in oder vor der Pubertät. Wichtig sind früh hinschauen, Schuldgefühle loslassen und rasch Fachleute einbeziehen. Dies ist Einschätzung einer Gästin und keine Diagnose; bei Verdacht sprecht ihr mit der Kinderärztin oder dem Kinderarzt. Der Artikel gilt vor allem für ältere Kinder und die Zeit vor der Pubertät.",
+   "tipps": [
+    "Beobachtet Veränderungen im Essverhalten über Wochen und achtet besonders auf Starrheit, Zwang und Rückzug. Ein Wendepunkt ist laut der Gästin, wenn keine Ausnahmen mehr möglich sind, etwa an Geburtstagen.",
+    "Das Gewicht allein sagt wenig; die Gästin nennt seelische Belastung und Verhalten als entscheidend.",
+    "Hört auf euer Bauchgefühl, wenn Essen das Familienleben verändert, und holt euch früh Hilfe. Erste Anlaufstelle ist laut der Gästin die Kinderärztin oder der Kinderarzt.",
+    "Sprecht euer Kind an, ohne zu bewerten: Mir ist aufgefallen, dass du viel Sport machst oder sehr auf dein Essen achtest, ich sehe das und bin da, wenn du reden magst.",
+    "Fragt bei heimlichem Essen nicht Warum hast du das getan, sondern Was fühlst du?",
+    "Lasst die Frage nach persönlicher Schuld los und fragt, was ihr jetzt tun könnt. Schiebt euch als Eltern nicht gegenseitig die Schuld zu.",
+    "Vermeidet Verharmlosen, Druck zum Essen und Sätze wie Stell dich nicht so an. Haltet das Gespräch auch über andere Themen als Essen offen.",
+    "Helft mit Tagesstruktur, festen Mahlzeiten und gemeinsamem Essen ohne Druck. Dramatisiert Rückschritte nicht, denn sie gehören laut der Gästin zur Heilung.",
+    "Sucht für euch selbst Entlastung durch Pausen, Freunde oder Therapie. Verweigert ein minderjähriges Kind den Arztbesuch, rät die Gästin, ihn liebevoll erklärt trotzdem durchzusetzen."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Die Gästin Martina Effmatt beschreibt Essstörungen als Versuch, mit Druck, Unsicherheit und Überforderung umzugehen, oft bei angepassten, sensiblen, perfektionistischen Kindern. Sie nennt Magersucht, Bulimie und Binge-Eating als häufigste Formen und sagt, die Familie gelte heute nicht mehr als Ursache; Biologie, Persönlichkeit und Auslöser wie Pubertät oder eine harmlose Diät spielten zusammen. Sie plädiert dafür, früh zu handeln und nichts als bloße Phase abzutun, und erwähnt als gut erforschten Ansatz bei Jugendlichen das Family-Based-Treatment, bei dem Eltern zunächst die Verantwortung für die Ernährung übernehmen. Daniel Graf und Katja Seide fragen kritisch nach, ab wann gesundes Essen oder Fitness ein Warnsignal ist; die Gästin räumt ein, dass die Abgrenzung schwammig ist, und nennt Dauer, Intensität und Flexibilität als Richtschnur."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 198,
+     "titel": "Essstörungen bei Kindern",
+     "datum": "2025-08-26",
+     "minute": "12:53",
+     "thema": "Typische erste Anzeichen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 198,
+     "titel": "Essstörungen bei Kindern",
+     "datum": "2025-08-26",
+     "minute": "34:41",
+     "thema": "Heimliches Essen ansprechen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 198,
+     "titel": "Essstörungen bei Kindern",
+     "datum": "2025-08-26",
+     "minute": "21:01",
+     "thema": "Warum Eltern nicht schuld sind"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 198,
+     "titel": "Essstörungen bei Kindern",
+     "datum": "2025-08-26",
+     "minute": "29:28",
+     "thema": "Was Eltern auf keinen Fall tun sollten"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 198,
+     "titel": "Essstörungen bei Kindern",
+     "datum": "2025-08-26",
+     "minute": "38:32",
+     "thema": "Therapeutische Wege und Anlaufstellen"
+    }
+   ],
+   "verwandt": [
+    "aussehen-schoenheitsideale",
+    "waehlerisches-essen",
+    "perfektionismus-fehler",
+    "psychische-gesundheit-kind",
+    "pubertaet-teenager"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Woran erkenne ich eine Essstörung bei meinem Kind?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "exklusivzeit",
+   "titel": "Exklusivzeit im Alltag",
+   "synonyme": [
+    "Einzelzeit",
+    "Zeit allein mit dem Kind",
+    "Quality Time",
+    "ungeteilte Aufmerksamkeit",
+    "Zeit für jedes Kind",
+    "Alleinzeit mit Elternteil",
+    "Aufmerksamkeitstank füllen",
+    "Verbindungsinseln"
+   ],
+   "fragen": [
+    "Wie viel Einzelzeit braucht mein Kind?",
+    "Wie finde ich mit zwei Kindern Zeit für jedes?",
+    "Muss Quality Time ein Ausflug sein?",
+    "Mein Kind stört die Zeit mit dem Geschwister, was tun?",
+    "Reichen zehn Minuten am Tag?"
+   ],
+   "alter": [
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "geschwister",
+    "alltag",
+    "eltern"
+   ],
+   "kurz": "Exklusivzeit ist Zeit, in der ein Kind die volle Aufmerksamkeit eines Erwachsenen hat. Sie muss kein Ausflug sein, und Alltagsmomente reichen. Die Hosts von Mutti halten eine halbe Stunde ungestörtes Spielen für realitätsfern; Daniel Graf und Katja Seide empfehlen sie ausdrücklich, lassen aber auch zehn Minuten oder einmal pro Woche gelten, solange das Kind merkt, dass die Zeit nur ihm gehört.",
+   "tipps": [
+    "Nutzt Alltagsmomente wie Bettfertigmachen als Spiel, etwa mit einer Zahnpolizei oder einem Schlafanzug, der die Beine frisst.",
+    "Lest zusammen ein Buch oder sprecht beim Zubettbringen über den Tag.",
+    "Kocht gemeinsam, während das Baby in der Trage schläft.",
+    "Plant für jedes Kind eine feste Zeit allein mit einem Elternteil und lasst das Kind aussuchen, was ihr tut, auch wenn es nicht euer Lieblingsspiel ist.",
+    "Kündigt die Zeit ausdrücklich an und unterbrecht sie nicht, etwa durch das Handy.",
+    "Übt das Alleinspielen der anderen Kinder schrittweise, indem ihr zum Beispiel am Tisch um Warten bittet und die Wartezeit langsam verlängert, und haltet jede Verabredung verlässlich ein.",
+    "Wenn die halbe Stunde nicht klappt, reichen zehn Minuten oder einmal pro Woche.",
+    "Plant kleine Verbindungsinseln im Alltag ein, zum Beispiel nach Kita oder Schule und abends, und prüft am späten Nachmittag, ob jedes Kind etwas Aufmerksamkeit hatte."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "mutti",
+     "text": "Die Hosts wollen den Druck nehmen: Exklusivzeit muss kein Ausflug sein. Die Forderung nach einer halben Stunde ungestörtem Spielen am Stück finden sie realitätsfern. Rund-um-die-Uhr-Bespaßung halten sie ebenfalls nicht für gut, weil Kinder auch Raum für sich brauchen. Als Beispiel nennen sie, dass ein Kind beim Zubettgehen erzählt, was es am Tag gesehen hat."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide empfehlen Exklusivzeit nachdrücklich als einen der wichtigsten Tipps bei mehreren Kindern, weil sie das Bedürfnis nach Aufmerksamkeit und Gesehenwerden erfüllt und Streit, Neid und Eifersucht verringern kann. In einer Hostfamilie bekommt jedes Kind täglich mindestens eine halbe Stunde, in der es bestimmt, was gemacht wird, und die weder durch Handy noch durch Geschwister unterbrochen wird. Damit sind die Hosts strenger als die Sicht im Mutti-Podcast, die eine halbe Stunde am Stück für realitätsfern hält. Sie räumen aber ebenfalls ein, dass es schwer ist, und lassen zehn Minuten oder einmal pro Woche gelten, solange das Kind die Zeit als besonders erkennt. Außerdem betonen sie das Vorbereiten: Geschwister müssen Alleinspielen schrittweise lernen, und anfangs bleibt oft noch Eifersucht."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "mutti",
+     "nr": 5,
+     "titel": "Geschwisterbindung stärken",
+     "datum": "2024-12-09",
+     "minute": "24:47",
+     "thema": "Exklusivzeit und was sie bedeutet"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 41,
+     "titel": "Teil 4: Bedürfnisse priorisieren",
+     "datum": "2020-06-30",
+     "minute": "13:31",
+     "thema": "Was Exklusivzeit ist und wie sie bei einer Hostfamilie aussieht"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 41,
+     "titel": "Teil 4: Bedürfnisse priorisieren",
+     "datum": "2020-06-30",
+     "minute": "17:09",
+     "thema": "Warum Geschwister die Exklusivzeit stören und wie man das vorbereitet"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 234,
+     "titel": "Zwischen Nein und Nähe: Wie wir in stressigen Momenten mit unseren Kindern verbunden bleiben",
+     "datum": "2026-05-05",
+     "minute": "30:41",
+     "thema": "Kleine Inseln für Verbindung im Alltag"
+    }
+   ],
+   "verwandt": [
+    "geschwisterbindung",
+    "geschwister-vorbereiten",
+    "zeit-fuer-sich",
+    "spielen",
+    "eifersucht-baby",
+    "freizeitstress"
+   ],
+   "medizinisch": false,
+   "einleitung": "Viele Eltern kennen diese Situation: „Wie viel Einzelzeit braucht mein Kind?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "familie-gesellschaft",
+   "titel": "Familie und Gesellschaft: Warum Eltern es schwer haben",
+   "synonyme": [
+    "Kinderfeindlichkeit",
+    "kinderfeindliches Deutschland",
+    "Vereinbarkeit Beruf Familie",
+    "Ehegattensplitting",
+    "Kinderarmut",
+    "Care-Arbeit politisch",
+    "Elternzeit Väter",
+    "Familienpolitik",
+    "böse Blicke mit Kind"
+   ],
+   "fragen": [
+    "Warum fühle ich mich mit Kindern in der Öffentlichkeit unerwünscht?",
+    "Wird Vereinbarkeit von Beruf und Familie vor allem den Müttern aufgebürdet?",
+    "Sollte ich als Vater Elternzeit nehmen oder Stunden reduzieren?",
+    "Werden Familien steuerlich und bei der Rente benachteiligt?",
+    "Warum streiten wir Eltern so viel, obwohl das Problem größer ist?",
+    "Wie erkläre ich meinem Kind, was Geld ist?"
+   ],
+   "alter": [
+    "0-1",
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "eltern",
+    "alltag",
+    "kita"
+   ],
+   "kurz": "In mehreren Folgen sprechen Daniel Graf und Katja Seide mit Gästen darüber, dass Erschöpfung und Streit in Familien oft strukturelle Ursachen haben: wenig Rücksicht im Alltag, schwer vereinbare Arbeitszeiten, Steuer- und Rentenregeln, ungleiche Chancen für Kinder. Die Gäste fordern politische Veränderungen und werben für Vernetzung unter Eltern. Zahlen und Rechtsangaben sind Aussagen der Gäste, keine geprüften Fakten; bei Steuer-, Renten- oder Arbeitsrechtsfragen holt euch fachlichen Rat.",
+   "tipps": [
+    "Wenn ihr merkt, dass viele andere Eltern dieselbe Erschöpfung beschreiben, ist das laut einer Gästin ein Hinweis auf ein strukturelles Problem. Vernetzt euch mit anderen Eltern, um nicht das Gefühl zu haben, allein zu versagen.",
+    "Seid in der Öffentlichkeit nachsichtig mit fremden Kindern und erinnert euch daran, wie ihr selbst als Kind wart, statt gleich zu meckern.",
+    "Wer die Kraft dazu hat, kann Benachteiligungen sichtbar machen, zum Beispiel Meetings am späten Nachmittag oder fehlende Wickeltische, damit sie nicht vergessen werden.",
+    "Sprecht im eigenen Umfeld Argumente gegen die Vorstellung aus, Fürsorge sei doch einfach Liebe und brauche keine Rahmenbedingungen.",
+    "Als Vater: Lasst euch vom Arbeitgeber konkret ausrechnen, was eine Reduktion auf zum Beispiel 30 Stunden kostet. Ein Gast meint, das Einkommen sinke oft weniger als gedacht, auch Kita-Beitrag und Steuern wirken sich aus.",
+    "Legt wenn möglich schon in der Schwangerschaft Geld für Elternzeit zurück und denkt langfristig: Die ersten Jahre mit den Kindern kämen laut den Hosts nicht wieder.",
+    "Erklärt Kindern zuerst, was Geld ist und wie es funktioniert, bevor ihr über Ausgaben schimpft. Rechnet bei großen Wünschen gemeinsam durch, was sie kosten würden.",
+    "Wer sich für die politische Seite interessiert, kann sich einer Interessenvertretung für Fürsorgearbeit anschließen, wie sie in einer Folge vorgestellt wird."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide teilen die Einschätzung ihrer Gästinnen weitgehend, dass Familien in Deutschland als Privatsache behandelt werden. Eine Autorin beschreibt das Land als kinderentwöhnt und vergleicht es mit Skandinavien, Italien und Griechenland, wo Kinder selbstverständlicher dazugehören. Sie fordert unter anderem ein leichteres Rückkehrrecht in Vollzeit, weniger steuerliche Benachteiligung und mehr Geld für Infrastruktur und Ganztagsbetreuung statt für einzelne Geldleistungen. Eine weitere Gästin gründete eine Interessenvertretung für unbezahlte Fürsorgearbeit und will Fürsorgeverantwortung im Grundgesetz als Diskriminierungsmerkmal verankern; sie rechnet selbst mit etwa 15 Jahren Dauer. Andere Positionen werden in diesen Folgen kaum diskutiert, die Zahlen stammen von den Gästen. In einer Folge über Väter räumen die Gäste ein, dass Elternzeit auch eine Frage von Privilegien ist, plädieren aber dafür, vorher konkret zu rechnen."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 96,
+     "titel": "Wie kinderfeindlich ist Deutschland? Mit Nathalie Klüver",
+     "datum": "2022-09-20",
+     "minute": "04:00",
+     "thema": "Familien als Privatsache, kinderentwöhntes Land"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 96,
+     "titel": "Wie kinderfeindlich ist Deutschland? Mit Nathalie Klüver",
+     "datum": "2022-09-20",
+     "minute": "07:57",
+     "thema": "Warum Vereinbarkeit eher Unvereinbarkeit ist"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 96,
+     "titel": "Wie kinderfeindlich ist Deutschland? Mit Nathalie Klüver",
+     "datum": "2022-09-20",
+     "minute": "13:04",
+     "thema": "Steuerliche Benachteiligung und Mehrwertsteuer"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 225,
+     "titel": "Care Arbeit, Equal Care und Mental Load – warum Fürsorge politisch ist",
+     "datum": "2026-03-03",
+     "minute": "16:58",
+     "thema": "Warum Fairer-teilen allein zu kurz greift"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 189,
+     "titel": "Rollenbilder überwinden - zu aktiver Vaterschaft finden",
+     "datum": "2025-06-24",
+     "minute": "12:48",
+     "thema": "Elternzeit der Hosts und Rechnen statt Verzichten"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 177,
+     "titel": "Mit Kindern über schwierige Themen sprechen",
+     "datum": "2025-04-01",
+     "minute": "25:46",
+     "thema": "Wie erkläre ich Geld und Konsumwünsche"
+    }
+   ],
+   "verwandt": [
+    "mental-load",
+    "berufstaetige-eltern",
+    "vaterrolle",
+    "erschoepfte-eltern",
+    "dorf-unterstuetzung",
+    "adoption-pflegekind"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Warum fühle ich mich mit Kindern in der Öffentlichkeit unerwünscht?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "familienbett",
+   "titel": "Familienbett und Schlafarrangements",
+   "synonyme": [
+    "früh aufwachen",
+    "Kind weckt Eltern",
+    "zu früh wach",
+    "Familienbett morgens",
+    "Familienbett Schlaf",
+    "getrennt schlafen",
+    "Geschwister gemeinsames Zimmer",
+    "Co-Sleeping",
+    "Wanderschlaf",
+    "Kind kommt nachts ins Bett",
+    "Beistellbett",
+    "Geschwisterbett"
+   ],
+   "fragen": [
+    "Mein Kind weckt morgens alle sehr früh",
+    "Wie bringe ich meinem Kind bei, leise aufzustehen?",
+    "Wie schlafen wir im Familienbett alle genug?",
+    "Sollen Geschwister im selben Zimmer schlafen?",
+    "Wie lange darf mein Kind bei uns im Bett schlafen?",
+    "Ist Schlafen im Elternbett mit Baby sicher?"
+   ],
+   "alter": [
+    "3-6",
+    "0-1",
+    "1-3"
+   ],
+   "bereiche": [
+    "schlaf",
+    "baby"
+   ],
+   "kurz": "Ob Familienbett, getrennte Betten oder Wanderschlaf: Es gibt laut den Podcasts keine feste Regel, es muss für alle passen. Die Hosts von wunschkind halten Kinder im Elternbett für normal, auch noch im Grundschulalter, die mutti-Hosts wollen Kindern im Familienbett leises Verhalten am Morgen beibringen. Für Babys nennen Gästinnen klare Regeln für sicheren Schlaf; bei Unsicherheit solltet ihr ärztlichen Rat einholen.",
+   "tipps": [
+    "Stellt euch schlafend und reagiert nicht auf Geräusche, damit das Kind damit keinen Erfolg hat.",
+    "Bietet dem Kind zwei Optionen: ruhig im Bett bleiben oder ruhig aufstehen.",
+    "Fällt euer Kind nach einem Urlaub zurück, macht einfach konsequent weiter.",
+    "Probiert verschiedene Schlafarrangements aus und sprecht mit dem Kind darüber, was für alle passt.",
+    "Betont im Alltag das Gemeinsame, zum Beispiel: Wir sind alle zusammen, keiner ist allein.",
+    "Beim Baby im ersten Lebensjahr betonen Gästinnen die Regeln für sicheren Schlaf: Rückenlage, keine Kissen, keine schweren Decken, kein Wasserbett, Rausfallschutz, rauchfreie Umgebung. Frühgeborene oder vorerkrankte Babys sollen laut der Gästin besser im Beistellbett schlafen. Bei Unsicherheit fragt eine Ärztin oder einen Arzt.",
+    "Wenn alle gut schlafen, müsst ihr nichts ändern; auch ältere Kinder dürfen vorübergehend zurückkommen, ohne dass es heißt, na siehste.",
+    "Fragt das Kind, was es braucht, um allein schlafen zu können; manchmal helfen ungewöhnliche Ideen wie ein gemalter Ritter oder Monsterspray aus Wasser.",
+    "Bei Alkohol, Schlafmitteln oder starker Erschöpfung schlaft nicht mit dem Baby auf derselben Fläche."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "mutti",
+     "text": "Den Hosts geht es darum, dem Kind beizubringen, wie man sich in einer schlafenden Gruppe verhält. Eine Host erzählt, sie habe früher bei einem Kind mit zu wenig Schlaf zum Aufstehen mitgemacht und sich über den Schlafmangel geärgert; das jüngere Kind blieb von Anfang an entspannter liegen. In einem Fall blieben die Eltern eine Stunde liegen, bis das Kind aufgab, und das Kind verstand nach einer Erklärung, warum sie nicht reagiert hatten. Bei der Umsetzung sind sich die Hosts nicht ganz einig: Eine hält länger durch, die andere wird früher ungeduldig."
+    },
+    {
+     "podcast": "gfk",
+     "text": "Kathy Weber sagt, dass es für Schlafarrangements keine feste Regel gibt und die Lösung für alle passen muss. Die Eltern in ihrem Beratungsgespräch hatten Familienbett, getrennte Zimmer und getrennte Elternschlafplätze ausprobiert. Besteht ein Elternteil auf dem gemeinsamen Ehebett, nennt sie das legitim; dann suche man einen anderen Weg. Weil sich auch Kinder gegenseitig wecken, hält sie nicht Trennen für die Lösung, sondern Nähe und Familiensinn im Alltag zu stärken, etwa mit dem Satz, dass alle zusammen sind und keiner allein ist. Anders als die mutti-Hosts, die dem Kind klare Verhaltensregeln für den frühen Morgen beibringen wollen, geht es ihr ums Ausprobieren und Besprechen mit dem Kind."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Die Hosts Daniel Graf und Katja Seide sehen Kinder im Elternbett entspannt: Es sei normal und verbreitet, und wenn es für alle passt, müsse man nichts reparieren. Im Gespräch mit Nicola Schmidt als Gast beschreiben sie ein Wanderschlafarrangement, bei dem Kinder eigene Betten haben, aber jederzeit zu den Eltern kommen dürfen, auch noch mit sieben oder acht Jahren; die Gesellschaft habe hier ein anderes Bild. Das deckt sich mit Kathy Webers Haltung, dass es keine feste Regel gibt, und widerspricht dem Training der mutti-Hosts zum leisen Morgenverhalten nicht direkt, setzt aber einen anderen Schwerpunkt: Es geht um das Bindungsbedürfnis, nicht um Verhaltensregeln. Zur Sicherheit beim Baby äußern sich Gästinnen (laut eigener Aussage unter Verweis auf Studien): Im ersten Jahr sei das Elternzimmer empfohlen, ein Familienbett sei unter sicheren Bedingungen nicht riskanter, die Aussagen seien aber nicht einheitlich. Katja Seide findet auch das Geschwisterbett gut machbar, Daniel Graf traut es sich nach eigener Aussage nicht zu."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "mutti",
+     "nr": 23,
+     "titel": "Das hilft, wenn Kinder ärgern und provozieren",
+     "datum": "2025-05-27",
+     "minute": "04:08",
+     "thema": "Kind weckt morgens alle"
+    },
+    {
+     "podcast": "mutti",
+     "nr": 23,
+     "titel": "Das hilft, wenn Kinder ärgern und provozieren",
+     "datum": "2025-05-27",
+     "minute": "09:05",
+     "thema": "Familienbett und weniger Schlaf für alle"
+    },
+    {
+     "podcast": "mutti",
+     "nr": 23,
+     "titel": "Das hilft, wenn Kinder ärgern und provozieren",
+     "datum": "2025-05-27",
+     "minute": "13:53",
+     "thema": "Zwei Optionen für das Kind"
+    },
+    {
+     "podcast": "gfk",
+     "nr": 6,
+     "titel": "005: S-wie schlaflose Nächte: eine Elternberatung",
+     "datum": "2019-03-31",
+     "minute": "04:33",
+     "thema": "Wie die Familie nachts verteilt schläft"
+    },
+    {
+     "podcast": "gfk",
+     "nr": 6,
+     "titel": "005: S-wie schlaflose Nächte: eine Elternberatung",
+     "datum": "2019-03-31",
+     "minute": "1:29:42",
+     "thema": "Mögliche Arrangements"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 13,
+     "titel": "Wie Kinder schlafen - Familienbett, Einschlafbegleitung und Durchschlafen",
+     "datum": "2019-05-29",
+     "minute": "01:50",
+     "thema": "Wie lange ist es normal, dass Kinder ins Elternbett kommen?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 131,
+     "titel": "Kinder beim Ein- und Durchschlafen bedürfnisorientiert begleiten",
+     "datum": "2024-01-23",
+     "minute": "28:04",
+     "thema": "Sichere Schlafumgebung, Elternbett vs. Beistellbett"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 165,
+     "titel": "Kindergesundheit heute - Schluss mit gefährlichem Halbwissen",
+     "datum": "2025-01-07",
+     "minute": "17:48",
+     "thema": "Familienbett, plötzlicher Kindstod und Studien"
+    }
+   ],
+   "verwandt": [
+    "einschlafen",
+    "durchschlafen",
+    "licht-tag-nacht-rhythmus",
+    "erschoepfte-eltern",
+    "geschwisterbindung",
+    "babyschlaf"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind weckt morgens alle sehr früh“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
    "id": "familienkonferenz",
    "titel": "Familienkonferenz",
    "synonyme": [
@@ -3529,13 +5637,17 @@ window.WISSEN = {
     "Familienschlüssel",
     "Giraffenrunde",
     "Konflikte gemeinsam lösen",
-    "Familienkonferenz ab welchem Alter"
+    "Familienkonferenz ab welchem Alter",
+    "niederlagelose Methode",
+    "Gordon",
+    "Familienprotokoll"
    ],
    "fragen": [
     "Wie führe ich eine Familienkonferenz durch?",
     "Ab welchem Alter kann man eine Familienkonferenz machen?",
     "Was tun, wenn jemand nicht mitmachen will?",
-    "Wie beziehe ich kleine Kinder in Entscheidungen ein?"
+    "Wie beziehe ich kleine Kinder in Entscheidungen ein?",
+    "Brauchen wir eine Familienkonferenz, wenn es bei uns gut läuft?"
    ],
    "alter": [
     "3-6",
@@ -3549,11 +5661,11 @@ window.WISSEN = {
    "kurz": "Kathy Weber beschreibt die Familienkonferenz als Ritual, in dem alle freiwillig Konflikte auf Augenhöhe besprechen und eine Lösung suchen, mit der alle einverstanden sind. Es gibt keine Altersvorgabe; sie hält spielerisches Beginnen ab etwa vier Jahren für sinnvoll. Je kleiner die Kinder, desto kürzer die Runde und desto weniger Themen.",
    "tipps": [
     "Beginnt klein: Findet gemeinsam einen eigenen Namen für das Treffen, das kann schon das erste Mal sein.",
-    "Gestaltet eine einladende Atmosphäre mit gutem Ort, Getränken und Snacks, und haltet Zettel und Stift bereit.",
+    "Sammelt Ideen zuerst ohne Bewertung und schreibt alles auf, auch Verrücktes; bewertet danach zum Beispiel mit Daumen hoch oder runter.",
     "Sammelt Themen über die Woche sichtbar auf einem Zettel, zum Beispiel am Kühlschrank, und entscheidet gemeinsam, womit ihr anfangt.",
     "Startet mit einer Giraffenrunde: Jeder sagt, wie er sich fühlt und welches Bedürfnis erfüllt oder unerfüllt ist.",
     "Wer ein Thema mitgebracht hat, schildert zuerst und bekommt Einfühlung; dann geben die anderen ihre Sicht, und ihr gebt wieder, was ihr gehört habt.",
-    "Sammelt Ideen und einigt euch auf eine Lösung, die für alle tragbar ist; schreibt sie auf, auch bis wann sie gilt, und lasst alle unterschreiben.",
+    "Sammelt Ideen und einigt euch auf eine Lösung, die für alle tragbar ist; schreibt sie auf, auch bis wann sie gilt, und lasst alle unterschreiben. Haltet das Treffen als Schutzraum: Was gesagt wird, darf später nicht gegeneinander verwendet werden.",
     "Haltet die Treffen kurz: bei kleinen Kindern höchstens ein Thema, bei älteren zwei. Verabredet am Ende den nächsten Termin.",
     "Fragt bei Unlust, was die Person braucht, denn Lust ist kein Bedürfnis.",
     "Familienschlüssel: Vereinbart ein Wort oder eine Geste, etwa \"Giraffenherz\", mit der man sich an die Verbindung erinnern darf, und bedankt euch, wenn euer Kind euch erinnert."
@@ -3562,6 +5674,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber findet die Familienkonferenz aus eigener Erfahrung sehr gelungen und sieht sie vor allem als Ritual für Verstehen und Verstandenwerden, nicht als Pflicht: Mitmachen ist freiwillig, jede Meinung zählt, alle Gefühle dürfen sein. Es gehe nicht darum, dass Konflikte sofort gelöst sind; klappt eine Absprache nicht, kommt das Thema erneut auf die Liste, Dauerbrenner wie Mithilfe im Haushalt brauchten oft fünf oder sechs Gespräche. In einer anderen Folge fragt man in der Konferenz nicht, was die Kinder wollen, sondern was sie brauchen; Wünsche werden in Bedürfnisse übersetzt, und die Eltern nennen höchstens drei eigene. Ehrlich benennt sie eine Grenze: Ohne Kooperations- und Kompromissbereitschaft funktioniert es nicht, und für die Leitung setzt sie etwas Wissen in GfK voraus. Kreativität ist ausdrücklich erwünscht."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide sowie ihre Gäste schätzen die Familienkonferenz wie Kathy Weber als Weg, Lösungen auf Augenhöhe zu finden, bei dem alle gesehen werden. Sie differenzieren aber: Eine Gästin nennt sie ein Werkzeug für Familien, in denen jemand unglücklich ist, und bei guter Stimmung nicht nötig. Es solle kein Pflichttermin sein und nur Bereiche betreffen, die wirklich entschieden werden können; eine getroffene Entscheidung gilt dann auch. Ergänzend nennen sie das Protokoll mit Unterschrift oder Zeichen und eine Methode ohne Verlierer nach Gordon, bei der man die Bedürfnisse hinter einer Lösung sucht und die Umsetzung später überprüft. Daniel Graf sagt zudem, dass ihm das Lösungsfinden auf Augenhöhe selbst immer noch schwerfällt."
     }
    ],
    "quellen": [
@@ -3612,6 +5728,22 @@ window.WISSEN = {
      "datum": "2024-12-02",
      "minute": "20:46",
      "thema": "Kinder nach ihren Bedürfnissen fragen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 229,
+     "titel": "Die Familienkonferenz – wo Klein und Groß zusammen wachsen",
+     "datum": "2026-03-31",
+     "minute": "01:53",
+     "thema": "Warum die Familienkonferenz und Haltung der Gästinnen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 238,
+     "titel": "Kommunikation nach Gordon - für mehr Verständnis und Verbundenheit",
+     "datum": "2026-06-02",
+     "minute": "38:59",
+     "thema": "Die sechs Schritte der niederlagelosen Methode"
     }
    ],
    "verwandt": [
@@ -3619,7 +5751,8 @@ window.WISSEN = {
     "schule-mitbestimmung",
     "beduerfnisse-erkennen",
     "kooperation-zuhoeren",
-    "geschwisterstreit"
+    "geschwisterstreit",
+    "konflikte-familie"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Wie führe ich eine Familienkonferenz durch?“. Hier steht, was dahinter stecken kann und was helfen kann."
@@ -3637,7 +5770,11 @@ window.WISSEN = {
     "Angst vor Fehlern",
     "Bedauern statt Entschuldigung",
     "Scham und Schuld",
-    "sich beim Kind entschuldigen"
+    "sich beim Kind entschuldigen",
+    "Bindungsperfektionismus",
+    "Mom Guilt",
+    "schlechtes Gewissen",
+    "Perfektionismus beim Kind"
    ],
    "fragen": [
     "Muss ich als Mutter oder Vater perfekt sein?",
@@ -3645,7 +5782,9 @@ window.WISSEN = {
     "Traumatisiere ich mein Kind, wenn ich schimpfe?",
     "Welchen Erziehungstipps soll ich glauben?",
     "Was ist schlimmer, Fernsehen oder gestresste Eltern?",
-    "Wie entschuldige ich mich bei meinem Kind?"
+    "Wie entschuldige ich mich bei meinem Kind?",
+    "Was tun, wenn mein Kind Perfektionist ist?",
+    "Wie werde ich das schlechte Gewissen los?"
    ],
    "alter": [
     "0-1",
@@ -3666,8 +5805,8 @@ window.WISSEN = {
     "Schaut ehrlich hin, was nicht funktioniert, statt es mit Temperament oder Phase wegzuerklären.",
     "Fragt euch, was euch antreibt und welche Angst dahintersteckt, und prüft ehrlich, ob das Befürchtete wirklich passiert; oft geht es den Kindern gut, auch wenn ihr mal laut seid.",
     "Entschuldigt euch bei eurem Kind mit dem Gedanken, dass das Verhalten nicht in Ordnung war, ihr selbst aber kein schlechter Mensch seid, und ändert, was euch dazu gebracht hat. Kathy Weber (gfk) empfiehlt statt der Entschuldigung ein Bedauern: Ihr sagt, was ihr getan habt und welches Bedürfnis dabei offen blieb, und betont, dass das Kind nicht schuld ist.",
-    "Ruft nach einem schlechten Tag einen lieben Menschen an und erinnert euch, dass morgen ein neuer Tag mit neuen Chancen kommt und Bindung sich neu aufbauen lässt.",
-    "Tauscht euch mit anderen Eltern aus, denn das Gefühl, nicht allein zu sein, entlastet enorm."
+    "Ruft nach einem schlechten Tag einen lieben Menschen an, tauscht euch mit anderen Eltern aus und erinnert euch, dass morgen ein neuer Tag kommt und Bindung sich neu aufbauen lässt; das Gefühl, nicht allein zu sein, entlastet enorm.",
+    "Fragt euch bei jedem To-do, ob es ein Muss oder nur ein Anspruch ist, und lockert in einer einzelnen belastenden Situation etwas; macht das Loslassen aber nicht zum nächsten To-do."
    ],
    "sichtweisen": [
     {
@@ -3681,6 +5820,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber erklärt, dass jeder Mensch in jedem Moment sein einzig Mögliches tut, auch wenn er hinterher anders reagiert hätte, als er wollte. Hinter dem Druck, perfekt zu sein, sieht sie kein echtes Bedürfnis, sondern eher den Wunsch nach Harmonie, Annahme und Wertschätzung für sich selbst. Schuldgefühle und Selbstverurteilung lähmen laut ihr; sie verzichtet bewusst auf das Wort Entschuldigung, weil es Schuld und damit ein Richtig und Falsch voraussetze. Stattdessen bedauert man in der Gewaltfreien Kommunikation (GfK): Man benennt, was geschehen ist, und welches Bedürfnis dabei unerfüllt blieb. Eltern sollen zudem zeigen, dass sie im Prozess sind, und Kinder entlasten, die sich schnell schuld fühlen, wenn Eltern überfordert sind. Anders als Nicola Schmidt, die das Entschuldigen als Königsdisziplin nennt, lehnt sie das Wort und den Schuldgedanken ab; sie räumt ein, dass vielen das schwerfällt und dass sie selbst nicht perfekt ist."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide kommen in vielen Folgen auf Perfektionismus zurück, oft aus eigener Erfahrung: Katja Seide erzählt, dass sie sich auch deshalb alles richtig machen wollte, weil das Kind lange gewünscht war. Mehrere Gästinnen und Gäste sehen den Druck weniger als persönliches Versagen, sondern als Folge von Social-Media-Bildern, gesellschaftlichen Ansprüchen, Kontrollbedürfnis und alten Mustern aus der eigenen Kindheit. Sie betonen übereinstimmend mit mutti und artgerecht, dass gut genug reicht und sich Brüche reparieren lassen. Neu gegenüber den anderen Podcasts ist der Blick auf den Perfektionismus bedürfnisorientierter Eltern: Mehrere Gäste warnen davor, Bindungsorientierung zum Hochleistungsprojekt zu machen, und raten, Loslassen nicht zum nächsten To-do zu machen. Auch Kinder können Perfektionisten werden, und beim Umgang damit sind Hosts und Gästin nicht ganz einig: Katja Seide würde Fehler eher aktiv üben, die Gästin hält das für zu weit weg von dem, was solche Kinder aushalten."
     }
    ],
    "quellen": [
@@ -3694,35 +5837,11 @@ window.WISSEN = {
     },
     {
      "podcast": "mutti",
-     "nr": 33,
-     "titel": "Vorbildlich unperfekt - Alles über Marlies Buch",
-     "datum": "2025-09-17",
-     "minute": "50:09",
-     "thema": "Unperfekt und Tipps als Buffet"
-    },
-    {
-     "podcast": "mutti",
      "nr": 37,
      "titel": "Welche Fehler machen wir?",
      "datum": "2026-03-10",
      "minute": "36:42",
      "thema": "Aufopferungsvolle Fehler eingestehen"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 47,
-     "titel": "Was tun bei Hauen, Ausschließen und Wutanfällen? - 100 Folgen Special",
-     "datum": "2026-05-19",
-     "minute": "29:10",
-     "thema": "Wohlwollen und Angst vor eigenen Fehlern"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 4,
-     "titel": "Harmonie mit den Großeltern",
-     "datum": "2024-12-08",
-     "minute": "51:33",
-     "thema": "Abwägen: Was ist schädlicher?"
     },
     {
      "podcast": "artgerecht",
@@ -3749,12 +5868,28 @@ window.WISSEN = {
      "thema": "Bedauern statt Entschuldigung am Beispiel Anschreien"
     },
     {
-     "podcast": "gfk",
-     "nr": 112,
-     "titel": "Unperfekte Mama und Angst im Bauch: Herzensmomente mit Kindern",
-     "datum": "2024-06-03",
-     "minute": "04:46",
-     "thema": "Eigene Fehler bedauern und dem Kind sagen, dass es nicht schuld ist"
+     "podcast": "wunschkind",
+     "nr": 113,
+     "titel": "Wie wir mit Schuldgefühlen und schlechtem Gewissen umgehen",
+     "datum": "2023-05-16",
+     "minute": "03:43",
+     "thema": "Wie Schuldgefühle entstehen und wozu sie dienen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 153,
+     "titel": "Bindung ohne Burnout - mit Nora Imlau",
+     "datum": "2024-10-15",
+     "minute": "07:19",
+     "thema": "Bindungsperfektionismus und moralische Neutralität"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 209,
+     "titel": "Perfektionismus und Prüfungsangst",
+     "datum": "2025-11-11",
+     "minute": "01:19",
+     "thema": "Perfektionismus bei Kindern vs. Ehrgeiz"
     }
    ],
    "verwandt": [
@@ -3763,10 +5898,120 @@ window.WISSEN = {
     "mental-load",
     "erziehungsstile",
     "trigger-inneres-kind",
-    "loben"
+    "selbstwert-kind"
    ],
    "medizinisch": false,
    "einleitung": "Eltern setzen sich oft unter Druck, in der Erziehung alles richtig zu machen, und zweifeln bei jedem Fehler an sich. Dazu kommen widersprüchliche Ratschläge, welchen man glauben soll."
+  },
+  {
+   "id": "fieber",
+   "titel": "Fieber beim Kind",
+   "synonyme": [
+    "Fieber senken",
+    "Fiebersaft",
+    "Fiebermittel",
+    "Ibuprofen",
+    "Paracetamol",
+    "Wadenwickel",
+    "hohes Fieber",
+    "Fieber Baby",
+    "Fieberkrampf"
+   ],
+   "fragen": [
+    "Soll ich das Fieber meines Kindes senken?",
+    "Ab wann ist Fieber gefährlich?",
+    "Was mache ich bei einem Fieberkrampf?",
+    "Darf mein Kind mit Fieber in die Kita oder Schule?",
+    "Mein Baby ist noch ganz klein und hat Fieber, was tun?"
+   ],
+   "alter": [
+    "0-1",
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "baby",
+    "eltern",
+    "entwicklung"
+   ],
+   "kurz": "Laut dem Kinderarzt, der in der Podcast-Folge zu Gast ist, ist Fieber eine sinnvolle Reaktion des Körpers und kein Feind. Seine Faustregel: Schmerzen lindern, Fieber selbst nicht senken. Entscheidend ist, wie es dem Kind geht, nicht die Zahl auf dem Thermometer. Bei ganz kleinen Babys und bei Krampfanfällen gelten andere Regeln. Bei Unsicherheit holt euch ärztlichen Rat.",
+   "tipps": [
+    "Schaut auf den Zustand eures Kindes statt nur auf die Temperatur: Ein Kind, das trinkt, schläft und noch spielt, braucht laut den Hosts und ihren Gästen meist kein Mittel.",
+    "Bei Schmerzen (zum Beispiel bei einer Mittelohrentzündung) darf ein Schmerzmittel gegeben werden; Wahl und Dosierung klärt ihr mit der Kinderärztin oder dem Kinderarzt.",
+    "Bei sehr kleinen Babys gilt laut einer Gästin schon ab 38 Grad: ab zum Kinderarzt, weil sie noch keine richtige Fieberreaktion zeigen. Fragt in der Praxis nach, bis zu welchem Alter diese Grenze für euer Kind gilt.",
+    "Macht es dem Kind gemütlich: ein lauwarmes Handtuch auf Hände und Füße oder ein Lappen auf der Stirn, wenn es das mag; Vorlesen und Nähe zu einer vertrauten Person helfen laut dem Gast beim Entspannen.",
+    "Bietet Flüssigkeit löffelchenweise an, ohne dem Kind hinterherzulaufen. Spielt das Kind, weint es mit Tränen, hat es Spucke im Mund und lässt es in 24 Stunden dreimal Urin, ist laut dem Gast alles im grünen Bereich.",
+    "Gebt kein Fiebermittel, nur damit das Kind trotz Fieber in Kita oder Schule gehen kann; das Fieber kommt laut den Hosts oft wieder.",
+    "Bei einem Krampfanfall mit Fieber ruft die 112 und lasst das Kind im Krankenhaus abklären; der Krampf ist meist schon vorbei, wenn Hilfe kommt.",
+    "Holt euch Unterstützung, wenn die Angst nach einem Fieberkrampf nicht schwächer wird.",
+    "Habt für Nächte und Wochenenden Fieber- und Schmerzmittel sowie ein Thermometer im Haus; im ersten Lebensjahr empfiehlt eine Gästin das Rektalthermometer, später ein Ohrthermometer."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "In der Folge zu Fieber und Krämpfen vertritt ein Kinderarzt eine klar zurückhaltende Haltung: Fieber sei der Wachhund des Körpers, man solle nach dem Grund schauen, statt ihn zu beruhigen. Er kritisiert, dass viele Kollegen reflexartig Fiebersaft verschreiben, und räumt zugleich ein, dass die Studienlage beim Menschen dünn ist. Katja Seide beobachtet bei ihren eigenen Kindern, dass sie nach Fiebersaft munter herumtoben und sich überfordern. Der Arzt hat Verständnis dafür, dass Eltern aus Angst doch senken, weil Handeln dann Ruhe gibt. Eine Gästin in einer späteren Folge bestätigt die Linie (Schmerzmittel statt Fiebermittel, Zustand statt Zahl), nennt aber für kleine Babys eine klare Grenze. Ein weiterer Kinderarzt betont für Kita und Schule: Fieber ist ein No-Go für die Betreuung, und Medikamente dafür zu geben, nennt Katja Seide „gesund dopen“. Beim Fieberkrampf beruhigt der Arzt, dass er in der Regel harmlos ist, rät aber zur ärztlichen Abklärung; die Hosts betonen, dass Wissen Eltern Angst nimmt. Medizinische Aussagen geben Laien oder einzelne Gäste wieder und ersetzen keine ärztliche Beratung."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 15,
+     "titel": "Fieber und Krämpfe",
+     "datum": "2019-06-11",
+     "minute": "02:18",
+     "thema": "Funktion des Fiebers, Wachhund, Daumenregel"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 15,
+     "titel": "Fieber und Krämpfe",
+     "datum": "2019-06-11",
+     "minute": "21:06",
+     "thema": "Was ist ein Fieberkrampf, was tun?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 165,
+     "titel": "Kindergesundheit heute - Schluss mit gefährlichem Halbwissen",
+     "datum": "2025-01-07",
+     "minute": "35:53",
+     "thema": "Fieber als Helfer, Schmerzmittel statt Fiebermittel"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 130,
+     "titel": "Erste Hilfe bei Babys und Kindern",
+     "datum": "2024-01-09",
+     "minute": "17:04",
+     "thema": "Hausapotheke und Thermometer"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 104,
+     "titel": "Besuch beim Kinderarzt – wie man Kinder darauf vorbereitet und worauf man achten sollte",
+     "datum": "2023-01-10",
+     "minute": "23:57",
+     "thema": "Fieber und fiebersenkende Mittel vor Kita und Schule"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 15,
+     "titel": "Fieber und Krämpfe",
+     "datum": "2019-06-11",
+     "minute": "33:17",
+     "thema": "Pseudokrupp und Nachtschreck"
+    }
+   ],
+   "verwandt": [
+    "erste-hilfe",
+    "arztbesuch",
+    "baby-hitze",
+    "zahnen-zaehne",
+    "kita-eingewoehnung"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Soll ich das Fieber meines Kindes senken?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "flaeschchen",
@@ -3779,7 +6024,10 @@ window.WISSEN = {
     "Zufüttern",
     "Stilldruck",
     "Baby nimmt keine Flasche",
-    "Clusterfeeding"
+    "Clusterfeeding",
+    "Flaschenkaries",
+    "Nuckelflasche",
+    "Flasche bei Hitze"
    ],
    "fragen": [
     "Ist das Fläschchen schlecht für mein Baby?",
@@ -3804,12 +6052,18 @@ window.WISSEN = {
     "Wägt ab, wie viel Kraft euch eine Maßnahme spart und wie viel entspannter ihr dadurch seid.",
     "Wenn das Baby die Flasche nicht versteht, gebt zuerst abgepumpte Muttermilch hinein, damit es den Zusammenhang lernt, und bietet die Flasche mehrfach an.",
     "Probiert verschiedene Prämilch-Sorten aus, denn Babys können beim Geschmack wählerisch sein.",
-    "Achtet auf die Temperatur, denn bei einem Baby passte der Handgelenkstest nicht und es trank lieber etwas wärmere Milch, und aus der Community kam der ungetestete Tipp, bei langsamem Trinken das Saugloch zu vergrößern."
+    "Achtet auf die Temperatur, denn bei einem Baby passte der Handgelenkstest nicht und es trank lieber etwas wärmere Milch, und aus der Community kam der ungetestete Tipp, bei langsamem Trinken das Saugloch zu vergrößern.",
+    "Bei sehr heißen Tagen nennen die Hosts als mögliche Maßnahme, die Flasche häufiger anzubieten und die Milch höchstens um 5 bis 10 Prozent stärker zu verdünnen; sprecht dazu im Zweifel mit eurer Ärztin oder eurem Arzt.",
+    "Gebt zum Einschlafen im Bett Wasser statt Saft oder gesüßtem Tee und gewöhnt euer Kind bis etwa zum zweiten Lebensjahr ans Trinken aus einem normalen Gefäß."
    ],
    "sichtweisen": [
     {
      "podcast": "mutti",
      "text": "Die Hosts kritisieren den Druck auf Mütter, auf keinen Fall eine Flasche zu geben, deutlich und nennen die Debatte ideologisch. Sie sehen Stillberaterinnen und Stimmen, die Stillen um jeden Preis fordern, kritisch. Sie argumentieren, dass Babys schon immer nicht nur von der eigenen Mutter ernährt wurden, und dass heute die ganze Verantwortung bei der Mutter liege, obwohl kaum jemand Stillen im Alltag lernen könne. Nach ihrer Darstellung zeigen Studien kaum Nachteile der Flasche, wenn Störfaktoren herausgerechnet werden. Stillen sei etwas besser, aber nicht so viel, dass die Flasche schadet. Eine Host stillt beim dritten Kind gern, findet das praktisch und betont trotzdem, dass die Flasche völlig in Ordnung ist. Der andere Host sagt, Stillen könne logisch nachvollziehbar Vorteile haben, beide sehen den Unterschied aber als gering. Sie vermuten, dass gerade Mütter, die sich selbst durchs Stillen gequält haben, andere am stärksten verurteilen. Medizinische Details wie Temperatur und Hygiene geben sie ausdrücklich nur mit Vorbehalt wieder. Das Sterilisieren sei bei einem Baby von mehreren Monaten laut ihnen weniger kritisch als bei Neugeborenen."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Katja Seide und Daniel Graf stellen das Flaschenfüttern als gleichwertig bedürfnisorientiert dar, weil auch dabei Körperkontakt, Blickkontakt und Saugen möglich sind und die Entscheidung bei der Mutter liegt. Muttermilch nennen sie weiter ein Wunder, doch Bedürfnisse der Eltern zählen für sie mit, was die Entlastungs-Haltung der mutti-Hosts stützt. Daniel Graf fragt als Gegenüber kritisch nach, ob sich so jedes Kindbedürfnis hintanstellen ließe; Katja Seide antwortet, man müsse abwägen, welches Bedürfnis sich anders erfüllen lässt. Sie räumt ein, das Argument könne missbraucht werden. In einer anderen Folge raten Gast und Hosts (zur Zahngesundheit), Kinder mit etwa zwei Jahren an normale Gefäße zu gewöhnen und im Bett kein süßes Getränk aus der Nuckelflasche zu geben. Zur Flasche bei Hitze nennen sie eine kleine mögliche Abweichung bei der Verdünnung; das ist keine ärztliche Empfehlung."
     }
    ],
    "quellen": [
@@ -3852,6 +6106,30 @@ window.WISSEN = {
      "datum": "2024-12-08",
      "minute": "50:28",
      "thema": "Eigene Stillerfahrung und Flasche als Entlastung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 119,
+     "titel": "Babys verstehen und gelassen begleiten",
+     "datum": "2023-08-08",
+     "minute": "30:04",
+     "thema": "Bedürfnisse von Baby und Mutter abwägen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 68,
+     "titel": "Brauchen Babys bei Hitze zusätzlich Wasser?",
+     "datum": "2021-08-10",
+     "minute": "11:36",
+     "thema": "Flaschenkinder bei Hitze"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 108,
+     "titel": "Wie Zähne stark und gesund bleiben",
+     "datum": "2023-03-07",
+     "minute": "34:08",
+     "thema": "Flaschenkaries im Bett"
     }
    ],
    "verwandt": [
@@ -3859,7 +6137,8 @@ window.WISSEN = {
     "erste-zeit-mit-baby",
     "erschoepfte-eltern",
     "beikost",
-    "wochenbett"
+    "wochenbett",
+    "baby-hitze"
    ],
    "medizinisch": true,
    "einleitung": "Manche Mütter stillen nicht oder nicht ausschließlich und fühlen sich deshalb schuldig, weil sie fürchten, dem Baby zu schaden. Dazu kommen praktische Fragen, wenn das Baby die Flasche nicht annimmt."
@@ -3876,14 +6155,19 @@ window.WISSEN = {
     "müssen und sollen",
     "Sprache mit Kindern",
     "man-Sätze",
-    "Machtkampf vermeiden"
+    "Machtkampf vermeiden",
+    "Sarkasmus",
+    "Etiketten",
+    "innere Stimme",
+    "Wenn-dann-Sätze"
    ],
    "fragen": [
     "Wie spreche ich mit meinem Kind, damit es mitmacht?",
     "Warum soll ich das Wort „aber“ vermeiden?",
     "Wie formuliere ich Aufforderungen ohne „bitte“ und „müssen“?",
     "Was sage ich statt „immer“ und „nie“?",
-    "Wie sage ich Nein, ohne die Gefühle meines Kindes abzutun?"
+    "Wie sage ich Nein, ohne die Gefühle meines Kindes abzutun?",
+    "Welche Sätze schaden dem Selbstbild meines Kindes?"
    ],
    "alter": [
     "1-3",
@@ -3901,16 +6185,20 @@ window.WISSEN = {
     "Übersetzt „man“-Sätze in Ich-Sätze und nennt, was euch wichtig ist: „Mir ist Hygiene wichtig, deshalb bitte ich dich, die Füße vom Tisch zu nehmen.“",
     "Fragt statt „bitte räum auf“ nach der Bereitschaft: „Bist du bereit, dein Zimmer aufzuräumen?“ Kathy Weber hält „bitte“ oft für eine verpackte Forderung.",
     "Fragt euch bei jedem „muss“ oder „soll“, welches Bedürfnis dahintersteckt: „Ich will früh aufstehen, weil mir Verlässlichkeit wichtig ist.“ Findet ihr keins, könnt ihr es lassen.",
-    "Ersetzt „immer“ und „nie“ durch eine konkrete Beobachtung im Hier und Jetzt: „Deine Schuhe und Jacke liegen im Wohnzimmer.“",
+    "Ersetzt „immer“ und „nie“ durch eine konkrete Beobachtung im Hier und Jetzt: „Deine Schuhe und Jacke liegen im Wohnzimmer.“, und verteilt keine Etiketten wie „faul“ oder „frech“; sie treffen laut einer Gästin das Wesen des Kindes statt sein Verhalten.",
     "Statt „gleich“ nennt eine konkrete Zeit oder einen Ablauf, etwa „nachdem ich die Wäsche aufgehängt habe“, oder nehmt eine Sanduhr zu Hilfe.",
-    "Beschreibt, was ihr wollt, statt was nicht: „Das Messer bleibt auf dem Tisch“ oder „Du bleibst an meiner Hand“. Laut Kathy Weber blendet das Gehirn das „nicht“ aus.",
+    "Beschreibt, was ihr wollt, statt was nicht: „Das Messer bleibt auf dem Tisch“ oder „Du bleibst an meiner Hand“. Laut Kathy Weber blendet das Gehirn das „nicht“ aus Verzichtet außerdem auf Ironie und Andeutungen („es zieht“), die kleine Kinder laut einer Gästin schlecht verstehen.",
     "Statt „Ich verstehe dich“ benennt vermutetes Gefühl und Bedürfnis: „Du ärgerst dich, weil der Reißverschluss klemmt.“",
-    "Fangt klein an: Sucht euch ein Wort aus, beobachtet eine Woche, wann ihr es benutzt, und notiert Alternativen, ohne Druck."
+    "Fangt klein an: Sucht euch ein Wort aus, beobachtet eine Woche, wann ihr es benutzt, und notiert Alternativen, ohne Druck Eine Gästin rät außerdem, einige Tage aufzuschreiben, welche Sätze oft fallen, und die Kinder zu fragen; sie melden das laut ihr erstaunlich genau zurück."
    ],
    "sichtweisen": [
     {
      "podcast": "gfk",
      "text": "Kathy Weber geht es um Verstehen und Verstandenwerden. Das Wort „aber“ wirke wie ein Radiergummi für das Vorherige und stelle das eigene Bedürfnis über das des anderen; „gleichzeitig“ lasse beide gelten, danach suche man einen Kompromiss oder übernehme als Elternteil die Führung. „Man“-Sätze sieht sie als Verweis auf alte Glaubenssätze, hinter „müssen“ stecke immer ein unerfülltes Bedürfnis, und „immer“ und „nie“ seien Vorwürfe statt Beobachtungen. Sie hält auch „bitte“ für belastet, weil es in der deutschen Sprache oft eine Forderung verpackt und die Freiwilligkeit fehlt, die sie beim vierten GfK-Schritt als Einladung versteht. „Ich verstehe dich“ wirke oft wie Wegwischen und gespielte Empathie. Zugleich betont sie mehrfach, dass die Wörter nicht falsch sind, sie selbst „eigentlich“ noch oft benutzt und dass man sie auch bewusst sagen darf. Im Austausch mit einer Freundin über „müssen“ bleiben beide uneinig: Die Freundin will das Wort für sich behalten, Kathy Weber lädt ein, darüber nachzudenken. Eine Mutter berichtet, dass das Hinterfragen von Muss-Regeln am Esstisch das Essen harmonischer machte."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "In wunschkind geht es weniger um einzelne Wörter als um die Wirkung von Sprache auf das Selbstbild: Mehrere Gästinnen erklären, dass Kinder die Sätze ihrer Eltern übernehmen und sie zur inneren Stimme wird, vor allem bei oft wiederholten Etiketten, abgewerteten Gefühlen („Stell dich nicht so an“) und Wenn-dann-Drohungen. Das deckt sich mit gfk im Rat, zu beschreiben statt zu bewerten, in Ich-Botschaften zu sprechen und „immer“ und „du bist“ wegzulassen. Neu sind Hinweise zur Entwicklung: Eine Gästin sagt, Sarkasmus, Subtext und Verneinungen verstehen kleine Kinder schlecht, und Aufträge sollten klein und positiv formuliert sein. Gästinnen betonen Präsenz statt Perfektion, und Daniel Graf gibt zu, selbst in Muster zu verfallen. Katja Seide merkt als Lehrerin an, dass es im Schulalltag eine Lücke zwischen Theorie und Praxis gibt, was die Gästin als Kritik am System sieht."
     }
    ],
    "quellen": [
@@ -3955,12 +6243,28 @@ window.WISSEN = {
      "thema": "Man-Sätze in Ich-Sätze übersetzen"
     },
     {
-     "podcast": "gfk",
-     "nr": 208,
-     "titel": "“Einen Scheiß muss ich!” 7 Sätze, die deine Elternschaft verändern",
-     "datum": "2026-03-02",
-     "minute": "39:44",
-     "thema": "Freiwilligkeit statt Müssen"
+     "podcast": "wunschkind",
+     "nr": 215,
+     "titel": "Die innere Stimme unserer Kinder - wie Sprache Beziehung formt",
+     "datum": "2025-12-23",
+     "minute": "03:18",
+     "thema": "Warum Sprache zur inneren Stimme des Kindes wird"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 107,
+     "titel": "Liebevolle Kommunikation – miteinander sprechen, miteinander wachsen.",
+     "datum": "2023-02-21",
+     "minute": "25:32",
+     "thema": "Raum heller oder dunkler?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 133,
+     "titel": "Kinderleicht mit Kindern ins Gespräch kommen",
+     "datum": "2024-02-20",
+     "minute": "15:25",
+     "thema": "Was Kinder sehr spät verstehen: Sarkasmus, Subtext, Verneinungen"
     }
    ],
    "verwandt": [
@@ -3968,7 +6272,8 @@ window.WISSEN = {
     "kooperation-zuhoeren",
     "gfk-grundannahmen",
     "grenzen-setzen",
-    "wertschaetzung"
+    "erwartungen-zuschreibungen",
+    "kommunikation-mit-kindern"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Wie spreche ich mit meinem Kind, damit es mitmacht?“. Hier steht, was dahinter stecken kann und was helfen kann."
@@ -3982,7 +6287,9 @@ window.WISSEN = {
     "Überforderung durch Ausflüge",
     "Wochenendstress",
     "zu viel Programm",
-    "Kind will nichts unternehmen"
+    "Kind will nichts unternehmen",
+    "Babykurse",
+    "Langeweile aushalten"
    ],
    "fragen": [
     "Mein Kind will am Wochenende nichts unternehmen, was tun?",
@@ -3990,6 +6297,8 @@ window.WISSEN = {
     "Warum ist mein Kind nach der Schulwoche so unleidig?"
    ],
    "alter": [
+    "0-1",
+    "1-3",
     "3-6",
     "6-10"
    ],
@@ -4003,12 +6312,18 @@ window.WISSEN = {
     "Prüft, ob ein geplanter Termin wirklich zu eurer Energie passt, nicht nur in den Kalender.",
     "Hört auf den Widerstand eures Kindes und fragt euch, ob die Anforderung vielleicht zu hoch ist.",
     "Gebt nach, wenn euer Kind keine Lust auf Zoo oder Besuch hat, und bleibt zu Hause, etwa mit Kakao im Bett, Vorlesen, Kitzeln, Aus-dem-Fenster-Schauen oder Seifenblasen.",
-    "Seht das Hören auf eure Kinder als Selbstfürsorge, weil es auch euch Überlastung erspart."
+    "Seht das Hören auf eure Kinder als Selbstfürsorge, weil es auch euch Überlastung erspart.",
+    "Lasst Kinder auch mal im Schlafanzug den ganzen Tag frei spielen; freie Zeit hilft laut der Gästin der Konzentration und der inneren Motivation.",
+    "Wählt Angebote, die euch guttun, und lasst euch nicht in alles hineindrängen; im Urlaub reicht, was der Familie gefällt, etwa Karten spielen oder spazieren."
    ],
    "sichtweisen": [
     {
      "podcast": "artgerecht",
      "text": "Nicola Schmidt sagt, Kinder zeigten Überlastung selten mit Worten, sondern mit Sträuben, Bockigkeit und fehlender Kooperation. Nach einer aufregenden Schul- oder Kindergartenwoche wollten sie am Wochenende oft nichts mehr unternehmen. Kinder hätten ihrer Ansicht nach oft ein feineres Gespür als Erwachsene dafür, was die Familie leisten kann. Sie räumt ein, selbst oft noch etwas draufpacken zu wollen, und hat gelernt, dass ihre Kinder mit ihrem Widerstand recht hatten. Gemeinsames Seifenblasenpusten ist für sie wertvoller als ein Zoo- oder Museumsbesuch unter Druck. Als Beispiel nennt sie ihr Camp, in dem es keine Termine gibt und die Zeit trotzdem sehr gut ist."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Mit einer Gästin (Dr. Bianca Kellner-Zotz) sprechen Daniel Graf und Katja Seide über volle Familienkalender. Sie nennt eine Befragung, nach der Menschen 2020 im Schnitt etwa zehn regelmäßige Freizeitaktivitäten hatten. Baby- und Kleinkindkurse seien eher für die Mutter da als fürs Kind; Struktur, Tagesrhythmus und Austausch mit anderen Eltern könnten aber gut tun, problematisch werde es erst bei Stress. Wie bei Nicola Schmidt gilt: Es kommt darauf an, was der Familie guttut. Zusätzlich betont die Gästin, dass Kinder mit viel freier Zeit sich aus ihrer Beobachtung besser konzentrieren und Begeisterung von innen entwickeln. Daniel Graf und Katja Seide erzählen, dass sie selbst viele Kurse gemacht haben und bei Wochenendabenteuern anderer ein schlechtes Gewissen bekommen."
     }
    ],
    "quellen": [
@@ -4035,11 +6350,28 @@ window.WISSEN = {
      "datum": "2024-01-09",
      "minute": "00:42",
      "thema": "Einstieg: weniger ist mehr, Erfahrung aus dem Camp"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 97,
+     "titel": "Wie die Sucht nach Aufmerksamkeit Familien unter Druck setzt mit Dr. Bianca Kellner-Zotz",
+     "datum": "2022-10-04",
+     "minute": "18:12",
+     "thema": "Baby- und Kleinkindangebote: für wen sind sie da?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 97,
+     "titel": "Wie die Sucht nach Aufmerksamkeit Familien unter Druck setzt mit Dr. Bianca Kellner-Zotz",
+     "datum": "2022-10-04",
+     "minute": "26:30",
+     "thema": "Wochenenden ohne Programm und das schlechte Gewissen"
     }
    ],
    "verwandt": [
     "reizueberflutung-vorbeugen",
     "familien-rituale",
+    "exklusivzeit",
     "erschoepfte-eltern",
     "kind-wechselt-meinung-hobbys"
    ],
@@ -4130,6 +6462,99 @@ window.WISSEN = {
    "einleitung": "Viele Eltern kennen diese Situation: „Fremdelt mein Baby beim Papa, weil ich stille?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
+   "id": "freundschaften",
+   "titel": "Freundschaften von Kindern begleiten",
+   "synonyme": [
+    "Kind hat keine Freunde",
+    "Freunde finden",
+    "schwierige Freundschaft",
+    "toxische Freundschaft",
+    "Kind wird kommandiert",
+    "Clique",
+    "schlechter Umgang",
+    "introvertiertes Kind",
+    "Liebeskummer Teenager"
+   ],
+   "fragen": [
+    "Mein Kind sagt, es hat keine Freunde, was kann ich tun?",
+    "Wie helfe ich einem schüchternen Kind, Freunde zu finden?",
+    "Ein anderes Kind kommandiert mein Kind herum, was tun?",
+    "Darf ich Freundschaften verbieten?",
+    "Was tun, wenn mir die Freunde meines Teenagers nicht gefallen?"
+   ],
+   "alter": [
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "gefuehle",
+    "entwicklung",
+    "kita"
+   ],
+   "kurz": "Laut den Gästen der Hosts braucht ein Kind ohne Freunde oft Anschubhilfe, besonders wenn es introvertiert ist. Bei schwierigen Freundschaften raten sie, die eigene Sorge zu bremsen, das Kind erzählen zu lassen und gezielt andere Kontakte zu fördern, statt zu verbieten oder zu kritisieren.",
+   "tipps": [
+    "Schaut gemeinsam hin, was genau das Problem ist und wo es Gelegenheiten für Kontakt gäbe, zum Beispiel Verein oder Interessen.",
+    "Schaut mit dem Kind ein Klassenfoto an und fragt, welche Kinder es mag und mit wem es mehr Kontakt haben könnte.",
+    "Helft am Anfang mit, zum Beispiel mit einem Ausflug, zu dem das Kind ein anderes Kind mitnehmen darf.",
+    "Schluckt bei einer schwierigen Freundschaft die eigene Sorge herunter, denn direkte Kritik am anderen Kind erzeugt laut einer Gästin Widerstand.",
+    "Fragt das Kind, ob es sich wohlfühlt, wenn das andere Kind da ist, und ob es es selbst sein kann.",
+    "Ladet gezielt Kinder ein, mit denen es eurem Kind besser geht, damit der schwierige Kontakt in den Hintergrund tritt.",
+    "Zeigt bei Jugendlichen echtes Interesse an Freunden und Partnern, ladet sie ein und sagt offen, was euch sorgt.",
+    "Bleibt ansprechbar und tröstet bei Liebeskummer, ohne den Partner schlechtzumachen.",
+    "Pflegt auch eigene Freundschaften; sie schlafen in der Anfangszeit mit Kind leicht ein und leben später oft wieder auf."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Ein Psychologe als Gast sagt, manche Menschen täten sich mit Beziehungen schwer, und introvertierte Kinder bräuchten oft Hilfe beim ersten Kontakt; danach werde es leichter. Eine andere Gästin rät bei einer Freundschaft, in der das eigene Kind kommandiert wird, zu Einsicht statt Verbot: Das Kind erzählt, wie es ihm geht, und die Eltern fördern andere Kontakte. Im Kindergartenalter lasse sich die Verabredung einfach nicht mehr anbieten, bei Schulkindern und Teenagern habe man weniger Zugriff. Für Jugendliche raten zwei Gästinnen zu Offenheit, Einladungen und Nachfragen statt Abwertung, sonst traue sich das Kind später nicht mehr, ehrlich zu sein. Daniel Graf beschreibt das Hilflosigkeitsgefühl der Eltern als schwer auszuhalten, eine Hostin nennt schlechten Umgang als eine ihrer größten Ängste. Die Teenager-Tipps sind hier ergänzend gemeint."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 114,
+     "titel": "Glück und Wohlbehagen im Familienleben fördern",
+     "datum": "2023-05-30",
+     "minute": "09:27",
+     "thema": "Beziehungsnetz zeichnen, Kindern beim Kontakt helfen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 177,
+     "titel": "Mit Kindern über schwierige Themen sprechen",
+     "datum": "2025-04-01",
+     "minute": "24:05",
+     "thema": "Schwierige Freundschaften und wie man sie anspricht"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 47,
+     "titel": "Miteinander durch die Pubertät mit Inke Hummel",
+     "datum": "2020-09-22",
+     "minute": "19:44",
+     "thema": "Offen bleiben, einladen, ins Gespräch gehen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 252,
+     "titel": "Teen-Time - zwischen Augenrollen und Umarmung",
+     "datum": "2026-09-08",
+     "minute": "37:25",
+     "thema": "Ernst nehmen, interessiert bleiben"
+    }
+   ],
+   "verwandt": [
+    "schuechternheit",
+    "kind-sozial-entwicklung",
+    "mobbing",
+    "ausschliessen-mitspielen",
+    "pubertaet-teenager",
+    "social-media-kinder"
+   ],
+   "medizinisch": false,
+   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind sagt, es hat keine Freunde, was kann ich tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
    "id": "frustrationstoleranz",
    "titel": "Frustrationstoleranz",
    "synonyme": [
@@ -4141,14 +6566,18 @@ window.WISSEN = {
     "Kind rastet aus beim Warten",
     "Geduld lernen",
     "Impulskontrolle",
-    "Kind warten lassen"
+    "Kind warten lassen",
+    "Ozean des Nein",
+    "Frust begleiten",
+    "Scheitern aushalten"
    ],
    "fragen": [
     "Mein Kind rastet aus, wenn ich nicht sofort komme, was tun?",
     "Muss ich sofort hingehen, wenn mein Baby weint?",
     "Wie lernt mein Kind, Langeweile auszuhalten?",
     "Was ist der Unterschied zwischen Wut und Frust?",
-    "Wie lerne ich selbst, Frust besser auszuhalten?"
+    "Wie lerne ich selbst, Frust besser auszuhalten?",
+    "Mein Kind rastet beim nächsten Nein aus, woran liegt das?"
    ],
    "alter": [
     "0-1",
@@ -4166,12 +6595,12 @@ window.WISSEN = {
     "Entscheidet als Eltern klar, lasst das Weinen danach zu, ohne die Entscheidung zurückzunehmen, und wendet euch dem Kind liebevoll zu, sobald es sich beruhigt hat.",
     "Macht kleine Dinge erst zu Ende, bevor ihr zum Kind geht, sagt ihm, dass es kurz warten kann, und sprecht auch mit Babys aus dem Raum, während sie warten.",
     "Bespaßt euer Kind im Alltag nicht bei jeder Langeweile, mutet ihm Wartezeiten zu, etwa bei Familienfeiern oder im Restaurant, und gebt nach einem schlechten Mal nicht auf.",
-    "Verknüpft Wünsche mit kleinen Aufgaben, zum Beispiel gibt es ein neues Ausmalbild erst, wenn das Kind auf der Rückseite selbst gemalt hat.",
     "Übt Regeln und Verlieren mit Brett- und Kartenspielen und lasst das Kind nicht grundsätzlich gewinnen.",
     "Bringt bei Frustausbrüchen in Sicherheit, was kaputtgehen könnte, und kommentiert den Frust nicht groß. Oft findet das Kind dann selbst eine Lösung.",
     "Lernt mit dem Kind, schnell wieder runterzukommen, etwa mit Atemstrategien, statt das Gefühl zu unterdrücken.",
-    "Plant im Alltag ruhigere Zeiten ein, weil Kinder nach Action-Tagen oft reizbarer sind und weniger aushalten.",
-    "Begleitet das Warten mit Worten, die zeigen, dass ihr das Kind hört („Ich höre dich, gleich gibt es etwas zu essen“), und bleibt dabei ruhig statt hektisch."
+    "Begleitet das Warten mit Worten, die zeigen, dass ihr das Kind hört („Ich höre dich, gleich gibt es etwas zu essen“), und bleibt dabei ruhig statt hektisch.",
+    "Sagt dem Kind möglichst oft Ja oder ermöglicht Dinge, damit ein einzelnes Nein ausgehalten werden kann, und erklärt, dass es diesmal eine Ausnahme ist.",
+    "Schickt das Kind mit seinem Frust nicht allein aufs Zimmer, sondern bleibt in Begleitung, und fragt nach einem Scheitern gemeinsam, was man anders machen könnte."
    ],
    "sichtweisen": [
     {
@@ -4181,6 +6610,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber sieht Frustrationstoleranz als wichtigen Entwicklungsschritt, den Kinder im normalen Alltag lernen und den Eltern nicht künstlich herstellen müssen. Sie meint damit, dass Enttäuschung, Wut und Traurigkeit sein dürfen, während ein Erwachsener da ist, der den Überblick behält. Sie ist kein Fan davon, Frust vorsorglich zu vermeiden, und kritisiert Eltern, die alles glattbügeln, aus Angst vor Konflikten. Entscheidend ist für sie das Begleiten: Gefühl und Wunsch benennen, nah bleiben, bei der Entscheidung bleiben und nicht mit Belohnung oder Strafe antworten. Dabei unterscheidet sie nach Bedürfnis: Geht es um Lebensnotwendiges wie Essen, Schlaf oder Ausscheiden, kommt das Kind zuerst. Bei Spiel und Spaß kann es kurz warten. Das Alter zählt dabei, bei sehr kleinen Kindern passt „wartet, bis es bereit ist“ nicht. Mit den mutti-Hosts teilt sie, dass Frust zugemutet und ausgehalten werden darf. Sie legt aber mehr Gewicht auf Einfühlung als auf Regeln und Übung."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide sprechen mit Gästen vor allem über Begleiten statt Vermeiden und teilen damit die Haltung von Mutti und Kathy Weber, dass Frust zugemutet werden darf. Mehrere Gäste betonen dabei, dass Frust aushalten ausdrücklich nicht Alleinlassen heißt, und sehen ständiges Abwenden von Frust kritisch: Ein Gast beschreibt, dass Kinder umso mehr ausrasten, je mehr Eltern Frust vermeiden wollen. Abweichend sieht André Stern die Ursache selten in zu wenig Training, sondern in einem Übergewicht an Neins, einem Ozean des Nein, in dem schon das nächste Nein den Ausbruch auslöst. Er rät deshalb zu viel Zufriedenheit und vielen Jas statt früher Konfrontation mit Frust. Eine Gästin empfiehlt bei Kindern mit ADHS, die oft schlecht verlieren können, Vorbilder zu nutzen, wie diese mit Misserfolg umgehen."
     }
    ],
    "quellen": [
@@ -4209,30 +6642,6 @@ window.WISSEN = {
      "thema": "Eltern treffen die Entscheidung, Frustration aushalten"
     },
     {
-     "podcast": "mutti",
-     "nr": 54,
-     "titel": "So bereiten wir unser Kind auf die Schule vor",
-     "datum": "2026-07-07",
-     "minute": "25:11",
-     "thema": "Challenges: erst etwas tun, dann kommt das Schöne"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 52,
-     "titel": "Unsere Tipps für lange Autofahrten mit Kindern",
-     "datum": "2026-06-24",
-     "minute": "17:55",
-     "thema": "Warten und Langeweile im Alltag lernen"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 48,
-     "titel": "Wie lernt man Frustrationstoleranz im Erwachsenenalter?",
-     "datum": "2026-05-26",
-     "minute": "18:07",
-     "thema": "Frustrationstoleranz und Kindheit, Kompetenz als Grundbedürfnis"
-    },
-    {
      "podcast": "gfk",
      "nr": 47,
      "titel": "63 H- wie Herausforderungen im Alltag der bedürfnisorientierten Elternschaft Teil 2",
@@ -4247,6 +6656,30 @@ window.WISSEN = {
      "datum": "2025-05-12",
      "minute": "13:23",
      "thema": "Warten fördert Frustrationstoleranz, Konflikte als Lernchance"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 60,
+     "titel": "André Stern \"Die Rhythmen und Rituale unserer Kinder\"",
+     "datum": "2021-04-06",
+     "minute": "19:23",
+     "thema": "Der Ozean des Nein"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 210,
+     "titel": "Kinder bindungsorientiert begleiten, ohne sich selbst zu verlieren",
+     "datum": "2025-11-18",
+     "minute": "13:39",
+     "thema": "Frust aushalten lassen oder unterstützen? Das Keks-Beispiel"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 254,
+     "titel": "Selbstsicher durchs Leben - was Kinder wirklich brauchen",
+     "datum": "2026-09-22",
+     "minute": "14:19",
+     "thema": "Frust und Scheitern gehören dazu"
     }
    ],
    "verwandt": [
@@ -4261,6 +6694,107 @@ window.WISSEN = {
    "einleitung": "Manche Kinder rasten aus, wenn Eltern nicht sofort kommen, etwas nicht klappt oder sie warten müssen. Eltern wissen dann oft nicht, ob sie nachgeben oder aushalten sollen."
   },
   {
+   "id": "ganzheitliche-gesundheit",
+   "titel": "Ganzheitliche Kindergesundheit und Osteopathie",
+   "synonyme": [
+    "Kindergesundheit",
+    "Darm-Hirn-Achse",
+    "Prävention Kind",
+    "Verbundenheit",
+    "Osteopathie Baby",
+    "Kraniosakraltherapie",
+    "KISS-Syndrom",
+    "Vorzugsseite",
+    "Schiefhaltung Baby"
+   ],
+   "fragen": [
+    "Was gehört zur Gesundheit meines Kindes außer Vorsorge?",
+    "Wie hängen Psyche und Körper beim Kind zusammen?",
+    "Soll ich mit meinem Baby zum Osteopathen?",
+    "Hilft Osteopathie bei Schreibabys?",
+    "Mein Baby hat eine Vorzugsseite, ist das schlimm?",
+    "Gibt es das KISS-Syndrom wirklich?"
+   ],
+   "alter": [
+    "0-1",
+    "1-3",
+    "3-6"
+   ],
+   "bereiche": [
+    "entwicklung",
+    "baby",
+    "alltag"
+   ],
+   "kurz": "Zwei Gäste des Podcasts betrachten Kindergesundheit aus unterschiedlicher Richtung: Eine Gästin sieht Gesundheit als Zusammenspiel von Körper, Psyche und Beziehung, das zu Hause beginnt. Ein anderer Gast bewertet Osteopathie bei Babys und Kindern kritisch, weil er keinen belegten Nutzen sieht. Bei Sorgen ist laut ihm die Kinderärztin oder der Kinderarzt die erste Anlaufstelle; alles hier sind Aussagen der Gäste, kein medizinischer Rat.",
+   "tipps": [
+    "Seht Gesundheit nicht nur als Sache von Vorsorgeterminen: Ernährung, Bewegung und die Beziehung in der Familie gehören laut der Gästin dazu.",
+    "Fragt bei gesundheitlichen Sorgen zuerst die Kinderärztin oder den Kinderarzt, die oder der weitere Hilfe vermitteln kann.",
+    "Fördert Verbundenheit durch Naturerfahrungen, Stille oder Bewegung, das gibt Kindern Halt.",
+    "Hilft dem Kind, Gefühle zu benennen und mit Stress umzugehen, auch nach belastenden Zeiten.",
+    "Geht ihr trotzdem zur Osteopathie, wählt laut dem Gast besser Fachleute mit medizinischem Hintergrund und Kinder-Fortbildung und meidet kraniosakrale und biodynamische Verfahren.",
+    "Betrachtet Osteopathie eher wie eine Wellnessbehandlung oder einen Babymassagekurs.",
+    "Bei Schiefhaltung des Babys eher Physiotherapie erwägen, nach Rücksprache mit der Kinderärztin oder dem Kinderarzt."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Eine Gästin mit medizinischer Praxiserfahrung kritisiert, dass Eltern Verantwortung für Gesundheit an die Medizin abgeben, und wirbt für eine Sicht, die Körper, Psyche, Beziehung und Umwelt zusammen betrachtet. Als Beispiel nennt sie die Darm-Hirn-Achse, laut der Ernährung auch ein psychisches Thema sei. Sie schätzt evidenzbasierte Medizin, hält Wissenschaft aber für ein Modell, das nicht immer ausreicht. Wichtig ist ihr, Druck zu nehmen: Ausreichend gut genügt, nicht jeder Schaden ist das Ende. Die Hosts berichten, das Thema habe bei ihnen Schuldgefühle ausgelöst, und sehen den Zwiespalt zwischen Aufklärung und Angst. In einer anderen Folge ordnet ein Gast Kinderosteopathie kritisch ein: Die Grundannahmen (Blockaden, „Primäratmung“) hält er für spekulativ, die Studienlage für unzureichend, Besserungen erklärt er mit Spontanverlauf und Placebo. Osteopath sei in Deutschland kein anerkannter Beruf. Direkte Nebenwirkungen seien selten, als indirekte Risiken nennt er unter anderem Kosten, verzögerte Behandlung und die Verunsicherung gesunder Kinder. Das KISS-Syndrom gilt ihm als unbewiesene Hypothese, Schiefhaltungen seien bei Babys normal. Er sagt zugleich, man könne es machen, wenn man die Hintergründe kenne. Die Hosts hören vor allem zu; eine von ihnen erzählt von eigener positiver Erfahrung und fragt nach der Erklärung."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 135,
+     "titel": "Kindergesundheit beginnt zu Hause",
+     "datum": "2024-03-19",
+     "minute": "08:22",
+     "thema": "Modell der vier Erfahrungsebenen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 135,
+     "titel": "Kindergesundheit beginnt zu Hause",
+     "datum": "2024-03-19",
+     "minute": "10:12",
+     "thema": "Schwachstellen der Kindermedizin, Darm-Hirn-Achse"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 216,
+     "titel": "Kinderosteopathie - Wunderhände oder Wunschdenken",
+     "datum": "2025-12-30",
+     "minute": "20:23",
+     "thema": "Studienlage insgesamt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 216,
+     "titel": "Kinderosteopathie - Wunderhände oder Wunschdenken",
+     "datum": "2025-12-30",
+     "minute": "34:20",
+     "thema": "Worauf Eltern achten können und Fazit"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 216,
+     "titel": "Kinderosteopathie - Wunderhände oder Wunschdenken",
+     "datum": "2025-12-30",
+     "minute": "10:40",
+     "thema": "Was sind Symmetriestörung und KISS-Syndrom?"
+    }
+   ],
+   "verwandt": [
+    "eltern-psyche-hilfe",
+    "psychische-gesundheit-kind",
+    "natur-draussen",
+    "schreibaby",
+    "arztbesuch",
+    "migraene-kinder"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Was gehört zur Gesundheit meines Kindes außer Vorsorge?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
    "id": "geburt",
    "titel": "Geburt vorbereiten und Geburtsort wählen",
    "synonyme": [
@@ -4272,14 +6806,21 @@ window.WISSEN = {
     "Wassergeburt",
     "Geburtsvorbereitung",
     "Geburtsbericht",
-    "Presswehen"
+    "Presswehen",
+    "Kaiserschnitt",
+    "Kaisergeburt",
+    "Doula",
+    "Geburt verarbeiten",
+    "Geburtstrauma",
+    "1-zu-1-Betreuung"
    ],
    "fragen": [
     "Wie bereite ich mich auf die Geburt vor?",
     "Klinik oder Geburtshaus?",
     "Wie finde ich den richtigen Kreißsaal?",
     "Was kann der Partner unter der Geburt tun?",
-    "Was hilft gegen Wehenschmerzen ohne PDA?"
+    "Was hilft gegen Wehenschmerzen ohne PDA?",
+    "Wie verarbeite ich eine schwere Geburt?"
    ],
    "alter": [
     "0-1"
@@ -4288,7 +6829,7 @@ window.WISSEN = {
     "baby",
     "eltern"
    ],
-   "kurz": "Am wichtigsten war aus eigener Erfahrung, dass die Gebärende sich sicher und gut aufgehoben fühlt. Dazu gehören ein bewusst gewählter Geburtsort, eine feinfühlige Hebamme und eine Begleitperson, die für sie eintritt. Das sind persönliche Erfahrungen und kein ärztlicher Rat.",
+   "kurz": "Am wichtigsten war aus eigener Erfahrung, dass die Gebärende sich sicher und gut aufgehoben fühlt. Dazu gehören ein bewusst gewählter Geburtsort, eine feinfühlige Hebamme und eine Begleitperson, die für sie eintritt. Wenn eine Geburt schwer war, lohnt es sich laut den Gästen im wunschkind-Podcast, sie zu verarbeiten. Das sind persönliche Erfahrungen und kein ärztlicher Rat; bei Unsicherheit fragt eure Hebamme oder Ärztin.",
    "tipps": [
     "Wählt den Geburtsort bewusst aus, schaut ihn euch vorher an und nehmt negative Bewertungen ernst. Ein hebammengeleiteter Kreißsaal mit Voranmeldung und Aufnahmegespräch kann sich auf Wünsche und Ängste einstellen.",
     "Sagt im Aufnahmegespräch, was ihr braucht, etwa eine besonders feinfühlige Hebamme, und bedenkt die Entfernung zur Klinik, weil Autofahren mit Wehen unangenehm ist.",
@@ -4304,6 +6845,10 @@ window.WISSEN = {
     {
      "podcast": "mutti",
      "text": "Die Hosts sprechen offen und ohne Beschönigung über ihre Geburten. Die erste verlief in einer Klinik schwierig, was sie vor allem an grober, überlasteter und teils abwertender Betreuung festmachen; sie vertrauten damals zu sehr darauf, dass die Hebamme schon weiß, was richtig ist, und kannten ihre Rechte nicht. Sie kritisieren das deutlich. Der Vater-Host formuliert den Appell an Partner zugespitzt, betont aber, dass niemand schreien oder handgreiflich werden muss. Die zweite Geburt erlebten sie als schnell und ruhig, mit Wassergeburt, die dritte fand im Geburtshaus statt. Das Geburtshaus kam für sie erst beim dritten Kind infrage, weil sie die Hebammen kannten und eine Verlegung in eine Klinik geregelt war; beim ersten Kind hätten sie sich das nicht getraut. Sie räumen ein, dass jede Frau anders gebären möchte und Erstgebärende sich oft mehr medizinische Sicherheit wünschen. Die Mutter betont, dass ihre Berichte keine Empfehlung sind. Sehr schnelle Geburten empfand sie als schmerzhafter, weil kaum Pausen bleiben, und im Nachhinein fragt sie sich, ob sie beim nächsten Mal lieber in der Klinik wäre, um etwa eine PDA als Option zu haben. Schmerzen auszuhalten, wenn es nicht nötig ist, sieht sie nicht als Tugend. Die Idee, ein Babylächeln mache alles wieder gut, finden sie zu platt."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide stimmen mit den mutti-Hosts darin überein, dass sich die Gebärende sicher aufgehoben fühlen soll und dass Begleitpersonen und eine gute Hebamme viel ausmachen. Ihre Gästin, eine Autorin und vierfache Mutter, betont zusätzlich, dass viele Frauen die erste Geburt trotz Vorbereitung als schockierend erleben und der Satz Hauptsache gesund wenig Raum für schwierige Gefühle lässt; sie rät, eine Geburt gut zu verarbeiten, bevor man in die nächste geht, zum Beispiel über den Geburtsbericht, Aufschreiben und Gespräche. Sie nennt Studien, nach denen eine durchgehende 1-zu-1-Betreuung durch eine Hebamme sehr viel bringt, und beschreibt, wie eine Kaiserschnittgeburt möglichst achtsam gestaltet werden kann. Anders als bei mutti, wo der Geburtsort im Mittelpunkt steht, geht es hier mehr um Verarbeitung und Strukturen, wobei die Gästin ausdrücklich keine Ideologie aufmachen will und Ärztinnen und Ärzten gute Absichten zuschreibt. Die Aussagen sind persönliche Einschätzungen der Gäste und keine ärztliche Empfehlung."
     }
    ],
    "quellen": [
@@ -4346,13 +6891,39 @@ window.WISSEN = {
      "datum": "2026-03-03",
      "minute": "29:05",
      "thema": "Kreislaufprobleme, niedriger Blutdruck, Cola als Rettung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 32,
+     "titel": "Das zweite Mal Eltern werden – mit Nora Imlau",
+     "datum": "2020-02-25",
+     "minute": "10:18",
+     "thema": "Geburtsschmerz und gute Geburtsbedingungen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 32,
+     "titel": "Das zweite Mal Eltern werden – mit Nora Imlau",
+     "datum": "2020-02-25",
+     "minute": "27:46",
+     "thema": "Geburt verarbeiten und sich auf die nächste vorbereiten"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 32,
+     "titel": "Das zweite Mal Eltern werden – mit Nora Imlau",
+     "datum": "2020-02-25",
+     "minute": "33:34",
+     "thema": "Kaisergeburt: achtsamer Kaiserschnitt"
     }
    ],
    "verwandt": [
+    "schwangerschaft",
     "wochenbett",
     "erste-zeit-mit-baby",
     "stillen",
-    "eltern-als-team"
+    "eltern-als-team",
+    "eltern-psyche-hilfe"
    ],
    "medizinisch": true,
    "einleitung": "Viele werdende Eltern sind unsicher, wie sie sich auf die Geburt vorbereiten, wo sie gebären und wie sie sich dort gut aufgehoben fühlen können."
@@ -4370,7 +6941,9 @@ window.WISSEN = {
     "Gefühle benennen",
     "Kind weint allein",
     "Emotionsregulation Kind",
-    "Wie kann ich sein"
+    "Wie kann ich sein",
+    "Gefühlssturm",
+    "Selbstregulation Kind"
    ],
    "fragen": [
     "Was bedeutet Gefühle begleiten konkret?",
@@ -4378,7 +6951,8 @@ window.WISSEN = {
     "Soll ich die Gefühle meines Kindes benennen?",
     "Wann ist Alleinlassen bei Wut gewaltvoll?",
     "Muss ich mein Baby immer beruhigen?",
-    "Was tun, wenn ich selbst gestresst bin und mein Kind schreit?"
+    "Was tun, wenn ich selbst gestresst bin und mein Kind schreit?",
+    "Mein Kind hört im Wutanfall nicht zu, wie erreiche ich es?"
    ],
    "alter": [
     "0-1",
@@ -4395,12 +6969,12 @@ window.WISSEN = {
     "Fragt euch statt „Was muss ich tun?“ lieber „Wie kann ich sein?“: Atmet durch, ruft eure Liebe zum Kind bewusst ab und schaut es liebevoll an, statt nach den richtigen Worten zu suchen.",
     "Seid für euer Kind da und geht mit ihm durch das Gefühl, statt es wegmachen zu wollen. Es lernt dabei, dass die Welt nach dem Weinen noch da ist.",
     "Sagt es offen, wenn ihr gerade selbst gestresst seid, statt Ruhe zu spielen, und sorgt für euch, damit ihr stark genug bleibt. Legt ein Baby sicher ab, geht kurz raus, atmet durch und kommt zurück, wenn ihr kurz vorm Explodieren seid.",
-    "Beobachtet zuerst, ob euer Kind mit dem Frust allein zurechtkommt, seid da, wenn es zu euch kommt oder die Arme ausstreckt, und schaut nach, wenn es nach euch ruft oder nicht aufhört zu weinen.",
     "Greift sofort ein, wenn sich das Kind verletzen könnte, zum Beispiel den Kopf gegen die Wand schlägt.",
     "Redet im Ausbruch wenig oder gar nicht, denn das Kind kann Sprache dann kaum verarbeiten. Sagt einmal klar, was ihr wollt, haltet das Gefühl gemeinsam aus und gebt wichtige Infos wie ein Nein erst, wenn sich das Kind beruhigt hat.",
     "Übt das Benennen von Gefühlen und das Sprechen darüber besser in ruhigen Momenten, ohne dem Kind Gründe für sein Gefühl vorzugeben. Spielerisch geht das zum Beispiel mit einem Rate-mal-Spiel, bei dem ihr Gefühle pantomimisch darstellt.",
-    "Lenkt nicht sofort ab, etwa mit Keks oder Ersatz, sonst lernt das Kind, schlechte Gefühle wegzubekommen, statt sie zu fühlen.",
-    "Prüft bei Babys Hunger, Windel und Bauchweh. Ist nichts davon der Grund, probiert nicht ständig Neues, sondern setzt euch ruhig hin und lasst das Baby weinen. Ihr müsst nicht dauernd voll fokussiert sein und könnt es beim Erledigen auch tragen."
+    "Gebt Gefühlen Raum, setzt aber den Rahmen, dass niemand verletzt wird; wütende Kinder können zum Beispiel auf den Boden stampfen. Bietet Berührung an, drängt sie aber nicht auf, denn im Ausbruch kann sie zusätzlicher Stress sein.",
+    "Lebt vor, wie ihr mit euren Gefühlen umgeht, und erlaubt euch selbst, wütend, müde oder ungeduldig zu sein; wer sich selbst annimmt, hält Gefühle des Kindes leichter aus.",
+    "Achtet bei gefühlsstarken Kindern besonders auf Hunger, Schlaf, Bewegung und einen niedrigen Stresspegel; diese Einordnung erklärt Ausbrüche, entschuldigt sie aber nicht, das Kind braucht viel Begleitung."
    ],
    "sichtweisen": [
     {
@@ -4414,6 +6988,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber unterscheidet Beruhigen von Trösten. Beruhigen meint, Tränen schnell zu stoppen, etwa mit Ablenken oder Sätzen wie „war doch nicht so schlimm“; Trösten heißt, das Gefühl da sein zu lassen und das Kind dabei im Arm zu halten. Dazu gehört für sie, zuerst zu sagen, was passiert ist, und das vermutete Gefühl und Bedürfnis zu benennen. Das Kind darf korrigieren, ihr fragt nach, statt etwas überzustülpen. Hier unterscheidet sie sich von den mutti-Hosts, die das Benennen mit mitgelieferten Gründen kritisch sehen, und von Nicola Schmidt, die vor allem auf Dasein und eigene Ruhe setzt. Gemeinsam ist allen die Haltung, dass Gefühle nicht weg müssen. Kathy Weber räumt ein, dass die Grenzen zwischen Beruhigen, Ablenken und Trösten manchmal klein sind und auch Humor oder Wegpusten trösten können, wenn das Kind ernst genommen wird. Sie betont außerdem, dass Eltern Empathie leichter schenken, wenn sie sich selbst Empathie geben, und dass Kinder nicht für die Gefühle der Eltern zuständig sind."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "In den Folgen von Daniel Graf und Katja Seide kommen Gäste und Gästinnen überwiegend positiv zum Begleiten und zur Co-Regulation, und die Hosts stimmen meist zu. Eine Gästin sagt, im Gefühlssturm sei Reden und Erklären zwecklos, das Kind brauche Raum und einen sicheren Rahmen, und nonverbal komme am meisten an (Augenhöhe, offene Arme, höchstens ein ich bin da). Nora Imlau empfiehlt, selbst ruhig zu werden und Berührung anzubieten, aber nicht aufzudrängen; manche Kinder mögen verbales Spiegeln, andere reagieren allergisch darauf, was Katja Seide aus ihrer Familie bestätigt. Eine weitere Gästin erklärt Regulation als etwas, das Babys mit Erwachsenen erst entwickeln, und warnt zugleich, dass manche Eltern es zu gut meinen und zu wenig zumuten. Anders als die mutti-Hosts, die Co-Regulation und Gefühle begleiten für irreführend halten, benutzen diese Gäste die Begriffe ohne Vorbehalt, ähnlich wie Nicola Schmidt (artgerecht) und Kathy Weber (gfk). Gemeinsam ist allen, dass Eltern erst ihre eigenen Gefühle annehmen sollen, und dass niemand es perfekt machen muss. Nicola Schmidt hält in Zeitnot sogar Ablenken für legitim."
     }
    ],
    "quellen": [
@@ -4424,30 +7002,6 @@ window.WISSEN = {
      "datum": "2024-11-19",
      "minute": "00:42",
      "thema": "Was bedeutet Gefühle begleiten? Liebevoll da sein als Kern"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 1,
-     "titel": "Was bedeutet Gefühle begleiten?",
-     "datum": "2024-11-19",
-     "minute": "25:32",
-     "thema": "Ruhig ist nicht beruhigt: Ablenken und Unterdrücken"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 9,
-     "titel": "Q&A: Kinderfrust, Zähneputz-Dramen und Partnerschaftsfragen",
-     "datum": "2025-01-22",
-     "minute": "49:14",
-     "thema": "Wann ist Alleinlassen Gewalt, innere Haltung"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 14,
-     "titel": "Kindliche Wut - was steckt dahinter?",
-     "datum": "2025-03-19",
-     "minute": "55:02",
-     "thema": "Kritik am Gefühle-Benennen mit Begründung"
     },
     {
      "podcast": "mutti",
@@ -4480,6 +7034,30 @@ window.WISSEN = {
      "datum": "2021-04-04",
      "minute": "03:07",
      "thema": "Trösten statt beruhigen: Was Beruhigen ist und wie es auf Kinder wirkt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 203,
+     "titel": "Wut, Trauer und Frustration - Gefühlsstürme von Kindern liebevoll begleiten",
+     "datum": "2025-09-30",
+     "minute": "07:22",
+     "thema": "Was Kinder stattdessen brauchen: Raum und Rahmen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 221,
+     "titel": "Nervenstark verbunden - Selbstregulation von Kindern stärken",
+     "datum": "2026-02-03",
+     "minute": "12:55",
+     "thema": "Co-Regulation und Selbstregulation"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 23,
+     "titel": "Gefühlsstarke Kinder mit Nora Imlau",
+     "datum": "2019-10-08",
+     "minute": "15:40",
+     "thema": "Kampf-oder-Flucht, Berührung, Gehirnbrücke"
     }
    ],
    "verwandt": [
@@ -4488,10 +7066,122 @@ window.WISSEN = {
     "elterliche-wut",
     "bindung",
     "intensive-parenting",
-    "angst-kind"
+    "gefuehlsstarke-hochsensible-kinder"
    ],
    "medizinisch": false,
    "einleitung": "Wenn ein Kind weint, tobt oder frustriert ist, wissen Eltern oft nicht, wie sie reagieren sollen. Sie fragen sich, ob sie sofort eingreifen, trösten oder Gefühle benennen müssen, besonders wenn sie selbst gestresst sind."
+  },
+  {
+   "id": "gefuehlsstarke-hochsensible-kinder",
+   "titel": "Gefühlsstarke, hochsensible und wilde Kinder",
+   "synonyme": [
+    "gefühlsstark",
+    "hochsensibel",
+    "wildes Kind",
+    "Spirited Child",
+    "sensibles Kind",
+    "reizempfindlich",
+    "Wahrnehmung Sinne",
+    "Überempfindlichkeit",
+    "Kleidung kratzt",
+    "Kind rastet zu Hause aus"
+   ],
+   "fragen": [
+    "Mein Kind hat so starke Gefühle, ist das normal?",
+    "Ist mein Kind hochsensibel?",
+    "Mein Kind ist laut und wild, Temperament oder Hilferuf?",
+    "Warum rastet mein Kind nach der Schule zu Hause aus?",
+    "Mein Kind findet Kleidung oder bestimmte Konsistenzen unerträglich, woran liegt das?",
+    "Wird es mit dem Alter leichter?"
+   ],
+   "alter": [
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "gefuehle",
+    "entwicklung",
+    "alltag"
+   ],
+   "kurz": "Laut den Gästen von Daniel Graf und Katja Seide sind gefühlsstarke, hochsensible und wilde Kinder keine Erziehungsfehler, sondern haben ein angeborenes Temperament, das sich nicht wegerziehen lässt. Wie gut es ihnen später damit geht, hängt von Verständnis, Bindung und Begleitung ab. Die Hosts betonen, dass diese Begriffe keine wissenschaftlich gesicherten Kategorien sind, sondern vielen Eltern beim Verstehen helfen. Bei Unsicherheit sollte eine Fachperson dazugeholt werden.",
+   "tipps": [
+    "Seht die Eigenart wertschätzend als Stärke und nicht als Defizit. Das Kind soll nicht das Gefühl bekommen, ein Alien zu sein.",
+    "Rechnet damit, dass Kinder nach Kita oder Schule zu Hause alles herauslassen, wenn sie sich dort zusammengenommen haben. Das sagt nichts über eure Erziehung.",
+    "Beobachtet, ob das Verhalten schon immer da war, nur in bestimmten Umfeldern auftritt oder nach einem Erlebnis begann. So unterscheidet ihr laut Inke Hummel Temperament von einem Hilferuf.",
+    "Prüft bei wiederkehrenden Konflikten, ob eine Über- oder Unterempfindlichkeit der Sinne dahintersteckt, zum Beispiel bei Kleidung, Licht oder Essenskonsistenzen. Das Kind kann es oft nicht benennen und wird stattdessen grantig.",
+    "Reduziert Termine und Reize, entzerrt den Alltag und sorgt für 1:1-Zeit ohne Zeitdruck, gern auch mit einer anderen Bezugsperson.",
+    "Helft beim Entspannen so viel wie nötig und so wenig wie möglich. Dockt an dem an, was das Kind schon selbst beruhigt, etwa Kauen oder kaltes Wasser, und geht bei heftiger Gegenwehr einen Schritt zurück.",
+    "Übernehmt in den ersten Jahren die Co-Regulation, also das Beruhigen gemeinsam mit dem Kind, und arbeitet vorbeugend, statt nur in Krisen zu reagieren. Hilfreich kann ein Wochentagebuch sein, das zeigt, wie viel Anpassung euer Kind täglich leistet.",
+    "Erklärt Schulkindern, dass sie anders und gut sind, und übt gemeinsam Selbstregulation.",
+    "Holt euch Rückhalt: Klärt Großeltern und Umfeld auf und zieht euch bei dauerhaftem Druck von Kommentaren zurück."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Die Autorin Nora Imlau beschreibt gefühlsstarke Kinder als solche, die von Geburt an mehr von allem sind: stärkere Gefühle, Bedürfnisse und Impulse, oft viel Bewegungsdrang und wenig Schlaf. Laut ihr wird es mit der Zeit nicht unbedingt leichter, aber mit Hirnreife und guter Begleitung können diese Kinder ihre Energie später bewusster steuern. Die Beraterin Kathrin Borghoff nennt als Zeichen von Hochsensibilität unter anderem Reizempfindlichkeit, tiefes Verarbeiten und Überforderung in Gruppen. Sie rät zu Verständnis statt Etikett und testet Babys nicht, weil sich Merkmale so früh nicht sicher feststellen lassen. Inke Hummel unterscheidet wilde Kinder (laut, mutig, impulsiv) von gefühlsstarken, die noch intensiver aufnehmen und instabiler sind, und sagt, nicht jedes laute Kind müsse verändert werden, oft könne sich auch das Umfeld anpassen. Zur Wahrnehmung betont sie, dass sie Annäherung bietet und keine Diagnose ist und dass auch belastende Erfahrungen Kinder auffällig machen können. Die Hosts weisen ausdrücklich darauf hin, dass es zu diesen Begriffen keine Studie gibt, viele Eltern sich aber wiedererkennen."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 23,
+     "titel": "Gefühlsstarke Kinder mit Nora Imlau",
+     "datum": "2019-10-08",
+     "minute": "01:43",
+     "thema": "Was gefühlsstark bedeutet"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 24,
+     "titel": "Hochsensible Eltern und Kinder mit Kathrin Borghoff",
+     "datum": "2019-10-22",
+     "minute": "35:08",
+     "thema": "Typische Merkmale nach Alter, Test"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 92,
+     "titel": "Wunderbare wilde Kinder mit Inke Hummel",
+     "datum": "2022-07-26",
+     "minute": "05:43",
+     "thema": "Temperament oder Hilfeschrei?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 123,
+     "titel": "Mit allen Sinnen wachsen",
+     "datum": "2023-10-03",
+     "minute": "09:23",
+     "thema": "Beispiele für Unter- und Überempfindlichkeit"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 24,
+     "titel": "Hochsensible Eltern und Kinder mit Kathrin Borghoff",
+     "datum": "2019-10-22",
+     "minute": "29:25",
+     "thema": "Co-Regulation, präventiv arbeiten, Tagebuch, Kerze, Bewegung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 92,
+     "titel": "Wunderbare wilde Kinder mit Inke Hummel",
+     "datum": "2022-07-26",
+     "minute": "35:34",
+     "thema": "Wilde Kinder in der Pubertät"
+    }
+   ],
+   "verwandt": [
+    "temperament-erziehung",
+    "reizueberflutung-vorbeugen",
+    "wutanfaelle",
+    "neurodivergenz",
+    "nach-der-schule-gespraech",
+    "gefuehle-begleiten"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind hat so starke Gefühle, ist das normal?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "gerechtigkeit-geschwister",
@@ -4504,14 +7194,17 @@ window.WISSEN = {
     "Reihenfolge bei Geschwistern",
     "wer bringt ins Bett",
     "Rangfolge Geschwister",
-    "Familienhierarchie"
+    "Familienhierarchie",
+    "älteres und jüngeres Kind",
+    "Das ist so unfair"
    ],
    "fragen": [
     "Muss ich meine Kinder gleich behandeln?",
     "Mein jüngeres Kind sagt, es sei immer ungerecht, was tun?",
     "Beide Kinder wollen Mama ins Bett bringen, wie regele ich das?",
     "Wer bekommt zuerst, wenn alle gleichzeitig fragen?",
-    "Wie gehe ich mit Streit um die Reihenfolge um?"
+    "Wie gehe ich mit Streit um die Reihenfolge um?",
+    "Muss das ältere Kind immer auf das jüngere aufpassen?"
    ],
    "alter": [
     "1-3",
@@ -4539,6 +7232,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber hält die Gleichsetzung von Gleichheit und Gerechtigkeit für grob fahrlässig. Gleichheit sei kein Bedürfnis, Gerechtigkeit dagegen ein Unterbedürfnis von Sicherheit; solange sie unerfüllt ist, bleibe das Nervensystem des Kindes ein wenig alarmiert. Sie nennt vier Rangfolgen: Geburtenrangfolge, Reihenfolge des Geschehens, Besitz und Bedürftigkeit. Das ältere Kind habe nicht mehr zu sagen, aber mehr Rechte und Pflichten; Eltern führen liebevoll und nicht aus Macht, das Wort Machtkampf lehnt sie ab. Wird die Geburtenrangfolge immer durchgesetzt, erlebe das jüngere Kind, dass es nie zählt. Der gesunde Wettbewerb unter Geschwistern sei für sie wichtig. Sie berichtet, sie und ihre Schwester seien selbst gleich behandelt worden und hätten das als ungerecht erlebt. Sie räumt ein, dass das Umdenken triggern kann und dass sie nicht sicher ist, ob man Abende später nach Alter oder gleichmäßig aufteilt. Ein Beispiel mit älteren Kindern (zum Beispiel 17 und 12 Jahre) und ein Schulklassen-Szenario dienen nur zur Veranschaulichung; die Prinzipien lassen sich laut ihr auf kleinere Kinder übertragen."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "„Das gewünschteste Wunschkind“ deckt sich mit Kathy Weber darin, dass Gerechtigkeit nicht Gleichheit heißt: Die Hosts erklären es mit dem Bild von Kisten an einer Mauer, bei dem jedes Kind das braucht, um dasselbe zu sehen. Ein Gast (Autor) beschreibt Geschwister als Rivalen, die sich ein Grundstück teilen: Das älteste Kind habe mehr Ansprüche und Möglichkeiten, aber auch mehr Pflichten, und Rechte und Pflichten müssten in Balance bleiben. Er rät, von älterem und jüngerem statt von großem und kleinem Kind zu sprechen. Anders als Kathy Weber, die feste Rangfolgen differenziert, rät er, im Hier und Jetzt zu bleiben und jedes Mal neu zu schauen; fragt man sich, wozu ein Kind etwas tut, finde man oft Aufmerksamkeitsbedürfnisse. Eine Gästin sagt, perfekte Fairness sei unrealistisch und der Satz „unfair“ verberge oft den Wunsch, verstanden zu werden. Die Hosts räumen ein, Fairness bleibe „dehnbar“, und eine Host fragt, ob Vorrang für ein Kind Provokation belohnt; der Gast widerspricht."
     }
    ],
    "quellen": [
@@ -4589,6 +7286,22 @@ window.WISSEN = {
      "datum": "2026-03-02",
      "minute": "22:22",
      "thema": "Zaun-Bild und Gerechtigkeit als Unterbedürfnis von Sicherheit"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 76,
+     "titel": "\"Geschwister - eine ganz besondere Liebe\" mit Jan-Uwe Rogge, Alu Kitzerow und Konstantin Manthey",
+     "datum": "2021-11-30",
+     "minute": "09:01",
+     "thema": "Gerecht statt gleich: Mauer-Beispiel"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 76,
+     "titel": "\"Geschwister - eine ganz besondere Liebe\" mit Jan-Uwe Rogge, Alu Kitzerow und Konstantin Manthey",
+     "datum": "2021-11-30",
+     "minute": "19:36",
+     "thema": "Rechte und Pflichten älterer und jüngerer Geschwister"
     }
    ],
    "verwandt": [
@@ -4616,7 +7329,11 @@ window.WISSEN = {
     "Wutteufel",
     "Kinderbücher Belohnung Bestrafung",
     "Vorlesen Gefühle",
-    "Handpuppe Gefühle"
+    "Handpuppe Gefühle",
+    "Vorlesen",
+    "Märchen",
+    "Lesenlernen",
+    "Kind zappelt beim Vorlesen"
    ],
    "fragen": [
     "Wie kann ich meinem Kind etwas durch eine Geschichte beibringen?",
@@ -4624,7 +7341,9 @@ window.WISSEN = {
     "Wie erzähle ich eine Geschichte nach einem Streit?",
     "Wie erkläre ich meinem Kind komplizierte Dinge einfach?",
     "Wie spreche ich Fehlverhalten an, ohne zu belehren?",
-    "Welche Kinderbücher passen zu gewaltfreier Kommunikation?"
+    "Welche Kinderbücher passen zu gewaltfreier Kommunikation?",
+    "Wie wichtig ist Vorlesen für mein Kind?",
+    "Wie bringe ich mein Kind zum Lesen, ohne zu zwingen?"
    ],
    "alter": [
     "1-3",
@@ -4639,14 +7358,14 @@ window.WISSEN = {
    "kurz": "Geschichten und Metaphern sind ein unterschätztes Werkzeug, denn das Kind zieht die Schlussfolgerung selbst, statt belehrt zu werden. Sie eignen sich für wiederkehrende Probleme, wenn anderes schon ausprobiert wurde, aber nicht als Dauerprogramm. Wichtig ist, nach einem Konflikt zu warten, bis sich alle beruhigt haben.",
    "tipps": [
     "Wartet nach einem Streit, bis sich alle beruhigt haben, und erzählt erst dann eine Geschichte.",
-    "Verpackt das Problem in eine Geschichte über euch selbst, etwa wie ihr beim Üben frustriert wart, eine Pause gemacht und dann weitergemacht habt, oder über erfundene Figuren.",
-    "Wandelt die Situation leicht ab, mit anderen Figuren oder Gegenständen, damit sich das Kind nicht ertappt fühlt, und verknüpft die Geschichte nicht ausdrücklich mit seinem Verhalten.",
+    "Verpackt das Problem in eine Geschichte über euch selbst, etwa wie ihr beim Üben frustriert wart, eine Pause gemacht und dann weitergemacht habt, oder über erfundene Figuren, und wandelt die Situation leicht ab (andere Figuren oder Gegenstände), damit sich das Kind nicht ertappt fühlt; verknüpft die Geschichte nicht ausdrücklich mit seinem Verhalten.",
     "Knüpft an die Interessen eures Kindes an, zum Beispiel mit Ninjas, die sich um ein Werkzeug streiten und dann zusammenarbeiten.",
     "Zeigt die Perspektiven der Figuren und stellt die Lösung in den Mittelpunkt statt den Konflikt, damit das Kind die Moral selbst ableitet.",
     "Nutzt Metaphern für Gefühle und Körper, etwa einen kleinen Wutteufel, der nicht zu groß gefüttert werden darf, oder Zahnbakterien als kleine Wesen, die Löcher machen.",
     "Erzählt älteren Kindern lieber echte Geschichten aus eurer Kindheit, weil Tiergeschichten irgendwann albern wirken.",
-    "Haltet beim Vorlesen inne und fragt, wie sich die Figur fühlt und was sie braucht.",
-    "Formuliert Sätze um, die Belohnung und Bestrafung enthalten, oder legt solche Bücher beiseite."
+    "Haltet beim Vorlesen inne und fragt, wie sich die Figur fühlt und was sie braucht, und lasst Unterbrechungen und Fragen zu.",
+    "Formuliert Sätze um, die Belohnung und Bestrafung enthalten, oder legt solche Bücher beiseite Prüft auch Märchen und Bilderbücher vorab auf die Rollenbilder, die sie vermitteln.",
+    "Macht Vorlesen zum festen Ritual, zum Beispiel abends mit langsamem Tempo, Pausen und verstellten Stimmen; Wiederholungen derselben Geschichte sind normal, und lieber schlecht vorgelesen als gar nicht."
    ],
    "sichtweisen": [
     {
@@ -4656,6 +7375,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber geht es hier um Bücher und Geschichten im Familienalltag mit Gewaltfreier Kommunikation (GfK). Sie meidet Kinderbücher mit Belohnung und Bestrafung, weil sich Vorgelesenes bei Kindern verankere; geschenkte Bücher dieser Art legt sie weg oder formuliert einzelne Sätze beim Lesen um. Beim Vorlesen kann man innehalten und fragen, wie sich eine Figur fühlt und was sie braucht. Auch selbst erfundene Geschichten mit Figuren, die Gefühle und Bedürfnisse haben, sowie Handpuppen oder Pantomime zum Erraten von Gefühlen kämen bei Kindern gut an. Anders als die Geschichten im Artikel oben, die Konflikte indirekt lösen sollen, geht es ihr vor allem um die Buchauswahl und das Gespräch über Gefühle."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide sprechen mit Gästinnen weniger über erfundene Erziehungsgeschichten als über Vorlesen und Bücher. Laut den Gästinnen schafft Vorlesen Kontakt und Einblick in die Kinderwelt, fördert Empathie und lässt Kinder Handlungsmodelle für eigene Probleme durchspielen. Katja Seide verweist auf Hirnforschung, wonach Kinder beim Vorlesen Gefühle stellvertretend miterleben, und hält auch zunächst gruselige Märchen im sicheren Schoß für vertretbar; die Studien nennt sie nicht im Detail. Eine Märchen-Autorin rät, Märchen bewusst auszuwählen oder umzuerzählen, weil Geschichten das Familienbild prägen; das sind ihre persönlichen Deutungen, und die Hosts fragen an einzelnen Stellen nach. Beim Lesenlernen sind sich Hosts und Gästinnen einig: verführen statt zwingen, Comics und Sachbücher sind vollwertig, und zappelnde oder unterbrechende Kinder hören trotzdem zu. Damit ergänzen sie mutti und gfk eher um den Alltag mit Büchern als um gezielte Konfliktgeschichten."
     }
    ],
    "quellen": [
@@ -4692,14 +7415,6 @@ window.WISSEN = {
      "thema": "Metaphern (Wutteufel, Dopaminzwerg) und Alltagsmonster"
     },
     {
-     "podcast": "mutti",
-     "nr": 22,
-     "titel": "Life Hack Spielen - den Alltag mit Kindern spielerisch meistern",
-     "datum": "2025-05-20",
-     "minute": "44:31",
-     "thema": "Antwort: ohne direkten Zusammenhang erzählen"
-    },
-    {
      "podcast": "gfk",
      "nr": 7,
      "titel": "006: R-wie Rituale mit der GfK im Familienleben",
@@ -4714,6 +7429,22 @@ window.WISSEN = {
      "datum": "2019-04-14",
      "minute": "38:54",
      "thema": "Handpuppen und Pantomime"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 27,
+     "titel": "Warum Kindern vorlesen so wichtig ist",
+     "datum": "2019-12-17",
+     "minute": "04:10",
+     "thema": "Studien: Lesenlernen, Wortschatz, Empathie, Handlungsmodelle"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 199,
+     "titel": "Märchen - Familienbilder von gestern im Kinderzimmer von heute",
+     "datum": "2025-09-02",
+     "minute": "02:28",
+     "thema": "Wie Märchen das Familienbild prägen"
     }
    ],
    "verwandt": [
@@ -4728,6 +7459,116 @@ window.WISSEN = {
    "einleitung": "Ermahnungen und Erklärungen prallen bei Kindern oft ab, und trotzdem tauchen dieselben Probleme immer wieder auf. Eltern suchen nach einem Weg, Fehlverhalten anzusprechen, ohne zu belehren."
   },
   {
+   "id": "geschlechtsidentitaet",
+   "titel": "Geschlechtsidentität, trans und geschlechtsoffene Erziehung",
+   "synonyme": [
+    "trans Kind",
+    "nichtbinär",
+    "divers",
+    "Pronomen",
+    "geschlechtsoffene Erziehung",
+    "Geschlechterstereotype",
+    "rosa und hellblau",
+    "Pubertätsblocker",
+    "Gender Reveal Party",
+    "Coming-out Kind"
+   ],
+   "fragen": [
+    "Mein Kind sagt, es sei kein Junge. Was tun?",
+    "Darf mein Sohn einen rosa Schulranzen haben?",
+    "Macht geschlechtsoffene Erziehung Kinder trans?",
+    "Wie erkläre ich Kindern Pronomen?",
+    "Wie unterstütze ich mein trans Kind in der Schule?",
+    "Wie spreche ich respektvoll mit trans Menschen?"
+   ],
+   "alter": [
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "entwicklung",
+    "gefuehle",
+    "alltag"
+   ],
+   "kurz": "Die Gäste im Podcast raten, das Thema ruhig anzugehen: Kinder nach Namen und Pronomen fragen, nicht auf wenige Farben, Spielzeuge und Rollen begrenzen und früh ärztliche und schulische Unterstützung suchen, wenn ein Kind sich nicht im zugewiesenen Geschlecht wiederfindet. Sie sagen auch, geschlechtsoffene Erziehung verwirre Kinder nicht und mache sie nicht trans. Medizinische Angaben sind Aussagen der Gäste und ersetzen keine ärztliche Beratung.",
+   "tipps": [
+    "Bleibt gelassen und sprecht in der Familie miteinander. Wenn Eltern unterschiedlich reagieren, hilft es, zu vermitteln.",
+    "Fragt euer Kind nach Namen und Pronomen und nutzt sie. Ein Kind erklärte, es fühle sich weder ganz als Junge noch ganz als Mädchen; die Familie nutzt zu Hause teils andere Pronomen als in der Schule, um Mobbing zu verringern.",
+    "Holt früh Ärztinnen und Ärzte dazu, die das Kind begleiten, und sucht Beratungsstellen oder Austauschgruppen für Eltern.",
+    "Fragt bei der Schule nach praktischen Lösungen, etwa für Umkleiden beim Sport, zum Beispiel einen eigenen Raum oder versetztes Umziehen.",
+    "Rosa Kleidung ist nicht verboten. Ein Problem entsteht laut einer Gästin, wenn Kinder auf wenige typische Farben, Spielzeuge oder Rollen festgelegt werden. Setzt bewusst Gegengewichte, wenn Verwandte ein Kind nur mit Rosa und Puppen oder nur mit Autos beschenken.",
+    "Fragt euch selbst, wo euch Geschlecht begegnet und warum ihr etwas denkt. Es gibt kein Perfekt, ihr müsst nicht alles sofort hinbekommen.",
+    "Sprecht ab etwa drei bis vier Jahren mit Kindern über Stereotype, zum Beispiel warum Rosa eine Mädchenfarbe sein soll. Stärkt ein Kind gegen Mobbing, indem ihr erklärt, dass Vielfalt normal ist, statt es vor dem Auslachen zu warnen.",
+    "Lest Bücher und Reime umformuliert vor, tauscht Pronomen oder Namen aus und streicht unnötige Stereotype. Kinderbücher und Serien mit vielfältigen Figuren können ein Einstieg sein.",
+    "Begegnet trans Menschen mit denselben Fragen wie allen anderen und fragt nicht nach Körper, Hormonen oder früherem Namen, außer die Person spricht es selbst an."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide zeigen in den Gesprächen anfängliche Unsicherheit und viel Neugier; eine Gästin stellt den Hosts gegenüber klar, wo sie nicht die richtige Ansprechpartnerin ist. Eine Transfrau berichtet, schon als Kind gewusst zu haben, ein Mädchen zu sein, und fast 40 Jahre bis zum Outing gebraucht zu haben. Eine Familie mit zehnjährigem Kind schildert den Alltag mit Pronomen, Namens- und Personenstandsänderung. Eine Autorin und Aktivistin vertritt eine klar positionierte Linie: Das Thema sei nicht Sexualität, Begriffe wie Frühsexualisierung hält sie für einen Kampfbegriff, geschlechtsoffene Erziehung verwirre Kinder nicht, und die Geschlechtsidentität festige sich meist zwischen zwei und sieben Jahren. Zu Pubertätsblockern, Hormonen und Operationen äußern die Gästinnen sich ausführlich; das sind ihre Aussagen, die in den Folgen nicht hinterfragt oder durch Gegenpositionen ergänzt werden."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 21,
+     "titel": "Transsexualität und Diversität",
+     "datum": "2019-09-16",
+     "minute": "03:05",
+     "thema": "Kindheit einer Transfrau, was trans bedeutet"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 21,
+     "titel": "Transsexualität und Diversität",
+     "datum": "2019-09-16",
+     "minute": "30:12",
+     "thema": "Rat an Eltern, Pubertätsblocker, Schule"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 101,
+     "titel": "Wie geschlechtsoffene Erziehung gelingt mit Ravna Marin Siever",
+     "datum": "2022-11-29",
+     "minute": "13:47",
+     "thema": "Tipps für ein geschlechtsoffenes Umfeld, Rosa und Stereotype"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 101,
+     "titel": "Wie geschlechtsoffene Erziehung gelingt mit Ravna Marin Siever",
+     "datum": "2022-11-29",
+     "minute": "19:33",
+     "thema": "Verwirrt das Kinder? Geschlechtsidentität selbst finden"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 101,
+     "titel": "Wie geschlechtsoffene Erziehung gelingt mit Ravna Marin Siever",
+     "datum": "2022-11-29",
+     "minute": "06:56",
+     "thema": "Was sind Pronomen und Neopronomen?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 21,
+     "titel": "Transsexualität und Diversität",
+     "datum": "2019-09-16",
+     "minute": "24:35",
+     "thema": "Respektvolles Gespräch mit trans Menschen"
+    }
+   ],
+   "verwandt": [
+    "jungen-maedchen",
+    "mobbing",
+    "koerper-aufklaerung",
+    "selbstwert-kind",
+    "aussehen-schoenheitsideale"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind sagt, es sei kein Junge. Was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
    "id": "geschwisterbindung",
    "titel": "Geschwisterbindung stärken",
    "synonyme": [
@@ -4739,7 +7580,9 @@ window.WISSEN = {
     "Gerechtigkeit unter Geschwistern",
     "Nesthäkchen",
     "Petzen",
-    "Geschenk für beide Kinder"
+    "Geschenk für beide Kinder",
+    "Geschwisterliebe",
+    "Körperkontakt Baby Geschwister"
    ],
    "fragen": [
     "Wie stärke ich die Bindung zwischen meinen Kindern?",
@@ -4747,7 +7590,8 @@ window.WISSEN = {
     "Soll das Geschwisterkind am Geburtstag auch ein Geschenk bekommen?",
     "Mein Kleinkind haut ständig das Baby",
     "Wie reagiere ich, wenn mein Kind petzt?",
-    "Soll ich mein ältestes Kind das große Kind nennen?"
+    "Soll ich mein ältestes Kind das große Kind nennen?",
+    "Müssen sich Geschwister später gut verstehen?"
    ],
    "alter": [
     "0-1",
@@ -4759,7 +7603,7 @@ window.WISSEN = {
     "geschwister",
     "gefuehle"
    ],
-   "kurz": "Die Bindung zwischen Geschwistern wächst, wenn Eltern sie als Team erziehen, in dem jedes so viel Verantwortung füreinander trägt, wie es kann. Wettkämpfe, Vergleiche und erzwungene Gleichbehandlung fördern dagegen Konkurrenz. Gleich ist nicht gerecht, und ein Kind darf auch mal etwas bekommen, das das andere nicht bekommt.",
+   "kurz": "Die Bindung zwischen Geschwistern wächst, wenn Eltern sie als Team erziehen, in dem jedes so viel Verantwortung füreinander trägt, wie es kann. Wettkämpfe, Vergleiche und erzwungene Gleichbehandlung fördern dagegen Konkurrenz. Gleich ist nicht gerecht, und ob sich Geschwister später gut verstehen, können Eltern nicht erzwingen, nur die Kindheit dafür gestalten.",
    "tipps": [
     "Gebt dem Kleinkind Aufgaben rund ums Baby, etwa Flasche holen, Brei geben, Windel reichen oder beim Trösten helfen.",
     "Schafft Situationen, in denen Geschwister zusammenarbeiten und sich gegenseitig helfen, auch vom Kleinen zum Großen.",
@@ -4775,6 +7619,10 @@ window.WISSEN = {
     {
      "podcast": "mutti",
      "text": "Die Hosts sehen Helfen und Teilen als natürlich und warnen, dass Eltern es eher kaputtmachen als verbessern können. Ihre Kinder müssen nicht teilen, tun es aber meist von selbst. Haut ein Kleinkind das Baby immer wieder, weiß es ihrer Erfahrung nach oft nicht, was es mit ihm anfangen soll, und Aufgaben helfen. Sie sind klar gegen erzwungene Gleichbehandlung wie Chips abwiegen oder zu jedem Geburtstag beiden etwas schenken, weil das Frust nur kurz verhindert und Folgeprobleme schafft; ab etwa drei Jahren können Kinder laut ihnen aushalten, dass ein Kind etwas bekommt und das andere nicht. Für Eltern neurodivergenter Kinder, die so Meltdowns vermeiden wollen, zeigen sie Verständnis, würden aber lieber anderswo entlasten. Eine Hostin räumt ein, selbst schon in den Impuls zu Wettkämpfen gefallen zu sein. Zu Rollen sagen sie, diese entstünden von selbst, man solle aber gegensteuern: Dass das jüngste Kind immer klein und frech sein darf, hilft ihm nicht unbedingt, und ältere Kinder machen das Kleine oft selbst zum Nesthäkchen. Eine Hostin verweist darauf, dass Erstgeborene laut Studien oft erfolgreicher werden, weil sie mehr Erwartungen und Förderung erleben."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide sehen das ähnlich wie die Hosts von mutti: Ein Baby baut laut ihnen auch zum älteren Geschwisterkind Bindung auf, und Körperkontakt, den Eltern oft bremsen, gehört dazu. Auch sie warnen vor Wettbewerben wie wer zuerst angezogen ist, die sich zu dauernder Konkurrenz verfestigen können, und davor, den Großen zwangsweise Verantwortung für die Kleinen zu übertragen; Katja Seide räumt ein, das selbst zuerst so gemacht und später geändert zu haben. Etwas differenzierter ist ihr Blick auf das Ziel: Eine Gästin, die erwachsene Geschwister befragt hat, und die Hosts halten die Erwartung lebenslanger inniger Geschwisterliebe für zu hoch, da Eltern nicht beeinflussen können, ob die Chemie stimmt. Eltern können nur die Kindheit als Chance für eine gute Beziehung und für Teamgefühl gestalten. Bei Mitgeschenken zum Geburtstag sind die beiden Hosts selbst nicht einig: Daniel Graf verzichtet konsequent darauf, Katja Seide war in der ersten Zeit pragmatischer."
     }
    ],
    "quellen": [
@@ -4825,6 +7673,22 @@ window.WISSEN = {
      "datum": "2026-04-28",
      "minute": "50:07",
      "thema": "Ältere Kinder haben Chancen und Erwartungen, jüngste nicht immer klein halten"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 39,
+     "titel": "Teil 2: Schwierigkeiten aufgrund des Altersunterschiedes",
+     "datum": "2020-06-02",
+     "minute": "07:31",
+     "thema": "Verantwortung beim großen Kind abgeben und Nein heißt Nein"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 219,
+     "titel": "Geschwister begleiten: Liebe, Streit, Fairness und Zusammenhalt",
+     "datum": "2026-01-20",
+     "minute": "28:21",
+     "thema": "Was Eltern tun können, damit Geschwister später füreinander da sind"
     }
    ],
    "verwandt": [
@@ -4833,7 +7697,7 @@ window.WISSEN = {
     "geschwister-vorbereiten",
     "teilen",
     "ausschliessen-mitspielen",
-    "gerechtigkeit-geschwister"
+    "exklusivzeit"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern erleben, dass ihre Kinder konkurrieren, petzen oder das Baby hauen, und fragen sich, wie Geschwister zueinander finden."
@@ -4945,7 +7809,8 @@ window.WISSEN = {
     "Kabbeln",
     "Petzen",
     "großes Kind ärgert kleines",
-    "Gerechtigkeit Geschwister"
+    "Gerechtigkeit Geschwister",
+    "Geschwisterrivalität"
    ],
    "fragen": [
     "Meine Kinder streiten ständig, was tun?",
@@ -4967,8 +7832,8 @@ window.WISSEN = {
    ],
    "kurz": "Die mutti-Hosts raten, sich bei Geschwisterstreit weitgehend herauszuhalten, sobald das jüngere Kind sich wehren kann, und Konfliktlösung nach dem Streit zu üben. Kathy Weber (gfk) hält Geschwisterkonflikte ebenfalls für normal, sieht die Eltern aber bei kleinen Kindern und kleinem Altersabstand in der Verantwortung, zu führen, Schutz zu geben und für Gerechtigkeit (nicht Gleichbehandlung) zu sorgen. Einig sind sich alle beim Eingreifen, wenn jemand verletzt werden könnte.",
    "tipps": [
-    "Wartet erst ein paar Minuten ab und beobachtet, ob die Kinder selbst eine Lösung finden. Bei kleinen Kindern und kleinem Altersabstand greift ihr früher ein, bevor es knallt.",
-    "Greift ein, wenn jemand verletzt werden könnte, gehauen wird oder ein Kind das andere gezielt angreift: Stopp, auseinander, alle bleiben heil, erst handeln, dann reden. Einen gefährlichen Gegenstand wegzunehmen ist Schutz und keine Strafe.",
+    "Wartet erst ein paar Minuten ab und beobachtet, ob die Kinder selbst eine Lösung finden. Bei kleinen Kindern und kleinem Altersabstand greift ihr früher ein, bevor es knallt. Fragt euch vorher, ob ihr gerade die Kraft zum Begleiten habt; wenn nicht, sorgt für euch, ohne die Kinder dauerhaft allein zu lassen.",
+    "Greift ein, wenn jemand verletzt werden könnte, gehauen wird oder ein Kind das andere gezielt angreift: Stopp, auseinander, alle bleiben heil, erst handeln, dann reden. Einen gefährlichen Gegenstand wegzunehmen ist Schutz und keine Strafe. Bei Eskalation hilft laut einer Gästin, „Ich helfe euch“ statt „Hört auf“ zu sagen, die Kinder körperlich zu trennen und selbst ruhig zu bleiben.",
     "Tröstet ein Kind, das weinend zu euch kommt, ohne das andere gleich auszuschimpfen, sonst wird Petzen zur Waffe. Erklärt den Unterschied: Bescheid sagen, wenn einem Unrecht geschieht, ist okay, petzen heißt, das andere in Schwierigkeiten bringen zu wollen.",
     "Fragt bei Streit um einen Gegenstand nach Lösungsideen, zum Beispiel abwechselnd zwei Minuten. Gehört das Spielzeug einem Kind, entscheidet es; gehört es beiden, hat der das Sagen, der es zuerst in der Hand hatte.",
     "Übt Konfliktlösung in ruhigen Momenten, etwa mit einer Geschichte über zwei Tierkinder oder indem ihr die Situation nachspielt.",
@@ -4985,6 +7850,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber hält Geschwisterstreit für normal und für die Entwicklung nötig, ganz weg bekomme man ihn nicht. Normal heiße aber nicht, die Kinder allein zu lassen: Kinder im Streit seien im Ausnahmezustand, und bei kleinem Altersabstand sei es oft gar kein Streit, sondern ein Kleinkind überschreite unabsichtlich die Grenze des älteren, wofür die Eltern zuständig seien. Zu erwarten, dass ein Zweijähriger Grenzen nach zweimal Stopp einhält, nennt sie anmaßend. Das ältere Kind muss weder Konflikte lösen noch mit den Geschwistern spielen; sein Ruf „Mama, mach was“ sei ein Ruf nach Schutz, Führung und Gerechtigkeit. Das weicht von den mutti-Hosts ab, die Eingreifen eher für verschärfend halten, und auch ihre Deutung von Ärgern oder Beschimpfen als Hinweis auf ein unerfülltes Bedürfnis sehen die mutti-Hosts ausdrücklich anders. Gerechtigkeit bedeutet für Weber nicht Gleichheit, sondern dass jedes Kind bekommt, was es braucht; dafür nennt sie vier Rangfolgen (Geburt, Situation, Besitz, Dringlichkeit). Geschwister müssten sich nicht nett begegnen, wichtiger sei zu erkennen, welches Bedürfnis hinter dem Verhalten steckt."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide haben ein Fließdiagramm für die Entscheidung entwickelt, ob man bei Streit eingreift: Zuerst fragen sie, ob man gerade die Kraft zum Begleiten hat, dann, ob eine Familienregel gebrochen wird oder jemand blutet. Sie unterscheiden Streitarten und finden, manche solle man nicht begleiten, weil Kinder daran wachsen; zu langes Alleinlassen kann laut ihnen aber zu Geschwistermobbing führen. Das liegt zwischen den mutti-Hosts, die sich weitgehend heraushalten, und Kathy Webers Betonung der Führung. In einer Gästin-Folge nennen sie Rivalität normal, Streit sei kein Beziehungsabbruch; bei Eskalation hilft laut ihr, Kinder körperlich zu trennen und selbst ruhig zu bleiben. Gäste wie Jan-Uwe Rogge halten Gegnerschaft nicht für Feindschaft, raten aber bei sehr feindseligem Verhalten zu Abstand. Wie gfk sehen sie Gerechtigkeit nicht als Gleichbehandlung, sondern als Vorrang des dringendsten Bedürfnisses."
     }
    ],
    "quellen": [
@@ -5035,6 +7904,22 @@ window.WISSEN = {
      "datum": "2025-01-20",
      "minute": "23:55",
      "thema": "Erst fragen, ob die Kinder Hilfe brauchen, dann direkt eingreifen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 44,
+     "titel": "Das neue Geschwisterbuch und das Bilderbuch für Geschwister",
+     "datum": "2020-08-11",
+     "minute": "25:28",
+     "thema": "Fließdiagramm: eingreifen oder nicht"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 219,
+     "titel": "Geschwister begleiten: Liebe, Streit, Fairness und Zusammenhalt",
+     "datum": "2026-01-20",
+     "minute": "23:22",
+     "thema": "Wenn es richtig eskaliert"
     }
    ],
    "verwandt": [
@@ -5115,10 +8000,150 @@ window.WISSEN = {
     "schulstart",
     "schule-lehrkraft-kontakt",
     "bindung",
-    "routinen"
+    "routinen",
+    "gefuehlsstarke-hochsensible-kinder",
+    "kommunikation-mit-kindern"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind antwortet auf \"Wie war dein Tag?\" nur mit gut, was kann ich fragen?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "wechselmodell-getrennte-eltern",
+   "titel": "Getrennte Eltern: Wechsel und Wutanfälle",
+   "synonyme": [
+    "getrennte Eltern",
+    "Wechselmodell",
+    "Wochenendpapa",
+    "Übergabe",
+    "Wutanfälle nach Besuch beim Papa",
+    "Trennung Kind Wut",
+    "Doppelresidenz",
+    "Trennung mit Kindern",
+    "Pendelmodell",
+    "Nestmodell",
+    "Residenzmodell",
+    "Umgangsmodell",
+    "Patchwork",
+    "Loyalitätskonflikt"
+   ],
+   "fragen": [
+    "Mein Kind hat Wutanfälle, wenn es vom Papa zurückkommt",
+    "Soll mein Kind nicht mehr zum Papa, wenn es danach wütend ist?",
+    "Wie begleite ich mein Kind nach dem Wechsel zwischen zwei Zuhause?",
+    "Ist das Wechselmodell gut für mein Kind?",
+    "Wie gehe ich mit Nachrichten vom Ex um?",
+    "Welches Umgangsmodell passt zu meinem Kind?"
+   ],
+   "alter": [
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "gefuehle",
+    "alltag"
+   ],
+   "kurz": "Wutanfälle nach einem Wechsel zum anderen Elternteil halten die Hosts von mutti für normal: Das Kind muss den Wechsel und die Trennung verarbeiten und kommt oft aus viel Action und kindzentrierter Zeit. Kathy Weber (gfk) stellt Sicherheit, Struktur und Orientierung in den Vordergrund und sieht ein 50-50-Wechselmodell direkt nach der Trennung kritisch; in wunschkind sagt eine Gästin, das passende Modell hänge von Alter, Bedürfnissen des Kindes und der Elternkommunikation ab. Das sind Einschätzungen der Hosts und Gäste und keine Rechtsberatung; bei Fragen zu Sorgerecht oder Unterhalt solltet ihr juristischen Rat einholen.",
+   "tipps": [
+    "Fragt den anderen Elternteil, wie das Wochenende gestaltet wird und wie sich das Kind dort und nach der Rückkehr verhält, und stellt euch darauf ein.",
+    "Gebt dem Kind in den ersten Tagen nach dem Wechsel mehr Begleitung.",
+    "Fragt abends offen, was euer Kind gerade braucht (zum Beispiel Mama oder Papa), und überlegt gemeinsam, wie sich das erfüllen lässt, etwa mit einem Anruf oder einem T-Shirt mit dem Geruch des anderen (Kathy Weber).",
+    "Gebt dem Kind einen einfachen Weg, euch zu erreichen, zum Beispiel ein Tastentelefon mit einer Kurzwahltaste, und fragt bei Anrufen, was es braucht, nicht, was ihr wissen wollt.",
+    "Haltet die Wechsel möglichst stabil und gestaltet das getrennte Leben so, dass der Alltag von vorher möglichst erhalten bleibt.",
+    "Teilt Aufgaben wie Arzttermine und Hobbys so auf, dass nicht ein Elternteil nur kümmert und der andere nur schöne Zeit hat; das Kind braucht auch Ruhe zum Runterkommen Lasst Kinder nicht als Boten oder Vertraute für Geld- und Beziehungsthemen fungieren.",
+    "Probiert ein Umgangsmodell eine Zeit lang aus, wertet gemeinsam aus und passt es an; bezieht ältere Kinder ein, wo sie wann sein möchten. Das passende Modell hängt laut einer Gästin von Alter, Bedürfnissen des Kindes und der Elternkommunikation ab.",
+    "Gebt kleinen Kindern einen sichtbaren Kalender mit Mama- und Papa-Tagen, damit sie abzählen können, und sprecht möglichst direkt miteinander statt über Anwälte. Bei rechtlichen Fragen (Sorgerecht, Unterhalt) holt euch Beratung."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "mutti",
+     "text": "Die Hosts schätzen die Lage meist als unproblematisch ein und führen die Wutanfälle auf einen möglichen Dopaminkater durch viel Action und kindzentrierte Zeit sowie den Wechsel zwischen den Zuhause zurück. Das Kind müsse die Trennung der Eltern verarbeiten und vermisse womöglich den anderen Elternteil, weshalb es mehr Begleitung braucht. Sie würden die ersten Tage mit Frust in Kauf nehmen, weil die Beziehung zum Vater wertvoll ist. Wäre etwas Gravierendes los, würde sich das anders zeigen. Außerdem helfe es, nicht jeden Wutanfall auf das Wochenende zu beziehen, um die Verantwortung nicht nach außen zu verlagern."
+    },
+    {
+     "podcast": "gfk",
+     "text": "Kathy Weber spricht ausdrücklich nur aus ihrer eigenen Sicht und betont, dass jede Familie für sich entscheidet. Für sie stehen beim Kind nach einer Trennung Sicherheit mit Orientierung, Struktur und Rhythmus an erster Stelle, die äußere Familienform ist zweitrangig. Sie fragt, ob ein 50-50-Wechselmodell dem entspricht, wie das Kind den Alltag vorher erlebt hat, und hält es direkt nach der Trennung für die meisten Kinder nicht für das, was sie brauchen; Voraussetzung wäre eine Kommunikation auf Augenhöhe. Zählen, wer wie viele Stunden hat, sei Erwachsenensicht. Wer das Kind gerade betreut, ist laut ihr zu 100 Prozent zuständig, und die Kinder sollen nicht wählen müssen. In der eigenen Praxis hat sie die Kommunikation mit dem anderen Elternteil auf E-Mail umgestellt, damit Nachrichten sie nicht triggern, und ihrem Kind einen einfachen Weg gegeben, sie jederzeit zu erreichen. Das geht über die Frage nach Wutanfällen hinaus, die die mutti-Hosts besprechen."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide holen in mehreren Folgen Gästinnen dazu, die den Blick von den Wutanfällen nach dem Wechsel auf Umgangsmodelle und Trennung weiten. Eine Gästin sagt, das passende Modell hänge von Alter und Bedürfnissen der Kinder und von der Kommunikation der Eltern ab; das Wechselmodell könne bei guter Kommunikation etwa ab drei bis vier Jahren funktionieren, werde aber von vielen Kindern später als anstrengend erlebt, und kleine Kinder verstehen Wochenwechsel oft schlecht. Das deckt sich mit Kathy Webers Skepsis gegenüber 50-50 direkt nach der Trennung, setzt aber stärker auf Ausprobieren, Auswerten und Anpassen und darauf, ältere Kinder mitreden zu lassen. Eine zweite Gästin, die aus Sicht des Residenzmodells spricht, nennt für kleine Kinder Kalender und Rituale und warnt vor Loyalitätskonflikten und davor, Kinder zu Vertrauten zu machen. Rechtliche Hinweise sind nur Orientierung der Gästinnen, bei Unsicherheit helfen Beratung oder juristischer Rat."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "mutti",
+     "nr": 23,
+     "titel": "Das hilft, wenn Kinder ärgern und provozieren",
+     "datum": "2025-05-27",
+     "minute": "53:13",
+     "thema": "Hörerfrage zu Wutanfällen nach dem Wochenende"
+    },
+    {
+     "podcast": "mutti",
+     "nr": 23,
+     "titel": "Das hilft, wenn Kinder ärgern und provozieren",
+     "datum": "2025-05-27",
+     "minute": "58:01",
+     "thema": "Austausch mit dem anderen Elternteil, Begleitung"
+    },
+    {
+     "podcast": "gfk",
+     "nr": 225,
+     "titel": "Wechselmodell: Welche Voraussetzungen braucht es für dein Kind?",
+     "datum": "2026-09-28",
+     "minute": "05:05",
+     "thema": "Sicherheit als Oberbedürfnis des Kindes nach der Trennung"
+    },
+    {
+     "podcast": "gfk",
+     "nr": 225,
+     "titel": "Wechselmodell: Welche Voraussetzungen braucht es für dein Kind?",
+     "datum": "2026-09-28",
+     "minute": "08:03",
+     "thema": "Stabilität, Orientierung und die Frage, ob 50-50 dem bisherigen Alltag entspricht"
+    },
+    {
+     "podcast": "gfk",
+     "nr": 226,
+     "titel": "Abgrenzung und Achtsamkeit: Welche Strategien helfen, wenn alles zu viel wird",
+     "datum": "2026-10-12",
+     "minute": "25:41",
+     "thema": "Abends fragen, ob das Kind den anderen Elternteil braucht"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 194,
+     "titel": "Trennung ohne Drama",
+     "datum": "2025-07-29",
+     "minute": "20:55",
+     "thema": "Welche Umgangsmodelle gibt es?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 232,
+     "titel": "Mit Kindern durch die Trennung - Gespräche, Gefühle und neue Strukturen",
+     "datum": "2026-04-21",
+     "minute": "15:17",
+     "thema": "Warum klare Strukturen und Rituale wichtig sind"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 122,
+     "titel": "Wie Patchworkfamilien zusammenwachsen und wertschätzend einander stressarm begegnen",
+     "datum": "2023-09-19",
+     "minute": "27:32",
+     "thema": "Umgangsplan und Zusammenarbeit mit dem Ex"
+    }
+   ],
+   "verwandt": [
+    "wutanfaelle",
+    "gefuehle-begleiten",
+    "vaterrolle",
+    "eltern-als-team",
+    "patchwork-familie",
+    "trennung-scheidung"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind hat Wutanfälle, wenn es vom Papa zurückkommt“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "mutterinstinkt",
@@ -5130,13 +8155,18 @@ window.WISSEN = {
     "Matreszenz",
     "Oxytocin",
     "Elternintuition",
-    "Mutter-Gehirn"
+    "Mutter-Gehirn",
+    "Mythos Mutterinstinkt",
+    "Mommy Brain",
+    "Stilldemenz",
+    "Bauchgefühl"
    ],
    "fragen": [
     "Gibt es einen Mutterinstinkt?",
     "Können Mütter das von Natur aus besser als Väter?",
     "Warum fühle ich mich als Mutter überfordert, obwohl es natürlich sein soll?",
-    "Verändert sich das Gehirn, wenn man Eltern wird?"
+    "Verändert sich das Gehirn, wenn man Eltern wird?",
+    "Ist es normal, nach der Geburt keine überwältigende Liebe zu spüren?"
    ],
    "alter": [
     "0-1",
@@ -5151,12 +8181,18 @@ window.WISSEN = {
    "tipps": [
     "Geht nicht davon aus, dass ihr als Mutter alles intuitiv können müsst, denn Fürsorge darf gelernt und abgeschaut werden, auch das Stillen.",
     "Sammelt wenn möglich schon vor dem ersten Kind Erfahrung mit Babys, etwa beim Halten und Wickeln, was die Anfangszeit erleichtern kann.",
-    "Ermöglicht Kindern früh, Verantwortung für Jüngere zu übernehmen, damit Fürsorge für alle Geschlechter normal wird."
+    "Ermöglicht Kindern früh, Verantwortung für Jüngere zu übernehmen, damit Fürsorge für alle Geschlechter normal wird.",
+    "Wenn ihr nach der Geburt unsicher seid oder zunächst weniger Liebe als erwartet spürt, ist das nach den Gästen normal; tauscht euch aus, statt euch zu schämen.",
+    "Baut euch ein Netz aus Helferinnen und Helfern auf, denn Erfahrung mit Babys fehlt heute vielen Eltern."
    ],
    "sichtweisen": [
     {
      "podcast": "mutti",
      "text": "Die Hosts sehen den Mutterinstinkt als gesellschaftliches Konstrukt und grenzen sich deutlich von konservativen Kreisen ab, die die Mutter-Kind-Bindung biologisch begründen. Ihr Argument aus der Geschichte: Früher kümmerten sich viele Menschen gemeinsam um Kinder, und das Ideal der allein zuständigen Mutter entstand ihrer Darstellung nach im 18. Jahrhundert und verfestigte sich mit Industrialisierung und Bürgertum. Mädchen würden stärker zur Fürsorge erzogen, was dann fälschlich als Instinkt gedeutet werde. Elternschaft baue das Gehirn stark um, was sie Muttertät nennen und mit der Pubertät vergleichen. Das betreffe laut den Hosts Väter, Adoptiveltern und Großeltern je nach gefühlter Verantwortung ebenso, und wer vorher schon Verantwortung für Kinder getragen hat, erlebe es weniger heftig. Bei Vätern werde beim Kuscheln mit dem Baby genauso Oxytocin ausgeschüttet. Einige Zahlen und Details geben sie selbst als unsicher an. Eine Hostin dachte vor der ersten Geburt selbst, sie werde einfach wissen, was zu tun ist."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide stimmen mit den Mutti-Hosts im Kern überein: Einen festen Mutterinstinkt gibt es nach ihren Gästen nicht, und der Mythos belastet Eltern. Eine Gästin (Journalistin und Autorin) erklärt ihn als Erfindung der Geschichte seit dem 18. Jahrhundert und sieht darin einen Grund zum Aufatmen. Der Autor Herbert Renz-Polster ergänzt, Menschen seien instinktschwach, und Intuition sei großteils Erfahrungswissen, das man durch Mitleben mit Babys gewinnt. Heute fehle vielen Eltern sowohl diese Erfahrung als auch ein helfendes Netz. Anders als bei Mutti geht es der Gästin außerdem um Vorsicht bei den Hirnstudien: Die Umbauprozesse seien individuell verschieden, die Datenlage zur sogenannten Stilldemenz dünn und Biologie und Umwelt nicht zu trennen. Dass nach der Geburt zunächst Leere statt überwältigender Liebe da sein kann, nennt sie nicht unnormal."
     }
    ],
    "quellen": [
@@ -5191,6 +8227,30 @@ window.WISSEN = {
      "datum": "2025-07-29",
      "minute": "27:14",
      "thema": "Oxytocin bei Vätern und Müttern"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 178,
+     "titel": "Mythos Mutterinstinkt - wie moderne Hirnforschung uns Elternschaft neu denken lässt",
+     "datum": "2025-04-08",
+     "minute": "02:35",
+     "thema": "Das gesellschaftliche Mutterbild und die Erfahrungen der Gästin"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 178,
+     "titel": "Mythos Mutterinstinkt - wie moderne Hirnforschung uns Elternschaft neu denken lässt",
+     "datum": "2025-04-08",
+     "minute": "43:25",
+     "thema": "Bauchgefühl ist kein Instinkt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 141,
+     "titel": "Wie Erziehung heute gelingt mit Herbert Renz-Polster",
+     "datum": "2024-06-11",
+     "minute": "02:10",
+     "thema": "Warum Menschen keinen festen Instinkt haben"
     }
    ],
    "verwandt": [
@@ -5242,7 +8302,7 @@ window.WISSEN = {
    "tipps": [
     "Legt fest, was euch als Familie wichtig ist, macht daraus feste Regeln (zum Beispiel Sachen wegräumen, Zähne putzen) und setzt sie ruhig und beständig um.",
     "Sagt nur Nein, wenn ihr es meint, und wenn ihr unsicher seid, sagt ehrlich, dass ihr kurz überlegen müsst. Bleibt danach bei eurer Entscheidung, haltet den Frust des Kindes aus und bleibt dabei sanft und entspannt, aber konsequent. Sagt ihr Stopp, wartet nicht, dass das Kind von allein aufhört wie ein Auto am Stoppschild, sondern helft ihm aktiv, die Grenze einzuhalten.",
-    "Verzichtet auf Scheinfragen wie „Willst du jetzt Zähne putzen?“ und sagt stattdessen eine liebevolle, klare Ansage, zum Beispiel „Zähneputzen“ oder „Wir gehen jetzt nach Hause“, ohne „sonst“ und ohne Zählen.",
+    "Verzichtet auf Scheinfragen wie „Willst du jetzt Zähne putzen?“ und sagt stattdessen eine liebevolle, klare Ansage, zum Beispiel „Zähneputzen“ oder „Wir gehen jetzt nach Hause“, ohne „sonst“ und ohne Zählen. Formuliert die Grenze als Ich-Aussage („Ich will das nicht“ statt „Man macht das nicht“) und verbindet das Nein mit einem Ja zum Impuls des Kindes und einer Alternative.",
     "Sortiert Verhalten in drei Stufen: Missgeschicke kommentiert ihr nur mit „Das kann schon mal passieren“, Dinge wie die Jacke aufhängen übt ihr freundlich und beharrlich immer wieder, und bei Hauen, Kratzen oder absichtlichem Werfen sagt ihr klar Stopp und stellt danach den Kontakt wieder her.",
     "Prüft, ob eine Regel sinnvoll und für das Alter machbar ist, und beginnt bei dem, was euer Kind schon schafft, etwa Schuhe erst einmal ausziehen, bevor sie ordentlich verstaut werden sollen. Macht Regeln mit Kreativität leichter, zum Beispiel mit einem Spiel oder einem Lied, bis dessen Ende aufgeräumt sein soll.",
     "Verbindet Verständnis mit Abgrenzung, indem ihr einem Kind, das nur Frust an euch auslässt, klar sagt, dass ihr so nicht mit euch reden lasst, und es tröstet und in den Arm nehmt, wenn es völlig außer sich ist. Setzt die Grenze, ohne zu erwarten, dass das Kind sie gut findet, und gebt seinem Nein Empathie, ohne die Grenze aufzugeben, etwa: „Du bist sauer, ich entscheide das jetzt.“",
@@ -5262,6 +8322,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber betont, dass Gewaltfreie Kommunikation nicht antiautoritär ist: Sie sei ein Riesenfan von Grenzen, Eltern haben eigene und dürfen sie setzen, frei von der Erwartung, dass das Kind sie gut findet. Grenzen sollen aus ihrer Sicht nicht mit Belohnung und Bestrafung bewacht, sondern anhand der eigenen Werte einfühlsam bewahrt werden; ein Nein oder Widerstand des Kindes deutet sie als Hinweis auf ein Bedürfnis, das zuerst Empathie braucht, während die Eltern bei ihrer Entscheidung bleiben. Bei echter Gefahr oder wenn das Kind die Folgen nicht absehen kann, handeln Eltern körperlich (schützende Gewalt) und trösten danach; Ansagen statt Scheinfragen sieht sie als liebevolle Führung, die Sicherheit gibt. Sie widerspricht damit der Vorstellung, Empathie und Klarheit schlössen sich aus, und sieht Drohungen wie „nie wieder ein Ü-Ei“ als Strafe, nicht als Trost. Anders als die mutti-Hosts setzt sie nicht auf Konsequenzen. Auch Kinder dürfen Grenzen haben: Eltern sind ihr Schutzschild und helfen, eigene Grenzen zu erkennen."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide kommen bei diesem Thema in vielen Folgen vor und verstehen sich ausdrücklich nicht als grenzenlos: Der Eindruck, bedürfnisorientiert heiße ohne Grenzen, sei ein Missverständnis; es gehe ums Wie. Mit Nicola Schmidt als Gast sagen sie, es gebe keine allgemeingültigen Grenzen, sondern jede Familie müsse klären, wo ihre eigene Grenze liegt und was sie aushält. Ein Nein soll laut ihr ein Ja zum Impuls und eine klare Grenze enthalten („Ja-Grenze“); Ich-Sätze wirkten besser als „Man macht das nicht“. Sie stimmen damit weitgehend mit mutti, artgerecht und gfk überein, weichen aber in Nuancen ab: Eine Gästin hält nur Sicherheitsregeln für sinnvoll, die Hosts selbst eher so wenige Regeln wie möglich, so viele wie nötig. Mit Herbert Renz-Polster und anderen Gästen sprechen sie lieber von Orientierung als von Grenzen, halten Zwang im Alltag für unvermeidbar (es komme aufs Wie an) und betonen Vorhersehbarkeit: Wer lange nett ist und dann explodiert, erzeugt Unsicherheit. Strafen lehnen sie wie die Gäste ab."
     }
    ],
    "quellen": [
@@ -5312,6 +8376,22 @@ window.WISSEN = {
      "datum": "2024-12-16",
      "minute": "20:28",
      "thema": "Wie setze ich Grenzen und darf ich das?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 79,
+     "titel": "Grenzen setzen in der bedürfnisorientierten Erziehung",
+     "datum": "2022-01-28",
+     "minute": "07:28",
+     "thema": "Ja-Grenze und Ich-Botschaft"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 250,
+     "titel": "Wir wissen so viel über Erziehung - warum ist Elternsein trotzdem so anstrengend?",
+     "datum": "2026-08-25",
+     "minute": "21:31",
+     "thema": "Strafe, Konsequenz und Orientierung (Bergführer)"
     }
    ],
    "verwandt": [
@@ -5337,7 +8417,11 @@ window.WISSEN = {
     "Bezugspersonen",
     "Übernachten bei Oma",
     "Großeltern und GfK",
-    "Oma manipuliert Kind"
+    "Oma manipuliert Kind",
+    "Kontaktabbruch Großeltern",
+    "Umgangsrecht Großeltern",
+    "Oma wird Oma",
+    "Hindsight-Bias"
    ],
    "fragen": [
     "Die Großeltern erziehen anders, was tun?",
@@ -5345,7 +8429,8 @@ window.WISSEN = {
     "Wie baut mein Kind eine gute Bindung zu Oma und Opa auf?",
     "Wie sage ich den Großeltern, was ich nicht möchte?",
     "Mein Kind soll bei Oma und Opa übernachten",
-    "Oma und Opa loben und belohnen, wie reagiere ich?"
+    "Oma und Opa loben und belohnen, wie reagiere ich?",
+    "Soll ich den Kontakt zu den Großeltern einschränken?"
    ],
    "alter": [
     "0-1",
@@ -5358,7 +8443,7 @@ window.WISSEN = {
     "alltag",
     "entwicklung"
    ],
-   "kurz": "Kinder profitieren von mehreren Bezugspersonen, und Unterschiede zwischen Eltern und Großeltern sind normal und sogar wichtig. Kleine Differenzen sind kein Grund, Großeltern auszuschließen. Wichtig sind Zeit, Vertrauen und wertschätzende Gespräche über Erwartungen.",
+   "kurz": "Kinder profitieren von mehreren Bezugspersonen, und Unterschiede zwischen Eltern und Großeltern sind normal und sogar wichtig. Kleine Differenzen sind kein Grund, Großeltern auszuschließen. Wichtig sind Zeit, Vertrauen und wertschätzende Gespräche über Erwartungen. Im Podcast „Das gewünschteste Wunschkind“ kommt dazu: Hinter Kritik steckt oft Sorge, und vor einem Kontaktabbruch gibt es Zwischenlösungen; bei rechtlichen Fragen wie dem Umgangsrecht sollte juristischer Rat eingeholt werden.",
    "tipps": [
     "Gebt Großeltern früh Zeit mit dem Kind, lasst sie machen und gebt Feedback, wenn euch etwas auffällt, statt ständig einzugreifen.",
     "Bleibt im Gespräch, sprecht Unterschiede wertschätzend an und sagt klar, was ihr erwartet und was nicht.",
@@ -5367,8 +8452,8 @@ window.WISSEN = {
     "Hat ein Großelternteil etwas gesagt, das ihr anders seht, sprecht danach mit eurem Kind darüber.",
     "Sprecht Geschenke vorher ab, besonders bei Dingen, die gefährlich sein können.",
     "Gewöhnt Kinder schrittweise an Zeit bei den Großeltern, ähnlich wie bei der Kita-Eingewöhnung, indem ihr erst dabeibleibt, dann kurz aus dem Raum geht und dann länger weg seid.",
-    "Probiert aus, ob euer Kind dort übernachten mag, bleibt in der Nähe, falls es sich nicht beruhigt, und erlaubt ihm, beim Abschied kurz traurig zu sein.",
-    "Nutzt Videotelefonate mit den Großeltern für kurze Verschnaufpausen und um die Bindung zu stärken."
+    "Probiert aus, ob euer Kind dort übernachten mag, bleibt in der Nähe, falls es sich nicht beruhigt, und erlaubt ihm, beim Abschied kurz traurig zu sein, und nutzt Videotelefonate für kurze Verschnaufpausen und um die Bindung zu stärken.",
+    "Nutzt vor einem Kontaktabbruch Zwischenlösungen wie Treffen auf neutralem Grund, nur ein Großelternteil oder zeitlich begrenzte Besuche. Bei rechtlichen Fragen, etwa zum Umgangsrecht, holt juristischen Rat ein."
    ],
    "sichtweisen": [
     {
@@ -5378,6 +8463,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber erklärt, dass Großeltern weder zu ändern noch zu überzeugen sind; Eltern können einladen, vorleben und loslassen, auch wenn es Jahre dauert. Verurteilung senkt laut ihr die Bereitschaft der Großeltern, und wer ihnen innerlich vorwirft, etwas falsch zu machen, kann ihnen keine Empathie geben. Sie berichtet, dass sie ihre Eltern früher ständig korrigiert habe und heute lieber übersetzt, was gemeint ist. Zugleich sieht sie Eltern als Schutzschild für die Seele des Kindes: Bei Belohnung, Strafe, Druck oder Sätzen wie „Oma ist dann traurig“ sagt sie kurz Stopp, ohne zu verurteilen, und spricht erst danach mit den Großeltern. Anders als die Mutti-Hosts, die Ratschläge der Großeltern oft für wertvoll halten, erwartet sie nicht, dass Großeltern ihre Haltung teilen, und sie akzeptiert deren Art. Eigene Grenzen, etwa bei körperlicher Gewalt oder dauernder Einmischung, hält sie dagegen für berechtigt, bis hin dazu, die Betreuung zu überdenken."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Die Hosts und ihre Gäste sehen es ähnlich wie Kathy Weber (gfk): Großeltern meinten es meist gut und hätten nach dem damaligen Stand ihr Bestes getan, deshalb helfe Anerkennung mehr als Vorwurf. Sie betonen, dass solche Spannungen normal sind und bei Stillen, Schlaf und Essen besonders entstehen, weil Eltern dort selbst unsicher sind und Kritik schnell als Angriff erleben; dahinter stecke oft auch Sorge. Anders als die Mutti-Hosts widmen sie den Großeltern selbst Raum: Gästinnen sagen, Großeltern hätten keinen Erziehungsauftrag, und die Eltern hätten bei den Regeln das letzte Wort. Zugleich zählen die Bedürfnisse der Großeltern, etwa wie viel Betreuung sie leisten wollen. Weiter als die anderen Podcasts gehen Gäste beim Thema Kontaktbeschränkung: Vor einem Abbruch gebe es Zwischenlösungen, Süßigkeiten seien kein Grund; bei Gewalt aber müssten Eltern konsequent handeln. Zum gesetzlichen Umgangsrecht äußern sie sich nur kurz, das ist eine Aussage der Gäste und keine Rechtsauskunft."
     }
    ],
    "quellen": [
@@ -5430,12 +8519,20 @@ window.WISSEN = {
      "thema": "Eigene Erwartungen an Großeltern erkennen"
     },
     {
-     "podcast": "gfk",
-     "nr": 144,
-     "titel": "Umgang mit Großeltern: Differenzen in der Kindererziehung meistern – gemeinsam, ohne Strafen und Lob",
-     "datum": "2025-01-13",
-     "minute": "32:30",
-     "thema": "Dazwischengehen, ohne die Großeltern zu verurteilen"
+     "podcast": "wunschkind",
+     "nr": 241,
+     "titel": "Endgegner Großeltern? Konflikte verstehen und besser damit umgehen",
+     "datum": "2026-06-23",
+     "minute": "03:49",
+     "thema": "Enttäuschte Erwartungen an Unterstützung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 241,
+     "titel": "Endgegner Großeltern? Konflikte verstehen und besser damit umgehen",
+     "datum": "2026-06-23",
+     "minute": "10:18",
+     "thema": "Rückschaufehler und Gespräch statt Streit"
     }
    ],
    "verwandt": [
@@ -5446,7 +8543,7 @@ window.WISSEN = {
     "trigger-inneres-kind",
     "dorf-unterstuetzung"
    ],
-   "medizinisch": false,
+   "medizinisch": true,
    "einleitung": "Großeltern erziehen oft anders als die Eltern, und das führt schnell zu Spannungen. Eltern fragen sich, wie viel Einmischung sie hinnehmen und wo sie Grenzen setzen sollen."
   },
   {
@@ -5458,12 +8555,16 @@ window.WISSEN = {
     "Mamakind",
     "zweite Bezugsperson wird abgelehnt",
     "Papa wird weggeschoben",
-    "Kind klebt an der Mama"
+    "Kind klebt an der Mama",
+    "Bindungshierarchie",
+    "Kind bevorzugt Mama",
+    "Kind lehnt mich ab"
    ],
    "fragen": [
     "Mein Kind lehnt den Papa ab, seit das Baby da ist, was tun?",
     "Mein Kleinkind will nur die Mama, wie kann der Papa helfen?",
-    "Verliert der Papa die Bindung zum Kind, wenn es ihn ablehnt?"
+    "Verliert der Papa die Bindung zum Kind, wenn es ihn ablehnt?",
+    "Mein Kind lehnt mich ab, ist das normal?"
    ],
    "alter": [
     "0-1",
@@ -5481,12 +8582,19 @@ window.WISSEN = {
     "Prüft, ob der Papa statt des großen Kindes das Baby übernimmt, denn das Große braucht in dieser Zeit oft die Mama.",
     "Das kleine Kind ist oft flexibler und lässt sich leichter abgeben, so wird die Mama entlastet.",
     "Kommt dem großen Kind so weit entgegen, wie es möglich ist.",
-    "Habt Zuversicht: Kinder schaffen diese Zeit, solange eine Bindungsperson den Frust mit ihnen durchsteht."
+    "Habt Zuversicht: Kinder schaffen diese Zeit, solange eine Bindungsperson den Frust mit ihnen durchsteht.",
+    "Übernehmt als zweite Bezugsperson feste Rituale wie Wickeln, Abendroutine oder Vorlesen; mit dem Alter wird diese Rolle wichtiger.",
+    "Gebt das Kind bei Protest nicht sofort zurück, außer es schreit aus Leibeskräften.",
+    "Wenn der Schmerz der Zurückweisung aufkommt, wendet euch zuerst euch selbst zu, mit Selbstmitgefühl oder Hilfe einer anderen erwachsenen Person, statt das Kind ändern zu wollen."
    ],
    "sichtweisen": [
     {
      "podcast": "artgerecht",
      "text": "Nicola Schmidt greift Zuschriften auf, in denen ältere Kinder den Papa ablehnen, während das Baby die Mama braucht. Das sei für alle schwer: Das große Kind sei im Widerstand, das Baby bekomme weniger, und dem Papa breche das Herz. Der Wechsel gelinge eher, wenn sich die Eltern von Anfang an viel geteilt haben, könne aber auch bei sehr engagierten Papas scheitern. Aus Sicht des Kindes sei der Mensch, der Sicherheit gibt, nun beim Baby. Sie nennt aus der Forschung, der beste Geburtenabstand für wenig Stress liege bei etwa drei Jahren, weil Dreijährige ihre wichtigste Bezugsperson besser abgeben können. Sie nimmt die zweiten Bezugspersonen in Schutz: Sie machten wahrscheinlich einen guten Job, auch wenn sie in solchen Momenten nichts richtig machen können. Sie räumt ein, dass Entgegenkommen nicht immer möglich ist."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Die Hosts Daniel Graf und Katja Seide behandeln das Thema allgemeiner: Ein Kind bevorzugt ein Elternteil, und das andere wird abgelehnt, nicht nur nach der Geburt eines Geschwisterchens. Sie erklären es mit einer Bindungshierarchie nach Bowlby: Die Bindungsperson Nummer eins werde in Stress und Not bevorzugt, weil sich das Kind bei ihr am schnellsten beruhige, Nummer zwei tröste langsamer. Das ist keine bewusste Ablehnung, sondern eine Überlebensstrategie, was zu Nicola Schmidts Deutung passt, das Kind wolle seine wichtigste Bezugsperson. Die Hosts betonen stärker, dass Nummer zwei dranbleiben und feste Rituale übernehmen soll, und dass Protest bei der Übergabe kein Grund zum sofortigen Zurückgeben ist. Zusätzlich thematisieren sie den Schmerz der Zurückweisung: Ein Gast (Psychologe) rät, sich zuerst um diesen Schmerz selbst zu kümmern, statt das Kind ändern zu wollen."
     }
    ],
    "quellen": [
@@ -5529,6 +8637,30 @@ window.WISSEN = {
      "datum": "2025-04-08",
      "minute": "02:04",
      "thema": "Warum das so ist: Geburtenabstand von drei Jahren"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 191,
+     "titel": "Mein Kind lehnt mich ab - warum ist das so und was kann ich tun?",
+     "datum": "2025-07-08",
+     "minute": "02:00",
+     "thema": "Bindungspyramide erklärt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 191,
+     "titel": "Mein Kind lehnt mich ab - warum ist das so und was kann ich tun?",
+     "datum": "2025-07-08",
+     "minute": "09:48",
+     "thema": "Nicht persönlich nehmen, nicht zurückziehen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 98,
+     "titel": "Wenn dir dein eigenes Kind fremd ist – mit Dr. Oliver Dierssen",
+     "datum": "2022-10-18",
+     "minute": "38:48",
+     "thema": "Warum der Schmerz so heftig sein kann, und was hilft"
     }
    ],
    "verwandt": [
@@ -5536,7 +8668,8 @@ window.WISSEN = {
     "eifersucht-baby",
     "vaterrolle",
     "mehrere-bezugspersonen",
-    "bindung"
+    "bindung",
+    "mama-phase"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind lehnt den Papa ab, seit das Baby da ist, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
@@ -5552,14 +8685,17 @@ window.WISSEN = {
     "nicht verurteilen",
     "Bestmögliches tun",
     "Rosenberg",
-    "Wörter vermeiden man nein nicht"
+    "Wörter vermeiden man nein nicht",
+    "Wolf und Giraffe",
+    "Empathieroboter"
    ],
    "fragen": [
     "Was sind die Grundannahmen der gewaltfreien Kommunikation?",
     "Wie höre ich auf, mein Kind und andere zu verurteilen?",
     "Darf mein Kind seine Meinung ändern?",
     "Was sage ich statt \"Das macht man nicht\"?",
-    "Heißt Verständnis, dass ich alles akzeptieren muss?"
+    "Heißt Verständnis, dass ich alles akzeptieren muss?",
+    "Klingt GfK nicht hölzern und künstlich?"
    ],
    "alter": [
     "1-3",
@@ -5587,6 +8723,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber nennt sechs Grundannahmen: Menschen leben gern in Gemeinschaft und tragen zum Wohl aller bei, solange ihre Bedürfnisse weitgehend erfüllt sind; andere sind nicht für die eigenen Gefühle verantwortlich; die Ursache der Gefühle sind die Bedürfnisse; jeder ist selbst für seine Bedürfnisse zuständig; alle haben dieselben Bedürfnisse; jeder tut sein Bestmögliches. Dazu gehört, dass man jederzeit die Meinung ändern darf. Die Annahme vom Bestmöglichen sei für sie die schwierigste, sie arbeite täglich damit; sie bedeute nicht, Verhalten zu akzeptieren, Grenzverletzungen dürfe man begrenzen. Sie berichtet, drei Jahre lang nur die Technik gekannt zu haben, was wie ein empathischer Roboter gewirkt habe, und sagt, es gebe keine richtige oder falsche GfK. Beim Verzicht auf Wörter wie \"man\", \"nein\", \"nicht\", \"gleich\" und \"aber\" sagt sie, jedes Wort habe seine Berechtigung, die Veränderung verlaufe aber in Phasen und verbessere spürbar die Verbindung. Regeln, Belohnung und Bestrafung lehnt sie ab; ihrer Ansicht nach sind viele Menschen deshalb wenig bereit, zum Gemeinwohl beizutragen."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "In „Das gewünschteste Wunschkind“ ist Kathy Weber selbst zu Gast und erklärt GfK so, wie sie es auch in ihrem eigenen Podcast tut: Haltung vor Technik, sonst sprächen „Empathieroboter“. Sie erklärt Wolf (Machtsprache, Bewertung) und Giraffe (Empathie) und betont, es gehe um die Bedürfnisse aller, nicht nur die des Kindes. In einer späteren Folge nennt sie das Verhältnis etwa 70 Prozent Haltung zu 30 Prozent Strategie und sagt, kein Kind handle, um Eltern zu ärgern. Eine andere Gästin schätzt GfK ebenfalls, differenziert aber: Bei manchen Kindern folge auf eine Bitte ein Nein, bei sehr jungen Kindern ersetze sie die Bitte oft durch eine klare, kurze, positive Formulierung. Viele GfK-Trainer sähen das anders; sie meint, jede Familie müsse ihren authentischen Weg finden, und temperamentvolle Eltern müssten sich nicht verbiegen."
     }
    ],
    "quellen": [
@@ -5623,20 +8763,20 @@ window.WISSEN = {
      "thema": "Das Wort man und die drei Phasen des Verzichts"
     },
     {
-     "podcast": "gfk",
-     "nr": 8,
-     "titel": "010: W-wie Wörter auf die du verzichten kannst.",
-     "datum": "2019-06-09",
-     "minute": "10:35",
-     "thema": "Das Wort nein"
+     "podcast": "wunschkind",
+     "nr": 112,
+     "titel": "Gewaltfreie Kommunikation mit Kathy Weber",
+     "datum": "2023-05-02",
+     "minute": "04:29",
+     "thema": "Was ist gewaltfreie Kommunikation, Wolf und Giraffe"
     },
     {
-     "podcast": "gfk",
-     "nr": 35,
-     "titel": "49 K- wie Kathy und die GfK: Meine Antworten auf eure Fragen",
-     "datum": "2021-02-08",
-     "minute": "09:26",
-     "thema": "Wie aus Theorie eine Haltung wurde"
+     "podcast": "wunschkind",
+     "nr": 107,
+     "titel": "Liebevolle Kommunikation – miteinander sprechen, miteinander wachsen.",
+     "datum": "2023-02-21",
+     "minute": "48:45",
+     "thema": "Wenn Kinder Nein sagen, Grenzen der Bitte"
     }
    ],
    "verwandt": [
@@ -5649,6 +8789,117 @@ window.WISSEN = {
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Was sind die Grundannahmen der gewaltfreien Kommunikation?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "kommunikation-mit-kindern",
+   "titel": "Gut mit Kindern ins Gespräch kommen",
+   "synonyme": [
+    "Kommunikation mit Kindern",
+    "mit dem Kind reden",
+    "Kind erzählt nichts",
+    "aktives Zuhören",
+    "Ich-Botschaften",
+    "Gordon-Methode",
+    "Vier-Ohren-Modell",
+    "Visualisierung",
+    "Sketchnotes",
+    "schwierige Gespräche"
+   ],
+   "fragen": [
+    "Mein Kind erzählt nichts aus der Kita, was tun?",
+    "Wie rede ich so, dass mein Kind zuhört?",
+    "Wann ist der beste Moment für ein Gespräch mit dem Kind?",
+    "Wie höre ich meinem Kind richtig zu?",
+    "Was ist das Gordon-Modell?",
+    "Wie bringe ich mein Kind dazu, mir Probleme zu erzählen?"
+   ],
+   "alter": [
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "alltag",
+    "gefuehle",
+    "eltern"
+   ],
+   "kurz": "Die Gäste des Podcasts sehen gute Kommunikation weniger als Technik, sondern als Haltung: zuwenden, geduldig zuhören, nicht vorschnell werten oder Lösungen liefern. Für Gespräche zählt der Moment (abends, nebenbei, im Auto) mehr als die perfekte Formulierung. Hilfreich sind außerdem Ich-Botschaften, aktives Zuhören und einfache Bilder oder Symbole für den Alltag.",
+   "tipps": [
+    "Legt Handy oder Tätigkeit kurz weg, wenn euer Kind Kontakt sucht, und hört zu, ohne die Sätze zu Ende zu bringen.",
+    "Fragt nach der Kita oder Schule nicht gleich aus: Lasst das Kind erst ankommen und erzählt zuerst von eurem eigenen Tag, dann fragt es oft selbst.",
+    "Nutzt Momente, in denen Kinder von allein reden, etwa abends beim Zubettgehen, beim Kochen, Basteln oder Autofahren; mitten im Wutanfall bringt Reden nichts.",
+    "Beim aktiven Zuhören gebt ihr das Gehörte samt Gefühl in eigenen Worten wieder und fragt nach, ob es stimmt, statt gleich Lösungen anzubieten.",
+    "Beschreibt Situationen zuerst wertfrei (Die Jacke liegt auf dem Boden) und teilt mit Ich-Botschaften mit, was ihr selbst braucht.",
+    "Fragt euch bei Konflikten, wem das Problem gehört, dem Kind, euch oder beiden, denn danach richtet sich das Vorgehen im Gordon-Modell.",
+    "Lockert Übergänge und Unangenehmes mit Quatsch und Humor auf, ohne es zur Dauerstrategie bei großen Gefühlen zu machen.",
+    "Macht schon bei der Handyübergabe klar, dass das Kind mit allem zu euch kommen darf, auch spät, und vermeidet Handyentzug als Reaktion, wenn es sich öffnet.",
+    "Bei kleinen Kindern helfen konkrete Symbole oder Fotos für Routinen; es muss nicht schön gezeichnet sein, nur verständlich."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Mehrere Gäste setzen dieselbe Grundrichtung: Beziehung, Timing und Haltung wichtiger als Formulierungen. Eine Gästin nennt Aufmerksamkeit, Geduld, Toleranz und Respekt als Haltung und betont, Eltern müssten kein schlechtes Gewissen haben, wenn sie nicht immer geduldig sind. Eine andere Gästin nimmt den Perfektionsdruck raus: Gute Gespräche beginnen mit Zuhören, man darf später wieder anknüpfen. Zum Gordon-Modell erklärt eine Gästin, hinter jedem Verhalten stehe ein unerfülltes Bedürfnis, schon ein Drittel der Zeit in dieser Haltung sei viel gewonnen, und sie falle selbst manchmal heraus. Zum Vier-Ohren-Modell sagen die Gästinnen, es sei nur ein Modell und müsse zur Familie passen. Für Visualisierung wirbt eine Gästin, räumt aber ein, es sei kein Muss; die Hosts nennen sich selbst eher unbegabt im Zeichnen, aber begeistert. Die Hosts stimmen weitgehend zu und finden Gordon entlastend."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 133,
+     "titel": "Kinderleicht mit Kindern ins Gespräch kommen",
+     "datum": "2024-02-20",
+     "minute": "26:40",
+     "thema": "Haltung: Aufmerksamkeit, Geduld, Toleranz, Respekt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 177,
+     "titel": "Mit Kindern über schwierige Themen sprechen",
+     "datum": "2025-04-01",
+     "minute": "01:17",
+     "thema": "Wo und wann Gespräche gut klappen, je nach Alter"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 238,
+     "titel": "Kommunikation nach Gordon - für mehr Verständnis und Verbundenheit",
+     "datum": "2026-06-02",
+     "minute": "08:13",
+     "thema": "Worum geht es im Gordon-Modell, Haltung und Geschichte"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 238,
+     "titel": "Kommunikation nach Gordon - für mehr Verständnis und Verbundenheit",
+     "datum": "2026-06-02",
+     "minute": "18:54",
+     "thema": "Was aktives Zuhören bedeutet"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 240,
+     "titel": "Mit Bildern schreiben - wie kleine Symbole den Familienalltag erleichtern",
+     "datum": "2026-06-16",
+     "minute": "05:23",
+     "thema": "Wie niedrigschwellig Visualisierung ist, auch ohne Zeichentalent"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 259,
+     "titel": "Cybermobbing - wie Du Dein Kind schützt und stärkst",
+     "datum": "2026-10-27",
+     "minute": "18:31",
+     "thema": "Was Eltern im Vorfeld tun können, damit Kinder erzählen"
+    }
+   ],
+   "verwandt": [
+    "nach-der-schule-gespraech",
+    "gefuehle-begleiten",
+    "kooperation-zuhoeren",
+    "sprache-formulierungen",
+    "rassismus"
+   ],
+   "medizinisch": false,
+   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind erzählt nichts aus der Kita, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "handy-eltern-baby",
@@ -5692,7 +8943,8 @@ window.WISSEN = {
     "Macht euch keine Vorwürfe, wenn ihr das Handy beim Stillen oder bei einem schlafenden Baby nutzt. Es kommt darauf an, wie viel und welche Inhalte.",
     "Achtet besonders auf Momente, in denen ihr mitten in einer Interaktion nach dem Handy greift, etwa nach einer Push-Nachricht.",
     "Legt das Handy bei der Heimkehr an einen Ort, an dem ihr nicht danach greift, etwa in eine Schublade.",
-    "Beobachtet zuerst, wann und wie ihr zum Handy greift; erst dann könnt ihr etwas ändern."
+    "Beobachtet zuerst, wann und wie ihr zum Handy greift; erst dann könnt ihr etwas ändern.",
+    "Legt das Handy bewusst weg, wenn ihr mit dem Kind zusammen seid, und nutzt es beim Stillen oder Fläschchengeben nicht dauernd."
    ],
    "sichtweisen": [
     {
@@ -5702,6 +8954,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "In einer Folge über Achtsamkeit sprechen Kathy Weber und ihr Gesprächspartner Peter Bär über die eigene Handynutzung als Eltern. Peter Bär sagt, das Handy sei so gebaut, dass es Aufmerksamkeit bindet, und es liefere kleine Dopamin-Kicks. Sind Eltern ständig daran, seien sie nicht präsent, und das Kind könne das Verhalten übernehmen. Ohne Handy fühle sich der Anfang wie Entzug an, danach nähmen beide Sinneseindrücke intensiver wahr. Beide bewerten das Handy nicht grundsätzlich als schlecht, es sei auch ihr Arbeitsgerät, und sie verstehen ihre Erfahrungen als Einladung zur Selbstbeobachtung, nicht als Regel. Das ist deutlich kritischer als die entlastende Haltung von Nicola Schmidt, und es geht um ältere Kinder, nicht um Babys. Die Folge nennt keine Studien."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Bei wunschkind kommt das Thema in einer Folge über Kindergesundheit und Stress zu Hause vor. Die Gästin sagt, ständiger Handygebrauch wirke ähnlich wie fehlende Mimik: Auch wenn der Körper da ist, spüre das Kind, dass die Aufmerksamkeit fehlt. Sie verweist auf das Still-Face-Experiment, bei dem ein Baby ohne Mimik der Bezugsperson Stress zeigt, und auf Studien, ohne Details zu nennen. Das ähnelt Nicola Schmidts Hinweis auf den Kontaktabbruch, ist aber deutlich kritischer und enthält keine entlastenden Aussagen etwa zum blauen Licht. Gleichzeitig betont die Gästin, dass es kein Vorwurf sei, etwa beim stundenlangen Stillen, und die Hosts sprechen über das Schuldgefühl, das solche Hinweise auslösen kann. Es ist nur eine Passage; die Aussagen sind die der Gästin, keine gesicherten Fakten."
     }
    ],
    "quellen": [
@@ -5752,6 +9008,14 @@ window.WISSEN = {
      "datum": "2022-05-01",
      "minute": "28:07",
      "thema": "Entzug und das Glück danach"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 135,
+     "titel": "Kindergesundheit beginnt zu Hause",
+     "datum": "2024-03-19",
+     "minute": "27:58",
+     "thema": "Leichte Formen von Vernachlässigung: Stress, Still-Face, Handy"
     }
    ],
    "verwandt": [
@@ -5762,6 +9026,118 @@ window.WISSEN = {
    ],
    "medizinisch": true,
    "einleitung": "Viele Eltern kennen diese Situation: „Darf ich beim Stillen aufs Handy schauen?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "eltern-psyche-hilfe",
+   "titel": "Hilfe bei psychischer Belastung als Eltern",
+   "synonyme": [
+    "Depression nach der Geburt",
+    "Wochenbettdepression",
+    "Therapieplatz finden",
+    "Erziehungsberatung",
+    "Mutter-Kind-Kur",
+    "Eltern-Kind-Kur",
+    "Überforderung Mutter",
+    "People Pleasing",
+    "Alkohol Mutter",
+    "Regretting Motherhood"
+   ],
+   "fragen": [
+    "Ist das noch Erschöpfung oder schon eine Depression?",
+    "Wo finde ich als Mutter oder Vater schnell Hilfe?",
+    "Rufen die das Jugendamt an, wenn ich ehrlich bin?",
+    "Wie beantrage ich eine Eltern-Kind-Kur?",
+    "Trinke ich als Mutter zu viel Wein?",
+    "Ist es normal, Mutterschaft zu bereuen?"
+   ],
+   "alter": [
+    "0-1",
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "eltern",
+    "gefuehle"
+   ],
+   "kurz": "In den Folgen betonen Hosts und Gäste: Wer sich über längere Zeit schlecht fühlt oder im Alltag eingeschränkt ist, darf sich Hilfe holen, ohne erst „schlimm genug“ krank zu sein. Genannte Wege sind Hausarzt, Beratungsstellen, Therapie, Eltern-Kind-Kur und Austausch mit Betroffenen. Das ist Erfahrung der Gäste und keine ärztliche Beratung; bei Unsicherheit oder Suizidgedanken sucht ihr professionelle Hilfe.",
+   "tipps": [
+    "Nehmt es ernst, wenn euch Dinge einschränken, die vorher gut gingen, oder wenn ihr euch länger als etwa zwei Wochen dauerhaft schlecht fühlt. Es gibt laut einer Gästin keinen Schwellenwert, ab dem ihr erst Hilfe suchen dürft.",
+    "Bei Suizidgedanken, auch als Tagträume, wendet euch sofort an eine psychiatrische Notfallambulanz oder die kostenlose, anonyme Telefonseelsorge.",
+    "Erste Anlaufstellen können Hausarzt oder Hausärztin, psychotherapeutische Sprechstunden oder Beratungsstellen sein; Beratungsstellen sind laut einer Gästin meist kostenlos und ohne Wartezeit. Sagt eine Stelle, ihr braucht keine Therapie, ihr fühlt euch aber nicht gut, geht zur nächsten.",
+    "Bei langer Therapeutensuche hilft laut einem Gast aus der Kinder- und Jugendpsychiatrie eine dringliche Überweisung vom Arzt und die Nachfrage nach freien Plätzen bei der Kassenärztlichen Vereinigung. Erziehungsberatungsstellen stehen Eltern auch ohne Kind offen.",
+    "Sprecht mit Menschen um euch, statt eine Rolle zu spielen. Partner sollten laut einem Gast Druck rausnehmen, mit Ratschlägen zurückhaltend sein und vorsichtig zur Hilfe ermutigen; den Schritt müssen Betroffene selbst gehen.",
+    "Ängste vor dem Jugendamt oder davor, Therapeutinnen den Platz wegzunehmen, halten viele zurück. Laut einer Gästin gilt in der Therapie die Schweigepflicht; die Hosts sehen das Jugendamt nicht als Feind, sondern als mögliche Ressource.",
+    "Eine Eltern-Kind-Kur beantragt ihr laut einer Gästin über Hausarzt und eine Beratungsstelle; bei Ablehnung dranbleiben und den Antrag nachbessern lassen. Mitfahrende Kinder sollten einen eigenen Antrag bekommen.",
+    "Wenn ihr merkt, dass das Glas Wein nötig wird, um den Tag auszuhalten, schaut hin, was dahintersteckt: Ruhe, Verbundenheit oder Entlastung.",
+    "Übt, Nein zu sagen, und haltet das schlechte Gewissen am Anfang aus; laut einer Psychologin vergeht es nicht, bevor man handelt."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide ermutigen in vielen Folgen, offen über psychische Belastung zu sprechen und früh Hilfe zu suchen. Meist hören sie Gästen mit eigener Erfahrung zu: einem Vater mit Depression, einer Mutter mit postpartaler Störung, einer Mutter, die ihren Alkoholkonsum beendete, und einer Autorin, die ihre Mutterschaft bereut. Sie betonen, dass Hilfe kein Scheitern ist, sondern ein weiteres Puzzlestück in der Begleitung eines Kindes oder der eigenen Familie. Mehrere Gäste sagen, dass Symptome sich bei jedem anders zeigen und dass sie nur für sich sprechen. Uneinig ist man nicht, aber die Wege unterscheiden sich: Eine Gästin lehnt kontrolliertes Trinken für sich ab, eine andere wirbt für Kuren, eine dritte dafür, Reue und Liebe zum Kind zugleich auszuhalten. Auch die Kritik daran, Reue offen zu äußern, kommt zur Sprache, Kinder könnten darunter leiden."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 170,
+     "titel": "Psychische Probleme - wie wir sie erkennen und behandeln können",
+     "datum": "2025-02-11",
+     "minute": "06:33",
+     "thema": "Leitfragen: Leidensdruck und Einschränkung im Alltag"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 170,
+     "titel": "Psychische Probleme - wie wir sie erkennen und behandeln können",
+     "datum": "2025-02-11",
+     "minute": "37:54",
+     "thema": "Angst vor dem Jugendamt und geschützter Raum der Therapie"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 145,
+     "titel": "Vater sein mit Depressionen - mit Sebastian Tigges",
+     "datum": "2024-08-06",
+     "minute": "09:06",
+     "thema": "Was Partnerinnen und Partner tun können und was nicht"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 200,
+     "titel": "Erholung und Vorsorge durch Eltern-Kind-Kuren",
+     "datum": "2025-09-09",
+     "minute": "03:34",
+     "thema": "Ablauf der Beantragung über Arzt und Beratungsstelle"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 202,
+     "titel": "Alkohol in der Mutterschaft: Warum so viele Mütter trinken und wie der Ausstieg gelingen kann",
+     "datum": "2025-09-23",
+     "minute": "44:24",
+     "thema": "Wie man Angehörige ansprechen kann"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 182,
+     "titel": "People Pleasing - wie wir der Harmoniefalle entkommen",
+     "datum": "2025-05-06",
+     "minute": "22:21",
+     "thema": "Freundlich Nein sagen, Inga-Formel"
+    }
+   ],
+   "verwandt": [
+    "erschoepfte-eltern",
+    "psychische-gesundheit-kind",
+    "mental-load",
+    "drogen-alkohol-rauchen",
+    "zeit-fuer-sich",
+    "dorf-unterstuetzung"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Ist das noch Erschöpfung oder schon eine Depression?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "hirnentwicklung-mythen",
@@ -5879,13 +9255,100 @@ window.WISSEN = {
    "verwandt": [
     "trocken-werden",
     "frustrationstoleranz",
+    "erwartungen-zuschreibungen",
     "babyschlaf",
     "erste-zeit-mit-baby",
-    "natur-draussen",
-    "risiko-freiheit"
+    "natur-draussen"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern hören, dass ein Kind etwas wegen der Hirnreife noch nicht kann, und fragen sich, ob sie abwarten oder üben sollen."
+  },
+  {
+   "id": "hochbegabung",
+   "titel": "Hochbegabung erkennen und verstehen",
+   "synonyme": [
+    "hochbegabtes Kind",
+    "Intelligenz",
+    "Begabungsdiagnostik",
+    "IQ-Test",
+    "asynchrone Entwicklung",
+    "Twice Exceptional",
+    "Scanner-Persönlichkeit",
+    "Höchstbegabung"
+   ],
+   "fragen": [
+    "Woran erkenne ich, dass mein Kind hochbegabt ist?",
+    "Was ist der Unterschied zwischen Begabungsdiagnostik und klinischem IQ-Test?",
+    "Mein Kind ist schlau, benimmt sich aber unreif, woran liegt das?",
+    "Kann Hochbegabung mit ADHS verwechselt werden?"
+   ],
+   "alter": [
+    "0-1",
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "entwicklung",
+    "kita",
+    "gefuehle"
+   ],
+   "kurz": "Hochbegabung ist laut einer Gästin im Podcast ein Potenzial und kein Garant für gute Leistungen. Oft zeigt sie sich früh durch Wissensdurst, Unruhe und tiefes Interesse, während das soziale und emotionale Verhalten länger braucht (asynchrone Entwicklung). Wer einen Verdacht hat, kann früh eine Begabungsdiagnostik machen lassen, die auf Stärken statt auf Defizite schaut.",
+   "tipps": [
+    "Wenn ihr einen Verdacht auf Hochbegabung habt, lasst früh eine Begabungsdiagnostik machen, damit ganz andere Fördermöglichkeiten offenstehen.",
+    "Vermeidet Sätze nach dem Muster „Du bist doch so clever, warum kannst du das nicht?“, denn Verstand und soziales Verhalten entwickeln sich ungleich.",
+    "Bereitet das Kind und Besuchskinder darauf vor, welche Spielsachen zum Teilen da sind und welche nicht.",
+    "Schaut bei Auffälligkeiten nicht nur auf Defizite, sondern auch auf mögliche Begabung."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Eine Gästin erzählt aus eigener Erfahrung als Mutter. Rückblickend sei ihr Kind schon früh aufgefallen: unruhig, ständig auf Entdeckungsreise, technikbegeistert und mit unstillbarem Wissensdurst. Eltern eines ersten Kindes hielten das oft für normal. Sie beschreibt Hochbegabung ab einem IQ von 130 und typische Merkmale wie komplexes Denken, schnelle Auffassung, tiefes oder breites Interesse, Abneigung gegen Wiederholungen und hohe Sensibilität. Besonders kritisch sieht sie die klinische Diagnostik, die ihrer Erfahrung nach defizitorientiert ablief, mit vielen Terminen und Ansprechpersonen, während die Begabungsdiagnostik potenzialorientiert sei und Ergebnisse samt Tipps direkt liefere. Ihre Angaben zu Diagnostik und Schulwesen beruhen auf ihrer persönlichen Erfahrung in einem Bundesland vor etwa 15 Jahren. Die Hosts hören vor allem zu, eine der beiden erkennt Parallelen zu ihrem eigenen Kind."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 174,
+     "titel": "Hochbegabt gescheitert - wenn Kinder nicht ins System passen",
+     "datum": "2025-03-11",
+     "minute": "26:16",
+     "thema": "Was Hochbegabung ist und wie sie sich zeigt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 174,
+     "titel": "Hochbegabt gescheitert - wenn Kinder nicht ins System passen",
+     "datum": "2025-03-11",
+     "minute": "08:27",
+     "thema": "Asynchrone Entwicklung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 174,
+     "titel": "Hochbegabt gescheitert - wenn Kinder nicht ins System passen",
+     "datum": "2025-03-11",
+     "minute": "23:57",
+     "thema": "Begabungsdiagnostik versus klinische Diagnostik"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 174,
+     "titel": "Hochbegabt gescheitert - wenn Kinder nicht ins System passen",
+     "datum": "2025-03-11",
+     "minute": "03:31",
+     "thema": "Frühe Auffälligkeiten als Baby und Kleinkind"
+    }
+   ],
+   "verwandt": [
+    "adhs-kind",
+    "neurodivergenz",
+    "gefuehlsstarke-hochsensible-kinder",
+    "schulreife-rueckstellung",
+    "schulangst"
+   ],
+   "medizinisch": false,
+   "einleitung": "Viele Eltern kennen diese Situation: „Woran erkenne ich, dass mein Kind hochbegabt ist?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "intensive-parenting",
@@ -5992,12 +9455,12 @@ window.WISSEN = {
     }
    ],
    "verwandt": [
+    "exklusivzeit",
     "erschoepfte-eltern",
     "zeit-fuer-sich",
     "spielen",
     "beduerfnisorientierte-erziehung",
-    "bildschirmzeit",
-    "erste-zeit-mit-baby"
+    "bildschirmzeit"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern fühlen sich verpflichtet, ihr Kind ständig zu fördern, mit ihm zu spielen und jedem Kind Exklusivzeit zu widmen. Zusammen mit dem Druck durch soziale Medien führt das zu Erschöpfung und dem Gefühl, nie genug zu tun."
@@ -6070,7 +9533,8 @@ window.WISSEN = {
     "impulskontrolle-kleinkind",
     "grenzen-setzen",
     "risiko-freiheit",
-    "trotz-autonomie"
+    "trotz-autonomie",
+    "unfaelle-vorbeugen"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Mein Krabbelkind räumt ständig alles aus, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
@@ -6087,14 +9551,19 @@ window.WISSEN = {
     "Empathie bei Jungen",
     "männliches Vorbild",
     "Care-Arbeit",
-    "Verantwortung Sohn"
+    "Verantwortung Sohn",
+    "Rollenklischees",
+    "Nagellack bei Jungen",
+    "Mädchen stärken"
    ],
    "fragen": [
     "Erziehen wir Jungen anders als Mädchen?",
     "Wie bringe ich meinem Sohn bei, sich zu kümmern?",
     "Braucht ein Junge ein männliches Vorbild?",
     "Sollen Väter Söhne genauso trösten wie Töchter?",
-    "Wie bringe ich meinem Sohn Verantwortung bei?"
+    "Wie bringe ich meinem Sohn Verantwortung bei?",
+    "Darf mein Sohn Nagellack und Kleider tragen?",
+    "Wie stärke ich meine Tochter?"
    ],
    "alter": [
     "1-3",
@@ -6114,12 +9583,18 @@ window.WISSEN = {
     "Nehmt Kindern nicht ständig ab, was sie selbst können, auch nicht als engagierter Elternteil.",
     "Väter, nehmt eure Söhne in den Arm, wenn sie hinfallen, kuschelt viel mit ihnen und lasst Traurigkeit zu.",
     "Zeigt Jungen, dass sich um andere zu kümmern ein Teil von Liebe und Beziehung ist.",
-    "Achtet darauf, was ihr als Paar vorlebt, etwa wer tröstet und wer wie viel redet, und stellt euch bei der Übertragung von Aufgaben an das Kind nicht gegeneinander."
+    "Achtet darauf, was ihr als Paar vorlebt, etwa wer tröstet und wer wie viel redet, und stellt euch bei der Übertragung von Aufgaben an das Kind nicht gegeneinander.",
+    "Achtet auf Sprüche wie „Heul nicht, du bist ja ein Mädchen“, erlaubt Jungen Nagellack, Kleider und „Mädchenfarben“ und gebt ihnen schlagfertige Antworten mit, etwa „Farben sind für alle da“.",
+    "Lobt Mädchen nicht vor allem fürs Süßsein, Bravsein oder Entschuldigen, und fragt euch, ob ihr einem Sohn dasselbe sagen würdet; beobachtet statt nach Geschlecht lieber das Temperament des einzelnen Kindes."
    ],
    "sichtweisen": [
     {
      "podcast": "mutti",
      "text": "Die Hosts sehen eine unterschiedliche Sozialisierung: Mädchen lernen laut ihnen von klein auf, sich zurückzunehmen und zu kümmern, Jungen eher, wild zu spielen und dass ihre Bedürfnisse im Vordergrund stehen. Das passiere subtil, etwa über unterschiedliche Kommentare, wenn ein Kind das letzte Stück Kuchen nimmt. Sie kritisieren, dass Mädchen heute eher beigebracht wird, die Ellbogen auszufahren, statt Jungen mehr Rücksicht zu lehren. Unterschiede bei der Empathie halten sie unter Verweis auf Studien nicht für biologisch festgelegt; Väter kuschelten laut diesen Studien weniger mit Söhnen und trösteten sie seltener. Weiblich konnotierte Eigenschaften wie Empathie und Sanftmut sehen sie als Fähigkeiten, die alle lernen sollten. Ein Host meint, Frauen werde Fürsorge nicht explizit beigebracht, Männern aber Egozentrik antrainiert; im Kern sind sich beide einig. Zum Thema männliches Vorbild sagen sie, dass es auch ohne geht und ein schlechtes Vorbild das größere Problem ist. Am schlechtesten sei es für Jungen, keine Verantwortung zu bekommen und zugleich schlechte männliche Vorbilder zu haben. Blockiert ein Elternteil die Aufgabenübertragung an den Sohn, nennen sie das toxisch und raten scherzhaft zur Trennung."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide sprechen das Thema aus mehreren Richtungen an und stimmen mit mutti überein, dass Rollenbilder vor allem über Alltag, Sprache und Vorbilder weitergegeben werden. Gäste wie Susanne Mierau und Felix Schenk betonen, dass Sprüche wie „Stell dich nicht so an“ oder „sei kein Mädchen“ prägen, und raten, Jungen Nagellack, Kleider und Gefühle ausprobieren zu lassen. Mierau hält feste Zuschreibungen wie „Jungs sind wild, Mädchen empathisch“ für problematisch und verweist auf das individuelle Temperament; die Hosts nennen dazu Studien, laut denen Unterschiede vor allem kulturell geprägt seien. Neu gegenüber mutti ist der Blick auf Mädchen: Eine Gästin sieht bei ihnen einen besonderen Stärkungsbedarf, etwa weil sie stärker zum Anpassen erzogen und häufiger als süß bezeichnet würden, betont aber, dass auch Jungen zu Empathie erzogen werden sollen. Katja Seide räumt ehrlich ein, dass sich Rollenbilder bei älteren Kindern verfestigen und es sie traurig macht, wenn ihr Sohn sich nicht traut, einen glitzernden Pullover zu tragen."
     }
    ],
    "quellen": [
@@ -6162,16 +9637,151 @@ window.WISSEN = {
      "datum": "2026-09-16",
      "minute": "34:57",
      "thema": "Unterschiedliche Sozialisation von Mädchen und Jungen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 189,
+     "titel": "Rollenbilder überwinden - zu aktiver Vaterschaft finden",
+     "datum": "2025-06-24",
+     "minute": "05:46",
+     "thema": "Stell dich nicht so an: Sprache und Rollenbilder bei Jungen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 85,
+     "titel": "„Unsere Töchter für ein gleichberechtigtes Leben stärken “New Moms for Rebel Girls - mit Susanne Mierau",
+     "datum": "2022-04-19",
+     "minute": "16:50",
+     "thema": "Temperamentsdimensionen statt Geschlechterklischees"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 237,
+     "titel": "Sei mutig, gerade jetzt – Kinder in unsicheren Zeiten stark machen",
+     "datum": "2026-05-26",
+     "minute": "07:26",
+     "thema": "Mädchen stärken: nicht aufs Äußere reduzieren, nicht fürs Bravsein loben"
     }
    ],
    "verwandt": [
     "verantwortung-uebertragen",
     "vaterrolle",
     "eltern-als-team",
-    "gefuehle-begleiten"
+    "gefuehle-begleiten",
+    "erwartungen-zuschreibungen",
+    "geschlechtsidentitaet"
    ],
    "medizinisch": false,
    "einleitung": "Mädchen und Jungen wachsen oft mit unterschiedlichen Erwartungen auf, etwa beim Kümmern, Helfen und Trösten. Eltern fragen sich, ob sie Söhne anders erziehen und welche Rolle Vorbilder dabei spielen."
+  },
+  {
+   "id": "verwoehnen",
+   "titel": "Kann man Kinder verwöhnen?",
+   "synonyme": [
+    "Verwöhnen",
+    "verwöhntes Kind",
+    "Überbehütung",
+    "Überfürsorge",
+    "Helikoptereltern",
+    "Baby verwöhnen",
+    "Kind undankbar",
+    "Danke sagen",
+    "Klobrille anwärmen"
+   ],
+   "fragen": [
+    "Verwöhne ich mein Kind, wenn ich immer sofort reagiere?",
+    "Kann man ein Baby verwöhnen?",
+    "Wann ist Fürsorge zu viel?",
+    "Mein Kind sagt nicht Danke, was tun?",
+    "Warum sind Kinder nicht dankbar?"
+   ],
+   "alter": [
+    "0-1",
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "grenzen",
+    "eltern",
+    "entwicklung"
+   ],
+   "kurz": "Mehrere Gäste im Podcast sagen: Trost, Nähe und schnelles Eingehen auf Bedürfnisse verwöhnen Babys und Kleinkinder nicht, sondern fördern sichere Bindung. Ungut wird es laut ihnen bei Überbehütung, also wenn Kinder keine eigenen Erfahrungen machen dürfen oder ihnen später alle Steine aus dem Weg geräumt werden. Ob etwas gutes oder ungutes Verwöhnen ist, lässt sich laut einer Gästin von außen kaum beurteilen.",
+   "tipps": [
+    "Tröstet und tragt euer Baby, so oft es das braucht. Laut den Gästen kann man ein Baby nicht verwöhnen.",
+    "Unterscheidet Verwöhnen von Überbehüten: Eine Gästin nennt das Bild eines Bungee-Seils, bei dem das Kind sich traut, weil es weiß, dass jemand auffängt.",
+    "Lasst größere Kinder ihre Aufgaben selbst übernehmen und räumt nicht alle Hindernisse weg; schon Kleinkinder können eigene kleine Aufgaben erledigen, was den Selbstwert stärkt.",
+    "Fragt euch, ob ihr eine Geste gern macht und sie dem Kind nicht schadet. Das gilt laut einer Gästin als gutes Verwöhnen, und jede Familie sieht das anders.",
+    "Bevor ihr über andere Eltern urteilt, schaut auf die Geschichte dahinter: Wie geht es dem Kind, was können die Eltern gerade leisten?",
+    "Zwingt Kinder nicht zum Dankeschön. Wendet euch erst dem Kind zu, fragt, was es braucht, und bietet Alternativen an wie ein gemaltes Bild, einen späteren Anruf oder dass ihr selbst für das Kind dankt.",
+    "Zeigt selbst Dankbarkeit und Respekt für Kleinigkeiten, denn laut einem Gast lernen Kinder das von den Eltern. Eine Dankbarkeitsrunde am Abendbrottisch, bei der alle sagen, was an diesem Tag schön war, kann die Stimmung in der Familie verändern.",
+    "Seht das Aufmerksamkeitsuchen eures Kindes auch als Zeichen von Nähe: Es zeigt euch etwas, weil ihr ihm wichtig seid."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Die Hosts und ihre Gäste sind sich in einem Punkt einig: Babys und Kleinkinder werden durch Nähe, Trost und schnelle Reaktion nicht verwöhnt. Eine Gästin führt den Vorwurf des Verwöhnens, den vor allem die Großelterngeneration erhebt, auf Erziehungsideen etwa aus den Jahren 1930 bis 1960 zurück und verweist auf Forschung zu sicherer Bindung. Eine andere Gästin sagt, Kinder könnten erst ab etwa vier bis fünf Jahren, oft erst mit sieben, Handlungen bewusst planen, um etwas bei anderen zu erreichen. Ungutes Verwöhnen sehen die Gäste im Überbehüten und im Abnehmen aller Aufgaben bei Schulkindern. Wo genau die Grenze liegt, sei schwer zu sagen, und Begriffe wie Helikoptereltern oder Tyrannenkind würden oft ohne Blick auf die Hintergründe verwendet. Auch bei den Hosts bleibt Unsicherheit, was übersorglich und was beziehungsorientiert ist. Ob etwa das Anwärmen der Klobrille zu viel ist, wird laut den Hosts im Netz kontrovers diskutiert."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 165,
+     "titel": "Kindergesundheit heute - Schluss mit gefährlichem Halbwissen",
+     "datum": "2025-01-07",
+     "minute": "27:18",
+     "thema": "Warnung vor dem Verwöhnen: Kann man Kinder verwöhnen?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 151,
+     "titel": "Selbstbewusst bedürfnisorientiert begleiten",
+     "datum": "2024-10-01",
+     "minute": "17:20",
+     "thema": "Der Vorwurf: Du verwöhnst dein Kind"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 82,
+     "titel": "Nicht zu streng, nicht zu eng – der Weg zwischen Schimpfen und falschem Verwöhnen mit Inke Hummel",
+     "datum": "2022-03-08",
+     "minute": "12:40",
+     "thema": "Kann zu viel Fürsorge schädlich sein?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 64,
+     "titel": "Schüchterne Kinder mit Inke Hummel",
+     "datum": "2021-06-01",
+     "minute": "06:48",
+     "thema": "Wenn Erwachsene ein Dankeschön erwarten"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 98,
+     "titel": "Wenn dir dein eigenes Kind fremd ist – mit Dr. Oliver Dierssen",
+     "datum": "2022-10-18",
+     "minute": "20:09",
+     "thema": "Wertschätzung und Dankbarkeit von Kindern"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 162,
+     "titel": "Glücklich und resilient - Kinder mit Positiver Psychologie begleiten",
+     "datum": "2024-12-17",
+     "minute": "23:34",
+     "thema": "Dankbarkeitsrunde am Abendbrottisch"
+    }
+   ],
+   "verwandt": [
+    "beduerfnisorientierte-erziehung",
+    "selbststaendigkeit",
+    "grenzen-setzen",
+    "wertschaetzung",
+    "intensive-parenting"
+   ],
+   "medizinisch": false,
+   "einleitung": "Viele Eltern kennen diese Situation: „Verwöhne ich mein Kind, wenn ich immer sofort reagiere?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "geschwister-vorbereiten",
@@ -6187,7 +9797,9 @@ window.WISSEN = {
     "Kind und neues Baby",
     "Geschwisterchen ankündigen",
     "Schwangerschaft verkünden",
-    "Gerechtigkeit unter Geschwistern"
+    "Gerechtigkeit unter Geschwistern",
+    "Stillkiste",
+    "Geschwisterkurs"
    ],
    "fragen": [
     "Wie bereite ich mein Kind auf ein Geschwisterchen vor?",
@@ -6216,7 +9828,7 @@ window.WISSEN = {
     "Haltet das Baby nicht für alles verantwortlich, denn wer ständig sagt, die Kinder müssten wegen des Babys leise sein, erzeugt eher Groll.",
     "Übt Veränderungen vor der Geburt ein, etwa dass die älteren Kinder im eigenen oder gemeinsamen Zimmer schlafen, damit sie einen sicheren Ort haben, wenn das Baby nachts schreit.",
     "Klärt vorher, wer das große Kind rund um die Geburt betreut, und behaltet danach den Alltag mit Kita oder Betreuung möglichst bei.",
-    "Überlegt schon in der Schwangerschaft, wo später Konflikte entstehen könnten, und geht diese Punkte früh an.",
+    "Bastelt in der Schwangerschaft eine Stillkiste mit neuen Dingen für das große Kind, die es nur beim Stillen bekommt, und plant feste Zeiten, in denen der Partner das Baby übernimmt (Rat einer Gästin).",
     "Denkt daran, dass die älteren Kinder weiter eigene Bedürfnisse haben, etwa nach Kuscheln oder Trost bei Albträumen."
    ],
    "sichtweisen": [
@@ -6231,6 +9843,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber erzählt von ihrem deutlich älteren Sohn, der sich auf die Schwester freute und trotzdem sagen durfte, dass ihn das Schreien manchmal nervt und er die Zeit zu zweit vermisst. Sie hält es für wichtig, dass ein Kind Freude und Traurigkeit zugleich zeigen darf, und plant feste Zeiten mit dem älteren Kind. Beim Thema Gerechtigkeit zwischen Geschwistern geht es ihr um Bedürfnisse statt um Gleichheit: Wessen Bedürftigkeit gerade größer ist, ist zuerst dran, etwa ein hungriges Baby vor dem wütenden älteren Kind. Das ältere Kind wird dabei nicht allein gelassen, sondern in der Nähe begleitet. Das ergänzt die Vorbereitung der anderen Podcasts um den Alltag nach der Geburt."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide berichten, dass bei ihnen die Vorbereitung entspannt war und die Krisen erst kamen, als das Baby da war. Hilfreich waren ein Geschwisterkurs bei der Hebamme, das Abwechseln beim Abnehmen der Kinder, Gespräche und das Ernstnehmen von Frust und Wut auf das Geschwister. Das deckt sich mit Mutti darin, dass die Vorbereitung nur begrenzt trägt, und ergänzt den Blick auf die Zeit danach. Eine Gästin, die Wochenbett-Expertin ist, sagt, Mütter hätten fast immer ein schlechtes Gewissen dem großen Kind gegenüber, und rät zu einer Stillkiste mit neuen Dingen nur für das Stillen, festen Zeiten mit der Mutter und Aufgaben beim Baby, in Anlehnung an Mutti, die Mithelfen ebenfalls nicht für schädlich hält. Sie plädiert für wenige, einfache Rituale statt viel Programm."
     }
    ],
    "quellen": [
@@ -6267,22 +9883,6 @@ window.WISSEN = {
      "thema": "Geschwister am Baby mithelfen lassen"
     },
     {
-     "podcast": "mutti",
-     "nr": 40,
-     "titel": "Eifersucht aufs Baby? So klappt’s mit Geschwistern",
-     "datum": "2026-03-31",
-     "minute": "44:52",
-     "thema": "Schon in der Schwangerschaft vorbereiten"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 5,
-     "titel": "Geschwisterbindung stärken",
-     "datum": "2024-12-09",
-     "minute": "04:03",
-     "thema": "Betreuungsabsprachen rund um die Geburt"
-    },
-    {
      "podcast": "artgerecht",
      "nr": 13,
      "titel": "Geschwister richtig ankündigen",
@@ -6297,6 +9897,22 @@ window.WISSEN = {
      "datum": "2025-05-19",
      "minute": "21:58",
      "thema": "Beispiel hungriges Baby und wütender Dreijähriger"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 158,
+     "titel": "\"Königin im Wochenbett\"",
+     "datum": "2024-11-19",
+     "minute": "39:07",
+     "thema": "Stillkiste, feste Zeiten, Aufgaben für das große Kind"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 76,
+     "titel": "\"Geschwister - eine ganz besondere Liebe\" mit Jan-Uwe Rogge, Alu Kitzerow und Konstantin Manthey",
+     "datum": "2021-11-30",
+     "minute": "06:00",
+     "thema": "Vorbereitung auf das Geschwisterkind"
     }
    ],
    "verwandt": [
@@ -6305,7 +9921,7 @@ window.WISSEN = {
     "geschwisterstreit",
     "wochenbett",
     "erste-zeit-mit-baby",
-    "kind-lehnt-papa-ab"
+    "exklusivzeit"
    ],
    "medizinisch": false,
    "einleitung": "Wenn ein Geschwisterchen kommt, sorgen sich Eltern, wie das erste Kind die Veränderung verkraftet. Viele wissen nicht, was sie vorher klären und einüben sollen."
@@ -6325,7 +9941,12 @@ window.WISSEN = {
     "Nachteule",
     "Kind dreht abends auf",
     "Kind schläft nur mit Elternteil",
-    "Führung beim Zubettgehen"
+    "Führung beim Zubettgehen",
+    "Schlafsignale",
+    "Einschlafsignal",
+    "Einschlaftragen abgewöhnen",
+    "Schlafassoziation",
+    "Kind knibbelt beim Einschlafen"
    ],
    "fragen": [
     "Kind braucht abends ewig zum Einschlafen",
@@ -6333,7 +9954,10 @@ window.WISSEN = {
     "Kind ist übermüdet und überdreht, was tun?",
     "Ab wann kann mein Kind alleine einschlafen?",
     "Kind will im Bett noch essen oder steht immer wieder auf",
-    "Mein Kind dreht abends durch, was tun?"
+    "Mein Kind dreht abends durch, was tun?",
+    "Wie lösen wir das Einschlaftragen ab?",
+    "Mein Kind will nicht schlafen",
+    "Kind will abends nicht ins Bett"
    ],
    "alter": [
     "0-1",
@@ -6354,7 +9978,7 @@ window.WISSEN = {
     "Sorgt dafür, dass euer Kind schon früher am Tag Verbindung bekommt, und bietet abends Verbindungsspiele wie Tanzen, Kuscheln oder Lesen an. Sagt klar Stopp, wenn das Toben gefährlich wird.",
     "Zum sanften Abgewöhnen legt ihr das Kind hin, lest vor, geht kurz hinaus und bleibt in Hörweite, während es einschläft, oder lasst eine Hörgeschichte laufen.",
     "Sorgt für weniger Reize und ein Runterkommen vor dem Schlafen, und setzt Fernsehen nicht als Einschlafhilfe ein, denn es entspannt nur scheinbar.",
-    "Weckt Kinder bei zu langem Mittagsschlaf am späten Nachmittag nach etwa einer halben Stunde.",
+    "Behaltet beim Einschlafen eine feste Reihenfolge von Schlafsignalen bei (Ausziehen, Zähneputzen, Schlafanzug, Lied); neue Signale brauchen ein paar Wochen, und wehtuende wie Tragen löst ihr sanft ab, indem ihr das Kind kurz vor dem Einschlafen hinsetzt oder Ersatz anbietet.",
     "Bietet bei Hunger im Bett eine schlichte Banane oder ein Brot an und stellt eine Wasserflasche ans Bett; Kinder, die nochmal aufstehen, bringt ihr ohne viele Worte mit einem Kuss zurück.",
     "Soll jemand anderes das Kind ins Bett bringen, übt das tagsüber oder beim Mittagsschlaf, wenn die Person fit und das Kind nicht sehr müde ist, und zwingt das Kind nicht in Phasen, in denen es besonders an euch hängt."
    ],
@@ -6370,6 +9994,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber liest Schwierigkeiten beim Zubettgehen als Ruf nach Führung und Hilfe. Ein Kind, das abends ständig zwischen Wünschen wechselt oder überdreht ist, hält sich ihrer Deutung nach nicht extra wach, sondern sitzt mit zu viel Verantwortung auf einem „zu großen Stuhl“ und kommt allein nicht zum Schlaf. Die Eltern entscheiden, was passiert und wer zuständig ist; das Kind gestaltet altersgemäß mit, wie. Sie rät zu einem festen Ablauf, den ihr gemeinsam mit dem Kind plant, und zu Begleitung beim Übergang vom Tag in die Nacht, etwa Abkaspern, Berührung oder den Tag verabschieden. Bei einem Siebenjährigen, der nur mit Elternteil im Zimmer schläft, sieht sie den Konflikt bei den Eltern: Eine Lösung muss auch für sie passen, Sicherheit kommt zuerst und das Alleinschlafen folgt. Das ähnelt mutti beim Thema Führung, setzt aber stärker auf Bedürfnisse beider Seiten; Führung heißt für sie ausdrücklich nicht Härte."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Die Hosts von „Das gewünschteste Wunschkind“ denken das Einschlafen über Schlafsignale: wiederkehrende Abläufe und Gegenstände wie Schlafanzug, Lied oder Kuscheltier, an die sich das Gehirn gewöhnt. Babys und Kleinkinder könnten dabei nicht verwöhnt werden, wehrten sich aber heftig, wenn ein Signal fehlt, weil ihr Gehirn dann unruhig wird. Wehtuende Signale wie Knibbeln oder Einschlaftragen lösen sie sanft ab (zum Beispiel kurz vor dem Einschlafen hinsetzen oder Ersatz anbieten); den radikalen Weg halten sie für legitim, wenn der Leidensdruck groß ist. Das passt zur Linie von Nicola Schmidt (artgerecht), Bedürfnisse zu erfüllen, statt Konsequenz zu üben. Auch Kathy Weber (gfk) lehnt Druck beim Alleineinschlafen ab, aber die Hosts zeigen auch konkrete Wege wie sanftes Ablösen, Verhandeln ab vier bis fünf Jahren oder mehrere Kinder nacheinander begleiten. Methoden, bei denen Kinder allein schreien, lehnen sie deutlich ab. Sie räumen aber ein, dass es für erschöpfte Eltern eine echte Notlage gibt und manche Kinder sehr lange Begleitung brauchen."
     }
    ],
    "quellen": [
@@ -6388,22 +10016,6 @@ window.WISSEN = {
      "datum": "2025-08-05",
      "minute": "43:11",
      "thema": "Alleine einschlafen sanft ausprobieren"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 46,
-     "titel": "Mehr Energie im Elternalltag",
-     "datum": "2026-05-12",
-     "minute": "56:12",
-     "thema": "Eulen oder einfach nicht runtergekommen?"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 47,
-     "titel": "Was tun bei Hauen, Ausschließen und Wutanfällen? - 100 Folgen Special",
-     "datum": "2026-05-19",
-     "minute": "47:26",
-     "thema": "Bananentrick und keine Extra-Mahlzeiten als Gewohnheit"
     },
     {
      "podcast": "artgerecht",
@@ -6436,17 +10048,33 @@ window.WISSEN = {
      "datum": "2022-10-09",
      "minute": "07:51",
      "thema": "Abendablauf als Fehlführung: Kind braucht Führung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 168,
+     "titel": "Schlafassoziationen - wie Kinder ohne Tragen, Kneifen und Knibbeln einschlafen",
+     "datum": "2025-01-28",
+     "minute": "01:22",
+     "thema": "Was sind Schlafsignale?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 38,
+     "titel": "Teil 1: Mehrere Kinder in den Schlaf begleiten",
+     "datum": "2020-05-19",
+     "minute": "10:13",
+     "thema": "Mehrere Kinder in den Schlaf begleiten: Möglichkeiten"
     }
    ],
    "verwandt": [
     "babyschlaf",
     "durchschlafen",
     "routinen",
+    "familienbett",
     "reizueberflutung-vorbeugen",
-    "beduerfnisse-erkennen",
-    "koerper-aufklaerung"
+    "beduerfnisse-erkennen"
    ],
-   "medizinisch": false,
+   "medizinisch": true,
    "einleitung": "Abends zieht sich das Zubettbringen oft über Stunden, das Kind ist aufgedreht, steht wieder auf oder will noch essen. Eltern geraten dabei selbst unter Druck, weil sie den Abend für sich einplanen."
   },
   {
@@ -6528,7 +10156,8 @@ window.WISSEN = {
     "kind-wechselt-meinung-hobbys",
     "trennungsschmerz-abschied",
     "gefuehle-begleiten",
-    "beduerfnisse-erkennen"
+    "beduerfnisse-erkennen",
+    "langeweile"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind will nicht mehr zum Hobby, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
@@ -6546,7 +10175,9 @@ window.WISSEN = {
     "Kind rennt weg",
     "Hummeln im Po",
     "Kind ignoriert mich",
-    "Durchzug"
+    "Durchzug",
+    "Kind kooperiert nicht immer",
+    "Nein als Rückmeldung"
    ],
    "fragen": [
     "Warum hört mein Kind nicht auf mich?",
@@ -6554,7 +10185,8 @@ window.WISSEN = {
     "Warum kooperiert mein Kind morgens nie?",
     "Mein Kind rennt weg, wenn ich es fertig machen will",
     "Mein Kind kommt nicht mit, was tun?",
-    "Mein Kleinkind reagiert nicht auf Nein"
+    "Mein Kleinkind reagiert nicht auf Nein",
+    "Kooperieren Kinder wirklich immer?"
    ],
    "alter": [
     "1-3",
@@ -6566,17 +10198,17 @@ window.WISSEN = {
     "alltag",
     "entwicklung"
    ],
-   "kurz": "Kinder wollen grundsätzlich gern kooperieren, doch Stress, Hunger, Müdigkeit, Impulse oder ein Gehirn, das Anweisungen noch nicht leicht umsetzen kann, stehen dem oft im Weg. Hosts, Nicola Schmidt (artgerecht) und Kathy Weber (gfk) raten übereinstimmend zu klaren Ansagen, weniger Reden und Kontakt vor Anweisung; Nicola Schmidt ergänzt, dass viele Neins Kinder dichtmachen lassen und bei Schulkindern Verhandeln statt Druck hilft. Kathy Weber liest Nichthören nicht als Ungehorsam, sondern als Zeichen, dass das Kind mehr Gesehenwerden und Führung braucht.",
+   "kurz": "Kinder wollen grundsätzlich gern kooperieren, doch Stress, Hunger, Müdigkeit, Impulse oder ein Gehirn, das Anweisungen noch nicht leicht umsetzen kann, stehen dem oft im Weg. Hosts, Nicola Schmidt (artgerecht) und Kathy Weber (gfk) raten übereinstimmend zu klaren Ansagen, weniger Reden und Kontakt vor Anweisung; Nicola Schmidt ergänzt, dass viele Neins Kinder dichtmachen lassen und bei Schulkindern Verhandeln statt Druck hilft. Kathy Weber liest Nichthören nicht als Ungehorsam, sondern als Zeichen, dass das Kind mehr Gesehenwerden und Führung braucht. Herbert Renz-Polster hält den Satz, Kinder kooperierten immer, dagegen für einen Mythos, der Eltern unter Druck setzt.",
    "tipps": [
     "Beruhigt ein Kind im Stressmodus oder im Wutanfall zuerst, denn erst danach kann es wieder zuhören und mitmachen.",
     "Geht zum Kind hin, holt es auf Augenhöhe ab und sagt klar, was ihr wollt, statt im Vorbeigehen oder aus einem anderen Raum zu rufen; sagt, was das Kind tun soll, nicht was es lassen soll, zum Beispiel leise rennen wie ein Ninja.",
     "Sagt in einfachen Ich-Sätzen, was ihr wollt, und macht aus einer Erwartung keine Frage oder Bitte, denn ein Nein ist dann eine echte Option; laut Nicola Schmidt hilft es, mit der Stimme unten zu bleiben.",
     "Folgt dem Kind zuerst in sein Spiel oder bei seinem Anliegen (zum Beispiel beim Suchen der Schlafmaske) und führt es danach in Mini-Schritten dorthin, wo ihr hinwollt.",
     "Redet weniger und handelt mehr: einmal sagen, euch selbst fertig machen, zur Tür gehen und dem Kind Zeit geben, ohne ihm hinterherzulaufen. Zwingt es nicht körperlich mitzukommen.",
-    "Gebt dem Impuls des Kindes ein Ja und bietet eine Alternative zum Verbotenen an, etwa Hörbuch, Lego oder Bewegung draußen; achtet auf die Zahl der Neins und Korrekturen am Tag und lasst Unwichtiges weg.",
-    "Achtet auf ausgeschlafene, satte Kinder, plant morgens 10 bis 20 Minuten freies Spiel ein und bereitet Übergänge vor.",
-    "Macht Alltagsaufgaben zum Spiel, etwa kurz Fangen mit dem Schuh oder Verbotsspiele beim Händewaschen, und leitet kleine Kinder beim Anziehen ohne Worte an.",
-    "Bei Schulkindern: Hört zuerst zu, fragt nach der Sicht des Kindes, legt vorher fest, welche Grenzen nicht verhandelbar sind, und sucht für den Rest gemeinsam eine Lösung, auch die zweitbeste."
+    "Bei Schulkindern: Hört zuerst zu, fragt nach der Sicht des Kindes, legt vorher fest, welche Grenzen nicht verhandelbar sind, und sucht für den Rest gemeinsam eine Lösung, auch die zweitbeste.",
+    "Seht ein Nein auch als Rückmeldung (zu schnell, zu viel, zu wenig Selbstbestimmung) und fragt nach dem Grund; nicht jedes Verhalten muss als missglückte Kooperation analysiert werden, und kleine Kinder überblicken die Perspektive anderer noch nicht.",
+    "Spielt vorher kooperativ mit dem Kind, etwa Wippen, Schaukeln oder Tanzen, und zeigt sichtbar, dass auch ihr als Erwachsene miteinander kooperiert; laut einer Gästin kooperieren Kinder danach eher.",
+    "Beschreibt statt zu befehlen die Situation und eure Gefühle (hier ist es unordentlich, ich kann mich so schlecht konzentrieren), und streicht Regeln, die nicht nötig sind, damit Platz für wichtige Neins bleibt."
    ],
    "sichtweisen": [
     {
@@ -6590,6 +10222,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber geht davon aus, dass Menschen freiwillig kooperieren, solange ihre Bedürfnisse gesehen werden, und dass ein Kind im Kern mitmachen möchte. Hört es nicht, hat es laut ihr oft zu wenig Gesehen- und Gehörtwerden und zu wenig Führung erlebt. „Das Kind tanzt mir auf der Nase herum“ nennt sie eine Interpretation der Eltern. Ihr Ansatz verbindet Empathie mit klarer Führung: Ansagen sind für sie eine Orientierung, die mit Handlung verbunden ist und Widerspruch zulässt, und bei kleinen Kindern gilt: weniger Worte, mehr Handeln. Sie nennt es ein Missverständnis, dass man in der GfK alles erklären müsse. Sie nutzt den Begriff Gehorsam bedürfnisorientiert, als sicheren Rahmen ohne Angst und Strafe, und räumt ein, dass das innerhalb der bedürfnisorientierten Szene umstritten ist. Hier grenzt sie sich von den mutti-Hosts ab, die Gehorsam und Kooperation als Gegensatz sehen; mit ihnen teilt sie die Ablehnung von Drohungen und Strafen. Das Wort „bitte“ meidet sie weitgehend, weil es für Kinder oft wie eine Forderung klingt."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide holen in mehreren Folgen Gäste, die den Kooperationsgedanken stützen und auch hinterfragen. Herbert Renz-Polster hält den Satz, Kinder wollten immer kooperieren, für eine verbreitete Formel in bedürfnisorientierten Ratgebern, die Eltern unter Druck setzt: Kleine Kinder überblicken Folgen und Perspektive anderer noch nicht, und in der Autonomiephase heißt Nichtmitmachen oft schlicht, das eigene Ziel weiterzuverfolgen. Das widerspricht der Grundannahme von gfk und Teilen von mutti nicht ganz, setzt aber einen anderen Ton. Nora Imlau liest ein Nein dagegen als Rückmeldung, etwa Überforderung oder Wunsch nach Selbstbestimmung, und bittet zu bedenken, wie oft das Kind an diesem Tag schon mitgemacht hat. Nicola Schmidt nennt Forschung, nach der Kinder eher kooperieren, wenn sie vorher kooperativ gespielt haben, und sieht Druck als Auslöser von Gegendruck. Weitere Gäste empfehlen, zuerst das Gefühl zu benennen, statt zu erklären, und bei sehr anforderungsempfindlichen Kindern die Situation zu beschreiben statt zu befehlen."
     }
    ],
    "quellen": [
@@ -6600,14 +10236,6 @@ window.WISSEN = {
      "datum": "2024-12-03",
      "minute": "04:47",
      "thema": "Gehorsam und Kooperation nach Jesper Juul, offene und verdeckte Kooperation"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 3,
-     "titel": "So schaffst du es, dass dein Kind kooperiert",
-     "datum": "2024-12-03",
-     "minute": "57:06",
-     "thema": "Alltagstipps für mehr Kooperation"
     },
     {
      "podcast": "mutti",
@@ -6648,6 +10276,22 @@ window.WISSEN = {
      "datum": "2022-09-11",
      "minute": "01:45",
      "thema": "Nichthören als Zeichen für zu wenig Gesehenwerden und Führung, Autonomiephase"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 141,
+     "titel": "Wie Erziehung heute gelingt mit Herbert Renz-Polster",
+     "datum": "2024-06-11",
+     "minute": "30:33",
+     "thema": "Mythos des immer kooperierenden Kindes"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 48,
+     "titel": "Der Familienkompass mit Nora Imlau",
+     "datum": "2020-10-06",
+     "minute": "19:46",
+     "thema": "Kooperation als Kommunikation"
     }
    ],
    "verwandt": [
@@ -6851,7 +10495,10 @@ window.WISSEN = {
    "verwandt": [
     "gefuehle-begleiten",
     "angst-kind",
-    "eltern-selbstregulation"
+    "eltern-selbstregulation",
+    "adoption-pflegekind",
+    "krise-krankheit-familie",
+    "uebergriffe-schutz"
    ],
    "medizinisch": true,
    "einleitung": "Viele Eltern kennen diese Situation: „Wie begleite ich mein Kind nach einem Unfall oder Schock?“. Hier steht, was dahinter stecken kann und was helfen kann."
@@ -6967,7 +10614,7 @@ window.WISSEN = {
     "aergern-provozieren",
     "spielen",
     "beduerfnisse-erkennen",
-    "geschwisterbindung"
+    "freundschaften"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern erleben, dass ihr Kind andere beim Spielen ausschließt, selbst ausgegrenzt wird oder beim Ausgrenzen mitmacht."
@@ -7234,6 +10881,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber erklärt, dass ein Kind nie etwas tut, um euch oder andere zu ärgern oder zu schädigen, sondern um sich um ein Bedürfnis zu kümmern. Ein Bedürfnis ist dabei das, was ein Mensch braucht (zum Beispiel Mitbestimmung, Spiel und Spaß oder Nähe), und ein Verhalten ist nur der Weg, es zu bekommen. Wenn ein Kind auf ein Nein schimpft, die Zunge rausstreckt oder spuckt, will es ihrer Deutung nach zeigen, dass es das Nein richtig doof findet und gern selbst entschieden hätte. Sie rät, das Gefühl zu spiegeln, beim Nein zu bleiben, wo ihr verantwortlich seid, und euch selbst zu schützen, etwa durch Wegdrehen des Kopfes. Auch Wörter wie „Manipulation“ oder „Aufmerksamkeit holen“ hält sie für Bewertungen der Eltern. Damit steht sie im Gegensatz zu den mutti-Hosts: Diese sehen oft kein tieferes Bedürfnis und nehmen dem Verhalten die Reaktion; bei Kathy Weber steht das Verstehen vor jeder Strategie. Mit mutti teilt sie, dass Strafe und Belohnung nicht weiterhelfen, und dass ihr als Erwachsene führt, ohne euch angegriffen zu fühlen."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Eine Beraterin (Alberti) hört nach eigener Aussage oft, das Kind provoziere oder tanze den Eltern auf der Nase herum, und sieht das ähnlich wie Kathy Weber: Das Kind will nicht ärgern, sondern sucht meist Unterstützung oder Verbindung. Sie rät, zu schauen, was dem Kind fehlen könnte und was vorher passiert ist. Damit steht sie näher bei gfk und artgerecht als bei den mutti-Hosts, die oft kein tieferes Bedürfnis sehen und dem Verhalten die Reaktion entziehen. Neu ist der Vorschlag, mit Humor und Spiel zu antworten, etwa mit einem Fangspiel. In den Notizen kommt keine Gegenstimme vor; es ist eine eher kurze Passage."
     }
    ],
    "quellen": [
@@ -7260,14 +10911,6 @@ window.WISSEN = {
      "datum": "2026-07-15",
      "minute": "14:37",
      "thema": "Spielzeug wegräumen, Kind festhalten, nicht dramatisieren"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 24,
-     "titel": "Schwierige Situationen mit Kindern meistern",
-     "datum": "2025-06-04",
-     "minute": "07:41",
-     "thema": "Wann eingreifen, wann nur ablenken"
     },
     {
      "podcast": "mutti",
@@ -7300,6 +10943,14 @@ window.WISSEN = {
      "datum": "2024-09-30",
      "minute": "08:26",
      "thema": "Kind beschimpft bei einem Nein: Bedürfnis nach Selbstbestimmung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 234,
+     "titel": "Zwischen Nein und Nähe: Wie wir in stressigen Momenten mit unseren Kindern verbunden bleiben",
+     "datum": "2026-05-05",
+     "minute": "24:15",
+     "thema": "Provozieren und erster Schritt zu Verbindung"
     }
    ],
    "verwandt": [
@@ -7328,14 +10979,19 @@ window.WISSEN = {
     "Ich sehe dich",
     "toll gemacht",
     "Wertschätzung",
-    "Belohnung und Bestrafung"
+    "Belohnung und Bestrafung",
+    "Mitfreuen",
+    "Anstrengung loben",
+    "Du schaffst das",
+    "statisches Selbstbild"
    ],
    "fragen": [
     "Wie lobe ich mein Kind richtig?",
     "Ist zu viel Lob schädlich?",
     "Muss ich jedes Kinderbild aufhängen?",
     "Was kann ich statt toll gemacht sagen?",
-    "Ist Beschreiben auch eine Bewertung?"
+    "Ist Beschreiben auch eine Bewertung?",
+    "Was tun, wenn Lob bei meinem Kind abperlt?"
    ],
    "alter": [
     "1-3",
@@ -7355,7 +11011,8 @@ window.WISSEN = {
     "Seid ehrlich, denn nicht jedes schnell hingekritzelte Bild muss an den Kühlschrank; hängt Bilder auf, weil ihr sie wirklich schön findet, nicht als Belohnung.",
     "Lobt Kinder nicht in den Himmel, denn das gilt als ungesund.",
     "Eselsbrücke von Nicola Schmidt: nicht beurteilen, bewerten, benoten, sondern beobachten, benennen, begleiten.",
-    "Beschreibt, was ihr gesehen habt, sagt, was es in euch auslöst, und nennt das Bedürfnis, etwa: Du hast dich beschäftigt, während ich geduscht habe, ich bin glücklich, weil ich Zeit für mich hatte (Kathy Weber)."
+    "Beschreibt, was ihr gesehen habt, sagt, was es in euch auslöst, und nennt das Bedürfnis, etwa: Du hast dich beschäftigt, während ich geduscht habe, ich bin glücklich, weil ich Zeit für mich hatte (Kathy Weber).",
+    "Fragt bei Erfolg nach dem eigenen Anteil, etwa: Wie hast du das geschafft?, statt Begabung zu bestätigen oder Du schaffst das zu sagen."
    ],
    "sichtweisen": [
     {
@@ -7369,6 +11026,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber verzichtet ganz auf Lob, weil es für sie wie Belohnung ein Urteil über das Kind und sein Tun ist und abhängig machen kann: Das Kind tut etwas, damit sich Mama freut. Stattdessen beschreibt sie, was sie gesehen hat, sagt, was das in ihr auslöst, und nennt das Bedürfnis, das erfüllt wurde, etwa Freude, Entlastung oder Zusammenhalt. Das ist näher an der Haltung von Nicola Schmidt als an der mutti-Sicht, die Lob für den Prozess und ehrliche Freude erlaubt. Sie sagt aber auch, an Lob sei noch niemand gestorben, und verbietet es niemandem; das Kind müsse den Unterschied nicht kennen. Belohnung und Bestrafung entstehen aus ihrer Sicht dort, wo Vertrauen in Freiwilligkeit und Verbindung fehlt."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide sehen Lob ähnlich kritisch wie Mutti und Nicola Schmidt, wenn es den Wert des Kindes an Leistung koppelt, und verweisen auf ihre Beschäftigung mit dem Thema. Gäste empfehlen, Anstrengung, Dranbleiben und Lösungswege zu würdigen statt Ergebnis oder Eigenschaften; laut den Hosts und Gästen scheuen Kinder, die für Klugheit gelobt werden, eher schwierige Aufgaben. Mehrere Gäste unterscheiden Lob als Wertung von Mitfreuen und Anerkennung (Ich sehe dich), eine Gästin lehnt das Aufhängen bestimmter Bilder als Botschaft ab. Differenzierter als Kathy Weber: Ein Gast hält Loben nicht für grundsätzlich schlecht, sondern für eine Frage von Dosis und Inhalt, und ein anderer erlaubt begründetes Lob bei echten Entwicklungsschritten. Auch gut gemeintes Aufmuntern wie Du schaffst das kann bei perfektionistischen Kindern Druck erzeugen, räumen die Hosts ein, das selbst oft zu sagen. Bei Kindern, bei denen Lob abperlt, geht es laut einem Gast um Beziehungsarbeit über Jahre, nicht um mehr Lob."
     }
    ],
    "quellen": [
@@ -7389,36 +11050,12 @@ window.WISSEN = {
      "thema": "Belohnung senkt vorhandene Motivation"
     },
     {
-     "podcast": "mutti",
-     "nr": 66,
-     "titel": "Sind Belohnungssysteme schlecht?",
-     "datum": "2026-11-11",
-     "minute": "27:29",
-     "thema": "Beispiel: Bild nicht aufhängen"
-    },
-    {
      "podcast": "artgerecht",
      "nr": 48,
      "titel": "Warum Lob oft nicht stärkt – und was du stattdessen sagen kannst",
      "datum": "2026-01-07",
      "minute": "00:40",
      "thema": "Was mit Nicht-Loben gemeint ist, Prozess beschreiben und Growth Mindset"
-    },
-    {
-     "podcast": "artgerecht",
-     "nr": 48,
-     "titel": "Warum Lob oft nicht stärkt – und was du stattdessen sagen kannst",
-     "datum": "2026-01-07",
-     "minute": "04:22",
-     "thema": "Beobachtung statt Bewertung, Beispiele"
-    },
-    {
-     "podcast": "artgerecht",
-     "nr": 48,
-     "titel": "Warum Lob oft nicht stärkt – und was du stattdessen sagen kannst",
-     "datum": "2026-01-07",
-     "minute": "07:15",
-     "thema": "Praxis im Alltag: Ich sehe dich, einmal am Tag"
     },
     {
      "podcast": "gfk",
@@ -7435,6 +11072,30 @@ window.WISSEN = {
      "datum": "2025-01-13",
      "minute": "55:39",
      "thema": "Lob und Wertschätzung im Vergleich, warum sie auf Lob verzichtet"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 10,
+     "titel": "Schul(hof)reife Teil 2 - Emotioner und sozialer Bereich",
+     "datum": "2019-04-09",
+     "minute": "13:29",
+     "thema": "Angemessenes Loben und Resilienz"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 83,
+     "titel": "Kreatives Gestalten sinnvoll fördern mit Sina Schwarma",
+     "datum": "2022-03-22",
+     "minute": "36:44",
+     "thema": "Warum Lob problematisch ist und wie Wertschätzung aussehen kann"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 254,
+     "titel": "Selbstsicher durchs Leben - was Kinder wirklich brauchen",
+     "datum": "2026-09-22",
+     "minute": "20:06",
+     "thema": "Mitfreuen statt bewerten"
     }
    ],
    "verwandt": [
@@ -7442,8 +11103,8 @@ window.WISSEN = {
     "perfektionismus-fehler",
     "selbststaendigkeit",
     "schlechte-gewohnheiten",
-    "selbstwert-kind",
-    "wertschaetzung"
+    "erwartungen-zuschreibungen",
+    "schule-lernen"
    ],
    "medizinisch": false,
    "einleitung": "Eltern möchten ihr Kind ermutigen, wissen aber nicht, wie viel und welches Lob gut ist. Sie fragen sich, ob zu viel Lob schadet und ob sie wirklich jedes Bild aufhängen müssen."
@@ -7461,14 +11122,19 @@ window.WISSEN = {
     "Körpergrenzen",
     "Hand geben",
     "schützende Gewalt",
-    "Kind festhalten Gefahr"
+    "Kind festhalten Gefahr",
+    "sexualisierte Gewalt",
+    "gute und schlechte Geheimnisse",
+    "Kind vertraut sich an",
+    "Nein heißt Nein"
    ],
    "fragen": [
     "Wie schütze ich mein Kind vor Missbrauch?",
     "Muss mein Kind Oma oder Tante ein Küsschen geben?",
     "Wie reagiere ich, wenn Fremde mein Kind anfassen wollen?",
     "Wie stärke ich die Körperautonomie meines Kindes?",
-    "Darf ich mein Kind bei Gefahr festhalten?"
+    "Darf ich mein Kind bei Gefahr festhalten?",
+    "Mein Kind hat mir etwas Schlimmes erzählt, was tue ich?"
    ],
    "alter": [
     "0-1",
@@ -7481,7 +11147,7 @@ window.WISSEN = {
     "grenzen",
     "alltag"
    ],
-   "kurz": "Nicola Schmidt sagt, dass sich Missbrauch nicht sicher verhindern lässt und Eltern keine Schuld trifft, wenn trotz aller Vorsicht etwas passiert. Schützen könnt ihr aber viel: durch ein starkes Selbstbewusstsein eures Kindes und dadurch, dass es im Alltag über seinen eigenen Körper bestimmen darf, zum Beispiel keine Küsschen geben, nicht auf den Schoß und keine Hand reichen muss.",
+   "kurz": "Laut den Gästen im wunschkind-Podcast geschehen die meisten Übergriffe im nahen Umfeld, nicht durch Fremde. Nicola Schmidt (artgerecht) sagt, dass sich Missbrauch nicht sicher verhindern lässt und Eltern keine Schuld trifft, wenn trotz aller Vorsicht etwas passiert. Schützen könnt ihr aber viel: durch ein starkes Selbstbewusstsein eures Kindes und dadurch, dass es im Alltag über seinen eigenen Körper bestimmen darf, zum Beispiel keine Küsschen geben, nicht auf den Schoß und keine Hand reichen muss.",
    "tipps": [
     "Lasst euer Kind im Alltag über seinen Körper bestimmen: Es muss niemandem ein Küsschen geben, nicht auf den Arm oder Schoß und auch nicht die Hand reichen.",
     "Beendet die Situation sofort und liebevoll, wenn jemand etwas verlangt, das euer Kind nicht will, etwa mit einem Satz wie: Stopp, ich glaube, sie möchte das gerade nicht.",
@@ -7490,7 +11156,8 @@ window.WISSEN = {
     "Benennt Körperteile richtig.",
     "Setzt Hygiene nicht gegen den Willen des Kindes durch.",
     "Stärkt das Selbstbewusstsein eures Kindes: Es soll wissen, dass es Menschen und einen sicheren Ort hat, Wertschätzung erfährt und dass seine Meinung zählt.",
-    "Ruft in einer Gefahrensituation laut und klar Stopp, und begleitet danach die Gefühle des Kindes mit wenig Worten und Nähe."
+    "Ruft in einer Gefahrensituation laut und klar Stopp, und begleitet danach die Gefühle des Kindes mit wenig Worten und Nähe.",
+    "Wenn sich euer Kind anvertraut: Bleibt ruhig, bedankt euch, sagt, dass es nichts falsch gemacht hat, stellt keine Suggestivfragen und holt euch fachliche Hilfe, zum Beispiel bei einer Beratungsstelle. Konfrontiert die verdächtige Person nicht selbst."
    ],
    "sichtweisen": [
     {
@@ -7500,6 +11167,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber behandelt in einer eigenen Folge die schützende Gewalt: Ein körperliches Eingreifen ist für sie nur in Notsituationen gerechtfertigt, in denen das Kind eine Gefahr noch nicht erkennen kann, etwa an einer befahrenen Straße. Sie lehnt sonst körperliche und seelische Gewalt, auch Belohnung, Bestrafung und Liebesentzug, ab. Entscheidend ist für sie das Danach: Folgt keine Einfühlung, ist es schlicht Gewalt. Ihr Leitsatz lautet, erst zu handeln und dann auf jeden Fall zu reden. Mit Zähneputzen oder Anziehen begründet sie das nicht. Das Thema ist ein anderes als Körperautonomie und Übergriffe durch andere, berührt aber, wie Grenzen des Kindes und Schutz zusammengehen."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide holen sich mehrere Gäste und Gästinnen zum Thema und stimmen mit artgerecht darin überein, dass Eltern ein Nein des Kindes im Alltag ernst nehmen sollen und sich kein hundertprozentiger Schutz erreichen lässt; die Gästinnen betonen ausdrücklich, dass bei Übergriffen nie das Kind oder die Eltern Schuld tragen. Neu ist der Blick auf die Täter: Laut einer Gästin geschieht sexualisierte Gewalt meist im sozialen Nahraum und das Bild vom fremden Täter sei ein Mythos, der Kinder falsch vorbereite. Eine andere Gästin rät, früh über gute und schlechte Geheimnisse zu sprechen und Körperteile richtig zu benennen, und nennt den Einstieg ohne Sexualthemen. Einig sind sie sich auch im Ton, Kinder vorzubereiten, ohne ihnen Angst zu machen. Anders als bei gfk geht es nicht um schützende Gewalt, sondern um Selbstbehauptung und darum, wie Eltern reagieren, wenn sich ein Kind anvertraut; die Gäste raten dann zu Ruhe, offenen Fragen und fachlicher Hilfe, bei Verdacht nicht den möglichen Täter direkt zu konfrontieren. Einzelne Zahlen und Studien sind Aussagen der Gäste."
     }
    ],
    "quellen": [
@@ -7550,6 +11221,22 @@ window.WISSEN = {
      "datum": "2019-10-27",
      "minute": "09:14",
      "thema": "Praxis Straße: Stopp rufen und das Danach"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 222,
+     "titel": "Wie wir Kinder vor sexuellem Missbrauch schützen",
+     "datum": "2026-02-10",
+     "minute": "01:16",
+     "thema": "Kinder vor sexueller Gewalt schützen: Zahlen, Mythen, Prävention"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 50,
+     "titel": "Aufklärung und Sexualität von Kindern",
+     "datum": "2020-11-03",
+     "minute": "16:43",
+     "thema": "Sexualisierte Gewalt: Täter sind oft aus dem Umfeld"
     }
    ],
    "verwandt": [
@@ -7557,6 +11244,7 @@ window.WISSEN = {
     "grenzen-setzen",
     "grosseltern",
     "bindung",
+    "schock-trauma-begleiten",
     "arztbesuch"
    ],
    "medizinisch": false,
@@ -7573,33 +11261,42 @@ window.WISSEN = {
     "Angst vor dem Arzt",
     "Angst mit Fantasie nehmen",
     "Angst im Bauch",
-    "Monster unterm Bett"
+    "Monster unterm Bett",
+    "Trennungsangst",
+    "Verlustangst",
+    "Wasserangst",
+    "Angstkiste"
    ],
    "fragen": [
     "Wie nehme ich meinem Kind die Angst vor etwas Unangenehmem?",
     "Hilft Rollenspiel bei Angst?",
     "Wie erkläre ich meinem Kind eine Medizin?",
-    "Mein Kind hat Bauchweh vor der Schule, ist das Angst?"
+    "Mein Kind hat Bauchweh vor der Schule, ist das Angst?",
+    "Wann ist Angst bei meinem Kind mehr als normal?",
+    "Mein Kind hat Angst, sich zu übergeben, ist das normal?",
+    "Mein Kind hat Angst im Dunkeln",
+    "Mein Kind hat Angst vor Monstern"
    ],
    "alter": [
     "1-3",
-    "3-6"
+    "3-6",
+    "6-10"
    ],
    "bereiche": [
     "gefuehle",
     "alltag"
    ],
-   "kurz": "Bei Angst arbeitet ihr an der Angst des Kindes, nicht an der Situation selbst. Rollenspiele, Geschichten und Fantasie helfen, die Situation vorher im Kopf durchzuspielen, sodass das Kind sich ihr eher stellt, auch wenn noch Angst da ist. Von einem Dreijährigen dürft ihr nicht erwarten, dass es die Angst allein überwindet.",
+   "kurz": "Bei Angst arbeitet ihr an der Angst des Kindes, nicht an der Situation selbst. Rollenspiele, Geschichten und Fantasie helfen, die Situation vorher im Kopf durchzuspielen, sodass das Kind sich ihr eher stellt, auch wenn noch Angst da ist. Von einem Dreijährigen dürft ihr nicht erwarten, dass es die Angst allein überwindet. Wenn die Angst den Alltag deutlich einschränkt, sollte ärztlicher oder fachlicher Rat eingeholt werden.",
    "tipps": [
     "Spielt Situationen nach und beobachtet, wie euer Kind reagiert, denn so erfahrt ihr, was es schon gehört hat.",
     "Tauscht die Rollen, sodass das Kind die Ärztin oder der Arzt ist oder ihr das ängstliche Kind spielt.",
     "Erklärt Unangenehmes über die Interessen eures Kindes, zum Beispiel mit Einhörnern, die im Körper Bakterien bekämpfen, und verbindet es mit einem lustigen Ritual wie einem Einhorn-Lied als Wecker.",
     "Nutzt Bücher und Geschichten, auch selbst erfundene, oder erzählt aus eurer Kindheit.",
-    "Nehmt Weinen und Wehren als Reaktion auf Angst und erwartet nicht, dass euer Kind sie allein überwindet.",
     "Fragt das Kind, was es braucht, um sich sicher zu fühlen, und nehmt seine Angst ernst, statt sie wegzureden oder abzulenken.",
     "Fragt nach der Angst im Körper (Farbe, Größe, Ort), legt die Hand auf die Stelle und nehmt das Kind in den Arm.",
-    "Lasst das Kind eigene Lösungen mitgestalten, zum Beispiel Kuscheltiere oder ein Tuch mit Elterngeruch.",
-    "Zeigt dem Kind Selbsthilfe-Strategien wie Mut rufen, Hand aufs Herz oder Klopfen und übt sie gemeinsam."
+    "Zeigt dem Kind Selbsthilfe-Strategien wie Mut rufen, Hand aufs Herz oder Klopfen und übt sie gemeinsam.",
+    "Lenkt nicht nur ab und vermeidet nicht dauerhaft, denn das hilft laut den Gästen nur kurzfristig; schaut die Auslöser an und geht in kleinen Schritten damit um.",
+    "Wenn die Angst Schlafen, Essen, Schule oder soziale Kontakte deutlich einschränkt, holt euch Hilfe bei Kinderarzt, Kinderärztin oder einer Beratung."
    ],
    "sichtweisen": [
     {
@@ -7609,6 +11306,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber erklärt, dass hinter jeder Angst ein unerfülltes Bedürfnis steckt, meist Sicherheit, die sie als Oberbedürfnis mit Unterbedürfnissen wie Geborgenheit, Orientierung, Nähe und elterlicher Führung beschreibt. Ob die Monster real sind, ist für sie zweitrangig, denn Angst ist ein Gefühl und sagt: Ich fühle mich nicht sicher. Deshalb reagiert sie nicht mit Wegreden oder Ablenken, das sie als Machtmissbrauch sieht, sondern fragt, was das Kind braucht, spricht mit ihm über die Angst im Körper (Farbe, Größe, Ort) und nimmt es in den Arm. Auch Bauchweh deutet sie als möglichen Hilferuf. Sie zeigt Kindern Selbsthilfe-Strategien wie Mut rufen, Atmen oder Klopfen. Anders als der Mutti-Ansatz, der vor allem auf Rollenspiel und Vorbereitung auf konkrete Situationen setzt, steht bei ihr das Bedürfnis hinter dem Gefühl im Mittelpunkt; ihrer Ansicht nach hängt eine starke Reaktion der Eltern oft mit dem eigenen inneren Kind zusammen."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide holen mehrere Gäste, die Angst ernst nehmen, ohne sie zu dramatisieren. Wie bei Kathy Weber gilt: nicht wegreden, nicht kleinreden, zuhören und Sicherheit geben; eine Gästin ergänzt, dass hinter Stille oder Wut oft Angst steckt und dass Kinder bis etwa acht Jahre noch Regulationshilfe brauchen. Abweichend betonen mehrere Gäste, dass Ablenken und Vermeiden nur kurz helfen und Angst durch kleine Schritte auf sie zu besser wird; ein Gast (Dr. Oliver Dierssen) sieht Eltern, die jahrelang alles möglichst angenehm machen, als unbeabsichtigte Verlängerer des Leids und rät bei starker Einschränkung zu professioneller Hilfe. Zugleich warnen die Hosts davor, normale Verhaltensweisen zu psychiatrisieren, und beschreiben viele Phasen als vorübergehend. Im Gegensatz zum Mutti-Ansatz mit Rollenspiel steht hier weniger das Durchspielen einer Situation als das Begleiten und gestufte Angehen im Mittelpunkt."
     }
    ],
    "quellen": [
@@ -7637,14 +11338,6 @@ window.WISSEN = {
      "thema": "An der Angst arbeiten, Fantasie nutzen"
     },
     {
-     "podcast": "mutti",
-     "nr": 63,
-     "titel": "Mein Kind hat Angst vor Arztbesuchen?",
-     "datum": "2026-10-21",
-     "minute": "46:26",
-     "thema": "Einhorn-Geschichte beim Antibiotikum"
-    },
-    {
      "podcast": "gfk",
      "nr": 209,
      "titel": "Schulangst bei Kindern begleiten: Empathie fördern statt Gefühle wegreden",
@@ -7659,6 +11352,30 @@ window.WISSEN = {
      "datum": "2024-08-26",
      "minute": "09:22",
      "thema": "Strategie Mut rufen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 144,
+     "titel": "Ängste bei Kindern begleiten und eigene Ängste bewältigen",
+     "datum": "2024-07-23",
+     "minute": "01:19",
+     "thema": "Warum Angst nützlich ist und wie sie entsteht"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 69,
+     "titel": "Trennungsängste mit Dr. Oliver Dierssen",
+     "datum": "2021-08-24",
+     "minute": "13:20",
+     "thema": "Kriterien: Leid und Warnzeichen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 231,
+     "titel": "Jugend unter Druck – wie Eltern bei Überforderung, Ängsten und Belastungen unterstützen können",
+     "datum": "2026-04-14",
+     "minute": "25:06",
+     "thema": "Ängste bei Kindern, erster Schritt für Eltern"
     }
    ],
    "verwandt": [
@@ -7666,10 +11383,10 @@ window.WISSEN = {
     "gefuehle-begleiten",
     "geschichten-buecher",
     "kita-eingewoehnung",
-    "abenteuer-mut",
-    "risiko-freiheit"
+    "schulstart",
+    "abenteuer-mut"
    ],
-   "medizinisch": false,
+   "medizinisch": true,
    "einleitung": "Manche Situationen, etwa Arztbesuche oder Medizin, machen Kindern große Angst. Eltern wissen dann oft nicht, wie sie ihr Kind darauf vorbereiten können."
   },
   {
@@ -7708,15 +11425,19 @@ window.WISSEN = {
     "Gebt Kindern von klein auf Aufgaben in die Hand, etwa Schuhe wegräumen. Dann braucht es oft keine Ansage mehr.",
     "Sagt bei älteren Kindern klar, was ab jetzt ihre Verantwortung ist, zum Beispiel Wecker stellen und anziehen, und nennt eine feste Abfahrtszeit.",
     "Wartet geduldig, bevor ihr selbst eingreift. Oft reichen zwei bis vier Stunden, Kinder wollen manchmal erst etwas fertig machen.",
-    "Das Kind darf euch bitten, etwas für es zu tun. Delegieren gehört zur Verantwortung.",
     "Bindet Kinder in euren Tag ein, zum Beispiel beim Kochen, statt sie in die Spielecke zu schicken.",
     "Haltet euer Kind nicht für überfordert, nur weil es frustriert ist. Traut ihm mehr zu und schaut, wie es das löst.",
-    "Verknüpft Aufgaben nicht mit Strafen wie Taschengeld- oder Fernsehentzug."
+    "Verknüpft Aufgaben nicht mit Strafen wie Taschengeld- oder Fernsehentzug.",
+    "Probiert bei Grundschulkindern kleine Schritte aus, etwa nur noch den halben Schulweg mitzugehen, und geht im Zweifel einen Schritt zurück. Lasst das Kind den Weg entdecken (Wo musst du aufpassen?), statt Regeln aufzuzählen."
    ],
    "sichtweisen": [
     {
      "podcast": "mutti",
      "text": "Die Hosts erzählen eine Bergführer-Metapher: Ein guter Führer traut erst wenig, dann mehr zu, hilft zurück, wenn es zu schwer wird, und übergibt am Ende die Führung. Der andere Führer unterhält ständig, vermeidet Frust und trägt, sodass man sich am Ende nicht bereit für die schweren Wege fühlt. Sie halten die Annahme für falsch, Verantwortung wegzunehmen sei Kinderschutz, und kritisieren das Motto „Lasst Kinder Kinder sein“ und Teile der bedürfnisorientierten Erziehung. Sie selbst sehen sich rückblickend früher in dieser abnehmenden, anleitungsarmen Richtung. Laut ihrer Deutung stärkt Wiederholung Nervenbahnen, und wer nie Verantwortung übt, entwickle weniger Empathie und werde unzufriedener. Das ist ihre persönliche These und nicht belegt. Von Parentifizierung grenzen sie ab: Gemeint sei etwa, dass kleine Kinder tagelang für sich selbst sorgen müssen, ein Geschwisterkind um Schuhe zu bitten gehöre nicht dazu. Gleichzeitig distanzieren sie sich von Zwang, Strafe und Rache. Es sei nie zu spät, anzufangen, bei kleinen Kindern gehe es aber leichter und ohne große Ansage."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Im Podcast der Hosts Daniel Graf und Katja Seide kommt das Thema nur am Rand vor, und zwar in einer Folge zur Grundschulzeit. Die Gästin Inke Hummel sagt, das richtige Maß bei Verantwortung und Loslassen lasse sich nur ausprobieren, es sei ein Klassiker in der Grundschulzeit und noch einmal in der Pubertät. Wer Kinder ständig in Watte packe, erfahre gar nicht, ob es schon klappen würde. Das deckt sich mit der Linie des Mutti-Podcasts, Zutrauen statt Abnehmen. Anders als dort geht es hier nicht um Haltung oder Kritik an anderen Erziehungsansätzen, sondern um kleine, ausprobierende Schritte, etwa beim Schulweg, mit dem Zurückgehen als Option."
     }
    ],
    "quellen": [
@@ -7759,6 +11480,14 @@ window.WISSEN = {
      "datum": "2025-03-12",
      "minute": "54:02",
      "thema": "Selbstregulation, Konsequenzen, Überforderung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 147,
+     "titel": "Beziehungsorientiert durch die Grundschulzeit",
+     "datum": "2024-09-03",
+     "minute": "20:05",
+     "thema": "Das richtige Mittelmaß bei Verantwortung"
     }
    ],
    "verwandt": [
@@ -7767,7 +11496,7 @@ window.WISSEN = {
     "kooperation-zuhoeren",
     "beduerfnisorientierte-erziehung",
     "frustrationstoleranz",
-    "eltern-als-team"
+    "schulstart"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern erleben, dass ihr Kind im Alltag wenig selbst übernimmt, und fragen sich, wie viel Verantwortung ihm zusteht."
@@ -7785,7 +11514,11 @@ window.WISSEN = {
     "schlechtes Gewissen Kita",
     "Kita schadet",
     "Betreuungsschlüssel",
-    "Kind will nicht in die Kita"
+    "Kind will nicht in die Kita",
+    "familienergänzende Betreuung",
+    "psychische Gewalt Kita",
+    "Kita-Reife",
+    "Tagespflege auswählen"
    ],
    "fragen": [
     "Schadet Kita meinem Kind?",
@@ -7793,7 +11526,9 @@ window.WISSEN = {
     "Woran erkenne ich eine schlechte Kita?",
     "Ich habe ein schlechtes Gewissen, weil mein Kind in die Kita geht",
     "Tagesmutter oder Krippe?",
-    "Mein Kind haut in der Kita, was tun?"
+    "Mein Kind haut in der Kita, was tun?",
+    "Wie finde ich eine gute Kita oder Tagespflege?",
+    "Mein Kind erzählt von Strafen in der Kita, was tun?"
    ],
    "alter": [
     "0-1",
@@ -7825,6 +11560,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber sieht den Kita-Besuch als Beitrag zur Familie und fragt Kinder, was sie brauchen, um bereit hinzugehen, statt ob sie müssen; die Entscheidung bleibt aber bei den Eltern, begleitet von Empathie. Hinter dem Nein oder dem Weinen steckt für sie meist ein unerfülltes Bedürfnis nach Sicherheit, etwa Nähe oder Orientierung, besonders nach Umbrüchen in der Einrichtung. Dass Kinder nach der Kita zu Hause alles herauslassen, deutet sie als Zeichen starker Bindung, weil sie vormittags nach fremden Regeln funktioniert haben. Wenn dort bestraft wird (zum Beispiel mit stillem Stuhl), rät sie, das Kind aufzufangen, ohne Verurteilung mit der Leitung zu sprechen und notfalls zu wechseln; Bestrafung nennt sie emotionalen Missbrauch, urteilt aber nicht über die Erziehenden, die ihr Möglichstes täten. Anders als mutti, die vor allem Qualität und die Schaden-Debatte betrachten, geht es ihr um das Erleben des einzelnen Kindes; sie räumt ein, dass Einrichtungen eigene Strukturen haben."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "„Das gewünschteste Wunschkind“ ordnet Kita eher nüchtern ein und betont Qualität statt Lagerkampf. Eine Gästin (Autorin) kritisiert, der Begriff Fremdbetreuung sei ein Kampfbegriff, und meint, die Bindungsforschung verlange den Blick auf den Einzelfall: Einrichtung, Betreuungsschlüssel, Wesen des Kindes und Familiensituation. Das deckt sich mit mutti. Eine Gästin der Eingewöhnungsbegleitung warnt davor, U3-Betreuung zu verteufeln, weil schlechtes Gewissen den Prozess belaste, räumt aber ein, dass die Qualität oft zu wünschen übrig lasse. Anders als bei mutti und Kathy Weber geht es hier stark darum, Kitas und Tagespflege konkret zu prüfen (nach Situationen fragen, Warnzeichen wie Wesensveränderung beim Kind) und bei psychischer Gewalt wie Beschämen, stillem Stuhl oder Liebesentzug früh und sachlich das Gespräch zu suchen. Eine Gästin aus der Hirnforschung sagt, sichere Bindungen außerhalb der Familie seien möglich, bei den heutigen Betreuungsschlüsseln aber oft nicht umsetzbar. Die Hosts sehen auch den Personalmangel und sagen, viele Eltern müssten Abstriche machen."
     }
    ],
    "quellen": [
@@ -7854,22 +11593,6 @@ window.WISSEN = {
     },
     {
      "podcast": "mutti",
-     "nr": 56,
-     "titel": "Was tun, wenn man am Limit ist?",
-     "datum": "2026-09-02",
-     "minute": "26:05",
-     "thema": "Kita und Betreuung in Ost und West"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 9,
-     "titel": "Q&A: Kinderfrust, Zähneputz-Dramen und Partnerschaftsfragen",
-     "datum": "2025-01-22",
-     "minute": "05:25",
-     "thema": "Betreuungsschlüssel und Bindung zu Betreuenden"
-    },
-    {
-     "podcast": "mutti",
      "nr": 15,
      "titel": "Hauen, beißen, schubsen - was können Eltern tun?",
      "datum": "2025-04-02",
@@ -7885,12 +11608,28 @@ window.WISSEN = {
      "thema": "Weinen nach der Kita: Sicherheit und Orientierung fehlen"
     },
     {
-     "podcast": "gfk",
-     "nr": 68,
-     "titel": "89  F – wie Führung: Warum dein Kind deine liebevolle Führung braucht",
-     "datum": "2022-10-23",
-     "minute": "25:53",
-     "thema": "Wenn das Kind nicht in die Kita will: Führung übernehmen"
+     "podcast": "wunschkind",
+     "nr": 94,
+     "titel": "Bindung und Betreuung mit Nora Imlau",
+     "datum": "2022-08-23",
+     "minute": "18:03",
+     "thema": "Was eine gute Kita mitbringt und Fragen an die Einrichtung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 192,
+     "titel": "Auf ins Kita-Abenteuer: Wie du dein Kind sicher und entspannt durch die Eingewöhnung begleitest",
+     "datum": "2025-07-15",
+     "minute": "03:37",
+     "thema": "Kita-Reife und Zeitpunkt, Kita oder Tagespflege"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 258,
+     "titel": "Psychische Gewalt in Kita und Schule - wo sie beginnt und was Eltern tun können",
+     "datum": "2026-10-20",
+     "minute": "05:51",
+     "thema": "Was als psychische Gewalt zählt"
     }
    ],
    "verwandt": [
@@ -7918,7 +11657,10 @@ window.WISSEN = {
     "Kita nach Ferien",
     "Wiedereingewöhnung",
     "Kind klammert an der Kita",
-    "Eingewöhnung bedürfnisorientiert"
+    "Eingewöhnung bedürfnisorientiert",
+    "Berliner Modell",
+    "Münchner Modell",
+    "Eingewöhnung schüchternes Kind"
    ],
    "fragen": [
     "Mein Kind weint beim Abgeben in der Kita, was tun?",
@@ -7927,7 +11669,8 @@ window.WISSEN = {
     "Soll ich nach dem Abschied noch bleiben?",
     "Mein Kind will nach dem Urlaub nicht mehr in die Kita, was tun?",
     "Brauche ich nach dem Urlaub eine neue Eingewöhnung?",
-    "Wie bereite ich mein Kind auf die Kita vor?"
+    "Wie bereite ich mein Kind auf die Kita vor?",
+    "Was ist der Unterschied zwischen Berliner und Münchner Modell?"
    ],
    "alter": [
     "1-3",
@@ -7937,7 +11680,7 @@ window.WISSEN = {
     "kita",
     "gefuehle"
    ],
-   "kurz": "Weinen beim Abgeben ist normal und sagt nichts über die Qualität der Kita aus; hilfreich sind eine Eingewöhnung, die so lange dauert, wie das Kind sie braucht, und ein klarer, liebevoller Abschied, wobei manche Kinder ein kurzes Ritual und andere erklärte Schritte brauchen. Auch nach den Ferien ist Klammern laut Nicola Schmidt nichts Ungewöhnliches und vergeht oft nach wenigen Tagen. Unsicherheit und Zuversicht der Eltern übertragen sich laut den Hosts von mutti auf das Kind.",
+   "kurz": "Weinen beim Abgeben ist normal und sagt nichts über die Qualität der Kita aus; hilfreich sind eine Eingewöhnung, die so lange dauert, wie das Kind sie braucht (Gäste von wunschkind nennen vier bis acht Wochen), und ein klarer, liebevoller Abschied, wobei manche Kinder ein kurzes Ritual und andere erklärte Schritte brauchen. Auch nach den Ferien ist Klammern laut Nicola Schmidt nichts Ungewöhnliches und vergeht oft nach wenigen Tagen. Unsicherheit und Zuversicht der Eltern übertragen sich laut den Hosts von mutti auf das Kind.",
    "tipps": [
     "Macht die Eingewöhnung so lang, wie euer Kind sie braucht, damit es Einrichtung und Erzieher kennenlernt, bevor ihr das erste Mal geht.",
     "Verabschiedet euch kurz mit einmal trösten, kuscheln, einem Kuss und dann gehen, denn ständiges Hin und Her hält das Kind im Abschied fest.",
@@ -7946,8 +11689,8 @@ window.WISSEN = {
     "Bleibt nach den Ferien gelassen und wartet ein paar Tage ab; oft ist es nach zwei, drei Tagen vorbei.",
     "Sprecht mit dem Personal über Veränderungen, die ihr von außen nicht seht (fehlendes Personal, Umbau, neue Kinder, ein Freund, der gewechselt hat), und prüft, ob euer Kind krank ist oder wird.",
     "Wechselt wenn möglich die Bringperson und plant bei Bedarf eine Mini-Eingewöhnung ein: Jemand bleibt morgens ein paar Tage etwas länger, und die Betreuungsperson übernimmt das Kind direkt und bringt es ins Spielen, bevor ihr geht.",
-    "Fragt beim Abholen, wie es dem Kind ging, statt nur beim Abgeben zu schauen.",
-    "Schaut, ob dem Kind der Anschluss fehlt, wenn es sich in der Kita nicht wohlfühlt, und verabredet es etwa mit anderen Kindern."
+    "Plant vier bis acht Wochen ein, denn zwei Wochen sind laut einer Gästin meist zu wenig. Bleibt anwesend, baut eine Brücke zur Fachkraft und trennt erst, wenn das Kind sich souverän bewegt; bricht den Versuch ab, wenn die Bezugsperson es nicht trösten kann.",
+    "Sprecht vorab mit der Kita über euer Kind, besonders wenn es schüchtern oder hochsensibel ist, und kommt wenn möglich nachmittags zum Schnuppern."
    ],
    "sichtweisen": [
     {
@@ -7961,6 +11704,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber erklärt, dass Kinder bei der Eingewöhnung vor allem Sicherheit brauchen, ein Oberbedürfnis mit Unterbedürfnissen wie Orientierung, Führung, Schutz und Mama- oder Papa-Nähe. Weinen beim Abschied ist für sie kein Zeichen eines Fehlers: Ziel ist nicht, dass das Kind nicht weint, sondern dass es in Verbindung und fürsorglich übergeben wird. Eltern sollen ihr eigenes Warum klären, vorab Rituale und Abläufe aufbauen (Ablaufplan, Foto, Duft oder Kuscheltier von zu Hause, Nähe tanken), dem Kind Empathie geben, dann aber klar führen und an die Betreuungsperson übergeben. Sie vertritt ein individuelles Tempo und sagt, Eltern sollten gegenüber einer zu schnellen Trennung der Kita Grenzen setzen oder eine andere Einrichtung suchen. Das steht im Gegensatz zur Mutti-Host, die schnelle Eingewöhnungen bevorzugt. Mit Mutti und Artgerecht teilt sie den klaren, kurzen Abschied, mit Artgerecht die Ansicht, dass Kinder unterschiedlich viel Zeit brauchen. Hilft Empathie allein nicht, fehlt ihrer Erfahrung nach oft Sicherheit und Führung."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "In den Folgen von Daniel Graf und Katja Seide stehen Beziehung und Zeit im Vordergrund. Eine Gästin, die sich auf Eingewöhnung spezialisiert hat, nennt sie keinen Selbstläufer: Sie plant vier bis acht Wochen aktive Eingewöhnung ein (zwei Wochen sind meist zu wenig), die Eltern bleiben anwesend und bauen eine Brücke zur Fachkraft, und erste Trennungen sollten möglichst ohne viele Tränen laufen, damit sich eine gute Erfahrung festigt. Nora Imlau sieht Tränen dagegen nicht automatisch als schlimm; entscheidend sei, ob die neue Bezugsperson das Kind trösten kann, sonst wird der Versuch abgebrochen. Beide halten starr durchgezogene Pläne für ein Risiko. Damit stehen sie näher bei gfk und artgerecht als bei der mutti-Host, die schnelle Eingewöhnungen bevorzugt und lange Modelle für übergriffig hält. Eine ältere Folge ergänzt, dass die Eingewöhnung manchmal besser mit einer anderen Bindungsperson als der wichtigsten klappt, als Versuch und nicht als Regel. Für schüchterne oder hochsensible Kinder raten Gästinnen zu mehr Zeit, Schnuppern und einem Gespräch mit der Kita vorab."
     }
    ],
    "quellen": [
@@ -7985,22 +11732,6 @@ window.WISSEN = {
      "nr": 43,
      "titel": "Ist Kita schlecht für mein Kind?",
      "datum": "2026-04-21",
-     "minute": "19:23",
-     "thema": "Wann Trennung wirklich Angst macht und warum Eingewöhnung hilft"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 43,
-     "titel": "Ist Kita schlecht für mein Kind?",
-     "datum": "2026-04-21",
-     "minute": "21:35",
-     "thema": "Probleme beim Ankommen sind oft fehlender Anschluss"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 43,
-     "titel": "Ist Kita schlecht für mein Kind?",
-     "datum": "2026-04-21",
      "minute": "24:19",
      "thema": "Eingewöhnungsdauer, kurze und lange Modelle"
     },
@@ -8017,16 +11748,32 @@ window.WISSEN = {
      "nr": 60,
      "titel": "Mein Kind will nach den Ferien nicht mehr in die Kita!",
      "datum": "2026-07-22",
-     "minute": "03:17",
-     "thema": "Autonomie- und Bindungskinder, Ankündigen vs. klarer Abschied"
-    },
-    {
-     "podcast": "artgerecht",
-     "nr": 60,
-     "titel": "Mein Kind will nach den Ferien nicht mehr in die Kita!",
-     "datum": "2026-07-22",
      "minute": "07:46",
      "thema": "Tipps: abwarten, Personal, Bringperson, Mini-Eingewöhnung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 192,
+     "titel": "Auf ins Kita-Abenteuer: Wie du dein Kind sicher und entspannt durch die Eingewöhnung begleitest",
+     "datum": "2025-07-15",
+     "minute": "27:20",
+     "thema": "Wie lange dauert Eingewöhnung?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 94,
+     "titel": "Bindung und Betreuung mit Nora Imlau",
+     "datum": "2022-08-23",
+     "minute": "34:51",
+     "thema": "Ist Weinen in der Eingewöhnung schlimm?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 110,
+     "titel": "Wie gelingt beziehungsstarke Kitaeingewöhnung? - Mit Stefanie von Brück",
+     "datum": "2023-04-04",
+     "minute": "14:03",
+     "thema": "Bindungsanker und positive erste Trennung"
     }
    ],
    "verwandt": [
@@ -8049,17 +11796,24 @@ window.WISSEN = {
     "Kind nimmt keine Rücksicht",
     "Rücksicht lernen",
     "sozial werden",
-    "Teilen lernen"
+    "Teilen lernen",
+    "magische Schwelle",
+    "Theorie des Geistes",
+    "Freunde werden wichtiger",
+    "schlechter Umgang"
    ],
    "fragen": [
     "Mein Kind verhält sich auf dem Spielplatz egoistisch, ist das normal?",
     "Wann lernt mein Kind Rücksicht zu nehmen?",
     "Wie bringe ich meinem Kind Teilen bei?",
-    "Muss ich mein Kind zum Sozialverhalten zwingen?"
+    "Muss ich mein Kind zum Sozialverhalten zwingen?",
+    "Mein Kind orientiert sich mehr an Freunden, ist das normal?",
+    "Ab wann versteht mein Kind, was andere denken?"
    ],
    "alter": [
     "1-3",
-    "3-6"
+    "3-6",
+    "6-10"
    ],
    "bereiche": [
     "entwicklung",
@@ -8071,12 +11825,18 @@ window.WISSEN = {
     "Geht beim Kind auf Augenhöhe und erwartet nichts, was erst mit der Reife kommt.",
     "Fragt euch bei Irritation, welches eigene Bedürfnis dahintersteckt und welche alten Muster (\"man muss\") aktiv sind.",
     "Entscheidet euch in jeder Situation neu für friedvolle Elternschaft und hinterfragt eure Erwartungen.",
-    "Habt Geduld beim Lernen der GfK; Kathy Weber sagt, es sei ein lebenslanger Prozess."
+    "Habt Geduld beim Lernen der GfK; Kathy Weber sagt, es sei ein lebenslanger Prozess.",
+    "Handelt bei kleinen Kindern klar und mit wenigen Worten, statt alles zu erklären und auszudiskutieren; erst nach der Schwelle um das vierte Jahr nehmen sie die Sicht anderer besser auf.",
+    "Bleibt bei Grundschulkindern an den Freundschaften interessiert, lasst Fehler wie eine späte Heimkehr ohne große Strafe zu und lernt die Freunde zu Hause kennen."
    ],
    "sichtweisen": [
     {
      "podcast": "gfk",
      "text": "Kathy Weber argumentiert klar aus der Gewaltfreien Kommunikation: Freiwilligkeit statt Müssen, Haltung statt Strategie. Wer sie nur ab und zu einsetzt, werde zum Empathieroboter. Sie reagiert auf Hörerkommentare, denen die Haltung bei Teilen, Rutsche und Schaukel schwerfällt. Dass Spielplatzverhalten triggert, führt sie auf alte Glaubenssätze aus der eigenen Kindheit zurück. Sie betont, die GfK sei nicht das einzig Wahre, aber als Haltung gehe sie nicht mal mit, mal ohne."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "„Das gewünschteste Wunschkind“ verteilt das Thema auf mehrere Folgen und geht dabei über die frühe Kindheit hinaus. Ein Gast erklärt, Kinder könnten sich in den ersten drei, vier Jahren noch nicht in die Köpfe anderer hineinversetzen; danach öffne sich die „magische Schwelle“ (Theorie des Geistes), die er von Empathie unterscheidet, die schon früher da sei. Wer kleine Kinder behandle, als wären sie schon darüber, und alles ausdiskutiere, dem gehe es schief. Das passt zu Kathy Webers Sicht, dass Soziales mit der Reife kommt. Für Grundschulkinder sprechen Gäste und Hosts davon, dass Freundschaften wichtiger werden und Eltern Gesprächspartner bleiben und Fehler zulassen sollten statt zu moralisieren. Ein Gast zum Thema Aggression meint, der Umgang mit bestimmten Kindern könne das eigene Kind aggressiver machen; bei Gefährdung müsse man handeln und den Umgang notfalls verbieten, solle aber hinter dem Kind stehen. Das ist stärker eingreifend, als es bei Kathy Weber anklingt."
     }
    ],
    "quellen": [
@@ -8111,6 +11871,30 @@ window.WISSEN = {
      "datum": "2020-08-23",
      "minute": "08:58",
      "thema": "Spielplatz als Schauplatz alter Glaubenssätze"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 224,
+     "titel": "Auf die Flügel kommt es an – Herbert Renz-Polster über Autonomie, Verbundenheit und fehlende Entwicklungsräume",
+     "datum": "2026-02-24",
+     "minute": "49:25",
+     "thema": "Die magische Schwelle: Gedanken anderer verstehen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 109,
+     "titel": "Wackelzahnpubertät mit Kiran Deuretzbacher",
+     "datum": "2023-03-21",
+     "minute": "24:31",
+     "thema": "Freundschaften werden wichtiger, Fehler zulassen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 149,
+     "titel": "Aggressionen bei Kindern",
+     "datum": "2024-09-17",
+     "minute": "38:51",
+     "thema": "Machen Freunde mein Kind aggressiver?"
     }
    ],
    "verwandt": [
@@ -8118,7 +11902,8 @@ window.WISSEN = {
     "spielplatz-konflikte-kinder",
     "konflikt-eltern-spielplatz",
     "trigger-inneres-kind",
-    "gfk-grundannahmen"
+    "gfk-grundannahmen",
+    "freundschaften"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind verhält sich auf dem Spielplatz egoistisch, ist das normal?“. Hier steht, was dahinter stecken kann und was helfen kann."
@@ -8133,12 +11918,17 @@ window.WISSEN = {
     "Blumenerde ausgraben",
     "Wasser auskippen",
     "mit dem Essen spielen",
-    "Kind hört nicht"
+    "Kind hört nicht",
+    "Pauseknopf",
+    "Wutkerzen",
+    "Batman-Effekt"
    ],
    "fragen": [
     "Mein Kleinkind grinst, wenn es etwas Verbotenes tut, ist es böse?",
     "Warum macht mein Kind das immer wieder, obwohl es weiß, dass es nicht darf?",
-    "Wie lernt mein Kleinkind Impulskontrolle?"
+    "Wie lernt mein Kleinkind Impulskontrolle?",
+    "Ab wann können Kinder ihre Impulse kontrollieren?",
+    "Was sind Wutkerzen?"
    ],
    "alter": [
     "0-1",
@@ -8154,12 +11944,19 @@ window.WISSEN = {
    "tipps": [
     "Stoppt das Kind und benennt das Ergebnis des Experiments, zum Beispiel: Kein Wasser über den Frühstückstisch.",
     "Erkennt das Bedürfnis an und bietet eine passende Gelegenheit, etwa in der Badewanne mit einem Plastikbecher Wasser kippen oder ausprobieren, was mit nassem Papier passiert.",
-    "Sagt bei Dreijährigen Stopp, benennt den Impuls (zum Beispiel Spielzeug werfen oder hauen) und zeigt, wie es anders geht."
+    "Sagt bei Dreijährigen Stopp, benennt den Impuls (zum Beispiel Spielzeug werfen oder hauen) und zeigt, wie es anders geht.",
+    "Rechnet bei Müdigkeit und Hunger mit weniger Impulskontrolle und gebt dem Kind Zeit, sie über Jahre aufzubauen.",
+    "Übt in ruhigen Momenten Alternativen für Anspannung, etwa den Pauseknopf, Wutkerzen (Finger nacheinander auspusten) oder eine Ersatzhandlung, die ihr gemeinsam wählt.",
+    "Gebt Kindern mit viel Anspannung Bewegung wie Rennen, Hopsen oder Fahrradfahren (Inke Hummel)."
    ],
    "sichtweisen": [
     {
      "podcast": "artgerecht",
      "text": "Nicola Schmidt versteht das Nichthören bei Kleinkindern als Entwicklungsthema, nicht als Bosheit oder Provokation. Das Verhalten, etwa Blumenerde ausgraben, Wasser ausschütten oder mit dem Essen spielen, sei nervig, aber normal und gehöre zur gesunden Entwicklung. Das Grinsen deutet sie als Zeichen von sozialem Druck, vergleichbar mit dem Zähnezeigen bei Primaten als Unterwerfungsgeste. Erwachsene könnten ihren Ärger unterdrücken, weil sie die Großen seien. Auch Dreijährige bräuchen ihrer Ansicht nach noch Unterricht in Impulskontrolle, damit soziale und kulturelle Anforderungen bei ihnen ankommen."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide erklären Impulskontrolle über das Gehirn: Aggressive Impulse laufen laut ihnen durch eine Kontrollschleife im Stirnhirn, die bei Kleinkindern noch nicht trainiert sei und etwa ab zwei Jahren aufgebaut werde. Das deckt sich mit Nicola Schmidt, dass Nichthören Entwicklung und keine Bosheit ist. Neu ist die Einordnung des Zeitraums: Mit etwa sechs seien Kinder schulreif, weil sie Impulse relativ gut zügeln können, es müsse aber nicht jedes Kind schon können, und auch Erstklässler, die aufstampfen, seien normal. Bei Müdigkeit und Hunger funktioniere die Schleife schlechter. In einer weiteren Folge empfiehlt die Gästin Inke Hummel für Vorschulkinder Bilder wie den Pauseknopf und Rituale wie Wutkerzen, außerdem Bewegungsangebote bei viel Anspannung. Es handelt sich um Einschätzungen der Hosts und der Gästin, nicht um belegte Altersgrenzen."
     }
    ],
    "quellen": [
@@ -8194,13 +11991,30 @@ window.WISSEN = {
      "datum": "2024-06-25",
      "minute": "03:41",
      "thema": "Dreijährige brauchen Unterricht in Impulskontrolle"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 4,
+     "titel": "Digitale Medien - Teil 2: Aggressionen und Impulskontrolle",
+     "datum": "2019-01-15",
+     "minute": "06:52",
+     "thema": "Ab welchem Alter funktioniert Impulskontrolle?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 92,
+     "titel": "Wunderbare wilde Kinder mit Inke Hummel",
+     "datum": "2022-07-26",
+     "minute": "13:07",
+     "thema": "Impulskontrolle und Pauseknopf"
     }
    ],
    "verwandt": [
     "kooperation-zuhoeren",
     "frustrationstoleranz",
     "aergern-provozieren",
-    "ja-umgebung-baby"
+    "ja-umgebung-baby",
+    "aggression-kinder"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Mein Kleinkind grinst, wenn es etwas Verbotenes tut, ist es böse?“. Hier steht, was dahinter stecken kann und was helfen kann."
@@ -8216,13 +12030,17 @@ window.WISSEN = {
     "in Watte packen",
     "Pass auf",
     "ängstliche Eltern",
-    "Kind traut sich nichts"
+    "Kind traut sich nichts",
+    "allein zur Schule",
+    "Schulweg allein",
+    "Erfahrungsangst"
    ],
    "fragen": [
     "Wie gefährlich darf Klettern für Kinder sein?",
     "Soll ich meinem Kind „Pass auf!“ zurufen?",
     "Mein Kind klettert zu hoch, was tun?",
-    "Wie übertrage ich meine Angst nicht aufs Kind?"
+    "Wie übertrage ich meine Angst nicht aufs Kind?",
+    "Ab wann darf mein Kind allein zur Schule gehen?"
    ],
    "alter": [
     "1-3",
@@ -8237,14 +12055,14 @@ window.WISSEN = {
    "kurz": "Mehr Risiko und Freiraum tun Kindern gut, denn Klettern trainiert Körpergefühl, Risikoeinschätzung und Selbstbewusstsein. Ein erschrockenes „Pass auf!“ kann Kinder eher verunsichern, besser sind ruhige, konkrete Hinweise oder stilles Absichern. Angst um die Kinder ist normal, entscheidend ist, wann sie das Kind in seiner Entwicklung einschränkt.",
    "tipps": [
     "Stellt euch bei riskanten Kletterstellen kommentarlos unter das Kind, um es auffangen zu können, statt hineinzurufen.",
-    "Sagt ruhig und konkret, was das Kind tun soll („halt dich fest“, „komm ein Stück runter“), statt Angst zu zeigen.",
-    "Lasst euch eure Nervosität möglichst nicht anmerken, damit das Kind nicht abgelenkt wird.",
+    "Sagt ruhig und konkret, was das Kind tun soll („halt dich fest“, „komm ein Stück runter“), statt Angst zu zeigen, und lasst euch eure Nervosität möglichst nicht anmerken.",
     "Bittet auch Großeltern, auf „Pass auf!“ zu verzichten und stattdessen konkrete Hinweise zu geben.",
     "Gebt ängstlicheren Kindern Schritt-für-Schritt-Hilfe (wo der Fuß hin soll, wo man sich festhält), lasst sie den Weg aber selbst schaffen.",
     "Schätzt jedes Kind einzeln ein, denn Draufgänger brauchen eher Bremsen und ängstliche Kinder eher Ermutigung.",
-    "Fragt euch, wie wahrscheinlich eine Gefahr wirklich ist, denn bei geringer Fallhöhe darf ein Kind auch mal fallen.",
-    "Nehmt ernst, wenn euer Kind sagt, dass ihr es gerade stört, und gesteht euch ein, wenn ihr es unterschätzt habt.",
-    "Wenn eigene Ängste einen ernsten Hintergrund haben und sich stark aufs Kind übertragen, kann eine Therapie helfen, sie aufzuarbeiten."
+    "Fragt euch, wie wahrscheinlich eine Gefahr wirklich ist, denn bei geringer Fallhöhe darf ein Kind auch mal fallen; nehmt ernst, wenn euer Kind sagt, dass ihr es gerade stört, und gesteht euch ein, wenn ihr es unterschätzt habt.",
+    "Wenn eigene Ängste einen ernsten Hintergrund haben und sich stark aufs Kind übertragen, kann eine Therapie helfen, sie aufzuarbeiten.",
+    "Hebt kleine Kinder nicht auf Geräte, die sie nicht allein erreichen, und überredet sie nicht zum Rutschen oder Klettern; laut einer Hostin überschreibt das die Erfahrungsangst des Kindes.",
+    "Wollt ihr das Kind allein zur Schule oder zum Spielplatz gehen lassen, fangt mit Teilstrecken an, übt Alternativrouten und richtet Anlaufstellen wie eine bekannte Bäckerei ein."
    ],
    "sichtweisen": [
     {
@@ -8254,17 +12072,13 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber behandelt das Thema über Bedürfnisse: Hinter dem Wunsch nach Freiraum sieht sie Selbstbestimmung, Autonomie, Abenteuer und Zugehörigkeit. Eltern bleiben für Gesundheit und Sicherheit verantwortlich, sollen aber zuerst prüfen, ob es wirklich um Gesundheit geht oder nur um ein altes „Das macht man nicht“. Im Beispiel Barfußlaufen bei kühlem Wetter kündigt sie an, in fünf Minuten die Füße zu fühlen, und zieht Socken an, wenn sie kalt sind, auch wenn das Kind auf dem Klettergerüst sitzt. Sie gibt Einfühlung und bleibt trotzdem bestimmt. Anders als die mutti-Sicht, die vor allem Absichern und ruhige Hinweise betont, geht es ihr um das Gespräch über das Bedürfnis dahinter und darum, Selbstbestimmung im Alltag Platz zu geben. Ihr zweites Beispiel betrifft einen Jugendlichen und ist für Kinder bis 10 nur sinngemäß übertragbar."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide stimmen mit mutti überein, dass Kinder Freiraum und echte Herausforderungen brauchen und Elternangst ernst zu nehmen ist, aber nicht überwiegen soll. Sie ergänzen, dass Kinder ein eigenes Sicherheitssystem haben, die Erfahrungsangst: Wer sie überredet oder hochhebt, überschreibt dieses Signal. Dazu kommen Beispiele fürs Alleinsein (Schulweg, Spielplatz) mit Teilstrecken, Alternativrouten und Safe Spaces, wobei Katja Seide offen sagt, dass es auf Umgebung, Kind und das Gefühl der Eltern ankommt, und sie ihre eigene Grenze bei einer langen Strecke mit Umstiegen zieht. Daniel Graf verweist auf Forschung aus den USA, nach der fehlende Selbstwirksamkeit zu mehr Ängstlichkeit führe; das gibt er als Aussage der Forschenden wieder. Ein Gast wünscht sich außerdem mehr unbeaufsichtigtes Spiel, auch mit älteren Kindern, während bei Jugendlichen eine Gästin eher auf Vorbereitung, Gespräche und begründete Verbote setzt."
     }
    ],
    "quellen": [
-    {
-     "podcast": "mutti",
-     "nr": 61,
-     "titel": "Wie gefährlich darf Kindheit sein?",
-     "datum": "2026-10-07",
-     "minute": "03:27",
-     "thema": "Wann haben die Hosts Angst um ihre Kinder? Erlebnis am Baumstamm"
-    },
     {
      "podcast": "mutti",
      "nr": 61,
@@ -8280,14 +12094,6 @@ window.WISSEN = {
      "datum": "2026-10-07",
      "minute": "21:11",
      "thema": "Warum Klettern wichtig ist: Körpergefühl, Risikoeinschätzung, Selbstbewusstsein"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 61,
-     "titel": "Wie gefährlich darf Kindheit sein?",
-     "datum": "2026-10-07",
-     "minute": "25:39",
-     "thema": "Kind und Alter individuell einschätzen"
     },
     {
      "podcast": "mutti",
@@ -8312,6 +12118,30 @@ window.WISSEN = {
      "datum": "2023-07-09",
      "minute": "14:08",
      "thema": "Bedürfnis nach Abenteuer und Selbstbestimmung im Alltag"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 41,
+     "titel": "Teil 4: Bedürfnisse priorisieren",
+     "datum": "2020-06-30",
+     "minute": "38:05",
+     "thema": "Erfahrungsangst und warum man nicht überreden sollte"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 12,
+     "titel": "Kinder alleine zur Schule und zu Freunden schicken",
+     "datum": "2019-05-07",
+     "minute": "02:00",
+     "thema": "Gibt es ein Alter für allein zur Schule?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 109,
+     "titel": "Wackelzahnpubertät mit Kiran Deuretzbacher",
+     "datum": "2023-03-21",
+     "minute": "07:08",
+     "thema": "Balanceakt zwischen Führung und Freiraum"
     }
    ],
    "verwandt": [
@@ -8434,6 +12264,225 @@ window.WISSEN = {
    "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind will nicht von der Schaukel runter, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
+   "id": "konflikte-familie",
+   "titel": "Konflikte in der Familie",
+   "synonyme": [
+    "Streit in der Familie",
+    "Familienkonflikt",
+    "Machtkampf mit Kind",
+    "Konflikte vermeiden",
+    "nach dem Streit reden",
+    "Eltern streiten ständig",
+    "Streit eskaliert",
+    "Ohnmacht Eltern",
+    "Dauerstreit"
+   ],
+   "fragen": [
+    "Ist es schlimm, wenn es bei uns oft Konflikte gibt?",
+    "Wie löse ich Streit mit meinem Kind, ohne zu eskalieren?",
+    "Ich fühle mich hilflos, wenn mein Kind nicht hört, was tun?",
+    "Wie spreche ich nach einem Streit mit dem Kind?",
+    "Wo bekomme ich Hilfe, wenn wir als Eltern ständig streiten?"
+   ],
+   "alter": [
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "grenzen",
+    "gefuehle",
+    "eltern"
+   ],
+   "kurz": "Mehrere Gäste im Podcast sagen: Konflikte gehören zu einer Beziehung auf Augenhöhe und zeigen, welche Bedürfnisse darunter liegen. Wer sie vermeidet, baut oft Druck auf, der sich später entlädt. Hilfreich sind eine verstehende Haltung, erst zur Ruhe zu kommen und erst danach eine Lösung zu suchen, und bei festgefahrenem Streit früh Beratung zu holen.",
+   "tipps": [
+    "Seht Konflikte nicht als Scheitern. Eine Gästin vergleicht sie mit der Spitze eines Eisbergs: Darunter liegen Bedürfnisse und Anliegen von euch und vom Kind.",
+    "Geht von einer verstehenden Haltung aus: Kinder geben laut den Gästen ihr Bestes, hinter dem Verhalten liegt ein Grund, oft großer Stress, und es richtet sich meist nicht gegen euch.",
+    "Kommt zuerst selbst zur Ruhe, zum Beispiel durch Durchatmen, eine Runde ums Haus oder eine Umarmung. Besprecht Lösungen und Absprachen erst, wenn das Kind wieder erreichbar ist; die Lösung steht laut einer Gästin am Ende, nicht am Anfang.",
+    "Wenn ihr gerade keine Kapazität habt, sagt das ehrlich und verabredet eine Zeit, zu der ihr das Gespräch wieder aufnehmt.",
+    "Sprecht nach dem Streit: Fragt erst, wie es dem anderen ging, und beschreibt dann, wie es euch ging und was euch leidtut. Bleibt bei euch, statt zu erklären, was der andere falsch gemacht hat.",
+    "Erkennt eure Ohnmacht: Wer sich hilflos fühlt, reagiert oft mit mehr Kontrolle, Strafen oder Lautwerden. Ein Gast rät, stattdessen auf die Bremse zu treten und leiser zu werden.",
+    "Vermeidet laut einer Gästin Immer-und-nie-Sätze, Recht-haben-Wollen, Ignorieren, Drohen und Strafen, zum Beispiel keine Filmzeit oder kein Vorlesen.",
+    "Streitet ihr als Eltern oft, vereinbart ein Time-out-Zeichen, das auch Kinder zeigen dürfen, und besprecht schwierige Themen in ruhigen Momenten, zum Beispiel auf einem Spaziergang.",
+    "Holt bei festgefahrenem Streit früh Hilfe, etwa bei anonymen Elterntelefonen oder kommunalen Beratungsstellen. Ein Gast sieht Beratung nicht als Scheitern."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide grenzen sich mit ihren Gästen vom Ideal eines konfliktfreien, bedürfnisorientierten Familienlebens ab. Eine Elternberaterin nennt die Vorstellung, gute Beziehungen seien immer harmonisch, Unsinn; Konflikte zeigten, dass Bedürfnisse sichtbar werden. Die Hosts bestätigen das aus eigener Erfahrung, eine der Hosts nimmt Schimpfwörter ihres Kindes weniger persönlich, seit sie versteht, dass es seine Enttäuschung noch nicht anders ausdrücken konnte. Ein Psychologe sieht in Machtkämpfen vor allem Ohnmacht bei Eltern und Kindern und nennt das einen Punkt für erste Nothilfe, nicht die ganze Lösung. Ein weiterer Gast beschreibt Eskalationsmuster zwischen Paaren und nennt Hilfsangebote, auch bei verschiedenen Formen von Gewalt. Uneinig sind sich die Gäste nicht, sie setzen unterschiedliche Schwerpunkte: Haltung, Reihenfolge im Konflikt und Hilfe von außen."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 150,
+     "titel": "Konflikte nutzen statt vermeiden - Streit liebevoll lösen",
+     "datum": "2024-09-24",
+     "minute": "01:49",
+     "thema": "Warum Konflikte beziehungsstärkend sein können"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 150,
+     "titel": "Konflikte nutzen statt vermeiden - Streit liebevoll lösen",
+     "datum": "2024-09-24",
+     "minute": "18:48",
+     "thema": "Sicherheit, Gefühle, Anliegen, Lösung als Letztes"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 150,
+     "titel": "Konflikte nutzen statt vermeiden - Streit liebevoll lösen",
+     "datum": "2024-09-24",
+     "minute": "21:25",
+     "thema": "No-Gos im Konflikt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 98,
+     "titel": "Wenn dir dein eigenes Kind fremd ist – mit Dr. Oliver Dierssen",
+     "datum": "2022-10-18",
+     "minute": "40:34",
+     "thema": "Machtkämpfe, Strafen und Ohnmacht als Spirale"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 125,
+     "titel": "Eltern sein als Weg",
+     "datum": "2023-10-31",
+     "minute": "45:35",
+     "thema": "Nach dem Streit nachfragen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 230,
+     "titel": "Hört auf zu streiten! – Konflikte im Familienalltag bewältigen",
+     "datum": "2026-04-07",
+     "minute": "24:21",
+     "thema": "Niedrigschwellige Hilfsangebote"
+    }
+   ],
+   "verwandt": [
+    "paarstreit-vor-kindern",
+    "elterliche-wut",
+    "streit-unter-kindern",
+    "familienkonferenz"
+   ],
+   "medizinisch": false,
+   "einleitung": "Viele Eltern kennen diese Situation: „Ist es schlimm, wenn es bei uns oft Konflikte gibt?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "kreativ",
+   "titel": "Kreativität fördern: Malen und Basteln",
+   "synonyme": [
+    "Basteln",
+    "Malen",
+    "Kreativität fördern",
+    "Bastelsets",
+    "Malbücher",
+    "Ausmalbilder",
+    "Kritzeln",
+    "Kinderzeichnung",
+    "freies Material",
+    "Prozess statt Ergebnis"
+   ],
+   "fragen": [
+    "Wie fördere ich die Kreativität meines Kindes?",
+    "Sind Bastelsets und Malbücher schlecht?",
+    "Mein Kind schmiert mit Brei oder malt auf die Tapete, was tun?",
+    "Soll mein Kind lernen, im Rahmen auszumalen?",
+    "Soll ich die Zeichnung meines Kindes korrigieren?"
+   ],
+   "alter": [
+    "0-1",
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "entwicklung",
+    "alltag"
+   ],
+   "kurz": "Eine Gästin im Podcast sagt: Gestalten steckt in Kindern von klein auf, schon das Schmieren mit Brei. Statt Bastelsets nach Rezept bieten Eltern am besten freies Material, Zeit und Raum und lassen den Weg wichtiger sein als das Ergebnis. Sets und Malbücher sind nicht verboten, aber eine Frage des Einsatzes.",
+   "tipps": [
+    "Schafft einen Ort, an dem Kritzeln erlaubt ist, zum Beispiel eine zweite Tapete an der Wand oder eine Kiste mit Material, das das Kind frei nutzen darf.",
+    "Bietet freies Material statt Sets an, etwa Naturfunde, Kartons oder Reste. Kinder probieren damit erst aus und gestalten dann; das Produkt ist ihnen meist weniger wichtig.",
+    "Lasst Kinder nicht unterbrechen, solange sie vertieft sind, und beschäftigt sie nicht nur dann, wenn ihr selbst Ruhe braucht.",
+    "Korrigiert Zeichnungen nicht und deutet nicht zu viel hinein. Die Gästin warnt vor Überinterpretation, und Kinder entwickeln ihre eigenen Schemata, die sich mit Erfahrung von selbst verändern.",
+    "Besteht nicht darauf, dass Kinder im Rahmen ausmalen. Auch Kritzeln kann etwas aussagen.",
+    "Greift Interessen des Kindes auf, zum Beispiel einen Einkaufszettel aus Prospekten ausschneiden. Fantasie weckt ihr mit Flecken, Wolken oder Resten und einem Stichwort wie Trümmer eines Raumschiffs.",
+    "Probiert ungewöhnliche Settings: unter dem Tisch zeichnen, im Stehen malen oder Fenster und Duschtür als Fläche nutzen.",
+    "Hat das Kind keine Lust, ladet es ein statt aufzufordern: Malt selbst, knüpft an sein Interesse an oder nutzt Zufallsverfahren, bei denen nicht das Kind den ersten Strich macht, etwa Spielzeugautos durch Farbe fahren lassen.",
+    "Setzt Malbücher und Sets gezielt ein, zum Beispiel beim Warten in der Arztpraxis, und erwartet kein perfektes Bild wie auf der Verpackung."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "In einer Folge mit einer Kunstpädagogin sprechen Daniel Graf und Katja Seide über kreatives Gestalten. Die Gästin sieht Sets und Malbücher nicht als verboten, kritisiert sie aber, wenn sie wie ein Rezept eingesetzt werden und Kinder an perfekten Vorbildern scheitern lassen. Auch Schablonen, Anleitungsbücher und den Zeichne-einen-Menschen-Test sieht sie kritisch, weil sie das eigene Verstehen der Kinder verhinderten. Katja Seide erzählt, sie habe früher aus Förderwunsch viele Sets gekauft und sei im Gespräch zum Umdenken gekommen. Hosts und Gästin stimmen weitgehend überein; Gegenpositionen werden nicht besprochen."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 83,
+     "titel": "Kreatives Gestalten sinnvoll fördern mit Sina Schwarma",
+     "datum": "2022-03-22",
+     "minute": "06:08",
+     "thema": "Gestaltungsbedürfnis und erste Kritzelspuren"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 83,
+     "titel": "Kreatives Gestalten sinnvoll fördern mit Sina Schwarma",
+     "datum": "2022-03-22",
+     "minute": "10:01",
+     "thema": "Bastelsets, Sticker, Malbücher und ihre Grenzen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 83,
+     "titel": "Kreatives Gestalten sinnvoll fördern mit Sina Schwarma",
+     "datum": "2022-03-22",
+     "minute": "15:09",
+     "thema": "Freies Material und Natur statt Sets"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 83,
+     "titel": "Kreatives Gestalten sinnvoll fördern mit Sina Schwarma",
+     "datum": "2022-03-22",
+     "minute": "25:34",
+     "thema": "Warum Schablonen kritisch sind, Entwicklung der Zeichnung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 83,
+     "titel": "Kreatives Gestalten sinnvoll fördern mit Sina Schwarma",
+     "datum": "2022-03-22",
+     "minute": "42:08",
+     "thema": "Zeit, Raum und ungewöhnliche Settings"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 83,
+     "titel": "Kreatives Gestalten sinnvoll fördern mit Sina Schwarma",
+     "datum": "2022-03-22",
+     "minute": "46:21",
+     "thema": "Wenn das Kind keine Lust aufs Malen hat"
+    }
+   ],
+   "verwandt": [
+    "spielen",
+    "langeweile",
+    "perfektionismus-fehler",
+    "natur-draussen",
+    "selbstwert-kind",
+    "musik"
+   ],
+   "medizinisch": false,
+   "einleitung": "Viele Eltern kennen diese Situation: „Wie fördere ich die Kreativität meines Kindes?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
    "id": "autofahrten",
    "titel": "Lange Autofahrten mit Kindern",
    "synonyme": [
@@ -8552,10 +12601,93 @@ window.WISSEN = {
     "bildschirmzeit",
     "frustrationstoleranz",
     "geschichten-buecher",
+    "kindersitz",
     "schnuller"
    ],
    "medizinisch": true,
    "einleitung": "Lange Autofahrten mit Kindern bedeuten Hunger, Langeweile, Müdigkeit und oft Geschrei auf engem Raum. Besonders mit Babys und Kleinkindern wird das schnell zur Belastungsprobe für die ganze Familie."
+  },
+  {
+   "id": "langeweile",
+   "titel": "Langeweile aushalten statt Medien anschalten",
+   "synonyme": [
+    "Mir ist langweilig",
+    "Kind langweilt sich",
+    "Langeweile Kinder",
+    "Langeweile aushalten",
+    "Warten lernen",
+    "Geduld üben",
+    "Frustrationsmuskel"
+   ],
+   "fragen": [
+    "Mein Kind sagt ständig, ihm sei langweilig, was tun?",
+    "Soll ich bei Langeweile den Fernseher anmachen?",
+    "Wie lernt mein Kind zu warten?",
+    "Was tun im Wartezimmer?"
+   ],
+   "alter": [
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "alltag",
+    "medien",
+    "entwicklung"
+   ],
+   "kurz": "Langeweile ist laut Kathy Weber kein Bedürfnis, sondern ein Zustand, der für die Entwicklung wichtig ist und zu Kreativität und Selbstfürsorge führen kann. Sie schaltet bei Langeweile keine Geräte an, weil das den Prozess unterbricht. Ein Gast im Podcast von Daniel Graf und Katja Seide ergänzt: Aushalten will geübt werden, in kleinen Schritten und ohne Strafe, denn für Kinder mit ADHS kann Langeweile sehr quälend sein.",
+   "tipps": [
+    "Fragt das Kind, ob es eure Hilfe braucht, und überlegt gemeinsam, was es tun könnte.",
+    "Macht keine eigenen Vorschläge, sondern helft dem Kind, selbst etwas zu finden.",
+    "Ab und zu darf Gucken in Ordnung sein, wenn der Wochenbedarf noch nicht ausgeschöpft ist.",
+    "Übt das Warten wie eine Kniebeuge: Macht eine Warte-Challenge und steigert die Dauer jeden Tag ein wenig.",
+    "Lasst Kinder beim Warten herumlaufen oder nehmt sie auf den Schoß und schaut gemeinsam etwas an, statt sie stillzustellen.",
+    "Zeigt das Aushalten als Vorbild vor, auch wenn es euch selbst nicht immer gelingt."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "gfk",
+     "text": "Kathy Weber sagt, Langeweile müsse nicht beseitigt werden, sie könne auch einfach eine Erfahrung sein. Medien sind für sie keine Strategie gegen Langeweile. Wenn ihre Kinder sagen, ihnen sei langweilig, fragt sie zurück, ob sie Hilfe brauchen, oder sagt, sie sei gespannt, was daraus wird."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Im Podcast von Daniel Graf und Katja Seide kommt Langeweile nur am Rand vor, im Zusammenhang mit Warten und ADHS. Ein Gast (zum Thema ADHS) beschreibt Langeweile für Kinder mit ADHS als eine Form von Schmerz und lehnt es ab, Kinder damit aus Prinzip zu konfrontieren oder zu bestrafen. Zugleich sagt er, Kinder müssten üben, Frustration auszuhalten, vergleichbar mit einem mentalen Muskel, der später wichtig wird. Das deckt sich mit Kathy Weber darin, dass Medien nicht automatisch die Antwort sind. Er differenziert aber: Training ja, aber in kleinen Schritten, ohne Druck und ohne Strafe, und auch mal das Smartphone ist in Ordnung, solange man es nicht übertreibt."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "gfk",
+     "nr": 33,
+     "titel": "047 M- wie Umgang mit Medien Teil 1: Wie du in deine Klarheit kommst",
+     "datum": "2021-01-11",
+     "minute": "20:34",
+     "thema": "Langeweile als wichtiger Zustand"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 220,
+     "titel": "ADHS und Abenteuerlust: Warum manche Gehirne mehr Input brauchen",
+     "datum": "2026-01-27",
+     "minute": "57:13",
+     "thema": "Frustration aushalten lernen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 220,
+     "titel": "ADHS und Abenteuerlust: Warum manche Gehirne mehr Input brauchen",
+     "datum": "2026-01-27",
+     "minute": "1:02:37",
+     "thema": "Warten lernen, Warte-Challenge"
+    }
+   ],
+   "verwandt": [
+    "bildschirmzeit",
+    "hobby-keine-lust",
+    "spielen",
+    "frustrationstoleranz",
+    "kreativ"
+   ],
+   "medizinisch": false,
+   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind sagt ständig, ihm sei langweilig, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "laute-kinder",
@@ -8655,7 +12787,9 @@ window.WISSEN = {
     "Druck rausnehmen",
     "Fünfe gerade sein lassen",
     "nicht funktionieren",
-    "Freiwilligkeit"
+    "Freiwilligkeit",
+    "Glücksglas",
+    "Dankbarkeit"
    ],
    "fragen": [
     "Wie komme ich im Familienalltag in die Leichtigkeit?",
@@ -8690,6 +12824,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber ordnet Leichtigkeit als Bedürfnis ein, das sie in Kindersprache mit Spiel und Spaß übersetzt. Ein Bedürfnis sei unabhängig von Person, Ort und Handlung, deshalb sei man selbst für seine Erfüllung zuständig und könne sie nicht an die Kooperation der Kinder knüpfen. Sie räumt ein, dass das nicht einfach ist, weil man dann niemandem die Schuld geben kann. Leichtigkeit heiße nicht, ständig fröhlich zu sein; man dürfe ehrlich sagen, dass man gestresst ist, und sich dann um eine Lösung kümmern. Sie spricht sich gegen Müssen und Pflichtvorstellungen aus und sagt, viele seien zum Funktionieren und zur Perfektion erzogen worden. Wer Spiel und Spaß kaum zulassen kann, habe womöglich ein Thema aus der eigenen Kindheit, das innere Kindarbeit braucht."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Die Gästin im Podcast von Daniel Graf und Katja Seide sieht das ähnlich wie Kathy Weber: Leichtigkeit hat mit Bedürfnissen zu tun. Sie erklärt, Schwere verhindere Leichtigkeit, weil das Sicherheitssystem im Alarmmodus keine Entspannung zulasse; alles, was Sicherheit signalisiert, etwa Bedürfnisse, Grenzen und kleine Schritte, bringe näher an Leichtigkeit. Abweichend ergänzt sie einen zweiten Weg: Man kann Leichtigkeit auch gezielt einschleusen, zum Beispiel mit Achtsamkeit und Dankbarkeit, ohne zu meditieren. Dazu nennt sie ein Glücksglas, in das Familien einmal pro Woche Zettel mit schönen Momenten legen. Sie sagt offen, dass sie das nicht täglich schaffen."
     }
    ],
    "quellen": [
@@ -8724,6 +12862,22 @@ window.WISSEN = {
      "datum": "2023-03-19",
      "minute": "09:21",
      "thema": "Eltern übertragen Verantwortung auf Kinder; Spiel statt Kampf"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 172,
+     "titel": "Bedürfnisse und Grenzen - wie wir Kraft im stressigen Mama-Alltag tanken",
+     "datum": "2025-02-25",
+     "minute": "41:41",
+     "thema": "Wie man wieder Leichtigkeit gewinnt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 172,
+     "titel": "Bedürfnisse und Grenzen - wie wir Kraft im stressigen Mama-Alltag tanken",
+     "datum": "2025-02-25",
+     "minute": "44:57",
+     "thema": "Dankbarkeit und das Glücksglas"
     }
    ],
    "verwandt": [
@@ -8737,6 +12891,117 @@ window.WISSEN = {
    "einleitung": "Viele Eltern kennen diese Situation: „Wie komme ich im Familienalltag in die Leichtigkeit?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
+   "id": "lernschwierigkeiten",
+   "titel": "Lernschwierigkeiten: Lesen, Rechnen, Konzentration",
+   "synonyme": [
+    "Legasthenie",
+    "LRS",
+    "Lese-Rechtschreib-Schwäche",
+    "Dyskalkulie",
+    "Rechenschwäche",
+    "Rechenstörung",
+    "Lerntherapie",
+    "Nachteilsausgleich",
+    "Konzentrationsprobleme",
+    "Kind versteht Mathe nicht"
+   ],
+   "fragen": [
+    "Mein Kind liest nur Wort für Wort, ist das Legasthenie?",
+    "Mein Kind zählt beim Rechnen noch an den Fingern, ist das normal?",
+    "Mein Kind übt viel und hat am nächsten Tag alles vergessen, was tun?",
+    "Mein Kind sagt, es sei dumm in Mathe, wie reagiere ich?",
+    "Wer darf Legasthenie oder Dyskalkulie diagnostizieren?",
+    "Mein Kind kann sich in der Schule nicht konzentrieren, was hilft?"
+   ],
+   "alter": [
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "entwicklung",
+    "gefuehle",
+    "alltag"
+   ],
+   "kurz": "Laut den Gästen der Folgen haben nicht wenige Kinder Mühe mit Lesen, Rechtschreiben oder Rechnen; Eltern spüren das oft früh, etwa wenn Üben nicht hilft und am nächsten Tag alles weg ist. Die Hosts und Gäste raten, genau hinzusehen, früh Hilfe zu suchen und das Kind emotional zu stützen, statt immer mehr zu üben. Das Kind ist dabei nie faul oder dumm, es braucht andere Wege und mehr Zeit. Bei Verdacht gehört die Abklärung in fachliche Hände (ärztlich, psychologisch oder förderdiagnostisch).",
+   "tipps": [
+    "Nehmt euer Bauchgefühl ernst und sprecht früh mit der Lehrkraft; wenn sie beruhigt, ihr aber weiter unsicher seid, holt euch trotzdem Unterstützung.",
+    "Denkt bei Schulunlust, Verweigerung und Hausaufgabenkonflikten auch an Lese-, Rechtschreib- oder Rechenschwierigkeiten, und lasst auch die Augen prüfen.",
+    "Lasst einen Verdacht von Fachleuten abklären (laut den Gästen Ärztinnen, Psychologen oder Kinder- und Jugendlichenpsychotherapeuten, bei Rechnen auch spezialisierte Förderdiagnostik) und nicht allein bei einem privaten Institut; der Begriff Lerntherapie ist nicht geschützt.",
+    "Bei Rechnen lohnt früher Blick: Erkennt das Kind Mengen, etwa auf dem Würfel, ohne einzeln abzuzählen? Bleibt es lange beim zählenden Rechnen, sollte man laut einer Gästin spätestens Ende der ersten Klasse handeln.",
+    "Setzt dort an, was das Kind schon kann, feiert Gelungenes und seht nicht nur die Fehler, damit es Selbstwirksamkeit erlebt.",
+    "Macht Lernen greifbar: mit Händen, Bewegung und Material, und mit Themen, die das Kind liebt (zum Beispiel mit Lieblingstieren rechnen).",
+    "Seid eher emotionale Stütze als Trainer; lest vor oder gemeinsam, gebt Raum für andere Stärken wie Sport oder Kreatives und steigt selbst aus Angst und Leistungsdruck aus.",
+    "Sprecht die Schule auf Entlastung an (Nachteilsausgleich), etwa mündliche Tests, mehr Zeit oder ruhiger Raum; bei Kosten für Therapie fragt beim Jugendamt nach.",
+    "Bei Konzentrationsproblemen helfen laut einem Gast klare Struktur, nur eine Aufgabe auf einmal, Bewegungspausen statt Strafen, und das Spiel im Flow nicht unnötig zu unterbrechen."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide holen sich mehrere Fachleute dazu, und in einem Punkt sind sich alle einig: Wer Lernschwierigkeiten hat, braucht Entlastung und Ermutigung statt Druck, Beschämung oder noch mehr Üben zu Hause. Ein Gast (Kinder- und Jugendpsychiater) beschreibt Legasthenie als echte neurobiologische Abweichung und sieht Eltern vor allem als emotionale Stütze, nicht als Trainer; Hoffnung der Eltern schütze das Kind. Er warnt vor Instituten, die schnell und teuer therapieren, und nennt Risiken wie Schulangst bis hin zu Depression, wenn Kinder dauerhaft überfordert bleiben. Gäste aus der Lerntherapie sehen das anders gewichtet: Sie kritisieren die medizinische Diagnose als Stempel, der Selbstbild und Elternblick verändere, und setzen auf Förderdiagnostik mit Blick auf Stärken und Lücken; es liege nie am Kind. Eine Gästin zu Dyskalkulie plädiert für frühes Abklären und Einzelarbeit, weil sich echte Dyskalkulie im Klassenverband nicht ausgleichen lasse und auch mehr Zeit bei Tests wenig nütze, wenn die Aufgabe nicht verstanden wird. Zu Konzentration meinen die Hosts, das starre Schulsystem sei oft Teil des Problems; Flow beim Spielen sei wertvoll. Angaben zu Häufigkeit, Gehirn und Kosten stammen von den Gästen."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 111,
+     "titel": "Kinder mit Lernschwierigkeiten unterstützen",
+     "datum": "2023-04-18",
+     "minute": "01:52",
+     "thema": "Wie Eltern erkennen, dass ein Kind Lernschwierigkeiten hat"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 49,
+     "titel": "Lese-Rechtschreibstörung mit Dr. Oliver Dierssen",
+     "datum": "2020-10-20",
+     "minute": "01:22",
+     "thema": "Woran sich eine Lese-Rechtschreibstörung im Schulalltag zeigt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 228,
+     "titel": "Dyskalkulie – Rechenschwierigkeiten erkennen und begleiten",
+     "datum": "2026-03-24",
+     "minute": "10:32",
+     "thema": "Frühe Anzeichen im Kindergarten und bei Würfelspielen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 49,
+     "titel": "Lese-Rechtschreibstörung mit Dr. Oliver Dierssen",
+     "datum": "2020-10-20",
+     "minute": "28:23",
+     "thema": "Zusammenfassung und Nachteilsausgleich in der Schule"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 26,
+     "titel": "Mein Kind kann sich in der Schule nicht konzentrieren: ADHS??",
+     "datum": "2019-11-19",
+     "minute": "19:33",
+     "thema": "Trainings und Tipps für Lehrkräfte"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 52,
+     "titel": "Welche Spielzeuge brauchen Kinder?",
+     "datum": "2020-12-01",
+     "minute": "43:17",
+     "thema": "Flow nicht unterbrechen"
+    }
+   ],
+   "verwandt": [
+    "schule-lernen",
+    "schulangst",
+    "adhs-kind",
+    "selbstwert-kind",
+    "schule-lehrkraft-kontakt",
+    "neurodivergenz"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind liest nur Wort für Wort, ist das Legasthenie?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
    "id": "fuehrung-uebernehmen",
    "titel": "Liebevolle elterliche Führung",
    "synonyme": [
@@ -8748,14 +13013,19 @@ window.WISSEN = {
     "Kind braucht Führung",
     "Rahmen setzen",
     "autoritär oder antiautoritär",
-    "Verantwortung übernehmen"
+    "Verantwortung übernehmen",
+    "Leitwolf",
+    "Schutzauftrag",
+    "Elternschaft auf Augenhöhe",
+    "Kind will nicht in den Autositz"
    ],
    "fragen": [
     "Was ist elterliche Führung?",
     "Soll ich mein Kind fragen oder ansagen?",
     "Wie führe ich mein Kind, ohne autoritär zu sein?",
     "Wie viel darf mein Kind mitentscheiden?",
-    "Warum rastet mein Kind aus, wenn ich es frage, was es möchte?"
+    "Warum rastet mein Kind aus, wenn ich es frage, was es möchte?",
+    "Wann darf ich über den Willen meines Kindes hinweggehen?"
    ],
    "alter": [
     "0-1",
@@ -8784,6 +13054,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber sieht es als Urbedürfnis von Kindern, den Erfahrenen zu folgen, und begründet das evolutionär. Elterliche Führung gehört für sie zum Oberbedürfnis Sicherheit (mit Schutz, Orientierung, Grenzen, Struktur), und sie vermisst sie auf gängigen Bedürfnislisten. Sie setzt Führung mit elterlicher Macht gleich, die man fürsorglich einsetzen und nicht verdrängen soll. Autoritäre Erziehung mit Belohnung, Strafe, Manipulation oder Ablenkung nennt sie Machtmissbrauch, antiautoritäre Erziehung lehnt sie ebenso ab, weil dort die Verantwortung beim Kind bleibt; sie spricht vom schmalen Grat dazwischen. Ihr Leitsatz: Was gemacht wird, entscheiden die Eltern, wie es gemacht wird, dürfen Kinder altersgemäß mitgestalten. Bei Kleinkindern verzichtet sie weitgehend auf Entscheidungsfragen, weil diese oft in Wut enden. Sie unterscheidet drei Autonomiephasen (etwa 1,5 bis 5 Jahre: alles allein machen; etwa 5 bis 9: selbst entscheiden wollen; ab etwa 9: eigene Erfahrungen sammeln), in denen Eltern immer weniger vorgeben. Führung ist für sie auch nötig, wenn Kinder zu mehreren sind: In Konflikten brauche es Prioritäten, und die Hierarchie sei kein Machtinstrument, sondern schaffe Sicherheit. Wer von dem Thema stark getriggert wird, hat laut ihr fast immer eigene Kindheitsthemen. Selbst bezeichnet sie ihre Erziehung als autoritär; ein Teil der Quellen wirbt für ihre Kurse."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Im Gespräch mit einer Gästin (Autorin) und den Hosts von „Das gewünschteste Wunschkind“ ist Führung ein Hauptthema. Die Gästin hält ein Ideal von Elternschaft auf Augenhöhe mit Konsensentscheidungen für nicht tragfähig: Kinder brauchten Führung, weil sie dadurch entlastet werden. Sie spricht von respektvollem Leiten, bei dem Eltern ihre Macht annehmen, achtsam nutzen und die Verantwortung tragen. Über den Willen des Kindes geht sie nur hinweg, wenn ein Schutzauftrag (etwa Autositz oder Fahrradhelm) schwerer wiegt, und diese Schwelle sei hoch. Das deckt sich mit Kathy Weber, die Macht ebenfalls fürsorglich nutzen will. Neu ist die offene Ehrlichkeit: Die Gästin räumt ein, dass sie ein Kind manchmal in den Autositz drückt, und sagt, ethisch bleibe das schwierig. Sie betont außerdem, dass Selbstbestimmung nicht heißt, Kinder allein zu lassen, etwa bei Planung oder Medienkonsum."
     }
    ],
    "quellen": [
@@ -8834,6 +13108,22 @@ window.WISSEN = {
      "datum": "2026-02-02",
      "minute": "19:24",
      "thema": "Ansagen treffen und klar führen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 48,
+     "titel": "Der Familienkompass mit Nora Imlau",
+     "datum": "2020-10-06",
+     "minute": "29:24",
+     "thema": "Respektvolles Leiten statt Augenhöhe"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 48,
+     "titel": "Der Familienkompass mit Nora Imlau",
+     "datum": "2020-10-06",
+     "minute": "38:07",
+     "thema": "Kontrolliertes Nachgeben und zugewandtes Durchsetzen"
     }
    ],
    "verwandt": [
@@ -8933,7 +13223,8 @@ window.WISSEN = {
     "vaterrolle",
     "eltern-als-team",
     "mutterinstinkt",
-    "mehrere-bezugspersonen"
+    "mehrere-bezugspersonen",
+    "kind-lehnt-papa-ab"
    ],
    "medizinisch": false,
    "einleitung": "Manche Kinder wollen in bestimmten Phasen nur noch zur Mama und weinen, sobald der Papa übernimmt. Der andere Elternteil fühlt sich abgelehnt, und die Mutter ist ständig gefragt."
@@ -8949,13 +13240,17 @@ window.WISSEN = {
     "Betreuung abgeben",
     "Bezugspersonen",
     "Großeltern helfen",
-    "Mutterinstinkt"
+    "Mutterinstinkt",
+    "sekundäre Bindungspersonen",
+    "Paten",
+    "zweites Zuhause"
    ],
    "fragen": [
     "Wie viele Bezugspersonen braucht ein Kind?",
     "Ist es schlimm, wenn mein Baby bei anderen ist?",
     "Wie bekomme ich Unterstützung im Wochenbett?",
-    "Habe ich ein Problem, wenn ich keine Großeltern in der Nähe habe?"
+    "Habe ich ein Problem, wenn ich keine Großeltern in der Nähe habe?",
+    "Ist es schlimm, wenn andere nicht jedes Bedürfnis sofort erfüllen?"
    ],
    "alter": [
     "0-1",
@@ -8971,12 +13266,17 @@ window.WISSEN = {
    "tipps": [
     "Holt euch möglichst früh Unterstützung, auch im Wochenbett, und gebt Verantwortung ab.",
     "Gewöhnt Babys früh an andere Bezugspersonen, etwa indem sie auch bei anderen in der Trage sind.",
-    "Sorgt dafür, dass ihr selbst Erholung und ein Leben außerhalb der Elternrolle habt, denn wenn Eltern ständig an ihre Grenzen gehen, hilft das den Kindern nicht."
+    "Sorgt dafür, dass ihr selbst Erholung und ein Leben außerhalb der Elternrolle habt, denn wenn Eltern ständig an ihre Grenzen gehen, hilft das den Kindern nicht.",
+    "Bleibt zu Hause bei euren Gewohnheiten und teilt Kita oder Betreuungspersonen freundlich mit, wie ihr es macht; lasst sie ihren eigenen Weg mit eurem Kind finden."
    ],
    "sichtweisen": [
     {
      "podcast": "mutti",
      "text": "Die Hosts kritisieren das Mutterinstinkt-Narrativ und die deutsche Kernfamilien-Haltung klar. Laut ihnen verändert sich das Gehirn bei allen, die sich um ein Kind kümmern, auch bei Vätern, Adoptiveltern, Tanten und Onkeln, nicht nur bei der Mutter. Eifersucht sei nicht nötig, ein Kind könne zu Eltern und Großeltern eine enge Bindung haben. Evolutionär sei es nicht vorgesehen, dass eine Mutter allein für alles zuständig ist, auch das Stillen sei in Gemeinschaften geteilt worden; das ist ihre Einordnung. Sie betonen, dass Alleinerziehende oder Eltern mit wenig Unterstützung trotzdem gut genug sind und kein schlechtes Gewissen haben müssen. Weil man heute wenig Kontakt zu Kindern hat, wüssten viele Eltern nicht, wie Kinder in einem Alter sind, und setzten sich unter Druck."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Im Podcast von Daniel Graf und Katja Seide ordnet die Autorin Nora Imlau andere Bezugspersonen (Großeltern, Freunde, Paten, Fachkräfte) als sekundäre Bindungspersonen ein. Sie seien nicht Heimat wie die Eltern, aber Zuflucht, Entwicklungsbeschleuniger und ein Zuhause neben dem Zuhause, die andere Seiten im Kind zum Klingen bringen. Das deckt sich mit den Hosts von Mutti, dass mehrere Bezugspersonen dem Kind nicht schaden. Imlau differenziert, dass Eltern weiterhin die primäre Bindung bleiben, und sieht einen Gewinn darin, dass andere weniger perfekt auf jedes Signal reagieren: Das fördere die Selbstwirksamkeit des Kindes. Kinder unterschieden gut zwischen Settings, zu Hause und in der Kita könne vieles ganz anders ablaufen."
     }
    ],
    "quellen": [
@@ -9011,6 +13311,22 @@ window.WISSEN = {
      "datum": "2024-12-08",
      "minute": "44:37",
      "thema": "Eltern brauchen Erholung, Evolution des Kinderaufziehens"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 94,
+     "titel": "Bindung und Betreuung mit Nora Imlau",
+     "datum": "2022-08-23",
+     "minute": "05:42",
+     "thema": "Sekundäre Bindungen als Entwicklungsbeschleuniger"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 94,
+     "titel": "Bindung und Betreuung mit Nora Imlau",
+     "datum": "2022-08-23",
+     "minute": "28:48",
+     "thema": "Selbstwirksamkeit durch nicht perfekte Reaktion"
     }
    ],
    "verwandt": [
@@ -9037,7 +13353,9 @@ window.WISSEN = {
     "Treten und Spucken",
     "Aggression bei Kleinkindern",
     "Kind festhalten",
-    "Beißphase"
+    "Beißphase",
+    "Kind schlägt aus Wut",
+    "Aggression Kleinkind"
    ],
    "fragen": [
     "Mein Kind haut mich, wie reagiere ich richtig?",
@@ -9045,7 +13363,8 @@ window.WISSEN = {
     "Darf ich mein Kind festhalten, wenn es schlägt?",
     "Was tun, wenn mein Kind beißt, tritt oder schubst?",
     "Habe ich etwas falsch gemacht, wenn mein Kind haut?",
-    "Mein Vierjähriger ist plötzlich so aggressiv, ist das normal?"
+    "Mein Vierjähriger ist plötzlich so aggressiv, ist das normal?",
+    "Warum haut mein Kind, wenn es wütend ist?"
    ],
    "alter": [
     "1-3",
@@ -9056,7 +13375,7 @@ window.WISSEN = {
     "grenzen",
     "entwicklung"
    ],
-   "kurz": "Hauen, Beißen und Schubsen sind bei kleinen Kindern normal und kein Erziehungsfehler. Beide Podcasts raten zu einer ruhigen, klaren Reaktion ohne Vortrag: Verhalten stoppen, notfalls festhalten und eine Alternative zeigen, später mit Geschichten oder Rollenspiel üben. Uneinig sind sie vor allem bei der Frage, wie viel Konsequenz es zusätzlich braucht.",
+   "kurz": "Hauen, Beißen und Schubsen sind bei kleinen Kindern normal und kein Erziehungsfehler. Alle Podcasts raten zu einer ruhigen, klaren Reaktion ohne Vortrag: Verhalten stoppen, notfalls festhalten und eine Alternative zeigen, später mit Geschichten oder Rollenspiel üben. Uneinig sind sie vor allem bei der Frage, wie viel Konsequenz es zusätzlich braucht.",
    "tipps": [
     "Bleibt beim Hauen ruhig, sagt wenig oder nichts und haltet die Hände des Kindes fest. Wenn es schlägt, beißt oder sich oder andere verletzen könnte, haltet es mit ruhigem Atem fest und sagt, dass ihr loslasst, sobald es aufhört.",
     "Sagt klar, dass ihr nicht gehauen werden wollt, beendet die Situation, zum Beispiel das gemeinsame Spiel, und macht dann ruhig eure Sache weiter, ohne das Kind zu ignorieren.",
@@ -9080,6 +13399,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber erklärt, dass ein Kind nicht haut, weil es böse oder aggressiv ist, sondern weil es überfordert ist und ihm die Worte fehlen; sie lehnt Täter-Opfer-Denken und Sätze wie „Man haut nicht“ ab. Hinter dem Verhalten steht für sie immer mindestens ein Bedürfnis, und das Kind testet die Eltern nicht aus, sondern bittet über sein Verhalten um Hilfe. Beim Handeln ist sie klar: Eltern sind für den Schutz zuständig, greifen sofort körperlich ein (sie nennt das schützende Gewalt, im Unterschied zu Gewalt als Strafe) und leiten die Bewegung um, statt ewig Stopp zu rufen. Wie die anderen Podcasts sieht sie keine Erziehungsschuld und hält nichts von Vorträgen; anders als die mutti-Hosts setzt sie nicht auf Konsequenzen, sondern auf Schutz, Beobachten und Bedürfnisse erfüllen, und sie hält es nicht für nötig, hinterher lange Alternativen zu besprechen, weil das Kind sie in der Situation nicht umsetzen kann. Bei Geschwistern sieht sie oft die fehlende Orientierung in der Familie als Ursache."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide holen mehrere Fachleute dazu, die Hauen als normal und nicht als Bosheit einordnen, was mit Mutti, Nicola Schmidt und Kathy Weber übereinstimmt. Eine Gästin sagt, die Sorge, Hauen und Beißen mache Kinder später gewalttätig, sei unbegründet, warnt aber, dass Kritik am Verhalten kleine Kinder schnell auf ihre ganze Person beziehen lassen. Sie und die Hosts betonen, dass Eltern oft nur das Unterbrechen im Blick haben und die Alternative vergessen; wird nur unterbunden, erstickten die Gefühle. Eine andere Gästin beschreibt Aggression auch als Abgrenzung und als ungeschickten Kontaktversuch und rät, zu beschreiben statt zu moralisieren und dem Kind beim Herunterfahren zu helfen. Eine dritte rät, klar zu stoppen, die Hände sanft zu halten oder Abstand zu nehmen, und erinnert, dass die Grenze dem Selbstschutz dient, nicht der Bestrafung. Die Gäste sprechen im Unterschied zu Mutti kaum von Konsequenzen; sie betonen bei Kindern mit viel Wut, dass Hauen auf ein Kissen nicht für jedes Kind passt."
     }
    ],
    "quellen": [
@@ -9130,6 +13453,22 @@ window.WISSEN = {
      "datum": "2025-05-19",
      "minute": "14:20",
      "thema": "Kinder testen nicht aus, sie machen auf Bedürfnisse aufmerksam"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 65,
+     "titel": "Gemeinsam durch die Wut mit Kathrin Hohmann",
+     "datum": "2021-06-15",
+     "minute": "01:51",
+     "thema": "Wirkung seelischer Gewalt, Aggression nicht tabuisieren"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 210,
+     "titel": "Kinder bindungsorientiert begleiten, ohne sich selbst zu verlieren",
+     "datum": "2025-11-18",
+     "minute": "17:29",
+     "thema": "Wut begleiten, wenn das Kind schlägt oder beißt"
     }
    ],
    "verwandt": [
@@ -9155,7 +13494,8 @@ window.WISSEN = {
     "Schuld abschieben",
     "Das war ich nicht",
     "Kind leugnet",
-    "Ehrlichkeit"
+    "Ehrlichkeit",
+    "Lügen als Entwicklungsschritt"
    ],
    "fragen": [
     "Warum lügen Kinder?",
@@ -9189,6 +13529,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber möchte das Wort Lüge am liebsten ganz vermeiden: Es gebe viele Wahrheiten, und die Wirklichkeit des Kindes sei in dem Moment seine. Nach ihrer Erklärung steckt hinter dem Erzählen meist das Oberbedürfnis nach Zugehörigkeit, das sie besonders in der zweiten Autonomiephase zwischen etwa 5 und 8 Jahren sieht; auch jüngere Kinder können auf diese Weise Autonomie, Sicherheit oder Gerechtigkeit suchen oder Fantasie ausleben. Eine zweite Form, etwa behauptet gewaschene Hände, sei weniger Zugehörigkeit als ein Ruf nach Führung. Wiederholtes Lügen werde nach ihrer Sicht erst zum Muster, wenn das Kind dafür verurteilt wird und das Bedürfnis dahinter unerfüllt bleibt. Strafen lehnt sie ab, weil das Kind sonst vor allem lernt, nicht gut genug zu sein, und sich nur anpasst; sie lässt nur natürliche Konsequenzen gelten und teilt die Sorge nicht, dass sonst mehr gelogen wird. Sie räumt ein, selbst manchmal bewusst etwas Unzutreffendes zu sagen, um ein Bedürfnis zu schützen, und bespricht das offen mit ihren Kindern. Kinder müssten nach einem Gespräch nicht nie wieder lügen; wichtiger sei, dass sie mit allem zu den Eltern kommen können. Dass Eltern Lügen als schlimm erleben, führt sie auf eigene Kindheitserfahrungen zurück."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Bei Daniel Graf und Katja Seide kommen Gäste (Kiran Deuretzbacher, Nicola Schmidt, Lisa Hamann) zum Lügen vor, und alle sehen es als normalen Entwicklungsschritt: Das Kind übt, sich in andere hineinzudenken und vorauszuplanen. Wie Kathy Weber (gfk) fragen sie nach dem Motiv statt nach Strafe, bei Nicola Schmidt lautet die Frage, was das Kind mit der Lüge erreichen wollte, und dann sucht man einen Weg ohne Lüge. Etwas anderes ist die offene Haltung zu Erwachsenen: Man solle ehrlich sagen, dass auch Erwachsene lügen, und Höflichkeitslügen sowie gute und schlechte Geheimnisse unterscheiden, was auch für Missbrauchsprävention wichtig sei. Einen Teenager-Fall (Verschweigen aus Rücksicht) sehen sie ähnlich: erst fragen, dann urteilen; bei Fehlern gemeinsam dafür geradestehen."
     }
    ],
    "quellen": [
@@ -9239,6 +13583,22 @@ window.WISSEN = {
      "datum": "2024-10-28",
      "minute": "21:50",
      "thema": "Stattdessen: Wahrnehmung, Gefühl, Frage nach dem Was"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 177,
+     "titel": "Mit Kindern über schwierige Themen sprechen",
+     "datum": "2025-04-01",
+     "minute": "22:48",
+     "thema": "Was wollte das Kind erreichen?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 109,
+     "titel": "Wackelzahnpubertät mit Kiran Deuretzbacher",
+     "datum": "2023-03-21",
+     "minute": "21:16",
+     "thema": "Lügen als kognitiver Entwicklungsschritt"
     }
    ],
    "verwandt": [
@@ -9246,7 +13606,8 @@ window.WISSEN = {
     "stehlen-klauen",
     "gefuehle-begleiten",
     "beduerfnisse-erkennen",
-    "gfk-grundannahmen"
+    "gfk-grundannahmen",
+    "weihnachtsmann"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Warum lügen Kinder?“. Hier steht, was dahinter stecken kann und was helfen kann."
@@ -9266,7 +13627,9 @@ window.WISSEN = {
     "To-do-Liste",
     "Familienfeste planen",
     "Ministerposten",
-    "Aufgabenverteilung"
+    "Aufgabenverteilung",
+    "Emotional Load",
+    "Care-Arbeit"
    ],
    "fragen": [
     "Mein Mann hilft, aber ich bin trotzdem erschöpft",
@@ -9290,10 +13653,10 @@ window.WISSEN = {
    "tipps": [
     "Fragt euch als Partner, ob ihr selbst seht, was zu tun ist, oder auf einen Hinweis wartet. Daran merkt ihr, ob ihr im Verantwortungsmodus seid.",
     "Klärt bei spontanen Einladungen selbst, ob es mit den Kindern passt, statt zu sagen, ihr müsstet erst fragen. Ändern sich Pläne, meldet euch vorher.",
-    "Bleibt beim weinenden Kind dran und gebt es nicht sofort zurück, sonst baut ihr keine eigene Bindung auf.",
+    "Teilt komplette Verantwortungsbereiche auf statt einzelner Handgriffe und gebt sie wirklich ab, ohne nachzufragen oder zu kontrollieren; haltet aus, dass der andere es anders macht.",
     "Sprecht als Paar offen darüber, dass Verantwortung geteilt werden muss und was ihr voneinander erwartet. Veränderung ist ein Prozess.",
     "Prüft bei Ärger, ob das Ungleichgewicht wirklich besteht oder ihr nur müde seid, und zählt auf, was der andere alles tut.",
-    "Schreibt alles auf, was im Kopf kreist, und plant wiederkehrende Aufgaben wie Wäsche fest in den Kalender ein.",
+    "Schreibt alles auf, was im Kopf kreist, sammelt es an einem einzigen Ort statt auf vielen Zetteln und Apps und plant wiederkehrende Aufgaben wie Wäsche fest in den Kalender ein.",
     "Erledigt Haushalt in kleinen Häppchen, etwa mit einem Fünf-Minuten-Timer, und mistet einmal gründlich aus, damit alles einen festen Platz hat.",
     "Sagt bei Festen rechtzeitig, etwa zwei Wochen vorher, dass das Fest ansteht, und gebt das ganze Projekt wirklich ab, auch wenn es dann anders läuft.",
     "Wenn die To-do-Liste euch erdrückt, fragt euch freundlich, warum ihr aufgeschoben habt, setzt Prioritäten (auch für Selbstfürsorge) und mistet zu volle Pläne radikal aus."
@@ -9310,6 +13673,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber setzt bei Zuständigkeiten statt bei Hilfe an: Die Familie sammelt gemeinsam, welche Aufgaben anfallen, und verteilt sie als feste Ministerposten, möglichst nach Vorlieben, sodass sich jeder für seinen Bereich verantwortlich fühlt, auch wenn nicht alles perfekt läuft. Wer Unterstützung braucht, sagt das als Bedürfnis und nicht als Vorwurf, ohne zu erwarten, dass der andere sofort eine Lösung hat. Wer helfen will, aber meint, es nie recht zu machen, zieht sich laut ihr oft zurück, das sei eine Strategie und keine Gleichgültigkeit. Auch Kinder können freiwillig mitmachen, wenn das Bedürfnis dahinter benannt wird. Ist der Partner nicht bereit mitzumachen, gibt es laut ihr nicht immer eine gemeinsame Lösung, dann darf man selbst entscheiden und sich anderswo Unterstützung holen."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Das Thema kehrt bei Daniel Graf und Katja Seide in vielen Folgen wieder. Eine Gästin (Patricia Cammarata) beschreibt Mental Load als unsichtbare Planungslast, vergleichbar mit Projektmanagement und einer ständig ratternden To-do-Liste im Kopf, und rät, Verantwortung komplett abzugeben; wer immer bitten muss, bleibe Bittstellerin. Ähnlich sagen die Hosts und eine Gästin in einer anderen Folge, man gebe nicht wirklich ab, wenn man weiter kontrolliert; die erste Zeit mit Fehlern sei unbefriedigend, aber langfristig befreiend. Zusätzlich sprechen mehrere Gäste von Emotional Load, etwa Streit moderieren oder Verhalten deuten. Eine Gästin liest die ungleiche Sorgearbeit eher als Frage von Rollenbildern als von Geld; die genannten Zahlen sind Aussagen der Gäste. Carsten Vonnoh hält eine strikte 50-50-Verteilung für wenig realistisch, und eine andere Gästin sieht Organisation als Tandem, bei dem beide führen können."
     }
    ],
    "quellen": [
@@ -9346,14 +13713,6 @@ window.WISSEN = {
      "thema": "Fair sein, abgeben, in der Mitte treffen"
     },
     {
-     "podcast": "artgerecht",
-     "nr": 29,
-     "titel": "Das hätte ich schon längst erledigen sollen...",
-     "datum": "2024-12-24",
-     "minute": "03:21",
-     "thema": "Auf der eigenen Seite sein, Prioritäten setzen"
-    },
-    {
      "podcast": "gfk",
      "nr": 191,
      "titel": "„Mein Partner hilft mir nicht!“ – Wege zu einer fairen Arbeitsaufteilung im Familienalltag",
@@ -9363,19 +13722,27 @@ window.WISSEN = {
     },
     {
      "podcast": "gfk",
-     "nr": 19,
-     "titel": "029: F-wie Fürsorge statt Meckern. Strategien für mehr Selbstliebe im Alltag. Teil 2",
-     "datum": "2020-04-05",
-     "minute": "35:26",
-     "thema": "Aufgabentabelle und Ministerien in der Familie"
-    },
-    {
-     "podcast": "gfk",
      "nr": 168,
      "titel": "Selbstfürsorge im Alltag: So findest du Wege aus belastenden Gedanken und Strategien, um deine Bedürfnisse zu erfüllen",
      "datum": "2025-06-30",
      "minute": "15:38",
      "thema": "Ministerposten, auch für Kinder, verteilen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 46,
+     "titel": "Mental Load mit Patricia Cammarata",
+     "datum": "2020-09-08",
+     "minute": "04:39",
+     "thema": "Definition von Mental Load"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 225,
+     "titel": "Care Arbeit, Equal Care und Mental Load – warum Fürsorge politisch ist",
+     "datum": "2026-03-03",
+     "minute": "07:13",
+     "thema": "Was alles zur Care-Arbeit gehört"
     }
    ],
    "verwandt": [
@@ -9390,6 +13757,112 @@ window.WISSEN = {
    "einleitung": "Viele Mütter sind erschöpft, obwohl der Partner im Haushalt und bei den Kindern hilft, weil im Kopf ständig alles kreist."
   },
   {
+   "id": "migraene-kinder",
+   "titel": "Migräne bei Kindern",
+   "synonyme": [
+    "Kopfschmerzen Kind",
+    "Migräne Kind",
+    "Aura",
+    "Bauchweh und Erbrechen immer wieder",
+    "Kinderneurologe",
+    "Kopfschmerzklinik",
+    "Migräne Schule",
+    "MRT Kopfschmerzen Kind"
+   ],
+   "fragen": [
+    "Hat mein Kind Migräne?",
+    "Mein Kind hat immer wieder Bauchweh und muss sich übergeben, kann das Migräne sein?",
+    "Braucht mein Kind bei Kopfschmerzen ein MRT?",
+    "Was kann ich bei einem Migräneanfall tun?",
+    "Wie erkläre ich der Schule, dass mein Kind Migräne hat?"
+   ],
+   "alter": [
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "entwicklung",
+    "alltag",
+    "kita"
+   ],
+   "kurz": "Laut einem Kinderneurologen im Podcast ist Migräne bei Kindern häufiger, als viele denken, und zeigt sich bei jüngeren eher mit Bauchschmerzen, Übelkeit und Erbrechen. Wiederkehrende, ähnlich ablaufende Beschwerden mit Ruhebedürfnis sind ein Hinweis. Lasst sie einmal fachärztlich abklären; die Angaben im Podcast sind seine Einschätzung und ersetzen keine ärztliche Beratung.",
+   "tipps": [
+    "Achtet auf Beschwerden, die immer wieder ähnlich ablaufen, nach einigen Stunden vergehen und sich nach Schlaf bessern, und sprecht den Kinderarzt darauf an. Lasst es einmal fachärztlich anschauen, am besten bei einer Kinderneurologie.",
+    "Fragt euer Kind offen, was es spürt, statt ihm Antworten in den Mund zu legen, und notiert, wie oft die Anfälle kommen und was vorher passiert ist. Fragt auch in der Familie nach Migräne.",
+    "Beim akuten Anfall: Schafft Ruhe und Dunkelheit, lasst das Kind hinlegen und bleibt in der Nähe, wenn es das möchte. Mehr lasse sich über Medikamente hinaus kaum tun, sagt der Gast.",
+    "Behandelt nach ärztlicher Absprache früh, sobald Schmerzen da sind, nicht erst, wenn das Kind lange durchgehalten hat. Medikamente gibt der Arzt nach Alter und Gewicht vor.",
+    "Als Basis nennt der Gast weniger Medienzeit, viel Bewegung, einen regelmäßigen Tag-Nacht-Rhythmus und Entspannung.",
+    "Zufallsbefunde bei MRT oder EEG sind laut ihm oft ohne Bedeutung. Lasst sie euch gut erklären, denn Nervosität der Eltern überträgt sich auf das Kind.",
+    "Sprecht mit der Schule über die Diagnose und vereinbart einen Rückzugsort und, falls ärztlich besprochen, ein dort hinterlegtes Medikament. Bittet um weniger Leistungsdruck bei vielen Fehltagen.",
+    "Sucht bei sehr häufigen Attacken eine Kinderneurologie oder eine Kopfschmerzklinik auf. In die Notaufnahme sollte man laut dem Gast bei extremen Schmerzen oder wenn die Aura wie ein Schlaganfall aussieht."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Ein Kinderneurologe erklärt Daniel Graf und Katja Seide, dass Migräne eine organische Erkrankung und keine psychische ist, auch wenn Stress ein Auslöser sein kann. Er wünscht sich, dass mehr Kinderärztinnen und -ärzte sie erkennen, und bleibt zugleich vorsichtig: Andere Ursachen müssten bei Unsicherheit ausgeschlossen werden. Er empfiehlt frühe Behandlung statt Durchhalten, räumt aber ein, dass Empfehlungen wie Muskelentspannung oder regelmäßig Sport im Alltag schwer umsetzbar sind. Dauermedikamente zur Vorbeugung sieht er als letzte Möglichkeit. Katja Seide berichtet aus Lehrersicht, dass Kolleginnen und Kollegen Migräne oft nicht ernst nehmen; beide sind sich einig, dass Schulen mehr Wissen brauchen. Alle Angaben zu Häufigkeit, Medikamenten und Untersuchungen sind die des Gastes."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 143,
+     "titel": "Kopfschmerzen bei Kindern - hat mein Kind Migräne?",
+     "datum": "2024-07-09",
+     "minute": "01:13",
+     "thema": "Typische Symptome, Aura, Bauchschmerzen und Übelkeit"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 143,
+     "titel": "Kopfschmerzen bei Kindern - hat mein Kind Migräne?",
+     "datum": "2024-07-09",
+     "minute": "05:47",
+     "thema": "Muss man zum Spezialisten?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 143,
+     "titel": "Kopfschmerzen bei Kindern - hat mein Kind Migräne?",
+     "datum": "2024-07-09",
+     "minute": "11:10",
+     "thema": "MRT und EEG"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 143,
+     "titel": "Kopfschmerzen bei Kindern - hat mein Kind Migräne?",
+     "datum": "2024-07-09",
+     "minute": "15:31",
+     "thema": "Behandlung: Alltag, Bewegung, Akutmedikamente"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 143,
+     "titel": "Kopfschmerzen bei Kindern - hat mein Kind Migräne?",
+     "datum": "2024-07-09",
+     "minute": "25:08",
+     "thema": "Den Anfall begleiten"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 143,
+     "titel": "Kopfschmerzen bei Kindern - hat mein Kind Migräne?",
+     "datum": "2024-07-09",
+     "minute": "23:41",
+     "thema": "Ruheraum, Medikament in der Schule, Leistungsdruck"
+    }
+   ],
+   "verwandt": [
+    "arztbesuch",
+    "bauch-verdauung",
+    "bildschirmzeit",
+    "schule-lehrkraft-kontakt",
+    "ganzheitliche-gesundheit"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Hat mein Kind Migräne?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
    "id": "schule-lehrkraft-kontakt",
    "titel": "Mit der Lehrkraft über Hausaufgaben sprechen",
    "synonyme": [
@@ -9400,13 +13873,18 @@ window.WISSEN = {
     "zu viele Hausaufgaben",
     "Schulwechsel",
     "Mail an Lehrkraft",
-    "Zusammenarbeit mit der Schule"
+    "Zusammenarbeit mit der Schule",
+    "Elternabend",
+    "Kritik an Lehrkraft",
+    "Lehrerin Mail schreiben"
    ],
    "fragen": [
     "Wie spreche ich die Lehrerin an, wenn mein Kind zu lange an den Hausaufgaben sitzt?",
     "Darf ich der Lehrkraft schreiben, dass es zu viel ist?",
     "Soll ich der Lehrkraft schreiben, wenn mein Kind die Hausaufgaben nicht schafft?",
-    "Wann sollte ich die Schule wechseln?"
+    "Wann sollte ich die Schule wechseln?",
+    "Wie spreche ich eine Lehrkraft an, wenn mir ihre Methode nicht gefällt?",
+    "Soll ich ohne mein Kind mit der Lehrkraft sprechen?"
    ],
    "alter": [
     "6-10"
@@ -9423,12 +13901,19 @@ window.WISSEN = {
     "Fragt nach Ideen und Tipps der Lehrkraft und freut euch, wenn sie antwortet.",
     "Nutzt kurze Wege wie Notizen im Mitteilungsheft oder auf der Hausaufgabe, damit die Lehrkraft die Lage besser versteht.",
     "Wenn Aufgaben langweilig oder unpassend sind, teilt das mit und bittet um andere, etwa ein anderes Heft.",
-    "Informiert die Lehrkraft, wenn ihr zu Hause neue Strategien ausprobiert."
+    "Informiert die Lehrkraft, wenn ihr zu Hause neue Strategien ausprobiert.",
+    "Meldet euch auch ohne Problem mal kurz mit Lob oder einer freundlichen Nachfrage bei der Lehrkraft, das senkt die Eskalationsgefahr, wenn es später schwierig wird.",
+    "Schickt Mails erst nach einer Nacht ab und formuliert sie sachlich.",
+    "Fragt euer Kind um Erlaubnis, bevor ihr die Lehrkraft auf etwas ansprecht, und redet vor ihm nicht schlecht über sie."
    ],
    "sichtweisen": [
     {
      "podcast": "gfk",
      "text": "Kathy Weber sagt, dass sich Eltern für ihr Kind einsetzen dürfen, ausdrücklich nicht im Kampf gegen die Lehrkraft; sie stünden vor, neben und hinter dem Kind, und ein Konflikt sei auszuhalten, wenn es um das Kind geht. Überforderung mit Hausaufgaben nennt sie einen emotionalen Übergriff auf das Kind, vor dem Eltern als Schutzschild wirken dürfen. Auch Schulform und Lernkonzept dürften hinterfragt werden bis hin zum Wechsel; sie selbst hat die Schule gewechselt, weil das Hausaufgabenkonzept nicht zum Lerntyp ihres Kindes passte. In einer späteren Folge bestätigt eine Gesprächspartnerin aus der Lehrerseite, dass sie für solche Rückmeldungen dankbar ist, weil Kinder in der Schule oft anders wirken als zu Hause. Kathy Weber fordert Lehrkräfte zugleich auf, offen und verantwortungsvoll zu reagieren, damit Eltern sich das nächste Mal trauen; Lehrkräfte müssten aber nicht jederzeit erreichbar sein."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide, die selbst Lehrerin ist, plädieren mit ihren Gästen für Eltern und Lehrkräfte als Team, in dem man auch unterschiedlicher Meinung sein darf, und gegen eine Angsthaltung. Wie Kathy Weber raten sie, früh, wertschätzend und ohne Vorwurf zu sprechen. Anders als bei Kathy Weber, die den Einsatz für das Kind betont, raten mehrere Gäste, zuerst zu klären, ob Eltern oder Kind ein Problem haben, und nicht über den Kopf des Kindes hinweg auf die Lehrkraft zuzugehen. Sie empfehlen außerdem, nicht schlecht über die Lehrkraft zu reden, weil das Kind sonst in der Zwickmühle steckt, und Mails erst nach einer Nacht abzuschicken. Ob es klappt, hänge laut den Hosts vor allem an der einzelnen Lehrkraft."
     }
    ],
    "quellen": [
@@ -9463,6 +13948,30 @@ window.WISSEN = {
      "datum": "2025-09-22",
      "minute": "24:07",
      "thema": "Nicht die Lehrkraft des Kindes sein, Austausch suchen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 51,
+     "titel": "Probleme in der Schule mit Saskia Niechzial",
+     "datum": "2020-11-17",
+     "minute": "17:19",
+     "thema": "Wie man das Gespräch anbahnt und eröffnet"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 146,
+     "titel": "Den Schulanfang bindungsorientiert begleiten",
+     "datum": "2024-08-20",
+     "minute": "50:12",
+     "thema": "Beziehung zur Lehrkraft aufbauen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 226,
+     "titel": "Wie kommt mein Kind gut durch die Schule?",
+     "datum": "2026-03-10",
+     "minute": "46:43",
+     "thema": "Spannungen zwischen Eltern und Lehrkräften, Kommunikation"
     }
    ],
    "verwandt": [
@@ -9470,11 +13979,224 @@ window.WISSEN = {
     "schule-mitbestimmung",
     "kooperation-zuhoeren",
     "selbststaendigkeit",
-    "mobbing",
-    "nach-der-schule-gespraech"
+    "lernschwierigkeiten",
+    "migraene-kinder"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Wie spreche ich die Lehrerin an, wenn mein Kind zu lange an den Hausaufgaben sitzt?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "rassismus",
+   "titel": "Mit Kindern über Rassismus sprechen",
+   "synonyme": [
+    "Rassismus erklären",
+    "antirassistische Erziehung",
+    "Vorurteile bei Kindern",
+    "Diskriminierung",
+    "Weißsein",
+    "Woher kommst du",
+    "Faschingskostüm",
+    "Selbstbezeichnung",
+    "rassistische Kinderbücher"
+   ],
+   "fragen": [
+    "Wie erkläre ich meinem Kind Rassismus?",
+    "Mein Kind äußert Vorurteile oder Angst vor fremden Menschen, was tun?",
+    "Wie stärke ich mein Kind, das Rassismus erlebt?",
+    "Ist die Frage Woher kommst du rassistisch?",
+    "Welche Faschingskostüme sind problematisch?",
+    "Wie spreche ich Kita oder Schule auf rassistische Inhalte an?"
+   ],
+   "alter": [
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "gefuehle",
+    "entwicklung",
+    "alltag"
+   ],
+   "kurz": "Laut den Gästen der Folge (Autor:innen eines Kinderbuchs zum Thema) werden Kinder nicht rassistisch geboren, sondern lernen aus Medien, Büchern und Alltag, wer als Norm gilt und wer abgewertet wird. Sie raten, früh, sachlich und immer wieder zu sprechen und zuerst die eigene Prägung zu betrachten. Betroffene Kinder sollen gestärkt werden, nicht betroffene Kinder verstehen und einen Auftrag bekommen, nicht nur danebenzustehen.",
+   "tipps": [
+    "Reflektiert zuerst eure eigene Sozialisation: Wie wurde in eurer Kindheit über andere gesprochen, was wisst ihr aus erster Hand?",
+    "Sprecht früh, sachlich und kontinuierlich, nicht nur einmal und nicht erst, wenn etwas passiert ist.",
+    "Nutzt Alltagsanlässe wie Spendenplakate, Kinderbücher oder Nachrichten, und fragt, wer wie dargestellt wird; schaut alte Bücher vor dem Vorlesen an.",
+    "Äußert euer Kind ein Vorurteil, fragt nach, woher das Wissen oder die Angst kommt, statt sofort empört zu reagieren; der Abbau braucht Geduld.",
+    "Stärkt betroffene Kinder: Sie sollen sich in Büchern, Serien und im Umfeld gespiegelt sehen und lernen, dass Aussehen oder Herkunft sie nicht schlechter machen.",
+    "Gebt nicht betroffenen Kindern einen Auftrag: Ungerechtigkeit erkennen, Hilfe holen und dem betroffenen Kind zeigen, dass ihr es seht und hört.",
+    "Sprecht Menschen mit Namen an und fragt nicht als Erstes nach der Herkunft; akzeptiert, wenn jemand schroff oder gar nicht antwortet.",
+    "Verzichtet im Zweifel auf Kostüme, die andere Kulturen darstellen, und wählt Tiere, Berufe oder Märchenfiguren.",
+    "Sucht Verbündete unter den Eltern, bevor ihr Kita oder Schule ansprecht, und meldet problematische Schulbuchinhalte auch dem Verlag."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Die Gäste sehen Rassismus als strukturelles Machtsystem mit Hierarchie und sagen deshalb, es gebe keinen Rassismus gegen weiße Menschen, auch wenn persönliche Beleidigungen verletzen können. Sie raten, auch Weißsein als Kategorie zu benennen und die Begriffe Rassismus und rassistisch früh zu nutzen. Begriffe wie farbig oder dunkelhäutig lehnen sie ab, weil sie eine unbenannte Norm voraussetzen; die Frage Woher kommst du? wirke von Fremden oft ausgrenzend. Daniel Graf räumt ein, dass sein erster Impuls bei rassistischen Äußerungen Empörung ist; die Gäste erlauben Emotionen, empfehlen aber, danach in die Begleitung zu gehen. Sie ermutigen auch nicht betroffene Eltern, in Kita und Schule aktiv zu werden, selbst wenn sie als schwierige Eltern gelten könnten. Aussagen zu Studien, etwa zu schlechterer Benotung bei migrantischen Namen, nennen sie nur kurz."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 179,
+     "titel": "Mit Kindern über Rassismus sprechen",
+     "datum": "2025-04-15",
+     "minute": "09:40",
+     "thema": "Wie lernen Kinder Rassismus?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 179,
+     "titel": "Mit Kindern über Rassismus sprechen",
+     "datum": "2025-04-15",
+     "minute": "28:29",
+     "thema": "Kindgerecht erklären und Alltagsanlässe"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 179,
+     "titel": "Mit Kindern über Rassismus sprechen",
+     "datum": "2025-04-15",
+     "minute": "33:50",
+     "thema": "Handlungsstrategien für betroffene und nicht betroffene Kinder"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 179,
+     "titel": "Mit Kindern über Rassismus sprechen",
+     "datum": "2025-04-15",
+     "minute": "39:43",
+     "thema": "Wenn das Kind Vorurteile äußert"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 179,
+     "titel": "Mit Kindern über Rassismus sprechen",
+     "datum": "2025-04-15",
+     "minute": "52:02",
+     "thema": "Rassismus in Kostümen und Kinderliedern erkennen"
+    }
+   ],
+   "verwandt": [
+    "ausschliessen-mitspielen",
+    "mobbing",
+    "kommunikation-mit-kindern",
+    "geschichten-buecher",
+    "schule-lehrkraft-kontakt"
+   ],
+   "medizinisch": false,
+   "einleitung": "Viele Eltern kennen diese Situation: „Wie erkläre ich meinem Kind Rassismus?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "mitbestimmung-kinder",
+   "titel": "Mitbestimmung bei Kindern",
+   "synonyme": [
+    "Partizipation",
+    "Adultismus",
+    "Kind entscheiden lassen",
+    "Kind ernst nehmen",
+    "Selbstbestimmung Kleinkind",
+    "Scheinpartizipation",
+    "Klassenrat",
+    "Kinderrechte",
+    "Kind widerspricht"
+   ],
+   "fragen": [
+    "Kann ein Baby schon mitbestimmen?",
+    "Welche Entscheidungen darf mein Kleinkind treffen?",
+    "Muss ich mit meinem Kind alles ausdiskutieren?",
+    "Soll mein Kind eine Jacke tragen, wenn es sagt, ihm ist warm?",
+    "Was ist Adultismus?",
+    "Wie können Kinder in Kita und Schule mitbestimmen?"
+   ],
+   "alter": [
+    "0-1",
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "grenzen",
+    "alltag",
+    "entwicklung"
+   ],
+   "kurz": "Mitbestimmung heißt laut den Gästen der Folgen, dass Kinder schon früh bei dem mitentscheiden dürfen, was sie selbst betrifft, etwa Hunger, Kleidung, Nähe oder Wickeln. Bei Gesundheit und Sicherheit entscheiden Eltern, im übrigen Alltag gibt es viel Spielraum. Ewiges Diskutieren und Erklären kann Kinder dagegen überfordern; die Gäste sehen hier einen schmalen Grat, der von Kind und Haltung der Eltern abhängt.",
+   "tipps": [
+    "Überlegt zuerst, was wirklich Erwachsene entscheiden müssen (Gesundheit, Sicherheit, Weitsicht) und was ihr gemeinsam mit dem Kind entscheiden könnt.",
+    "Beobachtet Signale schon beim Baby (Mimik, Abwenden, Wegstemmen) und wartet ab, weil kleine Kinder länger zum Überlegen brauchen.",
+    "Begleitet Handlungen sprachlich und fragt, zum Beispiel vor dem Wickeln, und wartet auf eine Antwort.",
+    "Lasst das Kind bei vermeidbaren Dingen mitentscheiden: liegend oder stehend wickeln, welcher Weg nach Hause, ob es auf den Arm will.",
+    "Vertraut plausiblen Körpersignalen wie warm, kalt oder satt, und prüft im Zweifel nach, etwa durch Anfassen.",
+    "Bietet echte Wahl bei Dingen, die das Kind betreffen, nicht nur zwischen zwei egal gewählten Bechern.",
+    "Überfordert kleine Kinder nicht mit Dauerdiskussion; wenn ein Nein bleibt, haltet den Frust gemeinsam mit ihm aus.",
+    "Hört bei Widerspruch zu und fragt nach, wie das Kind es sieht, statt sofort zu verteidigen; mit dem Alter darf die Beteiligung wachsen.",
+    "Fehlt Mitbestimmung in Kita oder Grundschule, regt über den Elternbeirat Programme oder einen Klassenrat an."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide besprechen Mitbestimmung in mehreren Folgen mit unterschiedlichen Gästen. Eine Gästin (Fachfrau für bedürfnisorientierte Begleitung) sieht fehlende Partizipation schon bei Babys als Kinderschutzthema, weil Kinder sonst lernen, dass sie über ihren Körper nicht bestimmen dürfen; dahinter stecke oft Adultismus, also die Haltung, Erwachsene wüssten alles besser, meist aus Fürsorge und Angst. Eine andere Gästin (Familienbegleiterin) gibt zu bedenken, dass Dauerdiskutieren aus dem Wunsch nach Harmonie entstehen kann und kleine Kinder überfordert; Eltern trügen die Verantwortung und dürften sie nicht aufs Kind schieben. Beide Seiten treffen sich darin, dass es um Körperwahrnehmung ernst nehmen und um Augenmaß geht. Eine Gästin (Autorin) kritisiert zudem Alibi-Beteiligung, bei der Kinder gefragt werden und danach nichts passiert, und fordert Kinderrechte im Grundgesetz. Zum Thema Widerspruch meint eine Gästin, Hinterfragen sei das Erziehungsziel und oft nur eine Phase; eine andere Gästin spricht über Demokratie vorleben, zum Beispiel Wahlen als Familienfest."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 207,
+     "titel": "Mitbestimmen von Anfang an – Partizipation bei Babys und Kleinkindern",
+     "datum": "2025-10-28",
+     "minute": "02:01",
+     "thema": "Was Partizipation bei Babys bedeutet"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 207,
+     "titel": "Mitbestimmen von Anfang an – Partizipation bei Babys und Kleinkindern",
+     "datum": "2025-10-28",
+     "minute": "14:06",
+     "thema": "Konkrete Schritte im Alltag und Scheinpartizipation"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 210,
+     "titel": "Kinder bindungsorientiert begleiten, ohne sich selbst zu verlieren",
+     "datum": "2025-11-18",
+     "minute": "33:51",
+     "thema": "Müssen Eltern alles ausdiskutieren?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 151,
+     "titel": "Selbstbewusst bedürfnisorientiert begleiten",
+     "datum": "2024-10-01",
+     "minute": "05:56",
+     "thema": "Was ist Adultismus und wie vermeidet man ihn?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 212,
+     "titel": "Wie wir mit unseren Kindern Demokratie verteidigen",
+     "datum": "2025-12-02",
+     "minute": "29:14",
+     "thema": "Echte Teilhabe in Kita und Schule"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 237,
+     "titel": "Sei mutig, gerade jetzt – Kinder in unsicheren Zeiten stark machen",
+     "datum": "2026-05-26",
+     "minute": "16:44",
+     "thema": "Wie Eltern auf Hinterfragen reagieren sollten"
+    }
+   ],
+   "verwandt": [
+    "beduerfnisse-erkennen",
+    "kooperation-zuhoeren",
+    "schule-mitbestimmung",
+    "familienkonferenz",
+    "grenzen-setzen"
+   ],
+   "medizinisch": false,
+   "einleitung": "Viele Eltern kennen diese Situation: „Kann ein Baby schon mitbestimmen?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "mittagsschlaf",
@@ -9486,13 +14208,16 @@ window.WISSEN = {
     "Kind wacht um 4 Uhr auf",
     "zu früh wach",
     "Mittagsschlaf Kleinkind",
-    "Baby einschlafen Geschwister dabei"
+    "Baby einschlafen Geschwister dabei",
+    "Mittagsschlaf Kita",
+    "Kind muss mittags nicht schlafen"
    ],
    "fragen": [
     "Mein Kind schläft mittags nicht mehr, was tun?",
     "Warum wacht mein Kind morgens um 4 oder 5 Uhr auf, seit es keinen Mittagsschlaf mehr macht?",
     "Wann hört der Mittagsschlaf auf?",
-    "Wann soll mein Kleinkind ohne Mittagsschlaf ins Bett?"
+    "Wann soll mein Kleinkind ohne Mittagsschlaf ins Bett?",
+    "Mein Kind soll in der Kita schlafen, muss das sein?"
    ],
    "alter": [
     "1-3",
@@ -9508,7 +14233,9 @@ window.WISSEN = {
     "Legt das Kind nicht zu früh ins Bett, zum Beispiel erst um 20 Uhr statt um 19 Uhr, damit es morgens länger schläft.",
     "Probiert Tag für Tag aus, wie viel Wachbleiben klappt, denn an manchen Tagen schläft das Kind nachmittags um fünf ein.",
     "Prüft, an welchen Tagen das Kind noch Mittagsschlaf braucht und an welchen er gut wegfallen kann.",
-    "Sorgt bei Baby-Schlafenszeit zuerst dafür, dass das ältere Geschwisterkind hat, was es braucht, und bietet ihm Alternativen statt nur zu sagen, die Schwester brauche Schlaf."
+    "Sorgt bei Baby-Schlafenszeit zuerst dafür, dass das ältere Geschwisterkind hat, was es braucht, und bietet ihm Alternativen statt nur zu sagen, die Schwester brauche Schlaf.",
+    "Wenn die Kita alle zum Mittagsschlaf legt, sprecht mit ihr: Oft geht ein Ruheplatz oder eine halbe Stunde Buchanschauen mit einer Betreuerin; sonst bietet zu Hause eine Ruhepause an.",
+    "Wenn ihr den Mittagsschlaf weglasst, behaltet die Änderung etwa zwei Wochen bei, weil der Körper sich erst langsam umstellt."
    ],
    "sichtweisen": [
     {
@@ -9518,6 +14245,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber behandelt das Thema nur am Rand, in einer Beratung zu einem Baby, das nur beim Stillen einschläft, während der dreijährige Bruder dabei ist. Sie benennt die Bedürfnisse der Mutter (Kooperation, beiden Kindern gerecht werden) und vermutet beim Dreijährigen Bedürfnisse nach Geborgenheit, Berührung, Gemeinschaft und Spiel. Er könne kaum dauerhaft leise bleiben. Sie rät, mit ihm vorab zu überlegen, wie Mamanähe beim Stillen aussehen kann und was er selbst tun kann, und zuerst für den Großen zu sorgen und dann das Baby in den Schlaf zu stillen. Nicht alle Bedürfnisse ließen sich gleichzeitig gleich gut erfüllen. Ihr Fokus liegt auf der Geschwistersituation, nicht auf dem Wegfall des Mittagsschlafs wie bei Nicola Schmidt."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Die Hosts decken sich weitgehend mit Nicola Schmidt (artgerecht): Sinkt der Schlafbedarf in den ersten zwei Jahren, sollten Eltern ihn im Blick behalten. Wacht ein Zweijähriges nachts um vier auf, bekommt es laut den Hosts wahrscheinlich insgesamt zu viel Schlaf, und der Mittagsschlaf lässt sich ausprobiert weglassen. Sie raten, jede Änderung etwa zwei Wochen beizubehalten, räumen aber ein, dass manche Kinder einfach früh wach sind und man das annehmen muss. Dazu kommt eine Sicht, die bei artgerecht kaum vorkommt: die Kita. Die Hosts und eine Gästin sagen, Kinder müssten mittags nicht schlafen, und sehen Konzepte, die alle hinlegen, kritisch. Die Gästin räumt ein, dass manche Einrichtungen bei ihrer Regel bleiben und sie dafür keine Lösung kennt."
     }
    ],
    "quellen": [
@@ -9568,6 +14299,22 @@ window.WISSEN = {
      "datum": "2025-12-01",
      "minute": "09:03",
      "thema": "Was der Dreijährige braucht und Strategien"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 167,
+     "titel": "Wie Kinder entspannt ein- und altersgerecht durchschlafen",
+     "datum": "2025-01-21",
+     "minute": "29:07",
+     "thema": "Mittagsschlaf in der Betreuung, Ruheplatz"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 13,
+     "titel": "Wie Kinder schlafen - Familienbett, Einschlafbegleitung und Durchschlafen",
+     "datum": "2019-05-29",
+     "minute": "31:41",
+     "thema": "Kinder müssen mittags nicht schlafen"
     }
    ],
    "verwandt": [
@@ -9575,7 +14322,8 @@ window.WISSEN = {
     "durchschlafen",
     "routinen",
     "licht-tag-nacht-rhythmus",
-    "eifersucht-baby"
+    "eifersucht-baby",
+    "kita-allgemein"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind schläft mittags nicht mehr, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
@@ -9592,7 +14340,11 @@ window.WISSEN = {
     "Kind wird ausgeschlossen",
     "Mobbing in Kita und Schule",
     "Kind mobbt andere",
-    "Du bist nicht mehr meine Freundin"
+    "Du bist nicht mehr meine Freundin",
+    "Cybermobbing",
+    "Mobbing-Tagebuch",
+    "Klassenchat",
+    "Mitläufer"
    ],
    "fragen": [
     "Wo fängt Mobbing an?",
@@ -9617,7 +14369,7 @@ window.WISSEN = {
     "Schenkt Wertschätzung im Alltag, indem ihr benennt, was das Kind getan hat und welches Bedürfnis sich damit erfüllt hat. Fragt: „Wer entscheidet, ob du gut so bist?“ Die Antwort soll lauten: ich selbst.",
     "Besprecht Strategien und übt sie zu Hause, auch im Rollenspiel mit Puppen oder Figuren: Was sage ich, wohin gehe ich, mit wem spreche ich danach? Es geht um die Gewissheit, handeln zu können, nicht um auswendig gelernte Sätze.",
     "Macht Stärken sichtbar, etwa mit einem Plakat oder einer Stärkenparty, und sammelt Vertrauenspersonen in Schule oder Verein. Ein kleiner Gegenstand als Erinnerung an eure Verbindung kann Mut machen.",
-    "Sprecht Erzieherinnen oder Lehrkräfte an. Kathy Weber rät, für euer Kind in Gespräche zu gehen, nicht gegen ein anderes Kind, und anzuregen, herauszufinden was dahintersteckt, statt zu bestrafen.",
+    "Sprecht Erzieherinnen oder Lehrkräfte an. Kathy Weber rät, für euer Kind in Gespräche zu gehen, nicht gegen ein anderes Kind, und anzuregen, herauszufinden was dahintersteckt, statt zu bestrafen. Mit der Schule solltet ihr laut einem Gast bei Mobbing früh sprechen, ein Mobbing-Tagebuch (wann, wo, wer) führen und bei Drohungen oder Cybermobbing rechtliche Beratung holen.",
     "Habt ihr selbst Mobbing erlebt, trennt euer eigenes Drama vom Drama des Kindes und bearbeitet es für euch.",
     "Hat euer Kind andere ausgegrenzt oder verletzt: Bleibt neugierig statt zu verurteilen, beschreibt, was passiert ist, fragt nach dem Bedürfnis dahinter und übernehmt liebevoll die Führung. Überlegt gemeinsam andere Verhaltensweisen und übt sie.",
     "Schaut auch bei euch selbst, ob ihr Muster wie Ausgrenzen oder Bloßstellen nutzt, die ihr bei anderen kritisiert, und welche Medien zu Hause laufen."
@@ -9626,6 +14378,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber und Daniel Dudek meiden die Schubladen Täter und Opfer. Jeder Mensch handelt aus seiner besten verfügbaren Option, wer mobbt, versucht sich ein Bedürfnis zu erfüllen, etwa nach Beachtung, Zugehörigkeit, Respekt oder Geborgenheit. Das gemobbte Kind erlebt laut Kathy Weber das andere Kind als Auslöser, aber nicht als Ursache seiner Gefühle; wer das mobbende Kind verantwortlich macht, bleibe im Täter-Opfer-Kreislauf. Daniel Dudek findet Mobbing schwer zu definieren, weil es ein gefühlter Prozess sei, und beide warnen davor, jede schlechte Meinung so zu nennen. Gemobbten Kindern fehlen laut Kathy Weber vor allem Wertschätzung, Individualität, Sicherheit und Zugehörigkeit; sie betont, dass Mobbing eine harte Phase sei, aber kein Todesurteil, und dass Geborgenheit innere Widerstandsfähigkeit stärkt, nicht Abhärten. Bei Kindern, die mobben, widerspricht sie dem üblichen Umgang mit Strafe und Ausschluss, weil das Kind das als ungerecht erlebt; es brauche Führung statt Verurteilung. Sie räumt selbst ein, dass diese Haltung für viele schwer auszuhalten ist. Die Folgen mit Jugendlichen (etwa ein Fall im Klassenchat bei einem 13-Jährigen) dienen hier nur als Beispiel für das Gespräch, das schon im Grundschulalter beginnt. Zahlen zur Verbreitung nennt Daniel Dudek als Angaben aus Studien, nicht als gesicherte Fakten."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide besprechen Mobbing mit mehreren Gästen und kommen deutlich praktischer und systemischer daran als die gfk-Folgen. Ein Gast (Experte) sagt, Mobbing liege vor, wenn gezielte Schädigung über Wochen regelmäßig geschieht, und löse sich nie von allein; Ignorieren, Zurückschlagen und das Elterngespräch mit dem anderen Kind sollten laut ihm meist nicht helfen. Ein weiterer Gast und eine Gästin sehen Mobbing als System mit Publikum, das sich nur mit der ganzen Klasse und der Schule lösen lasse; Klassen- oder Schulwechsel reichten allein nicht. Eine Gästin zum Cybermobbing betont, dass das Kind keinen Rückzugsort mehr habe. Mit gfk stimmen sie überein, dass auch mobbende Kinder Ursachen haben und nicht pauschal verurteilt werden sollen und dass das Kind nie schuld ist. Anders als gfk legen sie mehr Gewicht auf das Einschalten der Schule, das Mobbing-Tagebuch und auf rechtliche Beratung, und sie halten Stärkung des Kindes allein nicht für ausreichend. Rechtliche Angaben sind Aussagen der Gäste."
     }
    ],
    "quellen": [
@@ -9670,12 +14426,28 @@ window.WISSEN = {
      "thema": "Wie erkenne ich, dass mein Kind gemobbt wird?"
     },
     {
-     "podcast": "gfk",
-     "nr": 43,
-     "titel": "57 M- wie Mobbing Teil 2: wie gehe ich mit Mobbing um?",
-     "datum": "2021-05-30",
-     "minute": "10:21",
-     "thema": "Was tun, wenn das Kind leidet: Stärken sichtbar machen"
+     "podcast": "wunschkind",
+     "nr": 140,
+     "titel": "Mobbing - wenn Kinder unter Kindern leiden",
+     "datum": "2024-05-28",
+     "minute": "01:21",
+     "thema": "Was ist Mobbing, Kriterien, Warnzeichen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 254,
+     "titel": "Selbstsicher durchs Leben - was Kinder wirklich brauchen",
+     "datum": "2026-09-22",
+     "minute": "27:35",
+     "thema": "Warum Ignorieren und Weggehen nicht helfen (Treibsand)"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 259,
+     "titel": "Cybermobbing - wie Du Dein Kind schützt und stärkst",
+     "datum": "2026-10-27",
+     "minute": "03:18",
+     "thema": "Streit oder Mobbing: woran man den Unterschied erkennt"
     }
    ],
    "verwandt": [
@@ -9683,10 +14455,112 @@ window.WISSEN = {
     "selbstwert-kind",
     "streit-unter-kindern",
     "schule-lehrkraft-kontakt",
-    "gfk-grundannahmen"
+    "gfk-grundannahmen",
+    "freundschaften"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Wo fängt Mobbing an?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "musik",
+   "titel": "Musik, Singen und Tanzen mit Kindern",
+   "synonyme": [
+    "Singen",
+    "ich kann nicht singen",
+    "Tanzen",
+    "Musizieren",
+    "Instrument lernen",
+    "Kinderlieder",
+    "Rasseln",
+    "Tanzvideos",
+    "CD oder Singen",
+    "Musik im Alltag"
+   ],
+   "fragen": [
+    "Wie wichtig ist Musik für die Entwicklung meines Kindes?",
+    "Ich singe schlecht, schadet das meinem Kind?",
+    "Reichen CDs statt selbst zu singen?",
+    "Sind Tanzvideos im Fernsehen für Kinder okay?",
+    "Ab wann kann mein Kind ein Instrument lernen?"
+   ],
+   "alter": [
+    "0-1",
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "entwicklung",
+    "alltag",
+    "gefuehle"
+   ],
+   "kurz": "Laut einer Gästin von Daniel Graf und Katja Seide fördert Musik im Vorschulalter Gehör, Sprache, Konzentration, Motorik und soziale Fähigkeiten und hilft Kindern, Gefühle auszudrücken. Schräges Singen ist dabei besser als gar keins, denn es geht um Freude und nicht um Perfektion. CDs sind in Ordnung, ersetzen aber laut Katja Seide nicht das gemeinsame Singen.",
+   "tipps": [
+    "Singt einfach drauflos, auch schief. Setzt mit Kindern eher hoch an, weil zu tiefe Lieder laut der Gästin die Freude nehmen.",
+    "Begleitet Alltagssituationen wie Wickeln, Zähneputzen, Spazierengehen oder Aufräumen mit Liedern. Ein Zahnputzlied schon in der Küche anzustimmen bringt gute Stimmung mit ins Bad.",
+    "Bietet beides an: gemeinsames Singen und CDs. Wer gar nicht singen mag, kann Musik abspielen oder einen Kinderchor besuchen.",
+    "Nutzt einfache Instrumente wie Trommel, Xylophon, Rassel, Kochtöpfe, Schneebesen oder verschlossene Dosen mit Reis. Bei Kleinen gut verschließen.",
+    "Tanzt spontan in der Küche zum Radio, wirbelt Kleinkinder auf dem Arm durch die Wohnung oder macht einen Discoabend mit Wunschliedern am Wochenende.",
+    "Probiert Tanzspiele wie Stopp-Tanz, Tiertanzlieder zum Verkleiden und Mitmachlieder, bei denen die Bewegungen angesagt werden.",
+    "Lasst das Kind sein Instrument selbst wählen und ausprobieren, zum Beispiel beim Tag der offenen Tür einer Musikschule. Ist ein Kind noch zu jung, kann ein Jahr Warten sinnvoll sein."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Die Gästin sieht Musik und Tanz als niedrigschwellig und ermutigt ausdrücklich auch unmusikalische Eltern. Sie nennt Wirkungen auf Entwicklung, Gefühlsregulation und Zusammengehörigkeit, die sie unter anderem mit Studien und Dopaminausschüttung begründet; die Hosts hinterfragen das nicht. Bewegungs- und Tanzvideos hält sie persönlich für eines der harmlosesten und pädagogisch wertvollsten Bildschirmangebote. Bei Instrumenten steht sie für Wahlfreiheit des Kindes, Daniel Graf und Katja Seide stimmen zu. Katja Seide betont in einer früheren Folge, dass Singen etwas bewirkt, was eine CD nicht kann, weil man sich dabei aneinander anpasst, während die CD immer gleich schnell läuft. Sie singt nach eigener Aussage selbst nicht gut und hat bei ihren ersten Kindern trotzdem viel gesungen."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 166,
+     "titel": "Warum Singen, Tanzen, Musizieren und Vorlesen für Kinder so wichtig sind",
+     "datum": "2025-01-14",
+     "minute": "02:33",
+     "thema": "Vorteile musikalischer Erziehung und Alltagstipps"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 166,
+     "titel": "Warum Singen, Tanzen, Musizieren und Vorlesen für Kinder so wichtig sind",
+     "datum": "2025-01-14",
+     "minute": "06:16",
+     "thema": "Schräg singen und hoch singen, CD statt Singen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 166,
+     "titel": "Warum Singen, Tanzen, Musizieren und Vorlesen für Kinder so wichtig sind",
+     "datum": "2025-01-14",
+     "minute": "10:59",
+     "thema": "Tanzvideos, Tanzkurse und Tanzspiele"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 166,
+     "titel": "Warum Singen, Tanzen, Musizieren und Vorlesen für Kinder so wichtig sind",
+     "datum": "2025-01-14",
+     "minute": "15:39",
+     "thema": "Ab welchem Alter welches Instrument"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 52,
+     "titel": "Welche Spielzeuge brauchen Kinder?",
+     "datum": "2020-12-01",
+     "minute": "1:00:28",
+     "thema": "Singen mit Kindern und CDs"
+    }
+   ],
+   "verwandt": [
+    "bildschirmzeit",
+    "geschichten-buecher",
+    "spielen",
+    "kreativ",
+    "familien-rituale"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wo fängt Mobbing an?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Viele Eltern kennen diese Situation: „Wie wichtig ist Musik für die Entwicklung meines Kindes?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "spielen",
@@ -9701,7 +14575,9 @@ window.WISSEN = {
     "alleine spielen",
     "Selbstbeschäftigung",
     "Langeweile",
-    "Alleinspiel"
+    "Alleinspiel",
+    "Alleinespielzeit",
+    "freies Spiel"
    ],
    "fragen": [
     "Muss ich jeden Tag mit meinem Kind spielen?",
@@ -9722,7 +14598,7 @@ window.WISSEN = {
     "entwicklung",
     "eltern"
    ],
-   "kurz": "Eltern müssen nicht mit ihren Kindern spielen. Es darf Freude machen, ist aber nicht entscheidend für die Bindung, die vor allem durch gemeinsame Zeit, Gespräche und echte Aufmerksamkeit entsteht. Beide Podcasts sagen: Alleinspielen lässt sich unterstützen, Kinder wollen im Alltag mitmachen, und manche Kinder brauchen dafür schlicht länger.",
+   "kurz": "Eltern müssen nicht mit ihren Kindern spielen. Es darf Freude machen, ist aber nicht entscheidend für die Bindung, die vor allem durch gemeinsame Zeit, Gespräche und echte Aufmerksamkeit entsteht. Die Podcasts sind sich einig: Alleinspielen lässt sich unterstützen, Kinder wollen im Alltag mitmachen, und manche Kinder brauchen dafür schlicht länger.",
    "tipps": [
     "Spielt, wenn ihr Lust habt. Wenn nicht, sagt es ehrlich und freundlich und bietet etwas an, das euch beiden gefällt, etwa kuscheln, ein Buch anschauen oder ein Hörbuch hören.",
     "Nehmt euer Kind in den Alltag mit, zum Beispiel beim Wäschefalten, Kochen oder Ausräumen der Waschmaschine, und plant dafür mehr Zeit ein.",
@@ -9732,7 +14608,7 @@ window.WISSEN = {
     "Haltet den Frust aus, wenn das Kind spielen will und ihr gerade etwas anderes tut. Er legt sich nach einigen Malen.",
     "Gebt Babys und Kleinkindern Alltagsgegenstände zum Entdecken, etwa Flaschen zum Auf- und Zuschrauben, und greift im freien Spiel nicht ständig korrigierend ein. Stört Momente tiefer Vertiefung nicht.",
     "Übt Verhalten spielerisch, zum Beispiel mit einem Stopp-Spiel, und spielt Streitsituationen mit Figuren noch einmal nach. Auch Quatsch hilft: Tut in einem sicheren Moment so, als wüsstet ihr nicht, wie etwas geht, und lacht dabei mit dem Kind.",
-    "Mistet Spielzeug aus. Weniger kann die Kreativität fördern."
+    "Reduziert Spielzeug, tauscht es im Wechsel aus und bietet offene Materialien wie Tücher, Bausteine oder Kissen an. Weniger kann laut den Hosts die Kreativität fördern."
    ],
    "sichtweisen": [
     {
@@ -9742,6 +14618,10 @@ window.WISSEN = {
     {
      "podcast": "artgerecht",
      "text": "Nicola Schmidt sieht das Thema vor allem von der Frage her, warum Kinder nicht allein spielen wollen. Laut ihr erwarten Eltern Alleinspiel oft zu früh und unterstützen es zugleich zu wenig. Anhänglichkeit sei normal, denn Kinder seien evolutionär Traglinge, und es liege weder an den Eltern noch am Kind. Kleine Kinder wollen im Spiel in Kontakt sein, etwas zeigen und Resonanz bekommen. Sie nennt zwei Muster, die Alleinspiel erschweren: ständiges Eingreifen und Korrigieren oder fehlende Aufmerksamkeit bei ruhigem Spiel. Mit mutti ist sie sich einig, dass Kinder gern Erwachsenentätigkeiten nachmachen und Alleinspiel wachsen darf. Anders gewichtet sie: Während die Heckners betonen, dass Eltern nicht spielen müssen und Förderdruck kritisieren, legt sie die Verantwortung stärker bei den Eltern, Timing und Beziehung zu gestalten. Außerdem versteht sie Nonsens-Spiele als Kleinkindhumor und nicht als Lüge."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Bei Daniel Graf und Katja Seide klingt das ähnlich entspannt wie bei mutti: Katja Seide sagt, sie habe selbst eine innere Sperre beim Spielen, empfiehlt aber allen, die es können, sich darauf einzulassen, weil gemeinsames Spielen die Beziehung stärke; ein Kind, das lieber allein spielt, solle man lassen, und Kinder, die Mitspielen einfordern, nicht tadeln. Anders als bei mutti wird Spielen stärker als wertvoll herausgestellt: Zwei Gästinnen beschreiben bindungsstärkendes Spiel als Spiel ohne Ziel und Leistung, nur mit Zugewandtheit und Interesse am Kind, das auch nebenbei im Alltag passiert; für Eltern, die nicht gern spielen, sehen sie Grautöne zwischen Mitspielen und Absagen, und Spielen aus reinem Pflichtgefühl helfe nicht. Mit Artgerecht gemeinsam ist der Ansatz, Alleinspielzeit kleinschrittig aufzubauen und zuverlässig wiederzukommen; ab etwa drei Jahren halte ein Kind laut Katja Seide kurze Wartezeiten aus, und Langeweile bringe oft etwas Tolles hervor. Weniger Spielzeug und offene Materialien nennen mehrere Folgen."
     }
    ],
    "quellen": [
@@ -9794,12 +14674,20 @@ window.WISSEN = {
      "thema": "Kinder sind Traglinge, nicht fürs Alleinespielen gemacht"
     },
     {
-     "podcast": "artgerecht",
-     "nr": 61,
-     "titel": "Mein Kind will nicht alleine spielen",
-     "datum": "2026-08-06",
-     "minute": "02:35",
-     "thema": "Zwei Muster: korrigiert werden oder keine Aufmerksamkeit"
+     "podcast": "wunschkind",
+     "nr": 195,
+     "titel": "Wie Spielen die Bindung stärkt und die gesunde Entwicklung unterstützt",
+     "datum": "2025-08-05",
+     "minute": "10:10",
+     "thema": "Was ist bindungsstärkendes Spiel?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 52,
+     "titel": "Welche Spielzeuge brauchen Kinder?",
+     "datum": "2020-12-01",
+     "minute": "54:55",
+     "thema": "Muss ich ständig mit meinem Kind spielen?"
     }
    ],
    "verwandt": [
@@ -9946,7 +14834,9 @@ window.WISSEN = {
     "Blätter sammeln",
     "Wald mit Kindern",
     "draußen spielen",
-    "Kastanien sammeln"
+    "Kastanien sammeln",
+    "Tagträumen",
+    "Abenteuer"
    ],
    "fragen": [
     "Wie viel Zeit sollte mein Kind in der Natur verbringen?",
@@ -9956,7 +14846,8 @@ window.WISSEN = {
    ],
    "alter": [
     "1-3",
-    "3-6"
+    "3-6",
+    "6-10"
    ],
    "bereiche": [
     "alltag",
@@ -9970,12 +14861,17 @@ window.WISSEN = {
     "Sammelt im Herbst Blätter, auch an Straßenbäumen oder in kleinen Grünanlagen. Sie müssen nicht perfekt sein.",
     "Legt Mandalas aus den Blättern, klebt sie auf, fädelt sie auf eine Schnur oder spielt einfach draußen damit und lasst sie dort.",
     "Sammelt Kastanien oder Eicheln zum Basteln, Zählen, Zahlen legen, Schütten oder Einsortieren in Kästchen.",
-    "Macht euch nicht verrückt: Ein Waldausflug mit Picknick und Lagerfeuer ist nicht nötig, zehn Minuten am Straßenbaum reichen."
+    "Macht euch nicht verrückt: Ein Waldausflug mit Picknick und Lagerfeuer ist nicht nötig, zehn Minuten am Straßenbaum reichen.",
+    "Geht regelmäßig raus, auch wenn das Kind murrt: Laut den Hosts fällt die Last meist nach den ersten zehn Schritten ab, und dann wird oft stundenlang gespielt."
    ],
    "sichtweisen": [
     {
      "podcast": "artgerecht",
      "text": "Nicola Schmidt sagt, artgerecht arbeite mit der Natur des Menschen, und die wolle raus, auch wenn es heute wenig Zeit, Möglichkeiten und Erfahrung dafür gibt. Aus vielen Studien sei bekannt, dass Nässe, Kälte, Wärme, Anfassen, Krabbeln, Rennen und Klettern der Gehirnentwicklung guttun, und dass Wind, Regen und Erdkontakt dem Gehirn helfen, sich zu vernetzen. Bäume wirkten auf Blutdruck, Herzschlag und Atmung, der Cortisolspiegel der Kinder sinke. Kleinkinder lernten vor allem über die Sinne. Sie erzählt, dass sie sich früher selbst unter Druck gesetzt habe, jeden Nachmittag zwei Stunden in den Wald zu gehen, und heute zu kleinen, realistischen Einheiten rät. Studien nennt sie nicht im Einzelnen."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Die Hosts von „Das gewünschteste Wunschkind“ kommen im Gespräch über digitale Medien auf das Draußensein. Sie sagen, Medien nähmen Kindern Zeit für natürliche Entwicklungsaufgaben wie Natur, Körpergrenzen kennenlernen und Risiken ausprobieren, und Medien-Abenteuer ersetzten den körperlichen Teil nicht. Außerdem meinen sie, Erwachsene erlaubten Kindern heute weniger Abenteuer als früher. Sie vermuten, dass das Gehirn eigentlich viel im Leerlauf (Tagtraummodus) sein sollte und durch ständige Reize kaum noch dazu komme; das könne zu steigenden Burnout-Raten bei Kindern beitragen. Sie räumen selbst ein, dass es dazu noch keine Studien gibt. Anders als bei Nicola Schmidt geht es ihnen weniger um kurze Zeitfenster als um regelmäßiges Rausgehen, auch gegen Murren."
     }
    ],
    "quellen": [
@@ -10018,16 +14914,145 @@ window.WISSEN = {
      "datum": "2025-09-09",
      "minute": "05:20",
      "thema": "Zehn bis fünfzehn Minuten reichen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 3,
+     "titel": "Digitale Medien - Teil 1: Die Ängste der Eltern",
+     "datum": "2018-12-27",
+     "minute": "33:16",
+     "thema": "Medien nehmen Zeit für Entwicklungsaufgaben wie Natur und Abenteuer"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 3,
+     "titel": "Digitale Medien - Teil 1: Die Ängste der Eltern",
+     "datum": "2018-12-27",
+     "minute": "38:10",
+     "thema": "Raus in die Natur trotz Murren"
     }
    ],
    "verwandt": [
     "spielen",
     "risiko-freiheit",
     "reizueberflutung-vorbeugen",
-    "hirnentwicklung-mythen"
+    "hirnentwicklung-mythen",
+    "bildschirmzeit",
+    "ganzheitliche-gesundheit"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Wie viel Zeit sollte mein Kind in der Natur verbringen?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "neurodivergenz",
+   "titel": "Neurodivergenz, Autismus und PDA",
+   "synonyme": [
+    "neurodivergentes Kind",
+    "Autismus Anzeichen",
+    "Autismus-Spektrum",
+    "ADHS Anzeichen",
+    "Masking",
+    "Stimming",
+    "PDA",
+    "Anforderungsvermeidung",
+    "Reizüberflutung",
+    "Diagnose Kind"
+   ],
+   "fragen": [
+    "Woran erkenne ich, dass mein Kind neurodivergent ist?",
+    "Soll ich mein Kind auf Autismus oder ADHS testen lassen?",
+    "Bin ich schuld, dass mein Kind so ist?",
+    "Mein Kind verweigert jede Aufforderung, könnte das PDA sein?",
+    "Wie begleite ich ein autistisches Kind im Alltag?"
+   ],
+   "alter": [
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "entwicklung",
+    "gefuehle",
+    "eltern"
+   ],
+   "kurz": "Neurodivergent heißt, dass das Gehirn eines Kindes anders arbeitet, etwa bei ADHS, Autismus, Hochbegabung oder Lese- und Rechenschwäche. Die Gäste im Podcast raten, dem Bauchgefühl zu trauen, früh Beobachtungen zu sammeln und eine Diagnostik eher früher als später anzugehen. Im Alltag helfen Annahme, Rückzugsräume und Anpassungen statt Abtrainieren. Hinweise ersetzen keine Diagnose, die stellen Fachleute.",
+   "tipps": [
+    "Beobachtet über längere Zeit, ob Merkmale bleiben, und schreibt sie auf; fast alles kennen Eltern auch aus Phasen neurotypischer Kinder, der Unterschied ist laut einer Gästin, dass es bleibt und alles ein bisschen mehr ist.",
+    "Vertraut eurem Bauchgefühl, wenn euch das Verhalten über längere Zeit nachhaltig komisch vorkommt, und sprecht früh mit einer vertrauten Person oder der kinderärztlichen Praxis.",
+    "Beginnt bei Verdacht eher früher mit der Abklärung, weil die Wartezeiten laut einer Gästin oft ein bis zwei Jahre betragen; Erstanlaufstelle ist meist die Kinderarztpraxis, die weiterüberweist.",
+    "Holt die andere Bezugsperson früh mit ins Boot und nehmt Notizen zum ersten Termin mit.",
+    "Erklärt dem Kind die Abklärung vom Kind aus: Was fällt dir schwer, was klappt gut? Ziel ist, herauszufinden, wie es unterstützt werden kann.",
+    "Lasst Stimming (selbstregulierende Bewegungen oder Laute) zu, solange sich niemand verletzt, und gebt Spezialinteressen Raum und echtes Interesse.",
+    "Findet Kompromisse bei Kleidung, Essen und Mahlzeiten (zum Beispiel vertraute Lebensmittel nach einem anstrengenden Schultag) und sorgt zu Hause für einen Ort, an dem Rückzug erlaubt ist.",
+    "Bei Verdacht auf PDA geht es laut dem Gast um eine Haltung auf Augenhöhe und weniger Anforderungen: streicht Regeln und Rituale, die nicht wirklich nötig sind.",
+    "Sucht euch Entlastung und offene Ohren, etwa Familie, andere betroffene Eltern oder eigene therapeutische Unterstützung; Therapien wie Ergotherapie oder Logopädie gehen teils auch ohne Diagnose."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Katja Seide, selbst Mutter zweier neurodivergenter Kinder, und Daniel Graf lassen in mehreren Folgen Gäste mit eigener Erfahrung zu Wort kommen. Eine Gästin (selbst spät diagnostizierte Autistin mit ADHS) sieht in Neurodivergenz auch Stärken wie Detailblick und Durchhaltevermögen. Sie spricht sich klar für Diagnosen aus, weil Kinder ohne Erklärung sich sonst selbst als faul oder dumm sehen, und betont, dass Neurodivergenz überwiegend genetisch und kein Erziehungsfehler ist; Eltern beeinflussen nur, wie gut die Umgebung stützt. Eine autistische Autorin und Mutter befürwortet Diagnosen ebenfalls, vor allem wegen Schulhilfen und Nachteilsausgleich, wünscht sich aber ein System, das Hilfe ohne Stempel gibt. Sie erklärt Masking, Reizfilterschwäche und warum ein sogenannter milder Autismus oft nur gut getarnter Autismus sei. Ein Elternberater beschreibt PDA als Ausprägung im Autismus-Spektrum und gibt dazu Haltung und Strategien; er räumt selbst ein, dass PDA in Fachkreisen wenig bekannt und umstritten ist und es keine eigene Diagnose gibt. Die Hosts hinterfragen seine Aussagen kaum, es handelt sich um Erfahrungswissen, nicht um gesicherte Medizin."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 184,
+     "titel": "Was neurodivergente Kinder brauchen und wie wir sie stärken können",
+     "datum": "2025-05-20",
+     "minute": "06:24",
+     "thema": "Anzeichen bei ADHS und Autismus"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 184,
+     "titel": "Was neurodivergente Kinder brauchen und wie wir sie stärken können",
+     "datum": "2025-05-20",
+     "minute": "32:39",
+     "thema": "Wohin wenden und wie läuft die Diagnostik ab?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 184,
+     "titel": "Was neurodivergente Kinder brauchen und wie wir sie stärken können",
+     "datum": "2025-05-20",
+     "minute": "44:41",
+     "thema": "Selbstwert und Alltag: verabschieden vom Selbstverständlichen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 201,
+     "titel": "Mutmacher für Familien im Autismus-Spektrum",
+     "datum": "2025-09-16",
+     "minute": "09:00",
+     "thema": "Diagnose: Entlastung und Belastung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 201,
+     "titel": "Mutmacher für Familien im Autismus-Spektrum",
+     "datum": "2025-09-16",
+     "minute": "18:42",
+     "thema": "Masking und Stimming erklärt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 247,
+     "titel": "Wenn jede Aufforderung zu einem Konflikt führt - PDA verstehen",
+     "datum": "2026-08-04",
+     "minute": "01:49",
+     "thema": "Was PDA bedeutet und warum Anforderungen als Bedrohung wirken"
+    }
+   ],
+   "verwandt": [
+    "adhs-kind",
+    "hochbegabung",
+    "gefuehlsstarke-hochsensible-kinder",
+    "reizueberflutung-vorbeugen",
+    "lernschwierigkeiten",
+    "adhs-eltern"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Woran erkenne ich, dass mein Kind neurodivergent ist?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "patchwork-familie",
@@ -10040,14 +15065,18 @@ window.WISSEN = {
     "Bonus-Mama",
     "Kind zwischen zwei Haushalten",
     "Wechselmodell Ankommen",
-    "Ankommens-Ritual"
+    "Ankommens-Ritual",
+    "Stiefmutter",
+    "Stiefeltern",
+    "Stiefmutter-Hamsterrad"
    ],
    "fragen": [
     "Wie hilft man einem Kind, das zwischen zwei Haushalten wechselt?",
     "Mein Kind kommt vom anderen Elternteil und ist schwierig, was tun?",
     "Mein Kind mag meinen neuen Partner nicht, was tun?",
     "Welche Rolle hat der neue Partner als Bonuselternteil?",
-    "Wie finden Kinder ihren Platz in der Patchwork-Familie?"
+    "Wie finden Kinder ihren Platz in der Patchwork-Familie?",
+    "Ich bin Stiefmutter und fühle mich nicht wertgeschätzt, was tun?"
    ],
    "alter": [
     "1-3",
@@ -10059,7 +15088,7 @@ window.WISSEN = {
     "gefuehle",
     "geschwister"
    ],
-   "kurz": "Kathy Weber erklärt: Eine neue Familiensituation nimmt Kindern und Eltern den festen Boden, deshalb braucht es zuerst Sicherheit mit Orientierung, Ritualen und Führung, danach Zugehörigkeit. Eltern sind für das Familiensystem zuständig, in dem sie leben, und kleine Ankommens-Rituale nach dem Wechsel helfen. Es gibt für sie kein einzig richtiges Patchwork-Modell.",
+   "kurz": "Kathy Weber erklärt: Eine neue Familiensituation nimmt Kindern und Eltern den festen Boden, deshalb braucht es zuerst Sicherheit mit Orientierung, Ritualen und Führung, danach Zugehörigkeit. Eltern sind für das Familiensystem zuständig, in dem sie leben, und kleine Ankommens-Rituale nach dem Wechsel helfen. Bei wunschkind kommt die Sicht der Stiefeltern dazu: Sie sollten ihre eigenen Bedürfnisse klären und Ablehnung nicht persönlich nehmen. Es gibt kein einzig richtiges Patchwork-Modell; bei Rechtsfragen wie dem Erbe holt juristischen Rat ein.",
    "tipps": [
     "Fragt euch, wie ihr im neuen Familiensystem Orientierung, Struktur, Rituale, Grenzen und Geborgenheit erfüllt: Wer ist wofür zuständig, was bleibt verlässlich?",
     "Führt feste Ankommens-Rituale ein, etwa eine Umarmung gleich bei der Rückkehr, vor allen anderen, und sagt, wofür ihr das tut.",
@@ -10067,14 +15096,18 @@ window.WISSEN = {
     "Schreibt mit dem Kind einen Wochenplan (Wechsel, Sport, Exklusivzeiten) und plant verlässliche exklusive Zeiten, auch fünf Minuten reichen.",
     "Lasst das Kind die Familie aufmalen und zeigt, wie ihr die Reihenfolge seht; es geht um den Platz, nicht darum, dass Ältere mehr bekommen.",
     "Seht Gerechtigkeit als Bedürftigkeit: Wer gerade am nötigsten etwas braucht, ist zuerst dran, und kleinere Kinder dürfen kurz warten.",
-    "Führt neue Partner langsam ein und klärt als Paar, ob er oder sie Bonus-Elternteil sein möchte; das ist freiwillig.",
-    "Schenkt Empathie, wenn das Kind Wut oder Trauer zeigt, etwa: Du wünschst dir, dass es wieder wird wie früher.",
+    "Führt neue Partner langsam ein und klärt als Paar, ob er oder sie Bonus-Elternteil sein möchte; das ist freiwillig. Als Stiefelternteil hilft es laut einer Gästin, sich bewusst für die Familie zu entscheiden statt sich einen Notausgang offenzuhalten, und Wertschätzung auch außerhalb der Familie zu suchen.",
+    "Schenkt Empathie, wenn das Kind Wut oder Trauer zeigt, etwa: Du wünschst dir, dass es wieder wird wie früher. Ablehnung eines Bonuskindes hat laut den Hosts oft mit einem Loyalitätskonflikt zu tun und ist nicht persönlich gemeint.",
     "Macht bei Fürsorge und Zuwendung keinen Unterschied zwischen leiblichen Kindern und Bonuskindern."
    ],
    "sichtweisen": [
     {
      "podcast": "gfk",
      "text": "Kathy Weber, selbst Patchwork-Mutter, sagt, es gebe kein Richtig oder Falsch und kein einzelnes Modell, man dürfe aber prüfen, ob es die Bedürfnisse aller bestmöglich erfüllt. In ihrem Konzept der Lila Liebe steht Sicherheit an erster Stelle, danach Zugehörigkeit; jede Familie sei ein System, in dem es eine Hierarchie geben müsse, die sie als liebevoll führend beschreibt, und die Erwachsenen sind die Familienoberhäupter. Sie warnt, dass dieser Gedanke manche triggern kann. Aussagen von Kindern wie \"die Kleinen bekommen mehr\" übersetzt sie in Gerechtigkeit und Nähe, und Gerechtigkeit ist für sie nicht Gleichheit. Zeit sei kein Bedürfnis, dahinter stehe Nähe und Verbindung. Ein holpriger Übergang nach dem Wechsel ist ihrer Ansicht nach nicht die Schuld des Kindes, sondern Aufgabe der Eltern. Sie beurteilt das Wechselmodell nicht; das Zuhause beim anderen Elternteil sei nicht ihre Aufgabe. Ein Fallbeispiel in der Folge betrifft einen Jugendlichen; die Grundgedanken gelten laut ihr auch für jüngere Kinder."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide sprechen mit einer Gästin (Autorin und Stiefmutter) vor allem über die Perspektive der Stiefeltern. Sie beschreiben das Stiefmutter-Hamsterrad: erst der Wunsch, es allen recht zu machen, dann Enttäuschung ohne Dank, Rückzug und schlechtes Gewissen. Ausweg seien innere Klarheit über das eigene Bedürfnis, Abgrenzung ohne Flucht und eine bewusste Entscheidung für die Familie. Das passt zu Kathy Webers Bedürfnisblick, setzt aber den Schwerpunkt auf die Gefühle der Erwachsenen statt auf Rituale und Sicherheit für das Kind; auch dass es kein einzig richtiges Modell gibt, sehen beide so. Ablehnung durch Bonuskinder sei häufig ein Loyalitätskonflikt, nicht persönlich gemeint. Zum Erbrecht sagt eine Gästin, Stiefkinder erbten nicht automatisch; das ist eine Aussage der Gästin, bei Fragen dazu solltet ihr juristisch beraten lassen."
     }
    ],
    "quellen": [
@@ -10125,15 +15158,143 @@ window.WISSEN = {
      "datum": "2024-10-21",
      "minute": "24:43",
      "thema": "Rituale zum Ankommen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 122,
+     "titel": "Wie Patchworkfamilien zusammenwachsen und wertschätzend einander stressarm begegnen",
+     "datum": "2023-09-19",
+     "minute": "08:29",
+     "thema": "Das Stiefmutter-Hamsterrad"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 122,
+     "titel": "Wie Patchworkfamilien zusammenwachsen und wertschätzend einander stressarm begegnen",
+     "datum": "2023-09-19",
+     "minute": "05:31",
+     "thema": "Die Stiefmutterposition aktiv gestalten"
     }
    ],
    "verwandt": [
+    "wechselmodell-getrennte-eltern",
     "gerechtigkeit-geschwister",
+    "exklusivzeit",
     "familien-rituale",
-    "eifersucht-baby"
+    "eifersucht-baby",
+    "adoption-pflegekind"
    ],
-   "medizinisch": false,
+   "medizinisch": true,
    "einleitung": "Viele Eltern kennen diese Situation: „Wie hilft man einem Kind, das zwischen zwei Haushalten wechselt?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "psychische-gesundheit-kind",
+   "titel": "Psychische Belastung beim Kind erkennen",
+   "synonyme": [
+    "Kind psychisch belastet",
+    "Depression Kind",
+    "Kind zieht sich zurück",
+    "Bauchschmerzen Psyche",
+    "Verhaltensänderung Kind",
+    "Stress beim Kind",
+    "Selbstverletzung",
+    "seelische Belastung",
+    "Kinderseele"
+   ],
+   "fragen": [
+    "Woran erkenne ich, dass mein Kind psychisch belastet ist?",
+    "Ist das noch eine Phase oder steckt mehr dahinter?",
+    "Mein Kind hat oft Bauchschmerzen, ist das die Psyche?",
+    "Bin ich schuld, wenn mein Kind depressiv ist?",
+    "Wann sollte ich mir professionelle Hilfe holen?"
+   ],
+   "alter": [
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "gefuehle",
+    "entwicklung",
+    "eltern"
+   ],
+   "kurz": "Psychische Belastung ist laut den Gästen zunächst eine normale Reaktion auf zu viel, zu schnelle oder zu unsichere Veränderungen und noch keine Krankheit. Kinder zeigen sie oft über Körper und Verhalten, nicht über Worte. Achtet auf Veränderungen gegenüber dem Grundcharakter, die über Wochen anhalten, und holt euch Hilfe, wenn das Kind leidet oder der Alltag leidet. Die Gäste sagen klar: Depressionen sind kein Erziehungsfehler.",
+   "tipps": [
+    "Schaut auf die Veränderung gegenüber dem Grundcharakter: Ein ohnehin ruhiges Kind ist etwas anderes als ein offenes Kind, das sich plötzlich zurückzieht.",
+    "Ordnet ein, ob es zu einer Entwicklungsphase passt, ob es einen Auslöser gab, wie lange es anhält und ob das Kind leidet oder im Alltag (Spielen, Lernen) beeinträchtigt ist.",
+    "Wenn Veränderungen über Wochen und nicht nur Tage anhalten, die Stimmung gereizter wird, die Schulleistung sinkt oder das Kind nicht mehr zur Schule geht, holt euch Hilfe; laut dem Gast ist das ein Hinweis, keine Diagnose.",
+    "Geht bei wiederkehrenden Bauch- oder Kopfschmerzen wie ein Detektiv vor: Kommt es immer vor derselben Situation, vergeht es dort? Lasst körperliche Ursachen mit abklären.",
+    "Nehmt die Gefühle des Kindes ernst und redet sie nicht klein; Sätze wie „Stell dich nicht so an“ können den Selbstwert mindern.",
+    "Lasst das Kind in kleinen Dingen selbst ausprobieren und Probleme lösen, das stärkt laut einer Gästin die Selbstwirksamkeit.",
+    "Prüft bei Stress den Terminkalender: weniger Freizeittermine, Treffen streichen, die auslaugen, und kurze Pausen für euch selbst einbauen.",
+    "Zeigt einem Kind, das sich zurückzieht, immer wieder: Du gehörst zu uns, ich stehe hinter dir. Haltet soziale Kontakte und Bewegung aufrecht, ohne Druck um jeden Preis.",
+    "Sucht für euch selbst Entlastung und professionelle Unterstützung, etwa Beratungsstellen oder Therapie, auch wenn es um ältere Kinder geht, die selbstverletzendes Verhalten oder Suchtmittel nutzen."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Mehrere Fachleute und eine betroffene Mutter kommen bei Daniel Graf und Katja Seide zu Wort. Eine Psychologin will weder dramatisieren noch verharmlosen: Eltern müssen keine Diagnostiker sein, sollen aber Veränderungen ernst nehmen. Ein Kinder- und Jugendpsychiater betont, Depression sei eine schwere Erkrankung und kein Erziehungsfehler; Schuld sieht er nur bei Vernachlässigung oder wenn Eltern zusehen und nichts tun. Er erzählt, dass Jugendliche später oft sagen, das Wichtigste sei gewesen, dass die Eltern hinter ihnen standen. Die Hosts fragen nach dem Spagat zwischen Druck und Rückzug, und er räumt ein, dass es eine Gratwanderung ist. Zu Selbstverletzung sagen Gäste, sie sei zuerst ein Symptom und ein Spannungsabbau, Verbote helfen nicht, Ursachen und Fachleute gehören dazu; Aussagen zu Teenagern gelten hier nur eingeschränkt für Kinder bis zehn. Eine Mutter berichtet, wie sie ihr suchtkrankes Kind begleitete: Vorwürfe aufgeben, Grenzen für sich setzen, die Liebe nicht entziehen; zur Versorgung kritisiert sie lange Wartezeiten und fehlende Nachsorge. Bei Aussagen zu Cannabis vertritt der Psychiater seine persönliche, ablehnende Meinung. Alles hier ist Einschätzung der Gäste und ersetzt keine fachliche Beratung."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 227,
+     "titel": "Wenn kleine Seelen leiden: So begleitest Du Dein Kind bei psychischen Belastungen",
+     "datum": "2026-03-17",
+     "minute": "05:36",
+     "thema": "Veränderung gegenüber dem Grundcharakter erkennen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 227,
+     "titel": "Wenn kleine Seelen leiden: So begleitest Du Dein Kind bei psychischen Belastungen",
+     "datum": "2026-03-17",
+     "minute": "07:13",
+     "thema": "Entwicklungsphase oder Belastungsreaktion?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 124,
+     "titel": "Depressionen bei Kindern",
+     "datum": "2023-10-17",
+     "minute": "03:13",
+     "thema": "Wann Eltern aufhorchen sollten"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 124,
+     "titel": "Depressionen bei Kindern",
+     "datum": "2023-10-17",
+     "minute": "18:48",
+     "thema": "Wie Eltern mit Rückzug und Druck umgehen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 135,
+     "titel": "Kindergesundheit beginnt zu Hause",
+     "datum": "2024-03-19",
+     "minute": "33:04",
+     "thema": "Anzeichen von Stress beim Kind"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 196,
+     "titel": "Sucht verstehen: Was passiert, wenn das eigene Kind abhängig wird?",
+     "datum": "2025-08-12",
+     "minute": "15:36",
+     "thema": "Aus der Vorwurfshaltung aussteigen, kleine Oasen"
+    }
+   ],
+   "verwandt": [
+    "angst-kind",
+    "schulangst",
+    "resilienz",
+    "drogen-alkohol-rauchen",
+    "eltern-psyche-hilfe",
+    "essstoerungen"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Woran erkenne ich, dass mein Kind psychisch belastet ist?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "erwartungen-elternschaft",
@@ -10145,13 +15306,17 @@ window.WISSEN = {
     "Leben nach der Geburt",
     "erstes Kind",
     "bereit für ein Kind",
-    "Babyzeit anstrengend"
+    "Babyzeit anstrengend",
+    "Idealbild Mutterschaft",
+    "Mutterbild",
+    "Überforderung als Mutter"
    ],
    "fragen": [
     "Was sollten werdende Eltern wissen?",
     "Wie verändert sich das Leben mit Baby?",
     "Kann ich mit Baby so weiterleben wie vorher?",
-    "Warum ist die Babyzeit so anstrengend?"
+    "Warum ist die Babyzeit so anstrengend?",
+    "Ist es normal, dass die Realität mit Baby nicht zum Bild aus Werbung und Social Media passt?"
    ],
    "alter": [
     "0-1",
@@ -10168,12 +15333,18 @@ window.WISSEN = {
     "Rechnet nicht mit dem besten Fall: Es ist wahrscheinlicher, dass etwas nicht optimal läuft.",
     "Überlegt, was euch wirklich wichtig ist (Sport, Konzerte), und plant das gezielt ein, aber nicht alles gleichzeitig.",
     "Seid demütig gegenüber Eltern, die schon Kinder haben.",
-    "Schaut auf euer eigenes Temperament, denn was euch schwerfällt, wird wahrscheinlich auch beim Kind Thema, und wenn ihr damit umgehen lernt, könnt ihr es ihm beibringen."
+    "Schaut auf euer eigenes Temperament, denn was euch schwerfällt, wird wahrscheinlich auch beim Kind Thema, und wenn ihr damit umgehen lernt, könnt ihr es ihm beibringen.",
+    "Lest vorab über die Babyzeit, damit ihr später denkt: Das habe ich schon gehört, es ist normal.",
+    "Folgt Accounts, die ehrlich über Elternschaft sprechen, wenn geschönte Bilder euch unter Druck setzen, und erlaubt euch Wut, Erschöpfung und gemischte Gefühle."
    ],
    "sichtweisen": [
     {
      "podcast": "mutti",
      "text": "Die Hosts wollen werdenden Eltern keine Angst machen, sondern zu realistischen Erwartungen raten. Überrascht haben sie vor allem die Härte der Babyzeit, Schwierigkeiten beim Stillen, die Hormonumstellung, extreme Müdigkeit und wie oft Kinder krank sind. Nach ihrer Erfahrung wird der Schlaf ab etwa vier Monaten oft unruhiger, und Erziehung lasse sich nicht im Voraus durchplanen, da Eltern vor allem auf ihr Kind reagieren. Ein Kind sei eine Wundertüte bei Temperament, Schlaf und Gesundheit. Ein Host meint, wer erwartet, dass alles bleibt wie vorher, sei noch nicht bereit für ein Kind, und bezeichnet das selbst als zugespitzte Meinung; beide waren eigenen Angaben nach nicht bereit und bereuen nichts. Eine negative Überraschung kann ihrer Einschätzung nach zu Einsamkeit, Überforderung und Wochenbettdepression beitragen. Als härteste Umstellung nennen sie den Schritt vom ersten zum zweiten Kind. Serien, die Familienleben überspitzt chaotisch zeigen, finden sie realistischer als romantisierende Bilder."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide teilen die Mutti-Sicht, dass sie auf die Babyzeit nicht vorbereitet waren (Abendschreiphasen, kaum Zeit zum Duschen) und dass man sich nicht ganz vorbereiten kann, ein Grundstock an Wissen aber hilft. Sie wollen keine Angst machen, sondern Druck nehmen. Stärker als bei Mutti geht es ihnen und ihren Gästinnen um romantisierte Bilder aus Werbung und sozialen Medien und um das Mutterbild, das Frauen unsichtbare Dauerzuständigkeit zuschreibt. Eine Gästin deutet Erschöpfung und Überforderung deshalb als strukturelles Problem statt als persönliches Scheitern, und Wut, Erschöpfung und Ambivalenz gehörten zur Mutterschaft dazu. Daniel Graf widerspricht außerdem der Annahme, Stillen klappe rein instinktiv: Es sei ein Lernprozess."
     }
    ],
    "quellen": [
@@ -10208,15 +15379,41 @@ window.WISSEN = {
      "datum": "2026-10-14",
      "minute": "1:03:26",
      "thema": "Warum die Erwartung, dass sich alles ändert, gesünder ist"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 78,
+     "titel": "WOW MOM - Schwangerschaft mit Lisa Harmann",
+     "datum": "2022-01-11",
+     "minute": "12:26",
+     "thema": "Überromantisierte Bilder, postnatale Depression"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 223,
+     "titel": "Das patriarchale Mutterbild – warum Gleichberechtigung in Familien scheitert",
+     "datum": "2026-02-17",
+     "minute": "01:19",
+     "thema": "Was ist das patriarchale Mutterbild?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 253,
+     "titel": "Regretting Motherhood - wenn Frauen ihre Mutterschaft bereuen",
+     "datum": "2026-09-15",
+     "minute": "02:08",
+     "thema": "Das Bild von Mutterschaft vor dem ersten Kind"
     }
    ],
    "verwandt": [
     "erste-zeit-mit-baby",
+    "schwangerschaft",
     "wochenbett",
     "erschoepfte-eltern",
-    "temperament-erziehung"
+    "temperament-erziehung",
+    "mutterinstinkt"
    ],
-   "medizinisch": false,
+   "medizinisch": true,
    "einleitung": "Werdende Eltern stellen sich das Leben mit Baby oft ruhiger und planbarer vor, als es dann ist. Die Wirklichkeit weicht häufig deutlich von den Erwartungen ab."
   },
   {
@@ -10368,13 +15565,17 @@ window.WISSEN = {
     "Nervensystem entlasten",
     "zu viele Entscheidungen",
     "Ruhetage",
-    "zu viel Programm"
+    "zu viel Programm",
+    "hochsensibel",
+    "Stresszeichen",
+    "nach der Kita überreizt"
    ],
    "fragen": [
     "Wie kann ich Meltdowns vorbeugen?",
     "Mein Kind ist ständig überreizt, was kann ich ändern?",
     "Soll ich mein Kind viele Entscheidungen treffen lassen?",
-    "Wie viel Programm am Wochenende ist für Kinder okay?"
+    "Wie viel Programm am Wochenende ist für Kinder okay?",
+    "Woran erkenne ich, dass mein Kind gestresst ist?"
    ],
    "alter": [
     "1-3",
@@ -10402,6 +15603,10 @@ window.WISSEN = {
     {
      "podcast": "mutti",
      "text": "Die Hosts betonen den Reizschutz von Kindern stark. Eine Hostin sagt, ständiges Fragen nach Becher- oder Sockenfarbe sei keine Autonomieförderung, sondern belaste das Kind. Kinder, deren Eltern nicht die Führung übernehmen, hätten nach ihrer Ansicht ein dauerhaft überlastetes Nervensystem, weil sie Entscheidungen treffen müssen, für die sie noch nicht bereit sind. Auch Ernährung spielt eine Rolle: Eine Hostin beschreibt, dass schwankender Blutzucker durch viel Zucker Stress für den Körper bedeute, ohne Süßes zu verbieten. Eltern dürfen dabei auch mal die Spaßbremse sein. Sie räumen ein, dass Autonomie ein zweischneidiges Schwert ist und Kinder sich selbstwirksam fühlen müssen. Eine Hostin erzählt, ihr sei erst als Erwachsene klar geworden, wie reizüberflutet sie als Kind war."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide stimmen mit Mutti überein, dass Eltern unterschätzen, wie viel Alltag für Kinder bedeutet, und dass Dosierung und Pausen wichtig sind. Die Gästin einer Folge zu Stress beschreibt, dass sich Überlastung je nach Kind als Weinerlichkeit, Nörgeln, Wut, Kribbeligkeit oder Schlafprobleme zeigt und dass auch schöne Dinge wie Vorfreude oder ein Kindergeburtstag Stress auslösen können. Sie nennt viele Reize (Licht, Geräusche, Gerüche, Etiketten, Nähte, Wärme, Gefühle anderer), die Erwachsene ausblenden, Kinder aber nicht, und rät, den Stressauslösern nachzugehen und sie mit Hilfen wie Sonnenbrille, Gehörschutz oder Rückzug zu verringern. Anders als bei Mutti geht es also stärker um das genaue Erkennen individueller Auslöser, besonders bei hochsensiblen Kindern, und weniger um Führung und Entscheidungen. Ein Gast einer anderen Folge unterscheidet Reize schlückchenweise (kleine Herausforderungen im Alltag) von wasserfallartigen (Handy, Zucker, Dauer-Action) und warnt vor Dauer-Entertainment; er verurteilt Eltern dabei nicht, denn der Druck sei groß. Das sind Einschätzungen der Gäste, keine belegten Tatsachen."
     }
    ],
    "quellen": [
@@ -10436,18 +15641,151 @@ window.WISSEN = {
      "datum": "2026-06-02",
      "minute": "42:50",
      "thema": "Kinder für ihre Reizgrenzen sensibilisieren"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 175,
+     "titel": "Stressbewältigung - was (insbesondere hochsensiblen) Kindern hilft",
+     "datum": "2025-03-18",
+     "minute": "04:14",
+     "thema": "Was Stress mit Kindern macht"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 175,
+     "titel": "Stressbewältigung - was (insbesondere hochsensiblen) Kindern hilft",
+     "datum": "2025-03-18",
+     "minute": "10:03",
+     "thema": "Stressoren herausfinden und reduzieren"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 220,
+     "titel": "ADHS und Abenteuerlust: Warum manche Gehirne mehr Input brauchen",
+     "datum": "2026-01-27",
+     "minute": "31:56",
+     "thema": "Schlückchenweise statt wasserfallartige Reize"
     }
    ],
    "verwandt": [
     "wutanfaelle",
     "routinen",
     "bildschirmzeit",
-    "laute-kinder",
+    "gefuehlsstarke-hochsensible-kinder",
     "gefuehle-begleiten",
     "adhs-eltern"
    ],
    "medizinisch": true,
    "einleitung": "Manche Kinder sind ständig überreizt und erleben immer wieder Meltdowns, oft nach Tagen voller Programm, Lärm und Bildschirmzeit. Eltern suchen nach Wegen, den Alltag so zu gestalten, dass es gar nicht erst so weit kommt."
+  },
+  {
+   "id": "resilienz",
+   "titel": "Resilienz: Kinder innerlich stärken",
+   "synonyme": [
+    "Widerstandskraft",
+    "innere Stärke",
+    "Resilienz fördern",
+    "Schutzfaktoren",
+    "Positive Psychologie",
+    "glückliches Kind",
+    "Wohlbefinden",
+    "Kohärenzgefühl",
+    "Selbstwirksamkeit"
+   ],
+   "fragen": [
+    "Wie mache ich mein Kind resilient?",
+    "Was stärkt Kinder bei Belastungen wie Trennung oder Streit?",
+    "Kann man Resilienz trainieren?",
+    "Wie erziehe ich mein Kind zu einem glücklichen Menschen?",
+    "Kann mein Kind warten lernen?"
+   ],
+   "alter": [
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "gefuehle",
+    "entwicklung",
+    "eltern"
+   ],
+   "kurz": "Resilienz ist laut den Gästen der Hosts keine feste Eigenschaft, sondern eine Fähigkeit, die von Ressourcen abhängt und sich bei Kindern und Eltern trainieren lässt. Der wichtigste Schutzfaktor sind stabile, warme Beziehungen, schon eine verlässliche Person kann viel bewirken. Dazu kommen Gefühle annehmen, Selbstwirksamkeit, Lösungsorientierung und kleine Alltagsübungen für Wohlbefinden.",
+   "tipps": [
+    "Sorgt für stabile, wertschätzende Beziehungen; das können Eltern sein, aber auch Großeltern, Lehrkräfte oder Erziehende.",
+    "Schaut bei einer Herausforderung, welche Ressourcen fehlen, und holt gezielt Unterstützung. Hilfe holen gehört laut einer Gästin zur Selbstwirksamkeit.",
+    "Nehmt Gefühle an, statt sie wegzudrücken. Zuversicht heißt laut einer Gästin nicht, Schmerz und Wut zu übergehen, sondern auch zu sehen, was gut läuft.",
+    "Fragt in Schwierigkeiten weniger nach dem Warum und mehr nach dem Wie, und plant konkrete Lösungen, zum Beispiel für Streit oder Zähneputzen.",
+    "Haltet Zusagen möglichst ein und bleibt bei Entscheidungen, auch wenn ihr Verständnis zeigt. Laut den Hosts lernen Kinder warten eher, wenn Verlässlichkeit da ist; sie dürfen aber auch Enttäuschungen erleben.",
+    "Fördert Selbstständigkeit, Problemlösen und einen freundlichen Blick auf den eigenen Körper, und lebt letzteren vor.",
+    "Schreibt eine Zeit lang abends drei Dinge auf, die gut gelaufen sind, oder erzählt in der Familie bewusst Schönes.",
+    "Nutzt Wartezeiten, Autofahrten oder Abendbrot für kleine Übungen, statt zusätzliche Termine zu schaffen. Beobachtet auch, auf welche Art von Zuwendung euer Kind am meisten anspricht, etwa ungeteilte Zeit, Humor oder Körperkontakt.",
+    "Setzt Familienrituale und Absprachen fest in den Kalender, etwa eine Übergabezeit, wenn der andere Elternteil heimkommt."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide greifen das Thema in mehreren Folgen mit unterschiedlichen Gästen auf. Eine Autorin beschreibt acht Schlüssel (unter anderem Annahme, Zuversicht, Selbstwirksamkeit, Lösungsorientierung) und kritisiert toxische Positivität. Ein Psychologe und eine Gästin der Positiven Psychologie nennen Gene, Lebensumstände und eigenes Verhalten als Anteile am Wohlbefinden, mit unterschiedlichen Prozentzahlen, die sie als Forschungsaussagen einbringen. Beide warnen vor übertriebenem positivem Denken, etwa Affirmationen vor dem Spiegel. Katja Seide hält den Spruch, jeder sei seines Glückes Schmied, für druckerzeugend, und der Gast räumt ein, dass die positive Psychologie den Vorwurf der Überbetonung des Einzelnen gelten lassen muss. Die Hosts betonen, dass Bedürfnisorientierung nicht heißt, das Kind nie zu enttäuschen. Eine weitere Autorin will Töchter widerstandsfähig gegen gesellschaftliche Fehleinstellungen machen und sagt, Liebe allein reiche nicht."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 71,
+     "titel": "Resilienz - 8 Schlüssel für Eltern und Kinder mit Leandra Vogt",
+     "datum": "2021-09-21",
+     "minute": "05:18",
+     "thema": "Schutzfaktor Beziehung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 71,
+     "titel": "Resilienz - 8 Schlüssel für Eltern und Kinder mit Leandra Vogt",
+     "datum": "2021-09-21",
+     "minute": "20:45",
+     "thema": "Die acht Schlüssel"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 162,
+     "titel": "Glücklich und resilient - Kinder mit Positiver Psychologie begleiten",
+     "datum": "2024-12-17",
+     "minute": "17:10",
+     "thema": "Wie unterstützt man Kinder: Zeit und Abwechslung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 114,
+     "titel": "Glück und Wohlbehagen im Familienleben fördern",
+     "datum": "2023-05-30",
+     "minute": "04:54",
+     "thema": "Die PERMA-Formel und positive Gefühle"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 9,
+     "titel": "Schulreife Teil 1 - Motorischer und kognitiver Bereich",
+     "datum": "2019-03-26",
+     "minute": "29:27",
+     "thema": "Mitfühlen und trotzdem gehen, Enttäuschungsexperiment"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 85,
+     "titel": "„Unsere Töchter für ein gleichberechtigtes Leben stärken “New Moms for Rebel Girls - mit Susanne Mierau",
+     "datum": "2022-04-19",
+     "minute": "28:12",
+     "thema": "Die sechs Säulen"
+    }
+   ],
+   "verwandt": [
+    "selbstwert-kind",
+    "frustrationstoleranz",
+    "gefuehle-begleiten",
+    "psychische-gesundheit-kind",
+    "selbststaendigkeit"
+   ],
+   "medizinisch": false,
+   "einleitung": "Viele Eltern kennen diese Situation: „Wie mache ich mein Kind resilient?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "respekt",
@@ -10460,14 +15798,17 @@ window.WISSEN = {
     "Autorität",
     "Würde",
     "Kind beleidigt mich",
-    "Benehmen"
+    "Benehmen",
+    "Tyrannenkind",
+    "Schimpfwörter"
    ],
    "fragen": [
     "Warum hat mein Kind keinen Respekt vor mir?",
     "Wie bringe ich meinem Kind Respekt bei?",
     "Was ist der Unterschied zwischen Respekt und Angst vor den Eltern?",
     "Mein Kind spuckt, ignoriert oder beschimpft mich, was steckt dahinter?",
-    "Wie passt Respekt zur bedürfnisorientierten Erziehung?"
+    "Wie passt Respekt zur bedürfnisorientierten Erziehung?",
+    "Ist die Angst vor dem Tyrannenkind berechtigt?"
    ],
    "alter": [
     "1-3",
@@ -10487,13 +15828,18 @@ window.WISSEN = {
     "Lasst Fragen und Frust des Kindes zu, statt Gehorsam um jeden Preis zu verlangen.",
     "Gebt dem Kind einen sicheren Rahmen, innerhalb dessen es sich frei entfalten kann, und setzt Grenzen ohne Verurteilung.",
     "Definiert für euch selbst, was Respekt bedeutet und welche Strategien euch Respekt geben.",
-    "Beschimpft euch das Kind, übersetzt das Schimpfwort in ein Gefühl („Du bist gerade richtig sauer“) und sprecht später über Bedeutung und Herkunft des Wortes.",
-    "Wenn euch das Thema schwerfällt, nehmt euch ein Verhalten (etwa Spucken oder Ignorieren) und denkt vier Wochen lang darüber nach."
+    "Beschimpft euch das Kind, übersetzt das Schimpfwort in ein Gefühl („Du bist gerade richtig sauer“) und sprecht später über Bedeutung und Herkunft des Wortes Fragt euch auch, was euch früher passiert ist, wenn ihr selbst ein Schimpfwort gesagt habt, denn das prägt laut Kathy Weber euer heutiges Reagieren.",
+    "Wenn euch das Thema schwerfällt, nehmt euch ein Verhalten (etwa Spucken oder Ignorieren) und denkt vier Wochen lang darüber nach.",
+    "Lasst euch von der Angst vor dem „Tyrannenkind“ nicht leiten: Laut André Stern lernt ein respektiertes Kind von euch, was Respekt ist; bei Jugendlichen gilt dasselbe für Augenhöhe und Humor statt Beschämen."
    ],
    "sichtweisen": [
     {
      "podcast": "gfk",
      "text": "Kathy Weber erklärt, dass in der Gewaltfreien Kommunikation Werte und Bedürfnisse dasselbe sind: Respekt ist ein Bedürfnis, kein Anspruch an andere. Der Satz „das ist respektlos“ ist für sie eine Bewertung und keine Beobachtung, und schon dieses Urteil hält sie für respektlos. Ob man sich respektlos behandelt fühlt, entscheidet laut ihr jeder selbst; es sei ein Interpretationsgefühl, kein echtes Gefühl wie Schreck oder Irritation. Kinder tun nichts ohne Grund und versuchen mit jedem Verhalten, ein Bedürfnis zu erfüllen. Respekt und Integrität beschäftigten eher Erwachsene, Kinder seien mit Fürsorge, Sicherheit, Autonomie und Zugehörigkeit befasst. Sie grenzt Respekt klar von Angst ab: Respektierende Kinder beobachten ihre Eltern, stellen Fragen und folgen nicht blind. Kinder, die aus Angst vor Strafe oder für Belohnung handeln, würden hörig. Sogenannte Tyrannen sind für sie kleine Menschen in großer Not, denen Orientierung und Sicherheit fehlen, und sie fragt, wer in solchen Momenten eigentlich respektlos ist. Eltern sind für Kinder natürliche Autoritäten mit Macht und sollen diese fürsorglich einsetzen; die Ordnung im Miteinander gibt man vor. Kathy Weber räumt ein, dass sie selbst mit einem anderen Respektbegriff aufgewachsen ist, dass der Umdenkprozess hart ist und dass es normal ist, wenn Sätze wie „Spucken geht gar nicht“ hochkommen."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "In wunschkind ist Kathy Weber selbst zu Gast bei Daniel Graf und Katja Seide und bleibt bei ihrer Linie: Kinder seien nicht respektlos, „respektlos“ sei eine Bewertung, Schimpfwörter drückten Gefühle und Bedürfnisse aus und seien nur Wörter. Ergänzend kommt André Stern zu Wort, der die Angst vor dem Tyrannenkind für absurd hält, weil ein respektiertes Kind von den Erwachsenen lerne, was Respekt ist; er sagt das bewusst zugespitzt und als persönliche Position. Die Hosts nehmen beides mit Interesse auf, Daniel Graf berichtet, dass ihm das Abgrenzen nach einem Prozess gelungen ist. Bei Jugendlichen nennt eine Gästin Respekt auf Augenhöhe, Humor statt Beschämen und das Eingeständnis eigener Fehler, räumt aber wie die Hosts ein, dass auch sie selbst laut werden. Damit stimmen die Folgen mit gfk überein; neu sind der Blick auf die Prägung durch die eigene Kindheit und das Vorbildlernen."
     }
    ],
    "quellen": [
@@ -10544,6 +15890,22 @@ window.WISSEN = {
      "datum": "2022-02-20",
      "minute": "05:57",
      "thema": "Beispielgespräch: Schimpfwort in Gefühl und Bedürfnis übersetzen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 112,
+     "titel": "Gewaltfreie Kommunikation mit Kathy Weber",
+     "datum": "2023-05-02",
+     "minute": "14:03",
+     "thema": "Schimpfwörter sind einfach Wörter"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 60,
+     "titel": "André Stern \"Die Rhythmen und Rituale unserer Kinder\"",
+     "datum": "2021-04-06",
+     "minute": "40:24",
+     "thema": "Wer hat die Idee des Tyrannenkindes erfunden?"
     }
    ],
    "verwandt": [
@@ -10590,12 +15952,18 @@ window.WISSEN = {
     "Singt abends gemeinsam immer dasselbe Lied.",
     "Begleitet das Zähneputzen mit einem gemeinsamen Zahnputzlied.",
     "Erzählt abends, was am Tag schön war, oder dankt dafür, auch ohne religiösen Bezug.",
-    "Malt gemeinsam ein Bild oder macht zusammen Musik, weil gemeinsames Erschaffen verbindet."
+    "Malt gemeinsam ein Bild oder macht zusammen Musik, weil gemeinsames Erschaffen verbindet.",
+    "Wählt kleine, verbindende Momente, die für alle machbar sind, auch wenn sie nur zehn Minuten dauern, etwa nach stressigen Tagen ein gemeinsames Abendessen.",
+    "Bei großem Altersunterschied zwischen Geschwistern wählt abwechselnd für die Kleinen und für die Älteren aus, zum Beispiel Spielrunden nur mit den Älteren."
    ],
    "sichtweisen": [
     {
      "podcast": "mutti",
      "text": "Die Hosts halten Rituale für wertvoller als reine Routinen und überlegen, später eine eigene Folge dazu zu machen. Sie berufen sich auf ein Buch, nach dem sich beim gemeinsamen Tun Verhalten und Gefühle angleichen und Rituale zugleich Werte einer Kultur vermitteln. Ein abendliches Danken fördert laut dieser Darstellung Optimismus, Dankbarkeit und Empathie. Uneinig sind sie, ob auch Vorlesen ein Ritual ist, da es weniger gemeinsames Erschaffen enthält. Eine Host sagt offen, dass sie Ritual und Routine noch nicht ganz sauber abgrenzen kann."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Die Hosts von „Das gewünschteste Wunschkind“ fassen Rituale lockerer: Sie finden das Wort fast zu hoch und sehen darin eher einen gemeinsamen Rahmen oder ein Angebot, das nach Konflikttagen wieder verbindet. Genannt werden gemeinsames Abendessen, ein Obstteller am Abend, Familienfilmabend oder Spiele; Kinder fordern solche positiven Momente laut den Hosts von selbst ein. Damit stimmen sie mit den Mutti-Hosts überein, dass es um Verbindung geht. Anders als dort steht nicht das Singen oder Danken im Mittelpunkt, sondern kleine, machbare Momente. Negative Rituale wie das Zählen bis drei sind ausdrücklich nicht gemeint, und die Gäste sehen Rituale nicht als Allheilmittel, sondern als einen Tipp, der vielen helfen kann."
     }
    ],
    "quellen": [
@@ -10630,6 +15998,22 @@ window.WISSEN = {
      "datum": "2025-04-29",
      "minute": "41:47",
      "thema": "Routine mit Ritual verbinden"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 76,
+     "titel": "\"Geschwister - eine ganz besondere Liebe\" mit Jan-Uwe Rogge, Alu Kitzerow und Konstantin Manthey",
+     "datum": "2021-11-30",
+     "minute": "50:50",
+     "thema": "Rituale und Geschwisterstreit"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 76,
+     "titel": "\"Geschwister - eine ganz besondere Liebe\" mit Jan-Uwe Rogge, Alu Kitzerow und Konstantin Manthey",
+     "datum": "2021-11-30",
+     "minute": "53:11",
+     "thema": "Obstteller, Filmabend, Spiele"
     }
    ],
    "verwandt": [
@@ -10637,11 +16021,176 @@ window.WISSEN = {
     "zaehne-putzen",
     "geschichten-buecher",
     "bindung",
-    "familienkonferenz",
-    "freizeitstress"
+    "geschwisterstreit",
+    "familienkonferenz"
    ],
    "medizinisch": false,
    "einleitung": "Im Familienalltag fehlt oft das Gefühl von Verbundenheit, und viele Eltern fragen sich, was gemeinsame Rituale dazu beitragen können. Unklar ist ihnen zudem, worin sich Rituale von bloßen Routinen unterscheiden."
+  },
+  {
+   "id": "regression-rueckschritte",
+   "titel": "Rückschritte bei Kindern (Regression)",
+   "synonyme": [
+    "Regression",
+    "Rückfall",
+    "Kind wird wieder Baby",
+    "fällt zurück",
+    "Einnässen nach Trennung",
+    "will wieder Flasche",
+    "braucht wieder Einschlafbegleitung",
+    "Rückschritt Entwicklung"
+   ],
+   "fragen": [
+    "Warum fällt mein Kind plötzlich zurück?",
+    "Mein Kind braucht wieder Einschlafbegleitung, wie lange gehe ich mit?",
+    "Mein Kind nässt nach der Trennung wieder ein, was bedeutet das?",
+    "Wo finde ich Hilfe für mein belastetes Kind?"
+   ],
+   "alter": [
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "entwicklung",
+    "gefuehle",
+    "schlaf"
+   ],
+   "kurz": "Laut zwei Gästinnen von Daniel Graf und Katja Seide zeigen Kinder Überforderung oft, indem sie auf eine frühere Entwicklungsstufe zurückgehen, etwa mehr Nähe, Flasche oder Einnässen. Das sei eine Art Stressabbau und kein Misserfolg der Eltern. Eltern können das kurz mittragen und danach behutsam wieder Richtung Selbstständigkeit gehen. Bei Unsicherheit oder anhaltenden Problemen ist professionelle Beratung sinnvoll.",
+   "tipps": [
+    "Geht die Regression kurz mit: mehr Nähe, mehr Einschlafbegleitung, mehr Tragen, wenn das Kind es gerade braucht.",
+    "Sagt dem Kind, dass ihr den Eindruck habt, es brauche das gerade, und dass es ihm bald wieder besser geht.",
+    "Bestraft Rückschritte nicht, sondern nehmt sie wahr und fragt euch, was das Kind belastet.",
+    "Die Dauer hängt laut einer Gästin von der Größe der Belastung ab, bei einem Trauerfall länger als bei kurzem Schulstress. Sie nennt als Beispiel zwei bis vier Wochen und rät, dabei die eigenen Grenzen im Blick zu behalten.",
+    "Führt das Kind danach schrittweise zurück, etwa von langer Einschlafbegleitung zu Vorlesen und Gute-Nacht-Kuss.",
+    "Nutzt eine Erziehungsberatungsstelle vor Ort als ersten Anlaufpunkt, wenn ihr unsicher seid oder die Rückschritte anhalten."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Die Gästin Michelle Liussi erklärt, die Psyche gehe bei Belastung unbewusst auf ein Entwicklungslevel zurück, in dem Sicherheit und Kompetenz da waren, um Energie zu tanken. Eltern täten dem Kind einen Gefallen, wenn sie das kurz mittragen, eine feste Zeitangabe gebe es aber nicht und Eltern dürften ihre Grenzen ernst nehmen. Die Gästin Ute Steffens beschreibt Rückfälle wie Flasche, Einnässen oder Einkoten als häufigen Ausdruck von Überforderung bei Trennungskindern. Solche Regressionen sollten wahrgenommen werden, seien aber nicht immer auf die Trennung zurückzuführen. Sie nennt Erziehungsberatungsstellen als Anlaufstelle und sagt, nach ihrer Erfahrung reichten oft drei bis zehn Sitzungen, damit Eltern einen inneren Kompass finden. Eine genaue Einordnung sei ohne viele Informationen nicht möglich."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 227,
+     "titel": "Wenn kleine Seelen leiden: So begleitest Du Dein Kind bei psychischen Belastungen",
+     "datum": "2026-03-17",
+     "minute": "15:05",
+     "thema": "Warum Kinder in Belastung zurückfallen und wie lange man mitgeht"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 232,
+     "titel": "Mit Kindern durch die Trennung - Gespräche, Gefühle und neue Strukturen",
+     "datum": "2026-04-21",
+     "minute": "29:17",
+     "thema": "Woran man Überforderung des Kindes erkennt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 232,
+     "titel": "Mit Kindern durch die Trennung - Gespräche, Gefühle und neue Strukturen",
+     "datum": "2026-04-21",
+     "minute": "31:24",
+     "thema": "Belastung einordnen und Unterstützungsmöglichkeiten"
+    }
+   ],
+   "verwandt": [
+    "trennung-scheidung",
+    "trocken-werden",
+    "einschlafen",
+    "psychische-gesundheit-kind",
+    "veraenderungen-umzug"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Warum fällt mein Kind plötzlich zurück?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "schlaflernprogramme",
+   "titel": "Schlaflernprogramme und Schreienlassen",
+   "synonyme": [
+    "Schlaflernprogramm",
+    "Schlaftraining",
+    "Ferber-Methode",
+    "Ferbern",
+    "Schreienlassen",
+    "Einschlaftraining",
+    "Schlafambulanz",
+    "Schlafberatung"
+   ],
+   "fragen": [
+    "Soll ich mein Baby schreien lassen?",
+    "Was ist von Schlaflernprogrammen zu halten?",
+    "Ist Schlaftraining schädlich?",
+    "Woran erkenne ich eine gute Schlafberatung?"
+   ],
+   "alter": [
+    "0-1",
+    "1-3"
+   ],
+   "bereiche": [
+    "schlaf",
+    "baby",
+    "gefuehle"
+   ],
+   "kurz": "Die Hosts und ihre Gäste lehnen Schlaflernprogramme, bei denen Babys schreien gelassen und in wachsenden Abständen beruhigt werden, deutlich ab. Ihre Begründung: Das Kind schlafe aus Resignation oder Erschöpfung ein, nicht aus Sicherheit, und lerne nicht selbstständig zu schlafen. Das ist ihre Einschätzung, belegt wird sie in den Folgen nicht im Detail; bei Schlafproblemen kann ärztlicher oder fachlicher Rat sinnvoll sein.",
+   "tipps": [
+    "Lasst euer Baby für ein Schlaftraining nicht schreien, auch wenn Expertinnen oder Bücher es empfehlen, so die Hosts.",
+    "Wählt eine Beratung, die auf eure Bedenken eingeht, Alternativen zeigt und euch erlaubt, euer Kind zu trösten.",
+    "Seid vorsichtig, wenn Druck entsteht, es müsse um jeden Preis so gemacht werden.",
+    "Sucht bei Unterstützungsbedarf bindungs- und beziehungsorientierte Beraterinnen oder Berater; laut einer Gästin gibt es davon immer mehr."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "In der ersten Folge des Podcasts lehnen die Hosts Schlaflernprogramme sehr deutlich ab. Sie führen sie auf die Methode eines Arztes zurück, der verzweifelten Müttern ein Notfallprogramm gab: schreien lassen, in wachsenden Abständen kurz beruhigen, wieder gehen. Die Methode wirke liebevoll und funktioniere, doch laut den Hosts schlafe das Kind aus Resignation; sie sprechen von Stress und Cortisol, das Gehirn und Angstzentrum beeinflussen könne. Diese Aussagen sind ihre Sicht und werden nicht belegt. Sie kritisieren auch, dass die Methode noch von Eltern, Hebammen und Kinderärzten weiterempfohlen wird. Eine Gästin in einer späteren Folge formuliert vorsichtiger: Kinder lernten vermutlich eher, dass ihr Appell nicht erwidert wird, und forderten bei Entwicklungsphasen oder Krankheit wieder Nähe. Sie schildert zugleich eine Schlafambulanz, die auf ihre Bedenken einging und keinen Druck machte. Katja Seide bleibt dabei: Babys auf keinen Fall schreien lassen."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 1,
+     "titel": "Wie kann man Babys beim Ein- und Durchschlafen helfen",
+     "datum": "2018-12-04",
+     "minute": "17:04",
+     "thema": "Schlaflernprogramme und das Ferber-Buch"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 1,
+     "titel": "Wie kann man Babys beim Ein- und Durchschlafen helfen",
+     "datum": "2018-12-04",
+     "minute": "19:39",
+     "thema": "Warum die Methode funktioniert und was sie im Körper auslöst"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 131,
+     "titel": "Kinder beim Ein- und Durchschlafen bedürfnisorientiert begleiten",
+     "datum": "2024-01-23",
+     "minute": "31:28",
+     "thema": "Was ist ein Schlaftraining"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 131,
+     "titel": "Kinder beim Ein- und Durchschlafen bedürfnisorientiert begleiten",
+     "datum": "2024-01-23",
+     "minute": "35:38",
+     "thema": "Gute Schlafambulanz erkennen"
+    }
+   ],
+   "verwandt": [
+    "babyschlaf",
+    "einschlafen",
+    "durchschlafen",
+    "baby-weinen",
+    "beduerfnisorientierte-erziehung"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Soll ich mein Baby schreien lassen?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "schlechte-gewohnheiten",
@@ -10757,12 +16306,17 @@ window.WISSEN = {
    "tipps": [
     "Findet euer Warum für die Arbeit und euer Warum für die Mutterschaft und fragt, welche Bedürfnisse jeweils zu kurz kommen.",
     "Sucht kleine Stellschrauben wie Zeiteinteilung, Arbeitsort nah am Wohnort oder feste Mama-Zeit-Tage mit einem Kind.",
-    "Macht euch bewusst, dass eure Kinder gut umsorgt sind, und haltet es zur Not schriftlich fest."
+    "Macht euch bewusst, dass eure Kinder gut umsorgt sind, und haltet es zur Not schriftlich fest.",
+    "Wenn ihr Arbeitszeit reduzieren wollt, entscheidet nicht nur nach dem Einkommen, sondern gemeinsam, und bedenkt auch die Folgen für die Rente."
    ],
    "sichtweisen": [
     {
      "podcast": "gfk",
      "text": "Kathy Weber erklärt: Bei der Arbeit erfüllt ihr Selbstbestimmung, Austausch, finanzielle Sicherheit und Wirksamkeit, bei den Kindern Nähe, Verbindung und Liebe. Beides könne man anpassen. Ganz aufzuhören zu arbeiten oder nur zu arbeiten macht laut ihr unglücklich. Das Gefühl kann bleiben, auch wenn der Abschied glatt läuft, weil es um die Länge der Abwesenheit geht. Fürsorglich sein heißt für sie, die Bedürfnisse aller im Blick zu haben, nicht sie immer sofort zu erfüllen. Sie rät, schwarz-weißes Denken zu verlassen."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide sprechen das Thema in einer Folge über Zeitkultur mit einer Gästin an, aber politisch und nicht als Frage des Gewissens. Die Gästin erklärt, die meisten heterosexuellen Paare in Deutschland lebten im modernisierten Ernährermodell (er Vollzeit, sie Teilzeit), weil es kaum anders organisierbar sei, nicht weil Frauen weniger Interesse am Beruf hätten. Sie nennt den Frauengesundheitsbericht des Robert Koch-Instituts von 2020, nach dem sich teilzeitbeschäftigte Mütter gesünder fühlen, und sieht Teilzeit oft als kluge Selbstschutz-Entscheidung, die aber arm machen kann, besonders im Alter. Eltern wünschten sich laut Studien deutlich kürzere Wochenarbeitszeiten als 40 Stunden; die 40-Stunden-Woche hält sie für veraltet. Das sind ihre politischen Positionen, Daniel Graf nennt sie einen interessanten Ansatz. Anders als Kathy Weber (gfk) geht es hier also weniger um den inneren Konflikt als um die Rahmenbedingungen, etwa Betreuungszeiten auf dem Land."
     }
    ],
    "quellen": [
@@ -10789,13 +16343,30 @@ window.WISSEN = {
      "datum": "2023-05-28",
      "minute": "10:09",
      "thema": "Konkrete Stellschrauben und Mama-Zeit-Tag"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 106,
+     "titel": "Eine neue Zeitkultur für mehr Gerechtigkeit, Lebensqualität und gesellschaftlichen Zusammenhalt",
+     "datum": "2023-02-07",
+     "minute": "08:17",
+     "thema": "Teilzeit, Ernährermodell und Gesundheit von Müttern"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 106,
+     "titel": "Eine neue Zeitkultur für mehr Gerechtigkeit, Lebensqualität und gesellschaftlichen Zusammenhalt",
+     "datum": "2023-02-07",
+     "minute": "29:16",
+     "thema": "Arbeitszeitwünsche von Eltern"
     }
    ],
    "verwandt": [
     "trennungsschmerz-abschied",
     "zeit-fuer-sich",
     "mental-load",
-    "kita-eingewoehnung"
+    "kita-eingewoehnung",
+    "familie-gesellschaft"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Wie gehe ich mit schlechtem Gewissen um, wenn ich arbeiten gehe?“. Hier steht, was dahinter stecken kann und was helfen kann."
@@ -10808,12 +16379,17 @@ window.WISSEN = {
     "Baby nimmt keinen Schnuller",
     "Saugbedürfnis",
     "Beruhigungssauger",
-    "Schnuller geben"
+    "Schnuller geben",
+    "Schnuller abgewöhnen",
+    "Daumenlutschen",
+    "Schnullerfee",
+    "Saugverwirrung"
    ],
    "fragen": [
     "Mein Baby nimmt keinen Schnuller, was tun?",
     "Wie gewöhne ich mein Baby an den Schnuller?",
-    "Hilft ein Schnuller beim Autofahren?"
+    "Hilft ein Schnuller beim Autofahren?",
+    "Bis wann darf mein Kind den Schnuller haben?"
    ],
    "alter": [
     "0-1"
@@ -10822,17 +16398,23 @@ window.WISSEN = {
     "baby",
     "alltag"
    ],
-   "kurz": "Viele Babys nehmen den Schnuller nicht von allein, deshalb müsst ihr es aktiv üben und es auch wirklich wollen. Er kann Eltern entlasten, wenn das Baby ein großes Nuckelbedürfnis hat. Er gilt als pragmatische Hilfe, nicht als Dauerlösung.",
+   "kurz": "Viele Babys nehmen den Schnuller nicht von allein, deshalb müsst ihr es aktiv üben und es auch wirklich wollen. Er kann Eltern entlasten, wenn das Baby ein großes Nuckelbedürfnis hat, gilt aber als pragmatische Hilfe, nicht als Dauerlösung. Wann ihr ihn abgewöhnt, sehen die Hosts und ein Zahnarzt als Gast unterschiedlich; bei Zahn- und Stillfragen holt euch im Zweifel ärztlichen Rat.",
    "tipps": [
     "Gewöhnt den Schnuller in entspannten Situationen an, nicht erst, wenn das Baby schon weint.",
     "Haltet ihn locker fest, streicht unter dem Kinn entlang, um den Saugreflex auszulösen, und steckt ihn geduldig immer wieder rein.",
     "Gebt ihn, wenn das Baby nur nuckeln und sich beruhigen will, denn bei Hunger nimmt es ihn nicht.",
-    "Nutzt den Schnuller beim Autofahren und im Kinderwagen, wo er ein großer Gewinn war."
+    "Nutzt den Schnuller beim Autofahren und im Kinderwagen, wo er ein großer Gewinn war.",
+    "Greift, wenn ihr einen Schnuller gebt, nach Möglichkeit zu flachen, zahnschonenden Modellen; ein Zahnarzt als Gast hält den Schnuller bis etwa zwei Jahre für vertretbar.",
+    "Überlegt früh, wie ihr ihn wieder abgewöhnt, zum Beispiel ruckartig im Urlaub oder mit der Schnullerfee. Die Hosts rechnen mit großen Unterschieden, bei manchen Kindern ist der Abschied nach zwei, drei Tagen vergessen, bei anderen heftig."
    ],
    "sichtweisen": [
     {
      "podcast": "mutti",
      "text": "Die Hosts erzählen von ihrem dritten Baby, dem sie den Schnuller bei reinem Nuckelbedürfnis gaben, um es zu beruhigen. Sie sehen ihn als Entlastung für Eltern und rechnen damit, sich mit dem Rat, ihn aktiv anzugewöhnen, unbeliebt zu machen, stehen aber dazu."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide ordnen den Schnuller als individuelle Abwägung ein: Saugen beruhigt und hilft vielen Kindern beim Einschlafen, und wer nicht den halben Tag an der Brust stillen möchte, kann bei hohem Saugbedürfnis laut den Hosts guten Gewissens einen Sauger geben. Als größte Gefahr bei gestillten Babys nennen sie die Saugverwirrung. Das deckt sich mit der pragmatischen Linie des mutti-Podcasts. Neu kommt die Frage nach dem Abgewöhnen: Ein Zahnarzt als Gast hält den Schnuller bis etwa zwei Jahre für vertretbar und rät, ihn spätestens mit zweieinhalb bis drei Jahren abzugewöhnen, Katja Seide sieht das entspannter und betont die Selbstberuhigung ihres Kindes. Eine Stillberaterin im Gespräch sieht den Schnuller als Hilfsmittel nach dem Motto so viel wie nötig, so wenig wie möglich und bemängelt, dass kaum jemand zum Abgewöhnen berät."
     }
    ],
    "quellen": [
@@ -10851,6 +16433,30 @@ window.WISSEN = {
      "datum": "2026-03-17",
      "minute": "49:01",
      "thema": "Schnuller beim Autofahren und im Kinderwagen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 108,
+     "titel": "Wie Zähne stark und gesund bleiben",
+     "datum": "2023-03-07",
+     "minute": "27:36",
+     "thema": "Schnuller: Selbstregulation oder Zähne"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 108,
+     "titel": "Wie Zähne stark und gesund bleiben",
+     "datum": "2023-03-07",
+     "minute": "30:03",
+     "thema": "Abgewöhnen: Methoden"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 256,
+     "titel": "Stillen - wie es zu dir und deinem Baby passt",
+     "datum": "2026-10-06",
+     "minute": "14:52",
+     "thema": "Schnuller als Hilfsmittel, Nuckeln an der Brust"
     }
    ],
    "verwandt": [
@@ -10858,11 +16464,308 @@ window.WISSEN = {
     "wochenbett",
     "autofahrten",
     "erschoepfte-eltern",
-    "durchschlafen",
-    "stillen"
+    "stillen",
+    "durchschlafen"
+   ],
+   "medizinisch": true,
+   "einleitung": "Manche Babys nehmen keinen Schnuller, obwohl sie ein großes Nuckelbedürfnis haben und Eltern sich Entlastung wünschen. Eltern wissen nicht, wie sie ihr Baby daran gewöhnen können."
+  },
+  {
+   "id": "schreibaby",
+   "titel": "Schreibaby: Hilfe, wenn nichts tröstet",
+   "synonyme": [
+    "Schreikind",
+    "Baby schreit ständig",
+    "untröstlich",
+    "exzessives Schreien",
+    "Schreiambulanz",
+    "Schütteltrauma",
+    "Regulationsstörung",
+    "Osteopathie Baby"
+   ],
+   "fragen": [
+    "Mein Baby schreit stundenlang, was kann ich tun?",
+    "Wo bekomme ich Hilfe bei einem Schreibaby?",
+    "Was tun, wenn ich vor Verzweiflung das Baby schütteln könnte?",
+    "Hilft Osteopathie bei Schreibabys?"
+   ],
+   "alter": [
+    "0-1"
+   ],
+   "bereiche": [
+    "baby",
+    "eltern",
+    "gefuehle"
+   ],
+   "kurz": "Bei Schreibabys setzt das Schreien laut den Hosts oft schlagartig und ohne Vorzeichen ein, was Eltern an ihre Grenzen bringt. Wichtigster Schritt in der Not: das Baby sicher ablegen und weggehen, statt es zu schütteln. Als Hilfe nennen die Hosts und ein Gast Schreiambulanzen, Kinderärztin oder Kinderarzt und Frühe Hilfen; bei Osteopathie sei die Beleglage laut dem Gast dünn.",
+   "tipps": [
+    "Wenn ihr merkt, dass ihr dem Baby etwas antun könntet: Legt es sicher ins Bettchen oder auf den Boden, geht sofort aus dem Raum und baut die Anspannung draußen ab. Schütteln kann laut den Hosts zu schweren Verletzungen oder zum Tod führen.",
+    "Sagt Partner, Partnerin oder Nachbarin Bescheid, damit jemand nach dem Baby schaut und euch ablöst.",
+    "Holt euch früh Hilfe: erste Ansprechperson ist die Kinderärztin oder der Kinderarzt; hilfreich können auch Schreiambulanzen, Frühe Hilfen, Emotionelle Erste Hilfe oder ähnliche Angebote sein.",
+    "Seid vorsichtig mit teuren Wundermitteln: Laut einem Gast gibt es für Osteopathie bei Schreibabys keine überzeugenden Belege, geprüfte Hilfe sei besser."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide sprechen offen über Überforderung und extreme Gefühle. Eine Host erzählt, dass das Schreien ihres Kindes Hilflosigkeit, Versagensgefühle und Perfektionismus verstärkte und sie zeitweise Verständnis für Eltern entwickelte, die in Verzweiflung ein Baby schütteln. Der wichtigste Schritt sei, das Baby sicher abzulegen und wegzugehen. In einer späteren Folge zur Kinderosteopathie ordnet ein Gast die Studien ein: Die oft genannten großen Erfolge stammten aus Untersuchungen ohne Kontrollgruppe, und eine neuere Studie fand zwischen Osteopathie und leichter Berührung keinen Unterschied. Er zeigt Verständnis für Eltern, die jeden Strohhalm nutzen wollen, empfiehlt aber geprüfte Anlaufstellen. Alles hier ist Erfahrung und Einschätzung der Hosts und des Gasts; bei starkem oder plötzlich verändertem Schreien klärt eine Ärztin oder ein Arzt ab."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 119,
+     "titel": "Babys verstehen und gelassen begleiten",
+     "datum": "2023-08-08",
+     "minute": "21:09",
+     "thema": "Erfahrung mit einem Schreibaby und der Impuls zu schütteln"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 119,
+     "titel": "Babys verstehen und gelassen begleiten",
+     "datum": "2023-08-08",
+     "minute": "22:39",
+     "thema": "Hilfsangebote und Notfalltipp"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 216,
+     "titel": "Kinderosteopathie - Wunderhände oder Wunschdenken",
+     "datum": "2025-12-30",
+     "minute": "36:22",
+     "thema": "Welche Fachstellen sinnvoller sind: Kinderarzt, Frühe Hilfen, Schreiambulanz"
+    }
+   ],
+   "verwandt": [
+    "baby-weinen",
+    "erschoepfte-eltern",
+    "erste-zeit-mit-baby",
+    "eltern-psyche-hilfe",
+    "babyschlaf",
+    "bauch-verdauung"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Mein Baby schreit stundenlang, was kann ich tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "schulangst",
+   "titel": "Schulangst und Schulverweigerung",
+   "synonyme": [
+    "Schulphobie",
+    "Kind will nicht zur Schule",
+    "Bauchweh vor der Schule",
+    "Angst vor Referaten",
+    "Versagensangst",
+    "Prüfungsangst",
+    "Schulvermeidung",
+    "Kind meldet sich nicht",
+    "selektiver Mutismus"
+   ],
+   "fragen": [
+    "Mein Kind will nicht in die Schule, was tun?",
+    "Mein Kind hat morgens Bauchschmerzen vor der Schule",
+    "Mein Kind meldet sich nicht und hat Angst vor Referaten",
+    "Mein Kind hat Angst vor schlechten Noten",
+    "Mein Kind spricht in Kita oder Schule nicht, ist das Schüchternheit?"
+   ],
+   "alter": [
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "gefuehle",
+    "kita",
+    "entwicklung"
+   ],
+   "kurz": "Laut den Gästen der Hosts solltet ihr Tränen, Bauchweh und Verweigerung ernst nehmen und herausfinden, was dahintersteckt: Leistungsdruck, Auslachen, Trennung, Langeweile oder eine eigene Angst. Holt die Schule früh mit ins Boot und bleibt Anker für euer Kind. Bei körperlichen Beschwerden oder anhaltendem Schweigen kann fachliche Abklärung nötig sein; das ist Erfahrung der Gäste und keine ärztliche Beratung.",
+   "tipps": [
+    "Nehmt Schulunlust samt Tränen und Bauch- oder Kopfweh ernst und findet heraus, was dahintersteckt, bevor ihr eine Erklärung festlegt.",
+    "Sucht das Gespräch mit der Schule und lasst euch das Problem nicht einfach zurückgeben. Ein Dreiecksgespräch von Lehrkraft, Eltern und Kind hilft: Was fehlt dir, was brauchst du, wann geht es dir gut?",
+    "Schaut genau hin, wovor sich euer Kind fürchtet: Klassenarbeiten, Auslachen, Trennung, Mobbing oder Angst vor Übelkeit und Erbrechen. Laut einer Gästin brauchen die Ursachen unterschiedliche Wege, deshalb ist eine genaue Abklärung wichtig.",
+    "Fragt die Lehrkraft nach Erleichterungen bei Referaten, etwa Kärtchen, ein Vortrag per Video oder in kleiner Runde, und übt vorher zu Hause.",
+    "Übt Sprechen vor anderen in kleinen Alltagsschritten, zum Beispiel einen Termin telefonisch ausmachen oder an der Theke bestellen.",
+    "Schafft zu Hause eine Fehlerkultur und fördert den Vergleich mit dem eigenen früheren Stand statt mit anderen Kindern. Prüft auch, ob ihr selbst Druck macht.",
+    "Stärkt das Selbstvertrauen über Hobbys außerhalb der Schule und helft dem Kind, sich über eine Aufgabe in der Gemeinschaft mit der Schule zu verbinden.",
+    "Setzt ein Kind, das in bestimmten Situationen nicht sprechen kann, nicht unter Druck, und sprecht auch nicht ständig für es. Informiert Kita und Schule und holt Fachleute, die sich mit selektivem Mutismus auskennen.",
+    "Holt euch bei langer Schulverweigerung Unterstützung wie Schulpsychologischen Dienst, Coach oder Jugendamt."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Mit Inke Hummel sprechen die Hosts über schüchterne Kinder und Angst vor Referaten. Sie rät, zuerst hinzuschauen, was in der Schule wirklich passiert, die Lehrkraft offen anzusprechen und nicht jede Aufgabe für alle gleich zu machen. Frühe mündliche Anforderungen findet sie grundsätzlich gut, kritisiert aber, dass sie oft ohne Übung kommen. Bei Schulverweigerung wirbt sie dafür, die Schule mit ins Boot zu holen; Druck von Eltern gehe an der leichtesten Stelle raus, meist beim Kind. Eine Autorin und Mutter schildert, wie ihr hochbegabter Sohn zwei Jahre die Schule verweigerte und erst an einer Förderschule für Hochbegabte aufblühte; sie weist selbst darauf hin, dass dieser Weg für viele ein Widerspruch ist. Eine Gästin zu Emetophobie trennt Schulangst (Leistung), Schulphobie (Trennung) und Angst vor Erbrechen, und eine Familiencoachin warnt bei selektivem Mutismus vor Druck, aber auch vor Überbehüten. Katja Seide bringt Lehrerperspektive ein; ein Host erzählt von einem Kind, das jahrelang fast täglich nicht zur Schule wollte."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 147,
+     "titel": "Beziehungsorientiert durch die Grundschulzeit",
+     "datum": "2024-09-03",
+     "minute": "11:08",
+     "thema": "Dreiecksgespräch mit Lehrkraft, Eltern und Kind"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 208,
+     "titel": "Emetophobie - Angst vor Übelkeit und Erbrechen",
+     "datum": "2025-11-04",
+     "minute": "35:16",
+     "thema": "Schulangst, Mobbing, Schulphobie und Emetophobie"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 144,
+     "titel": "Ängste bei Kindern begleiten und eigene Ängste bewältigen",
+     "datum": "2024-07-23",
+     "minute": "17:42",
+     "thema": "Versagensangst, Perfektionismus, Vergleich"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 64,
+     "titel": "Schüchterne Kinder mit Inke Hummel",
+     "datum": "2021-06-01",
+     "minute": "17:31",
+     "thema": "Referate und mündliche Mitarbeit"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 174,
+     "titel": "Hochbegabt gescheitert - wenn Kinder nicht ins System passen",
+     "datum": "2025-03-11",
+     "minute": "22:26",
+     "thema": "Underachievement erklärt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 185,
+     "titel": "Selektiver Mutismus - wenn Kinder in besonderen Situationen nicht mit anderen sprechen können",
+     "datum": "2025-05-27",
+     "minute": "28:21",
+     "thema": "Warum Kita und Schule informiert sein müssen"
+    }
+   ],
+   "verwandt": [
+    "schuechternheit",
+    "angst-kind",
+    "mobbing",
+    "hochbegabung",
+    "schule-lehrkraft-kontakt",
+    "bauch-verdauung"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind will nicht in die Schule, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "schule-lernen",
+   "titel": "Schule und Lernen: Motivation, Noten, Überforderung",
+   "synonyme": [
+    "Schulmotivation",
+    "keine Lust auf Schule",
+    "schlechte Noten",
+    "Zeugnis",
+    "Schulstress",
+    "Bauchschmerzen vor der Schule",
+    "Schulwechsel",
+    "Schulwahl",
+    "Lernfreude",
+    "Montessori Waldorf"
+   ],
+   "fragen": [
+    "Mein Kind hat keine Lust aufs Lernen, was kann ich tun?",
+    "Wie reagiere ich auf eine schlechte Note?",
+    "Soll ich mein Kind für gute Noten belohnen?",
+    "Mein Kind hat Bauchschmerzen vor der Schule, woran liegt das?",
+    "Welche Schule passt zu meinem Kind?",
+    "Mein Kind sagt, es sei schlecht in Mathe, was sage ich?"
+   ],
+   "alter": [
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "entwicklung",
+    "gefuehle",
+    "alltag"
+   ],
+   "kurz": "Laut Daniel Graf, Katja Seide und ihren Gästen lernen Kinder vor allem dann gern, wenn sie Sinn, Selbstwirksamkeit und Zuwendung erleben, und weniger durch Druck, Noten oder Belohnung. Eltern können viel bewirken, indem sie Gefühle ernst nehmen, Anstrengung statt Ergebnis würdigen und bei anhaltender Belastung früh hinschauen.",
+   "tipps": [
+    "Lobt Anstrengung und Vorgehen statt Talent und fragt nach einem Fehler, wie es beim nächsten Mal besser klappen könnte. Statt „kann ich nicht“ hilft „kann ich noch nicht“.",
+    "Bei einer schlechten Note: Erst das Gefühl ernst nehmen („das tut mir leid, ich verstehe, dass du traurig bist“) und nicht abwiegeln. Danach auf Stärken schauen und gemeinsam überlegen, was sich ändern lässt.",
+    "Gebt dem Kind einen selbst gewählten Bereich, in dem es sich wirksam erlebt, zum Beispiel eine AG oder ein Hobby. Das kann nach Einschätzung eines Gastes mehr bringen als sofort Nachhilfe.",
+    "Verzichtet auf Belohnungen für gute Noten. Der Gast Bob Blume warnt, dass dann das Lernen hinter die Note zurücktritt und ein Ausbleiben doppelt weh tut.",
+    "Baut Brücken zwischen Schulstoff und den Interessen des Kindes und fragt gemeinsam, wozu etwas gut sein kann.",
+    "Achtet auf Warnsignale, die anhalten: Rückzug, Niedergeschlagenheit, Ängste, Schmerzen ohne klaren Grund, Schlaf- oder Essveränderungen. Sprecht ruhig und ohne Bewertung mit dem Kind darüber.",
+    "Gebt bei Übergängen wie Schulstart oder Wechsel auf die weiterführende Schule zwei bis drei Monate Zeit, bevor ihr eingreift. Hält ein Problem etwa ein halbes Jahr an, lohnt sich laut Blume die Frage nach einer anderen Schule.",
+    "Bei der Schulwahl gilt: Kind vor Konzept. Nutzt Tage der offenen Tür, achtet auf die Stimmung und tauscht euch mit Eltern aus, deren Kinder schon dort sind.",
+    "Gebt Grundschulkindern Räume für Selbstständigkeit und stärkt sie mit Leidenschaften außerhalb der Schule."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Die Hosts sind sich mit ihren Gästen weitgehend einig, dass Schule zu oft den Stoff über das Kind stellt. Der Lehrer Bob Blume sagt, Motivation brauche Kompetenzerleben, Eingebundenheit und Autonomie, und erklärt Noten für wenig aussagekräftig und nicht objektiv. Er lehnt Belohnung und Beschämung ab, will aber nicht dogmatisch sein: Über gute Noten dürfe man sich freuen. André Stern geht weiter: Lernen passiere einem, Mühe als Wert sei überschätzt, und „Ich bin schlecht in Mathe“ sei nach seiner Aussage so nicht korrekt. Die Lehrerin Saskia Niechzial hält Alternativschulen für kindgerechter, sieht aber auch, dass vieles an den Lehrkräften hängt und solche Schulen oft nur für zahlende Familien erreichbar sind. Sie rät dennoch zu Kind vor Konzept und erzählt, dass ihr eigenes Kind an einer einfachen staatlichen Schule gut aufgehoben ist. Katja Seide, selbst Lehrerin, teilt die Kritik an Lehrerausbildung und starrem Unterricht. Zahlen und Gehirnaussagen kommen von den Gästen und werden von den Hosts nicht hinterfragt."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 226,
+     "titel": "Wie kommt mein Kind gut durch die Schule?",
+     "datum": "2026-03-10",
+     "minute": "05:55",
+     "thema": "Was Motivation braucht: Kompetenz, Eingebundenheit, Autonomie"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 226,
+     "titel": "Wie kommt mein Kind gut durch die Schule?",
+     "datum": "2026-03-10",
+     "minute": "22:34",
+     "thema": "Alarmsignale für echte Überforderung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 51,
+     "titel": "Probleme in der Schule mit Saskia Niechzial",
+     "datum": "2020-11-17",
+     "minute": "44:16",
+     "thema": "Wie unterstütze ich bei Misserfolgen?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 155,
+     "titel": "Warum noch lernen? Wie Schule heute aussehen muss",
+     "datum": "2024-10-29",
+     "minute": "07:15",
+     "thema": "Prüfungen und alternative Prüfungsformate"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 146,
+     "titel": "Den Schulanfang bindungsorientiert begleiten",
+     "datum": "2024-08-20",
+     "minute": "17:23",
+     "thema": "Wie finde ich die passende Schulform"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 60,
+     "titel": "André Stern \"Die Rhythmen und Rituale unserer Kinder\"",
+     "datum": "2021-04-06",
+     "minute": "29:56",
+     "thema": "Lernen ist nichts, das wir tun, sondern das uns passiert"
+    }
+   ],
+   "verwandt": [
+    "schulstart",
+    "schulangst",
+    "schule-lehrkraft-kontakt",
+    "loben",
+    "belohnungssysteme",
+    "perfektionismus-fehler"
    ],
    "medizinisch": false,
-   "einleitung": "Manche Babys nehmen keinen Schnuller, obwohl sie ein großes Nuckelbedürfnis haben und Eltern sich Entlastung wünschen. Eltern wissen nicht, wie sie ihr Baby daran gewöhnen können."
+   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind hat keine Lust aufs Lernen, was kann ich tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "schulreife-rueckstellung",
@@ -10879,7 +16782,8 @@ window.WISSEN = {
    "fragen": [
     "Woran merke ich, dass mein Kind schulreif ist?",
     "Soll ich mein Kind zurückstellen lassen?",
-    "Wann ist eine frühere Einschulung sinnvoll?"
+    "Wann ist eine frühere Einschulung sinnvoll?",
+    "Gibt es ein bestes Einschulungsalter?"
    ],
    "alter": [
     "3-6"
@@ -10894,12 +16798,18 @@ window.WISSEN = {
     "Beobachtet das Kind in verschiedenen Bereichen, auch emotional und sozial, nicht nur bei Stifthaltung oder Zusammenhängen.",
     "Löst euch von äußeren Erwartungen und Wünschen wie einem früheren Abitur.",
     "Nutzt die Monate bis zur Einschulung, vermeintliche Schwächen zu stärken, etwa Selbstwert und Umgang mit Gefühlen.",
-    "Tauscht euch mit den pädagogischen Fachkräften aus, wenn ihr eine ähnliche Sprache sprecht."
+    "Tauscht euch mit den pädagogischen Fachkräften aus, wenn ihr eine ähnliche Sprache sprecht.",
+    "Schaut auf das, was euer Kind schon gut kann, und auf Entwicklungsfelder, bei denen ihr es unterstützen könnt.",
+    "Vertraut eurem Bauchgefühl: Eltern spüren laut der Gästin meist schon, wohin es geht; zögert ihr, ist ein Jahr mehr Zeit in der Regel ratsamer, wenn ihr die Wahl habt."
    ],
    "sichtweisen": [
     {
      "podcast": "gfk",
      "text": "Kathy Weber vertritt eine individuelle Entscheidung nach Beobachtung und eigenem Elterngefühl. Bei der Schuluntersuchung werde ihrer Erfahrung nach fast nur Kognitives geprüft, die emotionale Reife, die sie für einen gefestigten Start enorm wichtig hält, dagegen nicht. Ist ein Kind kognitiv und emotional weit und langweilt sich in der Kita, spreche nichts gegen eine frühere Einschulung. Sie selbst hat beide Kinder zurückstellen lassen: eines wegen Alter, Verspieltheit und Sprache, das andere wegen fehlender emotionaler Reife trotz kognitiver Schulreife."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Die Hosts und eine Gästin (Lehrerin) liegen nah bei Kathy Weber (gfk), setzen aber andere Akzente. Katja Seide kritisiert, dass die Schuleingangsuntersuchung fast nur Fachliches prüft; sie schaut selbst auf Fragen wie: Kann mein Kind sagen, was es will, auf andere zugehen, mit Misserfolgen umgehen? Sie ließ ihr Kind trotz guter Lese- und Rechenfähigkeiten erst mit fast sieben einschulen und betont, dass das ihre persönliche Entscheidung war. Die Gästin sagt, wissenschaftlich lasse sich kein optimales Einschulungsalter bestimmen, und spricht lieber von Schulfähigkeit als von Schulreife. Aus ihrer Erfahrung tut Zeit den Kindern tendenziell gut, vor allem emotional und sozial; eine Pauschalregel sei das aber nicht, und auch früh eingeschulte Kinder schafften es gut. Weber ist bei der Rückstellung klarer entscheidungsorientiert, die Gästin legt mehr Gewicht darauf, was die Schule selbst leisten muss."
     }
    ],
    "quellen": [
@@ -10926,12 +16836,38 @@ window.WISSEN = {
      "datum": "2023-06-11",
      "minute": "13:36",
      "thema": "Zusammenfassung der Beobachtungsfragen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 146,
+     "titel": "Den Schulanfang bindungsorientiert begleiten",
+     "datum": "2024-08-20",
+     "minute": "05:23",
+     "thema": "Einschulungsalter: früher einschulen oder zurückstellen, was sagt die Wissenschaft"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 146,
+     "titel": "Den Schulanfang bindungsorientiert begleiten",
+     "datum": "2024-08-20",
+     "minute": "10:10",
+     "thema": "Schulfähigkeit statt Schulreife"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 51,
+     "titel": "Probleme in der Schule mit Saskia Niechzial",
+     "datum": "2020-11-17",
+     "minute": "1:03:41",
+     "thema": "Emotionale und soziale Reife"
     }
    ],
    "verwandt": [
     "schulstart",
     "kita-allgemein",
-    "selbstwert-kind"
+    "selbstwert-kind",
+    "erwartungen-zuschreibungen",
+    "hochbegabung"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Woran merke ich, dass mein Kind schulreif ist?“. Hier steht, was dahinter stecken kann und was helfen kann."
@@ -10949,7 +16885,12 @@ window.WISSEN = {
     "Hausaufgaben",
     "Schulanfang",
     "Hausaufgabenstreit",
-    "Keine Lust auf Hausaufgaben"
+    "Keine Lust auf Hausaufgaben",
+    "Vorschulpubertät",
+    "Schulhofreife",
+    "Schulfähigkeit",
+    "Schuleingangsuntersuchung",
+    "Schleife binden"
    ],
    "fragen": [
     "Wie bereite ich mein Kind auf die Schule vor?",
@@ -10957,7 +16898,8 @@ window.WISSEN = {
     "Wie bereite ich mich als Elternteil auf die Schule vor?",
     "Wie bleibe ich bei Hausaufgaben geduldig?",
     "Wann ist der richtige Zeitpunkt für die Einschulung?",
-    "Mein Kind hat keine Lust auf Hausaufgaben, was tun?"
+    "Mein Kind hat keine Lust auf Hausaufgaben, was tun?",
+    "Mein Vorschulkind rastet ständig aus, ist das normal?"
    ],
    "alter": [
     "3-6",
@@ -10971,12 +16913,12 @@ window.WISSEN = {
    "kurz": "Die Schulvorbereitung beginnt nicht erst kurz vor der Einschulung, sondern in der ganzen Erziehung. Wichtiger als Schulstoff sind Selbstständigkeit, Verantwortung, Frustrationstoleranz, Impulskontrolle und soziale Kompetenz. Kathy Weber (gfk) ergänzt, dass die Eltern zuerst ihre eigenen Sorgen bei sich klären und dem Kind in diesem großen Übergang viel Orientierung, Nähe und Sicherheit geben sollten. Bei Hausaufgaben raten Nicola Schmidt (artgerecht) und Kathy Weber, mit dem Kind gemeinsam nach Lösungen zu suchen, statt Machtkämpfe zu führen.",
    "tipps": [
     "Gebt eurem Kind Alltagsaufgaben, zum Beispiel allein ein Eis kaufen, ein Brötchen bestellen, Salz bei der Nachbarin holen oder den Geschirrspüler ausräumen.",
-    "Verzichtet auf zusätzliche Arbeitsblätter und Rechenübungen vor der Einschulung und genießt die gemeinsame Familienzeit, denn Lesen, Rechnen und Schreiben ist Aufgabe der Schule.",
-    "Übt Regeln, Verlieren und Zuhören im Alltag, etwa mit Brett- und Kartenspielen, Vorlesen sowie Sport oder Chor im Verein.",
+    "Verzichtet auf zusätzliche Arbeitsblätter und Rechenübungen vor der Einschulung, denn Lesen, Rechnen und Schreiben ist Aufgabe der Schule. Wollt ihr fördern, dann unverschult mit Gesellschaftsspielen und Reimbüchern, und gebt keine Übungshefte, wenn das Kind keine Lust hat.",
+    "Übt Regeln, Verlieren und Zuhören im Alltag, etwa mit Brett- und Kartenspielen, Vorlesen sowie Sport oder Chor im Verein. Schleifebinden ist keine Voraussetzung, Klettschuhe fürs Sportzeug tun es auch.",
     "Klärt eure eigenen Sorgen und Bedürfnisse rund um die Schule bei euch selbst, statt sie auf das Kind zu übertragen, und vermeidet Druck-Sätze wie „Jetzt beginnt der Ernst des Lebens“. Überlegt früh, welche Haltung ihr vermitteln wollt (ernst nehmen, aber nicht zu ernst) und welche Schwierigkeiten euer Kind haben könnte.",
-    "Besorgt Infos zu Stundenplan, Tagesablauf und Ablauf der Einschulung, geht den Schulweg ab und spielt den Schultag durch. Übt den früheren Aufbruch schon einige Wochen vorher, damit ihr pünktlich ankommt.",
+    "Besorgt Infos zu Stundenplan, Tagesablauf und Ablauf der Einschulung, geht den Schulweg ab und spielt den Schultag durch; ängstlichen Kindern hilft es, die Schule vorab kennenzulernen (Schnuppertag, Turnhalle, Toilette, Schulhof). Übt den früheren Aufbruch schon einige Wochen vorher.",
     "Gebt Sicherheit mit, etwa ein Mutmachtier, ein Foto oder einen Duft im Ranzen, und besprecht Sicherheitsregeln wie nicht mit Fremden mitgehen, Bescheid sagen, wohin man geht, und nur von abgesprochenen Personen abgeholt werden.",
-    "Rechnet in den ersten Wochen mit mehr Anhänglichkeit und Gefühlsschwankungen, schenkt mehr Nähe, plant keine Nachmittagsverabredungen und holt das Kind früh ab.",
+    "Rechnet in den ersten Wochen mit mehr Anhänglichkeit und Gefühlsschwankungen, schenkt mehr Nähe, plant keine Nachmittagsverabredungen und holt das Kind früh ab. Gebt auch Widerwillen und Angst Raum.",
     "Plant für Hausaufgaben vorab, wie ihr reagieren wollt, wenn euer Kind etwas nicht versteht, und bleibt freundlich im Ton, ohne euch mit eurem Wissen aufzudrängen, wenn das Kind es anders gelernt hat.",
     "Bei Hausaufgabenfrust beginnt mit Einfühlung („Du hast keine Lust, willst es aber schaffen“), benennt das Thema gemeinsam und stellt Wie-Fragen. Lasst das Kind mitentscheiden, womit es anfängt, erlaubt Pausen, probiert Ideen wie in einer Probewoche aus, und macht bei Überforderung Schluss und klärt mit der Lehrkraft, wie viel wirklich verlangt war."
    ],
@@ -10992,6 +16934,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber sieht die Einschulung als einen der größten Übergänge im Leben, bei dem zuerst die Eltern gefragt sind: Eigene Ängste gehören euch, und Etiketten wie „Vorschulkind“ oder Sätze wie „Du wirst schon sehen“ setzen das Kind unter Druck. Das Kind müsse nicht alles schon können, es brauche bedingungslose Liebe und viel Orientierung. Laut ihrem Konzept fallen Kinder bei großen Veränderungen auf das Bedürfnis nach Sicherheit zurück; Anhänglichkeit oder Abschiedsschwierigkeiten seien deshalb kein Rückschritt, sondern wie drei Treppenstufen hoch und zwei zurück. Konkret rät sie, den Schulalltag vorab durchzuspielen, Infos zu holen und das Sicherheitsbedürfnis eher zu reichlich als zu knapp zu erfüllen. Bei Hausaufgaben vertritt sie, dass sie keine Pflicht sind, sondern eine Empfehlung, und dass Eltern nicht die Lehrkraft des Kindes sind: Sie beobachten, was das Kind braucht, und übernehmen gegenüber der Lehrkraft die Verantwortung, wenn nicht alles geschafft wird. Damit ist sie bei Druckvermeidung und gemeinsamer Lösungssuche nah an den mutti-Hosts und an artgerecht, wirkt aber festlegter als die Hosts, die offen zugeben, nicht zu wissen, wie sie reagieren werden. Ihre Hinweise zu Hausaufgaben bei Teenagern bleiben hier außen vor."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Die Hosts und ihre Gäste halten Vorbereitung für mehr als Wissen und sehen Schulfähigkeit in emotionalen, motorischen, sozialen und kognitiven Bereichen; Katja Seide nennt die „Schulhofreife“ fast wichtiger als die Schulreife. Die Ausbrüche vor der Einschulung („Vorschulpubertät“) erklären sie nicht mit Hormonen, das nennen sie eine Urban Legend, sondern mit der Hilflosigkeit und Angst vor dem Unbekannten, die Kinder nicht in Worte fassen können. Damit stehen sie nah bei Kathy Weber (gfk) und den Mutti-Hosts: Eltern sollen eigene Sorgen sortieren, nicht mit Druck-Sätzen arbeiten und in den ersten Wochen mehr Nähe erlauben. Anders als bei Weber gibt es hier viel Alltagsübung, etwa Bestellen beim Bäcker, Aufträge im Supermarkt oder Navigationsspiele, und die Gäste raten zu Klettschuhen statt zu Schleifenbinden. Eine Pädagogin stellt Beziehungsstärke und Bewältigungskraft über Abhaklisten und warnt davor, dem Kind alle Stolpersteine aus dem Weg zu räumen. Bei Hausaufgaben sind sie kritischer als die anderen Podcasts: Sie halten sie für wenig sinnvoll, empfehlen aber pragmatisch ein Zeitlimit, Verständnis zeigen und mit der Lehrkraft über weniger Umfang sprechen."
     }
    ],
    "quellen": [
@@ -11042,18 +16988,272 @@ window.WISSEN = {
      "datum": "2025-09-22",
      "minute": "03:17",
      "thema": "Funktionieren und Blick der Eltern auf Hausaufgaben"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 146,
+     "titel": "Den Schulanfang bindungsorientiert begleiten",
+     "datum": "2024-08-20",
+     "minute": "31:04",
+     "thema": "Der harte Übergang von der Kita in die Schule und emotionale Brücken"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 8,
+     "titel": "Die Vorschulpupertät",
+     "datum": "2019-03-12",
+     "minute": "02:31",
+     "thema": "Hormonmythos und die Erklärung Hilflosigkeit"
     }
    ],
    "verwandt": [
     "selbststaendigkeit",
     "frustrationstoleranz",
     "verantwortung-uebertragen",
+    "erwartungen-zuschreibungen",
     "kita-allgemein",
-    "adhs-kind",
-    "morgenroutine"
+    "schulreife-rueckstellung"
    ],
    "medizinisch": false,
    "einleitung": "Vor der Einschulung fragen sich viele Eltern, was ihr Kind schon können muss und ob sie vorab Lesen und Schreiben üben sollten. Auch die eigene Rolle bei Aufbruchszeiten und Hausaufgaben verunsichert sie."
+  },
+  {
+   "id": "schwangerschaft",
+   "titel": "Schwangerschaft: Müdigkeit, Ängste, Ratschläge",
+   "synonyme": [
+    "Schwangerschaftsmüdigkeit",
+    "Erschöpfung Schwangerschaft",
+    "müde in der Schwangerschaft",
+    "Ruhe in der Schwangerschaft",
+    "Mittagsschlaf Schwangerschaft",
+    "mit dem Bauch sprechen",
+    "Bonding in der Schwangerschaft",
+    "Hypnobirthing",
+    "Angst in der Schwangerschaft",
+    "Ratschläge Schwangerschaft",
+    "nicht gern schwanger",
+    "Sex in der Schwangerschaft"
+   ],
+   "fragen": [
+    "Ich bin in der Schwangerschaft ständig müde, was tun?",
+    "Soll ich mich in der Schwangerschaft krankschreiben lassen?",
+    "Wie starte ich mit Reserven in die Babyzeit?",
+    "Wie baue ich Kontakt zum Baby im Bauch auf?",
+    "Alle geben mir ungefragt Ratschläge zur Schwangerschaft, was tun?",
+    "Ich bin nicht gern schwanger, bin ich eine schlechte Mutter?"
+   ],
+   "alter": [
+    "0-1"
+   ],
+   "bereiche": [
+    "baby",
+    "eltern"
+   ],
+   "kurz": "Eine der Hosts erlebt in der Schwangerschaft eine so starke Müdigkeit, dass sie zeitweise im Stehen einschläft; ihre Erfahrung: Wer über die eigenen Grenzen geht, bezahlt das später. Daneben sprechen die Hosts mit Gästinnen über Ängste, ungefragte Ratschläge und die Rolle der Partner. Das sind persönliche Erfahrungen, kein ärztlicher Rat; bei Unsicherheit fragt eure Ärztin, euren Arzt oder eure Hebamme.",
+   "tipps": [
+    "Hört auf euren Körper und schlaft, wenn möglich, auch tagsüber.",
+    "Wenn die Müdigkeit zu groß ist, lasst euch nach Rücksprache krankschreiben.",
+    "Startet mit Reserven in die Babyzeit statt mit einem Minus.",
+    "Beschreibt dem Baby im Bauch, was ihr spürt und wie ihr euch fühlt, etwa: \"Du bewegst dich, das freut mich.\"",
+    "Bedankt euch beim Baby für sein Feedback, zum Beispiel für einen Tritt.",
+    "Redet oder schreibt über eure Ängste, wenn euch das hilft, und holt euch bei starken Ängsten früh Unterstützung, auch jenseits der medizinischen Kontrolle.",
+    "Wenn Ratschläge verunsichern: bedanken, zuhören, dann selbst entscheiden. Lasst euch von Kommentaren zu Risiken nicht verrückt machen.",
+    "Als Partner zeigt Solidarität und Wertschätzung, fragt, wie ihr helfen könnt, und nehmt als Schwangere auch Hilfe an.",
+    "Fragt bei Unsicherheit (zum Beispiel zu Sexualität oder Blutungen) offen eure Ärztin oder euren Arzt; eine Gästin betont, dass bei Risikoschwangerschaft gezielt abgeraten wird."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "mutti",
+     "text": "Die Hosts räumen ein, dass sich nicht alle Schwangeren Ruhe leisten können. Erholung sehen sie trotzdem als wichtige Vorsorge für die Zeit nach der Geburt. Eine Host berichtet aus eigener Erfahrung, dass sie in einer Schwangerschaft zeitweise im Stehen einschlief, und rät, mit Reserven statt mit einem Minus in die Babyzeit zu gehen."
+    },
+    {
+     "podcast": "gfk",
+     "text": "Kathy Weber erklärt in einer Folge zur Praxis der Gewaltfreien Kommunikation (GfK: Beobachtung, Gefühl, Bedürfnis, Bitte), dass man damit schon in der Schwangerschaft anfangen kann. Man spricht mit dem Ungeborenen, benennt eigene Gefühle und Bedürfnisse und beschreibt, was man im Bauch spürt. Ein Tritt lässt sich so in Worte fassen, die sowohl das kurze Wehtun als auch die Freude über die Kraft des Kindes enthalten. Eine Gesprächspartnerin erzählt von einem Morgenritual mit Bauchmassage und Trommeln, das sie als schön erlebt. Kathy Weber versteht das als spielerischen Einstieg zum Üben, nicht als Pflicht. Das ist ein anderer Schwerpunkt als bei den Mutti-Hosts, die vor allem über Erholung sprechen."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide sprechen mit Gästinnen vor allem über das Gefühlsleben in der Schwangerschaft. Eine Gästin sagt, Schwangere hätten ein Recht, auch unglücklich zu sein, das mache sie nicht zur schlechteren Mutter; gegen Ängste gebe es kein Patentrezept, ihr helfe Reden und Aufschreiben. Zu ungefragten Ratschlägen heißt es: freundlich bedanken, die Sorge dahinter sehen und trotzdem selbst entscheiden; Bauchtatschen sei übergriffig. Partner sollten laut der Gästin Solidarität und Wertschätzung zeigen, damit die Gleichberechtigung nicht verrutscht. Eine andere Gästin stellt eine psychologische Begleitung vor der Geburt vor und räumt selbst ein, dass es dazu bisher vor allem Beobachtungsstudien gibt; die Hosts fragen nach Belegen. Mit den mutti-Hosts und gfk teilt der Podcast, dass Schwangerschaft auch emotional begleitet werden soll. Anders ist, dass hier Ängste und Außendruck im Mittelpunkt stehen und weniger Erholung oder Kontakt zum Baby."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "mutti",
+     "nr": 27,
+     "titel": "Kinder stressfrei ins Bett bringen",
+     "datum": "2025-08-05",
+     "minute": "01:15",
+     "thema": "Mittagsschlaf in der Schwangerschaft"
+    },
+    {
+     "podcast": "mutti",
+     "nr": 27,
+     "titel": "Kinder stressfrei ins Bett bringen",
+     "datum": "2025-08-05",
+     "minute": "03:21",
+     "thema": "Mit Reserven in die Babyzeit gehen"
+    },
+    {
+     "podcast": "gfk",
+     "nr": 4,
+     "titel": "003: P- wie Praxis: ab wann und wie kann ich die GfK mit meinem Baby praktizieren.",
+     "datum": "2019-03-03",
+     "minute": "04:01",
+     "thema": "GfK schon in der Schwangerschaft"
+    },
+    {
+     "podcast": "gfk",
+     "nr": 4,
+     "titel": "003: P- wie Praxis: ab wann und wie kann ich die GfK mit meinem Baby praktizieren.",
+     "datum": "2019-03-03",
+     "minute": "07:02",
+     "thema": "Die vier Schritte mit dem Baby im Bauch üben"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 78,
+     "titel": "WOW MOM - Schwangerschaft mit Lisa Harmann",
+     "datum": "2022-01-11",
+     "minute": "09:25",
+     "thema": "Ängste und Vorsorge"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 78,
+     "titel": "WOW MOM - Schwangerschaft mit Lisa Harmann",
+     "datum": "2022-01-11",
+     "minute": "15:44",
+     "thema": "Ratschläge von Oma, Mantra-Sätze"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 213,
+     "titel": "Die Bindungsanalyse - emotionale Begleitung vor und während der Schwangerschaft",
+     "datum": "2025-12-09",
+     "minute": "04:04",
+     "thema": "Warum Ängste in der Schwangerschaft im Fokus stehen"
+    }
+   ],
+   "verwandt": [
+    "erschoepfte-eltern",
+    "geburt",
+    "wochenbett",
+    "erste-zeit-mit-baby",
+    "bindung",
+    "dorf-unterstuetzung"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Ich bin in der Schwangerschaft ständig müde, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "krise-krankheit-familie",
+   "titel": "Schwere Krankheit und Krise in der Familie",
+   "synonyme": [
+    "Mama hat Krebs",
+    "Elternteil schwer krank",
+    "Kindern Krankheit erklären",
+    "schwerstkrankes Kind",
+    "Kinderhospiz",
+    "Haushaltshilfe",
+    "Familienkrise",
+    "Krieg und Krisen erklären",
+    "krank als Mutter"
+   ],
+   "fragen": [
+    "Wie sage ich meinen Kindern, dass ich schwer krank bin?",
+    "Welche Hilfe gibt es, wenn ein Elternteil lange ausfällt?",
+    "Wie schaffe ich den Alltag während einer Chemotherapie?",
+    "Wie begleitet man ein schwerstkrankes Kind?",
+    "Darf ich mich als kranke Mama ausruhen?",
+    "Wie spreche ich mit meinem Kind über Krieg und Krisen?"
+   ],
+   "alter": [
+    "0-1",
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "eltern",
+    "gefuehle",
+    "alltag"
+   ],
+   "kurz": "In mehreren Folgen berichten betroffene Eltern von einer Krebserkrankung in der Familie und vom Leben mit einem schwerstkranken Kind. Gemeinsam ist ihnen: offen und kindgerecht sprechen, den Alltag auf das Wesentliche zusammenstreichen und früh Hilfe annehmen. Es sind persönliche Erfahrungen, keine allgemeingültigen Ratschläge und kein medizinischer oder rechtlicher Rat; Fragen zu Behandlung, Anträgen und Ansprüchen klärt mit Ärzten, Beratungsstellen oder Krankenkasse.",
+   "tipps": [
+    "Nennt die Krankheit beim Namen und erklärt kindgerecht, was passieren wird, zum Beispiel Haarausfall, Müdigkeit und dass Ärzte sich kümmern. Zwei betroffene Mütter berichten, dass Kinder ohnehin spüren, wenn etwas nicht stimmt.",
+    "Nehmt euch ein paar Tage, um euch selbst zu sortieren, bevor ihr den Kindern Details erzählt. Informiert je nach Alter und Bedürfnis des einzelnen Kindes, auch Geschwister dürfen unterschiedlich viel wissen.",
+    "Streicht aus dem Alltag alles Verzichtbare, auch Termine und Menschen, die nicht guttun. Eine Gästin sah den engsten Familienkern als das Wesentliche und alles andere als Zugabe.",
+    "Holt euch früh Unterstützung: Haushaltshilfe über die Krankenkasse, Beratung der Krebsgesellschaft, psychoonkologische Angebote, Selbsthilfegruppen. Bittet konkret um Hilfe, statt darauf zu warten, dass andere es merken.",
+    "Informiert nahe Bezugspersonen in Kita oder Schule, damit die Kinder dort Entlastung finden. Diese Entscheidung treffen die Eltern, nicht die Kinder.",
+    "Nutzt für Informationen verlässliche Quellen wie Broschüren und Leitlinien statt Suchmaschinen, die laut einer Gästin vor allem Angst machen.",
+    "Haltet schöne Alltagsmomente mit den Kindern als Foto oder Video fest. Plant als Paar kleine Inseln, etwa einen Abend auf dem Sofa.",
+    "Bei einem schwerstkranken Kind erlebten Eltern ein Palliativteam und ein Kinderhospiz als große Entlastung. Sie erlaubten sich dort auch Lachen und Feste und durften aktiv mitpflegen, statt nur zuzuschauen.",
+    "Bei Fragen von Kindern zu Krieg und Krisen: fragt zuerst zurück, was das Kind gesehen und verstanden hat, bleibt sachlich und zeigt, wo man helfen kann."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide hören in diesen Folgen überwiegend zu und fragen nach. Eine Mutter mit Brustkrebs, eine weitere Mutter mit einer Krebsdiagnose und Eltern eines schwerstkranken Sohnes schildern, wie die Krankheit den Alltag fremdbestimmt, welche Bürokratie hinzukommt und was ihnen half. Sie betonen jeweils, dass jeder Weg anders ist, und sprechen auch kritisch über Lücken, etwa bei der Haushaltshilfe, bei Sozialleistungen oder beim Fachkräftemangel in der Kinderintensivpflege. Eine Gästin rät ausdrücklich, bei der Schulmedizin zu bleiben; Bewegung oder Ernährung könnten unterstützen, aber die Therapie nicht ersetzen. Ergänzend erklären ein Autor und eine Autorin in zwei Folgen, wie Eltern mit Kindern über Krieg und Krisen sprechen: sachlich bleiben, Hoffnung geben, ehrlich über eigene Sorgen sein und gemeinsam handeln. Die Hosts räumen dabei ein, dass ihnen Zuversicht angesichts der Klimakrise nicht leichtfällt. Wo Eltern selbst krank sind, kritisieren die Hosts außerdem den Gedanken, sich durchzuschleppen: Ein Ausnahmezustand darf Regeln außer Kraft setzen."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 18,
+     "titel": "Schwere Krankheit und Tod Teil 2 Wenn Eltern schwer erkranken",
+     "datum": "2019-07-30",
+     "minute": "05:20",
+     "thema": "Wie die Kinder über die Krankheit informiert wurden"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 236,
+     "titel": "Meine Familie, der Krebs und ich",
+     "datum": "2026-05-19",
+     "minute": "08:57",
+     "thema": "Wie sagt man es den Kindern, Kita und Schule informieren"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 236,
+     "titel": "Meine Familie, der Krebs und ich",
+     "datum": "2026-05-19",
+     "minute": "06:45",
+     "thema": "Der fremdbestimmte Alltag während der Behandlung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 18,
+     "titel": "Schwere Krankheit und Tod Teil 2 Wenn Eltern schwer erkranken",
+     "datum": "2019-07-30",
+     "minute": "10:53",
+     "thema": "Haushaltshilfe, Jugendamt, psychoonkologische Unterstützung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 19,
+     "titel": "Schwere Krankheit und Tod Teil 3 - Wenn das eigene Kind stirbt",
+     "datum": "2019-08-13",
+     "minute": "28:05",
+     "thema": "Was Eltern entlastete: Palliativteam, Kinderhospiz, Freunde"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 99,
+     "titel": "Mit Kindern über Krieg und Katastrophen sprechen mit Rüdiger Maas",
+     "datum": "2022-11-01",
+     "minute": "10:24",
+     "thema": "Mit Gegenfragen herausfinden, was das Kind mitbekommen hat"
+    }
+   ],
+   "verwandt": [
+    "tod-trauer",
+    "eltern-psyche-hilfe",
+    "psychische-gesundheit-kind",
+    "dorf-unterstuetzung",
+    "schock-trauma-begleiten"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Wie sage ich meinen Kindern, dass ich schwer krank bin?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "schuechternheit",
@@ -11064,15 +17264,22 @@ window.WISSEN = {
     "Selbstvertrauen Kind",
     "ins kalte Wasser werfen",
     "Eingewöhnung dauert lange",
-    "Kindergeburtstag will nicht hin"
+    "Kindergeburtstag will nicht hin",
+    "Schüchternheit Temperament",
+    "Angst vor Menschenmengen",
+    "soziale Ängste",
+    "Überbehütung"
    ],
    "fragen": [
     "Wie stärke ich ein schüchternes Kind?",
     "Soll ich mein schüchternes Kind ins kalte Wasser werfen?",
     "Mein Kind sagt Nein zum Kindergeburtstag, was tun?",
-    "Die Eingewöhnung in der Kita dauert ewig, ist das normal?"
+    "Die Eingewöhnung in der Kita dauert ewig, ist das normal?",
+    "Mein Kind hat Angst vor vielen Menschen, was tun?",
+    "Wann sollte ich mit einem schüchternen Kind zum Psychologen?"
    ],
    "alter": [
+    "1-3",
     "3-6",
     "6-10"
    ],
@@ -11086,12 +17293,19 @@ window.WISSEN = {
     "Beobachtet, was euer Kind braucht, und gebt Führung, Orientierung und Sicherheit statt Druck.",
     "Meldet euer Kind ab, wenn es klar zeigt, dass etwas zu viel ist (zum Beispiel eine Klassenfahrt); vielleicht will es im nächsten Jahr von selbst mit.",
     "Respektiert ein Nein zum Kindergeburtstag; wenn das Kind dazugehören möchte, helft ihr beim Hingehen. Es darf seine Meinung bis kurz vorher ändern.",
-    "Bereitet vor, was das Kind in einer unbekannten Situation tun kann, etwa wo es im Notfall nach der Mama fragt, und übt zwei einfache Fragen zum Merken."
+    "Bereitet vor, was das Kind in einer unbekannten Situation tun kann, etwa wo es im Notfall nach der Mama fragt, und übt zwei einfache Fragen zum Merken.",
+    "Sucht einen Bereich, in dem euer Kind Leidenschaft und gute Erlebnisse hat, zum Beispiel ein Hobby in kleiner Gruppe; das stärkt laut der Gästin sein Selbstvertrauen.",
+    "Vermeidet nicht dauerhaft Situationen, die dem Kind Angst machen, sondern setzt es immer wieder behutsam hinein und traut ihm etwas zu.",
+    "Sprecht nicht vor dem Kind über seine Schüchternheit und sagt, dass sein Verhalten euch anstrengt, nicht dass das Kind anstrengend ist. Holt euch bei extremen Hemmungen, Verstummen oder Tics Rat bei Fachleuten."
    ],
    "sichtweisen": [
     {
      "podcast": "gfk",
      "text": "Kathy Weber erzählt, ihre Tochter habe sechs Jahre gebraucht, um in der Kita wirklich anzukommen; für sie ist Eingewöhnung beendet, wenn das Kind sich sicher fühlt. Sie führt die spätere Selbstständigkeit auf Führung, Liebe und Fürsorge von Geburt an zurück. Mit etwa sieben Jahren ging das Kind auf einem Turnier allein zur Meldestelle. Sie grenzt sich klar von Pädagoginnen ab, die schüchterne Kinder ins kalte Wasser werfen wollen; das habe sich für sie nie richtig angefühlt. Kinder müssten nicht alles schaffen."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "In „Das gewünschteste Wunschkind“ spricht die Gästin Inke Hummel über Schüchternheit als Temperamentsmerkmal, das weder gut noch schlecht sei: Der Furchtmechanismus springe schneller an, neue und reizreiche Situationen verunsicherten stärker. Wie Kathy Weber lehnt sie Druck und Zwang ab; mit guter Beziehung, Zeit und kleinen Schubsern komme man meist aus. Sie differenziert aber stärker zwischen Selbstbewusstsein (sich kennen und für sich sorgen) und Selbstvertrauen und rät, dem Kind in einem Bereich, den es möchte, ein bisschen mehr zuzutrauen, als das Eltern-Herz gut findet. Sie warnt außerdem vor Überbehütung und davor, Situationen aus Fürsorge dauerhaft zu vermeiden; ein Kind solle immer wieder, nicht täglich, behutsam hineinkommen. Professionelle Hilfe hält sie bei extremen Hemmungen, Tics, Verstummen in bestimmten Situationen oder anhaltender Stagnation für sinnvoll, meist sei es aber nicht nötig. Die Hosts stimmen weitgehend zu."
     }
    ],
    "quellen": [
@@ -11126,13 +17340,39 @@ window.WISSEN = {
      "datum": "2024-08-26",
      "minute": "12:46",
      "thema": "Herzensmoment: Tochter und Turnier"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 64,
+     "titel": "Schüchterne Kinder mit Inke Hummel",
+     "datum": "2021-06-01",
+     "minute": "03:01",
+     "thema": "Was Schüchternheit ist"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 64,
+     "titel": "Schüchterne Kinder mit Inke Hummel",
+     "datum": "2021-06-01",
+     "minute": "09:18",
+     "thema": "Zwang oder Ermutigung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 64,
+     "titel": "Schüchterne Kinder mit Inke Hummel",
+     "datum": "2021-06-01",
+     "minute": "25:52",
+     "thema": "Wann psychologische Hilfe sinnvoll ist"
     }
    ],
    "verwandt": [
     "selbstwert-kind",
     "kita-eingewoehnung",
     "selbststaendigkeit",
-    "fremdeln"
+    "fremdeln",
+    "angst-kind",
+    "freundschaften"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Wie stärke ich ein schüchternes Kind?“. Hier steht, was dahinter stecken kann und was helfen kann."
@@ -11152,7 +17392,10 @@ window.WISSEN = {
     "laut denken",
     "Mitdenken lernen",
     "Autonomiephase",
-    "Selber machen wollen"
+    "Selber machen wollen",
+    "Verwöhnen Selbstständigkeit",
+    "Verbundenheit statt Selbstständigkeit",
+    "Aufgaben im Haushalt"
    ],
    "fragen": [
     "Wie fördere ich Selbstständigkeit bei meinem Kind?",
@@ -11160,7 +17403,8 @@ window.WISSEN = {
     "Ab wann können Kinder im Haushalt helfen?",
     "Wie nah muss ich auf dem Spielplatz beim Kind sein?",
     "Wie helfe ich einem unsicheren Kind, mehr allein zu tun?",
-    "Wie bringe ich meinem Kind bei mitzudenken?"
+    "Wie bringe ich meinem Kind bei mitzudenken?",
+    "Wie viel kann ich meinem Kind zutrauen?"
    ],
    "alter": [
     "1-3",
@@ -11196,6 +17440,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber erklärt Selbstständigkeit über das Bedürfnis nach Autonomie, das Kinder von Natur aus mitbringen und das das ganze Leben begleitet. In ihrem Konzept der „lila Liebe“ gibt es drei Autonomiephasen: etwa 1,5 bis 5 Jahre selber machen, etwa 5 bis 8 Jahre selber entscheiden, ab etwa 9 Jahren selber Erfahrungen sammeln. Eltern sollen jeweils den Rahmen erweitern, in dem das Kind selbst tun oder entscheiden darf. Feste Altersvorgaben und Druck lehnt sie ab, ebenso Lob; stattdessen beschreibt sie, was das Kind getan hat. Unterstützung macht Kinder in ihrer Sicht nicht unselbstständig, und Rückschritte oder Tage mit mehr Nähe gehören dazu, dann helft ihr ohne Verweis auf frühere Erfolge. Mit mutti und artgerecht teilt sie das Ziel, schrittweise Verantwortung abzugeben. Anders als mutti, das auf Aufgaben, Erinnern nur einmal und Frust aushalten setzt, steht bei ihr das Bedürfnis hinter dem Verhalten im Mittelpunkt, und Eltern nehmen den Druck raus, dass ein Kind schon selbstständig sein müsse."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "In „Das gewünschteste Wunschkind“ tauchen zwei Linien auf. Zum einen fordern Gast und Hosts, Kindern echte Aufgaben im Haushalt zu geben und dabei zu bleiben, auch wenn das Kind zunächst nicht will; in den zwei Jahren vor der Schule solle die Haltung zu „Du bist jetzt größer“ kippen, und Konflikte darum lehre das Aushandeln. Eltern, die sofort springen, nähmen dem Kind laut den Hosts die Chance auf Impulskontrolle, und sie sagen, Eltern trauten Kindern oft zu wenig zu. Das liegt nah bei mutti. Zum anderen sagt ein Gast, viele alte Glaubenssätze („nicht verwöhnen“, früh allein schlafen) drehten sich um ein überholtes Selbstständigkeitsverständnis; Nähe- oder Liebesentzug führe nicht zu Selbstständigkeit. Er stellt Verbundenheit in den Mittelpunkt, Eltern sollten beim Regulieren helfen, damit das Kind seine Kräfte entwickelt. Das ähnelt Kathy Webers Blick auf das Bedürfnis. Eine Gästin erinnert außerdem daran, dass Selbstständigkeit viele Hirnleistungen voraussetzt und Eltern Druck von außen nicht ungefiltert weitergeben sollten."
     }
    ],
    "quellen": [
@@ -11206,14 +17454,6 @@ window.WISSEN = {
      "datum": "2026-07-07",
      "minute": "08:44",
      "thema": "Aufgaben wie Spülmaschine ausräumen und Verantwortung übertragen"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 30,
-     "titel": "Kinder zum Aufräumen motivieren",
-     "datum": "2025-08-26",
-     "minute": "12:34",
-     "thema": "Warum Kinder mitmachen wollen und welche Rolle sie dadurch bekommen"
     },
     {
      "podcast": "mutti",
@@ -11240,14 +17480,6 @@ window.WISSEN = {
      "thema": "Kleinkindern fehlt die Erfahrung, Prozesse transparent machen"
     },
     {
-     "podcast": "artgerecht",
-     "nr": 34,
-     "titel": "So lernt dein Kind mitzudenken",
-     "datum": "2025-03-11",
-     "minute": "04:16",
-     "thema": "Konkretes Beispiel: Glas umgekippt"
-    },
-    {
      "podcast": "gfk",
      "nr": 170,
      "titel": "Selbstständigkeit bei Kindern: Wie du sie durch alle drei Autonomiephasen stärkst – Herzensmomente",
@@ -11262,6 +17494,22 @@ window.WISSEN = {
      "datum": "2022-07-10",
      "minute": "05:19",
      "thema": "Kein fester Altersrichtwert, Selbstständigkeit ohne Druck"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 73,
+     "titel": "\"GOOD ENOUGH PARENTS\" mit Domenik Schuster und Susanne Mierau",
+     "datum": "2021-10-19",
+     "minute": "06:50",
+     "thema": "Überholtes Verständnis von Selbstständigkeit, Verbundenheit statt Selbstständigkeit"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 10,
+     "titel": "Schul(hof)reife Teil 2 - Emotioner und sozialer Bereich",
+     "datum": "2019-04-09",
+     "minute": "22:09",
+     "thema": "Haushaltsaufgaben und Aufgaben als Schulvorbereitung"
     }
    ],
    "verwandt": [
@@ -11270,7 +17518,7 @@ window.WISSEN = {
     "aufraeumen-haushalt",
     "risiko-freiheit",
     "anziehen",
-    "beduerfnisse-erkennen"
+    "abenteuer-mut"
    ],
    "medizinisch": false,
    "einleitung": "Eltern nehmen ihren Kindern im Alltag oft vieles ab und erinnern sie ständig an alles. Das kostet Nerven, und die Kinder bleiben trotzdem abhängig."
@@ -11287,14 +17535,18 @@ window.WISSEN = {
     "Ich kann das nicht",
     "Ich bin hässlich",
     "Selbstvertrauen",
-    "Selbstliebe"
+    "Selbstliebe",
+    "Selbstwirksamkeit",
+    "Selbstbild",
+    "Selbstsicherheit"
    ],
    "fragen": [
     "Mein Kind sagt „Ich bin dumm“, was tun?",
     "Mein Kind sagt „Ich kann das nicht“ und gibt auf",
     "Wie stärke ich das Selbstwertgefühl meines Kindes?",
     "Mein Kind findet sich hässlich",
-    "Wie stärke ich meinen eigenen Selbstwert als Elternteil?"
+    "Wie stärke ich meinen eigenen Selbstwert als Elternteil?",
+    "Mein Kind sagt, es sei schlecht in Mathe, was tun?"
    ],
    "alter": [
     "1-3",
@@ -11306,22 +17558,26 @@ window.WISSEN = {
     "entwicklung",
     "eltern"
    ],
-   "kurz": "Kathy Weber sieht Selbstwert als Bedürfnis, das auf fundierter Bindung wächst und über die ganze Kindheit reift. Wenn ein Kind „Ich bin dumm“ oder „Ich kann das nicht“ sagt, übersetzt sie das in einen Wunsch (etwas können oder verstehen wollen), statt zu widersprechen. Wichtig ist ihr, dass Eltern Schutzschild sind, Selbstwert vorleben und das Kind selbst entscheiden lassen, wie es über sich denkt.",
+   "kurz": "Kathy Weber sieht Selbstwert als Bedürfnis, das auf fundierter Bindung wächst und über die ganze Kindheit reift. Wenn ein Kind „Ich bin dumm“ oder „Ich kann das nicht“ sagt, übersetzt sie das in einen Wunsch (etwas können oder verstehen wollen), statt zu widersprechen. Wichtig ist ihr, dass Eltern Schutzschild sind, Selbstwert vorleben und das Kind selbst entscheiden lassen, wie es über sich denkt. Gäste von wunschkind ergänzen, dass Selbstvertrauen aus eigenen Erfahrungen und Zutrauen entsteht und dass eine einzelne Erfahrung noch keine Identität ist.",
    "tipps": [
     "Übersetzt „Ich kann das nicht“ mit Empathie („Du würdest das gern können und weißt nicht, wie?“) und fragt: Was würde dir helfen?",
     "Widerlegt negative Sätze nicht und verurteilt sie nicht; nehmt sie mit Gefühl und Bedürfnis auf („Wärst du gern schlauer?“, „Bist du traurig oder sauer?“).",
     "Ergänzt einen stärkenden Satz in Ich-Form ohne „nicht“, etwa „Ich probiere, es zu schaffen“, und sprecht ihn gemeinsam oder stellvertretend für das Kind.",
-    "Verankert solche Sätze im Alltag mit Melodie oder Bewegung, zum Beispiel auf dem Weg zur Kita oder Schule, im Auto oder zum Einschlafen. Das Kind muss nicht mitsprechen.",
     "Feiert Gelungenes gemeinsam („Du hast es allein geschafft“) und wiederholt das Feiern später am Tag. Unterstützt Autonomie mit „Ich bin da, damit du es allein schaffst“.",
-    "Bei „Ich bin dumm“ in der Schule: Gefühl und Bedürfnis spiegeln, dann gemeinsam Lösungen suchen (erklären, aufmalen, Lehrkraft fragen, Kopfhörer) und fragen, wo sich das Kind gut fühlt.",
-    "Bei „Ich bin hässlich“: erst fragen, was das Kind schön findet. Dann vor dem Spiegel hinter das Kind stellen, Hände auf die Schultern legen und beschreiben, was ihr seht.",
     "Lebt Fehlerkultur vor: Erzählt, was euch misslungen ist und was ihr anders machen wollt.",
-    "Schaut auf euren eigenen Selbstwert: Erkennt eure Glaubenssätze, fühlt bei Triggern dem Gefühl nach, sagt bewusst Nein, um Ja zu euch zu sagen."
+    "Schaut auf euren eigenen Selbstwert: Erkennt eure Glaubenssätze, fühlt bei Triggern dem Gefühl nach, sagt bewusst Nein, um Ja zu euch zu sagen.",
+    "Trennt Moment und Kind: Eine schlechte Arbeit oder ein Fehler ist noch keine Identität. Fragt bei Erfolgen, was das Kind diesmal anders gemacht hat, statt nur zu sagen: Du bist super.",
+    "Traut dem Kind altersgemäße Hürden zu und helft nur so weit wie nötig, denn Selbstwirksamkeit entsteht laut einem Autor nur durch eigene Erfahrung.",
+    "Fragt euch, was ihr dem Kind zurückspiegelt, auch mit Mimik und Erwartungen, und besprecht Verhalten statt das Kind als Person zu bewerten; Liebe sollte nicht an Leistung hängen."
    ],
    "sichtweisen": [
     {
      "podcast": "gfk",
      "text": "Kathy Weber beschreibt ein starkes Selbst als Endziel der Entwicklung: Das Kind weiß, was es braucht, kann Nein sagen und ist frei von der Bewertung anderer. Es wachse auf fundierter Bindung (ihr Bild: Wurzeln eines Baumes) und über die ganze Kindheit; von einem Dreijährigen könne man noch keinen starken Selbstwert erwarten. Selbstwert wächst für sie über bedingungslose Liebe, nicht über Belohnung und Bestrafung. Sie lehnt es ab, negative Sätze wie „Ich bin dumm“ zu widerlegen: Niemand außer dem Kind entscheide, ob es klug oder schön ist, und der Satz sei ein Hilferuf, der Wiederholung brauche statt Panik. Positive Glaubenssätze nennt sie hilfreich, aber leere Hüllen, wenn sie nicht mit einem Bedürfnis verknüpft sind. Ihre Einteilung in Phasen (Selbst machen, selbst entscheiden, selbst Erfahrungen sammeln) ist ihr eigenes Konzept und keine anerkannte Entwicklungstheorie. In einer Folge mit der Coachin Laura Malina Seiler betonen beide, dass der Selbstwert der Eltern Vorlage für Kinder ist, ohne dass daraus Druck entstehen soll; dort spricht Seiler auch von einem „liebevollen Nein“. Beide warnen davor, bei jeder Kleinigkeit zu applaudieren."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Die Hosts Daniel Graf und Katja Seide teilen mit gfk die Grundlage: Selbstwert wächst auf Bindung und Autonomie (laut Stefanie Stahl zwei der psychischen Grundbedürfnisse), und Eltern sind Vorbild und Spiegel. Die Gäste setzen mehr bei Erfahrung und Zutrauen an. Eine Coachin erklärt, ein negatives Selbstbild entstehe aus wiederholten Erfahrungen, die ein Kind deutet, und eine Erfahrung sei noch keine Identität; dabei lesen Kinder auch Mimik und unausgesprochene Erwartungen der Eltern. Ein Autor betont, Selbstwirksamkeit entstehe nur durch eigene Erfahrung und nicht durch den Satz, dass das Kind es schon schaffe; Eltern sollen nur so weit helfen wie nötig. Anders als Kathy Weber, die negative Sätze nicht widerlegt, empfiehlt die Coachin, nach Ausnahmen im Erleben des Kindes zu fragen, und hält manche Selbsteinschätzungen für realistisch, andere für einengend. Bei ADHS rät eine Gästin, zuerst die schwierige Lage des Kindes anzuerkennen, statt nur zu sagen, es schaffe das. Die Gäste sprechen aus Coaching und Erfahrung und nennen kaum Studien."
     }
    ],
    "quellen": [
@@ -11372,6 +17628,22 @@ window.WISSEN = {
      "datum": "2021-11-07",
      "minute": "22:52",
      "thema": "Drei Tipps für Eltern: Glaubenssätze, Trigger und Gefühle, Nein sagen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 262,
+     "titel": "\"Ich kann das doch sowieso nicht!\" - wie das Selbstbild unsere Kinder prägt",
+     "datum": "2026-11-17",
+     "minute": "02:13",
+     "thema": "Von der Erfahrung zur Identität"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 254,
+     "titel": "Selbstsicher durchs Leben - was Kinder wirklich brauchen",
+     "datum": "2026-09-22",
+     "minute": "05:29",
+     "thema": "Selbstbewusstsein, Selbstwertgefühl, Selbstwirksamkeit"
     }
    ],
    "verwandt": [
@@ -11379,8 +17651,9 @@ window.WISSEN = {
     "perfektionismus-fehler",
     "trigger-inneres-kind",
     "mobbing",
-    "abenteuer-mut",
-    "schuechternheit"
+    "aussehen-schoenheitsideale",
+    "selbststaendigkeit",
+    "verantwortung-uebertragen"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind sagt „Ich bin dumm“, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
@@ -11398,13 +17671,18 @@ window.WISSEN = {
     "Selbstregulation",
     "Selbstempathie",
     "Abgrenzung",
-    "Achtsamkeit"
+    "Achtsamkeit",
+    "Toleranzfenster",
+    "Stresstoleranzfenster",
+    "Selbstmitgefühl",
+    "Übererregung"
    ],
    "fragen": [
     "Wie beruhige ich mich, wenn mein Kind schreit?",
     "Warum werde ich so hektisch, wenn mein Kind weint?",
     "Wie atme ich richtig bei Stress?",
-    "Wie grenze ich mich ab, wenn mir alles zu viel wird?"
+    "Wie grenze ich mich ab, wenn mir alles zu viel wird?",
+    "Warum schalte ich bei Stress ab, statt laut zu werden?"
    ],
    "alter": [
     "0-1",
@@ -11415,7 +17693,7 @@ window.WISSEN = {
     "eltern",
     "gefuehle"
    ],
-   "kurz": "Gestresste Eltern geraten laut Nicola Schmidt innerlich in einen Alarmmodus, werden fahrig oder erstarren. Sie bezeichnet den Atem als Fernbedienung des Stresssystems: kurz ein- und lang ausatmen verändere den inneren Zustand, und wenn ihr euch beruhigt, beruhige sich auch das Kind über kurz oder lang.",
+   "kurz": "Gestresste Eltern geraten laut Nicola Schmidt innerlich in einen Alarmmodus, werden fahrig oder erstarren. Sie bezeichnet den Atem als Fernbedienung des Stresssystems: kurz ein- und lang ausatmen verändere den inneren Zustand, und wenn ihr euch beruhigt, beruhige sich auch das Kind über kurz oder lang. Wenn Überforderung dauerhaft anhält, kann professionelle Hilfe sinnvoll sein.",
    "tipps": [
     "Atmet kurz ein und lange aus, etwa fünfmal hintereinander; das verändert nach Aussage der Host den inneren Zustand.",
     "Merkt, wann ihr körperlich fahrig werdet, und haltet bewusst inne.",
@@ -11423,7 +17701,9 @@ window.WISSEN = {
     "Entscheidet euch klar: jetzt ganz beim Kind sein oder bewusst kurz etwas erledigen und dann zurückkommen, statt halb bei beidem zu sein (Kathy Weber).",
     "Schaut mit Beobachtung, Gefühl, Bedürfnis und Bitte auf euch selbst (Selbstempathie), zum Beispiel mit einem Empathietagebuch, in dem ihr festhaltet, welche Gefühle heute da waren.",
     "Setzt Grenzen für euch statt gegen andere: Bittet Besuch, sich anzumelden, und stellt das Handy auf „Nicht stören“.",
-    "Plant kleine geschützte Momente ein und feiert sie bewusst, etwa Stille mit dem Kind bei einer gemeinsamen Tätigkeit."
+    "Plant kleine geschützte Momente ein und feiert sie bewusst, etwa Stille mit dem Kind bei einer gemeinsamen Tätigkeit.",
+    "Probiert bei akutem Stress aktive Strategien, falls Atmen allein nicht klappt: abklopfen, schütteln, auf den Boden stampfen, kaltes Wasser über die Hände oder rückwärts rechnen.",
+    "Checkt mehrmals am Tag kurz ein, ob ihr noch ruhig, schon angespannt oder schon abgeschaltet seid, und deckt Grundbedürfnisse wie Trinken, Essen und Toilette ab, denn sie senken eure Stressschwelle."
    ],
    "sichtweisen": [
     {
@@ -11433,6 +17713,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber setzt weniger beim Körper als bei Haltung und Bedürfnissen an. Achtsamkeit heißt für sie, präsent zu sein und entweder ganz beim Kind zu sein oder bewusst kurz etwas zu erledigen und dann zurückzukehren; ein Kind spüre, wenn ein Elternteil innerlich woanders ist. Selbstempathie nennt sie die Grundlage von allem: Ihr schaut mit Beobachtung, Gefühl, Bedürfnis und Bitte auf euch selbst und dürft auch entscheiden, anderen gerade keine Empathie zu schenken. Empathie ist für sie freiwillig, und das Bedürfnis danach erfüllt ihr selbst, ohne es von einer bestimmten Person zu verlangen. Abgrenzung bedeutet, Grenzen für sich zu setzen und nicht gegen andere, etwa mit angemeldetem Besuch oder Handy auf „Nicht stören“. Kleine geschützte Momente, die sie Luftmatratzenmomente nennt, feiert sie bewusst. Das ergänzt Nicola Schmidts Atemtechnik um eine Sicht auf Bedürfnisse und Grenzen."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide holen sich zum Thema viele Gäste, die sich in zwei Punkten einig sind: Unter Stress ist das Gehirn auf Kampf oder Flucht eingestellt, deshalb kommt zuerst die eigene Regulation und erst danach das Erklären oder die Strategie. Das deckt sich mit Nicola Schmidt, die im Podcast auch selbst vorkommt (Tiger-Check, langes Ausatmen, Summen), und mit Kathy Webers Blick auf Selbstempathie. Neu ist das Modell vom Toleranzfenster mit Über- und Untererregung, das Eltern sowohl Wüten als auch Abschalten erklärt. Eine Gästin differenziert, dass Atmen ohne Übung für viele im Akutfall nicht funktioniert, und rät zu aktiven Strategien wie Abklopfen oder Stampfen. Mehrere Gäste betonen außerdem, dass Regulation im ruhigen Alltag vorbereitet wird, über Grundbedürfnisse, Achtsamkeit und das Hinschauen auf eigene Prägungen, und dass das ein Prozess ohne Perfektion ist."
     }
    ],
    "quellen": [
@@ -11475,6 +17759,30 @@ window.WISSEN = {
      "datum": "2026-10-12",
      "minute": "04:42",
      "thema": "Abgrenzung: Grenzen für sich, nicht gegen andere"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 121,
+     "titel": "Kinder verstehen statt bestrafen - mit Julia Scharnowski",
+     "datum": "2023-09-05",
+     "minute": "04:24",
+     "thema": "Löschstrategien und präventiver Brandschutz durch Achtsamkeit"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 152,
+     "titel": "Wie wir unsere eigene Prägung verarbeiten und Stress verringern können",
+     "datum": "2024-10-08",
+     "minute": "08:16",
+     "thema": "Übererregung und Untererregung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 234,
+     "titel": "Zwischen Nein und Nähe: Wie wir in stressigen Momenten mit unseren Kindern verbunden bleiben",
+     "datum": "2026-05-05",
+     "minute": "09:12",
+     "thema": "Das Konzept des Toleranzfensters"
     }
    ],
    "verwandt": [
@@ -11485,7 +17793,7 @@ window.WISSEN = {
     "baby-weinen",
     "beduerfnisse-erkennen"
    ],
-   "medizinisch": false,
+   "medizinisch": true,
    "einleitung": "Viele Eltern kennen diese Situation: „Wie beruhige ich mich, wenn mein Kind schreit?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
@@ -11496,7 +17804,9 @@ window.WISSEN = {
     "Sitzplatz Schule",
     "Platz im Klassenzimmer",
     "Mitbestimmung Grundschule",
-    "Zugehörigkeit Schule"
+    "Zugehörigkeit Schule",
+    "Schülermitbestimmung",
+    "Kinderrechte"
    ],
    "fragen": [
     "Mein Kind mag seinen Sitzplatz in der Schule nicht, was tun?",
@@ -11522,6 +17832,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber und eine Mitsprecherin kritisieren gemeinsam, dass Erwachsene die Sitzordnung festlegen, ohne die Kinder zu fragen, haben aber Verständnis für pädagogische Gründe. Laut ihnen können Kinder Wissen schlechter aufnehmen, wenn das Zugehörigkeitsbedürfnis nicht erfüllt ist. Eine Lehrkraft, die regelmäßig nachfragt, ob die Kinder gern dort sitzen, loben sie. Losen werten sie nicht als falsch, aber es erfüllt zwar das Mitmachen, nicht automatisch das Wohlfühlen. Wenn das Verfahren unzufrieden macht, sollten Erwachsene erneut hinschauen."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Bei Daniel Graf und Katja Seide geht es um Mitbestimmung im größeren Rahmen. Der Lehrer Bob Blume beschreibt seine ideale Schule: Wahlmöglichkeiten, Gleitzeit, in jedem Fach das Warum erklärt und mitbestimmte Themen. Die Schülermitverantwortung solle Schule mitgestalten, nicht nur Veranstaltungen planen. Er räumt ein, dass dafür Personal, Ressourcen und Freiräume nötig sind. In einer anderen Folge sieht eine Gästin einen Bruch: In Krippe und Kindergarten gebe es oft gute Beteiligung, in der Schule lernten Kinder dann, dass ihre Stimme nicht zählt. Das deckt sich mit der GfK-Sicht, dass Einbeziehung ein Grundbedürfnis ist, geht aber über den Einzelfall Sitzordnung hinaus und fordert strukturelle Änderungen und Kinderrechte."
     }
    ],
    "quellen": [
@@ -11556,6 +17870,22 @@ window.WISSEN = {
      "datum": "2025-02-03",
      "minute": "13:23",
      "thema": "Zettel an die Lehrkraft"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 90,
+     "titel": "„10 Dinge, die ich an der Schule hasse“ mit Netzlehrer Bob Blume",
+     "datum": "2022-06-28",
+     "minute": "48:07",
+     "thema": "Mitbestimmung und Demokratieerziehung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 207,
+     "titel": "Mitbestimmen von Anfang an – Partizipation bei Babys und Kleinkindern",
+     "datum": "2025-10-28",
+     "minute": "35:35",
+     "thema": "Bruch beim Übergang in die Schule"
     }
    ],
    "verwandt": [
@@ -11564,10 +17894,119 @@ window.WISSEN = {
     "beduerfnisse-erkennen",
     "selbststaendigkeit",
     "familienkonferenz",
-    "strafe-schule"
+    "mitbestimmung-kinder"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind mag seinen Sitzplatz in der Schule nicht, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "social-media-kinder",
+   "titel": "Social Media, Handy und Medienkompetenz",
+   "synonyme": [
+    "Instagram",
+    "TikTok",
+    "WhatsApp",
+    "Snapchat",
+    "erstes Handy",
+    "Handyregeln",
+    "Fake News",
+    "Influencer",
+    "Recht am eigenen Bild",
+    "Kindersicherung"
+   ],
+   "fragen": [
+    "Ab wann darf mein Kind Instagram, TikTok oder WhatsApp nutzen?",
+    "Welche Handyregeln sind sinnvoll?",
+    "Soll ich Social Media verbieten oder begleiten?",
+    "Darf ich das Handy meines Kindes kontrollieren?",
+    "Wie schütze ich mein Kind vor Fremden und Fake News?",
+    "Mein Kind umgeht die Bildschirmzeit-Sperre, was tun?"
+   ],
+   "alter": [
+    "6-10"
+   ],
+   "bereiche": [
+    "medien",
+    "grenzen",
+    "entwicklung"
+   ],
+   "kurz": "Die Hosts und ihre Gäste setzen beim Thema Social Media auf Begleiten statt Verbieten: Regeln gemeinsam aufstellen, im Gespräch bleiben und Medienkompetenz aufbauen. Technische Schutzfunktionen helfen, bieten laut den Gästen aber keinen vollständigen Schutz, weil Kinder sie leicht umgehen. Ein Teil der Beispiele betrifft Jugendliche; er ist hier mit aufgenommen, weil die Grundhaltung früh angelegt wird.",
+   "tipps": [
+    "Stellt Handy- und Messenger-Regeln gemeinsam mit dem Kind auf: Beide schreiben auf, was ihnen wichtig ist, und suchen Kompromisse. Mit Mitsprache fällt das Einhalten laut einer Gästin leichter.",
+    "Begleitet die Nutzung von Anfang an eng, wenn das Kind früher als die offiziellen Altersgrenzen (laut einer Gästin 13 bei Instagram und TikTok, 16 bei WhatsApp) mit einer App startet. Wisst, was gepostet wird, wem es folgt und mit wem es schreibt, ohne die Chatinhalte zu lesen.",
+    "Besprecht anfangs jedes Foto und Video gemeinsam, achtet auf Recht am eigenen Bild und darauf, dass im Hintergrund keine Hinweise auf Wohnort oder Gewohnheiten zu sehen sind.",
+    "Nutzt Schutzeinstellungen wie privates Profil, abgeschalteten Standort und deaktivierte Direktnachrichten. Verlasst euch nicht allein auf Technik, denn Kinder stellen zum Beispiel die Uhrzeit um und umgehen Sperren.",
+    "Gebt Kindern bei Messengern Grundregeln mit: keine persönlichen Daten teilen, keine Fremden-Chats, niemanden ohne Erlaubnis fotografieren, nichts Beleidigendes weiterleiten.",
+    "Fördert kreative statt nur konsumierende Nutzung, etwa Pflanzen-Bestimmungs-Apps, Videoschnitt oder eigene Hörspiele. Bis zum Ende der Grundschule können Kindersuchmaschinen wie fragFINN und Jugendschutzprogramme helfen (Empfehlung der Gästinnen).",
+    "Sprecht über Influencer, Challenges und Fake News: Warum will das Kind das Produkt, was ist an einer Challenge gefährlich, woran erkennt man Fakten? Lebt selbst einen bewussten Medienumgang und Qualitätsmedien vor.",
+    "Wenn ihr das Handy einsehen wollt: Sagt es offen an und vereinbart Termine, statt heimlich zu schauen. Fragt euch, ob eine Maßnahme euch beruhigt oder das Kind unter Dauerkontrolle setzt."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide nehmen die Ängste der Eltern ernst, kommen aber über mehrere Folgen zum Schluss, dass Online-Kontakte Kinder nicht automatisch zu Einzelgängern machen, und schildern eigene gelungene Online-Freundschaften. Die Gäste, darunter Medienexpertinnen und eine Lehrerin, raten durchgängig zu Begleitung und Gespräch statt Verbot, weil heimliche Nutzung dazu führt, dass sich Kinder bei Problemen aus Angst vor Ärger nicht melden. Zugleich sind sie skeptisch gegenüber Technik allein und gegenüber Plattformen: Eine Gästin sieht TikTok eher als Fluch denn als Segen und wünscht sich strengere gesetzliche Vorgaben, eine andere erklärt den Sog sozialer Medien mit häufiger Belohnung und fehlender Erwartbarkeit von Antworten. Beim Kontrollieren sind sich Lisa Hamann und Daniel Graf einig, dass heimliches Schauen tabu ist, außer bei Lebensgefahr. Konkrete App- und Dienstnamen sind Empfehlungen der Gästinnen, keine Bewertung der Hosts."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 180,
+     "titel": "Begleiten statt verbieten - kompetent und sicher durch die digitale Welt",
+     "datum": "2025-04-22",
+     "minute": "05:05",
+     "thema": "Grundregeln für Messenger und Chats"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 164,
+     "titel": "Das erste eigene Handy - worauf sollten Eltern achten?",
+     "datum": "2024-12-31",
+     "minute": "19:20",
+     "thema": "Regeln gemeinsam erarbeiten, Kostenbeteiligung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 164,
+     "titel": "Das erste eigene Handy - worauf sollten Eltern achten?",
+     "datum": "2024-12-31",
+     "minute": "35:37",
+     "thema": "Begleiten statt Verbieten"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 6,
+     "titel": "Digitale Medien - Teil 4: Medienexpertin Patricia Cammarata",
+     "datum": "2019-02-12",
+     "minute": "20:44",
+     "thema": "AGB, Absprachen und Einstellungen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 212,
+     "titel": "Wie wir mit unseren Kindern Demokratie verteidigen",
+     "datum": "2025-12-02",
+     "minute": "22:26",
+     "thema": "Orientierung bei Social Media und politischen Inhalten"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 252,
+     "titel": "Teen-Time - zwischen Augenrollen und Umarmung",
+     "datum": "2026-09-08",
+     "minute": "19:25",
+     "thema": "Interesse oder Kontrolle: Handy und Privatsphäre"
+    }
+   ],
+   "verwandt": [
+    "bildschirmzeit",
+    "freundschaften",
+    "pubertaet-teenager",
+    "aussehen-schoenheitsideale",
+    "mobbing",
+    "vergleich-erwartungen-eltern"
+   ],
+   "medizinisch": false,
+   "einleitung": "Viele Eltern kennen diese Situation: „Ab wann darf mein Kind Instagram, TikTok oder WhatsApp nutzen?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "ansagen-positiv-formulieren",
@@ -11579,13 +18018,15 @@ window.WISSEN = {
     "Kind hört nicht auf Nein",
     "lass das",
     "Anweisungen an Kinder",
-    "Kinder verstehen kein Nicht"
+    "Kinder verstehen kein Nicht",
+    "zwei Aufforderungen gleichzeitig"
    ],
    "fragen": [
     "Warum hört mein Kind auf Nicht und Nein nicht?",
     "Wie sage ich meinem Kind, was es tun soll, statt was nicht?",
     "Wie formuliere ich Verbote positiv?",
-    "Was sage ich, wenn mein Kind mit Sand wirft?"
+    "Was sage ich, wenn mein Kind mit Sand wirft?",
+    "Wie klar muss ich mit kleinen Kindern sprechen?"
    ],
    "alter": [
     "1-3",
@@ -11603,12 +18044,17 @@ window.WISSEN = {
     "Formuliert statt Verboten von Schimpfwörtern, was ihr euch wünscht: „Ich will, dass du deine Schwester fragst“ oder „Ich will, dass du mir sagst, was wirklich los ist“.",
     "Sagt bei Streit am Sandkasten zum Beispiel: „Komm zu mir, wenn es ein Problem gibt“, und benennt, was das Kind möchte.",
     "Prüft, ob euer Wunsch realistisch ist, etwa friedliche Kinder nach acht Stunden Kindergarten.",
-    "Macht euch nicht verrückt: Das Umstellen braucht Zeit, und ihr müsst keine perfekten Maschinen sein."
+    "Macht euch nicht verrückt: Das Umstellen braucht Zeit, und ihr müsst keine perfekten Maschinen sein.",
+    "Stellt zuerst Aufmerksamkeit her und gebt dann eine einzige kurze Ansage, zum Beispiel „Räum deine blauen Bauklötze ein“; wenn euch nichts einfällt, hilft als Notanker ein kurzes „Stopp, lass das“."
    ],
    "sichtweisen": [
     {
      "podcast": "artgerecht",
      "text": "Nicola Schmidt vergleicht die typische Elternsprache mit einem Gast, der sagt, was er nicht mag, statt zu nennen, was er gern hätte. Sätze wie „Renne nicht“, „Kletter da nicht hoch“ oder „Lass das“ seien deshalb ganz normal. Das Umstellen sei wie das Lernen einer neuen Sprache, das Eltern gemeinsam mit dem Kind angehen dürfen, und Kinder seien dabei geduldige Lehrer. Wer klärt, was er will, finde laut ihr automatisch passende Sätze und senke seinen Stress. Dass Kinder das Nicht nicht hören, stellt sie als bekannt dar und nennt keine Studie. Sie zeigt sich nachsichtig mit Eltern."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Auch Hilal Virit (Gästin bei Daniel Graf und Katja Seide) rät, dass kleine Kinder kurze, klare und positiv formulierte Aufforderungen leichter verstehen, mit nur einer Ansage auf einmal. Sie nennt als Beispiel „Halt dich fest“ statt „Du fällst gleich runter“ und verweist auf Experimente, in denen Kinder bei zwei gleichzeitigen Anweisungen mehr Fehler machten. Daniel Graf bringt die Aussage ein, das Gehirn filtere beim Spracherwerb zunächst Haupt- und Tätigkeitswörter heraus, aus „Geh nicht an die Steckdose“ werde dann „Geh Steckdose“. Das deckt sich mit Nicola Schmidt. Neu ist der Einwand, kurze Sätze wirkten auf viele Eltern wie ein unfreundlicher Befehlston: Virit hält dagegen, altersgerechte Sprache schütze die Beziehung eher als zehnmal wiederholte Drohungen, und es gehe nur um kleine Änderungen, nicht um hölzerne Sätze."
     }
    ],
    "quellen": [
@@ -11643,6 +18089,14 @@ window.WISSEN = {
      "datum": "2025-02-11",
      "minute": "03:31",
      "thema": "Realistische Wünsche und weniger Stress"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 107,
+     "titel": "Liebevolle Kommunikation – miteinander sprechen, miteinander wachsen.",
+     "datum": "2023-02-21",
+     "minute": "09:20",
+     "thema": "Zwei Aufforderungen und das Wort „nicht“"
     }
    ],
    "verwandt": [
@@ -11670,7 +18124,11 @@ window.WISSEN = {
     "nachts abstillen",
     "Milchstau",
     "Abstillritual",
-    "Abschied von der Brust"
+    "Abschied von der Brust",
+    "Clustern",
+    "Stilldruck",
+    "Stillen ohne Dogma",
+    "Stillen Kita-Eingewöhnung"
    ],
    "fragen": [
     "Ist es normal, dass Stillen weh tut?",
@@ -11679,7 +18137,9 @@ window.WISSEN = {
     "Wie stille ich ab?",
     "Wie stille ich nachts ab?",
     "Was tun gegen Milchstau beim Abstillen?",
-    "Wie verabschieden wir uns von der Brust?"
+    "Wie verabschieden wir uns von der Brust?",
+    "Baby trinkt abends stundenlang, ist das Clustern?",
+    "Woran erkenne ich, dass mein Baby genug trinkt?"
    ],
    "alter": [
     "0-1",
@@ -11690,17 +18150,17 @@ window.WISSEN = {
     "essen",
     "eltern"
    ],
-   "kurz": "Stillen muss man erst lernen, und leichtes Unbehagen am Anfang kann dazugehören. Anhaltende Schmerzen ohne erkennbare Ursache sind nicht normal, dann hilft eine Hebamme oder Stillberatung. Wenn Dauerstillen erschöpft, sind Zufüttern oder Abstillen eine persönliche Entscheidung ohne schlechtes Gewissen; das sind Erfahrungen, kein ärztlicher Rat.",
+   "kurz": "Stillen muss man erst lernen, und leichtes Unbehagen am Anfang kann dazugehören. Anhaltende Schmerzen ohne erkennbare Ursache sind nicht normal, dann hilft eine Hebamme oder Stillberatung. Wenn Dauerstillen erschöpft, sind Zufüttern oder Abstillen eine persönliche Entscheidung ohne schlechtes Gewissen; die Hosts von wunschkind lehnen Druck und Dogmen in beide Richtungen ab. Das sind Erfahrungen und Einschätzungen, kein ärztlicher Rat; bei Unsicherheit fragt Hebamme, Stillberatung oder Ärztin.",
    "tipps": [
     "Holt euch bei Schmerzen früh Hilfe bei Hebamme oder Stillberatung, statt durchzuhalten, und lasst echte Schmerzen ohne Ursache abklären.",
     "Lasst abklären, ob ein verkürztes Zungenbändchen dahintersteckt, wenn das Baby schlecht saugt und nicht satt wird.",
-    "Ein Stillhütchen kann nach Erfahrung der Eltern helfen, bis die Ursache behoben und verheilt ist.",
-    "Esst und trinkt ausreichend, gönnt euch Erholung und fragt bei Nahrungsergänzungen wie Magnesium oder Calcium Hebamme oder Ärztin.",
     "Wenn Dauerstillen in einer Clusterphase nicht mehr geht, dürft ihr einmal Pre-Milch zufüttern, und bei einer Mutter lief die Milchbildung danach normal weiter.",
-    "Übt früh und aktiv, wenn euer Baby einen Schnuller nehmen soll, damit Stillen nicht die einzige Beruhigung bleibt.",
-    "Plant das Abstillen und prüft vorher, ob ihr dafür genug Kraft habt, denn es kostet Energie und Standhaftigkeit.",
     "Legt beim nächtlichen Abstillen nach Gordon ein stillfreies Zeitfenster fest, etwa 22 bis 2 Uhr, und weitet es über etwa eine Woche schrittweise aus, wobei dieses Vorgehen ab zwölf Monaten empfohlen wird und vier Stunden als guter Anfang gelten.",
-    "Vermeidet Milchstau, indem ihr tagsüber etwas abpumpt oder einzelne Mahlzeiten weiterstillt und Stillmahlzeiten schrittweise durch Brei oder Flasche ersetzt."
+    "Vermeidet Milchstau, indem ihr tagsüber etwas abpumpt oder einzelne Mahlzeiten weiterstillt und Stillmahlzeiten schrittweise durch Brei oder Flasche ersetzt.",
+    "Informiert euch schon in der Schwangerschaft über Clustern: Häufiges Trinken, oft abends, ist laut einer Stillberaterin nicht automatisch ein Zeichen für zu wenig Milch.",
+    "Ob das Baby genug trinkt, zeigen laut einer Stillberaterin mehrere Hinweise zusammen: nasse Windeln, Stuhl, Verhalten, Haut und Muskelspannung und das Gewicht; bei Zweifeln hilft eine Stillberatung.",
+    "Überlegt beim Abstillen, welches Bedürfnis hinter dem Stillen steckt (Nähe, Trost, Hunger), plant dafür Alternativen und geht schrittweise vor; beim ersten Nein bleibt klar und zugewandt.",
+    "Stillt so lange, wie es für beide passt, und prüft Zwischenwege wie nur abends stillen; als stillende Person dürft ihr sagen, dass ihr nicht mehr möchtet."
    ],
    "sichtweisen": [
     {
@@ -11710,6 +18170,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber kommt aus der Gewaltfreien Kommunikation und schaut beim Abstillen auf die Bedürfnisse hinter der Brust: Für ein dreijähriges Kind stand sie laut ihr für Mamanähe, Geborgenheit, Schutz und Ritual. Sie kritisiert freundlich, aber klar, dass eine Mutter nach einem Glaubenssatz und der Meinung anderer spontan und unvorbereitet abgestillt hat, ohne Platz für einen Abschied. Gleichzeitig stellt sie die Entscheidung der Mutter nicht infrage, denn die liege bei ihr. Sie rät, den Abschied nachzuholen: das Ritual würdigen, Trauer von Mutter und Kind zulassen und ein Abschiedsritual gestalten, ohne wieder mit dem Stillen anzufangen. Danach suche man gemeinsam neue Wege zur Mamanähe. Medizinische Fragen des Abstillens bespricht sie dabei nicht."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide holen sich Stillberaterinnen und Fachleute und stellen sich ausdrücklich gegen Dogmen in beide Richtungen. Eine Stillberaterin sagt, viel Stillwissen sei verloren gegangen, Sätze wie \"Stillen ist Liebe\" oder \"Stillen tut nicht weh\" seien zu absolut, und auch eine erschöpfte Mutter sei nicht das Beste fürs Baby; sie sei nicht die Stillmafia und berate auch zum Abstillen. Das deckt sich mit der Kritik der mutti-Hosts an Stillstigma, ist aber weniger gegen Stillberatung gerichtet: Katja Seide berichtet, dass ihr eine Stillberaterin sehr geholfen hat. Zu Clustern sagt die Beraterin, häufiges Trinken, oft abends, sei normal und eine Art Bestellung der Milch für später, werde aber selten erklärt. Beim Abstillen ist eine Beraterin im Ton nah an Kathy Weber: Stillen sei eine Strategie für Bedürfnisse wie Nähe oder Trost, man solle Alternativen anbieten, schrittweise vorgehen und beim Nein des Kindes klar und zugewandt bleiben. Anders als bei gfk geht es hier auch um Praxis und Zeitpunkt, und es gilt: so lange, wie es für beide passt. Eine Gästin zu oralen Restriktionen (zu kurzes Zungenband) räumt selbst ein, dass das Thema kontrovers ist und nicht jedes Band behandelt werden muss. Alle Angaben sind Aussagen der Gäste und ersetzen keinen ärztlichen Rat."
     }
    ],
    "quellen": [
@@ -11746,20 +18210,36 @@ window.WISSEN = {
      "thema": "Clusterphase und bewusstes Zufüttern mit Pre-Milch"
     },
     {
-     "podcast": "mutti",
-     "nr": 47,
-     "titel": "Was tun bei Hauen, Ausschließen und Wutanfällen? - 100 Folgen Special",
-     "datum": "2026-05-19",
-     "minute": "05:52",
-     "thema": "Stillen zum Trinken, Schnuller zum Nuckeln"
-    },
-    {
      "podcast": "gfk",
      "nr": 142,
      "titel": "Abstillen und Geschwister-Streit: So sorgst du bei Veränderungen für Fairness unter deinen Kindern",
      "datum": "2024-12-30",
      "minute": "11:55",
      "thema": "Abschied vom Stillritual nachholen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 256,
+     "titel": "Stillen - wie es zu dir und deinem Baby passt",
+     "datum": "2026-10-06",
+     "minute": "07:18",
+     "thema": "Fünf Hinweise, ob das Baby genug bekommt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 256,
+     "titel": "Stillen - wie es zu dir und deinem Baby passt",
+     "datum": "2026-10-06",
+     "minute": "09:08",
+     "thema": "Clustern erklärt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 235,
+     "titel": "Abstillen – wie ein sanfter Übergang vom Stillen gelingen kann",
+     "datum": "2026-05-12",
+     "minute": "28:05",
+     "thema": "Praktisches Vorgehen: Situationen, Alternativen, Reihenfolge"
     }
    ],
    "verwandt": [
@@ -11768,7 +18248,7 @@ window.WISSEN = {
     "wochenbett",
     "erste-zeit-mit-baby",
     "babyschlaf",
-    "beikost"
+    "baby-hitze"
    ],
    "medizinisch": true,
    "einleitung": "Stillen klappt nicht immer von Anfang an reibungslos, und Schmerzen, ständiges Anlegen oder Erschöpfung belasten viele Mütter. Dazu kommen Fragen zu Zufüttern, Schnuller und Abstillen."
@@ -11786,7 +18266,9 @@ window.WISSEN = {
     "Besteck halten",
     "Kind steht beim Essen auf",
     "Aufstehen beim Essen",
-    "Knigge"
+    "Knigge",
+    "Restaurant mit Kind",
+    "Kooperationskontingent"
    ],
    "fragen": [
     "Muss mein Kind am Tisch still sitzen?",
@@ -11794,7 +18276,8 @@ window.WISSEN = {
     "Mein Kind steht beim Essen ständig auf",
     "Kind zappelt und fällt vom Stuhl, was tun?",
     "Wie bringe ich meinem Kind bei, ordentlich zu essen?",
-    "Mein Kind steht ständig vom Tisch auf, was braucht es?"
+    "Mein Kind steht ständig vom Tisch auf, was braucht es?",
+    "Wie klappt ein Restaurantbesuch mit kleinem Kind?"
    ],
    "alter": [
     "1-3",
@@ -11814,7 +18297,7 @@ window.WISSEN = {
     "Übt Tischmanieren spielerisch, zum Beispiel mit der Idee, wie ein Ritter oder eine Prinzessin zu essen oder keine Spuren zu hinterlassen.",
     "Zeigt dem Kind, wie man den Löffel hält, statt zu warten, dass es das von selbst lernt.",
     "Kommentiert Zappeln möglichst nicht, schiebt Tasse und Teller unauffällig weg und macht bei Bedarf ein Spiel daraus, etwa Stopp-Tanz.",
-    "Erzählt bei einem echten Problem einmal eine Geschichte über ein anderes Kind, das gelernt hat, kurz aufzustehen und zu hüpfen, statt sich zu verletzen.",
+    "Gestaltet Mahlzeiten flexibel, vor allem bei Zwei- bis Dreijährigen: Picknick auf dem Boden, Stehparty in der Küche oder ein „Katzenabendessen“ mit dem Teller unter dem Tisch. Entspannung zählt mehr als das Idealbild.",
     "Erklärt, dass man bei uns meist mit Besteck isst, in anderen Kulturen aber mit den Händen, und dass beides in Ordnung ist.",
     "Fragt euch zuerst, was euch am Verhalten stört (Ruhe, Sauberkeit, Sicherheit), sagt klar „Stopp, hinsetzen, gegessen wird im Sitzen“, und klärt bei wiederholtem Aufstehen, welches Bedürfnis des Kindes noch fehlt."
    ],
@@ -11826,6 +18309,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber erklärt, dass sie zuerst fragt, warum sie ein Verhalten am Tisch stört: Geht es um Ruhe, Sauberkeit oder Sicherheit? Hinter Tischregeln wie „alle bleiben sitzen, bis alle fertig sind“ oder Knigge-Regeln sieht sie oft keine Bedürfnisse, sondern weitergegebene Sätze aus der eigenen Kindheit. Das Sitzenbleiben nennt sie eine Strafe für die, die schneller satt sind; bei ihr zu Hause darf aufstehen, wer fertig ist, ein Kind bleibt aber nicht allein beim Essen. Steht ein Kind ständig auf, braucht es ihrer Ansicht nach Bewegung, Spiel, Nähe oder Aufmerksamkeit. Sie empfiehlt eine klare Ansage mit Handbewegung („Stopp, hinsetzen, gegessen wird im Sitzen“), danach Einfühlung, bei kleinen Kindern Handeln statt Reden und gemeinsame Absprachen etwa in einer Familienkonferenz. Das steht im Gegensatz zu Mutti, wo Kinder lernen sollen, sitzen zu bleiben, bis sie fertig sind; bei ihr gilt, dass alles möglich ist, solange sich alle wohlfühlen. Werfen von Essen ist für sie eine Grenze."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Die Hosts von „Das gewünschteste Wunschkind“ sind pragmatisch und liegen nah bei den Mutti-Hosts und Kathy Weber (gfk): Der Erziehungsmoment soll nicht an den Tisch, und die Vorstellung vom friedlichen Familienessen stamme oft aus der eigenen Kindheit. Nicola Schmidt (als Gästin) sagt, Kinder bis drei könnten nur kurz am Tisch sitzen, am Abend sei das „Kooperationskontingent“ oft aufgebraucht, und rät, sich eher vom Idealbild zu verabschieden, als durchzudrücken. Katja Seide empfiehlt, nicht das Aufstehen, sondern das Essen mitnehmen zu lösen: Hände abwischen, dann darf das Kind gehen. Eine Ernährungsfachfrau sieht Entspannung am Tisch als wichtiger als den Teller und rät, nicht zu bewerten, sondern bei Unruhe als Ich-Botschaft anzusprechen. Anders als die Mutti-Hosts, die klare Regeln halten, steht hier das Nachgeben bei kleinen Kindern stärker im Vordergrund. Im Restaurant empfehlen die Hosts leichte Orte, Beschäftigung und ein Buffet, weil kaum ein Kind durchgehend brav sitzt."
     }
    ],
    "quellen": [
@@ -11878,12 +18365,20 @@ window.WISSEN = {
      "thema": "Regel „alle bleiben sitzen, bis alle fertig sind“ hinterfragen"
     },
     {
-     "podcast": "gfk",
-     "nr": 151,
-     "titel": "Tischmanieren bei Kindern: Wie du Stress vermeidest und Freude am gemeinsamen Essen förderst",
-     "datum": "2025-03-03",
-     "minute": "17:05",
-     "thema": "Familienkonferenz: jeder sagt, was ihn stört"
+     "podcast": "wunschkind",
+     "nr": 79,
+     "titel": "Grenzen setzen in der bedürfnisorientierten Erziehung",
+     "datum": "2022-01-28",
+     "minute": "11:34",
+     "thema": "Kooperationskontingent und Erwartungen an gemeinsames Essen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 246,
+     "titel": "Mehr Entspannung am Familientisch - kindliches Essverhalten besser verstehen",
+     "datum": "2026-07-28",
+     "minute": "46:20",
+     "thema": "Nicht bewerten, Vorbild sein, Bedürfnis nach Bewegung"
     }
    ],
    "verwandt": [
@@ -11910,7 +18405,10 @@ window.WISSEN = {
     "konsequent sein",
     "Spielzeug wegnehmen",
     "Hausarrest",
-    "Belohnung und Bestrafung"
+    "Belohnung und Bestrafung",
+    "Strafen ohne Strafe",
+    "Auszeit",
+    "stille Treppe"
    ],
    "fragen": [
     "Was ist der Unterschied zwischen Strafe und Konsequenz?",
@@ -11918,7 +18416,9 @@ window.WISSEN = {
     "Mein Kind räumt nicht auf, welche Konsequenz ist sinnvoll?",
     "Darf ich Süßigkeiten als Strafe verbieten?",
     "Braucht es eine Konsequenz, wenn mein Kind etwas aus Versehen kaputt macht?",
-    "Wie erziehe ich ohne Strafen, wenn der Stress hochkocht?"
+    "Wie erziehe ich ohne Strafen, wenn der Stress hochkocht?",
+    "Ist die stille Treppe eine Strafe?",
+    "Sind Wenn-dann-Sätze immer schlecht?"
    ],
    "alter": [
     "1-3",
@@ -11933,7 +18433,7 @@ window.WISSEN = {
    "tipps": [
     "Fragt euch, ob die Folge zum Verhalten passt, denn wer mit Essen wirft, bekommt danach kein Eis, während kein Eis wegen nicht aufgeräumter Sachen eine Strafe ohne Zusammenhang wäre.",
     "Setzt Grenzen früh, bevor etwas eskaliert, und entscheidet nicht im Zorn, denn Wut führt schnell in den Strafmodus und ihr überlegt besser später in Ruhe, was angemessen ist.",
-    "Zieht die Folge direkt und sofort, etwa indem ihr nach der Pfütze gleich nach Hause geht und das Kind umzieht, und kündigt nur an, was ihr wirklich durchziehen wollt; lange Strafen wie eine Woche Hausarrest kann ein Kind zeitlich nicht überblicken.",
+    "Zieht die Folge direkt und sofort, etwa indem ihr nach der Pfütze gleich nach Hause geht und das Kind umzieht, und kündigt nur an, was ihr wirklich durchziehen wollt; lange Strafen wie eine Woche Hausarrest kann ein Kind zeitlich nicht überblicken; bei Kindern unter etwa drei Jahren stellt laut Herbert Renz-Polster das Kind den Zusammenhang ohnehin nicht her.",
     "Probiert vor einer Konsequenz andere Wege: ein Spiel, Gegenständen eine Stimme geben, gemeinsam anpacken oder nonverbale Hinweise.",
     "Macht ein Kind etwas aus Versehen kaputt, braucht es keine Maßnahme, ihr wischt gemeinsam auf und stellt Gläser sicherer hin oder nehmt zeitweise Becher.",
     "Statt Süßes zu verbieten, vertröstet verbindlich („Nach dem Frühstück gibt es Gummibärchen“) und haltet das Versprechen.",
@@ -11953,6 +18453,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber lehnt Bestrafung und Belohnung ab: Strafen wirken über Schmerz, Scham und Schuld, und tagelanges Schweigen sieht sie als Liebesentzug. Anders als mutti hält sie Konsequenzen nicht für legitim; als logische Konsequenz gilt ihr nur, was von selbst passiert, etwa der Zug, der ohne euch fährt, jede von Eltern festgelegte Folge dagegen als Strafe. Wenn-dann-Sätze sind für sie nicht grundsätzlich falsch, werden aber meist als Machtmittel genutzt. Statt Konsequenzen setzt sie auf Konsequent-Sein: Eltern entscheiden in wenigen Bereichen wie Gesundheit, Fürsorge und Sicherheit das Was, die Kinder gestalten das Wie mit, und starke Gefühle werden begleitet. Eltern, die im Stress strafen, verurteilt sie nicht; sie nennt das nachvollziehbar und rät zu Bedauern statt Selbstverurteilung."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide teilen in den meisten Folgen die klare Kritik an Strafen und zählen sie nicht zur bedürfnisorientierten Erziehung; auch bei Daniel Graf kommt der Impuls in der Wut vor, etwa das WLAN abzuschalten. Mehrere Gäste und Gästinnen (unter anderem Katja Saalfrank, Nora Imlau, Aida Sürig de Rodriguez, Kathrin Hohmann) sagen, Strafen wirkten kurzfristig, schwächten aber Beziehung und Selbstwert, und ausgedachte logische Konsequenzen seien meist nur weichere Strafen. Damit stehen sie näher bei gfk und der artgerecht-Kritik als bei mutti. Differenzierter sind Herbert Renz-Polster und Kammern: Renz-Polster trennt Strafe von einer klaren, schützenden Antwort, die bei älteren Kindern sinnvoll sein kann, und Kammern hält Wenn-dann-Sätze nicht pauschal für schlecht, rät aber, eine Strafe ehrlich so zu nennen und Konsequenzen als gemeinsame Wiedergutmachung zu verstehen. Susanne Mierau geht am weitesten und zählt Auszeiten, stille Treppe und Wegschicken als psychische Gewalt."
     }
    ],
    "quellen": [
@@ -12003,6 +18507,22 @@ window.WISSEN = {
      "datum": "2024-11-26",
      "minute": "00:41",
      "thema": "Unterschied 1: Bezug zum Verhalten"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 118,
+     "titel": "Es geht auch ohne Strafen! Mit Aida S. de Rodriguez",
+     "datum": "2023-07-25",
+     "minute": "16:47",
+     "thema": "Logische Konsequenzen sind meist Strafen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 210,
+     "titel": "Kinder bindungsorientiert begleiten, ohne sich selbst zu verlieren",
+     "datum": "2025-11-18",
+     "minute": "27:31",
+     "thema": "Konsequenz oder Strafe?"
     }
    ],
    "verwandt": [
@@ -12027,14 +18547,17 @@ window.WISSEN = {
     "vor die Tür gestellt",
     "ungerechte Note",
     "Belohnung und Bestrafung Schule",
-    "Lehrerin schimpft"
+    "Lehrerin schimpft",
+    "Demütigung in der Schule",
+    "Schulpflicht"
    ],
    "fragen": [
     "Mein Kind wurde in der Schule bestraft, was tun?",
     "Was sage ich, wenn mein Kind die Strafe ungerecht findet?",
     "Wie gehe ich mit Kollektivstrafen in der Klasse um?",
     "Soll ich mit der Lehrerin über Strafen sprechen?",
-    "Wie gehe ich mit einer ungerechten Note um?"
+    "Wie gehe ich mit einer ungerechten Note um?",
+    "Geht Schule ohne Strafen?"
    ],
    "alter": [
     "6-10"
@@ -12060,6 +18583,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber lebt nach eigenen Worten ohne Belohnung und Bestrafung, will aber niemanden verurteilen, der damit arbeitet; für sie passt es nicht zu bedingungsloser Liebe, sie nennt Strafen Machtmissbrauch und wenig zielführend, aber nicht fatal. Sich bestraft zu fühlen sei kein echtes Gefühl, sondern ein Täter-Opfer-Gefühl, und das Kind soll lernen, selbst zu entscheiden, ob es etwas als Strafe oder Lob erlebt. Lehrkräfte handeln laut ihr aus eigenen Bedürfnissen, die Kinder sind nicht dafür zuständig. Regeln dürfen hinterfragt werden, sie will keine Mitläufer erziehen. Das Schulsystem könne sie nicht ändern; Bloßstellung vor der Klasse dürften Eltern stoppen. In ihrer Familie gab es einen Fall ohne Gesprächsbereitschaft der Lehrkraft, daraufhin wechselte sie die Schule. Noten verteufelt sie nicht, sie sollen aber zu Motivation von innen führen, und je älter die Kinder werden, desto mehr zieht sie sich aus dem Kontakt mit der Schule zurück."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "In wunschkind ist das Thema nur am Rand zu hören, es gibt aber einen eigenen Blickwinkel auf die Lehrkräfte. Aida Sürig de Rodriguez sagt, an ihrer Schule seien Strafen mit körperlicher oder seelischer Verletzung tabu und der Alltag selbstbestimmt; sie räumt ein, dass in einer klassischen Klasse mit 25 bis 30 Kindern der Druck hoch ist, hält aber die Haltung der Person für entscheidender als die Rahmenbedingungen. Sie rät, offen auszusprechen, dass die Schulpflicht nicht freiwillig ist, und Regeln gemeinsam zu erarbeiten. Katja Seide stellt als Lehrerin die Frage, ob das mit vielen Kindern klappt, widerspricht der Antwort aber nicht. In einer anderen Folge beschreiben die Hosts mit Blick auf frühere Zeiten Demütigungen wie das Stehen in der Ecke als erschütternd und meinen, heutige Eltern sähen so etwas nicht mehr untätig an. Das ergänzt gfk, wo es um den Umgang der Eltern mit erlebten Strafen geht."
     }
    ],
    "quellen": [
@@ -12110,6 +18637,22 @@ window.WISSEN = {
      "datum": "2023-06-11",
      "minute": "25:15",
      "thema": "Benotung und Bestrafungssystem, Noten nutzen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 118,
+     "titel": "Es geht auch ohne Strafen! Mit Aida S. de Rodriguez",
+     "datum": "2023-07-25",
+     "minute": "27:22",
+     "thema": "Schule ohne Strafen, Haltung der Lernbegleitenden"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 20,
+     "titel": "Beziehungs- und bedürfnisorientiert aufgewachsene Kinder in der Schule – Katjas Vortrag auf der FEBuB",
+     "datum": "2019-08-27",
+     "minute": "19:10",
+     "thema": "Autorität früher: Ehre, Demütigung, Eltern hinter Lehrern"
     }
    ],
    "verwandt": [
@@ -12132,13 +18675,17 @@ window.WISSEN = {
     "Konflikt Eltern Kinder",
     "Streit vertagen",
     "Mama und Papa streiten",
-    "Elternkonflikt"
+    "Elternkonflikt",
+    "Loyalitätskonflikt",
+    "Spillover"
    ],
    "fragen": [
     "Dürfen meine Kinder miterleben, wenn wir uns streiten?",
     "Was sage ich meinem Kind nach einem Streit?",
     "Wie vertage ich einen Streit, wenn die Kinder da sind?",
-    "Was macht ungeklärter Streit mit meinem Kind?"
+    "Was macht ungeklärter Streit mit meinem Kind?",
+    "Schadet es, wenn mein Kind nur still zuschaut?",
+    "Ist kalter Konflikt besser als lauter Streit?"
    ],
    "alter": [
     "1-3",
@@ -12157,12 +18704,19 @@ window.WISSEN = {
     "Gebt den Kindern ein Update, wo ihr steht, etwa am nächsten Morgen: \"Wir haben das gestern Abend geregelt.\"",
     "Bedauert bei Bedarf vor den Kindern, wie ihr miteinander gesprochen habt.",
     "Fragt danach, was beim Kind angekommen ist, und fangt es auf.",
-    "Eine Geste wie Hand aufs Herz kann für \"Ich bleibe bei mir, ihr bleibt bei euch\" stehen."
+    "Eine Geste wie Hand aufs Herz kann für \"Ich bleibe bei mir, ihr bleibt bei euch\" stehen.",
+    "Vermeidet Herabwürdigung, Beleidigung und Gewalt, und bittet Kinder nicht, etwas vor dem anderen Elternteil geheim zu halten.",
+    "Achtet nach Streit auf Anzeichen beim Kind: nervöser, ruhiger, zurückgezogen oder verändertes Schlafverhalten, auch wenn es nichts sagt.",
+    "Passt auf, dass der Stress aus dem Streit nicht in die Erziehung überschwappt, und bleibt für das Kind verlässlich."
    ],
    "sichtweisen": [
     {
      "podcast": "gfk",
      "text": "Kathy Weber vertritt, dass Kinder Konflikte lernen, indem sie zuschauen dürfen, wie Eltern sie leben; ständiges Vermeiden bringe ihnen bei, dass Konflikte nicht sein dürfen. Sie und ihr Mann zeigen offen, dass auch bei ihnen Streit vorkommt, meist impulsiv, und dass sie am Umgang damit vor den Kindern noch arbeiten. Es gebe einen Punkt, an dem man die Kinder nicht mehr mitnehmen kann; dann vertagt man. Wenn Eltern nicht miteinander klarkommen, wackelt laut ihr das Oberbedürfnis Sicherheit, und bei dauerhaft ungeklärten Konflikten könne das Nervensystem der Kinder Alarm schlagen. Mögliche Folgen seien, dass Kinder Verantwortung übernehmen oder bei Tisch Wutausbrüche haben. Ein Gesprächspartner sagt, er kläre Konflikte lieber ohne Kinder; sie betont, es gebe keinen einzig richtigen Weg."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide sprechen mit Gästen darüber, dass Streit vor Kindern nicht grundsätzlich schadet, ähnlich wie Kathy Weber. Entscheidend sei das Wie: Respektvolles Aushandeln auf Augenhöhe zeigt Kindern, wie man Standpunkte vertritt, während Herabwürdigung, Bloßstellen des Partners oder fliegende Gegenstände schaden. Ein Gast betont zusätzlich, dass Häufigkeit und Heftigkeit zählen und dass angepasste oder ruhige Kinder leicht übersehen werden, obwohl auch sie unter Stress stehen. Kalter Konflikt mit Schweigen sei nicht besser. Anders als Kathy Weber, die zum Vertagen rät, nennen sie keine feste Grenze; sie raten, nach dem Streit zu fragen, wie es für das Kind war."
     }
    ],
    "quellen": [
@@ -12205,12 +18759,38 @@ window.WISSEN = {
      "datum": "2020-12-14",
      "minute": "30:44",
      "thema": "Wie streiten wir vor den Kindern?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 230,
+     "titel": "Hört auf zu streiten! – Konflikte im Familienalltag bewältigen",
+     "datum": "2026-04-07",
+     "minute": "02:19",
+     "thema": "Was Konflikte für Kinder schwer macht"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 230,
+     "titel": "Hört auf zu streiten! – Konflikte im Familienalltag bewältigen",
+     "datum": "2026-04-07",
+     "minute": "12:20",
+     "thema": "Wie viel Streit Kinder mitbekommen dürfen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 204,
+     "titel": "Bindungsorientierte Erziehung als Team - gemeinsam Konflikte bewältigen und als Elternpaar gestärkt aus ihnen hervorgehen",
+     "datum": "2025-10-07",
+     "minute": "27:09",
+     "thema": "Streit und Kritik vor den Kindern"
     }
    ],
    "verwandt": [
     "eltern-als-team",
     "elterliche-wut",
-    "eltern-selbstregulation"
+    "eltern-selbstregulation",
+    "konflikte-familie",
+    "trennung-scheidung"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Dürfen meine Kinder miterleben, wenn wir uns streiten?“. Hier steht, was dahinter stecken kann und was helfen kann."
@@ -12361,20 +18941,35 @@ window.WISSEN = {
     "gefuehle",
     "alltag"
    ],
-   "kurz": "Streit beginnt laut Nicola Schmidt mit etwa anderthalb bis zwei Jahren, meist um Spielzeug oder Orte, und die Auslöser werden mit dem Alter komplexer. Zuverlässig lösen Kinder Konflikte erst mit etwa zehn Jahren. Sie rät, nicht per Machtwort zu entscheiden, sondern beide Kinder zu fragen, was sie brauchen, auch wenn das im Moment länger dauert.",
+   "kurz": "Streit beginnt laut Nicola Schmidt mit etwa anderthalb bis zwei Jahren, meist um Spielzeug oder Orte, und die Auslöser werden mit dem Alter komplexer. Zuverlässig lösen Kinder Konflikte erst mit etwa zehn Jahren. Sie rät, nicht per Machtwort zu entscheiden, sondern beide Kinder zu fragen, was sie brauchen, auch wenn das im Moment länger dauert. Auch Kathrin Hohmann rät, zuerst zu beruhigen und dann zu moderieren statt zu richten, bei Gewalt aber immer einzugreifen.",
    "tipps": [
+    "Schätzt zuerst ein, ob ihr nur beobachten könnt; bei Gewalt geht ihr immer dazwischen, damit Kinder Schutz erfahren.",
+    "Geht auf Augenhöhe und beruhigt die Kinder zuerst, denn im Stress können sie nicht über Lösungen nachdenken.",
     "Fragt euer Kind, was es braucht, damit es merkt, welche Impulse in ihm stecken.",
     "Fragt auch das andere Kind, was es braucht, damit beide die Absichten des anderen verstehen.",
     "Fragt beide nach Lösungsideen und verhandelt gemeinsam, was davon machbar ist.",
-    "Entscheidet nicht per Machtwort, wer die Schippe oder die Schaukel bekommt, wenn ihr dem Kind das Lösen von Streit beibringen wollt."
+    "Entscheidet nicht per Machtwort, wer die Schippe oder die Schaukel bekommt, wenn ihr dem Kind das Lösen von Streit beibringen wollt.",
+    "Sorgt für eure eigene Entspannung, bevor ihr einen Streit begleitet; hitzig könnt ihr nicht feinfühlig zuhören."
    ],
    "sichtweisen": [
     {
      "podcast": "artgerecht",
      "text": "Nicola Schmidt unterscheidet nach Alter: Babys schieben oder greifen, streiten aber noch nicht im eigentlichen Sinn. Ab zwei Jahren geht es um Spielzeug und Orte, die Kinder spielen noch nebeneinander. Ein Dreijähriger gerät in Stress, wenn ihm sein Förmchen weggenommen wird und er nicht weiß, ob er es zurückbekommt. Ein Vierjähriger mit klarem Spielplan gerät unter Spannung, wenn der andere es anders macht oder ein drittes Kind dazukommt. Später spielten Freunde schon zusammen, und das Kind darf nicht mit. Im Grundschulalter lösten Kinder Konflikte schon recht gut konstruktiv. Autorität helfe kurzfristig, bedeute langfristig aber mehr Arbeit. Selbst lösen zu lernen dauere im Moment länger, sei laut der Artgerecht-Idee aber nachhaltiger. Für weitere Tipps verweist sie auf ihre Kinderbücher, was Eigenwerbung ist."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "In einer Folge mit Kathrin Hohmann beschreiben Daniel Graf und Katja Seide vier Schritte für Konflikte zwischen Kindern: Situation einschätzen, auf Augenhöhe gehen und mitregulieren, aktiv zuhören und gemeinsam eine Lösung suchen, achtsam mit sich selbst sein. Anders als die Artgerecht-Sicht, die vor allem das Fragen nach Bedürfnissen betont, setzt Hohmann stärker auf das Beruhigen zuerst, weil Kinder im Stress nicht über Lösungen nachdenken können. Übereinstimmung gibt es beim Verzicht auf Machtworte: Erwachsene moderieren wie ein Sprachrohr, sie sind weder Richter noch Polizist, und niemand soll als Verlierer dastehen, sonst werde der Streit oft heimlich und aggressiver ausgetragen. Neu ist die klare Grenze: Bei Gewalt gehen Erwachsene immer dazwischen, damit Kinder Schutz erfahren. Hohmann sieht in Konflikten ein hohes Lernpotenzial und betont, dass das Zeit braucht und jeder kleine Fortschritt zählt."
     }
    ],
    "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 65,
+     "titel": "Gemeinsam durch die Wut mit Kathrin Hohmann",
+     "datum": "2021-06-15",
+     "minute": "38:35",
+     "thema": "Vier Schritte bei Konflikten zwischen Kindern"
+    },
     {
      "podcast": "artgerecht",
      "nr": 31,
@@ -12414,7 +19009,7 @@ window.WISSEN = {
     "teilen",
     "frustrationstoleranz",
     "gefuehle-begleiten",
-    "entschuldigung"
+    "aggression-kinder"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Warum streiten Kinder so viel?“. Hier steht, was dahinter stecken kann und was helfen kann."
@@ -12433,7 +19028,9 @@ window.WISSEN = {
     "Zeitdruck morgens",
     "Morgenroutine",
     "Morgenplan",
-    "Trödeln morgens"
+    "Trödeln morgens",
+    "Phasenübergang",
+    "Time Timer"
    ],
    "fragen": [
     "Wie komme ich morgens stressfrei aus dem Haus?",
@@ -12473,6 +19070,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber erklärt, dass Trödeln oder Nein-Sagen am Morgen meist ein Bedürfnis anzeigt: nach Orientierung, Wärme, Nähe zu Mama oder Papa, Autonomie oder Entschleunigung. Statt zu drängeln, setzt sie sich zum Kind, begleitet es Schritt für Schritt und führt klar („jetzt die Strümpfe“), denn je mehr Führung ein Kind braucht, desto früher sollten Eltern sie geben. Sie empfiehlt einen gemeinsam gemalten Morgenplan mit Symbolen, der am Vortag oder Nachmittag besprochen wird, kleine Wahlmöglichkeiten und feste Rituale. Zeitdruck ist laut ihr kein Fehler des Kindes: Ob man sich unter Druck setzt, entscheidet man selbst, und man kann Termine verschieben oder in der Kita anrufen. Anders als die Mutti-Hosts, die auf Zeitfenster, Puffer und Folgen setzen, betont sie Begleitung und Empathie auch am Morgen; Wut begleitet sie lieber zu einem anderen Zeitpunkt, wenn morgens keine Zeit dafür ist. Bleibt ihr nach zehn bis fünfzehn Minuten stecken, prüft sie, was fehlt, oft mehr Führung."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide sehen den Morgen vor allem als Frage von Übergängen: Für viele Kinder sei der Wechsel zwischen Situationen das Schwierige, nicht das Ziel. Sie nennen gestufte Ankündigungen, Sanduhr oder Time Timer, genug Zeitpuffer und ein Ritualbüchlein, ausdrücklich ohne Belohnungssystem; das deckt sich mit der Ruhe und dem Puffer bei mutti. Abweichend betonen sie, dass Kooperation keine Einbahnstraße ist: An wichtigen Tagen bittet man um Unterstützung, an anderen ist man flexibel. Katia Saalfrank und eine Gästin raten, den eigenen Stress zu senken und zu fragen, was morgens wirklich nötig ist; Saalfrank hält Hochreißen und Anbrüllen für ungünstig. Für verträumte oder hibbelige Kinder nennt eine Gästin Checklisten, einen Anziehparcours und sichtbare Zeit, mit dem Ziel weniger Zuspätkommen statt Perfektion; die Hosts geben keine Garantie."
     }
    ],
    "quellen": [
@@ -12531,6 +19132,14 @@ window.WISSEN = {
      "datum": "2023-03-19",
      "minute": "05:09",
      "thema": "Zeitdruck ist eine eigene Entscheidung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 42,
+     "titel": "Teil 5: Aufbrüche, Abbrüche und Pünktlich sein",
+     "datum": "2020-07-14",
+     "minute": "04:41",
+     "thema": "Countdown-Regel, Wecker, Time Timer, Sanduhr"
     }
    ],
    "verwandt": [
@@ -12539,7 +19148,7 @@ window.WISSEN = {
     "schulstart",
     "kooperation-zuhoeren",
     "selbststaendigkeit",
-    "zaehne-putzen"
+    "wunsch-oder-beduerfnis"
    ],
    "medizinisch": false,
    "einleitung": "Morgens kommt es in vielen Familien zu Hektik, Trödeln und Streit, und das Haus wird oft zu spät verlassen. Eltern gehen schon mit der Erwartung hinein, dass es schiefgeht."
@@ -12584,10 +19193,10 @@ window.WISSEN = {
     "Teilt große Mengen ein, etwa nach Halloween: Das Kind sucht sich ein paar Teile für die Woche oder eines pro Tag aus.",
     "Überlegt vorher, wo eure Grenze liegt und warum, sonst gebt ihr beim Quengeln schnell nach. Zieht als Eltern an einem Strang.",
     "Haltet den Frust der Kinder aus, wenn ihr einen neuen Rahmen einführt. Nach einigen Wochen wird es leichter.",
-    "Bietet Snacks an, die die Zähne nicht sofort angreifen, zum Beispiel Gurke, Möhre oder Vollkornbrot, und gebt eher Dinge, die vielleicht süß sind, aber die Zähne weniger angreifen.",
     "Setzt Kinder nicht ständig Weißbrot, Honig- oder Marmeladenbrot, Quetschies oder Müsliriegeln aus, denn laut Nicola Schmidt kommt es darauf an, wie oft am Tag der Zahnschmelz mit Zucker in Kontakt kommt.",
     "Sprecht über euch selbst, etwa dass euch etwas zu süß ist oder ihr danach müde werdet, damit Kinder sehen, dass Ablehnen möglich ist.",
-    "Argumentiert nicht mit „sonst wirst du dick“, schaut lieber auf Wohlbefinden und Körpergefühl, und kommentiert Essen und Körper eures Kindes nicht."
+    "Argumentiert nicht mit „sonst wirst du dick“, schaut lieber auf Wohlbefinden und Körpergefühl, und kommentiert Essen und Körper eures Kindes nicht.",
+    "Knüpft Süßes und Nachtisch nie an Bedingungen wie Aufessen, und verzichtet auf Essbelohnungen und die Einteilung in gesund und ungesund; laut einer Gästin wird das Verbotene sonst erst recht spannend."
    ],
    "sichtweisen": [
     {
@@ -12601,6 +19210,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber setzt auf elterliche Führung mit Beteiligung des Kindes: Die Eltern bestimmen, wie viel Süßes es gibt, das Kind entscheidet mit, was in die tägliche Süßigkeitenschüssel kommt und wann es sie isst. Ist die Schüssel früh leer, gibt es später nichts mehr, und das Kind wird bei der Frustration begleitet. Eine feste Regel kann sein, dass nach dem Zähneputzen nichts Süßes mehr kommt. In einer älteren Folge wirkt ihre Schwester Jennifer Weber als Gesprächspartnerin: Sie ist gegen komplette Zuckerfreiheit, hält Zucker aber für ein Riesenthema, empfiehlt Süßes klein und direkt nach dem Essen und sagt, das Verlangen sei antrainiert. Beide raten, bei Kummer nicht automatisch Essen anzubieten, sondern zu fragen, was das Kind braucht. Ein Verbot lehnen sie nicht ab; ein Plan gibt Orientierung."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Die Hosts Daniel Graf und Katja Seide streifen das Thema in zwei Folgen. Sie sagen, die Vorliebe für Süßes sei angeboren, weil süße Beeren energiereich und ungiftig sind, und empfehlen Süßes nur nach den Hauptmahlzeiten und nie an Bedingungen geknüpft; Nachtisch gibt es auch, wenn wenig gegessen wurde. Uneinig sind sie bei der Reihenfolge: Einer hält Nachtisch nach dem Essen für gängig, der andere serviert ihn eher vorher und nennt das einen Versuch wert, weil das Kind sonst den Nachtisch nicht einrechnet. In einer späteren Folge rät eine Gästin (Schiftern) davon ab, Essen als gesund oder ungesund zu bewerten oder Süßes zu rationieren, weil das Ungesunde dadurch verboten und spannend werde. Das liegt nah an der Skepsis der mutti-Hosts gegenüber strengen Verboten und an der Orientierung durch einen Rahmen bei gfk, ist aber grundsätzlicher gegen jede Essensbelohnung. Zahngesundheit spielt hier keine Rolle, anders als bei Nicola Schmidt."
     }
    ],
    "quellen": [
@@ -12645,14 +19258,6 @@ window.WISSEN = {
      "thema": "Süßigkeiten im Haus und Vertrauen"
     },
     {
-     "podcast": "mutti",
-     "nr": 9,
-     "titel": "Q&A: Kinderfrust, Zähneputz-Dramen und Partnerschaftsfragen",
-     "datum": "2025-01-22",
-     "minute": "18:46",
-     "thema": "Frage: Jugendlicher isst heimlich viel Süßes"
-    },
-    {
      "podcast": "artgerecht",
      "nr": 20,
      "titel": "Hilfe, mein Kind lässt sich nicht Zähne putzen!",
@@ -12661,12 +19266,20 @@ window.WISSEN = {
      "thema": "Zuckerarme Snacks und Zahngesundheit"
     },
     {
-     "podcast": "artgerecht",
-     "nr": 20,
-     "titel": "Hilfe, mein Kind lässt sich nicht Zähne putzen!",
-     "datum": "2024-08-06",
-     "minute": "06:16",
-     "thema": "Ernährung, Mundflora und Zahnschmelz"
+     "podcast": "wunschkind",
+     "nr": 35,
+     "titel": "Gute Tipps für schlechte Esser",
+     "datum": "2020-04-07",
+     "minute": "50:23",
+     "thema": "Süßes ohne Bedingungen, Nachtisch vorher oder nachher"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 246,
+     "titel": "Mehr Entspannung am Familientisch - kindliches Essverhalten besser verstehen",
+     "datum": "2026-07-28",
+     "minute": "40:33",
+     "thema": "Gesund gleich eklig, Ungesund gleich Belohnung, Rationieren"
     }
    ],
    "verwandt": [
@@ -12675,7 +19288,7 @@ window.WISSEN = {
     "belohnungssysteme",
     "frustrationstoleranz",
     "zaehne-putzen",
-    "taschengeld"
+    "drogen-alkohol-rauchen"
    ],
    "medizinisch": true,
    "einleitung": "Viele Eltern erleben, dass ihr Kind ständig Süßes verlangt, und wissen nicht, wo die Grenze zwischen Verbot und Freigabe liegt."
@@ -12689,13 +19302,17 @@ window.WISSEN = {
     "Taschengeldplan",
     "Geld sparen Kinder",
     "Umgang mit Geld lernen",
-    "Spardose"
+    "Spardose",
+    "Taschengeld ab sechs",
+    "Geldgefühl",
+    "Sparziel"
    ],
    "fragen": [
     "Ab welchem Alter bekommt ein Kind Taschengeld?",
     "Wie viel Taschengeld ist richtig?",
     "Was darf mein Kind von seinem Taschengeld kaufen?",
-    "Darf ich Süßigkeitenkäufe vom Taschengeld verbieten?"
+    "Darf ich Süßigkeitenkäufe vom Taschengeld verbieten?",
+    "Wie lernt mein Kind den Umgang mit Geld?"
    ],
    "alter": [
     "3-6",
@@ -12721,6 +19338,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber feiert Taschengeld ausdrücklich und bleibt klar: Das Geld gehört dem Kind, ohne Kaufverbote; den Rahmen setzt nur die Höhe der Summe. Viele Süßigkeiten sind für sie ein Hinweis, dass die Summe vielleicht zu hoch ist, kein Grund für ein Verbot. Sie ordnet es in ihre drei Autonomiephasen ein: selber machen, selber entscheiden, selber Erfahrungen sammeln. Beträge aus ihrer eigenen Familie nennt sie nur als Beispiel und möchte sie nicht bewertet sehen. Die Höhe soll zu Familie, finanziellem Spielraum und den Werten der Eltern passen."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Die Hosts streifen das Thema nur in einer Folge mit einem Kinderbuchrapper. Er gibt seinem Kind seit dem sechsten Lebensjahr einen Euro pro Woche und sagt selbst, dass es noch nicht gut klappt: Das Geld verschwindet sofort in einer Spardose, an die das Kind nicht herankommt, und so lerne es laut ihm nicht, Geld auszugeben. Katja Seide hält die üblichen Empfehlungslisten für zu knapp, weil sie lange Sparzeiten erzwingen, und zahlte bewusst großzügiger. Sparziele entstanden bei ihren Kindern erst etwa Anfang der dritten Klasse. Anders als Kathy Weber (gfk), die schon ab etwa drei Jahren von Taschengeld spricht, setzen die Hosts erst beim Schulalter an. Wer will, dass Kinder den Umgang mit Geld lernen, sollte laut den Hosts nicht ständig stattdessen selbst bezahlen; das Geld soll das Kind also auch selbst einsetzen."
     }
    ],
    "quellen": [
@@ -12763,13 +19384,30 @@ window.WISSEN = {
      "datum": "2026-10-26",
      "minute": "15:28",
      "thema": "Taschengeldplan und Fazit"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 128,
+     "titel": "Weihnachten und Wackelzähne - mit Kinderbuchrapper Big Moe",
+     "datum": "2023-12-12",
+     "minute": "15:09",
+     "thema": "Taschengeld ab sechs, Spardose"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 128,
+     "titel": "Weihnachten und Wackelzähne - mit Kinderbuchrapper Big Moe",
+     "datum": "2023-12-12",
+     "minute": "18:36",
+     "thema": "Taschengeld in der Praxis der Hosts: großzügiger als die Empfehlungen"
     }
    ],
    "verwandt": [
     "trotz-autonomie",
     "selbststaendigkeit",
     "suessigkeiten",
-    "verantwortung-uebertragen"
+    "verantwortung-uebertragen",
+    "aussehen-schoenheitsideale"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Ab welchem Alter bekommt ein Kind Taschengeld?“. Hier steht, was dahinter stecken kann und was helfen kann."
@@ -12850,12 +19488,333 @@ window.WISSEN = {
    ],
    "verwandt": [
     "erwartungen-elternschaft",
+    "erwartungen-zuschreibungen",
     "erziehungsstile",
     "wutanfaelle",
+    "gefuehlsstarke-hochsensible-kinder",
     "laute-kinder"
    ],
    "medizinisch": false,
    "einleitung": "Wenn ein Kind sich schwierig verhält, fühlen sich Eltern schnell verantwortlich oder von anderen beurteilt. Es ist unklar, wie viel davon an der Erziehung liegt und wie viel am Kind selbst."
+  },
+  {
+   "id": "vorsorge-erbrecht",
+   "titel": "Testament, Erbe und Vormund für Familien",
+   "synonyme": [
+    "Testament",
+    "Erbrecht",
+    "gesetzliche Erbfolge",
+    "Berliner Testament",
+    "Erbengemeinschaft",
+    "Sorgerechtsverfügung",
+    "Vormund",
+    "Testamentsvollstrecker",
+    "Vorsorge Eltern",
+    "nicht verheiratet erben"
+   ],
+   "fragen": [
+    "Brauchen wir als Eltern ein Testament?",
+    "Wer erbt, wenn ein Elternteil stirbt und kein Testament da ist?",
+    "Wer bekommt meine Kinder, wenn mir und meinem Partner etwas passiert?",
+    "Erben unverheiratete Partner?",
+    "Wer verwaltet das Erbe meiner minderjährigen Kinder?"
+   ],
+   "alter": [
+    "0-1",
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "eltern",
+    "alltag"
+   ],
+   "kurz": "Laut einer Gästin im Podcast regelt das Gesetz vieles, entspricht aber oft nicht dem, was Eltern wollen: Ohne Testament entsteht eine Erbengemeinschaft, nicht verheiratete Partner gehen leer aus, und Kinder kommen nicht automatisch zu Großeltern oder Paten. Mit Testament, Sorgerechtsverfügung und ggf. einem Testamentsvollstrecker lässt sich das gezielt regeln. Das sind Aussagen der Gästin und keine verbindliche Rechtsberatung; lasst euch von einer Anwältin, einem Anwalt oder einem Notar beraten.",
+   "tipps": [
+    "Schiebt das Thema nicht auf: Wenn es einmal geregelt ist, muss man nicht mehr ständig daran denken.",
+    "Prüft, ob die gesetzliche Erbfolge zu eurer Familie passt, vor allem bei Immobilie, größerem Vermögen oder Patchwork-Familie; dort rät die Gästin besonders zu Beratung.",
+    "Wenn ihr nicht verheiratet seid, müsst ihr den Partner oder die Partnerin laut der Gästin per Testament absichern, denn ohne Testament gibt es weder Erbe noch Pflichtteil; mögliche Mittel sind Wohnungsrecht oder Nießbrauch.",
+    "Übernehmt das Berliner Testament nicht ungeprüft: Laut der Gästin wird es zu schnell gewählt, passt oft nicht für Patchwork-Familien und ist steuerlich nicht optimiert.",
+    "Benennt im Testament und zusätzlich in einer separaten Sorgerechtsverfügung einen Vormund für den Fall, dass beide Eltern wegfallen, und sprecht vorher mit dieser Person.",
+    "Bestimmt eine Ersatzperson als Sicherheitsnetz und prüft die Verfügung alle zwei bis drei Jahre, solange die Kinder minderjährig sind.",
+    "Setzt einen Testamentsvollstrecker ein, wenn die Kinder nicht mit 18 über das ganze Erbe verfügen sollen; er kann laut der Gästin ein späteres Alter festlegen, etwa 21 oder 25.",
+    "Schreibt Testamente nicht ohne Hilfe selbst: Laut der Gästin entstehen häufig Fehler, die später zu Streit führen. Einen Entwurf vom Anwalt müsst ihr handschriftlich abschreiben, nur beim Notar entfällt das."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "In einer Folge spricht eine Fachanwältin für Erbrecht mit Daniel Graf und Katja Seide. Sie hält Vorsorge für unverzichtbar und rät dringend zu Beratung statt zu selbst geschriebenen Testamenten oder Vorlagen. Sie kritisiert, dass das Erbrecht aus der Zeit um 1900 stamme und neue Familienmodelle nicht abbilde, und erlebt Erbengemeinschaften als sehr konfliktanfällig. Zum Vormund räumt sie mit dem Irrtum auf, Kinder kämen automatisch zu Großeltern oder Paten; das Familiengericht entscheide nach dem Kindeswohl, folge einer Elternverfügung aber laut ihr in etwa 99 Prozent der Fälle. Die Hosts teilen die Einschätzung und räumen ein, das Thema selbst lange verdrängt zu haben; ein Host hat sich bewusst Hilfe geholt. Alle Rechtsangaben sind Aussagen der Gästin, nicht geprüft und nicht verbindlich."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 260,
+     "titel": "Testament, Erbe und Kinder - was Eltern für den Ernstfall regeln sollten",
+     "datum": "2026-11-03",
+     "minute": "04:06",
+     "thema": "Gesetzliche Erbfolge bei verheirateten Eltern, Erbengemeinschaft"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 260,
+     "titel": "Testament, Erbe und Kinder - was Eltern für den Ernstfall regeln sollten",
+     "datum": "2026-11-03",
+     "minute": "10:29",
+     "thema": "Nicht verheiratete Eltern: Partner erbt nichts"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 260,
+     "titel": "Testament, Erbe und Kinder - was Eltern für den Ernstfall regeln sollten",
+     "datum": "2026-11-03",
+     "minute": "21:42",
+     "thema": "Sorgerechtsverfügung und Rolle des Familiengerichts"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 260,
+     "titel": "Testament, Erbe und Kinder - was Eltern für den Ernstfall regeln sollten",
+     "datum": "2026-11-03",
+     "minute": "32:13",
+     "thema": "Testamentsvollstrecker und Altersstufen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 260,
+     "titel": "Testament, Erbe und Kinder - was Eltern für den Ernstfall regeln sollten",
+     "datum": "2026-11-03",
+     "minute": "36:10",
+     "thema": "Was braucht eine Familie im Testament, Berliner Testament"
+    }
+   ],
+   "verwandt": [
+    "patchwork-familie",
+    "eltern-als-team",
+    "tod-trauer"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Brauchen wir als Eltern ein Testament?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "tod-trauer",
+   "titel": "Tod und Trauer in der Familie",
+   "synonyme": [
+    "Tod erklären",
+    "Trauer bei Kindern",
+    "Opa gestorben",
+    "Haustier gestorben",
+    "Beerdigung",
+    "Geschwister gestorben",
+    "Sternenkind",
+    "Kind verloren",
+    "Abschied nehmen"
+   ],
+   "fragen": [
+    "Wie erkläre ich meinem Kind den Tod?",
+    "Opa ist gestorben, was sage ich meinem Kind?",
+    "Wie begleite ich mein Kind, wenn sein Geschwisterchen gestorben ist?",
+    "Was sage ich Eltern, die ein Kind verloren haben?",
+    "Mein Partner trauert anders als ich, was tun?",
+    "Soll man einen Toten nochmal anschauen?"
+   ],
+   "alter": [
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "gefuehle",
+    "eltern",
+    "geschwister"
+   ],
+   "kurz": "In mehreren Folgen sprechen die Hosts und Gäste dafür, Kindern ehrlich und altersgerecht vom Tod zu erzählen und Trauer nicht zu verstecken. Kinder trauern laut einer Trauerbegleiterin in Wellen, jeder Mensch auf eigene Weise, und Eltern, Paare und das Umfeld brauchen Zeit, Zuhören und Rituale. Bei starker Belastung kann Trauerbegleitung helfen.",
+   "tipps": [
+    "Sagt dem Kind früh und ehrlich, wenn jemand gestorben ist, und wartet nicht Monate; erklärt es so, wie es zum Weltbild eurer Familie passt.",
+    "Sagt nicht, jemand sei eingeschlafen, weil Kinder Schlafen sonst mit Angst verbinden können; sagt stattdessen, dass das Herz aufgehört hat zu schlagen.",
+    "Sprecht kindgerecht über den Verlust und fasst als Erwachsene Gefühle in Worte; Kinder dürfen zwischen traurig, fröhlich und wütend wechseln.",
+    "Macht Kindern klar, dass sie nichts falsch gemacht haben, damit sich keine Schuldgefühle festsetzen.",
+    "Trauert als Familie mit Ritualen wie Erinnerungskiste, Trauertagebuch (kleine Kinder können malen), Kerzen oder bemalten Steinen; ein totes Tier im Wald kann ein erster Anlass sein, Abschied zu üben.",
+    "Lasst Angehörige beim Abschied Zeit und kleine Aufgaben haben, etwa Beigaben zu richten oder eine Urne zu gestalten; die Hosts hören vom Bestatter, dass es vielen guttut, Verstorbene noch einmal anzuschauen.",
+    "Als Paar: Sprecht miteinander und geht davon aus, dass ihr unterschiedlich trauert; jede und jeder sorgt für die eigenen Gefühle, und ihr trefft euch immer wieder, etwa an einem besonderen Ort.",
+    "Als Außenstehende: Hört zu ohne zu bewerten, sagt ehrlich, dass euch die Situation überfordert, und macht konkrete Angebote wie Einkaufen oder Spazierengehen, auch Wochen später noch.",
+    "Vermeidet Sätze wie „ihr seid noch jung“ oder „alles hat einen Sinn“ gegenüber Trauernden."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Die Hosts sind sich einig, dass Ehrlichkeit besser ist als Verschweigen; eine Gästin (Autorin) nennt es, Kindern die Wahrheit zuzumuten, und ordnet Reaktionen nach Alter. Eine Gästin, die als Trauerbegleiterin und Mutter spricht, beschreibt Kindertrauer als Wellen und warnt, dass Kinder ohne Antworten eigene Erklärungen suchen und sich schuldig fühlen können. Ein Gast aus dem Bestattungswesen wirbt für einen offenen, selbstbestimmten Umgang mit Abschied und Bestattung und sieht vorab bezahlte Verträge eher kritisch. Bei Eltern, die ein Kind verloren haben, betonen Gästinnen, dass jeder anders trauert, Schuldgefühle dazugehören und Wegdrücken des Schmerzes ungesund werden kann. Ein Teenager schildert als Geschwisterkind, es nerve, wenn Erwachsene vorschnell annehmen, es gehe ihr schlecht; besser sei, direkt zu fragen. Die Hosts geben zu, wenig eigene Erfahrung mit Todesfällen zu haben."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 177,
+     "titel": "Mit Kindern über schwierige Themen sprechen",
+     "datum": "2025-04-01",
+     "minute": "30:15",
+     "thema": "Tod und Wahrheit je nach Alter"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 139,
+     "titel": "Den Verlust eines Kindes (gemeinsam) verarbeiten",
+     "datum": "2024-05-14",
+     "minute": "24:28",
+     "thema": "Was Geschwister brauchen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 139,
+     "titel": "Den Verlust eines Kindes (gemeinsam) verarbeiten",
+     "datum": "2024-05-14",
+     "minute": "13:51",
+     "thema": "Unterschiedliche Trauer bei Mann und Frau, Paargespräch"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 17,
+     "titel": "Schwere Krankheit und Tod Teil 1 Tod und Bestattung",
+     "datum": "2019-07-16",
+     "minute": "04:11",
+     "thema": "Verstorbene nochmal anschauen und Abschied nehmen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 138,
+     "titel": "Stille Geburt und Neubeginn: Eine Reise der Hoffnung",
+     "datum": "2024-04-30",
+     "minute": "45:01",
+     "thema": "Was hilft und was man nicht sagen sollte"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 19,
+     "titel": "Schwere Krankheit und Tod Teil 3 - Wenn das eigene Kind stirbt",
+     "datum": "2019-08-13",
+     "minute": "35:14",
+     "thema": "Wie das Geschwisterkind den Tod erlebte, Rat an Erwachsene"
+    }
+   ],
+   "verwandt": [
+    "gefuehle-begleiten",
+    "kinderwunsch-verlust",
+    "geschwisterbindung",
+    "krise-krankheit-familie",
+    "vorsorge-erbrecht"
+   ],
+   "medizinisch": false,
+   "einleitung": "Viele Eltern kennen diese Situation: „Wie erkläre ich meinem Kind den Tod?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "trennung-scheidung",
+   "titel": "Trennung und Scheidung mit Kindern",
+   "synonyme": [
+    "Scheidung",
+    "Trennungskinder",
+    "Scheidungskinder",
+    "Elterntrennung",
+    "Trennung der Eltern",
+    "Alleinerziehend",
+    "Ex-Partner",
+    "Loyalitätskonflikt"
+   ],
+   "fragen": [
+    "Wie sage ich meinem Kind, dass wir uns trennen?",
+    "Soll ich der Kinder wegen zusammenbleiben?",
+    "Schadet eine Trennung meinem Kind?",
+    "Mein Kind gibt sich die Schuld an der Trennung, was tun?",
+    "Mein Ex redet schlecht über mich vor den Kindern, was tun?",
+    "Wie schaffe ich den Alltag als Alleinerziehende?"
+   ],
+   "alter": [
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "eltern",
+    "gefuehle",
+    "alltag"
+   ],
+   "kurz": "Laut den Gästen der Folgen schadet eine Trennung Kindern nicht automatisch; entscheidend sind wenig Streit, Ehrlichkeit auf Kinderebene und verlässliche Alltagsstrukturen. Kinder brauchen die Botschaft, dass sie keine Schuld haben und die Eltern ihre Eltern bleiben, und Raum für alle Gefühle. Eltern sollten dabei auch gut für sich sorgen, denn nur stabile Eltern können ihr Kind stützen. Bei rechtlichen oder finanziellen Fragen empfehlen die Hosts, sich beraten zu lassen.",
+   "tipps": [
+    "Sprecht mit dem Kind erst, wenn ihr euch als Paar abgestimmt habt, was ihr sagt und wie es weitergeht.",
+    "Beginnt das Gespräch mit dem, was das Kind ohnehin schon spürt (etwa ständiger Streit oder Schweigen), und sagt ehrlich, was ihr schon wisst und was noch nicht.",
+    "Erklärt die Trennung konkret und bezogen auf den Alltag des Kindes, je jünger, desto einfacher, und ohne Details aus der Paarbeziehung.",
+    "Wiederholt immer wieder: Das hat nichts mit dir zu tun, das ist Erwachsenensache, und wir bleiben deine Eltern.",
+    "Lasst Rhythmen, Rituale, Essen, Bücher und Kinderzimmer möglichst unverändert, auch bei einem Umzug.",
+    "Gebt allen Gefühlen Raum, auch Wut, Rückzug oder Erleichterung; bei Rückzug macht wiederholt kleine Angebote, ohne zu drängen.",
+    "Sprecht nicht schlecht über den anderen Elternteil und bringt das Kind nicht in einen Loyalitätskonflikt; Frust und Trauer gehören zu Freunden, Beratung oder Therapie.",
+    "Haltet Absprachen mit dem Ex sachlich, beendet Gespräche, bevor sie kippen, und holt bei Gericht oder hochstrittiger Lage früh spezialisierte Hilfe.",
+    "Holt euch Hilfe, wenn ein Kind über Wochen stark verändert wirkt oder sich selbst verletzt (Beratungsstelle, Kinderarztpraxis, Therapie)."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Die Hosts und ihre Gäste betonen mehrfach, dass Trennung kein automatisches Trauma ist: Eine Gästin (Autorin) sagt, es gebe dafür keine Belege, eine Gästin (Familienberaterin) nennt sie Baustein der Entwicklung und Risikofaktor zugleich. Als belastend gelten laut den Gästen vor allem Dauerstreit und Loyalitätskonflikte, nicht die Trennung selbst. Mehrere Gäste raten, der Kinder wegen nicht zusammenzubleiben, wenn nur noch geschauspielert wird; Kinder merkten das ohnehin. Eine Gästin (Expertin für Trennungsbegleitung) nennt die ersten 18 bis 24 Monate als schwierigste Zeit, danach seien Trennungskinder oft nicht mehr von anderen zu unterscheiden. Uneinigkeit gibt es eher im Ton: Während die einen vor allem Struktur und Sachlichkeit betonen, legen andere mehr Wert darauf, unverarbeitete Trauer ernst zu nehmen, die bei Erwachsenen oft lange nachwirke. Auch eine polyamore Familie kommt zu Wort: Dort heiße es, Bindung, Verlässlichkeit und Ehrlichkeit zählten mehr als die Familienform. Zum Thema Unterhalt und staatliche Hilfe äußert sich eine Gästin ausdrücklich nur als Laiin und rät, sich beraten zu lassen."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 173,
+     "titel": "Mit Kindern über die Trennung der Eltern sprechen",
+     "datum": "2025-03-04",
+     "minute": "02:33",
+     "thema": "Die Trennung kindgerecht erklären"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 232,
+     "titel": "Mit Kindern durch die Trennung - Gespräche, Gefühle und neue Strukturen",
+     "datum": "2026-04-21",
+     "minute": "04:07",
+     "thema": "Wie sagt man es dem Kind?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 194,
+     "titel": "Trennung ohne Drama",
+     "datum": "2025-07-29",
+     "minute": "10:35",
+     "thema": "Stress für Kinder gering halten, alles gleich lassen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 127,
+     "titel": "Wir erwachsenen Trennungskinder",
+     "datum": "2023-11-28",
+     "minute": "01:21",
+     "thema": "Zahlen und mögliche langfristige Folgen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 61,
+     "titel": "Trennung - wie komme ich zu einer Entscheidung?",
+     "datum": "2021-04-20",
+     "minute": "41:41",
+     "thema": "Was tun, wenn der Ex schlecht über mich vor den Kindern redet"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 214,
+     "titel": "Sologlück - Empowerment für Alleinerziehende",
+     "datum": "2025-12-16",
+     "minute": "19:54",
+     "thema": "Trennung, Finanzen und staatliche Unterstützung"
+    }
+   ],
+   "verwandt": [
+    "wechselmodell-getrennte-eltern",
+    "patchwork-familie",
+    "paarstreit-vor-kindern",
+    "gefuehle-begleiten",
+    "eltern-psyche-hilfe",
+    "regression-rueckschritte"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Wie sage ich meinem Kind, dass wir uns trennen?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "trennungsschmerz-abschied",
@@ -12869,14 +19828,17 @@ window.WISSEN = {
     "Kussglas",
     "Kind vermisst Papa",
     "Kind vermisst Mama",
-    "langer Abschied"
+    "langer Abschied",
+    "Wegschleichen",
+    "Tränen Eingewöhnung"
    ],
    "fragen": [
     "Mein Kind weint, wenn ich zur Arbeit gehe, was tun?",
     "Wie gestalte ich einen guten Abschied am Morgen?",
     "Mein Kind klammert sich an mich, wenn ich verreise",
     "Mein Kind vermisst abends den Papa oder die Mama, die nicht da ist",
-    "Mein Kind vermisst den anderen Elternteil nach der Trennung"
+    "Mein Kind vermisst den anderen Elternteil nach der Trennung",
+    "Darf ich mich wegschleichen, wenn mein Kind weint?"
    ],
    "alter": [
     "1-3",
@@ -12892,7 +19854,7 @@ window.WISSEN = {
    "tipps": [
     "Klärt vorher mit dem anderen Elternteil, wie der Morgen für alle machbar abläuft, und sagt es dem Kind. Ältere Kinder können mitreden oder es im Rollenspiel durchspielen.",
     "Haltet eine klare Reihenfolge ein: Zeit und Rituale mit jedem Kind, Übergabe an den anderen Elternteil mit klaren Worten („Papa ist jetzt für dich zuständig, du hast alles, was du brauchst“), dann gehen, ohne umzukehren.",
-    "Sagt „Ich gehe jetzt“ statt zu fragen, ob es in Ordnung ist; das Kind entscheidet nicht, ob ihr geht.",
+    "Sagt „Ich gehe jetzt“ statt zu fragen, ob es in Ordnung ist; das Kind entscheidet nicht, ob ihr geht. Schleicht euch nicht heimlich weg, denn ein klares Tschüss gibt Sicherheit.",
     "Gebt dem Kind Nähe für die Zeit ohne euch mit: Kussglas, Foto, Kuscheltier, ein Kleidungsstück mit eurem Geruch, ein Rucksack oder Kästchen. Nehmt selbst etwas vom Kind mit.",
     "Bereitet größere Kinder vor: Wann geht ihr, wie lange, wann kommt ihr wieder, welches Abschiedsritual gibt es?",
     "Klammert das Kind, umarmt es zum Abschied, löst die Hände liebevoll und nehmt es auf den Arm. Bleibt dann bei ihm, ohne Zeitdruck, und spiegelt: „Du vermisst Mama so, ich helfe dir.“",
@@ -12904,6 +19866,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber setzt zuerst bei den Eltern an: Ein Abschied, der sich hinzieht, mit mehrmaligem Verabschieden, nochmal Stillen und nochmal Winken, nennt sie einen Leierkasten ohne Klarheit; Kinder spürten, wenn Eltern hin- und hergerissen sind. Wer das eigene Warum für Arbeit und Mutterschaft klar hat, verändert die Stimmung. Weinen beim Abschied ist für sie in Ordnung, das Kind darf traurig sein, und niemand ist zu klein für Nähe-Strategien. Eine Hörerin berichtet, dass ihr Kind nach diesen Impulsen binnen weniger Wochen nicht mehr weinte, sondern winkte. Dem steht eine andere Perspektive gegenüber: Ein Großvater fand die langen Abschiede in der Familie früher übertrieben; Kathy Weber sagt, sie würde es wieder so machen, weil das Kind viel Nähe brauchte, und sie sei trotzdem jedes Mal gegangen. Auch das Vermissen des anderen Elternteils nach einer Trennung nennt sie Trauer, die so lange sein darf, wie das Kind sie braucht. Eltern seien nicht darauf angewiesen, dass das Kind ihre Bedürfnisse nach Nähe erfüllt. Sie selbst vermisse ihre Tochter nicht schmerzhaft, wenn diese beim Vater ist, und räumt ein, dass das bei anderen Eltern anders sein kann."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Die Hosts und ihre Gäste stimmen mit Kathy Weber (gfk) darin überein, dass ein klares, ehrliches Tschüss wichtiger ist als ein langer oder heimlicher Abschied. Ein Gast hält den Rat, sich wegzuschleichen, für einen Trugschluss: Das Kind weine dann zwar nicht, stehe aber unter hohem innerem Stress. Daniel Graf vergleicht das klare Tschüss mit einer Sirene, die Sicherheit signalisiert. Einen deutlichen Unterschied gibt es bei den Tränen: Weber lässt Traurigkeit zu und sagt, das Kind dürfe weinen. Eine Gästin (Expertin für Kita-Eingewöhnung) unterscheidet zwischen Tränen der Traurigkeit, die gut getröstet werden, und Panik oder Verzweiflung, und sagt in einer späteren Folge sogar, Tränen gehörten nicht zur Eingewöhnung dazu. Sie rät, zuerst zu atmen und zu trösten und erst danach die Abgabesituation anzupassen, und nennt einen Einbruch nach einigen Wochen normal."
     }
    ],
    "quellen": [
@@ -12954,15 +19920,31 @@ window.WISSEN = {
      "datum": "2025-01-13",
      "minute": "26:46",
      "thema": "Das Kind braucht das Abschiedsritual"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 69,
+     "titel": "Trennungsängste mit Dr. Oliver Dierssen",
+     "datum": "2021-08-24",
+     "minute": "29:14",
+     "thema": "Sicherheitssignal Tschüss, kein Wegschleichen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 192,
+     "titel": "Auf ins Kita-Abenteuer: Wie du dein Kind sicher und entspannt durch die Eingewöhnung begleitest",
+     "datum": "2025-07-15",
+     "minute": "43:13",
+     "thema": "Gehören Tränen dazu?"
     }
    ],
    "verwandt": [
     "verabschieden-hallo-sagen",
     "kita-eingewoehnung",
+    "wechselmodell-getrennte-eltern",
     "berufstaetige-eltern",
     "uebergaenge",
-    "hobby-keine-lust",
-    "veraenderungen-umzug"
+    "hobby-keine-lust"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind weint, wenn ich zur Arbeit gehe, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
@@ -12980,7 +19962,11 @@ window.WISSEN = {
     "Wut aus der Kindheit",
     "Therapy Speech",
     "Glaubenssätze",
-    "Selbstempathie"
+    "Selbstempathie",
+    "Erziehungsrucksack",
+    "Cycle Breaking",
+    "Schattenkind",
+    "alte Muster"
    ],
    "fragen": [
     "Triggert mein Kind mich wegen meiner Kindheit?",
@@ -12988,7 +19974,8 @@ window.WISSEN = {
     "Muss ich mein inneres Kind heilen, um nicht auszurasten?",
     "Ist alles aus der Kindheit ein Trauma?",
     "Wie werde ich weniger wütend, wenn mein Kind früh aufwacht?",
-    "Warum reagiere ich so heftig auf mein Kind?"
+    "Warum reagiere ich so heftig auf mein Kind?",
+    "Warum reagiere ich bei meinem Kind so heftig?"
    ],
    "alter": [
     "1-3",
@@ -12999,14 +19986,14 @@ window.WISSEN = {
     "eltern",
     "gefuehle"
    ],
-   "kurz": "Ob Wut auf das Kind mit der eigenen Kindheit zu tun hat, sehen die Podcasts unterschiedlich. Die Hosts von mutti halten die verbreitete Trigger- und Inneres-Kind-Deutung für überzogen und setzen auf die Bewertung der Situation im Hier und Jetzt. Kathy Weber (gfk) liest sehr heftige Reaktionen dagegen meist als Hinweis auf alte, unerfüllte Bedürfnisse, um die ihr euch als Erwachsene selbst kümmern könnt. Einig sind sich alle: Die Verantwortung für die eigene Reaktion liegt bei den Eltern, nicht beim Kind. Das sind die Sichtweisen der Podcasts und keine therapeutische Empfehlung.",
+   "kurz": "Ob Wut auf das Kind mit der eigenen Kindheit zu tun hat, sehen die Podcasts unterschiedlich. Die Hosts von mutti halten die verbreitete Trigger- und Inneres-Kind-Deutung für überzogen und setzen auf die Bewertung der Situation im Hier und Jetzt. Kathy Weber (gfk) und viele Gäste von wunschkind lesen sehr heftige Reaktionen dagegen meist als Hinweis auf alte Prägungen und unerfüllte Bedürfnisse, um die ihr euch als Erwachsene kümmern könnt. Einig sind sich alle: Die Verantwortung für die eigene Reaktion liegt bei den Eltern, nicht beim Kind. Das sind die Sichtweisen der Podcasts und keine therapeutische Empfehlung.",
    "tipps": [
     "Fragt euch zuerst, was gerade im Hier und Jetzt passiert, statt gleich die Kindheit zu durchforsten.",
     "Übernehmt Verantwortung für eure Reaktion, auch wenn ihr Gründe dafür habt.",
-    "Sucht nach einer anderen Bewertung der Situation und versucht die Perspektive des Kindes oder anderer einzunehmen.",
+    "Sucht nach einer anderen Bewertung der Situation und versucht die Perspektive des Kindes oder anderer einzunehmen. Bei Anspannung hilft es, erst dreimal tief durchzuatmen, bevor ihr reagiert.",
     "Stellt euch abends vor, dass ihr fröhlich aufwacht, und lasst die Wut bei frühem Aufwachen wie einen heißen Wind vorüberziehen, denn Wüten ändert daran nichts.",
     "Wenn euch ein Bild vom inneren Kind oder eine Selbstumarmung im Moment hilft, nutzt es als Perspektivwechsel, ohne zu erwarten, dass es die Ursache löst.",
-    "Sucht fachliche Hilfe bei echter Traumatisierung oder starken Einschränkungen im Alltag, etwa bei Panikattacken.",
+    "Sucht fachliche Hilfe bei echter Traumatisierung, sehr intensiver Wut oder starken Einschränkungen im Alltag, etwa bei Panikattacken; mehrere Gäste im wunschkind-Podcast raten bei tieferen Mustern zu therapeutischer Begleitung statt zur Selbstarbeit allein.",
     "Fällt eure Reaktion auf das Kind sehr heftig aus, fragt euch mit Kathy Weber: Woher kenne ich das, und welches Bedürfnis war damals offen?",
     "Legt die Hand aufs Herz oder klopft aufs Brustbein, sagt euch innerlich „Ich bin in Sicherheit“ und bleibt erwachsen, bevor ihr auf das Kind zugeht. Das ist eine Praxis aus Kathy Webers Arbeit, keine medizinische Aussage.",
     "Bittet euer Kind nach einem Ausbruch um Verzeihung und sagt ihm, dass euer Verhalten mit euch zu tun hatte und nicht mit ihm."
@@ -13019,6 +20006,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber versteht unter dem inneren Kind die Erfahrungen aus der eigenen Kindheit, die bis heute prägen, wie ihr auf Situationen reagiert. Reagiert ihr auf euer Kind sehr heftig, ist laut ihr mit hoher Sicherheit so ein Prozess im Spiel, oft spiegelt das Kind euch dann etwas aus eurer eigenen Geschichte. Sie erklärt, dass das Nervensystem in solchen Momenten in einen Überlebensmodus schaltet, in dem Eltern wie das kleine Kind von damals reagieren. Deshalb empfiehlt sie Selbstempathie, also euch selbst zuzuwenden und euch um das zu kümmern, was das kleine Ich damals gebraucht hätte. Anders als die Hosts von mutti hält sie das Bild vom inneren Kind für tragfähig. Den Begriff Triggern findet sie dagegen selbst heikel, weil er nahelegen kann, das Gegenüber löse etwas bewusst aus; der Auslöser sei nicht die Ursache. Mit mutti teilt sie, dass die Verantwortung bei den Eltern liegt, und sie betont, dass es keine schnelle Lösung gibt und die Arbeit sich oft über Jahre zieht; bei großer Belastung rät sie zu therapeutischer Begleitung."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide sprechen in vielen Folgen mit Gästen über Prägung aus der eigenen Kindheit und sehen das Thema deutlich wohlwollender als mutti: Die Gäste, darunter Beraterinnen, Coaches und Autorinnen, halten innere Kinder, Glaubenssätze und alte Muster für einen zentralen Grund, warum Kinder bei Eltern besonders heftige Reaktionen auslösen. Sie beschreiben das meist als Reaktion des Nervensystems, nicht als esoterisches Bild; eine Gästin erklärt es ausdrücklich neurobiologisch. Wie gfk raten sie, bei unverhältnismäßigen Reaktionen zu fragen, woher man das kennt, und nachsichtig mit sich zu sein. Es gibt aber auch Differenzierung: Ein Coach sagt, nicht jede heftige Reaktion gehe auf die Kindheit zurück, auch Stress oder Erkrankungen spielten eine Rolle, und eine Autorin betont, die Arbeit am Muster dürfe kein weiteres To-do mit Druck werden. Eine Gästin schlägt vor, Glaubenssätze wie einen Erziehungsrucksack auszuleeren und zu prüfen. Bei tieferen Mustern raten mehrere Gäste zu Therapie; die Hosts selbst sagen, dass ihnen der Einstieg in die Selbstarbeit schwerfällt, und Katja Seide tut sich mit der Arbeit mit inneren Anteilen eher schwer."
     }
    ],
    "quellen": [
@@ -13069,6 +20060,22 @@ window.WISSEN = {
      "datum": "2026-03-23",
      "minute": "03:11",
      "thema": "Was das innere Kind ist und wie es Reaktionen auf das Kind prägt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 248,
+     "titel": "Wie die eigene Kindheit unser Elternsein prägt",
+     "datum": "2026-08-11",
+     "minute": "02:24",
+     "thema": "Trigger und Prägungen aus der Kindheit erkennen und verstehen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 176,
+     "titel": "Cycle Breaker - toxische Verhaltensmuster in der Familie durchbrechen",
+     "datum": "2025-03-25",
+     "minute": "05:20",
+     "thema": "Alte Muster erkennen: Cycle Breaking"
     }
    ],
    "verwandt": [
@@ -13077,7 +20084,8 @@ window.WISSEN = {
     "perfektionismus-fehler",
     "erschoepfte-eltern",
     "eltern-selbstregulation",
-    "frueher-nicht-geschadet"
+    "eltern-psyche-hilfe",
+    "eigene-kindheit-praegung"
    ],
    "medizinisch": true,
    "einleitung": "Oft heißt es, Kinder triggerten Eltern wegen deren eigener Kindheit, und das innere Kind müsse erst geheilt werden. Für viele Eltern wirkt das entlastend und überfordernd zugleich."
@@ -13095,7 +20103,10 @@ window.WISSEN = {
     "Töpfchentraining",
     "Abhalten",
     "Kacka nur in Windel",
-    "Stuhlverweigerung"
+    "Stuhlverweigerung",
+    "Bettnässen",
+    "nächtliches Einnässen",
+    "Klingelhose"
    ],
    "fragen": [
     "Wann wird ein Kind trocken?",
@@ -13103,7 +20114,8 @@ window.WISSEN = {
     "Mein Kind ist mit fünf nachts noch nicht trocken",
     "Muss das Kind die Windel von allein abgeben?",
     "Mein Kind will zum Kacken die Windel",
-    "Ab wann kann mein Kind trocken werden?"
+    "Ab wann kann mein Kind trocken werden?",
+    "Mein Kind nässt mit sieben noch nachts ein, was tun?"
    ],
    "alter": [
     "0-1",
@@ -13123,7 +20135,7 @@ window.WISSEN = {
     "Rechnet mit einer Übergangszeit von ein paar Wochen mit einigen Missgeschicken, schimpft nicht und zeigt, dass das Kind sich nächstes Mal aufs Töpfchen setzen kann.",
     "Gebt ein bequemes Töpfchen und Kleidung, die das Kind selbst an- und ausziehen kann; setzt klare Ansagen, etwa Windel im Auto, im Garten oder Bad nicht.",
     "Geht in Etappen vor: erst zu Hause ohne Windel, dann der Kita Bescheid geben, nachts zunächst noch mit Windel; ist die Windel fünf bis sieben Morgen in Folge trocken, lasst sie nachts weg.",
-    "Bei älteren Kindern, die nachts noch Windeln tragen, lasst die Windel trotzdem weg und nehmt ein paar Wochen Wäschewechsel in Kauf; Einnässen lasst vorher ärztlich abklären.",
+    "Bei älteren Kindern, die nachts noch Windeln tragen, lasst die Windel trotzdem weg und nehmt ein paar Wochen Wäschewechsel in Kauf; Einnässen lasst vorher ärztlich abklären. Bei nächtlichem Einnässen nennt Nicola Schmidt als Gast bei Daniel Graf und Katja Seide, das Kind etwa eine halbe Stunde vor der üblichen Einnässzeit sanft zur Toilette zu wecken und abends anzukündigen, dass ihr das tun werdet.",
     "Will ein Kind das große Geschäft nur in der Windel machen, macht keinen Druck, nehmt es mit aufs Klo, setzt euch notfalls mit Windel aufs Töpfchen und macht die Windel schrittweise lockerer.",
     "Lasst das Kind den Windelinhalt selbst entsorgen, am besten spielerisch in die Toilette, und haltet es beim Wechseln nicht mit Gewalt fest.",
     "Schon bei Babys könnt ihr Signale beantworten (Abhalten in Hockhaltung), aber nur, wenn das Kind mitmacht, nie mit Zwang."
@@ -13136,6 +20148,10 @@ window.WISSEN = {
     {
      "podcast": "artgerecht",
      "text": "Nicola Schmidt ist nach eigener Aussage eine große Verfechterin von windelfrei, betont aber, dass das nicht für jede Familie und jedes Kind passt. Wie die Hosts hält sie die Aussage, Kinder könnten vor 24 Monaten nicht trocken werden, für unbelegt, und sie sieht in Signalen wie \"ich will nicht gewickelt werden\" mit etwa anderthalb Jahren ein Lernfenster. Wie die Hosts lehnt sie Druck ab, ergänzt aber eine eigene Erklärung für das große Geschäft: Kinder wollen den Darm ihr zufolge eigentlich ohne Kontakt am Po entleeren, die Windel sei daher die eigentliche Ursache fürs Festhalten. Sie sagt, dass Windelkinder ebenfalls trocken werden und dass es meist chaotisch zugeht. Sie bewirbt eigene Windelfrei-Kurse; ob Eltern die Zeit dafür haben, sollen sie selbst entscheiden."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Alle drei Passagen stammen aus einer Folge, in der Nicola Schmidt bei Daniel Graf und Katja Seide zu Gast ist, und decken sich deshalb stark mit ihrer Sicht im artgerecht-Material. Sie unterscheidet zwischen trocken, mit Hilfe trocken und eigenständig trocken, rät zu Entspannung und lehnt Töpfchentraining mit festen Zeiten, Belohnung und Strafe ab; sie nennt dafür eine Langzeitstudie, deren Zahlen sie als wenig erforscht bezeichnet. Wie mutti sieht sie Windelfrei als sinnvoll, wirbt dafür, empfiehlt es aber nur, wenn es die Dinge einfacher macht, und nennt als Einstiegsfenster die ersten Monate oder etwa 14 bis 18 Monate. Ergänzend beschreibt sie einen Nass-und-kalt-Trick mit zeitweise windelfreier Zeit für Kinder, die Nässe nicht bemerken, und sagt, Rückschritte etwa bei Umzug oder Schulstart seien oft vorübergehend. Klingelhosen hält sie für unnötig; bei regelmäßigem Einnässen größerer Kinder kann nach ihr ärztliche Abklärung sinnvoll sein, ein Hormon könne beteiligt sein. Hosts und Gäste sagen, wer das erlebe, sei nicht allein."
     }
    ],
    "quellen": [
@@ -13194,13 +20210,23 @@ window.WISSEN = {
      "datum": "2025-05-06",
      "minute": "03:38",
      "thema": "Erklären, zeigen, Töpfchen als Brücke"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 11,
+     "titel": "Sauber werden, sauber bleiben: Windelfrei und Töpfchentraining",
+     "datum": "2019-04-23",
+     "minute": "14:18",
+     "thema": "Trocken, mithilfe trocken, eigenständig; Zeitfenster zum Einstieg"
     }
    ],
    "verwandt": [
     "selbststaendigkeit",
     "adhs-kind",
     "bindung",
-    "hirnentwicklung-mythen"
+    "bauch-verdauung",
+    "hirnentwicklung-mythen",
+    "regression-rueckschritte"
    ],
    "medizinisch": true,
    "einleitung": "Viele Eltern sind unsicher, wann und wie ihr Kind trocken werden soll, und erleben, dass es die Windel nicht von allein hergibt."
@@ -13218,7 +20244,9 @@ window.WISSEN = {
     "Wahlmöglichkeiten",
     "Mitbestimmung",
     "Kind will selbst entscheiden",
-    "Wackelzahnpubertät"
+    "Wackelzahnpubertät",
+    "Flügeljahre",
+    "Spurwechsel"
    ],
    "fragen": [
     "Wie viel Selbstbestimmung braucht mein Kind?",
@@ -13226,7 +20254,8 @@ window.WISSEN = {
     "Wie vermeide ich Machtkämpfe mit meinem Kind?",
     "Sind zwei Pullover zur Wahl schon Autonomie?",
     "Mein Zweijähriges rennt auf der Straße weg, was tun?",
-    "Kind schreit bei Zähneputzen und Anziehen, was hilft?"
+    "Kind schreit bei Zähneputzen und Anziehen, was hilft?",
+    "Was passiert in den Flügeljahren?"
    ],
    "alter": [
     "1-3",
@@ -13241,8 +20270,8 @@ window.WISSEN = {
    "kurz": "Autonomie bedeutet vor allem weniger Kontrolle, nicht nur die Wahl zwischen zwei Optionen; wer Kinder ständig anleitet, erzeugt laut den Hosts von mutti Widerstand oder Anpassung. Hilfreich ist es, Anweisungen zu reduzieren, Unwichtiges wegzulassen und Konflikte gar nicht erst entstehen zu lassen. Kathy Weber (gfk) sieht im Nein ein unerfülltes Bedürfnis nach Sicherheit und rät zu viel Selbermachen und klarer elterlicher Führung; bei Gesundheit und Sicherheit dürfen Eltern auch gegen Protest entscheiden.",
    "tipps": [
     "Zählt eine Weile mit, wie viele Anweisungen ihr am Tag gebt, und reduziert sie auf ein Minimum. Sagt stattdessen, was ihr erwartet, mögt oder nicht mögt und was ihr selbst tun werdet, und lasst das Kind dann innerhalb des Rahmens machen.",
-    "Gebt die grobe Tagesstruktur vor und lasst das Kind darin frei entscheiden, was es tut.",
-    "Lasst los, wenn sich das Kind sperrt, erklärt ehrlich, wie es euch damit geht, und gebt ihm die Chance, freiwillig zu kooperieren.",
+    "Gebt die grobe Tagesstruktur vor und lasst das Kind darin frei entscheiden, was es tut und gebt nicht mehr Entscheidungsmacht, als das Kind tragen kann; zu viel Entscheidungsautonomie führt laut Herbert Renz-Polster zu Dauerfrust.",
+    "Lasst los, wenn sich das Kind sperrt, erklärt ehrlich, wie es euch damit geht, und gebt ihm die Chance, freiwillig zu kooperieren Seht den Wechsel zwischen eigenem Weg und der Spur der Eltern als normalen Alltag, in dem ein momentaner Frust dazugehört, und sorgt dafür, dass das Kind nicht hungrig, müde oder kalt ist.",
     "Prüft, was euch wirklich wichtig ist, und lasst im Alltag Unwichtiges weg, etwa Termine, die ihr für ein paar Wochen ausfallen lassen könnt, um Stress herauszunehmen.",
     "Entschärft Dauerkonflikte wie Anziehen, Zähneputzen oder Essen, indem ihr die Situation umgestaltet (zum Beispiel Fingerfood statt Suppe) oder spielerisch macht, etwa mit einer Anziehstraße oder einem Anziehroboter, und das Kind mitbestimmen lasst, wie etwas geschieht.",
     "Nehmt Ideen des Kindes ernst, fragt nach dem Grund und erklärt Folgen, statt sofort Nein zu sagen.",
@@ -13262,6 +20291,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber spricht statt von Trotzphase lieber von der ersten Autonomiephase (etwa anderthalb bis fünf oder sechs Jahre), weil das Kind nicht ärgern will, sondern mitmachen möchte und von seinem Körper und Gehirn überfordert ist. Jedes Nein zeigt für sie ein unerfülltes Unterbedürfnis von Sicherheit an (Nähe, Führung, Grenzen, Orientierung); Autonomie heißt in dieser Phase vor allem selber machen. Später kämen nach ihrem eigenen Konzept (lila Liebe) das Selber-Entscheiden (etwa fünf bis neun) und das Erfahrungensammeln (ab etwa neun) dazu. Eltern müssen laut ihr die Balance zwischen Autonomie und Führung immer neu finden: Was gemacht wird, entscheiden sie, das Wie gestaltet das Kind mit. Im Unterschied zu mutti hält sie zwei konkret gezeigte Wahlmöglichkeiten für hilfreich und offene Fragen für überfordernd; mit mutti teilt sie die Skepsis gegenüber Dauer-Fragen und Machtkämpfen. Sie räumt ein, dass es einfacher klinge, als es im Alltag sei."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "In wunschkind ist vor allem Herbert Renz-Polster zu Gast, der lieber von „Flügeljahren“ als von Autonomiephase spricht, weil Kinder in dieser Zeit an mehreren Entwicklungsbaustellen gleichzeitig arbeiten (Ich, Können, Selbstregulation, Bindung, soziale Eingewöhnung). Er beschreibt Kinder als kleine Handwerker mit viel Ehrgeiz und wenig Können, die Vorlagen von Erwachsenen brauchen; zuerst sei das Gaspedal da, die Bremse komme später. Autonomie ist für ihn ein Gemisch aus Entscheiden und Freiraum für Handlungen, und zu viel Entscheidungsautonomie führe zu Dauerfrust. Wie mutti sieht er Autonomie nicht als bloßes Wählenlassen; anders als manche Lesart der Bedürfnisorientierung hält er es für falsch, dass Eltern kein Nein sagen dürften. Seine Aussagen sind seine Einschätzung und keine Anleitung für den Einzelfall."
     }
    ],
    "quellen": [
@@ -13290,30 +20323,6 @@ window.WISSEN = {
      "thema": "Autonomie bei kleinen Kindern im Alltag"
     },
     {
-     "podcast": "mutti",
-     "nr": 45,
-     "titel": "So bekommen Eltern mehr Zeit für sich",
-     "datum": "2026-05-05",
-     "minute": "48:05",
-     "thema": "Kind darf an die Hand genommen und festgehalten werden"
-    },
-    {
-     "podcast": "artgerecht",
-     "nr": 26,
-     "titel": "Hilfe, mein Kind wird eigenständig!",
-     "datum": "2024-11-12",
-     "minute": "00:41",
-     "thema": "Eigenständig werden im Alltag und Schwierigkeiten beim Essen, Putzen, Anziehen"
-    },
-    {
-     "podcast": "artgerecht",
-     "nr": 26,
-     "titel": "Hilfe, mein Kind wird eigenständig!",
-     "datum": "2024-11-12",
-     "minute": "02:29",
-     "thema": "Was ist wirklich wichtig, Termine reduzieren, Mitbestimmung"
-    },
-    {
      "podcast": "artgerecht",
      "nr": 26,
      "titel": "Hilfe, mein Kind wird eigenständig!",
@@ -13336,6 +20345,22 @@ window.WISSEN = {
      "datum": "2022-08-14",
      "minute": "14:34",
      "thema": "Autonomie und Führung: Wahlmöglichkeiten konkret zeigen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 224,
+     "titel": "Auf die Flügel kommt es an – Herbert Renz-Polster über Autonomie, Verbundenheit und fehlende Entwicklungsräume",
+     "datum": "2026-02-24",
+     "minute": "47:23",
+     "thema": "Was ist Autonomie?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 224,
+     "titel": "Auf die Flügel kommt es an – Herbert Renz-Polster über Autonomie, Verbundenheit und fehlende Entwicklungsräume",
+     "datum": "2026-02-24",
+     "minute": "03:40",
+     "thema": "Fünf Entwicklungsbaustellen"
     }
    ],
    "verwandt": [
@@ -13434,10 +20459,232 @@ window.WISSEN = {
     "trennungsschmerz-abschied",
     "familien-rituale",
     "routinen",
-    "schulstart"
+    "schulstart",
+    "regression-rueckschritte"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Wie bereite ich mein Kind auf einen Umzug vor?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "kinderwunsch-verlust",
+   "titel": "Unerfüllter Kinderwunsch und Kindsverlust",
+   "synonyme": [
+    "Kinderwunschbehandlung",
+    "ungewollte Kinderlosigkeit",
+    "künstliche Befruchtung",
+    "IVF",
+    "Fehlgeburt",
+    "stille Geburt",
+    "Sternenkind",
+    "Regenbogenbaby",
+    "Schwangerschaft nach Verlust"
+   ],
+   "fragen": [
+    "Wir werden nicht schwanger, was tun?",
+    "Wie halte ich die Zeit der Kinderwunschbehandlung psychisch aus?",
+    "Mein Baby ist in der Schwangerschaft gestorben, was hilft jetzt?",
+    "Wie gehe ich mit der Angst in einer Schwangerschaft nach einem Verlust um?",
+    "Wie unterstütze ich eine Freundin mit unerfülltem Kinderwunsch?"
+   ],
+   "alter": [
+    "0-1"
+   ],
+   "bereiche": [
+    "eltern",
+    "gefuehle",
+    "baby"
+   ],
+   "kurz": "Unerfüllter Kinderwunsch, Fehlgeburt und der Tod eines Kindes in der Schwangerschaft gehören laut den Gästen zu den schwersten Erfahrungen vor dem Elternwerden und brauchen Raum für Trauer, Wut und Angst. Hilfreich sind einfühlsame Begleitung, bewusst gesicherte Erinnerungen und Unterstützung auch für die nächste Schwangerschaft. Das ist Erfahrung und Einschätzung der Gäste; bei medizinischen Fragen entscheidet die Ärztin oder der Arzt, und bei starker Belastung hilft professionelle Begleitung.",
+   "tipps": [
+    "Gebt Trauer, Wut und Enttäuschung bewusst Raum, am besten mit Begleitung; eine Gästin rät, durch den Schmerz hindurchzugehen, statt ihn zu überdecken.",
+    "Legt in der Kinderwunschzeit feste, kurze Gesprächszeiten als Paar fest (etwa fünf Minuten am Abend) und plant bewusst Ablenkung, damit der Kinderwunsch nicht den ganzen Tag bestimmt.",
+    "Wenn ihr mit der Behandlung aufhören möchtet: Legt vorher eine Anzahl an Versuchen oder ein Datum fest, lasst euch begleiten und entwickelt gemeinsam einen Plan für ein Leben ohne Kind.",
+    "Fragt nach einem Kindsverlust im Krankenhaus nach einfühlsamer Betreuung und holt euch Menschen an eure Seite, etwa Familie oder Hebammen.",
+    "Sichert, wenn möglich, Erinnerungen: das Kind im Arm halten, Fußabdrücke, Karte oder Fotos, zum Beispiel durch Sternenkindfotografen, die laut den Gästen kostenlos gerufen werden können.",
+    "Wenn ein einzelnes Grab sich nicht richtig anfühlt, kann eine Gemeinschaftsgrabstätte tröstlich sein; eine Gästin fand das für sich passend.",
+    "Holt euch für eine Schwangerschaft nach einem Verlust psychologische Begleitung oder Hilfe durch Hebamme oder Doula, am besten früh; sprecht offen mit euren Ärztinnen und Ärzten über Ängste und Wünsche zur Geburt.",
+    "Schaut vor einer neuen Schwangerschaft zuerst auf euren Trauerweg: Eine Gästin würde im Rückblick eher warten und das Erlebte erst verarbeiten, eine andere Expertin gibt dazu keine Empfehlung, weil es individuell ist.",
+    "Als Freundin oder Freund: Fragt offen, ob die Person reden mag, seid da und vermeidet ständiges Nachfragen, Bemitleiden oder Kinderfotos."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide, die selbst einen langen Kinderwunsch hatten, behandeln das Thema in mehreren Folgen mit Gästen. Eine Gästin aus einer Kinderwunschklinik erklärt Ablauf und Behandlungsformen und beschreibt die psychische Last: Ungewissheit, Machtlosigkeit, Schuldfrage und Wartezeit. Eine Mutter erzählt von einer Fehlgeburt und dem Tod ihres Sohnes mitten in der Schwangerschaft; ihr Trauma entstand laut ihr vor allem durch die unsensible Behandlung im Krankenhaus, während zwei einfühlsame Hebammen eine gute Atmosphäre schufen. Sie rät rückblickend, nach einem Verlust zu warten, ihren eigenen Weg (schnell wieder aktiv werden) empfiehlt sie niemandem. Eine weitere Gästin will ausdrücklich nichts raten, weist aber darauf hin, dass unverarbeitete Trauer die Bindung in der nächsten Schwangerschaft erschweren kann. Eine Beraterin sagt, für Bindung sei es nie zu spät, und beschreibt Kinderwunsch als Hoffnungs-Angst-Prozess mit wenig gesellschaftlichem Raum; ihre Aussage, Stress wirke wie eine Antibabypille, gibt sie als Einschätzung einer Fachärztin weiter. Die Hosts hören überwiegend zu und stellen die Aussagen nicht infrage."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 137,
+     "titel": "Wenn der Kinderwunsch unerfüllt bleibt",
+     "datum": "2024-04-16",
+     "minute": "06:35",
+     "thema": "Psychische Belastung und Umgang damit"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 137,
+     "titel": "Wenn der Kinderwunsch unerfüllt bleibt",
+     "datum": "2024-04-16",
+     "minute": "20:40",
+     "thema": "Wenn der Kinderwunsch unerfüllt bleibt, und wie man das Umfeld unterstützt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 138,
+     "titel": "Stille Geburt und Neubeginn: Eine Reise der Hoffnung",
+     "datum": "2024-04-30",
+     "minute": "30:50",
+     "thema": "Geburt mit Hebammen, Erinnerungen, Sternenkindfotografen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 138,
+     "titel": "Stille Geburt und Neubeginn: Eine Reise der Hoffnung",
+     "datum": "2024-04-30",
+     "minute": "38:37",
+     "thema": "Die Angst in der Folgeschwangerschaft"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 139,
+     "titel": "Den Verlust eines Kindes (gemeinsam) verarbeiten",
+     "datum": "2024-05-14",
+     "minute": "22:42",
+     "thema": "Rat zu Folgeschwangerschaften und Angst"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 213,
+     "titel": "Die Bindungsanalyse - emotionale Begleitung vor und während der Schwangerschaft",
+     "datum": "2025-12-09",
+     "minute": "34:15",
+     "thema": "Kinderwunsch als emotionaler Prozess"
+    }
+   ],
+   "verwandt": [
+    "schwangerschaft",
+    "geburt",
+    "tod-trauer",
+    "eltern-psyche-hilfe",
+    "adoption-pflegekind"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Wir werden nicht schwanger, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "unfaelle-vorbeugen",
+   "titel": "Unfälle vorbeugen bei Babys und Kindern",
+   "synonyme": [
+    "Kindersicherung",
+    "Wohnung kindersicher machen",
+    "Gefahren Baby",
+    "Erstickungsgefahr",
+    "Vergiftung Kind",
+    "Giftnotruf",
+    "Trampolin Unfall",
+    "Verbrühung",
+    "Giftpflanzen",
+    "Regentonne Gefahr",
+    "Fahrradhelm Kind"
+   ],
+   "fragen": [
+    "Wie mache ich die Wohnung kindersicher?",
+    "Was ist für Babys gefährlich?",
+    "Ab wann dürfen Kinder Nüsse essen?",
+    "Ist ein Trampolin für Kinder sicher?",
+    "Welche Zimmerpflanzen sind für Kinder giftig?",
+    "Soll mein Kind beim Klettern einen Fahrradhelm tragen?"
+   ],
+   "alter": [
+    "0-1",
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "alltag",
+    "baby",
+    "entwicklung"
+   ],
+   "kurz": "Laut den Hosts und mehreren Gästinnen lohnt sich ein Mittelweg: Sichert, was lebensbedrohlich werden kann (Treppen, heiße Töpfe, Wasser, Gift, Verschlucken), und lasst Kinder sonst erleben, dass man sich auch mal wehtun kann. Alltagsgefahren wie Honig im ersten Jahr, ganze Nüsse, ätherische Öle, ein Trampolin oder Wasser im Garten werden deutlich unterschätzt. Alle Angaben sind Aussagen der Hosts und Gäste und ersetzen keinen ärztlichen Rat; bei Unsicherheit fragt Fachleute.",
+   "tipps": [
+    "Sichert vor allem, was gefährlich werden kann: Treppen, Putz- und Waschmittel, Salz und Giftiges, und befestigt Schränke und Regale mit Winkeln an der Wand.",
+    "Dreht beim Kochen Topf- und Pfannengriffe nach innen und kocht möglichst hinten; die Gefahr ist laut einer Gästin weniger die heiße Platte als kochendes Wasser, das das Kind herunterzieht. Heiße Getränke gehören nicht in Reichweite.",
+    "Geht auf Augenhöhe des Kindes und schaut, was interessant wirkt; so findet ihr die Gefahrenstellen.",
+    "Haltet Kinder im Wasser immer in Reichweite, sichert Teich und Pool mit einem echten Zaun, deckt Regentonnen ab und verlasst euch nicht auf Schwimmsitze oder Schwimmringe.",
+    "Gebt im ersten Lebensjahr keinen Honig oder Ahornsirup, und laut den Hosts keine ganzen Nüsse, bis das Kind das Wort schreiben kann.",
+    "Verzichtet laut den Hosts bei Babys auf bestimmte ätherische Öle wie Kampfer oder Eukalyptus und setzt auf feuchte Raumluft; lasst Kinder nie im geparkten Auto.",
+    "Prüft Zimmer- und Gartenpflanzen auf Giftigkeit und bringt Kindern früh bei, nichts zu essen, ohne nachzufragen; hängt die Nummer des Giftnotrufs sichtbar auf.",
+    "Tragt im Straßenverkehr Helm (laut einer Gästin schon ab dem Bobbycar, auch beim Laufrad und im Anhänger), aber nicht auf dem Spielplatz, wo es zu Strangulationen kam; nutzt im Dunkeln helle Kleidung oder Warnwesten.",
+    "Beim Trampolin gelten laut Ärzten Regeln wie allein springen und erst ab etwa fünf Jahren; verwendet statt Wärmflaschen Kirschkern- oder Dinkelkissen und zieht Kinder nicht an den Armen hoch."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Die Hosts verstehen ihre Gefahrenliste ausdrücklich als Anregung zur Information und wollen nicht dogmatisch oder angstmachend sein; Zahlen und Altersgrenzen stammen von ihnen. Eine Gästin grenzt sich ab: Weder alles abpolstern noch alles erlauben sei sinnvoll. Sie bevorzugt eine Ja-Umgebung, in der man weniger Nein sagen muss, und hält Schutzhelme zum Krabbelnlernen nicht für nötig, weil das Kind sonst die Folgen des Hinfallens nicht lernt. Ärzte nennen aus ihrer Praxis häufige Unfallquellen wie Trampolin, Glastüren, heiße Getränke und verschluckte Magnete. Eine weitere Gästin warnt vor Wärmflaschen und rät zum Helm im Verkehr, aber nicht auf dem Spielplatz. In einer anderen Folge zeigt eine Gästin, wie Kinder Feuer nur gemeinsam mit Erwachsenen und Schritt für Schritt kennenlernen sollen, damit sie nicht aus Unwissenheit gefährlich damit umgehen. Bei Notfällen betonen sie, zuerst die 112 zu rufen und bei Gefahr sich selbst zu retten."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 130,
+     "titel": "Erste Hilfe bei Babys und Kindern",
+     "datum": "2024-01-09",
+     "minute": "03:14",
+     "thema": "Mittelweg beim Kindersichern"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 130,
+     "titel": "Erste Hilfe bei Babys und Kindern",
+     "datum": "2024-01-09",
+     "minute": "12:16",
+     "thema": "Garten, Wasser, Giftpflanzen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 31,
+     "titel": "Was für Babys lebensgefährlich und gesundheitsschädlich sein kann",
+     "datum": "2020-02-11",
+     "minute": "01:36",
+     "thema": "Honig und Botulismus"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 31,
+     "titel": "Was für Babys lebensgefährlich und gesundheitsschädlich sein kann",
+     "datum": "2020-02-11",
+     "minute": "33:46",
+     "thema": "Giftige Pflanzen und Giftnotruf"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 102,
+     "titel": "Unfälle und Notfälle – wann muss mein Kind in eine Klinik?",
+     "datum": "2022-12-13",
+     "minute": "18:00",
+     "thema": "Trampolin als häufigste Unfallursache"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 165,
+     "titel": "Kindergesundheit heute - Schluss mit gefährlichem Halbwissen",
+     "datum": "2025-01-07",
+     "minute": "43:18",
+     "thema": "Fahrradhelm: wo ja, wo nein"
+    }
+   ],
+   "verwandt": [
+    "erste-hilfe",
+    "ja-umgebung-baby",
+    "wassersicherheit",
+    "risiko-freiheit",
+    "autofahrten",
+    "baby-ausstattung-motorik"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Wie mache ich die Wohnung kindersicher?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "geschenke-unpassend-zu-viele",
@@ -13450,7 +20697,10 @@ window.WISSEN = {
     "Spielzeug aussortieren",
     "Weihnachtsgeschenke",
     "Geburtstagsgeschenke",
-    "Kind sagt nicht Danke"
+    "Kind sagt nicht Danke",
+    "Drohne",
+    "Wunschzettel",
+    "Geschenk-Enttäuschung"
    ],
    "fragen": [
     "Was tun bei zu vielen Geschenken für mein Kind?",
@@ -13485,6 +20735,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber erklärt, dass Geschenke Strategien der Schenkenden sind und diese selbst entscheiden, was und wie viel sie schenken. Wer schenkt, sollte sich fragen, welches Bedürfnis er erfüllen will, und die Freude des Beschenkten nicht zur Bedingung machen. Bei „unpassend“ oder „ungewünscht“ fragt sie Eltern, ob es um Gesundheit und Sicherheit geht oder um eigene Werte und Geschmack; nur bei Gefahr für die körperliche oder emotionale Gesundheit greift sie ein, sonst begleitet sie das Kind im Umgang mit dem Spielzeug. Was Eltern als zu viel erleben, könne Kind oder Großeltern als zu wenig vorkommen, entscheidend sei, ob das Kind überfordert ist. Sie räumt ein, dass ihr selbst das Loslassen schwerfiel, als ein Geschenk nicht ihren Vorstellungen entsprach. Bei Geschwistern sieht sie Schenken nicht als Mittel für Gerechtigkeit: Am Geburtstag gibt es Geschenke für das Geburtstagskind, das andere Kind bekommt Empathie für seine Frustration, auch wenn das anstrengend ist. Sie betont, dass das ihr Weg ist und jede Familie selbst entscheidet. Ein erzwungenes Danke lehnt sie ab."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Bei Daniel Graf, Katja Seide und ihrem Gast, einem Kinderbuchrapper, ist das Thema nur eine Randbemerkung rund um Weihnachten, keine ausgearbeitete Haltung. Die Hosts erzählen aus ihrem Alltag: Ein Kind bekam eine kleine Drohne, die beim ersten Ausprobieren in einem Waldstück verschwand, danach kippte die Stimmung am Weihnachtstisch. Sie ziehen daraus eine praktische Lehre: Ferngesteuerte Fluggeräte seien schwer zu steuern, ein ferngesteuertes Auto sei womöglich besser geeignet. Anders als Kathy Weber geht es ihnen nicht um Bedürfnisse der Schenkenden oder um den Umgang mit Enttäuschung, sondern um die Passung des Geschenks zum Kind."
     }
    ],
    "quellen": [
@@ -13527,6 +20781,14 @@ window.WISSEN = {
      "datum": "2021-12-05",
      "minute": "33:36",
      "thema": "Fazit, Großeltern einbeziehen, bedenkliche Geschenke"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 128,
+     "titel": "Weihnachten und Wackelzähne - mit Kinderbuchrapper Big Moe",
+     "datum": "2023-12-12",
+     "minute": "26:56",
+     "thema": "Die Geschichte von der verlorenen Drohne"
     }
    ],
    "verwandt": [
@@ -13534,7 +20796,8 @@ window.WISSEN = {
     "ausmisten-wertschaetzung",
     "reizueberflutung-vorbeugen",
     "gerechtigkeit-geschwister",
-    "eifersucht-baby"
+    "eifersucht-baby",
+    "weihnachtsmann"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Was tun bei zu vielen Geschenken für mein Kind?“. Hier steht, was dahinter stecken kann und was helfen kann."
@@ -13554,7 +20817,11 @@ window.WISSEN = {
     "Urlaub mit Baby",
     "Urlaub mit Kleinkind",
     "Bedürfnisse im Urlaub",
-    "Urlaub ängstliches Kind"
+    "Urlaub ängstliches Kind",
+    "Kreuzfahrt mit Kindern",
+    "Handgepäck Familie",
+    "Städtereise mit Kindern",
+    "Urlaub mit wildem Kind"
    ],
    "fragen": [
     "Wie plane ich einen entspannten Urlaub mit kleinen Kindern?",
@@ -13563,7 +20830,8 @@ window.WISSEN = {
     "Freizeitpark mit Kleinkind sinnvoll?",
     "Was gehört auf die Packliste mit Kindern?",
     "Warum ist Urlaub mit Kleinkind so anstrengend?",
-    "Wie bekommen alle im Urlaub, was sie brauchen?"
+    "Wie bekommen alle im Urlaub, was sie brauchen?",
+    "Wie plane ich eine Städtereise mit Kindern?"
    ],
    "alter": [
     "0-1",
@@ -13586,7 +20854,7 @@ window.WISSEN = {
     "Bleibt nach einem großen Ausflug wie Freizeitpark nicht lange auf, geht nicht noch essen, macht am nächsten Tag etwas Ruhiges und lasst zwischen großen Ausflügen mehrere Tage Pause.",
     "Packt für Zug, Flug und Auto Proviant, Beschäftigung (zum Beispiel Hörspiel, Spiele oder ein Knisterbuch) und Schlafmöglichkeiten gegen Hunger, Langeweile und Müdigkeit, und leitet euer Kind an, damit ihr andere möglichst wenig stört.",
     "Mit Babys kehrt möglichst immer wieder an denselben Ort zurück, damit Mittagsschlaf und Einschlafen am gleichen Ort möglich sind, und nutzt das Tragen, etwa zum Wandern, wenn das Kind vor Sonne und Wetter geschützt ist.",
-    "Schreibt ein bis zwei Wochen vorher selbst eine Packliste, packt das Auto schon am Vorabend, fragt nach Spielsachen in der Unterkunft und kümmert euch früh um Reisepässe für die Kinder."
+    "Schreibt ein bis zwei Wochen vorher selbst eine Packliste, packt das Auto schon am Vorabend und kümmert euch früh um Reisepässe. Gebt jedem Kind einen eigenen Rucksack mit Kuscheltier als Anker von zu Hause."
    ],
    "sichtweisen": [
     {
@@ -13600,6 +20868,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber versteht Urlaub in der Sprache der Gewaltfreien Kommunikation als eine Strategie, also einen Weg, ganz unterschiedliche Bedürfnisse wie Erholung, Gemeinschaft oder Abenteuer zu erfüllen, und nicht als Selbstzweck. Sie rät, vorab die wichtigsten Bedürfnisse jedes Familienmitglieds zu sammeln und für jedes ein bis drei Strategien zu suchen. Die Bedürftigkeit der Kinder stellt sie klar über die Urlaubswünsche der Eltern: Bei kleinen oder schnell überreizten Kindern können Eltern ihr Abenteuerbedürfnis im Alltag stillen und große Reisen später nachholen. Wer Schlaf und Rituale im Urlaub locker nimmt, muss laut ihr mit unerfüllten Bedürfnissen und großem Drama rechnen. Anders als die anderen Podcasts schiebt sie sogar bewusst Konfliktthemen in den Urlaub, weil dort oft mehr Kapazität dafür da ist, und sagt, Urlaub müsse nicht friedlich sein. Für ein ängstliches Kind empfiehlt sie eine feste Station statt Rundreise und gute Vorbereitung."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Die Hosts von „Das gewünschteste Wunschkind“ hören vor allem Gäste an und landen bei einer lockereren Linie als Nicola Schmidt (artgerecht). Eine Reisebloggerin nennt Flexibilität den Schlüssel, rät zu wenig Perfektionismus und zu Handgepäck mit einem eigenen Rucksack samt Kuscheltier pro Kind; die Kinder dürften im Flugzeug auch Filme sehen, was sie offen gegen „Pädagogik“ stellt. Mit Schmidt stimmt eine Gästin (Beraterin) überein, dass wiederkehrende Orte, wenig Reize und ein klares oberstes Ziel wie Erholung wilden Kindern helfen, mit Weber, dass die Zuständigkeiten vorher klar sein sollten. Neu sind die Kreuzfahrt als entlastende Familienform (mit Hinweis der Gästin auf Umweltkritik und Sicherheitsregeln) und der Rat, Kinder und Geschwister mitplanen und Kompromisse aushandeln zu lassen, was laut Daniel Graf oft eine halbe Stunde dauert."
     }
    ],
    "quellen": [
@@ -13640,22 +20912,6 @@ window.WISSEN = {
      "nr": 53,
      "titel": "Urlaub machen mit Kindern",
      "datum": "2026-06-30",
-     "minute": "06:31",
-     "thema": "Anreise mit Zug und Flugzeug, Reisepässe"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 53,
-     "titel": "Urlaub machen mit Kindern",
-     "datum": "2026-06-30",
-     "minute": "08:58",
-     "thema": "Rücksicht nehmen und Sorge, andere zu stören"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 53,
-     "titel": "Urlaub machen mit Kindern",
-     "datum": "2026-06-30",
      "minute": "15:52",
      "thema": "Urlaub mit Großeltern, Freunden oder allein"
     },
@@ -13666,6 +20922,22 @@ window.WISSEN = {
      "datum": "2025-06-09",
      "minute": "01:56",
      "thema": "Urlaub als Strategie für verschiedene Bedürfnisse"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 245,
+     "titel": "Reisen mit Kindern - praktische Tipps für entspannte Urlaube",
+     "datum": "2026-07-21",
+     "minute": "03:51",
+     "thema": "Städtereisen mit Kindern und Flexibilität"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 92,
+     "titel": "Wunderbare wilde Kinder mit Inke Hummel",
+     "datum": "2022-07-26",
+     "minute": "23:10",
+     "thema": "Tipps für Urlaub mit einem wilden Kind"
     }
    ],
    "verwandt": [
@@ -13673,10 +20945,120 @@ window.WISSEN = {
     "routinen",
     "reizueberflutung-vorbeugen",
     "grosseltern",
-    "erschoepfte-eltern"
+    "erschoepfte-eltern",
+    "kindersitz"
    ],
    "medizinisch": false,
    "einleitung": "Im Urlaub bringen fremde Umgebung, volle Programme und lange Fahrten den Rhythmus von Kindern durcheinander. Viele Familien kommen erschöpft zurück, weil die Kinder überreizt waren."
+  },
+  {
+   "id": "vergleich-erwartungen-eltern",
+   "titel": "Vergleichen und Druck von außen",
+   "synonyme": [
+    "Vergleichsdruck",
+    "Mütterwettbewerb",
+    "Mom-Shaming",
+    "Instagram-Mütter",
+    "perfekte Familie",
+    "Kritik von Oma",
+    "Rechtfertigungsdruck",
+    "blöde Sprüche",
+    "Mommy Wars"
+   ],
+   "fragen": [
+    "Warum fühle ich mich neben Instagram-Familien schlecht?",
+    "Wie reagiere ich auf Kritik an meiner Erziehung?",
+    "Muss ich mich vor anderen rechtfertigen?",
+    "Was denken andere über mein Kind im Supermarkt?",
+    "Wie sage ich Verwandten, dass sie sich zurückhalten sollen?"
+   ],
+   "alter": [
+    "0-1",
+    "1-3",
+    "3-6"
+   ],
+   "bereiche": [
+    "eltern",
+    "gefuehle",
+    "medien"
+   ],
+   "kurz": "Laut den Hosts und ihren Gästen entsteht Druck durch geschönte Social-Media-Bilder, widersprüchliche Expertenmeinungen und Sprüche aus dem Umfeld. Sie raten, öfter bei sich zu bleiben, offen über Schwieriges zu reden und Kritik nur dort ernsthaft zu führen, wo sich das Gespräch lohnt.",
+   "tipps": [
+    "Dreht das Außen bewusst herunter: Entscheidet, was ihr gerade nicht lesen oder hören wollt, und seid erst einmal bei euch.",
+    "Fragt euch bei Entscheidungen, was euch und eurer Familie guttut, statt euch mit anderen zu vergleichen.",
+    "Probiert eine Instagram-Pause, etwa vier Wochen lang, und schaut, was das mit euch macht.",
+    "Fragt bei Trends und Angeboten, wer daran verdient.",
+    "Wählt eure Kämpfe: Fremden müsst ihr euch nicht rechtfertigen, bei Großeltern, Freunden oder Partner lohnt sich das Gespräch.",
+    "Fragt bei Kritik nach, ob Sorge, Unwissen oder ein Schutzmechanismus dahintersteckt, und sprecht die Sorge direkt an. Sagt der älteren Generation, dass euer Weg kein Vorwurf an ihr damaliges Handeln ist.",
+    "Legt euch einen Satz zurecht, der sagt: Das ist unser Leben, bitte haltet euch zurück.",
+    "Sprecht offen über Wäscheberge, Augenringe und Überforderung. Das entlastet oft auch andere.",
+    "Stellt euch bei Blicken im Supermarkt die Frage, was in zwei, fünf oder zehn Jahren zählt: euer Umgang mit dem Kind oder die Meinung einer fremden Person."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide sehen den Vergleichsdruck selbstkritisch und erkennen sich darin wieder. Gäste erklären, Instagram zeige nur schöne Ausschnitte, und Eltern, die sich nach einer Entscheidung bestärken wollen, rechtfertigten sich oft in Gleichgesinnten-Gruppen, auch in der bindungsorientierten Szene. Eine Autorin sieht hinter dem Wettbewerb unter Müttern Leitbilder mit wirtschaftlichen Interessen und einen deutlich höheren Druck auf Mütter als auf Väter; Daniel Graf wirft ein, dass es auch sehr engagierte Väter gebe. Eine andere Gästin rät zu Verständnis und Dialog bei Kritik von Verwandten, eine weitere zu Gelassenheit gegenüber Fremden, weil ständiges Erklären oft mit eigener Unsicherheit zu tun habe. Uneinig zeigen sie sich nicht, sie betonen aber, dass Online-Vernetzung Vorteile hat, wenn sie zu echten Begegnungen führt."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 97,
+     "titel": "Wie die Sucht nach Aufmerksamkeit Familien unter Druck setzt mit Dr. Bianca Kellner-Zotz",
+     "datum": "2022-10-04",
+     "minute": "11:44",
+     "thema": "Rechtfertigungsdruck und Idealbild der perfekten Mutter"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 151,
+     "titel": "Selbstbewusst bedürfnisorientiert begleiten",
+     "datum": "2024-10-01",
+     "minute": "13:49",
+     "thema": "Hinter die Kritik schauen: Sorge, Unwissen, Schutz"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 187,
+     "titel": "Einfach mal machen!",
+     "datum": "2025-06-10",
+     "minute": "25:57",
+     "thema": "Konkrete Wege: Inhalte meiden, Grenzen ziehen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 210,
+     "titel": "Kinder bindungsorientiert begleiten, ohne sich selbst zu verlieren",
+     "datum": "2025-11-18",
+     "minute": "57:33",
+     "thema": "Wutausbruch im Supermarkt und das Gedankenexperiment"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 36,
+     "titel": "Elternschaft: Anforderungen vs. Realität. Scheitern an den eigenen Ansprüchen",
+     "datum": "2020-04-21",
+     "minute": "22:01",
+     "thema": "Rechthaberei und Nachentscheidungseffekt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 211,
+     "titel": "Gemeinsam statt einsam - die Weisheit der Urzeitmütter",
+     "datum": "2025-11-25",
+     "minute": "05:38",
+     "thema": "Informationsflut und Expertenmeinungen"
+    }
+   ],
+   "verwandt": [
+    "erwartungen-zuschreibungen",
+    "erwartungen-elternschaft",
+    "social-media-kinder",
+    "selbstwert-kind",
+    "grosseltern"
+   ],
+   "medizinisch": false,
+   "einleitung": "Viele Eltern kennen diese Situation: „Warum fühle ich mich neben Instagram-Familien schlecht?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "pubertaet-teenager",
@@ -13689,14 +21071,17 @@ window.WISSEN = {
     "Kind ab neun Jahren",
     "Teenager",
     "Pubertät vorbereiten",
-    "Kind wird frech und zieht sich zurück"
+    "Kind wird frech und zieht sich zurück",
+    "Präpubertät",
+    "Teen Time"
    ],
    "fragen": [
     "Wann fängt die Pubertät an und woran erkenne ich es?",
     "Mein zehnjähriges Kind sagt „Mir doch egal“, was steckt dahinter?",
     "Wie bereite ich mich als Elternteil eines Schulkinds auf die Pubertät vor?",
     "Was braucht mein Kind in der Vorpubertät?",
-    "Dinge, die lange klappten, funktionieren plötzlich nicht mehr"
+    "Dinge, die lange klappten, funktionieren plötzlich nicht mehr",
+    "Mein Kind rebelliert nicht, ist das ein schlechtes Zeichen?"
    ],
    "alter": [
     "6-10"
@@ -13706,7 +21091,7 @@ window.WISSEN = {
     "grenzen",
     "eltern"
    ],
-   "kurz": "Kathy Weber beschreibt in ihrem eigenen Konzept (lila Liebe) die Pubertät als dritte und letzte Autonomiephase, die meist ab etwa neun Jahren beginnt: Das Kind will nun selbst Erfahrungen sammeln und braucht vor allem Achtung. Sicherheit und Zugehörigkeit bleiben dabei weiter nötig, und Eltern können sich schon beim Schulkind mit eigenen Gedanken und Gesprächen auf Augenhöhe vorbereiten. Den Großteil der Folgen widmet sie Jugendlichen über zehn, hier steht nur, was für Eltern jüngerer Kinder trägt.",
+   "kurz": "Kathy Weber beschreibt in ihrem eigenen Konzept (lila Liebe) die Pubertät als dritte und letzte Autonomiephase, die meist ab etwa neun Jahren beginnt: Das Kind will nun selbst Erfahrungen sammeln und braucht vor allem Achtung. Sicherheit und Zugehörigkeit bleiben dabei weiter nötig, und Eltern können sich schon beim Schulkind mit eigenen Gedanken und Gesprächen auf Augenhöhe vorbereiten. Den Großteil der Folgen widmet sie Jugendlichen über zehn, hier steht nur, was für Eltern jüngerer Kinder trägt. Auch die wunschkind-Hosts und ihre Gäste sehen die Vorpubertät (etwa 8 bis 12) als Zeit, in der Eltern noch Gehör finden und Beziehung aufbauen können.",
    "tipps": [
     "Beobachtet, ob Dinge, die längst einvernehmlich liefen, wieder schwierig werden und das Kind zeitweise wirkt wie ein drei- oder sechsjähriges. Das kann der Übergang in die dritte Phase sein.",
     "Prüft bei Sätzen wie „Mir doch egal“ zuerst Sicherheit und Zugehörigkeit (Schutz, Grenzen, Geborgenheit, Nähe, Liebe, Empathie) und erst danach Achtung (Individualität, Respekt, Integrität).",
@@ -13716,12 +21101,16 @@ window.WISSEN = {
     "Baut Wertschätzung bewusst ein („Danke fürs Mitmachen“) und behandelt das Kind so, wie ihr selbst behandelt werden möchtet.",
     "Formuliert eure Gedanken über die Pubertät um: statt „Oh Gott, dann wird es schlimm“ lieber „Ich freue mich darauf und gehe in meine Verantwortung“.",
     "Führt regelmäßig Gespräche auf Augenhöhe und bereitet euch schon beim Schulkind vor, indem ihr Wissen holt und übt.",
-    "Schaut auf eure eigene Pubertät und holt Fehlendes bei Bedarf selbst nach."
+    "Behaltet Familienrituale aus der Grundschulzeit bei, denn sie bleiben im Jugendalter eher bestehen und bieten Gelegenheit zur Nähe (Inke Hummel)."
    ],
    "sichtweisen": [
     {
      "podcast": "gfk",
      "text": "Kathy Weber möchte das Bild der Pubertät als Damoklesschwert auflösen und sieht sie als Geschenk und Finale der Elternschaft. Wer Teenager von vornherein für anstrengend halte, stecke schon in der Verurteilung, aus der keine Verbindung entstehe. In ihrem Konzept gibt es drei Autonomiephasen: etwa 2 bis 5 Jahre („ich will es allein machen“), etwa 5 bis 8 („ich will allein entscheiden“) und ab etwa 9 („ich will selbst Erfahrungen machen“); die Zahlen nennt sie Pi mal Daumen und die Übergänge fließend. Das Oberbedürfnis der dritten Phase sei Achtung, sie komme aber erst zum Zug, wenn Sicherheit und Zugehörigkeit weitgehend erfüllt sind. Sie widerspricht der verbreiteten Idee, jetzt müsse man härter durchgreifen, und betont, das Kind sei nicht gleichgültig und müsse nicht funktionieren. Ihr Bild: In der ersten Phase umschließen die Arme das Kind, in der dritten öffnen sie sich, bleiben aber offen, sodass es zurückkommen kann. Sie räumt ein, dass das ihr eigenes Konzept ist, dass es keine Rezepte für einzelne Situationen liefert und dass die meisten Eltern dieser Generation diese Phase selbst nicht so erlebt haben. Die Altersangaben der Psychologie, wonach die Pubertät mit etwa 16 endet, stellt sie infrage. Die meisten Beispiele in den Folgen betreffen Jugendliche über zehn und sind hier nicht aufgenommen."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide sprechen viel über Jugendliche; hier steht nur, was für Eltern von Kindern bis zehn trägt. Matthias Jung nennt die Vorpubertät (etwa 8 bis 12) den Start der Pubertät: Kinder lösen sich aus dem Schutz der Familie, stellen Eltern in Frage, und Eltern finden jetzt noch Gehör, vor allem bei Werten. Sätze wie Ihr versteht mich nicht haben laut ihm mit hormonellem Ausnahmezustand zu tun; er rät, nichts persönlich zu nehmen und später zu reden. Katja Seide widerspricht seiner Zuspitzung, dass nur ein sicherer Hafen Rebellion erlaubt: Kinder, die nicht rebellieren, haben nicht zwingend eine schlechtere Bindung. Inke Hummel rät, schon am Ende der Grundschulzeit auf Wertschätzung, Vertrauen und Rituale zu achten, die im Jugendalter eher bleiben. Das deckt sich mit Kathy Weber darin, nicht von einer schlimmen Zeit auszugehen; die Gäste sehen den Rückzug als normal, raten aber, bei extremen Veränderungen bei Schlaf, Essen oder Schule genauer hinzuschauen. Das sind Einschätzungen der Gäste; vieles davon gilt erst für ältere Jugendliche."
     }
    ],
    "quellen": [
@@ -13772,6 +21161,22 @@ window.WISSEN = {
      "datum": "2025-06-16",
      "minute": "12:29",
      "thema": "Dritte Autonomiephase und Rückfall in frühere Bedürftigkeit"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 93,
+     "titel": "Die Präpubertät - Kinder im Alter von 8 bis 12 Jahren begleiten",
+     "datum": "2022-08-09",
+     "minute": "03:10",
+     "thema": "Wie äußert sich die Präpubertät?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 47,
+     "titel": "Miteinander durch die Pubertät mit Inke Hummel",
+     "datum": "2020-09-22",
+     "minute": "08:46",
+     "thema": "Beziehung halten: Grundpfeiler und Rituale"
     }
    ],
    "verwandt": [
@@ -13779,10 +21184,222 @@ window.WISSEN = {
     "selbststaendigkeit",
     "respekt",
     "fuehrung-uebernehmen",
-    "trigger-inneres-kind"
+    "trigger-inneres-kind",
+    "essstoerungen"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Wann fängt die Pubertät an und woran erkenne ich es?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "wassersicherheit",
+   "titel": "Wassersicherheit und Schwimmenlernen",
+   "synonyme": [
+    "Ertrinken",
+    "Badeunfall",
+    "Schwimmen lernen",
+    "Seepferdchen",
+    "Schwimmflügel",
+    "Schwimmkurs",
+    "Wassergewöhnung",
+    "Babyschwimmen",
+    "Aufsicht am Wasser",
+    "sekundäres Ertrinken"
+   ],
+   "fragen": [
+    "Woran erkenne ich, dass ein Kind ertrinkt?",
+    "Wie sichere ich Pool, Gartenteich und Badewanne?",
+    "Ab wann kann mein Kind schwimmen lernen?",
+    "Sagt das Seepferdchen, dass mein Kind sicher schwimmen kann?",
+    "Mein Kind hat Wasser geschluckt, muss ich zum Arzt?",
+    "Sind Schwimmflügel sinnvoll?"
+   ],
+   "alter": [
+    "0-1",
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "alltag",
+    "entwicklung",
+    "baby"
+   ],
+   "kurz": "Laut den Hosts ist Ertrinken bei kleinen Kindern die häufigste Unfalltodesursache, und es geschieht meist lautlos und oft in flachem Wasser zu Hause. Am wichtigsten ist deshalb lückenlose Aufsicht in unmittelbarer Nähe. Beim Schwimmenlernen setzen die Gäste auf Wasservertrautheit, Geduld und wenig Druck, sind sich bei Schwimmhilfen und Elternrolle aber nicht einig. Bei Unsicherheit nach einem Beinahe-Unfall sollte ärztlicher Rat eingeholt werden.",
+   "tipps": [
+    "Lasst Kinder am und im Wasser nie aus den Augen und bleibt in unmittelbarer Nähe, ohne Handy. Auch in der Badewanne sitzt ihr daneben.",
+    "Sichert Wasserstellen im eigenen Garten wie Pool oder Teich. Schon wenige Zentimeter Wasser reichen laut den Hosts.",
+    "Achtet auf Stille: Ertrinken ist meist lautlos. Warnzeichen sind laut den Hosts Kopf im Nacken, Mund auf Höhe der Wasseroberfläche, glasiger Blick, aufrechte Haltung ohne Beinbewegung und Schwimmversuche ohne Vorwärtskommen.",
+    "Gewöhnt Kinder früh spielerisch ans Wasser, etwa mit Gießkanne oder Waschlappen über dem Kopf, ohne Druck. Holt sie aus dem Wasser, wenn sie frieren oder hungrig sind.",
+    "Beginnt beim Schwimmenlernen mit Wasservertrautheit: Augen unter Wasser öffnen, ausatmen, sich tragen lassen, springen, drehen. Perfekter Stil ist nicht das erste Ziel.",
+    "Haltet euch nicht am Seepferdchen fest. Ein Kind mit Abzeichen sollte laut Anja Kerko nicht unbeaufsichtigt schwimmen. Michael Dietl rät, bis zum sicheren Schwimmen (mindestens Bronze) direkt dabei zu sein.",
+    "Schaut euch einen Kurs vorher an (Betreuungsschlüssel, Qualifikation, Umgang mit Kindern) und nehmt euer Kind heraus, wenn es ihm nicht guttut.",
+    "Lockert die Aufsicht erst schrittweise. Entscheidend sind neben Schwimmfähigkeit und Alter auch Risikoeinschätzung und Reaktion auf Überraschungen.",
+    "Beobachtet das Kind nach einem echten Beinahe-Unfall in den folgenden Stunden genau, nach Aussage der Hosts bis zu 24 Stunden. Hustet es immer wieder, atmet schnell oder wirkt teilnahmslos, fahrt ins Krankenhaus."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide erklären sachlich, dass das Bild vom wild zappelnden Ertrinkenden selten stimmt, und sprechen beruhigend über sekundäres Ertrinken: Es sei sehr selten, kurzes Verschlucken mit Husten sei kein Grund zur Sorge. Der Schwimmlehrer Michael Dietl rät zu Fachpersonal und Kursen im Hallenbad, wobei Eltern außerhalb des Beckens bleiben, damit das Kind Vertrauen zur Lehrkraft aufbaut. Er sieht Schwimmflügel und Westen als sinnvoll, wenn sie zuverlässig sind, Badesitze dagegen als riskant. Die Schwimmlehrerin Anja Kerko vertritt bewusst einen anderen Ansatz: Eltern sollten ihr Kind selbst beim Lernen begleiten, Kinder müssten keine Schwimmbewegungen beigebracht bekommen, und Schwimmhilfen sieht sie kritisch, weil sie falsche Sicherheit geben. Die Hosts räumen ein, dass sie selbst früher Sorge vor falsch eingeübten Bewegungen hatten. Einig sind sich alle, dass Aufsicht Sache der Eltern bleibt und nicht der Bademeister."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 67,
+     "titel": "Badeunfälle im Sommer",
+     "datum": "2021-07-27",
+     "minute": "05:07",
+     "thema": "Woran man Ertrinken erkennt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 67,
+     "titel": "Badeunfälle im Sommer",
+     "datum": "2021-07-27",
+     "minute": "09:17",
+     "thema": "Warnzeichen und Beobachtung über 24 Stunden"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 91,
+     "titel": "Schwimmenlernen und Wassergewöhnung",
+     "datum": "2022-07-12",
+     "minute": "05:31",
+     "thema": "Ab welchem Alter und woran erkennt man die Bereitschaft?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 91,
+     "titel": "Schwimmenlernen und Wassergewöhnung",
+     "datum": "2022-07-12",
+     "minute": "31:12",
+     "thema": "Ab wann darf ein Kind allein im Wasser sein?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 244,
+     "titel": "Schwimmen lernen ohne Druck",
+     "datum": "2026-07-14",
+     "minute": "03:16",
+     "thema": "Was das Seepferdchen wirklich aussagt"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 244,
+     "titel": "Schwimmen lernen ohne Druck",
+     "datum": "2026-07-14",
+     "minute": "27:46",
+     "thema": "Warum Schwimmhilfen kritisch gesehen werden"
+    }
+   ],
+   "verwandt": [
+    "unfaelle-vorbeugen",
+    "erste-hilfe",
+    "risiko-freiheit",
+    "urlaub-reisen",
+    "baby-hitze"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Woran erkenne ich, dass ein Kind ertrinkt?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "weihnachtsmann",
+   "titel": "Weihnachtsmann und Christkind",
+   "synonyme": [
+    "Weihnachtsmann Lüge",
+    "Christkind glauben",
+    "Kind zweifelt am Weihnachtsmann",
+    "Weihnachtsmann aufklären",
+    "Zahnfee",
+    "Osterhase",
+    "Elf on the Shelf",
+    "Geschenke Weihnachten",
+    "Herzensgeschenk"
+   ],
+   "fragen": [
+    "Soll ich mein Kind mit dem Weihnachtsmann anlügen?",
+    "Mein Kind zweifelt am Weihnachtsmann, was sage ich?",
+    "Wann und wie erkläre ich, dass es den Weihnachtsmann nicht gibt?",
+    "Darf ich drohen, dass der Weihnachtsmann nicht kommt?",
+    "Wie gehe ich mit vielen Geschenken von der Verwandtschaft um?"
+   ],
+   "alter": [
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "gefuehle",
+    "alltag",
+    "grenzen"
+   ],
+   "kurz": "Die Hosts sehen im Weihnachtsmann und im Christkind vor allem Magie und Kultur, ähnlich wie bei Zahnfee und Osterhase, und kein Lügen im harten Sinn, solange die Geschichte positiv bleibt. Drohen mit der Figur lehnen sie klar ab. Wenn Kinder zweifeln, müssen sie sich nicht sofort entscheiden; wer von Anfang an die Wahrheit sagt, geht laut den Hosts auch keinen schlechten Weg.",
+   "tipps": [
+    "Lasst die magischen Figuren positiv besetzt sein und nutzt sie nicht als Drohung oder Erziehungshelfer.",
+    "Bei ersten Zweifeln müssen sich Kinder nicht sofort entscheiden: Sagt ihnen, dass sie weiter glauben dürfen und ihr jederzeit in Ruhe darüber sprechen könnt.",
+    "Eine Möglichkeit aus den Folgen: Manche Kinder glauben und bekommen Geschenke vom Weihnachtsmann, bei anderen machen es die Eltern, und alle bekommen Geschenke; so entscheidet das Kind selbst.",
+    "Wartet mit der Aufklärung lieber auf einen weniger aufgeladenen Moment als mitten im Advent, zum Beispiel im neuen Jahr.",
+    "Erfährt ein älteres Kind die Wahrheit, könnt ihr es einweihen, damit es den jüngeren Geschwistern die Magie erhält.",
+    "Lasst nur ein klar markiertes Herzensgeschenk vom Weihnachtsmann kommen und benennt die übrigen als persönlich von Eltern, Großeltern oder Paten.",
+    "Bittet Verwandte, Geschenke gebündelt zu übergeben oder zum Geburtstag zu verschieben, damit keine Geschenkeberge entstehen.",
+    "Wenn der Weihnachtsmann Angst macht, kann eine magische Erklärung die Furcht auflösen.",
+    "Legt den Fokus auf gemeinsames Erleben und Dankbarkeit statt auf die Menge der Geschenke."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Die Hosts erzählen aus der eigenen Praxis und geben keine einheitliche Empfehlung. Magie, Märchen und Kultur stehen für sie im Vordergrund; Daniel Graf ist zurückhaltender und unterscheidet erkennbar ausgedachte Märchen von einer Täuschung des Kindes. Er verweist auf eine Ethikerin, die solche Täuschungen für vertrauensschädlich hält, und auf eine Studie von 1994, nach der Kinder die Wahrheit meist mit etwa sieben Jahren selbst herausfinden und überwiegend positiv reagieren, während sich Eltern überwiegend traurig beschrieben. Manche Kinder waren stolz, eingeweiht zu sein, andere weinten bitterlich oder spürten, dass ein Stück Kindheit vorbei ist. Einig sind sich die Hosts, dass Gleichbehandlung und Wertschätzung wichtiger sind als eine einheitliche Geschichte, und dass Drohungen mit Weihnachtsmann, Christkind oder Elf on the Shelf nicht bedürfnisorientiert sind. Eltern, die von Anfang an die Wahrheit sagen, haben laut ihnen keinen schlechten Weg gewählt."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 77,
+     "titel": "Magie oder Lüge? Weihnachtsmann und Christkind",
+     "datum": "2021-12-14",
+     "minute": "02:30",
+     "thema": "Ist das eine Lüge? Hintergrund und Haltung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 77,
+     "titel": "Magie oder Lüge? Weihnachtsmann und Christkind",
+     "datum": "2021-12-14",
+     "minute": "13:25",
+     "thema": "Zweifelndes Kind: Wie jetzt vorgehen?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 77,
+     "titel": "Magie oder Lüge? Weihnachtsmann und Christkind",
+     "datum": "2021-12-14",
+     "minute": "19:59",
+     "thema": "Geschenke werden nicht gewertschätzt, Herzensgeschenk"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 77,
+     "titel": "Magie oder Lüge? Weihnachtsmann und Christkind",
+     "datum": "2021-12-14",
+     "minute": "31:53",
+     "thema": "Elf on the Shelf"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 128,
+     "titel": "Weihnachten und Wackelzähne - mit Kinderbuchrapper Big Moe",
+     "datum": "2023-12-12",
+     "minute": "21:32",
+     "thema": "Wann Kinder skeptisch werden"
+    }
+   ],
+   "verwandt": [
+    "luegen",
+    "geschenke-unpassend-zu-viele",
+    "familien-rituale",
+    "grosseltern"
+   ],
+   "medizinisch": false,
+   "einleitung": "Viele Eltern kennen diese Situation: „Soll ich mein Kind mit dem Weihnachtsmann anlügen?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "baby-weinen",
@@ -13793,13 +21410,19 @@ window.WISSEN = {
     "Baby weint viel",
     "Selbstempathie",
     "Wolfssprache",
-    "Baby beruhigen"
+    "Baby beruhigen",
+    "Nahsignale",
+    "5 S",
+    "pucken",
+    "Baby allein weinen lassen"
    ],
    "fragen": [
     "Mein Baby schreit viel, was braucht es?",
     "Wie halte ich das Schreien meines Babys aus?",
     "Was sage ich einem weinenden Baby?",
-    "Was ist ein Schreibaby?"
+    "Was ist ein Schreibaby?",
+    "Was sind die 5 S bei einem schreienden Baby?",
+    "Darf ich mein Baby schreien lassen?"
    ],
    "alter": [
     "0-1"
@@ -13809,19 +21432,26 @@ window.WISSEN = {
     "gefuehle",
     "eltern"
    ],
-   "kurz": "Für Babys ist Schreien laut Kathy Weber die einzige Möglichkeit zu zeigen, dass ein Bedürfnis unerfüllt ist. Eltern dürfen herausfinden, was es braucht, und dabei auch sich selbst Empathie geben, weil Nichtfinden frustriert. Erst wer mit sich verbunden ist, kann dem Kind ehrlich zugewandt sein.",
+   "kurz": "Für Babys ist Schreien laut Kathy Weber die einzige Möglichkeit zu zeigen, dass ein Bedürfnis unerfüllt ist. Daniel Graf und Katja Seide ergänzen, dass Babys vorher oft leise Signale zeigen und dass Eltern das Weinen begleiten, aber nicht jedes Weinen verhindern müssen. Eltern dürfen herausfinden, was das Baby braucht, und dabei auch sich selbst Empathie geben oder Hilfe holen. Bei starker Belastung oder Unsicherheit sprecht mit Hebamme oder Kinderärztin.",
    "tipps": [
     "Sagt dem Baby, was ihr seht und vermutet: \"Du weinst, ich glaube, du hast Hunger, ich kümmere mich.\"",
     "Sprecht auch nonverbal: atmen, halten, auf den Arm nehmen, Nähe geben.",
     "Bittet bei Überforderung Partner oder Großeltern zu übernehmen und nehmt euch kurz Zeit, etwa auf dem Balkon; das Kind soll währenddessen versorgt sein.",
     "Benennt für euch Situation, Gefühl und Bedürfnis (Kind schreit, ich bin überfordert, ich brauche Schlaf oder Hilfe).",
     "Betrachtet die Lage als Forschungsprojekt und erlaubt euch zu sagen \"Ich kann nicht mehr\".",
-    "Legt euch einen stützenden Satz zurecht, etwa dass das Weinen in Ordnung ist und ihr es hinbekommt."
+    "Legt euch einen stützenden Satz zurecht, etwa dass das Weinen in Ordnung ist und ihr es hinbekommt.",
+    "Achtet auf leise Nahsignale wie Schmatzen, Fäustchen-Lutschen, Wegdrehen des Kopfes oder Blick ins Leere und reagiert, bevor das Baby schreit; bei Unruhe nehmt es aus dem Trubel, wiegt es oder gebt Hautkontakt.",
+    "Probiert nach Erfahrung der Hosts die 5 S: einwickeln, Seitenlage, sanft wippen, saugen lassen, weißes Rauschen; bei vorhersehbarer Abendunruhe am besten schon vor dem ersten Schreien. Tragen im Tuch oder in der Trage geht auch.",
+    "Sprecht früh mit Hebamme oder Kinderärztin, wenn das Schreien euch belastet, ohne auf eine feste Stundenzahl zu warten; bei Unsicherheit holt ärztlichen Rat ein. Probiert nicht alles gleichzeitig, sondern einen Baustein nach dem anderen."
    ],
    "sichtweisen": [
     {
      "podcast": "gfk",
      "text": "Kathy Weber findet es völlig okay, dass ein Baby schreit, und sieht Eltern als Beobachter und Forscher ihres Kindes. Den Begriff Schreibaby mag sie nicht, weil er in Schubladen steckt. Verurteilende Gedanken, die sogenannte Wolfssprache nach Rosenberg, seien nicht falsch, sondern zeigten, dass Eltern selbst Empathie brauchen. Dass Eltern sich zuerst um sich kümmern, nennt sie das größte Geschenk an das Kind. Sie verurteilt niemanden, der anders handelt."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide stimmen mit Kathy Weber darin überein, dass Babys sich übers Schreien melden und Eltern nicht schuld sind. Laut den Hosts zeigt ein Baby aber schon etwa eine halbe Stunde vorher leise Nahsignale (Hunger, Überforderung, Unruhe), und das Schreien sei erst das Notfallprogramm. Anders als im gfk-Artikel geht es ihnen stärker um konkrete Handgriffe: Körperkontakt, Tragen, die 5 S (einwickeln, Seitenlage, wippen, saugen, rauschen) und früh Hilfe holen, wenn es belastet. Sie raten davon ab, Babys aus erzieherischen Gründen allein schreien zu lassen, betonen aber, dass niemand jedes Weinen verhindern muss und begleitetes Weinen okay ist. Eine Gästin (Autorin eines Schreibaby-Buchs) warnt davor, ständig Neues auszuprobieren, weil das viele Babys eher überflutet, und sieht Osteopathie als möglichen Baustein, ohne dass die Hosts eindeutig sagen können, ob sie wirkt."
     }
    ],
    "quellen": [
@@ -13856,15 +21486,41 @@ window.WISSEN = {
      "datum": "2019-03-03",
      "minute": "26:12",
      "thema": "Mit dem weinenden Baby sprechen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 119,
+     "titel": "Babys verstehen und gelassen begleiten",
+     "datum": "2023-08-08",
+     "minute": "03:07",
+     "thema": "Nah- und Fernsignale vor dem Schreien"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 62,
+     "titel": "Wie Du Dein Schreibaby beruhigst mit Andrea Zschocher",
+     "datum": "2021-05-04",
+     "minute": "04:00",
+     "thema": "Ab wann man von einem Schreibaby spricht"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 22,
+     "titel": "Elternratgeber, die uns am besten gefallen haben",
+     "datum": "2019-09-24",
+     "minute": "04:54",
+     "thema": "Die 5 S: Pucken, Seitenlage, Wippen, Saugen, Rauschen"
     }
    ],
    "verwandt": [
     "erste-zeit-mit-baby",
     "erschoepfte-eltern",
     "eltern-selbstregulation",
-    "beduerfnisse-erkennen"
+    "beduerfnisse-erkennen",
+    "schreibaby",
+    "babyschlaf"
    ],
-   "medizinisch": false,
+   "medizinisch": true,
    "einleitung": "Viele Eltern kennen diese Situation: „Mein Baby schreit viel, was braucht es?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
@@ -13939,10 +21595,120 @@ window.WISSEN = {
     "loben",
     "belohnungssysteme",
     "gfk-grundannahmen",
-    "sprache-formulierungen"
+    "sprache-formulierungen",
+    "verwoehnen"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Wie sage ich meinem Kind Danke, ohne zu loben?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "eigene-kindheit-praegung",
+   "titel": "Wie die eigene Kindheit euch als Eltern prägt",
+   "synonyme": [
+    "eigene Kindheit",
+    "Prägung",
+    "Glaubenssätze",
+    "Parentifizierung",
+    "Rollenumkehr",
+    "Beziehung zu den eigenen Eltern",
+    "Abgrenzung von Oma und Opa",
+    "Mutter-Tochter-Beziehung",
+    "Kindheit aufarbeiten"
+   ],
+   "fragen": [
+    "Wie prägt meine eigene Kindheit meine Erziehung?",
+    "Mein Kind ist sehr vernünftig und hilfsbereit, ist das zu viel?",
+    "Soll ich meine Eltern auf meine Kindheit ansprechen?",
+    "Wie grenze ich mich gegenüber meiner Mutter ab?",
+    "Was sage ich auf: Das hat dir auch nicht geschadet?",
+    "Warum kann ich schlecht Nein sagen und kümmere mich um alle?"
+   ],
+   "alter": [
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "eltern",
+    "gefuehle",
+    "entwicklung"
+   ],
+   "kurz": "Laut den Gästen der Folgen prägt jede Kindheit, wie wir als Eltern fühlen und handeln, auch dort, wo wir es nicht bemerken. Es geht dabei nicht um Schuld, sondern darum, eigene Muster zu verstehen und Verantwortung für das Jetzt zu übernehmen. Zwei Beispiele: Kinder, die früh Verantwortung für die Eltern tragen, und die Frage, wie man sich als Erwachsene gegenüber den eigenen Eltern abgrenzt. Bei starker Belastung empfehlen die Gäste, sich therapeutische Unterstützung zu holen.",
+   "tipps": [
+    "Seid neugierig auf eure eigenen Muster: Handle ich aus Pflichtgefühl oder Wunsch nach Zustimmung, oder will ich es wirklich?",
+    "Geht es um Verstehen und Verantwortung, nicht um Vorwürfe; der Gedanke, dass eure Eltern damals ihr Bestmögliches getan haben, kann das Gespräch entlasten.",
+    "Prüft, wie tragfähig die Beziehung zu euren Eltern ist, bevor ihr schwere Themen anspricht, und rechnet damit, dass sie sich nach Jahrzehnten eher nicht ändern.",
+    "Sortiert für euch, was ihr in der Beziehung zu den eigenen Eltern akzeptieren müsst, könnt, wollt und auf keinen Fall wollt; spürt eure Grenze zuerst, bevor ihr sie mitteilt.",
+    "Erlaubt euch Abgrenzung gegenüber Oma und Opa und bestimmt selbst, wie viel Kontakt und Nähe euch guttut.",
+    "Schaut genauer hin, wenn euer Kind sehr angepasst, hilfsbereit und fast erwachsen wirkt: Ist das sein Wesen oder trägt es zu viel Verantwortung?",
+    "Ladet Überforderung nicht bei dem Kind ab, sondern sucht weitere Schultern wie Oma, Freundin oder Nachbarin, und benennt, was das Kind geleistet hat.",
+    "Legt euch gegen Sprüche wie 'Das hat dir auch nicht geschadet' vorab freundliche oder freche Antworten zurecht und passt sie an die Beziehung zur Person an.",
+    "Gebt verdrängter Wut aus der Kindheit einen geschützten Rahmen, zum Beispiel in Therapie, statt sie als Erwachsene auf die Eltern zu richten."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide sprechen das Thema aus mehreren Richtungen an. Eine Gästin (Psychologin) beschreibt Parentifizierung als Rollentausch: Kinder tragen praktisch oder emotional Aufgaben, die eigentlich die Eltern tragen müssten. Betroffene Kinder fielen oft nicht auf, weil sie angepasst und hilfsbereit wirken; entscheidend seien Dauer, Ausmaß und Alter, und die Gästin betont, dass meist Überforderung und keine böse Absicht dahintersteckt. Als Erwachsene fühlten sie sich laut ihr oft nur wertvoll, wenn sie helfen, und täten sich schwer mit Grenzen. Eine andere Gästin (Coach) und ein Gast (Familienbegleiter) betonen, dass es um Eigenverantwortung statt Schuld geht und dass ein Gespräch mit den eigenen Eltern Sinn machen kann, oft aber nicht; einer von ihnen sagt radikal, niemand sei verpflichtet, eine Beziehung zu den Eltern zu haben. Eine Gästin (Autorin) hält auch einen Kontaktabbruch bei starker Belastung für eine bewusst zu prüfende Option. Eine Gästin aus der Bindungsanalyse spricht von Mustern, die über Generationen wirken sollen, räumt aber selbst ein, dass die Studienlage begrenzt ist. Beim Spruch 'Das hat dir auch nicht geschadet' rät eine Gästin eher zu Gelassenheit und Humor, während Daniel Graf berichtet, dass ein offener Widerspruch bei einem Familienmitglied den Kontakt belastet hat."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 248,
+     "titel": "Wie die eigene Kindheit unser Elternsein prägt",
+     "datum": "2026-08-11",
+     "minute": "40:59",
+     "thema": "Eigene Erziehung hinterfragen und mit den Eltern sprechen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 243,
+     "titel": "Wie zu frühe Verantwortung Kinder prägt und bis ins Erwachsenenleben nachwirkt",
+     "datum": "2026-07-07",
+     "minute": "02:46",
+     "thema": "Grenze zwischen Selbstständigkeit und Rollenumkehr"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 243,
+     "titel": "Wie zu frühe Verantwortung Kinder prägt und bis ins Erwachsenenleben nachwirkt",
+     "datum": "2026-07-07",
+     "minute": "11:01",
+     "thema": "Langzeitfolgen im Erwachsenenalter"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 197,
+     "titel": "Tochter sein auf Augenhöhe - Zwischen Verletzung, Klarheit und Nähe",
+     "datum": "2025-08-19",
+     "minute": "07:46",
+     "thema": "Was akzeptieren und was nicht?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 80,
+     "titel": "Mit Eltern und Großeltern über bindungsorientierte Elternschaft ins Gespräch kommen",
+     "datum": "2022-02-08",
+     "minute": "16:48",
+     "thema": "Warum der Spruch Selbstschutz ist"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 213,
+     "titel": "Die Bindungsanalyse - emotionale Begleitung vor und während der Schwangerschaft",
+     "datum": "2025-12-09",
+     "minute": "10:04",
+     "thema": "Genogramm und transgenerationale Muster"
+    }
+   ],
+   "verwandt": [
+    "trigger-inneres-kind",
+    "frueher-nicht-geschadet",
+    "grosseltern",
+    "eltern-psyche-hilfe"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Wie prägt meine eigene Kindheit meine Erziehung?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "wochenbett",
@@ -13957,7 +21723,11 @@ window.WISSEN = {
     "Besuch im Wochenbett",
     "Stillbeginn",
     "Besuch Wochenbett",
-    "Neugeborenes zu Hause bleiben"
+    "Neugeborenes zu Hause bleiben",
+    "Haushaltshilfe",
+    "Wochenfluss",
+    "Rückbildungskurs",
+    "Hebamme"
    ],
    "fragen": [
     "Muss man im Wochenbett wirklich nur liegen?",
@@ -13965,7 +21735,8 @@ window.WISSEN = {
     "Wie lange braucht der Körper nach der Geburt?",
     "Wie beuge ich einer Wochenbettdepression vor?",
     "Was ist der Babyblues?",
-    "Wie lange sollen wir nach der Geburt zu Hause bleiben?"
+    "Wie lange sollen wir nach der Geburt zu Hause bleiben?",
+    "Wie bekomme ich eine Haushaltshilfe nach der Geburt?"
    ],
    "alter": [
     "0-1"
@@ -13974,7 +21745,7 @@ window.WISSEN = {
     "baby",
     "eltern"
    ],
-   "kurz": "Wochenbetten werden ganz unterschiedlich erlebt: Eine Mutter lag im dritten Wochenbett bewusst nicht nur, weil ihr das Liegen früher psychisch nicht guttat, und stieg nach Körpergefühl wieder ein. Unabhängig davon ist Unterstützung entscheidend, und vor Druck in beide Richtungen ist zu warnen. Es handelt sich um Erfahrungen, nicht um ärztlichen Rat.",
+   "kurz": "Wochenbetten werden ganz unterschiedlich erlebt: Eine Mutter lag im dritten Wochenbett bewusst nicht nur, weil ihr das Liegen früher psychisch nicht guttat, und stieg nach Körpergefühl wieder ein, während Hebammen bei Daniel Graf und Katja Seide eher zu Ruhe und langsamem Aufbau raten. Unabhängig davon ist Unterstützung entscheidend, und vor Druck in beide Richtungen ist zu warnen. Es handelt sich um Erfahrungen, nicht um ärztlichen Rat; bei Unsicherheit fragt eure Hebamme oder ärztliche Fachleute.",
    "tipps": [
     "Organisiert schon vor der Geburt Unterstützung, etwa Urlaub oder Elternzeit des Partners oder Hilfe aus der Familie, statt davon auszugehen, dass ihr alles allein schafft.",
     "Startet in den Tag, beobachtet, wie es euch geht, und legt euch wieder hin, sobald es anstrengend wird, und steigert euch nach Körpergefühl.",
@@ -13982,8 +21753,9 @@ window.WISSEN = {
     "Rechnet nach der Geburt mit viel Erholungsbedarf, besonders nach Komplikationen wie einem Notkaiserschnitt, und seid dann nicht allein mit dem Baby.",
     "Wisst vorher, dass Stillen anfangs schmerzhaft sein kann und etwa fünf bis sieben Tage nach der Geburt ein Babyblues auftreten kann, damit euch das nicht überrollt.",
     "Verzichtet kurz nach der Geburt auf schweres Heben und intensiven Sport, tut aber auch nicht wochenlang gar nichts, und macht gezieltes Beckenbodentraining.",
-    "Entscheidet selbst, ob ihr Besuch möchtet, und lasst euch von Vorstellungen eines optimalen Wochenbetts nicht unter Druck setzen.",
-    "Schickt den Partner einkaufen, statt das Neugeborene mit in den Supermarkt zu nehmen, und plant Besuch erst nach einigen Wochen."
+    "Entscheidet selbst, ob ihr Besuch möchtet, und lasst euch nicht von Vorstellungen eines optimalen Wochenbetts unter Druck setzen; schickt den Partner einkaufen, statt das Neugeborene mit in den Supermarkt zu nehmen, und plant Besuch erst nach einigen Wochen.",
+    "Erkundigt euch schon in der Schwangerschaft nach Haushaltshilfe über die Krankenkasse und ehrenamtlichen Angeboten und wünscht euch von Besuch gekochtes Essen statt Geschenken; die Voraussetzungen können je nach Kasse und Region abweichen.",
+    "Sprecht alle Beschwerden offen bei der Hebamme an, und holt euch bei dauerhafter Erschöpfung, Rückzug, Ängsten oder Antriebslosigkeit früh professionelle Hilfe, zum Beispiel über Hausärztin oder Hausarzt."
    ],
    "sichtweisen": [
     {
@@ -13993,6 +21765,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber findet es gut, im Wochenbett von sechs bis acht Wochen möglichst zu Hause zu bleiben, weil Lärm, Licht und Gerüche für ein Neugeborenes viel sind. Frische Luft sei wichtig, etwa auf dem Balkon, Ausflüge sieht sie in den ersten zwei Wochen nicht. Den Einkauf kann der Partner übernehmen, statt das Neugeborene mit in den Supermarkt zu nehmen. Sie selbst hat in den ersten vier Wochen Besucher ausgeladen, auch weil ihre Tochter sehr sensibel war, und rät, Besuch erst nach einigen Wochen zu planen. Sport und Ausflüge zum schnellen Abnehmen hält sie für unnötig, sagt aber, dass jede und jeder es halten darf, wie sie möchte. Die Aussagen stammen zum Teil von der Gesprächspartnerin und werden von ihr bestätigt."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide sprechen vor allem mit Hebammen als Gästinnen und sind damit näher an der Ruhe-Linie von Kathy Weber als an der Mutter aus dem mutti-Podcast, die früh aufstand. Eine Hebamme warnt, sich zu früh zu übernehmen, und nennt Milchstau, Brustentzündung oder eine geschwollene Kaiserschnittnarbe als mögliche Folgen. Sie sagt aber auch, wer quirlig sei, dürfe sich bewegen, wenn der Körper mitmacht, und versteht ihre Ratschläge als Blumenstrauß, nicht als Dogma. Betont werden Hilfe annehmen, dem Partner klar sagen, was man braucht, vorgekochtes Essen statt Geschenken und eine Haushaltshilfe über die Krankenkasse; deren Voraussetzungen schildert die Hebamme aus Erfahrung, sie können je nach Kasse abweichen. Eine zweite Gästin nennt Wochenbett und Erholung eher länger als sechs bis acht Wochen und rät, Beschwerden offen bei der Hebamme anzusprechen und bei Rückzug, Antriebslosigkeit oder dauerhafter Erschöpfung früh professionelle Hilfe zu suchen. Alles sind Erfahrungen und Einschätzungen, kein ärztlicher Rat."
     }
    ],
    "quellen": [
@@ -14022,22 +21798,6 @@ window.WISSEN = {
     },
     {
      "podcast": "mutti",
-     "nr": 38,
-     "titel": "Unser drittes Wochenbett",
-     "datum": "2026-03-17",
-     "minute": "31:53",
-     "thema": "Unterstützung im Wochenbett, Kritik von außen"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 62,
-     "titel": "Expectations Elternschaft - Was werdende Eltern wissen sollten",
-     "datum": "2026-10-14",
-     "minute": "52:41",
-     "thema": "Körperliche Erholung nach der Geburt"
-    },
-    {
-     "podcast": "mutti",
      "nr": 62,
      "titel": "Expectations Elternschaft - Was werdende Eltern wissen sollten",
      "datum": "2026-10-14",
@@ -14051,6 +21811,30 @@ window.WISSEN = {
      "datum": "2019-03-03",
      "minute": "15:15",
      "thema": "Zu Hause bleiben im Wochenbett und Besuch begrenzen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 75,
+     "titel": "\"Wochenbettkultur\" mit Hebamme Kerstin und Doro von Mutterkutter",
+     "datum": "2021-11-16",
+     "minute": "02:24",
+     "thema": "Wandel der Wochenbettkultur, Frauen sofort wieder fit"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 158,
+     "titel": "\"Königin im Wochenbett\"",
+     "datum": "2024-11-19",
+     "minute": "01:16",
+     "thema": "Nestbautrieb und Vorbereitung auf das Wochenbett"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 158,
+     "titel": "\"Königin im Wochenbett\"",
+     "datum": "2024-11-19",
+     "minute": "25:42",
+     "thema": "Heultage und Wochenbettdepression erkennen"
     }
    ],
    "verwandt": [
@@ -14099,12 +21883,18 @@ window.WISSEN = {
     "Protestiert euer Baby kurz, weil es in die Trage statt auf den Arm kommt, dürft ihr es trotzdem tragen und liebevoll begleiten, bis es sich beruhigt.",
     "Schreit das Kind in der Trage länger oder wirkt es schmerzerfüllt, lasst das ärztlich abklären und holt euch gegebenenfalls eine Trageberatung.",
     "Versucht nicht, für jedes Verhalten ein Bedürfnis zu konstruieren, und nutzt es nicht als Entschuldigung für alles.",
-    "Fragt euch lieber, aus welchen Beweggründen ihr selbst gerade handelt, als ständig die Bedürfnisse eures Kindes zu analysieren."
+    "Fragt euch lieber, aus welchen Beweggründen ihr selbst gerade handelt, als ständig die Bedürfnisse eures Kindes zu analysieren.",
+    "Probiert bei einem vermuteten Bedürfnis mehrere Strategien aus und schreibt sie ruhig auf; stellt sich eure Vermutung als falsch heraus, ist das normal.",
+    "Lest eine Bedürfnisliste durch, um zu sehen, was bei euch oder dem Kind gerade fehlen könnte. Setzt euch dabei nicht unter Druck, jedes Bedürfnis sofort erfüllen zu müssen."
    ],
    "sichtweisen": [
     {
      "podcast": "mutti",
      "text": "Beide Hosts sehen bedürfnisorientierte Erziehung inzwischen kritisch und sagen, dass sie früher selbst Wünsche mit Bedürfnissen verwechselt haben. Die Umstellung war für ihre Kinder anfangs mit viel Frust verbunden, danach sei der Alltag deutlich ruhiger geworden. Sie erklären, es gebe keine einheitliche Definition von Bedürfnissen: Sie fanden über zehn Modelle, die meist philosophisch entstanden und kaum empirisch belegt seien. Als besser untersucht nennen sie nur die Selbstbestimmungstheorie mit drei Grundbedürfnissen. Was als Bedürfnis gilt, hänge von Kultur und Umständen ab. Ständiges Analysieren sei verkopft und koste Energie, und viele Entscheidungen und Gewohnheiten liefen ohnehin automatisch ab, etwa Nörgeln beim Aufbrechen. Einig sind sie sich nicht ganz: Ein Host findet einzelne Modelle brauchbar und das Konzept schlüssig, die andere stellt stärker in Frage, ob es Bedürfnisse in dieser Form überhaupt gibt. Beide betonen, dass ihre Kritik nicht bedeutet, autoritär oder gewaltvoll zu erziehen. Eltern könnten gute Voraussetzungen schaffen, seien aber nicht allein dafür verantwortlich, ob ihr Kind glücklich wird."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide sind hier eher auf der Seite der Entlastung: Mit ihren Gästen betonen sie, dass Eltern Bedürfnisse nicht sofort sicher erkennen müssen, sondern raten und ausprobieren dürfen. Eine Gästin erklärt das Bedürfnis als das, was Menschen grundsätzlich brauchen, den Wunsch als eine mögliche Strategie dafür. Das entspricht der Unterscheidung im mutti-Podcast, der den Begriff selbst kritischer sieht und Bedürfnismodelle anzweifelt. Eine andere Gästin sagt, wer das Bedürfnis hinter dem Wunsch erkennt, könne einschätzen, ob es jetzt oder später erfüllt werden muss. Ausdrücklich warnen die Hosts und ihre Gäste davor, dass das Wissen um Bedürfnisse zu Druck führt, alles sofort erfüllen zu müssen."
     }
    ],
    "quellen": [
@@ -14139,6 +21929,22 @@ window.WISSEN = {
      "datum": "2024-12-17",
      "minute": "15:09",
      "thema": "Bedürfnismodelle im Vergleich"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 234,
+     "titel": "Zwischen Nein und Nähe: Wie wir in stressigen Momenten mit unseren Kindern verbunden bleiben",
+     "datum": "2026-05-05",
+     "minute": "06:03",
+     "thema": "Bedürfnis versus Wunsch"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 121,
+     "titel": "Kinder verstehen statt bestrafen - mit Julia Scharnowski",
+     "datum": "2023-09-05",
+     "minute": "17:37",
+     "thema": "Wunsch und Bedürfnis unterscheiden, auch am Morgen"
     }
    ],
    "verwandt": [
@@ -14146,8 +21952,8 @@ window.WISSEN = {
     "frustrationstoleranz",
     "grenzen-setzen",
     "erziehungsstile",
-    "beduerfnisse-erkennen",
-    "gfk-grundannahmen"
+    "morgenroutine",
+    "beduerfnisse-erkennen"
    ],
    "medizinisch": false,
    "einleitung": "Kinder äußern Wünsche oft lautstark, und Eltern fragen sich, ob dahinter ein echtes Bedürfnis steckt, das sie erfüllen müssen. Wird jeder Wunsch erfüllt, entsteht schnell Überforderung, wird er verweigert, plagt viele das schlechte Gewissen."
@@ -14165,7 +21971,11 @@ window.WISSEN = {
     "Kind dreht durch",
     "Überreizung",
     "Kopf auf den Boden schlagen",
-    "Dauerkrise"
+    "Dauerkrise",
+    "Zusammenbruch nach der Kita",
+    "Blitzableiter",
+    "Ja-Brücke",
+    "Regulationskonflikt"
    ],
    "fragen": [
     "Ist das ein Wutanfall oder ein Meltdown?",
@@ -14173,7 +21983,9 @@ window.WISSEN = {
     "Mein Kind weint 20 Minuten wegen der Socken, was tun?",
     "Mein Kleinkind schlägt im Wutanfall den Kopf auf den Boden",
     "Steckt hinter jedem Wutanfall ein Bedürfnis?",
-    "Mein Kind spuckt, tritt oder haut im Wutausbruch, was tue ich?"
+    "Mein Kind spuckt, tritt oder haut im Wutausbruch, was tue ich?",
+    "Warum rastet mein Kind nach der Kita beim Abholen aus?",
+    "Mein Kind ist wütend auf mich, was tun?"
    ],
    "alter": [
     "1-3",
@@ -14209,6 +22021,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber erklärt, dass sie lieber von Wutausbruch statt Wutanfall spricht, weil Anfall nach Krankheit klingt. Für sie ist die Wut ein Hilferuf: Das Kind kümmert sich um sich und will niemanden ärgern, hinter der Wut liegen oft andere Gefühle wie Frust, Traurigkeit oder Überforderung. Im Ausbruch selbst soll man wenig reden, nah bleiben und dafür sorgen, dass alle heil bleiben; Hauen, Treten oder Spucken werden umgeleitet statt unterbunden, und erst danach gibt es Empathie. Anders als die mutti-Hosts hält sie das Benennen von Gefühlen und Bedürfnissen für zentral (aber erst nach dem Ausbruch) und unterscheidet nicht zwischen Wutanfall und Meltdown. Mit ihnen und Nicola Schmidt teilt sie, dass man nicht nachgibt und dass Eltern ruhig bleiben sollen. Neu ist ihr Blick auf die Bedürfnisse: Wenn die dahinterliegenden Bedürfnisse im Alltag weitgehend erfüllt sind, hört die Wut laut ihr auf, und bei täglichen Ausbrüchen lohnt sich die Frage, welches Bedürfnis das Kind so zeigt. Wer als Elternteil im Ausbruch nicht mehr kann, darf sich selbst schützen, etwa mit Gehörschutz, soll aber beim Kind bleiben; Schreien zu verbieten oder das Kind wegzuschicken hält sie für Machtmissbrauch."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "„Das gewünschteste Wunschkind“ sieht Wutanfälle als normalen Stressabbau und Psychohygiene; Hosts und Gästinnen raten, sie auszuhalten und zu begleiten, statt sie sofort stoppen zu wollen. Anders als die mutti-Hosts empfiehlt eine Gästin das Benennen und Bestätigen von Gefühlen (zuerst da sein, benennen, bestätigen, sagen, was man selbst möchte, das Kind Lösungen vorschlagen lassen) und rät, im Gewitter selbst nicht hineinzureden; das liegt näher bei Kathy Weber. Ein Gast gibt dagegen zu bedenken, dass das Gefühle-Benennen im direkten Konflikt, wenn das Kind auf die Eltern wütend ist, oft nicht hilft; dann zähle eine Distanz, die Nähe signalisiert. Mehrere Stimmen nennen die Zeit nach der Kita als typischen Auslöser, weil die Selbstkontrolle aufgebraucht ist, und erklären den Ausbruch bei der Bindungsperson damit, dass das Kind sich dort sicher fühlt. Beim Meltdown stimmen Gäste mit den mutti-Hosts überein, dass er etwas anderes ist als Trotz (Überforderung, nicht Reden, wenig Reize); eine Gästin ordnet ihn der Neurodivergenz zu und lässt die Ja-Brücke dort weg. Bei Verdacht auf eine Diagnose sollten Eltern fachlichen Rat einholen."
     }
    ],
    "quellen": [
@@ -14245,20 +22061,36 @@ window.WISSEN = {
      "thema": "Perspektivwechsel: kleine gute Momente erwischen"
     },
     {
-     "podcast": "mutti",
-     "nr": 49,
-     "titel": "Hat mein Kind Wutanfälle oder Meltdowns?",
-     "datum": "2026-06-02",
-     "minute": "13:55",
-     "thema": "Typischer Ablauf eines Meltdowns"
-    },
-    {
      "podcast": "gfk",
      "nr": 149,
      "titel": "Umgang mit Wutanfällen bei Kindern: Strategien für Schutz, Selbstregulation und Verbindung",
      "datum": "2025-02-17",
      "minute": "30:19",
      "thema": "Tritte, Schreien, Spucken: so umleiten, dass alle heil bleiben"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 205,
+     "titel": "Starke Gefühle, starker Halt - Selbstregulation für dein Kind und dich",
+     "datum": "2025-10-14",
+     "minute": "25:44",
+     "thema": "Akute Wutanfälle und Meltdowns: sechs Schritte"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 163,
+     "titel": "Eltern sein leicht gemacht",
+     "datum": "2024-12-24",
+     "minute": "25:03",
+     "thema": "Beim Abholen: benennen, bestätigen, Lösung finden"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 34,
+     "titel": "Mein Kind lehnt mich ab, was kann ich tun",
+     "datum": "2020-03-24",
+     "minute": "32:36",
+     "thema": "Zusammenbruch nach der Kita und Psychohygiene"
     }
    ],
    "verwandt": [
@@ -14267,7 +22099,7 @@ window.WISSEN = {
     "trotz-autonomie",
     "kind-haut",
     "reizueberflutung-vorbeugen",
-    "anziehen"
+    "aggression-kinder"
    ],
    "medizinisch": true,
    "einleitung": "Viele Eltern erleben, dass ihr Kind wegen Kleinigkeiten tobt oder lange weint, und sind unsicher, ob sie nachgeben oder standhaft bleiben sollen."
@@ -14286,14 +22118,20 @@ window.WISSEN = {
     "Essen schmackhaft machen",
     "Kind probiert nicht",
     "Aufessen",
-    "Brot ohne Käse"
+    "Brot ohne Käse",
+    "Safe Food",
+    "Picky Eating",
+    "ARFID",
+    "Neophobie"
    ],
    "fragen": [
     "Soll ich für mein Kind extra kochen?",
     "Kind meckert über jedes Essen",
     "Kind will nur Nudeln essen",
     "Mein Kind isst kein Gemüse, was tun?",
-    "Muss mein Kind probieren?"
+    "Muss mein Kind probieren?",
+    "Ist wählerisches Essen normal und wann geht es vorbei?",
+    "Wann sollte ich mir bei wählerischem Essen Hilfe holen?"
    ],
    "alter": [
     "1-3",
@@ -14311,11 +22149,11 @@ window.WISSEN = {
     "Steht während eurer Mahlzeit nicht für Sonderwünsche auf, denn das Kind kann sich später selbst etwas holen oder bekommt es, wenn ihr fertig seid.",
     "Sorgt dafür, dass meist eine Komponente dabei ist, die das Kind mag, und lasst es aussortieren, was es nicht mag.",
     "Vertraut darauf, dass ein Kind manchmal weniger Hunger hat, und zwingt es nicht aufzuessen.",
-    "Ermuntert höchstens beiläufig zum Probieren, nicht als Zwang.",
-    "Macht Essen spielerisch schmackhaft, etwa mit Oliven als Ninja-Kugeln, Karotten als Einhorn-Glücksstäbchen oder grünem Gemüse, das stark macht.",
-    "Schneidet Gemüse in Sterne oder kleine Stücke, wenn euer Kind das mag, und beendet das Spiel, wenn es nicht mitmacht.",
+    "Macht Essen spielerisch schmackhaft, etwa mit Oliven als Ninja-Kugeln, Karotten als Einhorn-Glücksstäbchen oder grünem Gemüse, das stark macht. Schneidet Gemüse in Sterne oder kleine Stücke, wenn euer Kind das mag, und beendet das Spiel, wenn es nicht mitmacht.",
     "Vermeidet Sätze wie „Das magst du eh nicht“ oder „Mein Kind isst kein Gemüse“, auch vor anderen, denn Kinder hören mit und können sie als Glaubenssatz übernehmen.",
-    "Bietet an, sich von allem ein wenig zu nehmen und zu probieren, und lasst das Kind seine Portionen selbst auftun, statt Aufessen zu verlangen."
+    "Bietet an, sich von allem ein wenig zu nehmen und zu probieren, und lasst das Kind seine Portionen selbst auftun, statt Aufessen zu verlangen.",
+    "Stellt immer mindestens ein sicheres Lebensmittel (Safe Food) wie Nudeln dazu, serviert Komponenten getrennt und lasst das Kind selbst schöpfen, ohne Kommentare.",
+    "Bei Warnzeichen wie Gewichtsverlust, Wachstumsproblemen oder starker Einschränkung im Alltag geht laut den Gästen zuerst in die Kinderarztpraxis; die meisten wählerischen Kinder haben keine Essstörung."
    ],
    "sichtweisen": [
     {
@@ -14325,6 +22163,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber sieht Verweigerung beim Essen als Experiment des Kindes und als Zeichen, dass es ausprobieren und selbst entscheiden will. Sie rät, Obst und Gemüse immer wieder und vielfältig anzubieten und auf Druck zu verzichten, auch auf „Du musst probieren“ und auf Aufessen-Zwang. Sätze wie „Das magst du eh nicht“ oder „Mein Kind isst keine Gurke“ sollten Eltern vermeiden, weil Kinder sie als Glaubenssatz übernehmen können. Eine Gästin nennt etwa zehnmal Kontakt mit einem Lebensmittel, bis es akzeptiert wird. Weber vertraut auf das intuitive Gespür der Kinder für Hunger und Sättigung. „Iss, was auf den Tisch kommt“ nennt sie Machtmissbrauch. Gleichzeitig will sie keine Extrawurst-Küche: Sie fragt sich, wozu sie bereit ist, und kocht nicht mehrere Gerichte. Zu viele Wahlmöglichkeiten können Kinder überfordern, dann entscheiden die Eltern, was auf den Tisch kommt. Das ist näher an mutti (ein Essen für alle, kein Zwang) als an Menüwünschen, betont aber stärker Bedürfnis und Vertrauen als Erziehungstechnik."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Bei wunschkind gibt es dazu viele Stellen, vor allem in zwei Gastfolgen. Gäste (Fachleute) ordnen wählerisches Essen als weit verbreitet ein: Es beginne oft mit anderthalb bis zwei Jahren, habe die Hochphase zwischen zwei und vier Jahren und sei laut ihnen auch genetisch mitbedingt, mit einer Schutzfunktion gegenüber Neuem. Das entlastet Eltern und widerspricht der mutti-Sicht, es sei teilweise hausgemacht. Wie mutti und gfk lehnen sie Druck, Belohnung und Drohungen beim Probieren ab und nennen die Aufteilung: Eltern entscheiden, was und wann, das Kind, ob und wie viel. Anders als die mutti-Hosts empfehlen sie, immer ein sicheres Lieblingsessen (Safe Food) auf den Tisch zu stellen. Eine Ernährungspsychologin sagt, Nährstoffmangel sei bei Kindern sehr selten, und wochenlanges Immer-Gleiches kann ein Hinweis auf Neurodivergenz sein. Bei Warnzeichen wie Gewichtsverlust oder starkem Leiden im Alltag raten die Gäste zuerst zur Kinderarztpraxis; das sind Aussagen der Gäste, kein ärztlicher Rat."
     }
    ],
    "quellen": [
@@ -14346,27 +22188,11 @@ window.WISSEN = {
     },
     {
      "podcast": "mutti",
-     "nr": 16,
-     "titel": "Müssen Kinder am Tisch still sitzen?",
-     "datum": "2025-04-09",
-     "minute": "25:57",
-     "thema": "Ekel, Probieren und Zwang zum Aufessen"
-    },
-    {
-     "podcast": "mutti",
      "nr": 22,
      "titel": "Life Hack Spielen - den Alltag mit Kindern spielerisch meistern",
      "datum": "2025-05-20",
      "minute": "37:35",
      "thema": "Gummibärchen gegen Karotten, Vesperbox"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 22,
-     "titel": "Life Hack Spielen - den Alltag mit Kindern spielerisch meistern",
-     "datum": "2025-05-20",
-     "minute": "41:16",
-     "thema": "Kindgerecht erklären mit Fantasie"
     },
     {
      "podcast": "gfk",
@@ -14385,12 +22211,28 @@ window.WISSEN = {
      "thema": "Was tun, wenn es nicht schmeckt: Lösungen statt Extrawurst"
     },
     {
-     "podcast": "gfk",
-     "nr": 23,
-     "titel": "033: K-wie KonsequenT statt Konsequenzen Teil 2: Wie dein Kind kooperiert statt zu funktionieren.",
-     "datum": "2020-05-31",
-     "minute": "26:57",
-     "thema": "Zu viele Wahlmöglichkeiten beim Essen"
+     "podcast": "wunschkind",
+     "nr": 161,
+     "titel": "Picky eating - was können wir tun, wenn Kinder wählerisch beim Essen sind?",
+     "datum": "2024-12-10",
+     "minute": "01:53",
+     "thema": "Wie häufig, in welchem Alter, evolutionäre Erklärung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 161,
+     "titel": "Picky eating - was können wir tun, wenn Kinder wählerisch beim Essen sind?",
+     "datum": "2024-12-10",
+     "minute": "20:34",
+     "thema": "Entspannte Mahlzeiten und Verantwortungsaufteilung nach Ellyn Satter"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 246,
+     "titel": "Mehr Entspannung am Familientisch - kindliches Essverhalten besser verstehen",
+     "datum": "2026-07-28",
+     "minute": "26:37",
+     "thema": "Phasen mit gleichem Essen und Safe Food"
     }
    ],
    "verwandt": [
@@ -14399,10 +22241,115 @@ window.WISSEN = {
     "spielen",
     "grenzen-setzen",
     "zaehne-putzen",
-    "beduerfnisse-erkennen"
+    "beduerfnisse-erkennen",
+    "neurodivergenz"
    ],
-   "medizinisch": false,
+   "medizinisch": true,
    "einleitung": "Manche Kinder meckern über jedes Essen, wollen nur Nudeln oder rühren kein Gemüse an. Eltern wissen nicht, ob sie extra kochen oder auf dem Probieren bestehen sollen."
+  },
+  {
+   "id": "zahnen-zaehne",
+   "titel": "Zahnen, Milchzähne, Karies und Fluorid",
+   "synonyme": [
+    "Zahnen",
+    "erster Zahn",
+    "Milchzähne",
+    "Zahnwechsel",
+    "Wackelzahn",
+    "Karies",
+    "Flaschenkaries",
+    "Fluorid",
+    "Fluoridtabletten",
+    "Zahnungsdurchfall"
+   ],
+   "fragen": [
+    "Wann kommt der erste Zahn?",
+    "Macht Zahnen Fieber und Durchfall?",
+    "Was hilft, wenn mein Baby zahnt?",
+    "Bekommt mein Kind vom Stillen Karies?",
+    "Soll mein Kind Fluorid bekommen, als Zahnpasta oder Tablette?",
+    "Wann fallen die Milchzähne aus?"
+   ],
+   "alter": [
+    "0-1",
+    "1-3",
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "baby",
+    "entwicklung",
+    "essen"
+   ],
+   "kurz": "Laut den Hosts bricht der erste Zahn bei den meisten Kindern zwischen dem fünften und zehnten Monat durch, mit großer Streuung. Etwa die Hälfte der Kinder hat laut Katja Seide kaum Probleme beim Zahnen. Beim Thema Fluorid weisen die Hosts darauf hin, dass sich Zahnärzteschaft und Kinderärzteschaft uneinig sind, und schildern die Entscheidung als persönliche Abwägung. Bei Fragen zu Medikamenten oder Fluorid sollten Kinderarzt, Kinderärztin oder Zahnarztpraxis einbezogen werden.",
+   "tipps": [
+    "Wassergekühlte, nicht eiskalte Beißringe können beim Zahnen helfen, so der Zahnarzt Dr. Fickel als Gast.",
+    "Fickel rät von betäubenden Cremes aus der Drogerie ab, weil sie schwer zu dosieren sind und verschluckt werden können. Medikamente für schlimme Nächte, die er nennt, sollten Eltern vorher mit Kinderarzt oder Kinderärztin besprechen.",
+    "Denkt bei Fieber oder Durchfall auch an einen Infekt. Laut den Hosts sieht die Wissenschaft keinen Zusammenhang mit dem Zahnen, viele Eltern erleben das anders, und im ersten Jahr kommen viele Infekte zufällig zeitgleich.",
+    "Gebt in Flaschen nur Wasser und lasst Kleinkinder nicht stundenlang an Flaschen mit Süßem nuckeln, sonst droht laut den Hosts Flaschenkaries.",
+    "Lasst Süßes direkt im Anschluss an eine Mahlzeit essen und gebt den Zähnen danach etwa eine Stunde Pause, so der Kinderzahnarzt von Katja Seide.",
+    "Entscheidet euch beim Fluorid für einen Weg: Tabletten mit fluoridfreier Zahnpasta oder fluoridhaltige Kinderzahnpasta ohne Tabletten, beides zusammen ist zu viel.",
+    "Übt das Ausspucken früh, laut den Hosts klappt es oft schon mit ein bis zwei Jahren. Nehmt nur erbsengroße Mengen Zahnpasta und haltet Zahnpasta und Tabletten außer Reichweite.",
+    "Putzt besonders gründlich, wenn ihr auf Fluorid verzichtet oder es sparsam nutzt, ein Host nennt zwei- bis dreimal täglich.",
+    "Begleitet den ersten verlorenen Milchzahn emotional, auch bei schon älteren Kindern."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide ordnen Zahnen nüchtern ein: Der Zahndurchbruch verläuft bei etwa der Hälfte der Kinder unauffällig, und beim Zahnungsdurchfall widersprechen sich Wissenschaft und Elternerfahrung, was sie ausdrücklich so stehen lassen. Beim Stillen und Karies verweist Katja Seide auf ihre Recherche: Stillen führe nicht zu Flaschenkaries, und Karies habe auch mit Veranlagung zu tun, Eltern sollten deshalb kein schlechtes Gewissen haben. Zum Fluorid zeigen die Hosts offen, dass die Zahnärzteschaft zu fluoridhaltiger Zahnpasta ohne Tabletten rät, während die Kinderärzteschaft Tabletten empfiehlt, bis das Kind ausspucken kann. Ein Host steht den Tabletten kritisch gegenüber, weil sich Fluorid im Körper ablagert und Langzeitfolgen nicht gut untersucht seien. Beide Hosts nutzen fluoridhaltige Zahnpasta, sobald die Kinder ausspucken können. Sie betonen, dass es kein wissenschaftlicher Podcast ist, sondern ein Bericht über die eigene Recherche."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 56,
+     "titel": "Alles rund um Zähne und Zähneputzen",
+     "datum": "2021-02-09",
+     "minute": "01:20",
+     "thema": "Wann kommt der erste Zahn?"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 108,
+     "titel": "Wie Zähne stark und gesund bleiben",
+     "datum": "2023-03-07",
+     "minute": "06:58",
+     "thema": "Was beim Zahnen hilft"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 56,
+     "titel": "Alles rund um Zähne und Zähneputzen",
+     "datum": "2021-02-09",
+     "minute": "13:28",
+     "thema": "Stillen und Karies"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 57,
+     "titel": "Fluoride - sinnvoll oder problematisch?",
+     "datum": "2021-02-23",
+     "minute": "12:33",
+     "thema": "Uneinige Empfehlungen von Zahnärzteschaft und Kinderärzteschaft"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 57,
+     "titel": "Fluoride - sinnvoll oder problematisch?",
+     "datum": "2021-02-23",
+     "minute": "28:10",
+     "thema": "Persönliche Entscheidung und Fazit"
+    }
+   ],
+   "verwandt": [
+    "zaehne-putzen",
+    "stillen",
+    "suessigkeiten",
+    "baby-weinen",
+    "fieber"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Wann kommt der erste Zahn?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "zeit-fuer-sich",
@@ -14418,7 +22365,10 @@ window.WISSEN = {
     "Kinder nicht bespaßen",
     "Selbstfürsorge",
     "Bedürfnistank auffüllen",
-    "Achtsamkeit Eltern"
+    "Achtsamkeit Eltern",
+    "Mikropause",
+    "Gemeinfürsorge",
+    "Tut-mir-gut-Liste"
    ],
    "fragen": [
     "Wie bekomme ich als Mama mehr Zeit für mich?",
@@ -14426,7 +22376,8 @@ window.WISSEN = {
     "Darf ich meine Kinder aufs Zimmer schicken, wenn ich Ruhe brauche?",
     "Muss ich mein Kind den ganzen Tag beschäftigen?",
     "Wie schaffen wir Paarzeit mit Kindern?",
-    "Wie sorge ich für mich, wenn nur Minuten bleiben?"
+    "Wie sorge ich für mich, wenn nur Minuten bleiben?",
+    "Was hilft, wenn Selbstfürsorge-Tipps mich zusätzlich unter Druck setzen?"
    ],
    "alter": [
     "1-3",
@@ -14445,10 +22396,10 @@ window.WISSEN = {
     "Plant Hobbys so, dass Kinder mitmachen oder danebensitzen können, etwa Garten, Backen oder Sport, und haltet sie realistisch, zum Beispiel 10 bis 20 Minuten Sport statt langer Einheiten.",
     "Schickt die Kinder mit Zeitangabe zum Spielen ins Kinderzimmer oder in den Garten, zum Beispiel für eine halbe Stunde, denn das ist legitim, wenn es nicht aus Wut geschieht.",
     "Legt euch mittags hin, wenn ihr müde seid und die Umgebung sicher ist, und bittet die Kinder, leise zu spielen.",
-    "Erledigt Haushalt wie Wäsche auch, wenn die Kinder wach sind.",
     "Baut Paarzeit im Haus langsam auf, etwa mit zehn Minuten, in denen die Kinder in ihrem Zimmer bleiben.",
-    "Knüpft Kontakte zu anderen Eltern aus Kita oder Schule und tauscht Betreuung, damit Raum für Zeit zu zweit entsteht.",
-    "Macht Beziehungsangebote wie Vorlesen, ohne zu drängen, und spielt nicht aus Pflichtgefühl."
+    "Nutzt blinde Zeiten wie das Kochen des Wassers für ein bis zwei Minuten bewusstes Atmen am Fenster, statt nebenbei Aufgaben zu erledigen.",
+    "Schreibt eine Tut-mir-gut-Liste mit einfachen Dingen wie Fenster öffnen, Musik hören oder tanzen, damit ihr in freien Minuten nicht im Handy landet.",
+    "Sucht Dinge, die ihr mit Freude gemeinsam mit den Kindern tut, während sie in einem sicheren Raum eigene Spielideen haben, und lasst sie vieles selbst machen."
    ],
    "sichtweisen": [
     {
@@ -14458,6 +22409,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber hinterfragt zunächst das Wort Ruhe: Meist gehe es um Erholung, Entspannung, Achtsamkeit und Selbstbestimmung. Zeit sei in der Gewaltfreien Kommunikation kein Bedürfnis, sondern eine Strategie, also nur ein möglicher Weg, Bedürfnisse zu erfüllen. Selbstfürsorge werde oft zu groß gedacht; sie rät zu Strategien von Sekunden bis wenigen Minuten, etwa einem bewusst getrunkenen Glas Wasser, bewusstem Atmen oder zehn Minuten Yoga, und zu einem Strategiekalender für die Woche. Wertschätzung und Liebe können Eltern sich laut ihr auch selbst erfüllen, statt sie von der Familie zu erwarten. Sie nimmt Eltern damit stark in die eigene Verantwortung, benennt aber, dass Glaubenssätze und schlechtes Gewissen das Sichwichtignehmen erschweren. Bei Überforderung braucht es zuerst Empathie, bevor man neue Strategien ausprobiert."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide sprechen in mehreren Folgen mit Gästinnen und Gästen über Selbstfürsorge und kommen zum Ergebnis: Sie darf klein sein, etwa Mikropausen von ein bis zehn Minuten, und soll nicht zur zusätzlichen To-do-Pflicht werden. Das deckt sich mit Mutti und Kathy Weber. Abweichend gibt es mehr Differenzierung: Ein Gast mit eigener Depressionserfahrung warnt, dass Tipps wie Sport und Achtsamkeit Betroffene zusätzlich unter Druck setzen können. Eine weitere Gästin meint, kurze Pausen reichten nicht, es gehe auch um Freude, Sinn und aufgeschobene Wünsche. Renz-Polster widerspricht einer Verengung auf Ich-Zeit in Abgrenzung vom Kind und spricht von Gemeinfürsorge: Dinge tun, die Freude machen und mit den Kindern gehen. Mehrere Gäste und Hosts sagen offen, dass sie selbst oft am Handy landen."
     }
    ],
    "quellen": [
@@ -14494,22 +22449,6 @@ window.WISSEN = {
      "thema": "Ruhe schon im entspannten Alltag etablieren"
     },
     {
-     "podcast": "mutti",
-     "nr": 39,
-     "titel": "Regeln durchsetzen ohne Schimpfen",
-     "datum": "2026-03-24",
-     "minute": "38:22",
-     "thema": "Mitmachen oder allein spielen, Rückzug der Eltern"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 27,
-     "titel": "Kinder stressfrei ins Bett bringen",
-     "datum": "2025-08-05",
-     "minute": "36:51",
-     "thema": "Eigene Freizeit nicht auf die Schlafenszeit verschieben"
-    },
-    {
      "podcast": "gfk",
      "nr": 140,
      "titel": "Herausforderung Familie: Wie du mithilfe von Gewaltfreier Kommunikation deine und die Bedürfnisse deiner Kinder erfüllst",
@@ -14518,12 +22457,28 @@ window.WISSEN = {
      "thema": "Das Bedürfnis Ruhe hinterfragen, Achtsamkeit in kleinen Schritten"
     },
     {
-     "podcast": "gfk",
-     "nr": 140,
-     "titel": "Herausforderung Familie: Wie du mithilfe von Gewaltfreier Kommunikation deine und die Bedürfnisse deiner Kinder erfüllst",
-     "datum": "2024-12-16",
-     "minute": "15:31",
-     "thema": "Selbstfürsorge, Zeit ist eine Strategie"
+     "podcast": "wunschkind",
+     "nr": 206,
+     "titel": "Kleine Auszeiten, große Wirkung – Selbstfürsorge im Familienalltag",
+     "datum": "2025-10-21",
+     "minute": "26:07",
+     "thema": "Selbstfürsorge ohne schlechtes Gewissen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 190,
+     "titel": "Von Schuldgefühlen, Stress und Überforderung zu mehr Gelassenheit und Selbstfürsorge",
+     "datum": "2025-07-01",
+     "minute": "20:17",
+     "thema": "Mikropausen und Wasserkocheratmung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 141,
+     "titel": "Wie Erziehung heute gelingt mit Herbert Renz-Polster",
+     "datum": "2024-06-11",
+     "minute": "22:43",
+     "thema": "Selbstfürsorge, die nicht immer Abgrenzung vom Kind heißt"
     }
    ],
    "verwandt": [
@@ -14566,7 +22521,7 @@ window.WISSEN = {
     "eltern",
     "gefuehle"
    ],
-   "kurz": "Kathy Weber vertritt den Satz „Ich entscheide, ob ich Zeitdruck habe“: Zeitdruck sei ein Gedanke, hinter dem Gefühle und Bedürfnisse wie Klarheit oder Verbindung stecken, und kein Täter. Hilfreich ist, vorab zu überlegen, was das Kind braucht, um kooperieren zu können, und Prioritäten zu setzen.",
+   "kurz": "Kathy Weber vertritt den Satz „Ich entscheide, ob ich Zeitdruck habe“: Zeitdruck sei ein Gedanke, hinter dem Gefühle und Bedürfnisse wie Klarheit oder Verbindung stecken, und kein Täter. Hilfreich ist, vorab zu überlegen, was das Kind braucht, um kooperieren zu können, und Prioritäten zu setzen. Gäste im wunschkind-Podcast ergänzen, dass Eltern auch strukturell zu wenig Zeit haben und Zeitstress nicht normal sein muss.",
    "tipps": [
     "Notiert, in welchen Situationen ihr regelmäßig unter Zeitdruck seid (Losgehen, Zähneputzen, Anziehen, Termine).",
     "Macht einen SOS-Zettel für typische Orte wie Bad oder Flur: Ich entscheide, ob ich Zeitdruck habe. Was fühle ich? Welches Bedürfnis steckt dahinter? Was kann ich jetzt tun? Dazu ein Mutmachsatz.",
@@ -14575,12 +22530,17 @@ window.WISSEN = {
     "Verzichtet morgens bewusst auf Nebenaufgaben wie Spülmaschine oder Wäsche und legt sie auf Nachmittag oder Abend.",
     "Plant für das morgendliche Begleiten 10 bis 15 Minuten ein und steht, wenn ihr etwas für euch möchtet, zehn Minuten früher auf.",
     "Gebt Bescheid, wenn ihr später kommt, und sagt Verabredungen oder nicht dringende Termine ab, wenn die Verbindung zum Kind wichtiger ist.",
-    "Wenn Leichtigkeit gefehlt hat: Musik aufdrehen, tanzen oder singen und die Situation noch einmal von vorn starten."
+    "Wenn Leichtigkeit gefehlt hat: Musik aufdrehen, tanzen oder singen und die Situation noch einmal von vorn starten.",
+    "Macht einmal einen Realitätscheck mit acht Stunden Schlaf, Ruhezeit und Fahrtwegen; passt schon in der Theorie nicht alles hinein, lohnt sich die Frage nach grundsätzlichen Veränderungen."
    ],
    "sichtweisen": [
     {
      "podcast": "gfk",
      "text": "Kathy Weber erklärt, in der Gewaltfreien Kommunikation sei „ich habe Zeitdruck“ ein Tätergedanke, weil man die fehlende Zeit verantwortlich macht; Zeit sei kein Bedürfnis. Sie kenne das Argument, GfK dauere zu lange, aus ihrer eigenen Anfangszeit und räumt ein, dass der Satz zur Eigenverantwortung gerade am Anfang unsexy klingt. Ihre Erfahrung: Angespannte Eltern strahlen wenig Sicherheit und Führung aus, wer sich vom Druck löst, bekommt mehr Kooperation. Bei echten Terminen wie Arzt, Zug oder Flug trifft sie die Entscheidung zu gehen auch gegen den Protest des Kindes, nachdem sie vorbereitet und Einfühlung gegeben hat. Das Thema verdünne sich mit der Zeit, ganz weg gehe es nie. Am Morgen setzt sie als Priorität, die Kinder in Verbindung zu begleiten."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide sehen Zeitdruck nicht nur als Frage der inneren Haltung, sondern auch als strukturelles Problem. Eine Journalistin als Gästin erklärt, die Zeit reiche bei Eltern real nicht, weil Beruf und Sorgearbeit den Tag sprengen. Sie nennt Zeitstress nicht normal, sondern durch Politik und Arbeitsstrukturen gewachsen und veränderbar. Das widerspricht dem gfk-Ansatz teilweise, der den Zeitdruck als eigenen Gedanken versteht, trifft sich aber mit dem Rat, die eigenen Standards zu hinterfragen. Für den Alltag raten Gäste, Kindern beim Trödeln als Erwachsene mehr Zeit einzuplanen statt Eile abzuverlangen, und einen Realitätscheck mit Schlaf, Ruhezeit und Fahrtwegen zu machen. Eine Gästin räumt selbst ein, dass ihr Weg, aufs Dorf zu ziehen, kein Rezept für alle sei."
     }
    ],
    "quellen": [
@@ -14615,6 +22575,30 @@ window.WISSEN = {
      "datum": "2026-03-02",
      "minute": "43:56",
      "thema": "Ich entscheide, ob ich Zeitdruck habe, Morgenroutine mit Priorität auf Verbindung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 106,
+     "titel": "Eine neue Zeitkultur für mehr Gerechtigkeit, Lebensqualität und gesellschaftlichen Zusammenhalt",
+     "datum": "2023-02-07",
+     "minute": "03:51",
+     "thema": "Das Zeitdruck-Paradoxon"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 106,
+     "titel": "Eine neue Zeitkultur für mehr Gerechtigkeit, Lebensqualität und gesellschaftlichen Zusammenhalt",
+     "datum": "2023-02-07",
+     "minute": "33:01",
+     "thema": "Zeitstress ist nicht normal und veränderbar"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 121,
+     "titel": "Kinder verstehen statt bestrafen - mit Julia Scharnowski",
+     "datum": "2023-09-05",
+     "minute": "29:19",
+     "thema": "Trödeln und Zeitdruck"
     }
    ],
    "verwandt": [
@@ -14622,10 +22606,109 @@ window.WISSEN = {
     "leichtigkeit",
     "eltern-selbstregulation",
     "uebergaenge",
-    "anziehen"
+    "anziehen",
+    "erschoepfte-eltern"
    ],
    "medizinisch": false,
    "einleitung": "Viele Eltern kennen diese Situation: „Wie gehe ich mit Zeitdruck um, wenn mein Kind trödelt?“. Hier steht, was dahinter stecken kann und was helfen kann."
+  },
+  {
+   "id": "zwaenge-kind",
+   "titel": "Zwänge bei Kindern: Macke oder Störung?",
+   "synonyme": [
+    "Zwangsstörung",
+    "Waschzwang",
+    "Zwangsgedanken",
+    "Kind wäscht ständig die Hände",
+    "Kontrollzwang",
+    "magisches Denken",
+    "Rituale",
+    "Macke",
+    "Tick"
+   ],
+   "fragen": [
+    "Mein Kind wäscht sich ständig die Hände, ist das ein Waschzwang?",
+    "Wann ist eine Macke bei Kindern ein Zwang?",
+    "Ist magisches Denken bei Kindern normal?",
+    "Mein Kind hat Angst vor Keimen, was kann ich tun?",
+    "Wann sollte ich mit meinem Kind zur Therapie?"
+   ],
+   "alter": [
+    "3-6",
+    "6-10"
+   ],
+   "bereiche": [
+    "gefuehle",
+    "entwicklung",
+    "eltern"
+   ],
+   "kurz": "Laut dem Gast Peter Wittkamp, der aus eigener Erfahrung spricht, sind kleine Macken und Rituale normal, solange sie nicht einschränken. Hinweise auf einen Zwang sind aufdringliche Gedanken mit Angst, Handlungen zur Entlastung und ein Verhalten, das sich ausbreitet und viel Zeit kostet. Das ist eine Erfahrungsschilderung und keine ärztliche Beratung; bei Verdacht holt euch früh professionelle Hilfe.",
+   "tipps": [
+    "Fragt euch: Schränkt es ein? Kleine Ticks und Spleens, die kaum belasten, sind laut dem Gast normal. Problematisch wird es, wenn sie viel Zeit kosten, sich auf mehr Bereiche ausdehnen oder das Leben einengen.",
+    "Beobachtet, ob sich das Verhalten ausbreitet oder zunimmt, und holt euch bei Leiden des Kindes oder der Familie früh Hilfe bei einer Kinder- und Jugendpsychologie, denn je früher, desto besser.",
+    "Sprecht mit dem Kind über seine Angst und klärt auf, zum Beispiel bei Angst vor Keimen. Vereinbart ein normales Schutzmaß, etwa Händewaschen beim Nachhausekommen.",
+    "Erlaubt bei Ängsten gelegentlich, noch einmal zu waschen, und setzt euch dann mit sauberen Händen zusammen und redet.",
+    "Nehmt zwanghaft wirkendes Verhalten bei Zwei- bis Sechsjährigen gelassen: Laut dem Gast lernen sie in diesem Alter Ordnung und Reihenfolgen, und es kann sich verwachsen. Beobachtet es aber.",
+    "Magisches Denken in leichter Form, etwa auf Holz klopfen oder nicht auf Fugen treten, ist laut dem Gast harmlos und entlastet Ängste.",
+    "Bei Verdacht auf eine Zwangsstörung nennt der Gast Verhaltenstherapie als Weg, bei der man sich der Angst schrittweise nähert. Medikamente würde er bei Kindern möglichst vermeiden und nur mit Fachleuten absprechen."
+   ],
+   "sichtweisen": [
+    {
+     "podcast": "wunschkind",
+     "text": "Der Autor Peter Wittkamp spricht als Betroffener und betont mehrfach, kein Therapeut zu sein. Er beschreibt einen Zwang als aufdringlichen Gedanken, der Angst auslöst, und eine Handlung wie Waschen, Kontrollieren oder Zählen, die diese Angst lindern soll. Betroffene wüssten meist, dass es übertrieben ist, könnten sich aber nicht wehren und verheimlichten es. Er sieht kleine Spleens und Rituale als Teil des Lebens, niemand müsse zum Therapeuten, solange es nicht einschränkt. Als Pragmatiker rät er, erst den Zwang per Verhaltenstherapie loszuwerden und später nach dem Warum zu fragen; die Ursachen seien noch nicht vollständig erforscht. Daniel Graf und Katja Seide fragen vor allem nach der Abgrenzung zur Normalität. Er nennt außerdem laut eigener Aussage, dass es im Schnitt etwa zehn Jahre dauere, bis Betroffene Hilfe suchen."
+    }
+   ],
+   "quellen": [
+    {
+     "podcast": "wunschkind",
+     "nr": 53,
+     "titel": "Zwänge, Ängste und magisches Denken mit Peter Wittkamp",
+     "datum": "2020-12-15",
+     "minute": "26:30",
+     "thema": "Wo verläuft die Grenze zwischen Macke und Zwang"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 53,
+     "titel": "Zwänge, Ängste und magisches Denken mit Peter Wittkamp",
+     "datum": "2020-12-15",
+     "minute": "14:14",
+     "thema": "Waschzwang und Corona, Kinder mit Angst vor dem Virus"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 53,
+     "titel": "Zwänge, Ängste und magisches Denken mit Peter Wittkamp",
+     "datum": "2020-12-15",
+     "minute": "46:03",
+     "thema": "Zwanghaftes Verhalten bei kleinen Kindern"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 53,
+     "titel": "Zwänge, Ängste und magisches Denken mit Peter Wittkamp",
+     "datum": "2020-12-15",
+     "minute": "46:38",
+     "thema": "Wann zum Therapeuten und Verhaltenstherapie"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 53,
+     "titel": "Zwänge, Ängste und magisches Denken mit Peter Wittkamp",
+     "datum": "2020-12-15",
+     "minute": "08:11",
+     "thema": "Magisches Denken als Sonderform"
+    }
+   ],
+   "verwandt": [
+    "angst-kind",
+    "psychische-gesundheit-kind",
+    "perfektionismus-fehler",
+    "schock-trauma-begleiten",
+    "neurodivergenz"
+   ],
+   "medizinisch": true,
+   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind wäscht sich ständig die Hände, ist das ein Waschzwang?“. Hier steht, was dahinter stecken kann und was helfen kann."
   },
   {
    "id": "zaehne-putzen",
@@ -14642,7 +22725,10 @@ window.WISSEN = {
     "Zahnputzverweigerung",
     "Karies",
     "Zahnputz-Nein",
-    "Zähneputzen Bedürfnisse"
+    "Zähneputzen Bedürfnisse",
+    "Nachputzen",
+    "Kreidezähne",
+    "Fluorid Kind"
    ],
    "fragen": [
     "Mein Kind will keine Zähne putzen, was tun?",
@@ -14650,7 +22736,8 @@ window.WISSEN = {
     "Wie mache ich Zähneputzen zum Spiel?",
     "Ist es schlimm, wenn Zähneputzen mal ausfällt?",
     "Mein Kleinkind lässt sich nicht die Zähne putzen",
-    "Soll jemand anderes meinem Kind die Zähne putzen?"
+    "Soll jemand anderes meinem Kind die Zähne putzen?",
+    "Bis zu welchem Alter muss ich nachputzen?"
    ],
    "alter": [
     "1-3",
@@ -14660,17 +22747,17 @@ window.WISSEN = {
     "alltag",
     "grenzen"
    ],
-   "kurz": "Bei Milchzähnen geht es zuerst darum, eine positive Gewohnheit aufzubauen, nicht darum, dass jeder Zahn perfekt sauber wird. Beide Podcasts lehnen Zwang ab: Druck, Drohungen und Festhalten führen eher zu Vermeidung. Helfen sollen Spiele, ein günstiger Zeitpunkt, weniger Machtkampf und bei älteren Kindern eine klare Abmachung rund ums Essen.",
+   "kurz": "Bei Milchzähnen geht es zuerst darum, eine positive Gewohnheit aufzubauen, nicht darum, dass jeder Zahn perfekt sauber wird. Alle Podcasts lehnen Zwang ab: Druck, Drohungen und Festhalten führen eher zu Vermeidung. Helfen sollen Spiele, ein günstiger Zeitpunkt, weniger Machtkampf und bei älteren Kindern eine klare Abmachung rund ums Essen. Zahn- und Fluoridfragen sind Sache eurer Zahnärztin oder eures Zahnarztes; die Aussagen hier sind Erfahrungen der Hosts und Gäste.",
    "tipps": [
     "Nehmt den Druck raus, denn Hauptziel ist die Routine am Morgen und Abend, und schon 20 Sekunden Zahnbürste im Mund sind ein erster Schritt. Geht möglichst entspannt ans Putzen, denn euer Stress überträgt sich.",
     "Startet mit einem Spiel statt mit „schnell noch Zähne putzen“, zum Beispiel mit einer Zahnbürste mit lustiger Stimme, einer Zahnputzpolizei, die Bakterien jagt, oder einem Monster, das Angst vor putzenden Kindern hat.",
     "Steigt aus dem Machtkampf aus, indem ihr kurz weggeht, euch beruhigt und mit der Zahnbürste in der Hand wartet, denn viele Kinder kommen von selbst.",
-    "Putzt früher am Abend, solange alle noch Energie haben, und gebt danach nichts Zahnschädigendes mehr. Ein Bissen Banane ist laut der Host unkritisch.",
     "Bei Kindern, die den Zusammenhang schon verstehen: Zahnschädigendes wie Eis oder Nudeln gibt es nur, wenn vorher geputzt wird. Die Host berichtet, dass ihr Kind nach etwa zweieinhalb Wochen von selbst putzen wollte.",
     "Bietet ein klares Zeitfenster an, in dem nicht geputzt wird, wer nicht mitmacht, und verhandelt nicht nach.",
     "Lasst regelmäßig jemand anderen die Zähne putzen, auch wenn es noch kein Problem gibt, damit sich keine festgefahrene Routine bildet. Holt euch Hilfe, bevor ihr erschöpft seid.",
     "Prüft die Zahnbürste, denn zu große oder harte Bürsten können wehtun. Lasst das Kind vor dem Spiegel mitputzen, während ihr selbst putzt.",
-    "Nutzt Lieder, Videos oder einen Kalender mit Stickern in schwierigen Phasen zum Überbrücken, ohne sie zur Dauerbedingung werden zu lassen."
+    "Putzt bis ins Grundschulalter nach: Laut den Hosts schaffen Kinder bis etwa zehn die Technik motorisch nicht richtig, und ein Zahnarzt nennt den ersten bleibenden Backenzahn (um sechs bis sieben Jahre), der hinter den Milchzähnen leicht übersehen wird.",
+    "Seht Verweigerung als mögliche Phase: Bei einem neuen Zahn oder in der Autonomiephase hilft es, sehr zart zu putzen oder etwas nachzugeben; ein paar Tage ohne Putzen sind laut einem Zahnarzt nicht schlimm. Festhalten oder körperlicher Zwang ist tabu."
    ],
    "sichtweisen": [
     {
@@ -14684,6 +22771,10 @@ window.WISSEN = {
     {
      "podcast": "gfk",
      "text": "Kathy Weber schließt körperliche und seelische Gewalt beim Zähneputzen aus (Festhalten, Drohen, Strafe, Belohnung wie ein Eis) und setzt auf Freude und Freiwilligkeit im Wie, nicht im Ob. Zähneputzen ist für sie eine Information und kein Machtmittel: Eltern entscheiden, dass geputzt wird, weil sie für die Gesundheit des Kindes zuständig sind, und Kinder sehnen sich nach dieser klaren Führung. Wie, wann und wo geputzt wird, gestaltet das Kind mit. Sie nennt das Nein des Kindes ein Signal für ein unerfülltes Bedürfnis, etwa Müdigkeit abends, Autonomie, Nähe oder Orientierung, und empfiehlt, zuerst eigene Urteile in Bedürfnisse zu übersetzen und dem Kind Empathie zu geben. Strategien wie Lieder oder Spiele helfen laut ihr erst nach Einfühlung und passen nicht für jede Familie. Mit den Mutti-Hosts stimmt sie in der Ablehnung von Gewalt überein, lehnt aber im Unterschied zu deren Stufenfolge aus Belohnung und Konsequenz beides ab. Sie räumt ein, dass der Anfang lange dauern kann."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide sehen den Anfang als den schwersten Teil: Wenn Kinder merken, dass beim Putzen nichts Schlimmes passiert, wird es Teil des Tages. Katja Seide sagt am deutlichsten, dass man ein Kind nie mit körperlicher Gewalt festhalten dürfe; das deckt sich mit den anderen Podcasts. Sie erlebte, dass ihre Kinder besonders dann verweigerten, wenn ein neuer Zahn durchbrach, und putzte dann sehr zart; eine Phase zu erkennen half ihr gelassen zu bleiben. Praktisch sind die Hosts pragmatisch (\"no shame\") bei kleinen Helfern wie Handyvideo, App oder elektrischer Zahnbürste, und Katja Seide hat einem Kind sachlich Bilder von Karies gezeigt, was sie selbst als ein bisschen gemein einordnet. Ein als Gast eingeladener Zahnarzt rät zu Ritual, Nachputzen bis ins Grundschulalter und nur einer Fluoridquelle; Zahnpasta-Fragen klärt am besten euer Zahnarzt. In einer Folge ist Nicola Schmidt zu Gast, die ihre Haltung selbst radikal nennt und Zahnärzte anders sehen würden. Sie stellt in Frage, dass abends der beste Zeitpunkt ist, und wiederholt den Deal ohne Putzen kein Zucker. Als Notlösung nennen die Hosts Hartkäse, aber ausdrücklich nicht als Ersatz."
     }
    ],
    "quellen": [
@@ -14721,22 +22812,6 @@ window.WISSEN = {
     },
     {
      "podcast": "mutti",
-     "nr": 57,
-     "titel": "Stressfrei Zähne putzen",
-     "datum": "2026-09-09",
-     "minute": "36:12",
-     "thema": "Sammlung von Zahnputzspielen"
-    },
-    {
-     "podcast": "mutti",
-     "nr": 20,
-     "titel": "Wie gelingt ein stressfreier Morgen mit Kindern?",
-     "datum": "2025-05-06",
-     "minute": "36:24",
-     "thema": "Spiele: Abendmonster, Bakterien-Rollenspiel, Zähneputzen ist verboten"
-    },
-    {
-     "podcast": "mutti",
      "nr": 51,
      "titel": "Strafe oder Konsequenz - So erkennen Eltern den Unterschied",
      "datum": "2026-06-16",
@@ -14744,12 +22819,28 @@ window.WISSEN = {
      "thema": "Reihenfolge der Maßnahmen bis zum Festhalten"
     },
     {
-     "podcast": "mutti",
-     "nr": 9,
-     "titel": "Q&A: Kinderfrust, Zähneputz-Dramen und Partnerschaftsfragen",
-     "datum": "2025-01-22",
-     "minute": "14:26",
-     "thema": "Zahnbürste, Druck rausnehmen, Ernährung"
+     "podcast": "wunschkind",
+     "nr": 56,
+     "titel": "Alles rund um Zähne und Zähneputzen",
+     "datum": "2021-02-09",
+     "minute": "22:24",
+     "thema": "Tipps und Tricks gegen Zahnputzverweigerung"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 108,
+     "titel": "Wie Zähne stark und gesund bleiben",
+     "datum": "2023-03-07",
+     "minute": "20:10",
+     "thema": "Zahnputzverweigerung: Rituale und einmal gründlich"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 79,
+     "titel": "Grenzen setzen in der bedürfnisorientierten Erziehung",
+     "datum": "2022-01-28",
+     "minute": "30:06",
+     "thema": "Zähneputzen ohne Festhalten, Zeiten und Personen"
     }
    ],
    "verwandt": [
@@ -14774,14 +22865,17 @@ window.WISSEN = {
     "Kind will nicht nach Hause",
     "Abschied vom Spielplatz",
     "noch fünf Minuten",
-    "Spiel beenden"
+    "Spiel beenden",
+    "Kind weint vor der Schule",
+    "Flow unterbrechen"
    ],
    "fragen": [
     "Warum fallen meinem Kind Übergänge so schwer?",
     "Mein Kind will nicht vom Spielplatz nach Hause, was tun?",
     "Kind will nicht aufhören zu spielen, wie beende ich es?",
     "Besuchskind will nicht gehen, was tun?",
-    "Mein Kind will nach dem Wochenende nicht in die Kita, was tun?"
+    "Mein Kind will nach dem Wochenende nicht in die Kita, was tun?",
+    "Mein Kind weint morgens vor der Schule, was hilft?"
    ],
    "alter": [
     "1-3",
@@ -14799,16 +22893,20 @@ window.WISSEN = {
     "Beobachtet, was euer Kind braucht (Nähe, Orientierung, Autonomie), und erfüllt das, bevor ihr Mitmachen erwartet.",
     "Kündigt konkret an statt vage: „Noch dreimal rutschen, dann gehen wir“ ist für kleine Kinder greifbar, „in fünf Minuten“ nicht.",
     "Gebt Wahlmöglichkeiten innerhalb eures Rahmens, etwa wie oft das Kind noch schaukelt oder welchen Pulli es anzieht, nicht ob ihr gehen wollt.",
-    "Hilft das Kind beim Abschied vom Spiel: Beendet es gemeinsam (letzte Puppe zudecken, dem Zimmer zuwinken) und geht dann Hand in Hand weiter.",
-    "Erkennt den Spaß an und sagt klar, dass ihr trotzdem geht. Fragt das Kind nach einer Idee, wie es spielerisch nach Hause kommt.",
+    "Hilft das Kind beim Abschied vom Spiel: Beendet es gemeinsam (letzte Puppe zudecken, dem Zimmer zuwinken) und geht dann Hand in Hand weiter. Erkennt den Spaß an und sagt klar, dass ihr trotzdem geht. Fragt das Kind nach einer Idee, wie es spielerisch nach Hause kommt.",
     "Plant Zeit für Gefühle ein und beginnt früher mit dem Gehen, bevor Hunger und Müdigkeit dazukommen.",
     "Geht Empathie nicht an, entscheidet ihr, dass es geschieht, und führt das Kind liebevoll durch.",
-    "Gebt nach Wochenenden oder Reisen Zeit zum Ankommen und spielt Erlebtes vorab nach."
+    "Gebt nach Wochenenden oder Reisen Zeit zum Ankommen und spielt Erlebtes vorab nach.",
+    "Weint euer Schulkind morgens beim Abschied, fragt die Lehrkraft, ob ihr länger mitkommen dürft, oder gebt einen Stellvertreter mit (Kuscheltier, Glücksstein, Brief) und vereinbart ein Geheimzeichen, wenn es bereit ist. Hört das Weinen nicht auf, klärt mit der Lehrkraft individuell, ob mehr dahintersteckt."
    ],
    "sichtweisen": [
     {
      "podcast": "gfk",
      "text": "Kathy Weber erklärt, dass Streit und Machtkämpfe bei Übergängen aus ihrer Sicht entstehen, weil Erwachsene nicht bereit sind zu kooperieren, nicht weil das Kind etwas falsch macht. Kooperation heißt für sie, hinzuschauen, welches Bedürfnis des Kindes (zum Beispiel nach Nähe, Orientierung oder Autonomie) gerade offen ist, und beim Übergang zu helfen, statt nur anzutreiben. Eltern sind auch für die Leichtigkeit zuständig: Wer selbst gestresst ist, macht es dem Kind schwerer. Bei Spielplatz und Abschied betont sie, dass die Entscheidung der Eltern steht, der Wutausbruch aber sein darf und begleitet wird, weil Autonomie und Spielfreude gerade unerfüllt sind. Belohnung, Strafe oder die Entscheidung beim Kind lehnt sie ab, weil das Verbindung stört oder jüngere Kinder überfordert. Sie will nicht, dass Kinder einfach funktionieren, und nennt Empathie und Führung ergänzend, nicht gegensätzlich. Von der Frage „Was brauchst du gerade?“ rät sie bei Kindern eher ab, da sie oft überfordere; stattdessen könne man Vorschläge machen."
+    },
+    {
+     "podcast": "wunschkind",
+     "text": "Daniel Graf und Katja Seide sind sich mit Kathy Weber einig, dass Übergänge Kindern schwerfallen und Eltern sie begleiten sollten. Laut den Hosts sollte man Wechsel rechtzeitig ankündigen und Zeit lassen, etwa bis die Folge oder das Level zu Ende ist, weil Selbstbestimmung die Kooperation erleichtert. Eine Gästin sagt, Kinder lebten im Moment und seien im Flow, deshalb falle der Abbruch von etwas Schönem schwer, und Müdigkeit oder ein vollgestopfter Alltag verschärften das; je jünger, desto mehr Begleitung. Anders als Kathy Weber, die bei fehlender Kooperation liebevoll die Führung betont, bleiben sie eher bei Zeit, Tempo und Entschleunigung. Eine Lehrerin (Gästin) erklärt den morgendlichen Abschied vor der Schule als Bruch, den ein Stellvertreter, ein Geheimzeichen oder etwas Kontrolle für das Kind abfedern können."
     }
    ],
    "quellen": [
@@ -14859,6 +22957,22 @@ window.WISSEN = {
      "datum": "2024-06-03",
      "minute": "13:50",
      "thema": "Vorausblick: Erlebtes vorab verarbeiten"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 4,
+     "titel": "Digitale Medien - Teil 2: Aggressionen und Impulskontrolle",
+     "datum": "2019-01-15",
+     "minute": "18:02",
+     "thema": "Probleme mit Übergängen, rechtzeitig ankündigen"
+    },
+    {
+     "podcast": "wunschkind",
+     "nr": 51,
+     "titel": "Probleme in der Schule mit Saskia Niechzial",
+     "datum": "2020-11-17",
+     "minute": "25:00",
+     "thema": "Konstante schaffen, Stellvertreter, Geheimzeichen"
     }
    ],
    "verwandt": [

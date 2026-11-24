@@ -18,7 +18,7 @@
     "was wie wann warum wieso weshalb wo wer welche welcher welches tun tut mache machen macht ich's " +
     "mit bei beim zum zur im in am an auf aus fur von vom zu um uber unter nach vor bis ohne gegen " +
     "kind kinder kindes kids sohn tochter hilfe tipp tipps frage ganz einfach total richtig " +
-    "standig eigentlich wirklich okay ok gut schlecht normal nich sich ihm ihn ihr ihre ihren sein seine seinen"
+    "standig eigentlich wirklich okay ok gut schlecht normal nich andere anderen anderer anderes sich ihm ihn ihr ihre ihren sein seine seinen"
   ).split(/\s+/));
 
   function falte(s) {
@@ -174,12 +174,23 @@
       var bonus = 0;
       if (anfrage.trim().split(/\s+/).length >= 3) {
         e.fragenSets.forEach(function (set) {
-          var n = qs.filter(function (q) { return set.has(q); }).length;
+          var n = qs.filter(function (q) {
+            if (set.has(q)) return true;
+            var found = false;
+            set.forEach(function (t) { if (!found && passt(q, t, true) >= 0.65) found = true; });
+            return found;
+          }).length;
           var anteil = n / qs.length;
           // Ein einzelnes Treffer-Wort ist schwach (Bonus 4), mehrere Wörter in einer Frage stark (bis 10)
           var b = anteil >= 0.5 ? (n >= 2 ? 10 : 4) * anteil : 0;
+          if (n === qs.length && n === set.size) b = Math.max(b, 20); // Die Frage deckt sich mit der Suche
           if (b > bonus) bonus = b;
         });
+      }
+      // Kurze Titel, in denen das Suchwort vorkommt, sind meist das Hauptthema ("Wutanfälle und Meltdowns" vor "Getrennte Eltern: Wechsel und Wutanfälle")
+      if (gefunden && e.felder.titel.length) {
+        var imTitel = qs.filter(function (q) { return e.felder.titel.some(function (t) { return passt(q, t, true) >= 0.65; }); }).length;
+        summe += 4 * (imTitel / qs.length) * (imTitel / e.felder.titel.length) * 2;
       }
       if (gefunden || bonus) {
         // Artikel bevorzugen, die viele Suchwörter abdecken
