@@ -11766,8 +11766,8 @@ window.WISSEN = {
     "gefuehle-begleiten",
     "bindung",
     "mehrere-bezugspersonen",
-    "angst-kind",
-    "berufstaetige-eltern"
+    "schuechternheit",
+    "angst-kind"
    ],
    "medizinisch": true,
    "einleitung": "Beim Abgeben in der Kita weinen viele Kinder, und manche wollen gar nicht hin. Eltern fühlen sich dabei hin- und hergerissen und wissen nicht, wie lange die Eingewöhnung dauern soll und wie sie sich verabschieden sollen."
