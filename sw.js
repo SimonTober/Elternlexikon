@@ -1,7 +1,7 @@
 /* Service Worker: hält die App offline verfügbar.
  * Bei jeder neuen Version von wissen.js oder der App VERSION hochzählen. */
-var VERSION = "elternlexikon-v118";
-var DATEIEN = ["./", "index.html", "styles.css?v=66", "fonts/fraunces-latin.woff2", "fonts/inter-latin.woff2", "app.js?v=76", "suche.js?v=25", "wissen.js", "folgen.js", "icon.svg", "apple-touch-icon.png", "icon-192.png", "icon-512.png", "icon-maskable-512.png", "manifest.webmanifest", "impressum.html", "datenschutz.html", "cover/mutti.jpg", "cover/artgerecht.webp", "cover/gfk.jpg", "cover/wunschkind.jpg"];
+var VERSION = "elternlexikon-v120";
+var DATEIEN = ["./", "index.html", "styles.css?v=68", "fonts/fraunces-latin.woff2", "fonts/inter-latin.woff2", "app.js?v=78", "suche.js?v=25", "wissen.js", "folgen.js", "icon.svg", "apple-touch-icon.png", "icon-192.png", "icon-512.png", "icon-maskable-512.png", "manifest.webmanifest", "impressum.html", "datenschutz.html", "cover/mutti.jpg", "cover/artgerecht.webp", "cover/gfk.jpg", "cover/wunschkind.jpg"];
 
 self.addEventListener("install", function (e) {
   e.waitUntil(caches.open(VERSION).then(function (c) { return c.addAll(DATEIEN.map(function (u) { return new Request(u, { cache: "reload" }); })); }).then(function () { return self.skipWaiting(); }));

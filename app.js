@@ -619,6 +619,31 @@
   }
 
   function kinderProfil() { return (profil && profil.kinder) || []; }
+  /* Genaues Alter aus dem Geburtsmonat (JJJJ-MM), nur auf dem Gerät gespeichert */
+  function monateAus(geb) {
+    var m = /^(\d{4})-(\d{2})$/.exec(geb || ""); if (!m) return null;
+    var h = new Date(), n = (h.getFullYear() - Number(m[1])) * 12 + (h.getMonth() + 1 - Number(m[2]));
+    return n >= 0 && n < 240 ? n : null;
+  }
+  function bereichAus(mon) { return mon < 12 ? "0-1" : mon < 36 ? "1-3" : mon < 72 ? "3-6" : "6-10"; }
+  function alterText(mon, kurz) {
+    if (mon == null) return "";
+    if (mon < 12) return mon + (kurz ? " Mon." : mon === 1 ? " Monat" : " Monate");
+    var j = Math.floor(mon / 12), r = mon % 12;
+    if (kurz) return j + " J.";
+    return j + (j === 1 ? " Jahr" : " Jahre") + (r && j < 6 ? ", " + r + (r === 1 ? " Monat" : " Monate") : "");
+  }
+  function kindMonate(k) { return k ? monateAus(k.geb) : null; }
+  function aktivesKind() { return kinderProfil()[profil.aktiv || 0]; }
+  function kinderMitAlter() { return kinderProfil().some(function (k) { return k.geb || k.alter; }); }
+  // Wie gut passt ein Thema zu einem genauen Alter? (0 = mittig in seiner Altersspanne)
+  var SPANNEN = { "0-1": [0, 12], "1-3": [12, 36], "3-6": [36, 72], "6-10": [72, 120] };
+  function altersNaehe(a, mon) {
+    var lo = 999, hi = -1;
+    (a.alter || []).forEach(function (k) { var sp = SPANNEN[k]; if (sp) { lo = Math.min(lo, sp[0]); hi = Math.max(hi, sp[1]); } });
+    if (hi < 0) return 9;
+    return Math.round(Math.abs(mon - (lo + hi) / 2) / ((hi - lo) / 2 + 6) * 5);
+  }
   function mehrereKinder() { return kinderProfil().length > 1; }
   function aktivesKindName() { var k = kinderProfil()[profil.aktiv || 0]; return (k && k.name) || "dein Kind"; }
   function kinderWahl() {
@@ -626,7 +651,7 @@
     if (ks.length < 2) return "";
     return '<div class="kind-wahl" role="group" aria-label="Welches Kind?">' + ks.map(function (k, i) {
       return '<button type="button" class="alter-chip" data-aktivkind="' + i + '" aria-pressed="' + ((profil.aktiv || 0) === i) + '">' +
-        esc(k.name || "Kind " + (i + 1)) + (k.alter ? " · " + esc(W.alter[k.alter].replace(" Jahre", " J.")) : "") + "</button>";
+        esc(k.name || "Kind " + (i + 1)) + (k.geb ? " · " + esc(alterText(kindMonate(k), true)) : k.alter ? " · " + esc(W.alter[k.alter].replace(" Jahre", " J.")) : "") + "</button>";
     }).join("") + "</div>";
   }
 
@@ -640,19 +665,23 @@
 
     var altersBlock = '<h2 class="section-title">' + (kindalter ? (profilName() ? "Für dich: Das ist jetzt dran" : "Das ist jetzt dran") : "Wie alt ist dein Kind?") + "</h2>" +
       kinderWahl() +
-      (kindalter ? '<p class="dran-sub">Passend für ' + (mehrereKinder() ? esc(aktivesKindName()) : "dein Kind") + " (" + esc(W.alter[kindalter]) + "). Alter ändern:</p>" : "") +
-      '<div class="alter-wahl" role="group" aria-label="Alter des Kindes">' +
-      Object.keys(W.alter).map(function (k) {
-        return '<button type="button" class="alter-chip" data-kindalter="' + k + '" aria-pressed="' + (kindalter === k) + '">' + esc(W.alter[k]) + "</button>";
-      }).join("") + "</div>";
+      (kinderMitAlter()
+        ? (kindalter ? '<p class="dran-sub">Passend für ' + esc(aktivesKind() && aktivesKind().name ? aktivesKind().name : mehrereKinder() ? "Kind " + ((profil.aktiv || 0) + 1) : "dein Kind") + " (" +
+            esc(kindMonate(aktivesKind()) != null ? alterText(kindMonate(aktivesKind())) : W.alter[kindalter]) + '). <button type="button" class="link-btn" data-profil-oeffnen>Ändern</button></p>' : "")
+        : (kindalter ? '<p class="dran-sub">Passend für dein Kind (' + esc(W.alter[kindalter]) + "). Alter ändern:</p>" : "") +
+          '<div class="alter-wahl" role="group" aria-label="Alter des Kindes">' +
+          Object.keys(W.alter).map(function (k) {
+            return '<button type="button" class="alter-chip" data-kindalter="' + k + '" aria-pressed="' + (kindalter === k) + '">' + esc(W.alter[k]) + "</button>";
+          }).join("") + "</div>");
     if (kindalter) {
+      var mon = kindMonate(aktivesKind());
       var passend = W.artikel.filter(function (a) { return (a.alter || []).indexOf(kindalter) >= 0; })
         .sort(function (x, y) {
           var ax = (x.alter || []).length >= 4 ? 1 : 0, ay = (y.alter || []).length >= 4 ? 1 : 0; // für alle Altersstufen getaggte Themen später
           var bx = kindalter === "0-1" && (x.bereiche || []).indexOf("baby") >= 0 ? 0 : 1, by = kindalter === "0-1" && (y.bereiche || []).indexOf("baby") >= 0 ? 0 : 1;
           var rx = kindalter === "0-1" ? BABY_KERN.indexOf(x.id) : -1, ry = kindalter === "0-1" ? BABY_KERN.indexOf(y.id) : -1;
           if (rx >= 0 || ry >= 0) return (rx < 0 ? 999 : rx) - (ry < 0 ? 999 : ry);
-          return (x.medizinisch ? 1 : 0) - (y.medizinisch ? 1 : 0) || bx - by || ax - ay || ((x.alter || []).length - (y.alter || []).length) || kernRang(x) - kernRang(y) || relevanz(x, y);
+          return (x.medizinisch ? 1 : 0) - (y.medizinisch ? 1 : 0) || bx - by || ax - ay || (mon != null ? altersNaehe(x, mon) - altersNaehe(y, mon) : 0) || ((x.alter || []).length - (y.alter || []).length) || kernRang(x) - kernRang(y) || relevanz(x, y);
         });
       altersBlock += kartenListe(passend.slice(0, 3)) +
         '<button type="button" class="alle-btn" data-alle-alter>Alle ' + passend.length + " Themen für diese Altersgruppe</button>";
@@ -1330,6 +1359,11 @@
   /* ---------- Willkommen & Profil (alles bleibt auf diesem Gerät) ---------- */
   var profil = lies("profil", {});
   if (!profil || typeof profil !== "object") profil = {};
+  (function () { // Kinder werden älter: Altersgruppe bei jedem Start aus dem Geburtsmonat ableiten
+    var ks = profil.kinder || [];
+    ks.forEach(function (k) { var mo = monateAus(k.geb); if (mo != null) k.alter = bereichAus(mo); });
+    if (ks.length) { var ak = ks[profil.aktiv || 0]; if (ak && ak.alter && ak.alter !== kindalter) { kindalter = ak.alter; schreib("kindalter", kindalter); } }
+  })();
   function profilName() { return String(profil.name || "").trim(); }
   function gruss() {
     return profilName() ? '<p class="gruss">' + eliLogo("gruss-eli") + '<span>Hallo <span class="gruss-name">' + esc(profilName()) + "</span>!</span></p>" : "";
@@ -1373,12 +1407,21 @@
   function wkLies() {
     var n = $("#wk-name"); if (n) wkNameVal = n.value;
     wkBox.querySelectorAll("[data-wk-kname]").forEach(function (inp) { wkKinder[Number(inp.dataset.wkKname)].name = inp.value.slice(0, 30); });
+    wkBox.querySelectorAll("[data-wk-kgeb]").forEach(function (inp) { wkKinder[Number(inp.dataset.wkKgeb)].geb = monateAus(inp.value) != null ? inp.value : ""; });
+  }
+  function gebMax() { var h = new Date(); return h.getFullYear() + "-" + ("0" + (h.getMonth() + 1)).slice(-2); }
+  function gebMin() { var h = new Date(); return (h.getFullYear() - 14) + "-01"; }
+  function wkAlterInfo(c) {
+    var mo = monateAus(c.geb);
+    if (mo != null) return "Jetzt " + alterText(mo) + ". Das Alter rechnet sich automatisch weiter.";
+    if (c.alter) return "Bisher: " + W.alter[c.alter] + ". Mit dem Geburtsmonat werden die Themen genauer.";
+    return "Daraus berechnen wir das genaue Alter, damit zuerst die passendsten Themen kommen.";
   }
   function wkProfil(neuStart) {
     if (neuStart !== false) {
       wkNameVal = profilName();
       var k = kinderProfil();
-      wkKinder = k.length ? k.map(function (c) { return { name: c.name || "", alter: c.alter || "" }; }) : [{ name: "", alter: kindalter }];
+      wkKinder = k.length ? k.map(function (c) { return { name: c.name || "", alter: c.alter || "", geb: c.geb || "" }; }) : [{ name: "", alter: kindalter, geb: "" }];
     }
     wkBox.innerHTML =
       '<h2 id="wk-titel">Dein Profil</h2>' +
@@ -1388,11 +1431,10 @@
       wkKinder.map(function (c, i) {
         return '<div class="wk-kind"><div class="wk-kind-kopf"><span class="wk-feld" id="wk-k' + i + '">' + (wkKinder.length > 1 ? "Kind " + (i + 1) : "Dein Kind") + "</span>" +
           (wkKinder.length > 1 ? '<button type="button" class="wk-weg" data-wk-weg="' + i + '">Entfernen</button>' : "") + "</div>" +
-          '<input class="wk-input" type="text" maxlength="30" placeholder="Name (optional)" aria-label="Name von Kind ' + (i + 1) + '" data-wk-kname="' + i + '" value="' + esc(c.name) + '">' +
-          '<div class="alter-wahl" role="group" aria-label="Alter von Kind ' + (i + 1) + '">' +
-          Object.keys(W.alter).map(function (k) {
-            return '<button type="button" class="alter-chip" data-wk-alter="' + i + "|" + k + '" aria-pressed="' + (c.alter === k) + '">' + esc(W.alter[k]) + "</button>";
-          }).join("") + "</div></div>";
+          '<input class="wk-input" type="text" maxlength="30" placeholder="Name (optional, z. B. Kind ' + (i + 1) + ')" aria-label="Name von Kind ' + (i + 1) + '" data-wk-kname="' + i + '" value="' + esc(c.name) + '">' +
+          '<label class="wk-klein" for="wk-geb' + i + '">Geburtsmonat</label>' +
+          '<input id="wk-geb' + i + '" class="wk-input" type="month" min="' + gebMin() + '" max="' + gebMax() + '" placeholder="JJJJ-MM" data-wk-kgeb="' + i + '" value="' + esc(c.geb) + '">' +
+          '<p class="wk-alter-info" data-wk-kinfo="' + i + '">' + esc(wkAlterInfo(c)) + "</p></div>";
       }).join("") +
       (wkKinder.length < 6 ? '<button type="button" class="wk-sek wk-plus" data-wk="kind-plus">+ Weiteres Kind hinzufügen</button>' : "") +
       '<div class="wk-aktionen"><button type="button" class="primary-btn" data-wk="speichern">Speichern</button>' +
@@ -1416,6 +1458,12 @@
     if (wkFokusZurueck && wkFokusZurueck.focus) wkFokusZurueck.focus();
   }
   function wkNeuZeichnen() { if (!document.body.classList.contains("im-artikel") && /^(#\/)?$/.test(location.hash)) zeigeListe(); }
+  wk.addEventListener("input", function (e) {
+    var t = e.target.closest("[data-wk-kgeb]"); if (!t) return;
+    var i = Number(t.dataset.wkKgeb); wkKinder[i].geb = monateAus(t.value) != null ? t.value : "";
+    var info = wkBox.querySelector('[data-wk-kinfo="' + i + '"]'); if (info) info.textContent = wkAlterInfo(wkKinder[i]);
+  });
+  document.addEventListener("click", function (e) { if (e.target.closest("[data-profil-oeffnen]")) wkOeffne("profil"); });
   wk.addEventListener("click", function (e) {
     var t;
     if (e.target === wk) { if (!wkPflicht) wkSchliessen(); return; }
@@ -1437,7 +1485,10 @@
     else if (a === "info") wkInfo(2);
     else if (a === "speichern") {
       wkLies();
-      var ks = wkKinder.filter(function (c) { return c.alter || c.name.trim(); }).map(function (c) { return { name: c.name.trim(), alter: c.alter }; });
+      var ks = wkKinder.filter(function (c) { return c.geb || c.alter || c.name.trim(); }).map(function (c) {
+        var mo = monateAus(c.geb);
+        return { name: c.name.trim(), geb: mo != null ? c.geb : "", alter: mo != null ? bereichAus(mo) : c.alter };
+      });
       var akt = Math.min(profil.aktiv || 0, Math.max(0, ks.length - 1));
       profil = { name: wkNameVal.trim().slice(0, 30), kinder: ks, aktiv: akt };
       kindalter = ks.length ? ks[akt].alter : ""; schreib("profil", profil); schreib("kindalter", kindalter);
