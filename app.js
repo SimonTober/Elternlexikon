@@ -149,6 +149,7 @@
         if (!ziehen && isFinite(a.duration)) seek.value = Math.round(a.currentTime / a.duration * 1000);
         self.voll();
         var jetzt = Date.now(); if (!self.psZeit || jetzt - self.psZeit > 1000) { self.psZeit = jetzt; self.positionState(); }
+        if (!self.merkeZeit || jetzt - self.merkeZeit > 5000) { self.merkeZeit = jetzt; self.merke(); }
       });
       a.addEventListener("durationchange", function () { $("#pl-dur").textContent = zeit(a.duration); self.voll(); self.positionState(); });
       a.addEventListener("play", function () {
@@ -172,6 +173,14 @@
         handler("seekforward", function (d) { a.currentTime = a.currentTime + ((d && d.seekOffset) || 15); });
         handler("seekto", function (d) { if (d && isFinite(d.seekTime)) a.currentTime = d.seekTime; });
       }
+    },
+    // Zuletzt gehörte Folge und Position merken, damit man später weiterhören kann
+    merke: function () {
+      var a = this.audio;
+      if (!this.aktuell || !isFinite(a.duration) || a.duration < 60 || a.currentTime < 5) return;
+      var teile = this.aktuell.split("|");
+      if (a.duration - a.currentTime < 30) { schreib("zuletzt", null); return; }
+      schreib("zuletzt", { p: teile[0], n: teile[1], pos: Math.floor(a.currentTime), dur: Math.floor(a.duration) });
     },
     // Fortschrittsbalken auf dem Sperrbildschirm
     positionState: function () {
@@ -552,8 +561,20 @@
     return BEREICH_ICON[k] ? '<svg class="area-icon" aria-hidden="true" viewBox="0 0 24 24">' + BEREICH_ICON[k] + "</svg>" : "";
   }
 
+  function weiterHoerenKarte() {
+    var z = lies("zuletzt", null);
+    if (!z || !z.p || !FOLGEN[z.p] || !FOLGEN[z.p][z.n]) return "";
+    var f = FOLGEN[z.p][z.n];
+    if (!sicherUrl(f.a) || z.pos < 10) return "";
+    var rest = Math.max(0, z.dur - z.pos);
+    return '<button type="button" class="weiter-hoeren pod-' + esc(z.p) + '" data-weiterhoeren="' + esc(z.p + "|" + z.n + "|" + z.pos) + '">' +
+      '<span class="wh-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></span>' +
+      '<span class="wh-text"><span class="wh-label">Weiterhören bei Minute ' + esc(zeit(z.pos)) + "</span><strong>" + esc(f.t) + "</strong>" +
+      '<span class="wh-meta">' + esc(kurzName(z.p)) + " · noch " + Math.max(1, Math.round(rest / 60)) + " Min.</span></span></button>";
+  }
+
   function zeigeStart() {
-    var html = installHinweis();
+    var html = installHinweis() + weiterHoerenKarte();
 
     var sos = '<h2 class="section-title" id="soforthilfe">Gerade akut?</h2><div class="sos">' +
       SOFORT.filter(function (x) { return NACH_ID[x[0]]; }).map(function (x) {
@@ -1065,6 +1086,13 @@
       var tp = tw.dataset.tippWeg.split("|"), alle = lies("erledigt", {});
       alle[tp[0]] = (alle[tp[0]] || []).filter(function (x) { return x !== Number(tp[1]); });
       schreib("erledigt", alle); zeigeFavoriten(); return;
+    }
+    var wh = e.target.closest("[data-weiterhoeren]");
+    if (wh) {
+      var wt = wh.dataset.weiterhoeren.split("|");
+      // spiele() startet 15 Sekunden früher, das ist beim Weiterhören gewollt
+      player.spiele(wt[0], wt[1], zeit(Number(wt[2])));
+      return;
     }
     var pf = e.target.closest("[data-pfilter]");
     if (pf) { podFolgenFilter = pf.dataset.pfilter; podFolgenAnzahl = 10; rendereFolgen(); return; }
