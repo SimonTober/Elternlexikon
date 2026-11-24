@@ -918,9 +918,10 @@
     document.title = "Podcasts · Eli";
   }
 
-  function lesedauer(a) {
+  function lesedauer(a, kurz) {
     var text = [a.kurz].concat(a.tipps || [], (a.sichtweisen || []).map(function (x) { return x.text; })).join(" ");
     var min = Math.max(1, Math.round(text.split(/\s+/).length / 200));
+    if (kurz) return min + " Min. Lesezeit";
     return "Lesezeit etwa " + min + (min === 1 ? " Minute." : " Minuten.");
   }
   function naechstes(a) {
@@ -948,19 +949,23 @@
 
     var tags = (a.alter || []).map(function (k) { return '<span class="tag age">' + esc(W.alter[k] || k) + "</span>"; }).join("") +
       (a.bereiche || []).map(function (k) { return '<button type="button" class="tag tag-link" data-bereich="' + esc(k) + '" aria-label="Alle Themen im Bereich ' + esc(W.bereiche[k] || k) + '">' + esc(W.bereiche[k] || k) + "</button>"; }).join("");
+    // Dachzeile über dem Titel: Bereich und Lesezeit
+    var b0 = (a.bereiche || [])[0];
+    var kicker = '<div class="art-kicker">' + (b0 ? '<button type="button" class="kicker-link" data-bereich="' + esc(b0) + '" aria-label="Alle Themen im Bereich ' + esc(W.bereiche[b0] || b0) + '">' + esc(W.bereiche[b0] || b0) + "</button>" : "") +
+      '<span class="kicker-zeit">' + lesedauer(a, true) + "</span></div>";
 
     // Vertrauenszeile: wie viele Folgen und welche Podcasts stecken dahinter
     var folgenSet = new Set((a.quellen || []).map(function (q) { return q.podcast + "|" + q.nr; }));
     var pods = podcastsVon(a).map(function (k) { return W.podcasts[k].name; });
-    var vertrauen = '<p class="trust">Zusammengefasst aus ' + folgenSet.size + (folgenSet.size === 1 ? " Folge" : " Folgen") +
-      (pods.length ? " von " + esc(pods.join(", ")) : "") + ". Eigene Zusammenfassung mit Verweis auf die Quelle. " + lesedauer(a) + "</p>";
+    var infoBlock = '<section class="art-info" aria-label="Über diesen Artikel">' +
+      '<div class="info-zeile"><span class="info-label">Passt zu</span><div class="tags">' + tags + "</div></div>" +
+      '<div class="info-zeile"><span class="info-label">Gesammelt aus</span><div><div class="info-pods">' + podcastsVon(a).map(function (k) { return podLabel(k, true); }).join("") + "</div>" +
+      '<p class="info-text">' + folgenSet.size + (folgenSet.size === 1 ? " Folge" : " Folgen") + ". Eigene Zusammenfassung mit Verweis auf die Quelle, unten kannst du reinhören.</p></div></div></section>";
 
     var html = '<article class="article">' +
-      '<button type="button" class="back" data-back>← Zurück</button>' +
+      '<button type="button" class="back" data-back>← Zurück</button>' + kicker +
       '<div class="article-head"><h1>' + esc(a.titel) + "</h1>" +
       '<button type="button" class="fav-btn" data-fav="' + esc(a.id) + '" aria-pressed="' + istFavorit(a.id) + '" aria-label="Als Favorit merken">' + HERZ + "</button></div>" +
-      '<div class="tags">' + tags + "</div>" +
-      '<div class="actions"><button type="button" class="act-btn" data-share-art>Teilen</button><button type="button" class="act-btn" data-print>Drucken</button></div>' +
       (a.einleitung ? '<p class="intro">' + esc(a.einleitung) + "</p>" : "") +
       '<div class="answer"><div class="answer-label">Kurz gesagt</div>' + esc(a.kurz) + "</div>" +
       (a.medizinisch
@@ -975,6 +980,7 @@
           return '<li role="checkbox" tabindex="0" data-tip="' + i + '" aria-checked="' + d + '"' + (d ? ' class="done"' : "") + ">" + esc(t) + "</li>";
         }).join("") + "</ol>";
     }
+    html += infoBlock;
 
     // Mehr dazu: eingeklappt, damit die Antwort oben bleibt
     var mehr = "";
@@ -1038,11 +1044,13 @@
       weiter = '<a class="weiter-card" href="#/artikel/' + encodeURIComponent(nx.artikel.id) + '"><span class="weiter-label">Weiterlesen in „' + esc(W.bereiche[nx.bereich]) + '“</span>' +
         "<strong>" + esc(nx.artikel.titel) + "</strong></a>";
     }
-    html += stimmen + nachhoeren + verwandtHtml + weiter;
+    var aktionen = '<section class="art-aktionen"><p>Hat dir das geholfen? Teil es mit anderen Eltern.</p><div class="actions">' +
+      '<button type="button" class="act-btn" data-share-art>Teilen</button><button type="button" class="act-btn" data-print>Drucken</button>' +
+      '<button type="button" class="act-btn act-merken" data-fav="' + esc(a.id) + '" aria-pressed="' + istFavorit(a.id) + '">Merken</button></div></section>';
+    html += stimmen + nachhoeren + aktionen + verwandtHtml + weiter;
     if (mehr) {
       html += '<details class="mehr"><summary><span>Mehr dazu<small>Weitere Hinweise</small></span></summary>' + mehr + "</details>";
     }
-    html = html.replace('<div class="tags">', vertrauen + '<div class="tags">');
     html += "</article>";
     view.innerHTML = html;
     window.scrollTo(0, 0);
@@ -1159,7 +1167,8 @@
       zeigeListe(); $("#filters").scrollIntoView({ block: "nearest" }); return;
     }
     if ((t = e.target.closest("[data-fav]"))) {
-      toggleFavorit(t.dataset.fav); t.setAttribute("aria-pressed", istFavorit(t.dataset.fav));
+      toggleFavorit(t.dataset.fav);
+      document.querySelectorAll('[data-fav="' + t.dataset.fav + '"]').forEach(function (b) { b.setAttribute("aria-pressed", istFavorit(t.dataset.fav)); });
       toast(istFavorit(t.dataset.fav) ? "Eli hat es sich gemerkt" : "Aus der Merkliste entfernt"); return;
     }
     if ((t = e.target.closest("[data-play]"))) {
