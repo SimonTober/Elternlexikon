@@ -797,6 +797,15 @@
   }
 
   /* ---------- Ereignisse ---------- */
+  // Taste "/" springt in die Suche (Desktop), Esc leert sie
+  document.addEventListener("keydown", function (e) {
+    var ziel = e.target, tippt = ziel && (ziel.tagName === "INPUT" || ziel.tagName === "TEXTAREA" || ziel.isContentEditable);
+    if (e.key === "/" && !tippt && !e.ctrlKey && !e.metaKey && !e.altKey) {
+      var feld = $("#q");
+      if (feld && !$("#search-area").hidden) { e.preventDefault(); feld.focus(); feld.select(); }
+      else if (feld) { e.preventDefault(); location.hash = "#/"; setTimeout(function () { feld.focus(); }, 60); }
+    }
+  });
   var input = $("#q");
   var timer;
   input.addEventListener("input", function () {
