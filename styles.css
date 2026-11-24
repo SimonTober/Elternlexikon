@@ -865,3 +865,28 @@ body.fp-offen { overflow: hidden; }
 .fp-art.hat-cover { background-size: cover; background-position: center; }
 .fp-art.hat-cover span { display: none; }
 .pod-cover { flex: none; width: 64px; height: 64px; border-radius: 14px; object-fit: cover; box-shadow: 0 2px 8px rgba(0, 0, 0, .15); }
+
+/* ---- Startseite mobil: ruhiger, Inhalt zuerst (24.11.) ---- */
+.hero-title { text-wrap: balance; hyphens: manual; }
+@media (max-width: 999px) {
+  /* Podcast-Leiste und Zusatzfilter gehören zur Ergebnisliste, nicht zur Startseite (Podcasts: Themen-Menü oder Seite "Podcasts") */
+  body.start .pod-strip, body.start .filters { display: none; }
+  body.start .search-area { padding: 12px 0 0; }
+  body.start .hero-title { font-size: 28px; margin: 4px 0 14px; }
+  .banner { font-size: 13px; padding: 8px 12px; }
+  /* Karten auf der Startseite kompakt: nur Titel und Kurztext */
+  body.start #view .card .also, body.start #view .card .tags { display: none; }
+  body.start #view .card { padding: 14px 16px; }
+  body.start #view .card h3 { font-size: 18px; }
+  body.start #view .section-title { margin: 26px 0 10px; }
+  /* Häufige Fragen als eine wischbare Zeile */
+  body.start .suggestions { flex-wrap: nowrap; overflow-x: auto; margin: 0 -16px; padding: 2px 16px 6px; scrollbar-width: none; }
+  body.start .suggestions::-webkit-scrollbar { display: none; }
+  body.start .suggestion { flex: none; }
+  /* Altersauswahl: eine Zeile, vier gleich breite Felder */
+  .alter-wahl { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+  .alter-chip { padding: 9px 4px; font-size: 15px; text-align: center; white-space: nowrap; }
+  /* Soforthilfe: zwei Spalten, kleiner */
+  .sos { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .sos-btn { min-height: 48px; padding: 8px 12px; font-size: 15px; }
+}

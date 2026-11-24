@@ -635,10 +635,18 @@
           if (rx >= 0 || ry >= 0) return (rx < 0 ? 999 : rx) - (ry < 0 ? 999 : ry);
           return (x.medizinisch ? 1 : 0) - (y.medizinisch ? 1 : 0) || bx - by || ax - ay || ((x.alter || []).length - (y.alter || []).length) || kernRang(x) - kernRang(y) || relevanz(x, y);
         });
-      altersBlock += kartenListe(passend.slice(0, 5)) +
+      altersBlock += kartenListe(passend.slice(0, 3)) +
         '<button type="button" class="alle-btn" data-alle-alter>Alle ' + passend.length + " Themen für diese Altersgruppe</button>";
     }
-    html += kindalter ? altersBlock + sos : sos + altersBlock;
+    var bereicheBlock = '<h2 class="section-title" id="bereiche">Nach Bereich</h2><div class="swipe-wrap"><div class="grid-areas swipe-areas">' +
+      Object.keys(W.bereiche).map(function (k) {
+        var n = W.artikel.filter(function (a) { return (a.bereiche || []).indexOf(k) >= 0; }).length;
+        return '<button type="button" class="area-tile" data-bereich="' + esc(k) + '">' + bereichIcon(k) + "<strong>" + esc(W.bereiche[k]) +
+          "</strong><span>" + n + (n === 1 ? " Thema" : " Themen") + "</span></button>";
+      }).join("") + '</div><div class="swipe-dots" aria-hidden="true"></div></div>';
+
+    // Reihenfolge: erst das Kind (Alter), dann akute Hilfe, dann Bereiche; Weiteres folgt darunter
+    html += altersBlock + sos + bereicheBlock;
 
     var neu = folgenListe("alle", true).slice(0, 3);
     if (neu.length) {
@@ -658,13 +666,6 @@
     if (verlauf.length) {
       html += '<h2 class="section-title">Zuletzt angesehen</h2>' + kartenListe(verlauf.map(function (id) { return NACH_ID[id]; }).slice(0, 4));
     }
-
-    html += '<h2 class="section-title" id="bereiche">Nach Bereich</h2><div class="swipe-wrap"><div class="grid-areas swipe-areas">' +
-      Object.keys(W.bereiche).map(function (k) {
-        var n = W.artikel.filter(function (a) { return (a.bereiche || []).indexOf(k) >= 0; }).length;
-        return '<button type="button" class="area-tile" data-bereich="' + esc(k) + '">' + bereichIcon(k) + "<strong>" + esc(W.bereiche[k]) +
-          "</strong><span>" + n + (n === 1 ? " Thema" : " Themen") + "</span></button>";
-      }).join("") + '</div><div class="swipe-dots" aria-hidden="true"></div></div>';
 
     var az = W.artikel.slice().sort(function (a, b) { return a.titel.localeCompare(b.titel, "de"); });
     html += '<details class="alle" id="az"><summary>Alle ' + az.length + ' Themen von A bis Z</summary>' + kartenListe(az) + "</details>";
