@@ -931,3 +931,13 @@ body.start .search input { min-height: 60px; font-size: 19px; border-width: 2px;
 @media (max-width: 520px) { .wk-box .alter-wahl .alter-chip { width: auto; } }
 @media (prefers-reduced-motion: no-preference) { .wk-backdrop:not([hidden]) { animation: blattHinter .25s ease; } .wk-box { animation: blattHoch .3s var(--ease); } }
 @media (max-width: 520px) { .wk-box { padding: 18px 16px; } .wk-box h2 { font-size: 23px; } .wk-box p { font-size: 15px; } .wk-liste { gap: 8px; } .wk-liste li { font-size: 14px; padding: 8px 12px; } }
+
+.kind-wahl { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 12px; }
+.geschwister-card { width: 100%; text-align: left; font: inherit; cursor: pointer; margin-top: 12px; }
+.wk-kind { margin-top: 6px; padding: 12px; border: 1px solid var(--line); border-radius: 16px; background: var(--bg); }
+.wk-kind .wk-feld { margin: 0; }
+.wk-kind-kopf { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.wk-kind .wk-input { margin-bottom: 10px; background: var(--surface); }
+.wk-weg { background: none; border: 0; color: var(--warm); text-decoration: underline; font-size: 14px; cursor: pointer; min-height: 36px; }
+.wk-plus { margin-top: 12px; width: 100%; }
+.wk-box .alter-wahl { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; overflow: visible; } .wk-box .alter-wahl .alter-chip { width: 100% !important; text-align: center; justify-content: center; }

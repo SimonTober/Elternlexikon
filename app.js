@@ -613,6 +613,18 @@
       '<span class="wh-meta">' + esc(kurzName(z.p)) + " · noch " + Math.max(1, Math.round(rest / 60)) + " Min.</span></span></button>";
   }
 
+  function kinderProfil() { return (profil && profil.kinder) || []; }
+  function mehrereKinder() { return kinderProfil().length > 1; }
+  function aktivesKindName() { var k = kinderProfil()[profil.aktiv || 0]; return (k && k.name) || "dein Kind"; }
+  function kinderWahl() {
+    var ks = kinderProfil();
+    if (ks.length < 2) return "";
+    return '<div class="kind-wahl" role="group" aria-label="Welches Kind?">' + ks.map(function (k, i) {
+      return '<button type="button" class="alter-chip" data-aktivkind="' + i + '" aria-pressed="' + ((profil.aktiv || 0) === i) + '">' +
+        esc(k.name || "Kind " + (i + 1)) + (k.alter ? " · " + esc(W.alter[k.alter].replace(" Jahre", " J.")) : "") + "</button>";
+    }).join("") + "</div>";
+  }
+
   function zeigeStart() {
     var html = gruss() + installHinweis() + weiterHoerenKarte();
 
@@ -622,7 +634,8 @@
       }).join("") + "</div>";
 
     var altersBlock = '<h2 class="section-title">' + (kindalter ? (profilName() ? "Für dich: Das ist jetzt dran" : "Das ist jetzt dran") : "Wie alt ist dein Kind?") + "</h2>" +
-      (kindalter ? '<p class="dran-sub">Passend für dein Kind mit ' + esc(W.alter[kindalter]) + ". Alter ändern:</p>" : "") +
+      kinderWahl() +
+      (kindalter ? '<p class="dran-sub">Passend für ' + (mehrereKinder() ? esc(aktivesKindName()) : "dein Kind") + " (" + esc(W.alter[kindalter]) + "). Alter ändern:</p>" : "") +
       '<div class="alter-wahl" role="group" aria-label="Alter des Kindes">' +
       Object.keys(W.alter).map(function (k) {
         return '<button type="button" class="alter-chip" data-kindalter="' + k + '" aria-pressed="' + (kindalter === k) + '">' + esc(W.alter[k]) + "</button>";
@@ -638,6 +651,10 @@
         });
       altersBlock += kartenListe(passend.slice(0, 3)) +
         '<button type="button" class="alle-btn" data-alle-alter>Alle ' + passend.length + " Themen für diese Altersgruppe</button>";
+    }
+    if (mehrereKinder()) {
+      var nGe = W.artikel.filter(function (a) { return (a.bereiche || []).indexOf("geschwister") >= 0; }).length;
+      altersBlock += '<button type="button" class="check-card geschwister-card" data-bereich="geschwister"><strong>Ihr habt mehrere Kinder</strong><span>' + nGe + " Themen rund um Geschwister: Streit, Eifersucht, Gerechtigkeit und mehr.</span></button>";
     }
     var bereicheBlock = '<h2 class="section-title" id="bereiche">Nach Bereich</h2><div class="swipe-wrap"><div class="grid-areas swipe-areas">' +
       Object.keys(W.bereiche).map(function (k) {
@@ -1119,9 +1136,14 @@
       if (kamVonListe) history.back(); else location.hash = "#/";
       return;
     }
+    if ((t = e.target.closest("[data-aktivkind]"))) {
+      profil.aktiv = Number(t.dataset.aktivkind); kindalter = kinderProfil()[profil.aktiv].alter || "";
+      schreib("profil", profil); schreib("kindalter", kindalter); zeigeListe(); return;
+    }
     if ((t = e.target.closest("[data-kindalter]"))) {
       kindalter = kindalter === t.dataset.kindalter ? "" : t.dataset.kindalter;
       schreib("kindalter", kindalter);
+      if (kinderProfil().length) { kinderProfil()[profil.aktiv || 0].alter = kindalter; schreib("profil", profil); }
       if (location.hash === "#/check") { var y = window.scrollY; zeigeCheck(); window.scrollTo(0, y); } else zeigeListe();
       return;
     }
@@ -1306,7 +1328,7 @@
   function gruss() {
     return profilName() ? '<p class="gruss">Hallo ' + esc(profilName()) + "!</p>" : "";
   }
-  var wk = $("#wk"), wkBox = $("#wk-box"), wkFokusZurueck = null, wkAlter = "";
+  var wk = $("#wk"), wkBox = $("#wk-box"), wkFokusZurueck = null;
   function wkInfo() {
     wkBox.innerHTML =
       '<h2 id="wk-titel">Hallo und herzlich willkommen!</h2>' +
@@ -1316,25 +1338,39 @@
       '<li><strong>Keine KI-Suche:</strong> Die Suche läuft direkt auf deinem Gerät, ohne KI-Dienst und ohne Server. Es ist eine Wissensdatenbank aus den Podcasts. (Beim Zusammenfassen der Folgen haben wir KI als Werkzeug genutzt.)</li>' +
       '<li><strong>Deine Daten bleiben bei dir:</strong> Profil, Merkliste und Einstellungen liegen nur auf deinem Handy oder Computer.</li>' +
       '<li><strong>Immer frisch:</strong> Neue Folgen und Themen kommen etwa alle zwei Wochen dazu.</li></ul>' +
-      '<div class="wk-aktionen"><button type="button" class="primary-btn" data-wk="profil">' + (profilName() || kindalter ? "Profil ansehen" : "Profil anlegen (optional)") + '</button>' +
+      '<div class="wk-aktionen"><button type="button" class="primary-btn" data-wk="profil">' + (profilName() || kindalter || kinderProfil().length ? "Profil ansehen" : "Profil anlegen (optional)") + '</button>' +
       '<button type="button" class="wk-sek" data-wk="zu">Los geht\'s</button></div>' +
       '<label class="wk-check"><input type="checkbox" id="wk-nie"' + (lies("willkommen_aus", false) || !lies("willkommen_gesehen", false) ? " checked" : "") + '> Dieses Fenster nicht mehr von selbst zeigen</label>';
   }
-  function wkProfil() {
-    wkAlter = kindalter;
+  var wkKinder = [], wkNameVal = "";
+  function wkLies() {
+    var n = $("#wk-name"); if (n) wkNameVal = n.value;
+    wkBox.querySelectorAll("[data-wk-kname]").forEach(function (inp) { wkKinder[Number(inp.dataset.wkKname)].name = inp.value.slice(0, 30); });
+  }
+  function wkProfil(neuStart) {
+    if (neuStart !== false) {
+      wkNameVal = profilName();
+      var k = kinderProfil();
+      wkKinder = k.length ? k.map(function (c) { return { name: c.name || "", alter: c.alter || "" }; }) : [{ name: "", alter: kindalter }];
+    }
     wkBox.innerHTML =
       '<h2 id="wk-titel">Dein Profil</h2>' +
-      '<p>Alles optional. Mit Namen begrüße ich dich, mit dem Alter zeige ich dir passende Themen direkt auf der Startseite. Die Angaben bleiben auf diesem Gerät.</p>' +
+      '<p>Alles optional. Mit Namen begrüßen wir dich, mit dem Alter zeigen wir dir passende Themen direkt auf der Startseite. Bei mehreren Kindern kannst du zwischen ihnen wechseln und bekommst Geschwister-Themen. Alles bleibt auf diesem Gerät.</p>' +
       '<label class="wk-feld" for="wk-name">Wie dürfen wir dich nennen?</label>' +
-      '<input id="wk-name" class="wk-input" type="text" maxlength="30" autocomplete="given-name" placeholder="Dein Vorname" value="' + esc(profilName()) + '">' +
-      '<div class="wk-feld" id="wk-alter-label">Wie alt ist dein Kind?</div>' +
-      '<div class="alter-wahl" role="group" aria-labelledby="wk-alter-label">' +
-      Object.keys(W.alter).map(function (k) {
-        return '<button type="button" class="alter-chip" data-wk-alter="' + k + '" aria-pressed="' + (wkAlter === k) + '">' + esc(W.alter[k]) + "</button>";
-      }).join("") + "</div>" +
+      '<input id="wk-name" class="wk-input" type="text" maxlength="30" autocomplete="given-name" placeholder="Dein Vorname" value="' + esc(wkNameVal) + '">' +
+      wkKinder.map(function (c, i) {
+        return '<div class="wk-kind"><div class="wk-kind-kopf"><span class="wk-feld" id="wk-k' + i + '">' + (wkKinder.length > 1 ? "Kind " + (i + 1) : "Dein Kind") + "</span>" +
+          (wkKinder.length > 1 ? '<button type="button" class="wk-weg" data-wk-weg="' + i + '">Entfernen</button>' : "") + "</div>" +
+          '<input class="wk-input" type="text" maxlength="30" placeholder="Name (optional)" aria-label="Name von Kind ' + (i + 1) + '" data-wk-kname="' + i + '" value="' + esc(c.name) + '">' +
+          '<div class="alter-wahl" role="group" aria-label="Alter von Kind ' + (i + 1) + '">' +
+          Object.keys(W.alter).map(function (k) {
+            return '<button type="button" class="alter-chip" data-wk-alter="' + i + "|" + k + '" aria-pressed="' + (c.alter === k) + '">' + esc(W.alter[k]) + "</button>";
+          }).join("") + "</div></div>";
+      }).join("") +
+      (wkKinder.length < 6 ? '<button type="button" class="wk-sek wk-plus" data-wk="kind-plus">+ Weiteres Kind hinzufügen</button>' : "") +
       '<div class="wk-aktionen"><button type="button" class="primary-btn" data-wk="speichern">Speichern</button>' +
       '<button type="button" class="wk-sek" data-wk="info">Zurück</button></div>' +
-      (profilName() || kindalter ? '<button type="button" class="wk-loeschen" data-wk="loeschen">Profil löschen</button>' : "");
+      (profilName() || kindalter || kinderProfil().length ? '<button type="button" class="wk-loeschen" data-wk="loeschen">Profil löschen</button>' : "");
   }
   function wkOeffne(seite) {
     wkFokusZurueck = document.activeElement;
@@ -1355,23 +1391,31 @@
     var t;
     if (e.target === wk) return wkSchliessen();
     if ((t = e.target.closest("[data-wk-alter]"))) {
-      wkAlter = wkAlter === t.dataset.wkAlter ? "" : t.dataset.wkAlter;
-      wkBox.querySelectorAll("[data-wk-alter]").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.wkAlter === wkAlter); });
+      var pa = t.dataset.wkAlter.split("|"), ki = Number(pa[0]);
+      wkKinder[ki].alter = wkKinder[ki].alter === pa[1] ? "" : pa[1];
+      wkBox.querySelectorAll("[data-wk-alter]").forEach(function (b) {
+        var q = b.dataset.wkAlter.split("|"); if (Number(q[0]) === ki) b.setAttribute("aria-pressed", wkKinder[ki].alter === q[1]);
+      });
       return;
     }
+    if ((t = e.target.closest("[data-wk-weg]"))) { wkLies(); wkKinder.splice(Number(t.dataset.wkWeg), 1); wkProfil(false); return; }
     if (!(t = e.target.closest("[data-wk]"))) return;
     var a = t.dataset.wk;
     if (a === "zu") wkSchliessen();
     else if (a === "profil") wkProfil();
+    else if (a === "kind-plus") { wkLies(); wkKinder.push({ name: "", alter: "" }); wkProfil(false); var ns = wkBox.querySelectorAll("[data-wk-kname]"); if (ns.length) ns[ns.length - 1].focus(); }
     else if (a === "info") wkInfo();
     else if (a === "speichern") {
-      profil = { name: $("#wk-name").value.trim().slice(0, 30) };
-      kindalter = wkAlter; schreib("profil", profil); schreib("kindalter", kindalter);
+      wkLies();
+      var ks = wkKinder.filter(function (c) { return c.alter || c.name.trim(); }).map(function (c) { return { name: c.name.trim(), alter: c.alter }; });
+      var akt = Math.min(profil.aktiv || 0, Math.max(0, ks.length - 1));
+      profil = { name: wkNameVal.trim().slice(0, 30), kinder: ks, aktiv: akt };
+      kindalter = ks.length ? ks[akt].alter : ""; schreib("profil", profil); schreib("kindalter", kindalter);
       wkSchliessen(); wkNeuZeichnen();
       toast(profilName() ? "Gespeichert, " + profilName() + "!" : "Gespeichert");
     } else if (a === "loeschen") {
       if (!confirm("Profil wirklich löschen? Name und Alter werden von diesem Gerät entfernt. Deine Merkliste bleibt.")) return;
-      profil = {}; kindalter = ""; wkAlter = "";
+      profil = {}; kindalter = "";
       try { localStorage.removeItem("profil"); localStorage.removeItem("kindalter"); } catch (x) {}
       wkSchliessen(); wkNeuZeichnen(); toast("Profil gelöscht");
     }
@@ -1386,7 +1430,7 @@
       else if (!e.shiftKey && document.activeElement === letzt) { e.preventDefault(); erst.focus(); }
     }
   });
-  $("#profil-btn").addEventListener("click", function () { wkOeffne(profilName() || kindalter ? "profil" : "info"); });
+  $("#profil-btn").addEventListener("click", function () { wkOeffne(profilName() || kindalter || kinderProfil().length ? "profil" : "info"); });
   // „Über die App“ in der Fußzeile und im Profil bleibt über das Profil erreichbar
   if (!lies("willkommen_aus", false)) setTimeout(function () { if (wk.hidden) wkOeffne("info"); }, 500);
 
