@@ -130,6 +130,7 @@
         self.tempo = TEMPOS[(TEMPOS.indexOf(self.tempo) + 1) % TEMPOS.length]; schreib("tempo", self.tempo);
         a.playbackRate = self.tempo; self.voll();
       });
+      $("#fp-timer").addEventListener("click", function () { self.timerWeiter(); });
       var fseek = $("#fp-seek"), fziehen = false;
       fseek.addEventListener("input", function () { fziehen = true; self.fzieht = true; $("#fp-time").textContent = zeit(fseek.value / 1000 * a.duration); });
       fseek.addEventListener("change", function () { if (isFinite(a.duration)) a.currentTime = fseek.value / 1000 * a.duration; fziehen = false; self.fzieht = false; });
@@ -173,6 +174,40 @@
         handler("seekforward", function (d) { a.currentTime = a.currentTime + ((d && d.seekOffset) || 15); });
         handler("seekto", function (d) { if (d && isFinite(d.seekTime)) a.currentTime = d.seekTime; });
       }
+    },
+    // Schlaf-Timer: pausiert nach der gewählten Zeit (Lautstärke wird zuletzt ausgeblendet)
+    timerMinuten: 0, timerEnde: 0, timerHandle: null,
+    timerWeiter: function () {
+      var stufen = [0, 15, 30, 45, 60], i = (stufen.indexOf(this.timerMinuten) + 1) % stufen.length;
+      this.timerSetzen(stufen[i]);
+    },
+    timerSetzen: function (min) {
+      var self = this;
+      if (this.timerHandle) { clearInterval(this.timerHandle); this.timerHandle = null; }
+      this.audio.volume = 1;
+      this.timerMinuten = min;
+      if (min) {
+        this.timerEnde = Date.now() + min * 60000;
+        this.timerHandle = setInterval(function () { self.timerTick(); }, 1000);
+      }
+      this.timerAnzeige();
+    },
+    timerTick: function () {
+      var rest = this.timerEnde - Date.now();
+      if (rest <= 0) {
+        this.audio.pause(); this.audio.volume = 1;
+        this.timerSetzen(0); toast("Schlaf-Timer beendet. Gute Nacht!");
+        return;
+      }
+      if (rest < 10000) this.audio.volume = Math.max(0.1, rest / 10000);
+      this.timerAnzeige();
+    },
+    timerAnzeige: function () {
+      var b = $("#fp-timer");
+      if (!b) return;
+      if (!this.timerMinuten) { b.textContent = "Timer aus"; b.classList.remove("aktiv"); return; }
+      var rest = Math.max(0, Math.ceil((this.timerEnde - Date.now()) / 60000));
+      b.textContent = "Timer " + rest + " Min."; b.classList.add("aktiv");
     },
     // Zuletzt gehörte Folge und Position merken, damit man später weiterhören kann
     merke: function () {
@@ -281,7 +316,7 @@
       this.voll();
     },
     schliessen: function () {
-      this.schliesseVoll(); this.queue = []; this.qi = -1;
+      this.schliesseVoll(); this.queue = []; this.qi = -1; this.timerSetzen(0);
       if ("mediaSession" in navigator) { try { navigator.mediaSession.metadata = null; navigator.mediaSession.playbackState = "none"; } catch (e) {} }
       this.audio.pause();
       this.audio.removeAttribute("src");
