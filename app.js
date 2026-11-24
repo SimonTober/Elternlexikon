@@ -108,6 +108,8 @@
     return (h ? h + ":" + String(m).padStart(2, "0") : m) + ":" + String(s).padStart(2, "0");
   }
 
+  // Cover der Podcasts (liegen in cover/, gehören den jeweiligen Podcasts)
+  var COVER = { mutti: { src: "cover/mutti.jpg", w: 500 }, artgerecht: { src: "cover/artgerecht.webp", w: 800, t: "image/webp" }, gfk: { src: "cover/gfk.jpg", w: 447 }, wunschkind: { src: "cover/wunschkind.jpg", w: 447 } };
   var TEMPOS = [1, 1.25, 1.5, 2];
   var player = {
     el: null, audio: null, aktuell: null, queue: [], qi: -1, info: null, tempo: Number(lies("tempo", 1)) || 1,
@@ -229,7 +231,8 @@
       var ms = navigator.mediaSession, self = this;
       ms.metadata = new MediaMetadata({
         title: f.t, artist: W.podcasts[podcast].name, album: "Elternlexikon",
-        artwork: [{ src: "icon-512.png", sizes: "512x512", type: "image/png" }, { src: "icon-192.png", sizes: "192x192", type: "image/png" }]
+        artwork: (COVER[podcast] ? [{ src: COVER[podcast].src, sizes: COVER[podcast].w + "x" + COVER[podcast].w, type: COVER[podcast].t || "image/jpeg" }] : [])
+          .concat([{ src: "icon-512.png", sizes: "512x512", type: "image/png" }, { src: "icon-192.png", sizes: "192x192", type: "image/png" }])
       });
       try {
         ms.setActionHandler("previoustrack", this.qi > 0 ? function () { self.zurueck(); } : null);
@@ -275,6 +278,7 @@
       $("#fp-title").textContent = f.t;
       $("#fp-sub").textContent = kurzName(podcast) + " · Folge " + nr + (f.d ? " · " + datumDe(f.d) : "");
       var art = $("#fp-art"); art.className = "fp-art pod-" + podcast; $("#fp-mark").textContent = MONOGRAMM[podcast] || "♪";
+      if (COVER[podcast]) { art.classList.add("hat-cover"); art.style.backgroundImage = 'url("' + COVER[podcast].src + '")'; } else { art.style.backgroundImage = ""; }
       var link = $("#fp-link"), w = sicherUrl(f.w); link.hidden = !w; if (w) link.href = w;
       $("#fp-heading").textContent = this.qi >= 0 ? "Wiedergabeliste · " + (this.qi + 1) + " von " + this.queue.length : "Es läuft";
       var q = $("#fp-queue"), next = this.qi >= 0 ? this.queue.slice(this.qi + 1, this.qi + 6) : [];
@@ -840,7 +844,7 @@
     $("#search-area").hidden = true;
     setzeNav("podcasts");
     var html = '<div class="article"><h1>Die Podcasts hinter dem Lexikon</h1>' +
-      '<p class="intro">Alle Inhalte sind eigene Zusammenfassungen von Folgen dieser Podcasts. Hört gern direkt rein.</p></div>' +
+      '<p class="intro">Alle Inhalte sind eigene Zusammenfassungen von Folgen dieser Podcasts. Hört gern direkt rein. Die Cover-Bilder gehören den jeweiligen Podcasts.</p></div>' +
       '<section class="neueste" id="folgen-sektion"></section><ul class="pod-list">';
     Object.keys(W.podcasts).forEach(function (k) {
       var p = W.podcasts[k];
@@ -849,7 +853,7 @@
       var links = [];
       if (sicherUrl(p.spotify)) links.push(plattformBtn("spotify", p.spotify, "Spotify"));
       if (sicherUrl(p.apple)) links.push(plattformBtn("apple", p.apple, "Apple Podcasts"));
-      html += '<li class="pod-card pod-' + esc(k) + '"><span class="pod-mark big" aria-hidden="true">' + esc(MONOGRAMM[k] || "?") + "</span>" +
+      html += '<li class="pod-card pod-' + esc(k) + '">' + (COVER[k] ? '<img class="pod-cover" src="' + COVER[k].src + '" alt="" width="64" height="64" loading="lazy">' : '<span class="pod-mark big" aria-hidden="true">' + esc(MONOGRAMM[k] || "?") + "</span>") +
         "<div><h3>" + esc(p.name) + '</h3><p class="muted">von ' + esc(p.hosts || "") + "</p>" +
         "<p>" + (n ? n + (n === 1 ? " Thema" : " Themen") + " im Lexikon" : "Wird gerade ausgewertet, folgt bald") +
         (folgen ? " · " + folgen + " Folgen" : "") + "</p>" +

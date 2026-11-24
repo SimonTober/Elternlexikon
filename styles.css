@@ -860,3 +860,8 @@ body.fp-offen { overflow: hidden; }
 .pf-leer { margin: 8px 0 14px; }
 .start-folgen { margin-bottom: 10px; }
 .start-alle-folgen { display: block; text-align: center; text-decoration: none; margin-bottom: 6px; }
+
+/* ---- Podcast-Cover ---- */
+.fp-art.hat-cover { background-size: cover; background-position: center; }
+.fp-art.hat-cover span { display: none; }
+.pod-cover { flex: none; width: 64px; height: 64px; border-radius: 14px; object-fit: cover; box-shadow: 0 2px 8px rgba(0, 0, 0, .15); }
