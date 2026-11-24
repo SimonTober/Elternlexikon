@@ -302,6 +302,7 @@
       this.aktuell = key;
       $("#pl-title").textContent = f.t;
       $("#pl-pod").textContent = kurzName(podcast) + " · Folge " + nr;
+      this.el.dataset.pod = podcast;
       $("#pl-dur").textContent = f.l ? f.l.replace(/^0:/, "") : "–";
       this.el.hidden = false;
       document.body.classList.add("has-player");

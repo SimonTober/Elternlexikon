@@ -19,10 +19,10 @@
   --shadow: 0 1px 2px rgba(60, 45, 20, .06), 0 6px 20px rgba(60, 45, 20, .06);
 
   /* Podcast-Farben (eher gedämpft, nur als Erkennungszeichen) */
-  --p-mutti: #b5577a;
-  --p-artgerecht: #5f8a3a;
-  --p-gfk: #3f6fb0;
-  --p-wunschkind: #b9822a;
+  --p-mutti: #e4202b;
+  --p-artgerecht: #8fbac2;
+  --p-gfk: #c3b5fb;
+  --p-wunschkind: #ffee03;
 
   --serif: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -47,10 +47,10 @@
     --warm-soft: #3a2a22;
     --focus: #7cc2b0;
     --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 6px 20px rgba(0, 0, 0, .25);
-    --p-mutti: #e08aa9;
-    --p-artgerecht: #9cc574;
-    --p-gfk: #86aee6;
-    --p-wunschkind: #e2b765;
+    --p-mutti: #ff4b55;
+    --p-artgerecht: #8fbac2;
+    --p-gfk: #c3b5fb;
+    --p-wunschkind: #ffee03;
     color-scheme: dark;
   }
 }
@@ -68,10 +68,10 @@
   --warm-soft: #3a2a22;
   --focus: #7cc2b0;
   --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 6px 20px rgba(0, 0, 0, .25);
-  --p-mutti: #e08aa9;
-  --p-artgerecht: #9cc574;
-  --p-gfk: #86aee6;
-  --p-wunschkind: #e2b765;
+  --p-mutti: #ff4b55;
+  --p-artgerecht: #8fbac2;
+  --p-gfk: #c3b5fb;
+  --p-wunschkind: #ffee03;
   color-scheme: dark;
 }
 
@@ -180,10 +180,11 @@ mark { background: var(--warm-soft); color: inherit; border-radius: 3px; padding
 .tag.age { background: var(--accent-soft); }
 .pod { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; }
 .pod .dot, .chip .dot { background: var(--pc, var(--muted)); }
-.pod-mutti { --pc: var(--p-mutti); }
-.pod-artgerecht { --pc: var(--p-artgerecht); }
-.pod-gfk { --pc: var(--p-gfk); }
-.pod-wunschkind { --pc: var(--p-wunschkind); }
+/* --pc = Hauptfarbe des Covers, --pi = Schriftfarbe darauf, --cover = Titelbild */
+.pod-mutti { --pc: var(--p-mutti); --pi: #fff; --cover: url(cover/mutti.jpg); }
+.pod-artgerecht { --pc: var(--p-artgerecht); --pi: #14343a; --cover: url(cover/artgerecht.webp); }
+.pod-gfk { --pc: var(--p-gfk); --pi: #2b2250; --cover: url(cover/gfk.jpg); }
+.pod-wunschkind { --pc: var(--p-wunschkind); --pi: #2a2500; --cover: url(cover/wunschkind.jpg); }
 .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; }
 
 .grid-areas { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
@@ -348,9 +349,7 @@ details.mehr h3:first-of-type { margin-top: 4px; }
   .answer { border: 1px solid #999; background: none; }
 }
 
-.pod-mark { flex: none; display: inline-grid; place-items: center; width: 20px; height: 20px; border-radius: 6px; background: var(--pc, var(--muted)); color: #fff; font: 700 12px/1 var(--serif); }
-:root[data-theme="dark"] .pod-mark { color: #16191d; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .pod-mark { color: #16191d; } }
+.pod-mark { flex: none; display: inline-grid; place-items: center; width: 20px; height: 20px; border-radius: 6px; background: var(--pc, var(--muted)); color: var(--pi, #fff); font: 700 12px/1 var(--serif); }
 .views .view .pod-mark { width: 26px; height: 26px; font-size: 15px; border-radius: 8px; }
 .pod-mark.big { width: 72px; height: 72px; border-radius: 18px; font-size: 40px; }
 
@@ -890,3 +889,18 @@ body.fp-offen { overflow: hidden; }
   .sos { grid-template-columns: repeat(2, 1fr); gap: 8px; }
   .sos-btn { min-height: 48px; padding: 8px 12px; font-size: 15px; }
 }
+
+/* ---- Cover statt Farbflächen in den kleinen Playern (24.11.) ---- */
+.fz-play, .wh-icon, .pl-main {
+  position: relative; overflow: hidden; border-radius: 12px; color: #fff;
+  background: var(--pc, var(--accent)) var(--cover, none) center / cover no-repeat;
+}
+.fz-play::before, .wh-icon::before, .pl-main::before { content: ""; position: absolute; inset: 0; background: rgba(0, 0, 0, .28); }
+.fz-play svg, .wh-icon svg, .pl-main svg { position: relative; filter: drop-shadow(0 1px 3px rgba(0, 0, 0, .5)); }
+.fz-play:hover::before, .wh-icon:hover::before { background: rgba(0, 0, 0, .18); }
+:root[data-theme="dark"] .fz-play, :root[data-theme="dark"] .wh-icon { color: #fff; }
+.pl-main { width: 48px; height: 48px; border-radius: 12px; }
+.player[data-pod="mutti"] { --cover: url(cover/mutti.jpg); --pc: var(--p-mutti); }
+.player[data-pod="artgerecht"] { --cover: url(cover/artgerecht.webp); --pc: var(--p-artgerecht); }
+.player[data-pod="gfk"] { --cover: url(cover/gfk.jpg); --pc: var(--p-gfk); }
+.player[data-pod="wunschkind"] { --cover: url(cover/wunschkind.jpg); --pc: var(--p-wunschkind); }
