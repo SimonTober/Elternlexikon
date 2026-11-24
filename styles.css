@@ -702,3 +702,20 @@ body.start .filters { margin-top: 4px; }
   .alter-wahl { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
   .alter-wahl .alter-chip { width: 100%; text-align: center; justify-content: center; }
 }
+
+/* ---- Eltern-Check ---- */
+.check-card { display: grid; gap: 4px; margin: 22px 0 4px; padding: 16px 18px; border-radius: 16px; background: var(--accent-soft); border: 1px solid var(--line); text-decoration: none; color: var(--text); }
+.check-card strong { font-family: var(--serif); font-size: 19px; }
+.check-card span { color: var(--muted); font-size: 15px; }
+.check-card:hover { border-color: var(--accent); }
+.check-wahl { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 20px; }
+.check-chip { min-height: 44px; }
+
+/* ---- Ausprobierte Tipps (Merkliste) ---- */
+.ausprobiert { margin: 32px 0 8px; }
+.ausprobiert-liste { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 12px; }
+.ausprobiert-liste > li { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 12px; padding: 12px 16px; }
+.tipp-art { display: inline-flex; align-items: center; min-height: 44px; font-weight: 600; color: var(--text); text-decoration: none; }
+.ausprobiert-liste ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; color: var(--muted); }
+.ausprobiert-liste ul li { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+.tipp-weg { flex: none; min-width: 44px; min-height: 44px; margin: -10px -12px -10px 0; background: none; border: 0; font-size: 22px; line-height: 1; color: var(--muted); cursor: pointer; }

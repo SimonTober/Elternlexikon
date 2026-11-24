@@ -235,7 +235,6 @@ window.WISSEN = {
     "Wie reagiere ich, wenn meine Eltern meine Erziehung abwerten?"
    ],
    "alter": [
-    "0-1",
     "1-3",
     "3-6",
     "6-10"
@@ -2164,7 +2163,6 @@ window.WISSEN = {
     "Wie lernt mein Kind, sich um sich selbst zu kümmern?"
    ],
    "alter": [
-    "0-1",
     "1-3",
     "3-6",
     "6-10"
@@ -2570,7 +2568,9 @@ window.WISSEN = {
     "Computerspiele",
     "Gaming",
     "erstes Handy",
-    "Ausstiegspunkt"
+    "Ausstiegspunkt",
+    "Handyzeit",
+    "Medienzeit"
    ],
    "fragen": [
     "Wie viel Fernsehen ist okay?",
@@ -2579,11 +2579,11 @@ window.WISSEN = {
     "Warum ist mein Kind nach Kinderserien aggressiv?",
     "Wie verbringe ich selbst weniger Zeit am Handy?",
     "Mein Kind hängt zu viel am Bildschirm, was tun?",
-    "Ab wann darf mein Kind ein Smartphone haben?"
+    "Ab wann darf mein Kind ein Smartphone haben?",
+    "Wie viel Handyzeit ist okay?",
+    "Wie viel Fernsehen darf mein Kind?"
    ],
    "alter": [
-    "0-1",
-    "1-3",
     "3-6",
     "6-10"
    ],
@@ -3107,8 +3107,7 @@ window.WISSEN = {
    "alter": [
     "0-1",
     "1-3",
-    "3-6",
-    "6-10"
+    "3-6"
    ],
    "bereiche": [
     "baby",
@@ -3751,7 +3750,9 @@ window.WISSEN = {
     "Elternwut",
     "Mama-Wut",
     "Wut auf das Baby",
-    "ausrasten"
+    "ausrasten",
+    "Kind anschreien",
+    "Ich schreie mein Kind an"
    ],
    "fragen": [
     "Wie gehe ich mit meiner Wut auf mein Kind um?",
@@ -6297,8 +6298,6 @@ window.WISSEN = {
     "Warum ist mein Kind nach der Schulwoche so unleidig?"
    ],
    "alter": [
-    "0-1",
-    "1-3",
     "3-6",
     "6-10"
    ],
@@ -6580,7 +6579,6 @@ window.WISSEN = {
     "Mein Kind rastet beim nächsten Nein aus, woran liegt das?"
    ],
    "alter": [
-    "0-1",
     "1-3",
     "3-6",
     "6-10"
@@ -7594,7 +7592,6 @@ window.WISSEN = {
     "Müssen sich Geschwister später gut verstehen?"
    ],
    "alter": [
-    "0-1",
     "1-3",
     "3-6",
     "6-10"
@@ -8288,7 +8285,6 @@ window.WISSEN = {
     "Wie setze ich Regeln durch, ohne autoritär zu sein?"
    ],
    "alter": [
-    "0-1",
     "1-3",
     "3-6",
     "6-10"
@@ -8927,8 +8923,7 @@ window.WISSEN = {
    "alter": [
     "0-1",
     "1-3",
-    "3-6",
-    "6-10"
+    "3-6"
    ],
    "bereiche": [
     "baby",
@@ -10847,7 +10842,6 @@ window.WISSEN = {
     "Mein Baby zieht mich an den Haaren und lacht, ist es aggressiv?"
    ],
    "alter": [
-    "0-1",
     "1-3",
     "3-6",
     "6-10"
@@ -11137,8 +11131,6 @@ window.WISSEN = {
     "Mein Kind hat mir etwas Schlimmes erzählt, was tue ich?"
    ],
    "alter": [
-    "0-1",
-    "1-3",
     "3-6",
     "6-10"
    ],
@@ -13028,7 +13020,6 @@ window.WISSEN = {
     "Wann darf ich über den Willen meines Kindes hinweggehen?"
    ],
    "alter": [
-    "0-1",
     "1-3",
     "3-6",
     "6-10"
@@ -13892,7 +13883,8 @@ window.WISSEN = {
    "bereiche": [
     "alltag",
     "eltern",
-    "entwicklung"
+    "entwicklung",
+    "kita"
    ],
    "kurz": "Kathy Weber ermutigt Eltern, sich bei überfordernden Hausaufgaben offen und ohne Vorwurf an die Lehrkraft zu wenden. Aufgaben müssen nicht genau so erledigt werden, wie sie gestellt sind; Eltern tragen die Verantwortung und teilen das der Lehrkraft mit. Das gibt dem Kind Sicherheit.",
    "tipps": [
@@ -14110,8 +14102,6 @@ window.WISSEN = {
     "Wie können Kinder in Kita und Schule mitbestimmen?"
    ],
    "alter": [
-    "0-1",
-    "1-3",
     "3-6",
     "6-10"
    ],
@@ -16202,12 +16192,16 @@ window.WISSEN = {
     "ständig ärgern",
     "Impulskontrolle",
     "Tic-ähnliche Gewohnheit",
-    "Kind kann nicht aufhören"
+    "Kind kann nicht aufhören",
+    "Nägel kauen",
+    "Daumenlutschen"
    ],
    "fragen": [
     "Wie gewöhne ich meinem Kind das Nägelkauen ab?",
     "Mein Kind ärgert ständig das Geschwisterkind und kann nicht aufhören",
-    "Wie werden Kinder schlechte Angewohnheiten los?"
+    "Wie werden Kinder schlechte Angewohnheiten los?",
+    "Kind kaut Nägel",
+    "Mein Kind kaut an den Nägeln, was tun?"
    ],
    "alter": [
     "3-6",
@@ -16495,7 +16489,8 @@ window.WISSEN = {
    "bereiche": [
     "baby",
     "eltern",
-    "gefuehle"
+    "gefuehle",
+    "schlaf"
    ],
    "kurz": "Bei Schreibabys setzt das Schreien laut den Hosts oft schlagartig und ohne Vorzeichen ein, was Eltern an ihre Grenzen bringt. Wichtigster Schritt in der Not: das Baby sicher ablegen und weggehen, statt es zu schütteln. Als Hilfe nennen die Hosts und ein Gast Schreiambulanzen, Kinderärztin oder Kinderarzt und Frühe Hilfen; bei Osteopathie sei die Beleglage laut dem Gast dünn.",
    "tipps": [
@@ -16686,7 +16681,8 @@ window.WISSEN = {
    "bereiche": [
     "entwicklung",
     "gefuehle",
-    "alltag"
+    "alltag",
+    "kita"
    ],
    "kurz": "Laut Daniel Graf, Katja Seide und ihren Gästen lernen Kinder vor allem dann gern, wenn sie Sinn, Selbstwirksamkeit und Zuwendung erleben, und weniger durch Druck, Noten oder Belohnung. Eltern können viel bewirken, indem sie Gefühle ernst nehmen, Anstrengung statt Ergebnis würdigen und bei anhaltender Belastung früh hinschauen.",
    "tipps": [
@@ -16908,7 +16904,8 @@ window.WISSEN = {
    "bereiche": [
     "entwicklung",
     "eltern",
-    "alltag"
+    "alltag",
+    "kita"
    ],
    "kurz": "Die Schulvorbereitung beginnt nicht erst kurz vor der Einschulung, sondern in der ganzen Erziehung. Wichtiger als Schulstoff sind Selbstständigkeit, Verantwortung, Frustrationstoleranz, Impulskontrolle und soziale Kompetenz. Kathy Weber (gfk) ergänzt, dass die Eltern zuerst ihre eigenen Sorgen bei sich klären und dem Kind in diesem großen Übergang viel Orientierung, Nähe und Sicherheit geben sollten. Bei Hausaufgaben raten Nicola Schmidt (artgerecht) und Kathy Weber, mit dem Kind gemeinsam nach Lösungen zu suchen, statt Machtkämpfe zu führen.",
    "tipps": [
@@ -17819,7 +17816,8 @@ window.WISSEN = {
    "bereiche": [
     "alltag",
     "gefuehle",
-    "entwicklung"
+    "entwicklung",
+    "kita"
    ],
    "kurz": "Für Grundschulkinder ist Zugehörigkeit laut Kathy Weber das Oberbedürfnis, dazu gehört, einbezogen zu werden. Wird ein Kind ohne Einbeziehung irgendwo hingesetzt, bleibt dieses Bedürfnis offen. Kinder können nicht allein bestimmen, sollten aber gefragt werden.",
    "tipps": [
@@ -20118,10 +20116,8 @@ window.WISSEN = {
     "Mein Kind nässt mit sieben noch nachts ein, was tun?"
    ],
    "alter": [
-    "0-1",
     "1-3",
-    "3-6",
-    "6-10"
+    "3-6"
    ],
    "bereiche": [
     "sauberkeit",
@@ -21214,7 +21210,6 @@ window.WISSEN = {
     "Sind Schwimmflügel sinnvoll?"
    ],
    "alter": [
-    "0-1",
     "1-3",
     "3-6",
     "6-10"
@@ -21430,7 +21425,8 @@ window.WISSEN = {
    "bereiche": [
     "baby",
     "gefuehle",
-    "eltern"
+    "eltern",
+    "schlaf"
    ],
    "kurz": "Für Babys ist Schreien laut Kathy Weber die einzige Möglichkeit zu zeigen, dass ein Bedürfnis unerfüllt ist. Daniel Graf und Katja Seide ergänzen, dass Babys vorher oft leise Signale zeigen und dass Eltern das Weinen begleiten, aber nicht jedes Weinen verhindern müssen. Eltern dürfen herausfinden, was das Baby braucht, und dabei auch sich selbst Empathie geben oder Hilfe holen. Bei starker Belastung oder Unsicherheit sprecht mit Hebamme oder Kinderärztin.",
    "tipps": [
@@ -22745,7 +22741,8 @@ window.WISSEN = {
    ],
    "bereiche": [
     "alltag",
-    "grenzen"
+    "grenzen",
+    "sauberkeit"
    ],
    "kurz": "Bei Milchzähnen geht es zuerst darum, eine positive Gewohnheit aufzubauen, nicht darum, dass jeder Zahn perfekt sauber wird. Alle Podcasts lehnen Zwang ab: Druck, Drohungen und Festhalten führen eher zu Vermeidung. Helfen sollen Spiele, ein günstiger Zeitpunkt, weniger Machtkampf und bei älteren Kindern eine klare Abmachung rund ums Essen. Zahn- und Fluoridfragen sind Sache eurer Zahnärztin oder eures Zahnarztes; die Aussagen hier sind Erfahrungen der Hosts und Gäste.",
    "tipps": [

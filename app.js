@@ -7,14 +7,19 @@
   var NACH_ID = {};
   W.artikel.forEach(function (a) { NACH_ID[a.id] = a; });
 
-  var BEISPIELE = [
-    "Ich schreie mein Kind an",
-    "Sind Belohnungen schlecht?",
-    "Kind haut mich",
-    "Kind kaut Nägel",
-    "Wie lobe ich richtig?",
-    "Kind trödelt beim Aussteigen"
+  var FRAGEN_ALLE = [
+    "Ich schreie mein Kind an", "Sind Belohnungen schlecht?", "Kind haut mich", "Kind kaut Nägel", "Wie lobe ich richtig?",
+    "Kind trödelt beim Aussteigen", "Kind will nicht schlafen", "Mein Kind hat Angst im Dunkeln", "Wutanfall im Supermarkt",
+    "Geschwister streiten ständig", "Wie viel Handyzeit ist okay?", "Kind isst kein Gemüse", "Wann ist mein Kind schulreif?",
+    "Kind lügt", "Baby schreit viel", "Kind hat Fieber", "Wie erkläre ich den Tod?", "Mein Kind wird gemobbt",
+    "Ich bin am Ende meiner Kräfte", "Kita-Eingewöhnung klappt nicht"
   ];
+  // Täglich wechselnde Auswahl, damit die Startseite lebendig bleibt (gleicher Tag = gleiche Fragen)
+  var BEISPIELE = (function () {
+    var tag = Math.floor(Date.now() / 86400000), liste = FRAGEN_ALLE.slice(), aus = [];
+    for (var k = 0; k < 6 && liste.length; k++) { var i = (tag * 7 + k * 5) % liste.length; aus.push(liste.splice(i, 1)[0]); }
+    return aus;
+  })();
 
   var zustand = {
     q: "",
@@ -292,7 +297,12 @@
     }
     var nurBereich = !q && zustand.filter.bereich.size === 1 && !zustand.filter.alter.size && !zustand.filter.podcast.size ? Array.from(zustand.filter.bereich)[0] : "";
     if (nurBereich && liste.length > 8) {
-      var top = liste.slice().sort(function (x, y) { return (x.medizinisch ? 1 : 0) - (y.medizinisch ? 1 : 0) || relevanz(x, y); }).slice(0, 4);
+      var kern = BEREICH_KERN[nurBereich] || [];
+      var top = liste.slice().sort(function (x, y) {
+        var kx = kern.indexOf(x.id), ky = kern.indexOf(y.id);
+        if (kx >= 0 || ky >= 0) return (kx < 0 ? 999 : kx) - (ky < 0 ? 999 : ky);
+        return (x.medizinisch ? 1 : 0) - (y.medizinisch ? 1 : 0) || relevanz(x, y);
+      }).slice(0, 4);
       view.innerHTML = '<div class="bereich-kopf"><h2>' + esc(W.bereiche[nurBereich]) + "</h2><p>" + esc(BEREICH_TEXT[nurBereich] || "") + "</p></div>" +
         '<h3 class="section-title">Zuerst lesen</h3>' + kartenListe(top) +
         '<h3 class="section-title">Alle ' + liste.length + " Themen</h3>" + kartenListe(liste);
@@ -301,6 +311,20 @@
     view.innerHTML = '<p class="result-meta">' + liste.length + (liste.length === 1 ? " Thema" : " Themen") +
       (q ? " zu „" + esc(q) + "“" : "") + "</p>" + kartenListe(liste);
   }
+  var BEREICH_KERN = {
+    schlaf: ["einschlafen", "durchschlafen", "babyschlaf", "mittagsschlaf", "familienbett"],
+    essen: ["waehlerisches-essen", "beikost", "stillen", "suessigkeiten"],
+    gefuehle: ["wutanfaelle", "gefuehle-begleiten", "trotz-autonomie", "angst-kind", "frustrationstoleranz"],
+    geschwister: ["geschwisterstreit", "eifersucht-baby", "geschwister-vorbereiten", "gerechtigkeit-geschwister"],
+    kita: ["kita-eingewoehnung", "schulstart", "kita-allgemein", "schule-lernen"],
+    medien: ["bildschirmzeit", "social-media-kinder", "handy-eltern-baby"],
+    sauberkeit: ["trocken-werden", "zaehne-putzen"],
+    grenzen: ["grenzen-setzen", "kooperation-zuhoeren", "strafe-konsequenz", "belohnungssysteme"],
+    alltag: ["morgenroutine", "routinen", "aufraeumen-haushalt", "selbststaendigkeit"],
+    baby: ["babyschlaf", "stillen", "beikost", "baby-weinen", "erste-zeit-mit-baby"],
+    entwicklung: ["hirnentwicklung-mythen", "adhs-kind", "kind-sozial-entwicklung", "pubertaet-teenager"],
+    eltern: ["erschoepfte-eltern", "elterliche-wut", "mental-load", "zeit-fuer-sich"]
+  };
   var BEREICH_TEXT = {
     schlaf: "Einschlafen, Durchschlafen, Mittagsschlaf und das Familienbett.",
     essen: "Beikost, wählerisches Essen, Süßes und Mahlzeiten ohne Streit.",
@@ -415,6 +439,8 @@
     }
     html += kindalter ? altersBlock + sos : sos + altersBlock;
 
+    html += '<a class="check-card" href="#/check"><strong>Eltern-Check</strong><span>Was kostet euch gerade am meisten Kraft? Wählt aus, wir zeigen passende Themen.</span></a>';
+
     html += '<h2 class="section-title">Häufige Fragen</h2><div class="suggestions">' +
       BEISPIELE.map(function (b) { return '<button type="button" class="suggestion" data-q="' + esc(b) + '">' + esc(b) + "</button>"; }).join("") +
       "</div>";
@@ -464,6 +490,46 @@
     sc.addEventListener("scroll", akt, { passive: true });
     window.addEventListener("resize", bau);
     bau();
+  }
+
+  /* ---------- Eltern-Check: Was belastet euch gerade? ---------- */
+  var CHECK = [
+    ["schlaf", "Schlaf", ["einschlafen", "durchschlafen", "babyschlaf", "mittagsschlaf", "familienbett"]],
+    ["wut", "Wutanfälle und große Gefühle", ["wutanfaelle", "trotz-autonomie", "gefuehle-begleiten", "frustrationstoleranz", "meltdown"]],
+    ["grenzen", "Grenzen und „Er hört nicht“", ["grenzen-setzen", "kooperation-zuhoeren", "strafe-konsequenz", "belohnungssysteme"]],
+    ["geschwister", "Streit unter Geschwistern", ["geschwisterstreit", "eifersucht-baby", "gerechtigkeit-geschwister", "geschwister-vorbereiten"]],
+    ["essen", "Essen und Stillen", ["waehlerisches-essen", "beikost", "stillen", "suessigkeiten"]],
+    ["medien", "Handy und Bildschirm", ["bildschirmzeit", "social-media-kinder"]],
+    ["kita", "Kita und Schule", ["kita-eingewoehnung", "schulstart", "schule-lernen", "schulangst"]],
+    ["ich", "Ich bin am Limit", ["erschoepfte-eltern", "elterliche-wut", "mental-load", "zeit-fuer-sich", "eltern-selbstregulation"]]
+  ];
+  var checkWahl = new Set();
+  function checkErgebnis() {
+    var html = "";
+    CHECK.forEach(function (c) {
+      if (!checkWahl.has(c[0])) return;
+      var liste = c[2].map(function (id) { return NACH_ID[id]; }).filter(Boolean);
+      var passend = kindalter ? liste.filter(function (a) { return (a.alter || []).indexOf(kindalter) >= 0; }) : liste;
+      if (passend.length) liste = passend;
+      html += '<h3 class="section-title">' + esc(c[1]) + "</h3>" + kartenListe(liste.slice(0, 3));
+    });
+    return html || '<p class="muted">Tippt oben an, was gerade am meisten Kraft kostet. Mehrere Antworten sind möglich.</p>';
+  }
+  function zeigeCheck() {
+    document.body.classList.add("compact");
+    $("#search-area").hidden = true;
+    setzeNav("");
+    view.innerHTML = '<article class="article check-seite"><button type="button" class="back" data-back>← Zurück</button>' +
+      "<h1>Eltern-Check</h1><p class=\"muted\">Was kostet euch gerade am meisten Kraft? Wählt aus, wir zeigen euch passende Themen.</p>" +
+      '<h2>Wie alt ist dein Kind?</h2><div class="alter-wahl" role="group" aria-label="Alter des Kindes">' +
+      Object.keys(W.alter).map(function (k) {
+        return '<button type="button" class="alter-chip" data-kindalter="' + k + '" aria-pressed="' + (kindalter === k) + '">' + esc(W.alter[k]) + "</button>";
+      }).join("") + "</div>" +
+      "<h2>Was belastet euch?</h2><div class=\"check-wahl\">" + CHECK.map(function (c) {
+        return '<button type="button" class="chip check-chip" data-check="' + c[0] + '" aria-pressed="' + checkWahl.has(c[0]) + '">' + esc(c[1]) + "</button>";
+      }).join("") + '</div><div id="check-ergebnis">' + checkErgebnis() + "</div></article>";
+    window.scrollTo(0, 0);
+    document.title = "Eltern-Check · Elternlexikon";
   }
 
   function zeigeNotfall() {
@@ -654,6 +720,21 @@
     view.innerHTML = '<div class="article"><h1>Favoriten</h1></div>' + (liste.length
       ? '<p class="result-meta">' + liste.length + " gemerkt</p>" + kartenListe(liste)
       : '<div class="empty"><strong>Noch keine Favoriten</strong>Tippt in einem Artikel auf das Herz, um ihn hier zu sammeln.</div>');
+    // Ausprobierte Tipps: alles, was in Artikeln abgehakt wurde, an einem Ort
+    var erl = lies("erledigt", {}), zeilen = "", anzahl = 0;
+    Object.keys(erl).forEach(function (id) {
+      var a = NACH_ID[id];
+      if (!a || !(erl[id] || []).length) return;
+      var tipps = erl[id].filter(function (i) { return a.tipps && a.tipps[i]; });
+      if (!tipps.length) return;
+      anzahl += tipps.length;
+      zeilen += '<li><a class="tipp-art" href="#/artikel/' + encodeURIComponent(id) + '">' + esc(a.titel) + "</a><ul>" +
+        tipps.map(function (i) { return '<li><span>' + esc(a.tipps[i]) + '</span><button type="button" class="tipp-weg" data-tipp-weg="' + esc(id) + "|" + i + '" aria-label="Tipp aus der Liste nehmen">×</button></li>'; }).join("") + "</ul></li>";
+    });
+    if (anzahl) {
+      view.innerHTML += '<section class="ausprobiert"><h2>Ausprobierte Tipps</h2><p class="muted">' + anzahl + (anzahl === 1 ? " Tipp" : " Tipps") +
+        ' habt ihr schon ausprobiert. Mit × nehmt ihr einen Tipp wieder aus der Liste.</p><ul class="ausprobiert-liste">' + zeilen + "</ul></section>";
+    }
     window.scrollTo(0, 0);
   }
 
@@ -687,6 +768,7 @@
     if (h === "#/favoriten") return zeigeFavoriten();
     if (h === "#/podcasts") return zeigePodcasts();
     if (h === "#/notfall") return zeigeNotfall();
+    if (h === "#/check") return zeigeCheck();
     if ((m = /^#\/soforthilfe\/(.+)$/.exec(h))) return zeigeSoforthilfe(decodeURIComponent(m[1]));
     kamVonListe = false;
     zeigeListe();
@@ -735,7 +817,15 @@
     }
     if ((t = e.target.closest("[data-kindalter]"))) {
       kindalter = kindalter === t.dataset.kindalter ? "" : t.dataset.kindalter;
-      schreib("kindalter", kindalter); zeigeListe(); return;
+      schreib("kindalter", kindalter);
+      if (location.hash === "#/check") { var y = window.scrollY; zeigeCheck(); window.scrollTo(0, y); } else zeigeListe();
+      return;
+    }
+    if ((t = e.target.closest("[data-check]"))) {
+      var ck = t.dataset.check;
+      if (checkWahl.has(ck)) checkWahl.delete(ck); else checkWahl.add(ck);
+      t.setAttribute("aria-pressed", checkWahl.has(ck) ? "true" : "false");
+      $("#check-ergebnis").innerHTML = checkErgebnis(); return;
     }
     if (e.target.closest("[data-alle-alter]")) {
       zustand.filter.alter.clear(); zustand.filter.alter.add(kindalter); aktualisiereChips(); zeigeListe();
@@ -753,6 +843,12 @@
       teilen(ar ? ar.titel : "Elternlexikon", ar ? ar.kurz : "", location.href); return;
     }
     if (e.target.closest("[data-print]")) { window.print(); return; }
+    var tw = e.target.closest("[data-tipp-weg]");
+    if (tw) {
+      var tp = tw.dataset.tippWeg.split("|"), alle = lies("erledigt", {});
+      alle[tp[0]] = (alle[tp[0]] || []).filter(function (x) { return x !== Number(tp[1]); });
+      schreib("erledigt", alle); zeigeFavoriten(); return;
+    }
     var sm = e.target.closest("[data-stimme-mehr]");
     if (sm) {
       var st = sm.closest(".stimme"), offen = st.classList.toggle("offen");

@@ -1,7 +1,7 @@
 /* Service Worker: hält die App offline verfügbar.
  * Bei jeder neuen Version von wissen.js oder der App VERSION hochzählen. */
-var VERSION = "elternlexikon-v61";
-var DATEIEN = ["./", "index.html", "styles.css?v=33", "fonts/fraunces-latin.woff2", "fonts/inter-latin.woff2", "app.js?v=40", "suche.js?v=24", "wissen.js", "folgen.js", "icon.svg", "apple-touch-icon.png", "icon-192.png", "icon-512.png", "manifest.webmanifest", "impressum.html", "datenschutz.html"];
+var VERSION = "elternlexikon-v70";
+var DATEIEN = ["./", "index.html", "styles.css?v=36", "fonts/fraunces-latin.woff2", "fonts/inter-latin.woff2", "app.js?v=46", "suche.js?v=24", "wissen.js", "folgen.js", "icon.svg", "apple-touch-icon.png", "icon-192.png", "icon-512.png", "manifest.webmanifest", "impressum.html", "datenschutz.html"];
 
 self.addEventListener("install", function (e) {
   e.waitUntil(caches.open(VERSION).then(function (c) { return c.addAll(DATEIEN.map(function (u) { return new Request(u, { cache: "reload" }); })); }).then(function () { return self.skipWaiting(); }));
