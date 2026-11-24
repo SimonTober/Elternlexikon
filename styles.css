@@ -724,3 +724,7 @@ body.start .filters { margin-top: 4px; }
 .area-tile { position: relative; }
 .area-icon { display: block; width: 26px; height: 26px; margin-bottom: 10px; fill: none; stroke: var(--accent); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .area-tile:nth-child(even) .area-icon { stroke: var(--warm); }
+
+/* ---- Leerzustände ---- */
+.empty-icon { display: block; width: 44px; height: 44px; margin: 0 auto 14px; padding: 10px; box-sizing: content-box; border-radius: 50%; background: var(--accent-soft); fill: none; stroke: var(--accent); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.empty-btn { display: inline-flex; margin-top: 18px; text-decoration: none; }

@@ -290,7 +290,7 @@
     }
 
     if (!liste.length) {
-      view.innerHTML = '<div class="empty"><strong>Dazu haben wir noch nichts gefunden.</strong>' +
+      view.innerHTML = '<div class="empty"><svg class="empty-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.500" cy="10.500" r="6.500"/><path d="M15.500 15.500 21 21M8 10.500h5"/></svg><strong>Dazu haben wir noch nichts gefunden.</strong>' +
         "Versucht ein anderes Wort, zum Beispiel „Schlaf“ statt „Nickerchen“" +
         (filterAktiv() ? ", oder setzt die Filter zurück." : ".") + "</div>";
       return;
@@ -737,7 +737,7 @@
     var liste = favoriten.map(function (id) { return NACH_ID[id]; }).filter(Boolean);
     view.innerHTML = '<div class="article"><h1>Favoriten</h1></div>' + (liste.length
       ? '<p class="result-meta">' + liste.length + " gemerkt</p>" + kartenListe(liste)
-      : '<div class="empty"><strong>Noch keine Favoriten</strong>Tippt in einem Artikel auf das Herz, um ihn hier zu sammeln.</div>');
+      : '<div class="empty"><svg class="empty-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 4h12v17l-6-4-6 4z"/></svg><strong>Noch keine Favoriten</strong>Tippt in einem Artikel auf das Herz, um ihn hier zu sammeln.<a class="primary-btn empty-btn" href="#/check">Eltern-Check starten</a></div>');
     // Ausprobierte Tipps: alles, was in Artikeln abgehakt wurde, an einem Ort
     var erl = lies("erledigt", {}), zeilen = "", anzahl = 0;
     Object.keys(erl).forEach(function (id) {
