@@ -108,11 +108,35 @@
     return (h ? h + ":" + String(m).padStart(2, "0") : m) + ":" + String(s).padStart(2, "0");
   }
 
+  var TEMPOS = [1, 1.25, 1.5, 2];
   var player = {
-    el: null, audio: null, aktuell: null,
+    el: null, audio: null, aktuell: null, queue: [], qi: -1, info: null, tempo: Number(lies("tempo", 1)) || 1,
     init: function () {
       this.el = $("#player"); this.audio = $("#pl-audio");
       var self = this, a = this.audio;
+      if (TEMPOS.indexOf(this.tempo) < 0) this.tempo = 1;
+      $("#pl-expand").addEventListener("click", function () { self.oeffneVoll(); });
+      $("#pl-title").addEventListener("click", function () { self.oeffneVoll(); });
+      $(".pl-meta").addEventListener("click", function () { self.oeffneVoll(); });
+      // Vollbild-Player
+      $("#fp-close").addEventListener("click", function () { self.schliesseVoll(); });
+      $("#fp-stop").addEventListener("click", function () { self.schliessen(); });
+      $("#fp-toggle").addEventListener("click", function () { a.paused ? a.play().catch(function () {}) : a.pause(); });
+      $("#fp-back").addEventListener("click", function () { a.currentTime = Math.max(0, a.currentTime - 15); });
+      $("#fp-fwd").addEventListener("click", function () { a.currentTime = a.currentTime + 15; });
+      $("#fp-prev").addEventListener("click", function () { self.zurueck(); });
+      $("#fp-next").addEventListener("click", function () { self.weiter(); });
+      $("#fp-speed").addEventListener("click", function () {
+        self.tempo = TEMPOS[(TEMPOS.indexOf(self.tempo) + 1) % TEMPOS.length]; schreib("tempo", self.tempo);
+        a.playbackRate = self.tempo; self.voll();
+      });
+      var fseek = $("#fp-seek"), fziehen = false;
+      fseek.addEventListener("input", function () { fziehen = true; self.fzieht = true; $("#fp-time").textContent = zeit(fseek.value / 1000 * a.duration); });
+      fseek.addEventListener("change", function () { if (isFinite(a.duration)) a.currentTime = fseek.value / 1000 * a.duration; fziehen = false; self.fzieht = false; });
+      document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !$("#fullplayer").hidden) self.schliesseVoll(); });
+      a.addEventListener("ended", function () { self.weiter(); });
+      a.addEventListener("ratechange", function () { self.positionState(); });
+      a.addEventListener("seeked", function () { self.positionState(); });
       $("#pl-toggle").addEventListener("click", function () { a.paused ? a.play().catch(function () {}) : a.pause(); });
       $("#pl-back").addEventListener("click", function () { a.currentTime = Math.max(0, a.currentTime - 15); });
       $("#pl-fwd").addEventListener("click", function () { a.currentTime = a.currentTime + 15; });
@@ -123,23 +147,105 @@
       a.addEventListener("timeupdate", function () {
         $("#pl-time").textContent = zeit(a.currentTime);
         if (!ziehen && isFinite(a.duration)) seek.value = Math.round(a.currentTime / a.duration * 1000);
+        self.voll();
+        var jetzt = Date.now(); if (!self.psZeit || jetzt - self.psZeit > 1000) { self.psZeit = jetzt; self.positionState(); }
       });
-      a.addEventListener("durationchange", function () { $("#pl-dur").textContent = zeit(a.duration); });
-      a.addEventListener("play", function () { self.el.classList.add("playing"); self.markiere(); });
-      a.addEventListener("pause", function () { self.el.classList.remove("playing"); self.markiere(); });
+      a.addEventListener("durationchange", function () { $("#pl-dur").textContent = zeit(a.duration); self.voll(); self.positionState(); });
+      a.addEventListener("play", function () {
+        self.el.classList.add("playing"); self.markiere(); self.voll(); a.playbackRate = self.tempo;
+        if ("mediaSession" in navigator) navigator.mediaSession.playbackState = "playing";
+      });
+      a.addEventListener("pause", function () {
+        self.el.classList.remove("playing"); self.markiere(); self.voll();
+        if ("mediaSession" in navigator) navigator.mediaSession.playbackState = "paused";
+      });
       a.addEventListener("error", function () {
         $("#pl-title").textContent = "Folge konnte nicht geladen werden (offline?)";
       });
       if ("mediaSession" in navigator) {
-        try {
-          navigator.mediaSession.setActionHandler("seekbackward", function () { a.currentTime = Math.max(0, a.currentTime - 15); });
-          navigator.mediaSession.setActionHandler("seekforward", function () { a.currentTime = a.currentTime + 15; });
-        } catch (e) {}
+        var ms = navigator.mediaSession;
+        function handler(name, fn) { try { ms.setActionHandler(name, fn); } catch (e) {} }
+        handler("play", function () { a.play().catch(function () {}); });
+        handler("pause", function () { a.pause(); });
+        handler("stop", function () { self.schliessen(); });
+        handler("seekbackward", function (d) { a.currentTime = Math.max(0, a.currentTime - ((d && d.seekOffset) || 15)); });
+        handler("seekforward", function (d) { a.currentTime = a.currentTime + ((d && d.seekOffset) || 15); });
+        handler("seekto", function (d) { if (d && isFinite(d.seekTime)) a.currentTime = d.seekTime; });
       }
     },
-    spiele: function (podcast, nr, minute) {
+    // Fortschrittsbalken auf dem Sperrbildschirm
+    positionState: function () {
+      var a = this.audio;
+      if (!("mediaSession" in navigator) || !navigator.mediaSession.setPositionState || !isFinite(a.duration) || !a.duration) return;
+      try { navigator.mediaSession.setPositionState({ duration: a.duration, playbackRate: a.playbackRate || 1, position: Math.min(a.currentTime, a.duration) }); } catch (e) {}
+    },
+    // Vorherige/nächste Folge nur anbieten, wenn eine Wiedergabeliste läuft
+    sessionTitel: function (podcast, f) {
+      if (!("mediaSession" in navigator) || !window.MediaMetadata) return;
+      var ms = navigator.mediaSession, self = this;
+      ms.metadata = new MediaMetadata({
+        title: f.t, artist: W.podcasts[podcast].name, album: "Elternlexikon",
+        artwork: [{ src: "icon-512.png", sizes: "512x512", type: "image/png" }, { src: "icon-192.png", sizes: "192x192", type: "image/png" }]
+      });
+      try {
+        ms.setActionHandler("previoustrack", this.qi > 0 ? function () { self.zurueck(); } : null);
+        ms.setActionHandler("nexttrack", this.qi >= 0 && this.qi + 1 < this.queue.length ? function () { self.weiter(); } : null);
+      } catch (e) {}
+    },
+    startListe: function (liste, i) {
+      if (!liste || !liste[i]) return;
+      this.queue = liste; this.qi = i;
+      this.spiele(liste[i].p, liste[i].n, "0:00", true);
+    },
+    weiter: function () {
+      if (this.qi >= 0 && this.qi + 1 < this.queue.length) { this.qi++; var q = this.queue[this.qi]; this.spiele(q.p, q.n, "0:00", true); }
+    },
+    zurueck: function () {
+      var a = this.audio;
+      if (a.currentTime > 5 || this.qi <= 0) { a.currentTime = 0; return; }
+      this.qi--; var q = this.queue[this.qi]; this.spiele(q.p, q.n, "0:00", true);
+    },
+    oeffneVoll: function () {
+      if (!this.aktuell) return;
+      $("#fullplayer").hidden = false; document.body.classList.add("fp-offen"); this.voll(); $("#fp-close").focus();
+    },
+    schliesseVoll: function () {
+      $("#fullplayer").hidden = true; document.body.classList.remove("fp-offen");
+    },
+    // Anzeige im Vollbild-Player aktualisieren
+    voll: function () {
+      var box = $("#fullplayer");
+      if (!box || box.hidden) return;
+      var a = this.audio;
+      box.classList.toggle("playing", !a.paused);
+      $("#fp-time").textContent = zeit(a.currentTime);
+      $("#fp-rest").textContent = isFinite(a.duration) ? "−" + zeit(Math.max(0, a.duration - a.currentTime)) : "–";
+      if (!this.fzieht && isFinite(a.duration) && a.duration) $("#fp-seek").value = Math.round(a.currentTime / a.duration * 1000);
+      $("#fp-speed").textContent = String(this.tempo).replace(".", ",") + "×";
+      $("#fp-prev").disabled = !(this.qi > 0 || a.currentTime > 5);
+      $("#fp-next").disabled = !(this.qi >= 0 && this.qi + 1 < this.queue.length);
+    },
+    // Titel, Bild und Warteschlange im Vollbild-Player setzen
+    ui: function (podcast, nr, f) {
+      var self = this;
+      $("#fp-title").textContent = f.t;
+      $("#fp-sub").textContent = kurzName(podcast) + " · Folge " + nr + (f.d ? " · " + datumDe(f.d) : "");
+      var art = $("#fp-art"); art.className = "fp-art pod-" + podcast; $("#fp-mark").textContent = MONOGRAMM[podcast] || "♪";
+      var link = $("#fp-link"), w = sicherUrl(f.w); link.hidden = !w; if (w) link.href = w;
+      $("#fp-heading").textContent = this.qi >= 0 ? "Wiedergabeliste · " + (this.qi + 1) + " von " + this.queue.length : "Es läuft";
+      var q = $("#fp-queue"), next = this.qi >= 0 ? this.queue.slice(this.qi + 1, this.qi + 6) : [];
+      if (!next.length) { q.hidden = true; q.innerHTML = ""; return; }
+      q.hidden = false;
+      q.innerHTML = "<h3>Als Nächstes</h3><ol>" + next.map(function (x, i) {
+        var fi = folgeInfo(x.p, x.n) || {};
+        return '<li><button type="button" data-queue="' + (self.qi + 1 + i) + '"><span class="fq-t">' + esc(fi.t || "") + '</span><span class="fq-m">' + esc(kurzName(x.p)) + (fi.d ? " · " + datumDe(fi.d) : "") + "</span></button></li>";
+      }).join("") + "</ol>";
+      q.onclick = function (e) { var b = e.target.closest("[data-queue]"); if (b) { self.qi = Number(b.dataset.queue); var z = self.queue[self.qi]; self.spiele(z.p, z.n, "0:00", true); } };
+    },
+    spiele: function (podcast, nr, minute, ausListe) {
       var f = folgeInfo(podcast, nr);
       if (!f || !sicherUrl(f.a)) return;
+      if (!ausListe) { this.queue = []; this.qi = -1; }
       var a = this.audio, start = Math.max(0, sekunden(minute) - VORLAUF);
       var key = podcast + "|" + nr + "|" + minute;
       // Gleicher Knopf nochmal: Pause/Weiter
@@ -159,12 +265,15 @@
         var setze = function () { try { a.currentTime = start; } catch (e) {} a.removeEventListener("loadedmetadata", setze); };
         a.addEventListener("loadedmetadata", setze);
       }
+      a.playbackRate = this.tempo;
       a.play().catch(function () {});
-      if ("mediaSession" in navigator && window.MediaMetadata) {
-        navigator.mediaSession.metadata = new MediaMetadata({ title: f.t, artist: W.podcasts[podcast].name, album: "Elternlexikon" });
-      }
+      this.sessionTitel(podcast, f);
+      this.ui(podcast, nr, f);
+      this.voll();
     },
     schliessen: function () {
+      this.schliesseVoll(); this.queue = []; this.qi = -1;
+      if ("mediaSession" in navigator) { try { navigator.mediaSession.metadata = null; navigator.mediaSession.playbackState = "none"; } catch (e) {} }
       this.audio.pause();
       this.audio.removeAttribute("src");
       this.audio.load();
@@ -177,6 +286,11 @@
       var self = this;
       document.querySelectorAll("[data-play]").forEach(function (b) {
         b.classList.toggle("playing", b.dataset.play === self.aktuell && !self.audio.paused);
+      });
+      var folge = self.aktuell ? self.aktuell.split("|").slice(0, 2).join("|") : "";
+      document.querySelectorAll("[data-folge]").forEach(function (b) {
+        var an = b.dataset.folge === folge;
+        b.classList.toggle("aktuell", an); b.classList.toggle("playing", an && !self.audio.paused);
       });
     }
   };
@@ -609,12 +723,51 @@
     document.title = "Soforthilfe: " + a.titel + " · Elternlexikon";
   }
 
+  /* ---------- Neueste Folgen als Wiedergabeliste ---------- */
+  var podFolgenFilter = "alle", podFolgenAnzahl = 10;
+  function folgenListe(filter) {
+    var out = [];
+    Object.keys(FOLGEN).forEach(function (p) {
+      if (filter !== "alle" && p !== filter) return;
+      Object.keys(FOLGEN[p]).forEach(function (n) {
+        var f = FOLGEN[p][n];
+        if (f && sicherUrl(f.a)) out.push({ p: p, n: n, d: f.d || "" });
+      });
+    });
+    out.sort(function (x, y) { return x.d < y.d ? 1 : x.d > y.d ? -1 : Number(y.n) - Number(x.n); });
+    return out;
+  }
+  function rendereFolgen() {
+    var box = $("#folgen-sektion");
+    if (!box) return;
+    var liste = folgenListe(podFolgenFilter), zeigen = liste.slice(0, podFolgenAnzahl);
+    var chips = ["alle"].concat(Object.keys(W.podcasts).filter(function (k) { return Object.keys(FOLGEN[k] || {}).length; })).map(function (k) {
+      return '<button type="button" class="pf-chip' + (k === "alle" ? "" : " pod-" + esc(k)) + '" data-pfilter="' + esc(k) + '" aria-pressed="' + (k === podFolgenFilter) + '">' +
+        esc(k === "alle" ? "Alle Podcasts" : kurzName(k)) + "</button>";
+    }).join("");
+    var play = '<svg class="i-play" aria-hidden="true" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg>' +
+      '<svg class="i-pause" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 5h3.500v14H7zM13.500 5H17v14h-3.500z" fill="currentColor" stroke="none"/></svg>';
+    box.innerHTML = "<h2>Neueste Folgen</h2>" +
+      '<p class="muted">Spielt die Folgen nacheinander ab, beginnend mit der neuesten. Das geht auch bei gesperrtem Bildschirm.</p>' +
+      '<div class="pf-chips" role="group" aria-label="Podcast wählen">' + chips + "</div>" +
+      '<button type="button" class="primary-btn pf-start" data-liste-start>▶ Ab der neuesten Folge abspielen</button>' +
+      '<ol class="folgen-liste">' + zeigen.map(function (x) {
+        var f = FOLGEN[x.p][x.n];
+        return '<li class="folge-zeile pod-' + esc(x.p) + '"><button type="button" class="fz-play" data-folge="' + esc(x.p + "|" + x.n) + '" aria-label="Folge abspielen: ' + esc(f.t) + '">' + play + "</button>" +
+          '<div class="fz-body"><div class="fz-t">' + esc(f.t) + '</div><div class="fz-m">' + esc(kurzName(x.p)) + " · Folge " + esc(x.n) +
+          (f.d ? " · " + datumDe(f.d) : "") + (f.l ? " · " + esc(f.l.replace(/^0:/, "")) : "") + "</div></div></li>";
+      }).join("") + "</ol>" +
+      (liste.length > zeigen.length ? '<button type="button" class="alle-btn" data-folgen-mehr>Mehr Folgen zeigen (' + (liste.length - zeigen.length) + " weitere)</button>" : "");
+    player.markiere();
+  }
+
   function zeigePodcasts() {
     document.body.classList.add("compact");
     $("#search-area").hidden = true;
     setzeNav("podcasts");
     var html = '<div class="article"><h1>Die Podcasts hinter dem Lexikon</h1>' +
-      '<p class="intro">Alle Inhalte sind eigene Zusammenfassungen von Folgen dieser Podcasts. Hört gern direkt rein.</p></div><ul class="pod-list">';
+      '<p class="intro">Alle Inhalte sind eigene Zusammenfassungen von Folgen dieser Podcasts. Hört gern direkt rein.</p></div>' +
+      '<section class="neueste" id="folgen-sektion"></section><ul class="pod-list">';
     Object.keys(W.podcasts).forEach(function (k) {
       var p = W.podcasts[k];
       var n = W.artikel.filter(function (x) { return podcastsVon(x).indexOf(k) >= 0; }).length;
@@ -629,6 +782,7 @@
         '<div class="s-links">' + links.join("") + "</div></div></li>";
     });
     view.innerHTML = html + "</ul>";
+    rendereFolgen();
     window.scrollTo(0, 0);
     document.title = "Podcasts · Elternlexikon";
   }
@@ -911,6 +1065,17 @@
       var tp = tw.dataset.tippWeg.split("|"), alle = lies("erledigt", {});
       alle[tp[0]] = (alle[tp[0]] || []).filter(function (x) { return x !== Number(tp[1]); });
       schreib("erledigt", alle); zeigeFavoriten(); return;
+    }
+    var pf = e.target.closest("[data-pfilter]");
+    if (pf) { podFolgenFilter = pf.dataset.pfilter; podFolgenAnzahl = 10; rendereFolgen(); return; }
+    if (e.target.closest("[data-liste-start]")) { player.startListe(folgenListe(podFolgenFilter), 0); return; }
+    if (e.target.closest("[data-folgen-mehr]")) { podFolgenAnzahl += 10; rendereFolgen(); return; }
+    var fo = e.target.closest("[data-folge]");
+    if (fo) {
+      var liste = folgenListe(podFolgenFilter), idx = -1;
+      for (var li = 0; li < liste.length; li++) if (liste[li].p + "|" + liste[li].n === fo.dataset.folge) { idx = li; break; }
+      if (idx >= 0) player.startListe(liste, idx);
+      return;
     }
     var sm = e.target.closest("[data-stimme-mehr]");
     if (sm) {

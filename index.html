@@ -16,7 +16,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css?v=47">
+  <link rel="stylesheet" href="styles.css?v=49">
   <script>
     // Theme vor dem ersten Rendern setzen, damit nichts aufblitzt
     try { var t = localStorage.getItem("theme"); document.documentElement.dataset.theme = t || (window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"); } catch (e) { document.documentElement.dataset.theme = "light"; }
@@ -102,9 +102,44 @@
         <div class="pl-meta"><span id="pl-pod"></span> · <span id="pl-time">0:00</span> / <span id="pl-dur">–</span></div>
         <input type="range" id="pl-seek" min="0" max="1000" value="0" step="1" aria-label="Position in der Folge">
       </div>
+      <button type="button" class="pl-btn pl-expand" id="pl-expand" aria-label="Player vergrößern" title="Vollbild"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 15l6-6 6 6"/></svg></button>
       <button type="button" class="pl-btn pl-close" id="pl-close" aria-label="Player schließen">×</button>
     </div>
     <audio id="pl-audio" preload="none"></audio>
+  </div>
+
+  <div class="fullplayer" id="fullplayer" hidden role="dialog" aria-modal="true" aria-label="Player">
+    <div class="fp-top">
+      <button type="button" class="fp-icon" id="fp-close" aria-label="Player verkleinern"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+      <span class="fp-heading" id="fp-heading">Es läuft</span>
+      <button type="button" class="fp-icon" id="fp-stop" aria-label="Wiedergabe beenden"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="fp-body">
+      <div class="fp-art" id="fp-art" aria-hidden="true"><span id="fp-mark">♪</span></div>
+      <div class="fp-meta">
+        <div class="fp-title" id="fp-title"></div>
+        <div class="fp-sub" id="fp-sub"></div>
+      </div>
+      <div class="fp-seek">
+        <input type="range" id="fp-seek" min="0" max="1000" value="0" step="1" aria-label="Position in der Folge">
+        <div class="fp-times"><span id="fp-time">0:00</span><span id="fp-rest">–</span></div>
+      </div>
+      <div class="fp-controls">
+        <button type="button" class="fp-btn fp-small" id="fp-prev" aria-label="Vorherige Folge"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 5v14M19 5L9 12l10 7z"/></svg></button>
+        <button type="button" class="fp-btn fp-skip" id="fp-back" aria-label="15 Sekunden zurück">−15</button>
+        <button type="button" class="fp-btn fp-main" id="fp-toggle" aria-label="Abspielen oder Pause">
+          <svg class="i-play" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z" fill="currentColor" stroke="none"/></svg>
+          <svg class="i-pause" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 4.5h3.5v15H7zM13.5 4.5H17v15h-3.5z" fill="currentColor" stroke="none"/></svg>
+        </button>
+        <button type="button" class="fp-btn fp-skip" id="fp-fwd" aria-label="15 Sekunden vor">+15</button>
+        <button type="button" class="fp-btn fp-small" id="fp-next" aria-label="Nächste Folge"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17 5v14M5 5l10 7-10 7z"/></svg></button>
+      </div>
+      <div class="fp-extra">
+        <button type="button" class="fp-pill" id="fp-speed" aria-label="Wiedergabetempo ändern">1×</button>
+        <a class="fp-pill" id="fp-link" target="_blank" rel="noopener" href="#">Zur Folge</a>
+      </div>
+      <div class="fp-queue" id="fp-queue" hidden></div>
+    </div>
   </div>
 
   <div class="sheet-backdrop" id="sheet-backdrop" hidden></div>
@@ -137,6 +172,6 @@
   <script src="wissen.js"></script>
   <script src="folgen.js"></script>
   <script src="suche.js?v=25"></script>
-  <script src="app.js?v=53"></script>
+  <script src="app.js?v=54"></script>
 </body>
 </html>
