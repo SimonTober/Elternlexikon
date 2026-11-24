@@ -780,7 +780,7 @@
   }
 
   /* ---------- Neueste Folgen als Wiedergabeliste ---------- */
-  var podFolgenFilter = "alle", podFolgenAnzahl = 10;
+  var podFolgenFilter = "alle", podFolgenAnzahl = 10, podFolgenQ = "";
   function folgenListe(filter) {
     var out = [];
     Object.keys(FOLGEN).forEach(function (p) {
@@ -791,6 +791,14 @@
       });
     });
     out.sort(function (x, y) { return x.d < y.d ? 1 : x.d > y.d ? -1 : Number(y.n) - Number(x.n); });
+    var q = Suche.falte(podFolgenQ).trim();
+    if (q) {
+      var woerter = q.split(/\s+/).filter(Boolean);
+      out = out.filter(function (x) {
+        var f = FOLGEN[x.p][x.n], text = Suche.falte(f.t + " " + (f.b || ""));
+        return woerter.every(function (w) { return text.indexOf(w) >= 0; });
+      });
+    }
     return out;
   }
   function rendereFolgen() {
@@ -805,8 +813,10 @@
       '<svg class="i-pause" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 5h3.500v14H7zM13.500 5H17v14h-3.500z" fill="currentColor" stroke="none"/></svg>';
     box.innerHTML = "<h2>Neueste Folgen</h2>" +
       '<p class="muted">Spielt die Folgen nacheinander ab, beginnend mit der neuesten. Das geht auch bei gesperrtem Bildschirm.</p>' +
+      '<input type="search" id="pf-suche" class="pf-suche" placeholder="Folge suchen, zum Beispiel „Trotz“ oder „Schlaf“" aria-label="Folgen nach Titel durchsuchen" autocomplete="off" value="' + esc(podFolgenQ) + '">' +
       '<div class="pf-chips" role="group" aria-label="Podcast wählen">' + chips + "</div>" +
-      '<button type="button" class="primary-btn pf-start" data-liste-start>▶ Ab der neuesten Folge abspielen</button>' +
+      (liste.length ? '<button type="button" class="primary-btn pf-start" data-liste-start>▶ ' + (podFolgenQ.trim() ? "Treffer nacheinander abspielen" : "Ab der neuesten Folge abspielen") + "</button>"
+        : '<p class="muted pf-leer">Keine Folge mit diesem Wort im Titel gefunden.</p>') +
       '<ol class="folgen-liste">' + zeigen.map(function (x) {
         var f = FOLGEN[x.p][x.n];
         return '<li class="folge-zeile pod-' + esc(x.p) + '"><button type="button" class="fz-play" data-folge="' + esc(x.p + "|" + x.n) + '" aria-label="Folge abspielen: ' + esc(f.t) + '">' + play + "</button>" +
@@ -1065,6 +1075,13 @@
     input.value = ""; zustand.q = ""; this.hidden = true; input.focus(); geheZurListe();
   });
 
+  view.addEventListener("input", function (e) {
+    if (e.target && e.target.id === "pf-suche") {
+      podFolgenQ = e.target.value; podFolgenAnzahl = 10;
+      var pos = e.target.selectionStart; rendereFolgen();
+      var neu = $("#pf-suche"); if (neu) { neu.focus(); try { neu.setSelectionRange(pos, pos); } catch (x) {} }
+    }
+  });
   view.addEventListener("click", function (e) {
     var t;
     if ((t = e.target.closest("[data-q]"))) {

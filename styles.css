@@ -855,3 +855,6 @@ body.fp-offen { overflow: hidden; }
 .wh-meta { font-size: 13px; color: var(--muted); }
 .fp-pill.aktiv { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
 .fp-extra { flex-wrap: wrap; }
+.pf-suche { width: 100%; min-height: 48px; margin: 12px 0 0; padding: 0 16px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--text); font: 400 16px/1 var(--sans); }
+.pf-suche:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 22%, transparent); }
+.pf-leer { margin: 8px 0 14px; }
