@@ -88,6 +88,11 @@
     var vergleich = t.length > q.length + max ? t.slice(0, q.length) : t;
     var dd = distanz(q, vergleich, max);
     if (dd <= max) return dd === 1 ? 0.6 : 0.45;
+    // Suchwort ist länger als das Indexwort (Endung durch Tippfehler nicht gekürzt): Wortanfang mit Tippfehler vergleichen
+    if (t.length >= 5 && q.length > t.length) {
+      var kopf = q.slice(0, t.length + 1);
+      if (distanz(kopf, t, max) <= max) return 0.4;
+    }
     return 0;
   }
 
