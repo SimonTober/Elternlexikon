@@ -51,7 +51,7 @@
 
   /* ---------- Eli: immer genau das Logo (große und kleine Eule), nie abgewandelt ---------- */
   var ELI_LOGO = '<rect width="160" height="160" rx="36" fill="#5a49b0"/><rect x="86" y="20" width="56" height="38" rx="15.8" fill="#F5F3FA"/><path d="M98 56l-4 14 16-14z" fill="#F5F3FA"/><g transform="translate(114 40)"><path class="pulse" d="M0 12C-16 2-16-10-8-10c4 0 6 3 8 6 2-3 4-6 8-6 8 0 8 12-8 22z" fill="#E2603A"/></g><g transform="translate(8 42.8) scale(0.6)"><path d="M58 48C48 44 41 36 41 27c0-5 4-7 8-4 6 5 12 11 19 17z" fill="#CFC4F0"/><g transform="translate(160 0) scale(-1 1)"><path d="M58 48C48 44 41 36 41 27c0-5 4-7 8-4 6 5 12 11 19 17z" fill="#CFC4F0"/></g><ellipse cx="80" cy="92" rx="46" ry="50" fill="#F5F3FA"/><ellipse cx="80" cy="112" rx="27" ry="28" fill="#ECE7FB"/><path d="M64 106q4 5 8 0q4 5 8 0q4 5 8 0q4 5 8 0M68 118q4 5 8 0q4 5 8 0q4 5 8 0" fill="none" stroke="#D6CCF3" stroke-width="2.6" stroke-linecap="round"/><ellipse class="wing" cx="40" cy="100" rx="12" ry="27" fill="#DCD3F5"/><ellipse class="wing" cx="120" cy="100" rx="12" ry="27" fill="#DCD3F5"/><circle cx="62" cy="67" r="24" fill="#E6DFF9"/><circle cx="98" cy="67" r="24" fill="#E6DFF9"/><circle cx="62" cy="67" r="15" fill="#fff"/><g class="eye"><circle cx="63" cy="68" r="9.3" fill="#2A2350"/><circle cx="60" cy="64" r="3.3" fill="#fff"/><circle cx="66" cy="71" r="1.5" fill="#fff"/></g><circle cx="98" cy="67" r="15" fill="#fff"/><g class="eye"><circle cx="99" cy="68" r="9.3" fill="#2A2350"/><circle cx="96" cy="64" r="3.3" fill="#fff"/><circle cx="102" cy="71" r="1.5" fill="#fff"/></g><ellipse cx="46" cy="83" rx="6" ry="4.5" fill="#F4A8B8" opacity=".9"/><ellipse cx="114" cy="83" rx="6" ry="4.5" fill="#F4A8B8" opacity=".9"/><path d="M75 80q5-3 10 0q-2 7-5 9q-3-2-5-9z" fill="#F2B84B"/><path d="M64 140v8m-4-2l4 2 4-2M96 140v8m-4-2l4 2 4-2" stroke="#F2B84B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g><g transform="translate(79.2 84.88) scale(0.36)"><g class="bob"><path d="M58 48C48 44 41 36 41 27c0-5 4-7 8-4 6 5 12 11 19 17z" fill="#EBAA8E"/><g transform="translate(160 0) scale(-1 1)"><path d="M58 48C48 44 41 36 41 27c0-5 4-7 8-4 6 5 12 11 19 17z" fill="#EBAA8E"/></g><ellipse cx="80" cy="92" rx="46" ry="50" fill="#F6C7B0"/><ellipse cx="80" cy="112" rx="27" ry="28" fill="#FCEAE1"/><path d="M64 106q4 5 8 0q4 5 8 0q4 5 8 0q4 5 8 0M68 118q4 5 8 0q4 5 8 0q4 5 8 0" fill="none" stroke="#F2C3AE" stroke-width="2.6" stroke-linecap="round"/><ellipse class="wing" cx="40" cy="100" rx="12" ry="27" fill="#EBAA8E"/><ellipse class="wing" cx="120" cy="100" rx="12" ry="27" fill="#EBAA8E"/><circle cx="62" cy="67" r="24" fill="#FBE1D4"/><circle cx="98" cy="67" r="24" fill="#FBE1D4"/><circle cx="62" cy="67" r="15" fill="#fff"/><g class="eye"><circle cx="63" cy="68" r="9.3" fill="#2A2350"/><circle cx="60" cy="64" r="3.3" fill="#fff"/><circle cx="66" cy="71" r="1.5" fill="#fff"/></g><circle cx="98" cy="67" r="15" fill="#fff"/><g class="eye"><circle cx="99" cy="68" r="9.3" fill="#2A2350"/><circle cx="96" cy="64" r="3.3" fill="#fff"/><circle cx="102" cy="71" r="1.5" fill="#fff"/></g><ellipse cx="46" cy="83" rx="6" ry="4.5" fill="#F4A8B8" opacity=".9"/><ellipse cx="114" cy="83" rx="6" ry="4.5" fill="#F4A8B8" opacity=".9"/><path d="M75 80q5-3 10 0q-2 7-5 9q-3-2-5-9z" fill="#F2B84B"/><path d="M64 140v8m-4-2l4 2 4-2M96 140v8m-4-2l4 2 4-2" stroke="#F2B84B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g></g>';
-  function eliLogo(cls) { return '<svg class="eli ' + (cls || "") + '" viewBox="0 0 160 160" aria-hidden="true">' + ELI_LOGO + "</svg>"; }
+  function eliLogo(cls, ohneKachel) { return '<svg class="eli ' + (cls || "") + '" viewBox="0 0 160 160" aria-hidden="true">' + (ohneKachel ? ELI_LOGO.replace(/^<rect[^>]*>/, "") : ELI_LOGO) + "</svg>"; }
 
   /* ---------- Helfer ---------- */
   var $ = function (sel, el) { return (el || document).querySelector(sel); };
@@ -1376,14 +1376,14 @@
       (wkPflicht ? "" : '<button type="button" class="icon-btn wk-x" data-wk="zu" aria-label="Schließen"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>') +
       '<div class="wk-slides" id="wk-slides">' +
       '<section class="wk-slide wk-los" aria-label="Seite 1 von 2">' +
-      eliLogo("wk-eulen") +
+      eliLogo("wk-eulen", true) +
       '<div class="wk-blase">' +
       '<p style="--i:0"><strong id="wk-titel">Hallo, schön, dass du da bist!</strong> Ich bin Eli, dein Elternlexikon.</p>' +
       '<p style="--i:1">Ich sammle das Wissen aus ausgewählten Eltern-Podcasts und sortiere es nach Themen.</p>' +
       '<p style="--i:2">Stell mir deine Frage in eigenen Worten, stöbere nach Alter oder Bereich, oder hör direkt an der passenden Stelle in die Folge rein.</p></div>' +
       '<div class="wk-aktionen"><button type="button" class="primary-btn" data-wk="weiter">Weiter</button></div></section>' +
       '<section class="wk-slide" id="wk-s2" aria-label="Seite 2 von 2" inert>' +
-      eliLogo("wk-eulen") +
+      eliLogo("wk-eulen", true) +
       '<div class="wk-blase">' +
       '<p style="--i:0"><strong>Gut zu wissen:</strong> Was du hier liest, sind Meinungen und Erfahrungen aus den Podcasts, nicht wissenschaftlich belegt. Wir sind keine Ärztinnen oder Mediziner. Im Notfall hilft die Notfall-Seite.</p>' +
       '<p style="--i:1">Die Suche läuft nur auf deinem Gerät, ohne KI. Beim Zusammenfassen der Folgen haben wir KI als Werkzeug genutzt.</p>' +
@@ -1397,8 +1397,11 @@
       var idx = sl.scrollLeft > sl.clientWidth / 2 ? 1 : 0;
       pk.forEach(function (p, n) { p.classList.toggle("an", n === idx); });
       if (idx === 1) { s2.removeAttribute("inert"); s2.classList.add("wk-los"); }
+      wkHoehe(idx);
     }
+    function wkHoehe(idx) { var s = sl.children[idx]; if (s) sl.style.height = s.offsetHeight + "px"; }
     sl.addEventListener("scroll", zeigt, { passive: true });
+    requestAnimationFrame(function () { wkHoehe(0); });
     if (startSeite === 2) { s2.removeAttribute("inert"); s2.classList.add("wk-los"); requestAnimationFrame(function () { sl.scrollLeft = sl.clientWidth; zeigt(); }); }
   }
   var wkKinder = [], wkNameVal = "";
