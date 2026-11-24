@@ -313,7 +313,7 @@ window.WISSEN = {
     "eigene-kindheit-praegung"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Was antworte ich auf \"Das hat uns auch nicht geschadet\"?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "„Das hat uns früher auch nicht geschadet“ – und plötzlich fühlst du dich ertappt, verletzt oder zum Widerspruch herausgefordert. Kathy Weber hört in solchen Sätzen meist Überforderung, Angst oder Unsicherheit statt eines Angriffs. Hier geht es darum, wie du erst dir selbst und dann den Großeltern mit Einfühlung begegnest, ohne zu sagen, früher sei etwas falsch gewesen."
   },
   {
    "id": "licht-tag-nacht-rhythmus",
@@ -492,7 +492,7 @@ window.WISSEN = {
     "selbstwert-kind"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind ist ängstlich bei Neuem, wie kann ich es stärken?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind zögert vor dem Klettergerüst, dem neuen Spielplatz oder der Übernachtung bei Oma, und du fragst dich, wie viel Anschub nötig ist. Abenteuer ist ein eigenes Bedürfnis, und jedes Kind lebt es anders: Die einen suchen den Nervenkitzel, die anderen brauchen Bekanntes zum Festhalten. Hier geht es darum, wie du Abenteuer so gestaltest, dass dein Kind es schaffen kann."
   },
   {
    "id": "adhs-kind",
@@ -741,7 +741,7 @@ window.WISSEN = {
     "familie-gesellschaft"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie läuft eine Adoption in Deutschland ab?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Der Wunsch nach einem Kind erfüllt sich nicht bei allen auf dem klassischen Weg, und manche Familien entscheiden sich für Adoption oder ein Pflegekind. Beides sind sehr unterschiedliche Wege mit viel Geduld, einer gründlichen Prüfung durch das Jugendamt und der Bereitschaft, mit früheren Brüchen im Leben des Kindes umzugehen. Hier erzählen Gästinnen, wie sie das erlebt haben."
   },
   {
    "id": "aggression-kinder",
@@ -843,7 +843,7 @@ window.WISSEN = {
     "gefuehle-begleiten"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind ist aggressiv, was kann ich tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind schlägt zu, tritt oder beißt, und du bist erschrocken, wütend oder ratlos. Aggression gehört laut den Podcasts zu den normalen Gefühlen, und bei kleinen Kindern geht es meist ums Durchsetzen und Ausprobieren, nicht darum, jemandem wehzutun. Hier geht es darum, wie du Grenzen setzt, ohne die Wut zu verbieten, und wann es sinnvoll ist, sich Hilfe zu holen."
   },
   {
    "id": "arztbesuch",
@@ -1448,7 +1448,7 @@ window.WISSEN = {
     "geschlechtsidentitaet"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie gehe ich mit Schönheitsidealen bei meiner Tochter um?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Deine Tochter will künstliche Nägel, Filter auf Fotos oder bestimmte Kleidung, weil alle anderen das auch haben. Früh lernen Mädchen, dass Aussehen Wert bringt, und das setzt sie unter Druck. Die Podcasts raten zu Gesprächen statt Verboten und dazu, den Blick darauf zu lenken, was ein Körper alles kann."
   },
   {
    "id": "baby-hitze",
@@ -1535,7 +1535,7 @@ window.WISSEN = {
     "wassersicherheit"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Muss ich meinem gestillten Baby bei Hitze Wasser geben?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Es ist heiß, und dein Baby schwitzt und nuckelt. Viele Eltern fragen sich dann, ob es zusätzlich Wasser braucht. Laut den Hosts reicht Muttermilch oder Flaschennahrung auch an heißen Tagen aus, zusätzliches Wasser sei im ersten Halbjahr nicht nötig und könne sogar gefährlich werden."
   },
   {
    "id": "babyschlaf",
@@ -1787,7 +1787,7 @@ window.WISSEN = {
     "kindersitz"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Ist ein Gehfrei schlecht für mein Baby?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Gehfrei, Türhopser und Babyschale sehen bequem aus und werden oft geschenkt oder weitergegeben. Die Hosts raten deutlich davon ab: Sie fördern das Laufenlernen nicht, können die Entwicklung belasten und sind unfallträchtig. Hier steht, warum Babys ihren eigenen Weg zum Sitzen, Stehen und Laufen brauchen und worauf du sonst bei der Ausstattung achten kannst."
   },
   {
    "id": "tragen",
@@ -1885,7 +1885,7 @@ window.WISSEN = {
     "mutterinstinkt"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Warum wollen Babys getragen werden?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Baby will am liebsten nur auf dem Arm sein, und jemand sagt, du verwöhnst es. Die Gästin Dr. Evelin Kirkilionis erklärt, dass der Mensch biologisch ein Tragling ist und Körperkontakt Babys beruhigt. Tragen ist keine Pflicht, und hier steht, worauf du bei Haltung und Trage achten kannst. Bei Fragen zur Hüfte frag Fachleute."
   },
   {
    "id": "bauch-verdauung",
@@ -1999,7 +1999,7 @@ window.WISSEN = {
     "migraene-kinder"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie sieht normaler Stuhlgang beim Baby aus?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Baby krümmt sich, pupst und weint, oder dein größeres Kind klagt über Bauchweh und hat Probleme mit dem Stuhlgang. Der Darm ist in den ersten Monaten noch unreif, deshalb ist vieles normal, was Eltern erschreckt. Hier geht es darum, was eine Kinderärztin im Podcast dazu sagt, welche Zeichen du ernst nehmen solltest und wie Bauch und Gefühle zusammenhängen."
   },
   {
    "id": "beduerfnisorientierte-erziehung",
@@ -3207,7 +3207,7 @@ window.WISSEN = {
     "unfaelle-vorbeugen"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Welche Babyschale ist die richtige?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Der Testsieger ist ausverkauft, der Nachbar schwört auf eine andere Marke, und du weißt nicht, was für dein Kind passt. Laut einer Expertin nützt der beste Sitz nichts, wenn er nicht zu Kind und Auto passt, und die häufigste Fehlerquelle ist der falsche Einbau. Hier steht, worauf es beim Probesitzen ankommt und warum sie rät, so lange wie möglich rückwärts zu fahren."
   },
   {
    "id": "koerper-aufklaerung",
@@ -3462,7 +3462,7 @@ window.WISSEN = {
     "psychische-gesundheit-kind"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie spreche ich mit Kindern über Drogen?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Auch wenn dein Kind noch klein ist, kommen früh Fragen zu Alkohol, Zigaretten und Drogen. Die Gäste setzen auf Vorbeugung und Vertrauen statt auf Verbote: früh ehrlich reden, ansprechbar bleiben und dem Kind viele Quellen für Wohlgefühl mitgeben. Hier erfährst du, wie das gelingen kann und wo du dir Hilfe holst, wenn du nicht weiterkommst."
   },
   {
    "id": "durchschlafen",
@@ -4018,7 +4018,7 @@ window.WISSEN = {
     "eltern-psyche-hilfe"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie finde ich ein Dorf für mein Kind?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Es heißt, man braucht ein ganzes Dorf, um ein Kind großzuziehen, und viele Eltern merken, dass ihres fehlt. Ein Dorf ist eine Gemeinschaft, in der man gibt und nimmt, und wer erschöpft ist, braucht oft zuerst Entlastung. Hier steht, wie du anfängst, ein Dorf aufzubauen, und warum es dabei hilft, ganz konkret um Hilfe zu bitten."
   },
   {
    "id": "vaterrolle",
@@ -4559,7 +4559,7 @@ window.WISSEN = {
     "verabschieden-hallo-sagen"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Soll mein Kind sich entschuldigen müssen?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "„Sag Entschuldigung!“, sagen viele Eltern fast automatisch, und das Kind murmelt es genervt. Die Podcasts sehen das anders: Entschuldigungen auf Befehl bringen wenig, und bei Ausrastern liegt die Verantwortung bei den Erwachsenen. Hier geht es darum, wie du dein Bedauern zeigst, was du künftig anders machen willst und warum du von deinem Kind keine Entschuldigung verlangen musst."
   },
   {
    "id": "erschoepfte-eltern",
@@ -4813,7 +4813,7 @@ window.WISSEN = {
     "fieber"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind hat sich verschluckt, was tue ich jetzt?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind hat sich verschluckt, ist gestürzt oder hat etwas Falsches gegessen, und in dem Moment fällt dir kaum noch etwas ein. Die Notärztinnen und Kinderärzte im Podcast machen Mut: Die meisten Unfälle sind harmlos, und im echten Notfall zählt Ruhe. Hier steht, was sie raten, damit du dich sicherer fühlst, ersetzt aber keinen Erste-Hilfe-Kurs für Kinder."
   },
   {
    "id": "erste-zeit-mit-baby",
@@ -5059,7 +5059,7 @@ window.WISSEN = {
     "selbstwert-kind"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Sehe ich nur noch das schlechte Verhalten meines Kindes?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "„Er ist halt schwierig“ oder „sie ist die Schüchterne“ – solche Sätze fallen schnell und bleiben hängen. Was wir von unserem Kind erwarten, beeinflusst, wie es sich verhält, und auch liebevolle Zuschreibungen können Druck machen. Hier geht es darum, gute Momente bewusst zu sehen und Verhalten zu beschreiben, statt dein Kind festzulegen."
   },
   {
    "id": "erziehungsstile",
@@ -5299,7 +5299,7 @@ window.WISSEN = {
     "pubertaet-teenager"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Woran erkenne ich eine Essstörung bei meinem Kind?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind isst plötzlich heimlich, verweigert Mahlzeiten oder wirkt beim Essen unter Druck, und du machst dir Sorgen. Eine Essstörung beginnt oft in oder vor der Pubertät und zeigt sich nicht immer sofort. Hier erzählt eine Gästin, woran du sie erkennen kannst und was Eltern jetzt helfen kann. Das ist eine Einschätzung und keine Diagnose."
   },
   {
    "id": "exklusivzeit",
@@ -5395,7 +5395,7 @@ window.WISSEN = {
     "freizeitstress"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie viel Einzelzeit braucht mein Kind?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Du hast mehrere Kinder, einen vollen Alltag, und jedes will deine ganze Aufmerksamkeit. Exklusivzeit ist Zeit, in der ein Kind die volle Aufmerksamkeit eines Erwachsenen hat, und sie muss kein Ausflug sein. Schon zehn Minuten oder ein fester Moment pro Woche können reichen, solange dein Kind spürt, dass diese Zeit nur ihm gehört."
   },
   {
    "id": "familie-gesellschaft",
@@ -5506,7 +5506,7 @@ window.WISSEN = {
     "adoption-pflegekind"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Warum fühle ich mich mit Kindern in der Öffentlichkeit unerwünscht?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Du fühlst dich mit Kindern im Café unerwünscht, hast kaum Zeit für dich und fragst dich, warum alles an den Eltern hängt. In mehreren Folgen sprechen die Hosts mit Gästen darüber, dass Erschöpfung oft strukturelle Ursachen hat, von Arbeitszeiten bis zu Steuerregeln. Hier steht, was sie fordern, und warum Vernetzung unter Eltern schon helfen kann."
   },
   {
    "id": "familienbett",
@@ -5643,7 +5643,7 @@ window.WISSEN = {
     "babyschlaf"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind weckt morgens alle sehr früh“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Nachts liegt dein Kind im Elternbett, im eigenen Bett oder wandert von einem zum anderen, und morgens ist es oft viel zu früh wach. Laut den Podcasts gibt es keine feste Regel, es muss für alle passen. Hier erfährst du, wie die Hosts das Familienbett sehen, wie Kinder morgens leiser aufstehen lernen und was für den sicheren Babyschlaf gilt."
   },
   {
    "id": "familienkonferenz",
@@ -5774,7 +5774,7 @@ window.WISSEN = {
     "konflikte-familie"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie führe ich eine Familienkonferenz durch?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Jeden Tag gibt es denselben Streit, und am Ende ist keiner zufrieden. Die Familienkonferenz ist ein Ritual, in dem alle freiwillig auf Augenhöhe sprechen und eine Lösung suchen, mit der alle leben können. Hier steht, wie du anfängst, ab wann es mit Kindern funktioniert und wie du mit den Jüngsten kurz und spielerisch beginnst."
   },
   {
    "id": "perfektionismus-fehler",
@@ -6031,7 +6031,7 @@ window.WISSEN = {
     "kita-eingewoehnung"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Soll ich das Fieber meines Kindes senken?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind glüht, ist matt, und du greifst vielleicht schon zum Fieberzäpfchen. Laut dem Kinderarzt im Podcast ist Fieber eine sinnvolle Reaktion des Körpers und kein Feind. Hier steht seine Faustregel: Schmerzen lindern, nicht das Fieber selbst bekämpfen, und auf das Befinden schauen statt auf die Zahl. Bei Unsicherheit hole dir ärztlichen Rat."
   },
   {
    "id": "flaeschchen",
@@ -6295,7 +6295,7 @@ window.WISSEN = {
     "kommunikation-mit-kindern"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie spreche ich mit meinem Kind, damit es mitmacht?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Manchmal reicht ein einzelnes Wort, und aus einer Bitte wird ein Machtkampf. Kathy Weber lädt Eltern ein, einige Wörter bewusst zu ersetzen, zum Beispiel „aber“, „man“, „müssen“, „immer“ und „nie“. Hier steht, wie du stattdessen deine Bedürfnisse benennst und konkret beschreibst, was du beobachtest. Es sind Einladungen und keine Regeln."
   },
   {
    "id": "freizeitstress",
@@ -6393,7 +6393,7 @@ window.WISSEN = {
     "kind-wechselt-meinung-hobbys"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind will am Wochenende nichts unternehmen, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind will am Wochenende nichts unternehmen, und du hast doch Ausflug, Geburtstag und Verabredung geplant. Was in den Kalender passt, ist noch lange nicht machbar, sagt Nicola Schmidt. Hier geht es darum, warum Sträuben und Bockigkeit oft ein Zeichen für „zu viel“ sind und wie ein ruhiger Tag zu Hause allen guttut."
   },
   {
    "id": "fremdeln",
@@ -6476,7 +6476,7 @@ window.WISSEN = {
     "schuechternheit"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Fremdelt mein Baby beim Papa, weil ich stille?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Baby weint, sobald der Papa es nimmt, und du fragst dich, ob es am Stillen liegt. Fremdeln ist ein normaler Entwicklungsschritt, der viele Kinder ab etwa acht bis neun Monaten betrifft. Hier steht, warum das nichts mit dem Stillen zu tun hat, und warum weder du noch der Papa es persönlich nehmen müsst."
   },
   {
    "id": "freundschaften",
@@ -6569,7 +6569,7 @@ window.WISSEN = {
     "social-media-kinder"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind sagt, es hat keine Freunde, was kann ich tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind erzählt traurig, dass es keine Freunde hat, oder du siehst, wie es am Rand steht. Besonders introvertierte Kinder brauchen oft etwas Anschub, sagen die Gäste. Hier geht es darum, wie du deine eigene Sorge bremst, dein Kind erzählen lässt und gezielt andere Kontakte förderst, statt zu verbieten oder zu kritisieren."
   },
   {
    "id": "frustrationstoleranz",
@@ -6808,7 +6808,7 @@ window.WISSEN = {
     "migraene-kinder"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Was gehört zur Gesundheit meines Kindes außer Vorsorge?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Zur Gesundheit deines Kindes gehört mehr als Vorsorge und Impfplan. Zwei Gäste des Podcasts blicken aus verschiedenen Richtungen darauf: die eine auf das Zusammenspiel von Körper, Psyche und Beziehung, der andere kritisch auf Osteopathie bei Babys und Kindern. Es sind Einschätzungen der Gäste und kein medizinischer Rat. Bei Sorgen ist die Kinderärztin oder der Kinderarzt die erste Anlaufstelle."
   },
   {
    "id": "geburt",
@@ -7196,7 +7196,7 @@ window.WISSEN = {
     "gefuehle-begleiten"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind hat so starke Gefühle, ist das normal?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind erlebt alles intensiver: Es ist schnell überwältigt, tobt oder ist beim kleinsten Reiz außer sich. Gefühlsstarke, hochsensible und wilde Kinder sind kein Erziehungsfehler, sondern haben ein angeborenes Temperament. Wie gut es ihnen damit geht, hängt von Verständnis, Bindung und Begleitung ab, und hier steht, wie du sie dabei unterstützt."
   },
   {
    "id": "gerechtigkeit-geschwister",
@@ -7327,7 +7327,7 @@ window.WISSEN = {
     "patchwork-familie"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Muss ich meine Kinder gleich behandeln?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "„Das ist ungerecht!“ – kaum ein Satz fällt unter Geschwistern so oft. Viele Eltern versuchen dann, alles ganz genau gleich zu verteilen, und merken, dass der Streit trotzdem nicht aufhört. Hier geht es darum, warum gerecht nicht dasselbe ist wie gleich, und wie du mit einer klaren Reihenfolge für mehr Ruhe sorgst."
   },
   {
    "id": "geschichten-buecher",
@@ -7580,7 +7580,7 @@ window.WISSEN = {
     "aussehen-schoenheitsideale"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind sagt, es sei kein Junge. Was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Sohn will einen rosa Schulranzen, oder dein Kind sagt, dass es sich weder als Junge noch als Mädchen fühlt. Viele Eltern sind unsicher, wie sie reagieren sollen und was sie ihrem Kind zutrauen dürfen. Hier sprechen Gäste darüber, wie du das Thema ruhig angehst. Medizinische Angaben sind Aussagen der Gäste und ersetzen keine ärztliche Beratung."
   },
   {
    "id": "geschwisterbindung",
@@ -7807,7 +7807,7 @@ window.WISSEN = {
     "eifersucht-baby"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind will immer Erster sein, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind will beim Anziehen, an der Tür und am Tisch immer Erster sein, und das andere Kind heult. Kathy Weber sieht Wettkampf nicht negativ: Er erfüllt vor allem das Bedürfnis nach Autonomie und hilft Kindern, groß und stark zu werden. Hier steht, wie du das Kind beim Erstsein-Wollen unterstützt und das andere bei seinem Frust begleitest."
   },
   {
    "id": "geschwisterstreit",
@@ -8017,7 +8017,7 @@ window.WISSEN = {
     "kommunikation-mit-kindern"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind antwortet auf \"Wie war dein Tag?\" nur mit gut, was kann ich fragen?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "„Wie war dein Tag?“ – „Gut.“ Und dann ist das Gespräch schon vorbei. Viele Eltern möchten wissen, was in der Schule los war, und stoßen auf eine Wand. Hier steht, wie Kathy Weber mit ihrer Tochter einen Moment gefunden hat, in dem das Erzählen ganz von selbst kommt."
   },
   {
    "id": "wechselmodell-getrennte-eltern",
@@ -8155,7 +8155,7 @@ window.WISSEN = {
     "trennung-scheidung"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind hat Wutanfälle, wenn es vom Papa zurückkommt“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind kommt vom anderen Elternteil zurück, ist aufgedreht oder wütend, und der Abend endet im Wutanfall. Die Hosts halten das für normal, weil das Kind Wechsel und Trennung verarbeiten muss und oft aus viel Action kommt. Hier stehen verschiedene Sichtweisen, welche Struktur Kindern jetzt hilft und wie das passende Modell von Alter und Bedürfnissen abhängt."
   },
   {
    "id": "mutterinstinkt",
@@ -8670,7 +8670,7 @@ window.WISSEN = {
     "luegen"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Was sind die Grundannahmen der gewaltfreien Kommunikation?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Gewaltfreie Kommunikation klingt für viele nach Formeln und Satzbausteinen. Für Kathy Weber ist sie vor allem eine Haltung, die auf Grundannahmen beruht: Jeder tut in jedem Moment das Bestmögliche, um sich ein Bedürfnis zu erfüllen. Das heißt nicht, alles hinzunehmen, und hier steht, wie du Grenzen setzt, ohne zu verurteilen."
   },
   {
    "id": "kommunikation-mit-kindern",
@@ -8781,7 +8781,7 @@ window.WISSEN = {
     "rassismus"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind erzählt nichts aus der Kita, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Du fragst, wie es in der Kita war, und bekommst ein Schulterzucken. Die Gäste sehen gute Kommunikation weniger als Technik und mehr als Haltung: zuwenden, geduldig zuhören, nicht vorschnell werten. Hier steht, warum der Moment oft mehr zählt als die Formulierung, etwa abends, nebenbei oder im Auto."
   },
   {
    "id": "handy-eltern-baby",
@@ -8906,7 +8906,7 @@ window.WISSEN = {
     "bindung"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Darf ich beim Stillen aufs Handy schauen?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Du stillst, und der Blick wandert aufs Handy. Viele Eltern haben dabei ein schlechtes Gewissen. Nicola Schmidt entlastet: Ein Blick, während das Baby schläft oder mit geschlossenen Augen trinkt, scheint kein Problem zu sein. Stressig für das Baby ist eher der plötzliche Kontaktabbruch mitten im Spiel, und hier steht, wie du Pausen ankündigst und dich danach bewusst wieder zuwendest."
   },
   {
    "id": "eltern-psyche-hilfe",
@@ -9019,7 +9019,7 @@ window.WISSEN = {
     "dorf-unterstuetzung"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Ist das noch Erschöpfung oder schon eine Depression?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Du bist schon lange erschöpft, traurig oder gereizt und fragst dich, ob das noch normal ist. Hosts und Gäste sagen klar: Du darfst dir Hilfe holen, ohne erst „schlimm genug“ krank zu sein. Hier steht, welche Wege es gibt, vom Hausarzt über Beratungsstellen bis zur Eltern-Kind-Kur."
   },
   {
    "id": "hirnentwicklung-mythen",
@@ -9230,7 +9230,7 @@ window.WISSEN = {
     "schulangst"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Woran erkenne ich, dass mein Kind hochbegabt ist?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind stellt Fragen, die weit über sein Alter hinausgehen, ist unruhig und trotzdem im Gefühlsleben noch ganz klein. Hochbegabung ist ein Potenzial und kein Garant für gute Leistungen, sagt eine Gästin im Podcast. Hier erfährst du, woran Eltern sie oft früh bemerken, wie sich eine Begabungsdiagnostik von einem klinischen IQ-Test unterscheidet und warum soziale und emotionale Entwicklung länger brauchen kann."
   },
   {
    "id": "intensive-parenting",
@@ -9418,7 +9418,7 @@ window.WISSEN = {
     "unfaelle-vorbeugen"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Krabbelkind räumt ständig alles aus, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Krabbelkind räumt alles aus, zieht an Kabeln und hat dich bald den ganzen Tag im Nein-Modus. Schon Babys haben einen eigenen Willen, und der Forscherdrang ist stärker als jedes Verbot. Hier geht es um die Ja-Umgebung: Du räumst weg, was nicht angefasst werden soll, und gibst deinem Kind stattdessen Dinge zum Ausräumen."
   },
   {
    "id": "jungen-maedchen",
@@ -9662,7 +9662,7 @@ window.WISSEN = {
     "intensive-parenting"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Verwöhne ich mein Kind, wenn ich immer sofort reagiere?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Du nimmst dein Baby sofort hoch, wenn es weint, oder tröstest dein Kind lange, und von allen Seiten kommt der Satz: „Du verwöhnst es!“ Das verunsichert viele Eltern. Hier steht, was die Gäste im Podcast dazu sagen und wo Verwöhnen wirklich zum Problem werden kann."
   },
   {
    "id": "geschwister-vorbereiten",
@@ -10039,7 +10039,7 @@ window.WISSEN = {
     "langeweile"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind will nicht mehr zum Hobby, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind wollte unbedingt zum Hobby, und jetzt will es plötzlich nicht mehr hin, obwohl der Beitrag schon bezahlt ist. Viele Eltern fragen sich, ob sie durchhalten lassen sollen. Hier erzählt Kathy Weber an einem Beispiel, wie du herausfindest, was hinter dem Nein steckt."
   },
   {
    "id": "kooperation-zuhoeren",
@@ -10278,7 +10278,7 @@ window.WISSEN = {
     "grenzen-setzen"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind hat geklaut, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "In der Jackentasche deines Kindes steckt plötzlich etwas, das ihm nicht gehört, und du erschrickst. Viele Eltern fragen sich, ob ihr Kind jetzt „auf die schiefe Bahn“ gerät und wie sie reagieren sollen. Hier steht, wie Kathy Weber solche Situationen ohne Strafe und Verurteilung begleitet."
   },
   {
    "id": "schock-trauma-begleiten",
@@ -10378,7 +10378,7 @@ window.WISSEN = {
     "uebergriffe-schutz"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie begleite ich mein Kind nach einem Unfall oder Schock?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind hat einen Unfall oder einen Schreck erlebt, und du willst alles richtig machen. Kathy Weber schildert aus eigener Erfahrung, was geholfen hat: im Moment klare Ansagen und Nähe, danach Bewegung für das Nervensystem und ein geschützter Raum für Gefühle. Das ist ihre persönliche Einschätzung und kein ärztlicher oder therapeutischer Rat."
   },
   {
    "id": "ausschliessen-mitspielen",
@@ -10632,7 +10632,7 @@ window.WISSEN = {
     "freizeitstress"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind wechselt ständig die Hobbys, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Erst will dein Kind unbedingt Fußball spielen, dann Klavier, und beim Essen steht es alle zwei Minuten auf. Kathy Weber glaubt nicht, dass Kinder einfach ständig ihre Meinung ändern. Meist steckt ein unerfülltes Bedürfnis dahinter, und manchmal will ein Kind einfach Erfahrungen sammeln, was völlig in Ordnung ist."
   },
   {
    "id": "verabschieden-hallo-sagen",
@@ -10695,7 +10695,7 @@ window.WISSEN = {
     "fremdeln"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind will sich nicht von der Oma verabschieden“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind versteckt sich, wenn Oma Tschüss sagen will, oder bringt kein Hallo heraus, und du fühlst dich unter Druck. Viele Eltern wollen, dass ihr Kind höflich ist. Hier geht es darum, was hinter der Verweigerung stecken kann und wie du dein Kind dabei unterstützt."
   },
   {
    "id": "mama-phase",
@@ -11272,7 +11272,7 @@ window.WISSEN = {
     "arztbesuch"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie schütze ich mein Kind vor Missbrauch?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Du willst dein Kind schützen und weißt, dass das ein schwieriges Thema ist. Die Gäste sagen, dass die meisten Übergriffe im nahen Umfeld geschehen und sich nicht sicher verhindern lassen. Hier geht es darum, was du tun kannst: ein starkes Selbstbewusstsein fördern, dein Kind über seinen Körper bestimmen lassen, zum Beispiel auch keine Küsschen geben zu müssen, und im Gespräch bleiben."
   },
   {
    "id": "angst-kind",
@@ -11817,7 +11817,7 @@ window.WISSEN = {
     "freundschaften"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind verhält sich auf dem Spielplatz egoistisch, ist das normal?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Auf dem Spielplatz reißt dein Kind anderen das Spielzeug aus der Hand, und du fühlst die Blicke der anderen Eltern. Kleine Kinder sind erst einmal egoistisch, sagt Kathy Weber, und Teilen lernen sie freiwillig, wenn sie dafür bereit sind. Hier steht, warum Zwang dabei eher schadet und wie dein Kind sozial wachsen kann."
   },
   {
    "id": "impulskontrolle-kleinkind",
@@ -11927,7 +11927,7 @@ window.WISSEN = {
     "aggression-kinder"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kleinkind grinst, wenn es etwas Verbotenes tut, ist es böse?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kleinkind schaut dich an, grinst und tut genau das, was du gerade verboten hast. Das wirkt wie Bosheit, ist aber keine. Kleine Kinder wissen oft, was sie nicht sollen, können ihren Forscherimpuls aber noch nicht unterdrücken. Das Grinsen ist laut Nicola Schmidt ein Zeichen von sozialem Druck, und hier steht, wie du es stoppst und eine passende Alternative anbietest."
   },
   {
    "id": "risiko-freiheit",
@@ -12171,7 +12171,7 @@ window.WISSEN = {
     "entschuldigung"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind will nicht von der Schaukel runter, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind will nicht von der Schaukel runter, oder ein anderes Kind nimmt ihm das Spielzeug weg, und alle Blicke gehen zu dir. Viele Eltern schwanken zwischen Eingreifen und Abwarten. Hier steht, wie Kathy Weber Spielplatzkonflikte ohne Zwang löst."
   },
   {
    "id": "konflikte-familie",
@@ -12279,7 +12279,7 @@ window.WISSEN = {
     "familienkonferenz"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Ist es schlimm, wenn es bei uns oft Konflikte gibt?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Bei euch kracht es oft, und du fragst dich, ob das schlecht ist. Mehrere Gäste sagen: Konflikte gehören zu einer Beziehung auf Augenhöhe und zeigen, welche Bedürfnisse darunter liegen. Hier steht, wie du erst zur Ruhe kommst, dann eine Lösung suchst und wann du dir bei festgefahrenem Streit früh Beratung holen darfst."
   },
   {
    "id": "kreativ",
@@ -12390,7 +12390,7 @@ window.WISSEN = {
     "musik"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie fördere ich die Kreativität meines Kindes?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind kritzelt, schmiert mit dem Brei oder baut aus Kartons etwas, das du nicht erkennst. Gestalten steckt laut einer Gästin von klein auf in Kindern. Hier geht es darum, warum freies Material, Zeit und Raum oft mehr bringen als Bastelsets nach Rezept, und dass auch Malbücher nicht verboten sind, sondern eine Frage des Einsatzes."
   },
   {
    "id": "autofahrten",
@@ -12597,7 +12597,7 @@ window.WISSEN = {
     "kreativ"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind sagt ständig, ihm sei langweilig, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "„Mir ist langweilig!“ – und du spürst den Impuls, sofort etwas anzubieten oder den Fernseher anzuschalten. Langeweile ist laut Kathy Weber kein Bedürfnis, sondern ein Zustand, der für die Entwicklung wichtig sein kann und zu Kreativität führt. Hier erfährst du, warum sie bei Langeweile keine Geräte einschaltet und wie das Aushalten in kleinen Schritten gelingt."
   },
   {
    "id": "laute-kinder",
@@ -12797,7 +12797,7 @@ window.WISSEN = {
     "zeit-fuer-sich"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie komme ich im Familienalltag in die Leichtigkeit?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Der Alltag mit Kindern fühlt sich oft schwer an, und alles scheint sich zu verhaken. Leichtigkeit ist laut Kathy Weber ein Bedürfnis, für das du selbst zuständig bist und nicht dein Kind. Hier steht, wie sie mit der Entscheidung beginnt, es sich leicht zu machen, und wie Prioritäten und kleine Freudemomente helfen."
   },
   {
    "id": "lernschwierigkeiten",
@@ -12908,7 +12908,7 @@ window.WISSEN = {
     "neurodivergenz"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind liest nur Wort für Wort, ist das Legasthenie?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind liest Wort für Wort, rechnet noch an den Fingern, und was gestern geübt wurde, ist heute wieder weg. Viele Eltern spüren früh, dass etwas anders läuft, und wissen nicht, ob das normal ist. Hier sprechen Gäste darüber, wie du genau hinschaust und früh die richtige Unterstützung findest."
   },
   {
    "id": "fuehrung-uebernehmen",
@@ -13042,7 +13042,7 @@ window.WISSEN = {
     "pubertaet-teenager"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Was ist elterliche Führung?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Soll ich mein Kind fragen oder ansagen, und wie viel darf es selbst entscheiden? Kinder brauchen Führung, sagt Kathy Weber: Du bist die Erfahrene und trägst die Verantwortung dafür, dass der Alltag gelingt. Hier steht, wie sich das von Strenge und von Laufenlassen unterscheidet und warum du das Was entscheidest, dein Kind aber beim Wie mitgestalten darf."
   },
   {
    "id": "mehrere-bezugspersonen",
@@ -13425,7 +13425,7 @@ window.WISSEN = {
     "weihnachtsmann"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Warum lügen Kinder?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "„Ich hab die Hände gewaschen!“, sagt dein Kind, und du weißt genau, dass das nicht stimmt. Viele Eltern erschrecken, wenn ihr Kind zum ersten Mal schwindelt, und fragen sich, ob sie streng reagieren müssen. Die Podcasts sehen darin vor allem einen Entwicklungsschritt und eine Botschaft: Dein Kind versucht, sich um etwas zu kümmern, das ihm gerade wichtig ist."
   },
   {
    "id": "mental-load",
@@ -13675,7 +13675,7 @@ window.WISSEN = {
     "ganzheitliche-gesundheit"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Hat mein Kind Migräne?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind klagt immer wieder über Bauchweh, ist übel und will sich nur hinlegen. Laut einem Kinderneurologen im Podcast kann dahinter Migräne stecken, die bei Kindern häufiger ist, als viele denken. Hier steht, woran du sie erkennst und warum sie fachärztlich abgeklärt werden sollte. Es ist seine Einschätzung und kein ärztlicher Rat."
   },
   {
    "id": "schule-lehrkraft-kontakt",
@@ -13799,7 +13799,7 @@ window.WISSEN = {
     "migraene-kinder"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie spreche ich die Lehrerin an, wenn mein Kind zu lange an den Hausaufgaben sitzt?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind sitzt am Abend noch an den Hausaufgaben, ist erschöpft, und du überlegst, ob du der Lehrerin schreiben darfst. Kathy Weber ermutigt Eltern, sich bei überfordernden Aufgaben offen und ohne Vorwurf an die Lehrkraft zu wenden. Hier steht, warum Aufgaben nicht genau so erledigt werden müssen wie gestellt und wie du das ruhig mitteilst."
   },
   {
    "id": "rassismus",
@@ -13901,7 +13901,7 @@ window.WISSEN = {
     "schule-lehrkraft-kontakt"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie erkläre ich meinem Kind Rassismus?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind zeigt auf jemanden und sagt etwas, bei dem du zusammenzuckst, oder stellt Fragen, auf die du keine Antwort hast. Viele Eltern fühlen sich unsicher, wie sie über Rassismus sprechen sollen und ab wann. Hier erzählen Autorinnen und Autoren eines Kinderbuchs, wie das gelingen kann."
   },
   {
    "id": "mitbestimmung-kinder",
@@ -14009,7 +14009,7 @@ window.WISSEN = {
     "grenzen-setzen"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Kann ein Baby schon mitbestimmen?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Schon Babys zeigen, was sie wollen, und Kleinkinder haben eine klare Meinung zu Kleidung und Essen. Viele Eltern fragen sich, wie viel ihr Kind schon selbst entscheiden darf und wo Mitbestimmung aufhört. Hier erfährst du, wie die Gäste das sehen."
   },
   {
    "id": "mittagsschlaf",
@@ -14139,7 +14139,7 @@ window.WISSEN = {
     "kita-allgemein"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind schläft mittags nicht mehr, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Plötzlich wälzt sich dein Kind mittags nur noch hin und her, quengelt und will einfach nicht einschlafen. Lässt du den Mittagsschlaf weg, ist es abends früh k.o. und steht morgens um fünf wieder auf der Matte. Diese Wechselphase ist anstrengend, aber ganz normal, und weder du noch dein Kind machen etwas falsch."
   },
   {
    "id": "mobbing",
@@ -14272,7 +14272,7 @@ window.WISSEN = {
     "freundschaften"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wo fängt Mobbing an?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind wird immer wieder ausgegrenzt, ausgelacht oder schikaniert, und du fragst dich, wo normaler Streit aufhört und Mobbing anfängt. Das Thema beschäftigt viele Eltern, schon ab dem Kindergarten. Hier sprechen Kathy Weber und ihr Gast darüber, wie du Anzeichen erkennst und dein Kind schützt."
   },
   {
    "id": "musik",
@@ -14373,7 +14373,7 @@ window.WISSEN = {
     "familien-rituale"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie wichtig ist Musik für die Entwicklung meines Kindes?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Du singst schief und fragst dich, ob das deinem Kind schadet. Im Gegenteil: Musik fördert im Vorschulalter Gehör, Sprache, Konzentration und soziale Fähigkeiten, und schräges Singen ist besser als gar keins. Es geht um Freude und nicht um Perfektion, und gemeinsames Singen lässt sich nicht durch CDs ersetzen."
   },
   {
    "id": "spielen",
@@ -14754,7 +14754,7 @@ window.WISSEN = {
     "ganzheitliche-gesundheit"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie viel Zeit sollte mein Kind in der Natur verbringen?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Es ist grau, nass, und drinnen ist es so gemütlich. Der Mensch will von Natur aus nach draußen, sagt Nicola Schmidt, und Naturreize tun dem Gehirn und dem Stress von Kindern und Eltern gut. Du brauchst dafür keinen Waldausflug, denn schon zehn bis fünfzehn Minuten täglich haben einen Effekt, wenn sie regelmäßig stattfinden."
   },
   {
    "id": "neurodivergenz",
@@ -14865,7 +14865,7 @@ window.WISSEN = {
     "adhs-eltern"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Woran erkenne ich, dass mein Kind neurodivergent ist?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind reagiert auf Geräusche, Wechsel oder Regeln anders als andere, und dein Bauchgefühl sagt dir, dass da mehr dahintersteckt. Begriffe wie ADHS, Autismus oder PDA verunsichern viele Eltern. Hier sprechen Gäste darüber, wie du dein Kind im Alltag begleitest und wann eine Diagnostik helfen kann. Eine Diagnose stellen nur Fachleute."
   },
   {
    "id": "patchwork-familie",
@@ -14998,7 +14998,7 @@ window.WISSEN = {
     "adoption-pflegekind"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie hilft man einem Kind, das zwischen zwei Haushalten wechselt?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind wechselt zwischen zwei Haushalten, oder ihr seid eine neu zusammengesetzte Familie, und im Alltag ruckelt es an allen Ecken. Jeder in der Familie muss seinen Platz erst finden. Hier erfährst du, was Kinder und Eltern dabei brauchen und wie auch Stiefeltern ankommen können."
   },
   {
    "id": "psychische-gesundheit-kind",
@@ -15107,7 +15107,7 @@ window.WISSEN = {
     "essstoerungen"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Woran erkenne ich, dass mein Kind psychisch belastet ist?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind wirkt verändert, ist oft traurig, ängstlich oder zieht sich zurück, und du fragst dich, ob das noch eine Phase ist. Kinder zeigen Belastung oft über Körper und Verhalten statt über Worte. Hier steht, worauf du achten kannst und wann du dir Hilfe holen darfst."
   },
   {
    "id": "erwartungen-elternschaft",
@@ -15596,7 +15596,7 @@ window.WISSEN = {
     "selbststaendigkeit"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie mache ich mein Kind resilient?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Du möchtest dein Kind stark machen für das, was kommt, für Streit, Trennungen und schwere Zeiten, und dich selbst auch. Hier geht es darum, was Resilienz eigentlich ist und welche Rolle du und der Alltag dabei spielen. Dazu kommen ein paar kleine Übungen, die du direkt ausprobieren kannst."
   },
   {
    "id": "respekt",
@@ -15728,7 +15728,7 @@ window.WISSEN = {
     "fuehrung-uebernehmen"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Warum hat mein Kind keinen Respekt vor mir?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "„Du hast keinen Respekt vor mir!“ – ein Satz, den viele Eltern denken oder sagen, wenn ihr Kind widerspricht oder nicht hört. Aber was ist eigentlich Respekt, und wer muss ihn wem entgegenbringen? Hier erfährst du, wie Kathy Weber das sieht."
   },
   {
    "id": "familien-rituale",
@@ -15916,7 +15916,7 @@ window.WISSEN = {
     "veraenderungen-umzug"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Warum fällt mein Kind plötzlich zurück?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind, das schon trocken war, nässt wieder ein, will plötzlich die Flasche oder braucht wieder jemanden zum Einschlafen. Zwei Gästinnen erklären, dass Kinder bei Überforderung oft auf eine frühere Entwicklungsstufe zurückgehen. Das ist eine Art Stressabbau und kein Misserfolg der Eltern, und hier steht, wie du es eine Weile mittragen und danach behutsam wieder Richtung Selbstständigkeit gehen kannst."
   },
   {
    "id": "schlaflernprogramme",
@@ -16001,7 +16001,7 @@ window.WISSEN = {
     "beduerfnisorientierte-erziehung"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Soll ich mein Baby schreien lassen?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Du bist müde, dein Baby schläft schlecht, und irgendjemand empfiehlt dir ein Schlaflernprogramm. Die Versprechen klingen verlockend, und viele Eltern fragen sich, ob sie es probieren sollten. Hier erfährst du, wie die Hosts und ihre Gäste das einschätzen. Bei Schlafproblemen kann ärztlicher oder fachlicher Rat sinnvoll sein."
   },
   {
    "id": "schlechte-gewohnheiten",
@@ -16184,7 +16184,7 @@ window.WISSEN = {
     "familie-gesellschaft"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie gehe ich mit schlechtem Gewissen um, wenn ich arbeiten gehe?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Du gehst zur Arbeit und fühlst dich schlecht, weil dein Kind nicht bei dir ist, oder du bleibst zu Hause und vermisst den Beruf. Das Hin- und Hergerissensein gehört für viele Mütter dazu. Hier geht es darum, warum Arbeit und Zeit mit dem Kind beide gültige Bedürfnisse sind und wie du ein Pendel findest, das sich in der Mitte einpendelt."
   },
   {
    "id": "schnuller",
@@ -16361,7 +16361,7 @@ window.WISSEN = {
     "bauch-verdauung"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Baby schreit stundenlang, was kann ich tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Baby schreit stundenlang, und nichts tröstet es, nicht Tragen, nicht Stillen, nicht Wiegen. Das Schreien setzt oft schlagartig ein und bringt Eltern an ihre Grenzen. Der wichtigste Schritt in der Not ist, das Baby sicher abzulegen und kurz wegzugehen, und hier stehen auch Hilfsangebote wie Schreiambulanzen, Kinderärztin und Frühe Hilfen."
   },
   {
    "id": "schulangst",
@@ -16471,7 +16471,7 @@ window.WISSEN = {
     "bauch-verdauung"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind will nicht in die Schule, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind hat morgens Bauchweh, weint oder will nicht mehr in die Schule. Die Gäste raten, solche Zeichen ernst zu nehmen und herauszufinden, was dahintersteckt, vom Leistungsdruck über Auslachen bis zur Trennung. Hol die Schule früh mit ins Boot und bleib Anker für dein Kind, und bei körperlichen Beschwerden kann eine fachliche Abklärung nötig sein."
   },
   {
    "id": "schule-lernen",
@@ -16583,7 +16583,7 @@ window.WISSEN = {
     "perfektionismus-fehler"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind hat keine Lust aufs Lernen, was kann ich tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind hat keine Lust aufs Lernen, die Note ist schlecht, und die Stimmung zu Hause kippt. Viele Eltern setzen dann auf mehr Druck oder Belohnungen und merken, dass es nicht besser wird. Hier geht es darum, was Kinder wirklich motiviert und wie du sie in der Schule begleitest."
   },
   {
    "id": "schulreife-rueckstellung",
@@ -16689,7 +16689,7 @@ window.WISSEN = {
     "hochbegabung"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Woran merke ich, dass mein Kind schulreif ist?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Die Einschulung rückt näher, und du fragst dich, ob dein Kind schon so weit ist oder noch ein Jahr braucht. Kindergarten, Großeltern und Freunde haben alle eine Meinung dazu. Hier geht es darum, woran du Schulreife erkennst und warum der Blick auf dein Kind wichtiger ist als der auf die Erwartungen von außen."
   },
   {
    "id": "schulstart",
@@ -16962,7 +16962,7 @@ window.WISSEN = {
     "dorf-unterstuetzung"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Ich bin in der Schwangerschaft ständig müde, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Du bist schwanger und müde wie nie, hörst ungefragte Ratschläge und fühlst dich zwischen Vorfreude und Sorgen hin- und hergerissen. Eine der Hosts erzählt, wie stark die Müdigkeit bei ihr war und was sie daraus gelernt hat. Hier sprechen die Hosts mit Gästinnen auch über Ängste und die Rolle der Partner. Das sind persönliche Erfahrungen und kein ärztlicher Rat."
   },
   {
    "id": "krise-krankheit-familie",
@@ -17073,7 +17073,7 @@ window.WISSEN = {
     "schock-trauma-begleiten"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie sage ich meinen Kindern, dass ich schwer krank bin?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Eine schwere Krankheit stellt eine Familie auf den Kopf, ob bei einem Elternteil oder beim Kind. Betroffene Eltern berichten aus ihrem Alltag: offen und kindgerecht sprechen, auf das Wesentliche zusammenstreichen und früh Hilfe annehmen. Das sind persönliche Erfahrungen und kein medizinischer oder rechtlicher Rat."
   },
   {
    "id": "schuechternheit",
@@ -17195,7 +17195,7 @@ window.WISSEN = {
     "freundschaften"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie stärke ich ein schüchternes Kind?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind versteckt sich hinter deinem Bein, wenn jemand Hallo sagt, und beim Geburtstag steht es lieber am Rand. Du möchtest helfen und fragst dich, ob du es anschieben solltest. Hier geht es darum, wie du dein Kind in seinem Tempo stärken kannst."
   },
   {
    "id": "selbststaendigkeit",
@@ -17484,7 +17484,7 @@ window.WISSEN = {
     "selbststaendigkeit"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind sagt „Ich bin dumm“, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "„Ich bin dumm“, sagt dein Kind, oder „Ich kann das nicht“, und gibt auf. Dein erster Impuls ist zu widersprechen. Kathy Weber sieht Selbstwert als Bedürfnis, das auf guter Bindung wächst, und übersetzt solche Sätze in einen Wunsch, etwas können oder verstehen zu wollen. Hier steht, wie du Schutzschild bist und Selbstwert vorlebst."
   },
   {
    "id": "eltern-selbstregulation",
@@ -17622,7 +17622,7 @@ window.WISSEN = {
     "beduerfnisse-erkennen"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie beruhige ich mich, wenn mein Kind schreit?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind schreit, du wirst hektisch, dein Herz rast, und du weißt gerade nicht, was du tun sollst. Das ist ein Alarmmodus, den viele Eltern kennen. Hier erfährst du, wie du über den Atem deinem Stresssystem eine Pause gibst und warum sich dein Kind dann oft mit beruhigt."
   },
   {
    "id": "schule-mitbestimmung",
@@ -17726,7 +17726,7 @@ window.WISSEN = {
     "mitbestimmung-kinder"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind mag seinen Sitzplatz in der Schule nicht, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind erzählt, dass es seinen Sitzplatz hasst und niemand gefragt hat. Für Grundschulkinder ist Zugehörigkeit laut Kathy Weber das Oberbedürfnis, und dazu gehört, einbezogen zu werden. Kinder können nicht allein bestimmen, sollten aber gefragt werden, und hier steht, wie du dein Kind dabei begleiten kannst."
   },
   {
    "id": "social-media-kinder",
@@ -17835,7 +17835,7 @@ window.WISSEN = {
     "vergleich-erwartungen-eltern"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Ab wann darf mein Kind Instagram, TikTok oder WhatsApp nutzen?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind will ein Handy, Instagram oder WhatsApp, weil alle anderen es auch haben. Viele Eltern wissen nicht, ab wann das passt, welche Regeln sinnvoll sind und wie sie ihr Kind schützen können. Hier sprechen die Hosts und ihre Gäste darüber, wie sie damit umgehen."
   },
   {
    "id": "ansagen-positiv-formulieren",
@@ -17936,7 +17936,7 @@ window.WISSEN = {
     "gfk-grundannahmen"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Warum hört mein Kind auf Nicht und Nein nicht?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "„Wirf nicht mit dem Essen!“ – und schon fliegt die Nudel quer durch die Küche. Kinder hören bei einem Verbot vor allem, was sie nicht tun sollen, und das Nicht geht unter. Hier erfährst du, wie du stattdessen sagst, was du dir wünschst, und warum du dafür zuerst selbst wissen musst, was du von deinem Kind willst."
   },
   {
    "id": "stillen",
@@ -18490,7 +18490,7 @@ window.WISSEN = {
     "gerechtigkeit-geschwister"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind wurde in der Schule bestraft, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind kommt nach Hause und erzählt, dass es in der Schule bestraft wurde, und findet es ungerecht. Das Wichtigste ist laut Kathy Weber, dass dein Kind mit allem nach Hause kommen kann und dort bedingungslos angenommen wird. Hier steht, warum du erst auf Gefühl und Bedürfnis hörst, bevor du nach dem Hergang fragst, und wie du mit der Lehrkraft sprichst, ohne sie zu verurteilen."
   },
   {
    "id": "paarstreit-vor-kindern",
@@ -18620,7 +18620,7 @@ window.WISSEN = {
     "trennung-scheidung"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Dürfen meine Kinder miterleben, wenn wir uns streiten?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Ihr streitet, es wird laut, und plötzlich steht das Kind in der Tür. Viele Eltern fragen sich danach, ob das Kind etwas abbekommen hat und ob sie sich überhaupt noch vor den Kindern streiten dürfen. Hier erfährst du, wie das gelingen kann und was dein Kind danach braucht."
   },
   {
    "id": "konflikt-eltern-spielplatz",
@@ -18739,7 +18739,7 @@ window.WISSEN = {
     "kind-sozial-entwicklung"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Eine andere Mutter will, dass ich mein Kind ausschimpfe, was sage ich?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind nimmt einem anderen die Schaufel weg oder schubst es, und die andere Mutter sieht dich erwartungsvoll an. Viele Eltern fühlen sich dann unter Druck, zu schimpfen oder eine Entschuldigung zu erzwingen. Nicola Schmidt rät, zuerst anzuerkennen, was die andere Person braucht, und die Situation dann mit dem Gedanken zu verlassen, dass dein Kind es lernen wird."
   },
   {
    "id": "streit-unter-kindern",
@@ -18838,7 +18838,7 @@ window.WISSEN = {
     "aggression-kinder"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Warum streiten Kinder so viel?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Kaum sitzen die Kinder zusammen, fliegen die Fetzen, meist ums Spielzeug oder den besten Platz. Streit beginnt laut Nicola Schmidt mit etwa anderthalb bis zwei Jahren, und zuverlässig lösen Kinder Konflikte erst mit etwa zehn. Hier steht, warum du nicht per Machtwort entscheidest, sondern beide fragst, was sie brauchen."
   },
   {
    "id": "morgenroutine",
@@ -19234,7 +19234,7 @@ window.WISSEN = {
     "aussehen-schoenheitsideale"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Ab welchem Alter bekommt ein Kind Taschengeld?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind hat entdeckt, dass man mit Geld etwas kaufen kann, und fragt: „Krieg ich auch Taschengeld?“ Dann tauchen die Fragen auf, ab wann, wie viel und was es davon kaufen darf. Hier steht, wie Kathy Weber das sieht und wie du es für euch regelst."
   },
   {
    "id": "temperament-erziehung",
@@ -19418,7 +19418,7 @@ window.WISSEN = {
     "tod-trauer"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Brauchen wir als Eltern ein Testament?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Mit Kindern wird vieles wichtiger, auch wenn man es ungern bedenkt: Wer erbt, wenn etwas passiert, und wer kümmert sich um die Kinder? Eine Gästin erklärt, dass das Gesetz vieles regelt, aber oft nicht so, wie Eltern es wollen. Das sind ihre Aussagen und keine verbindliche Rechtsberatung, und für deinen Fall lass dich von einer Fachperson beraten."
   },
   {
    "id": "tod-trauer",
@@ -19528,7 +19528,7 @@ window.WISSEN = {
     "vorsorge-erbrecht"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie erkläre ich meinem Kind den Tod?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Opa ist gestorben, oder ein Haustier, und dein Kind stellt Fragen, auf die du keine Antwort hast. Gerade wenn du selbst traurig bist, fällt es schwer, die richtigen Worte zu finden. Hier geht es darum, wie du mit deinem Kind über den Tod sprichst und was die Familie in der Trauer braucht."
   },
   {
    "id": "trennung-scheidung",
@@ -19638,7 +19638,7 @@ window.WISSEN = {
     "regression-rueckschritte"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie sage ich meinem Kind, dass wir uns trennen?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Ihr trennt euch oder überlegt es, und du fragst dich, wie du es deinem Kind sagst und ob ihr der Kinder wegen zusammenbleiben solltet. Das sind schwere Entscheidungen, und die Sorge um die Kinder wiegt dabei besonders. Hier sprechen Gäste darüber, was Kinder in dieser Zeit brauchen. Bei rechtlichen und finanziellen Fragen hilft Fachberatung."
   },
   {
    "id": "trennungsschmerz-abschied",
@@ -19771,7 +19771,7 @@ window.WISSEN = {
     "hobby-keine-lust"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind weint, wenn ich zur Arbeit gehe, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind klammert sich an dich, weint beim Abschied oder will nicht, dass du zur Arbeit gehst, und du gehst mit schwerem Herzen. Abschiede gehören zum Alltag, und trotzdem tun sie manchmal richtig weh. Hier geht es darum, wie ihr Abschiede gut gestaltet und was dein Kind dabei stützt."
   },
   {
    "id": "trigger-inneres-kind",
@@ -20283,7 +20283,7 @@ window.WISSEN = {
     "regression-rueckschritte"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie bereite ich mein Kind auf einen Umzug vor?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Ihr zieht um, oder in eurer Familie ändert sich gerade vieles, und dein Kind wirkt auf einmal ganz anders: anhänglich, wütend, aufgedreht. Für dich ist es ein Wohnortwechsel, für dein Kind oft viel mehr. Hier geht es darum, was Kinder in solchen Zeiten brauchen und wie ihr den Wechsel gut begleiten könnt."
   },
   {
    "id": "kinderwunsch-verlust",
@@ -20390,7 +20390,7 @@ window.WISSEN = {
     "adoption-pflegekind"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wir werden nicht schwanger, was tun?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Der Wunsch nach einem Kind erfüllt sich nicht immer, und manchmal geht eine Schwangerschaft zu Ende, bevor das Kind auf der Welt ist. Die Gäste sprechen über diese schweren Erfahrungen und sagen, dass Trauer, Wut und Angst Raum brauchen. Hier geht es darum, was ihnen geholfen hat. Das sind persönliche Erfahrungen und kein medizinischer Rat, und bei starker Belastung hilft professionelle Begleitung."
   },
   {
    "id": "unfaelle-vorbeugen",
@@ -20504,7 +20504,7 @@ window.WISSEN = {
     "baby-ausstattung-motorik"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie mache ich die Wohnung kindersicher?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind krabbelt, klettert, probiert alles aus, und du siehst überall Gefahren. Die Hosts und ihre Gästinnen raten zu einem Mittelweg: Sichere, was lebensbedrohlich werden kann, und lass Kinder sonst erleben, dass man sich auch mal wehtun kann. Manche Alltagsgefahren werden deutlich unterschätzt, und das sind Aussagen der Gäste und kein ärztlicher Rat."
   },
   {
    "id": "geschenke-unpassend-zu-viele",
@@ -20620,7 +20620,7 @@ window.WISSEN = {
     "weihnachtsmann"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Was tun bei zu vielen Geschenken für mein Kind?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Die Oma schenkt zum dritten Mal etwas, das du nicht möchtest, oder das Kinderzimmer quillt über. Kathy Weber versteht Geschenke als Strategie der Schenkenden, sich Freude oder Wertschätzung zu erfüllen. Hier geht es darum, wie du Wünsche äußerst, ohne etwas vorzuschreiben, und wie du Enttäuschung bei deinem Kind mit Empathie begleitest."
   },
   {
    "id": "urlaub-reisen",
@@ -20878,7 +20878,7 @@ window.WISSEN = {
     "grosseltern"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Warum fühle ich mich neben Instagram-Familien schlecht?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Du scrollst durch Bilder perfekter Familien und fühlst dich plötzlich schlecht. Dazu kommen Expertenmeinungen, die sich widersprechen, und gut gemeinte Sprüche von Verwandten. Hier geht es darum, wie der Druck entsteht und wie du bei dir bleibst."
   },
   {
    "id": "pubertaet-teenager",
@@ -21008,7 +21008,7 @@ window.WISSEN = {
     "essstoerungen"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wann fängt die Pubertät an und woran erkenne ich es?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Schulkind sagt „Mir doch egal“, rollt die Augen und will plötzlich alles allein machen. Kathy Weber beschreibt die Pubertät als dritte und letzte Autonomiephase, die oft schon ab etwa neun Jahren beginnt. Hier steht, was dein Kind jetzt braucht, nämlich vor allem Achtung, und wie du dich schon als Eltern von Schulkindern darauf vorbereiten kannst."
   },
   {
    "id": "wassersicherheit",
@@ -21119,7 +21119,7 @@ window.WISSEN = {
     "baby-hitze"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Woran erkenne ich, dass ein Kind ertrinkt?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Ein Planschbecken im Garten, der Teich der Nachbarn, die Badewanne am Abend: Wasser macht Kindern riesigen Spaß. Gleichzeitig ist es eines der Themen, bei denen Eltern am meisten Angst haben. Hier geht es darum, worauf du zu Hause und am Wasser achten kannst und wie das Schwimmenlernen entspannt gelingt."
   },
   {
    "id": "weihnachtsmann",
@@ -21218,7 +21218,7 @@ window.WISSEN = {
     "grosseltern"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Soll ich mein Kind mit dem Weihnachtsmann anlügen?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind schreibt Wunschzettel, lauscht auf Glöckchen und fragt dich, wie der Weihnachtsmann in alle Häuser kommt. Spätestens dann stellt sich die Frage, ob du die Geschichte mitspielst oder die Wahrheit sagst. Hier erfährst du, wie die Hosts darüber denken und was du tun kannst, wenn dein Kind anfängt zu zweifeln."
   },
   {
    "id": "baby-weinen",
@@ -21341,7 +21341,7 @@ window.WISSEN = {
     "babyschlaf"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Baby schreit viel, was braucht es?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Baby weint, du hast gestillt, gewickelt, getragen, und es weint trotzdem weiter. Das zerrt an den Nerven und lässt viele Eltern an sich zweifeln. Weinen ist die Sprache deines Babys, und du musst nicht jedes Weinen verhindern. Hier geht es darum, wie du herausfindest, was es braucht, und wie du dabei auch für dich selbst sorgst."
   },
   {
    "id": "wertschaetzung",
@@ -21419,7 +21419,7 @@ window.WISSEN = {
     "verwoehnen"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie sage ich meinem Kind Danke, ohne zu loben?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "„Danke“ geht uns schnell über die Lippen, und oft ist es nur eine Floskel. Dein Kind hat vielleicht gerade den Tisch gedeckt oder etwas gemalt, und du fragst dich, was du sagen könntest. Hier steht, wie Kathy Weber Wertschätzung anders ausdrückt."
   },
   {
    "id": "eigene-kindheit-praegung",
@@ -21528,7 +21528,7 @@ window.WISSEN = {
     "eltern-psyche-hilfe"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie prägt meine eigene Kindheit meine Erziehung?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Du hörst dich plötzlich an wie deine Mutter oder dein Vater, obwohl du es ganz anders machen wolltest. Das erschrickt viele Eltern. Hier geht es darum, wie deine eigene Kindheit mitwirkt, wenn du mit deinem Kind umgehst, und wie du damit freundlich umgehen kannst."
   },
   {
    "id": "wochenbett",
@@ -22058,7 +22058,7 @@ window.WISSEN = {
     "fieber"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wann kommt der erste Zahn?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Baby sabbert, nuckelt an allem und ist quengelig, und du fragst dich, ob die ersten Zähne kommen. Dazu gibt es viele Meinungen, etwa ob Zahnen Fieber macht, und beim Thema Fluorid sind sogar die Fachleute uneins. Hier schildern die Hosts, was sie dazu wissen und wie sie abgewogen haben."
   },
   {
    "id": "zeit-fuer-sich",
@@ -22319,7 +22319,7 @@ window.WISSEN = {
     "erschoepfte-eltern"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Wie gehe ich mit Zeitdruck um, wenn mein Kind trödelt?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Um halb acht müsst ihr los, und dein Kind sitzt noch im Schlafanzug und baut mit Bauklötzen. Du wirst lauter, es wird langsamer, und am Ende seid ihr beide gestresst. Die Podcasts schauen darauf, was in solchen Momenten in dir passiert, warum Zeitdruck auch mit unseren Strukturen zu tun hat und was euch morgens entspannter machen kann."
   },
   {
    "id": "zwaenge-kind",
@@ -22417,7 +22417,7 @@ window.WISSEN = {
     "neurodivergenz"
    ],
    "medizinisch": true,
-   "einleitung": "Viele Eltern kennen diese Situation: „Mein Kind wäscht sich ständig die Hände, ist das ein Waschzwang?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Dein Kind wäscht sich ständig die Hände, tritt nie auf Fugen oder braucht feste Rituale, sonst wird es unruhig. Viele Eltern fragen sich, wann so etwas noch eine Macke ist und wann ein Zwang. Hier schildert der Gast Peter Wittkamp aus eigener Erfahrung, woran du den Unterschied erkennst. Das ist keine ärztliche Beratung."
   },
   {
    "id": "zaehne-putzen",
@@ -22694,7 +22694,7 @@ window.WISSEN = {
     "abenteuer-mut"
    ],
    "medizinisch": false,
-   "einleitung": "Viele Eltern kennen diese Situation: „Warum fallen meinem Kind Übergänge so schwer?“. Hier steht, was dahinter stecken kann und was helfen kann."
+   "einleitung": "Der Familienalltag besteht fast nur aus Übergängen: vom Spiel zum Essen, vom Spielplatz nach Hause, vom Schlafanzug zur Kita. Kinder sagen dazu oft Nein, weil sie ihnen schwerfallen, erklärt Kathy Weber. Hier steht, wie du erst schaust, was dein Kind braucht, um mitzumachen, konkret ankündigst und Gefühle begleitest."
   }
  ]
 };
