@@ -48,6 +48,37 @@
     schreib("verlauf", verlauf);
   }
 
+
+  /* ---------- Eli, die Eulen (kleine Grafiken) ---------- */
+  var EULE_LILA = { t: "#9C8CDB", b: "#CFC4F0", y: "#EEE8FB", sc: "#BFB2EC", w: "#B3A5E8", f: "#E6DFF9" };
+  var EULE_PFIRSICH = { t: "#E39A78", b: "#F6C7B0", y: "#FCEAE1", sc: "#F2C3AE", w: "#EBAA8E", f: "#FBE1D4" };
+  function euleTeile(c, winkt) {
+    var ohr = '<path d="M58 48C48 44 41 36 41 27c0-5 4-7 8-4 6 5 12 11 19 17z" fill="' + c.t + '"/>';
+    var r = ohr + '<g transform="translate(160 0) scale(-1 1)">' + ohr + "</g>" +
+      '<ellipse cx="80" cy="92" rx="46" ry="50" fill="' + c.b + '"/><ellipse cx="80" cy="112" rx="27" ry="28" fill="' + c.y + '"/>' +
+      '<path d="M64 106q4 5 8 0q4 5 8 0q4 5 8 0q4 5 8 0M68 118q4 5 8 0q4 5 8 0q4 5 8 0" fill="none" stroke="' + c.sc + '" stroke-width="2.6" stroke-linecap="round"/>' +
+      '<ellipse cx="40" cy="100" rx="12" ry="27" fill="' + c.w + '"/>' +
+      (winkt ? '<g class="winkt"><ellipse cx="128" cy="76" rx="11" ry="26" fill="' + c.w + '" transform="rotate(35 128 76)"/></g>' : '<ellipse cx="120" cy="100" rx="12" ry="27" fill="' + c.w + '"/>') +
+      '<circle cx="62" cy="67" r="24" fill="' + c.f + '"/><circle cx="98" cy="67" r="24" fill="' + c.f + '"/>';
+    [62, 98].forEach(function (x) {
+      r += '<circle cx="' + x + '" cy="67" r="15" fill="#fff"/><g class="eye"><circle cx="' + (x + 1) + '" cy="68" r="9.3" fill="#2A2350"/><circle cx="' + (x - 2) + '" cy="64" r="3.3" fill="#fff"/><circle cx="' + (x + 4) + '" cy="71" r="1.5" fill="#fff"/></g>';
+    });
+    return r + '<ellipse cx="46" cy="83" rx="6" ry="4.5" fill="#F4A8B8" opacity=".9"/><ellipse cx="114" cy="83" rx="6" ry="4.5" fill="#F4A8B8" opacity=".9"/>' +
+      '<path d="M75 80q5-3 10 0q-2 7-5 9q-3-2-5-9z" fill="#F2B84B"/>' +
+      '<path d="M64 140v8m-4-2l4 2 4-2M96 140v8m-4-2l4 2 4-2" stroke="#F2B84B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>';
+  }
+  // Große und kleine Eule (wie im Logo), optional mit Herz oder Mond (Dunkelmodus)
+  function eliPaar(cls, herz) {
+    return '<svg class="eli ' + (cls || "") + '" viewBox="0 0 160 160" aria-hidden="true">' +
+      '<path class="eli-mond" transform="translate(' + (herz ? -116 : 0) + ' 0)" d="M138 20a14 14 0 1 0 10 24 11 11 0 1 1-10-24z" fill="#F7D774"/>' +
+      (herz ? '<g transform="translate(118 36)"><path class="pulse" d="M0 12C-16 2-16-10-8-10c4 0 6 3 8 6 2-3 4-6 8-6 8 0 8 12-8 22z" fill="#EE7F5B"/></g>' : "") +
+      '<g transform="translate(8 42.8) scale(.6)">' + euleTeile(EULE_LILA) + "</g>" +
+      '<g transform="translate(79.2 84.88) scale(.36)"><g class="bob">' + euleTeile(EULE_PFIRSICH) + "</g></g></svg>";
+  }
+  function eliKlein(cls) {
+    return '<svg class="eli ' + (cls || "") + '" viewBox="0 0 160 160" aria-hidden="true"><g class="bob">' + euleTeile(EULE_PFIRSICH, true) + "</g></svg>";
+  }
+
   /* ---------- Helfer ---------- */
   var $ = function (sel, el) { return (el || document).querySelector(sel); };
   function esc(s) {
@@ -453,7 +484,7 @@
     }
 
     if (!liste.length) {
-      view.innerHTML = '<div class="empty"><svg class="empty-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.500" cy="10.500" r="6.500"/><path d="M15.500 15.500 21 21M8 10.500h5"/></svg><strong>Dazu haben wir noch nichts gefunden.</strong>' +
+      view.innerHTML = '<div class="empty">' + eliPaar("empty-eli") + '<strong>Eli hat dazu noch nichts gefunden.</strong>' +
         "Versucht ein anderes Wort, zum Beispiel „Schlaf“ statt „Nickerchen“" +
         (filterAktiv() ? ", oder setzt die Filter zurück." : ".") + "</div>";
       return;
@@ -1022,7 +1053,7 @@
     var liste = favoriten.map(function (id) { return NACH_ID[id]; }).filter(Boolean);
     view.innerHTML = '<div class="article"><h1>Favoriten</h1></div>' + (liste.length
       ? '<p class="result-meta">' + liste.length + " gemerkt</p>" + kartenListe(liste)
-      : '<div class="empty"><svg class="empty-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6 4h12v17l-6-4-6 4z"/></svg><strong>Noch keine Favoriten</strong>Tippt in einem Artikel auf das Herz, um ihn hier zu sammeln.<a class="primary-btn empty-btn" href="#/check">Eltern-Check starten</a></div>');
+      : '<div class="empty">' + eliPaar("empty-eli", true) + '<strong>Noch nichts gemerkt</strong>Tippt in einem Artikel auf das Herz, dann merkt Eli sich das Thema hier für euch.<a class="primary-btn empty-btn" href="#/check">Eltern-Check starten</a></div>');
     // Ausprobierte Tipps: alles, was in Artikeln abgehakt wurde, an einem Ort
     var erl = lies("erledigt", {}), zeilen = "", anzahl = 0;
     Object.keys(erl).forEach(function (id) {
@@ -1125,7 +1156,8 @@
       zeigeListe(); $("#filters").scrollIntoView({ block: "nearest" }); return;
     }
     if ((t = e.target.closest("[data-fav]"))) {
-      toggleFavorit(t.dataset.fav); t.setAttribute("aria-pressed", istFavorit(t.dataset.fav)); return;
+      toggleFavorit(t.dataset.fav); t.setAttribute("aria-pressed", istFavorit(t.dataset.fav));
+      toast(istFavorit(t.dataset.fav) ? "Eli hat es sich gemerkt" : "Aus der Merkliste entfernt"); return;
     }
     if ((t = e.target.closest("[data-play]"))) {
       var p = t.dataset.play.split("|");
@@ -1326,7 +1358,7 @@
   if (!profil || typeof profil !== "object") profil = {};
   function profilName() { return String(profil.name || "").trim(); }
   function gruss() {
-    return profilName() ? '<p class="gruss">Hallo ' + esc(profilName()) + "!</p>" : "";
+    return profilName() ? '<p class="gruss">' + eliKlein("gruss-eli") + '<span>Hallo <span class="gruss-name">' + esc(profilName()) + "</span>!</span></p>" : "";
   }
   var wk = $("#wk"), wkBox = $("#wk-box"), wkFokusZurueck = null;
   var wkPflicht = false;

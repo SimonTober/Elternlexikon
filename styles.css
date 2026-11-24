@@ -965,3 +965,30 @@ body.start .search input { min-height: 60px; font-size: 19px; border-width: 2px;
 @keyframes wkBob { 50% { transform: translateY(-6px); } }
 @keyframes wkPuls { 50% { transform: scale(1.15); } }
 @media (prefers-reduced-motion: reduce) { .wk-eulen * { animation: none !important; } }
+
+/* ---------- Eli: Pfirsich als zweite Farbe, kleine Eulen ---------- */
+:root { --peach: #f6c7b0; --peach-soft: #fdece3; --peach-ink: #7a3519; }
+:root[data-theme="dark"] { --peach: #e9a98c; --peach-soft: #35241f; --peach-ink: #fbd9c8; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme]) { --peach: #e9a98c; --peach-soft: #35241f; --peach-ink: #fbd9c8; } }
+.eli .eye { transform-box: fill-box; transform-origin: center; animation: wkBlink 4.5s infinite; }
+.eli .bob { animation: wkBob 3s ease-in-out infinite; }
+.eli .pulse { transform-box: fill-box; transform-origin: center; animation: wkPuls 2s ease-in-out infinite; }
+.eli .winkt { transform-box: fill-box; transform-origin: 30% 90%; animation: eliWink 2.6s ease-in-out 3; }
+@keyframes eliWink { 0%, 100% { transform: rotate(0); } 25%, 75% { transform: rotate(-22deg); } 50% { transform: rotate(8deg); } }
+.eli-mond { display: none; }
+:root[data-theme="dark"] .eli-mond { display: inline; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme]) .eli-mond { display: inline; } }
+.empty-eli { display: block; width: 120px; height: 120px; margin: 0 auto 12px; }
+.gruss { display: flex; align-items: center; gap: 10px; }
+.gruss-eli { width: 46px; height: 46px; flex: none; }
+.gruss-name { background: linear-gradient(transparent 62%, var(--peach) 62%, var(--peach) 92%, transparent 92%); padding: 0 2px; }
+:root[data-theme="dark"] .gruss-name { background: linear-gradient(transparent 62%, color-mix(in srgb, var(--peach) 55%, transparent) 62%, color-mix(in srgb, var(--peach) 55%, transparent) 92%, transparent 92%); }
+.kind-wahl .alter-chip[aria-pressed="true"] { background: var(--peach); border-color: var(--peach); color: #3d1f12; box-shadow: 0 4px 14px color-mix(in srgb, var(--peach) 45%, transparent); }
+.geschwister-card { background: var(--peach-soft); border-color: color-mix(in srgb, var(--peach) 60%, transparent); }
+.wk-punkte span.an { background: var(--peach); }
+.foot-eli { display: flex; align-items: center; gap: 12px; max-width: var(--max); margin: 0 auto 16px; }
+.foot-eli img { border-radius: 10px; }
+.foot-eli strong { display: block; font: 600 17px/1.2 var(--serif); }
+.foot-eli span { font-size: 14px; color: var(--muted); }
+@media (min-width: 1000px) { .foot-eli { margin-left: 0; } }
+@media (prefers-reduced-motion: reduce) { .eli * { animation: none !important; } }
