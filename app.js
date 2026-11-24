@@ -1375,21 +1375,19 @@
     wkBox.innerHTML =
       (wkPflicht ? "" : '<button type="button" class="icon-btn wk-x" data-wk="zu" aria-label="Schließen"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>') +
       '<div class="wk-slides" id="wk-slides">' +
-      '<section class="wk-slide" aria-label="Seite 1 von 2">' +
+      '<section class="wk-slide wk-los" aria-label="Seite 1 von 2">' +
       eliLogo("wk-eulen") +
-      '<h2 id="wk-titel">Hallo, schön, dass du da bist!</h2>' +
-      '<p>Eli, das Elternlexikon, sammelt das Wissen aus vier Eltern-Podcasts und sortiert es nach Themen. So findest du im Alltag schnell, was dir gerade hilft.</p>' +
-      '<ul class="wk-liste">' +
-      '<li><strong>Suchen:</strong> Stell deine Frage in eigenen Worten, zum Beispiel „Mein Kind will nicht schlafen“.</li>' +
-      '<li><strong>Stöbern:</strong> nach Alter, Bereich oder von A bis Z.</li>' +
-      '<li><strong>Reinhören:</strong> Du springst direkt an die passende Stelle in der Folge.</li></ul>' +
+      '<div class="wk-blase">' +
+      '<p style="--i:0"><strong id="wk-titel">Hallo, schön, dass du da bist!</strong> Ich bin Eli, dein Elternlexikon.</p>' +
+      '<p style="--i:1">Ich sammle das Wissen aus vier Eltern-Podcasts und sortiere es nach Themen.</p>' +
+      '<p style="--i:2">Stell mir deine Frage in eigenen Worten, stöbere nach Alter oder Bereich, oder hör direkt an der passenden Stelle in die Folge rein.</p></div>' +
       '<div class="wk-aktionen"><button type="button" class="primary-btn" data-wk="weiter">Weiter</button></div></section>' +
       '<section class="wk-slide" id="wk-s2" aria-label="Seite 2 von 2" inert>' +
-      '<h2>Gut zu wissen</h2>' +
-      '<ul class="wk-liste">' +
-      '<li><strong>Keine Wissenschaft, keine Ärzte:</strong> Das sind Meinungen und Erfahrungen aus den Podcasts, nicht wissenschaftlich belegt. Wir sind keine Ärztinnen oder Mediziner. Im Notfall hilft die Notfall-Seite in der App.</li>' +
-      '<li><strong>Keine KI-Suche:</strong> Die Suche läuft auf deinem Gerät, ohne KI-Dienst. (Beim Zusammenfassen der Folgen haben wir KI als Werkzeug genutzt.)</li>' +
-      '<li><strong>Deine Daten bleiben bei dir:</strong> Profil und Merkliste liegen nur auf deinem Gerät. Neue Folgen kommen etwa alle zwei Wochen dazu.</li></ul>' +
+      eliLogo("wk-eulen") +
+      '<div class="wk-blase">' +
+      '<p style="--i:0"><strong>Gut zu wissen:</strong> Was du hier liest, sind Meinungen und Erfahrungen aus den Podcasts, nicht wissenschaftlich belegt. Wir sind keine Ärztinnen oder Mediziner. Im Notfall hilft die Notfall-Seite.</p>' +
+      '<p style="--i:1">Die Suche läuft nur auf deinem Gerät, ohne KI. Beim Zusammenfassen der Folgen haben wir KI als Werkzeug genutzt.</p>' +
+      '<p style="--i:2">Dein Profil und deine Merkliste bleiben bei dir. Etwa alle zwei Wochen kommen neue Folgen dazu.</p></div>' +
       '<div class="wk-aktionen"><button type="button" class="primary-btn" data-wk="profil">' + (hatProfil ? "Profil ansehen" : "Profil anlegen") + '</button>' +
       '<button type="button" class="wk-sek" data-wk="zu">Los geht\'s</button></div>' +
       '<label class="wk-check"><input type="checkbox" id="wk-nie"' + (lies("willkommen_aus", false) || !lies("willkommen_gesehen", false) ? " checked" : "") + '> Dieses Fenster nicht mehr von selbst zeigen</label></section></div>' +
@@ -1398,10 +1396,10 @@
     function zeigt() {
       var idx = sl.scrollLeft > sl.clientWidth / 2 ? 1 : 0;
       pk.forEach(function (p, n) { p.classList.toggle("an", n === idx); });
-      if (idx === 1) s2.removeAttribute("inert");
+      if (idx === 1) { s2.removeAttribute("inert"); s2.classList.add("wk-los"); }
     }
     sl.addEventListener("scroll", zeigt, { passive: true });
-    if (startSeite === 2) { s2.removeAttribute("inert"); requestAnimationFrame(function () { sl.scrollLeft = sl.clientWidth; zeigt(); }); }
+    if (startSeite === 2) { s2.removeAttribute("inert"); s2.classList.add("wk-los"); requestAnimationFrame(function () { sl.scrollLeft = sl.clientWidth; zeigt(); }); }
   }
   var wkKinder = [], wkNameVal = "";
   function wkLies() {
@@ -1479,7 +1477,7 @@
     if (!(t = e.target.closest("[data-wk]"))) return;
     var a = t.dataset.wk;
     if (a === "zu") wkSchliessen();
-    else if (a === "weiter") { var sl2 = $("#wk-slides"); $("#wk-s2").removeAttribute("inert"); sl2.scrollTo({ left: sl2.clientWidth, behavior: "smooth" }); setTimeout(function () { var b = $("#wk-s2 button"); if (b) b.focus({ preventScroll: true }); }, 350); }
+    else if (a === "weiter") { var sl2 = $("#wk-slides"); $("#wk-s2").removeAttribute("inert"); $("#wk-s2").classList.add("wk-los"); sl2.scrollTo({ left: sl2.clientWidth, behavior: "smooth" }); setTimeout(function () { var b = $("#wk-s2 button"); if (b) b.focus({ preventScroll: true }); }, 350); }
     else if (a === "profil") { wkPflicht = false; wkProfil(); }
     else if (a === "kind-plus") { wkLies(); wkKinder.push({ name: "", alter: "" }); wkProfil(false); var ns = wkBox.querySelectorAll("[data-wk-kname]"); if (ns.length) ns[ns.length - 1].focus(); }
     else if (a === "info") wkInfo(2);
