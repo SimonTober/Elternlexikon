@@ -858,3 +858,5 @@ body.fp-offen { overflow: hidden; }
 .pf-suche { width: 100%; min-height: 48px; margin: 12px 0 0; padding: 0 16px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--text); font: 400 16px/1 var(--sans); }
 .pf-suche:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 22%, transparent); }
 .pf-leer { margin: 8px 0 14px; }
+.start-folgen { margin-bottom: 10px; }
+.start-alle-folgen { display: block; text-align: center; text-decoration: none; margin-bottom: 6px; }

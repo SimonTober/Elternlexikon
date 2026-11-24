@@ -636,6 +636,11 @@
     }
     html += kindalter ? altersBlock + sos : sos + altersBlock;
 
+    var neu = folgenListe("alle", true).slice(0, 3);
+    if (neu.length) {
+      html += '<h2 class="section-title">Neu im Podcast</h2><ol class="folgen-liste start-folgen">' + neu.map(folgeZeileHtml).join("") + "</ol>" +
+        '<a class="alle-btn start-alle-folgen" href="#/podcasts">Alle Folgen und Wiedergabeliste</a>';
+    }
     html += '<a class="check-card" href="#/check"><strong>Eltern-Check</strong><span>Was kostet euch gerade am meisten Kraft? Wählt aus, wir zeigen passende Themen.</span></a>';
 
     html += '<h2 class="section-title">Häufige Fragen</h2><div class="suggestions">' +
@@ -781,7 +786,7 @@
 
   /* ---------- Neueste Folgen als Wiedergabeliste ---------- */
   var podFolgenFilter = "alle", podFolgenAnzahl = 10, podFolgenQ = "";
-  function folgenListe(filter) {
+  function folgenListe(filter, ohneSuche) {
     var out = [];
     Object.keys(FOLGEN).forEach(function (p) {
       if (filter !== "alle" && p !== filter) return;
@@ -791,7 +796,7 @@
       });
     });
     out.sort(function (x, y) { return x.d < y.d ? 1 : x.d > y.d ? -1 : Number(y.n) - Number(x.n); });
-    var q = Suche.falte(podFolgenQ).trim();
+    var q = ohneSuche ? "" : Suche.falte(podFolgenQ).trim();
     if (q) {
       var woerter = q.split(/\s+/).filter(Boolean);
       out = out.filter(function (x) {
@@ -800,6 +805,14 @@
       });
     }
     return out;
+  }
+  var PLAY_SVG = '<svg class="i-play" aria-hidden="true" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg>' +
+    '<svg class="i-pause" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 5h3.500v14H7zM13.500 5H17v14h-3.500z" fill="currentColor" stroke="none"/></svg>';
+  function folgeZeileHtml(x) {
+    var f = FOLGEN[x.p][x.n];
+    return '<li class="folge-zeile pod-' + esc(x.p) + '"><button type="button" class="fz-play" data-folge="' + esc(x.p + "|" + x.n) + '" aria-label="Folge abspielen: ' + esc(f.t) + '">' + PLAY_SVG + "</button>" +
+      '<div class="fz-body"><div class="fz-t">' + esc(f.t) + '</div><div class="fz-m">' + esc(kurzName(x.p)) + " · Folge " + esc(x.n) +
+      (f.d ? " · " + datumDe(f.d) : "") + (f.l ? " · " + esc(f.l.replace(/^0:/, "")) : "") + "</div></div></li>";
   }
   function rendereFolgen() {
     var box = $("#folgen-sektion");
@@ -817,12 +830,7 @@
       '<div class="pf-chips" role="group" aria-label="Podcast wählen">' + chips + "</div>" +
       (liste.length ? '<button type="button" class="primary-btn pf-start" data-liste-start>▶ ' + (podFolgenQ.trim() ? "Treffer nacheinander abspielen" : "Ab der neuesten Folge abspielen") + "</button>"
         : '<p class="muted pf-leer">Keine Folge mit diesem Wort im Titel gefunden.</p>') +
-      '<ol class="folgen-liste">' + zeigen.map(function (x) {
-        var f = FOLGEN[x.p][x.n];
-        return '<li class="folge-zeile pod-' + esc(x.p) + '"><button type="button" class="fz-play" data-folge="' + esc(x.p + "|" + x.n) + '" aria-label="Folge abspielen: ' + esc(f.t) + '">' + play + "</button>" +
-          '<div class="fz-body"><div class="fz-t">' + esc(f.t) + '</div><div class="fz-m">' + esc(kurzName(x.p)) + " · Folge " + esc(x.n) +
-          (f.d ? " · " + datumDe(f.d) : "") + (f.l ? " · " + esc(f.l.replace(/^0:/, "")) : "") + "</div></div></li>";
-      }).join("") + "</ol>" +
+      '<ol class="folgen-liste">' + zeigen.map(folgeZeileHtml).join("") + "</ol>" +
       (liste.length > zeigen.length ? '<button type="button" class="alle-btn" data-folgen-mehr>Mehr Folgen zeigen (' + (liste.length - zeigen.length) + " weitere)</button>" : "");
     player.markiere();
   }
@@ -1152,7 +1160,8 @@
     if (e.target.closest("[data-folgen-mehr]")) { podFolgenAnzahl += 10; rendereFolgen(); return; }
     var fo = e.target.closest("[data-folge]");
     if (fo) {
-      var liste = folgenListe(podFolgenFilter), idx = -1;
+      var inPod = !!fo.closest("#folgen-sektion");
+      var liste = inPod ? folgenListe(podFolgenFilter) : folgenListe("alle", true), idx = -1;
       for (var li = 0; li < liste.length; li++) if (liste[li].p + "|" + liste[li].n === fo.dataset.folge) { idx = li; break; }
       if (idx >= 0) player.startListe(liste, idx);
       return;
