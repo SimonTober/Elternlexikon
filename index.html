@@ -21,7 +21,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css?v=56">
+  <link rel="stylesheet" href="styles.css?v=57">
   <script>
     // Theme vor dem ersten Rendern setzen, damit nichts aufblitzt
     try { var t = localStorage.getItem("theme"); document.documentElement.dataset.theme = t || (window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"); } catch (e) { document.documentElement.dataset.theme = "light"; }
@@ -55,13 +55,10 @@
     </nav>
   </header>
 
-  <div id="placeholder-banner" class="banner" hidden>
-    Vorschau: Die Artikel sind noch Platzhalter. Die echten Inhalte entstehen aus den Podcast-Transkripten.
-  </div>
-
   <main id="main" tabindex="-1">
     <section class="search-area" id="search-area">
       <h1 class="hero-title" id="hero-title">Was beschäftigt euch gerade?</h1>
+      <p class="hero-sub" id="hero-sub">Kurze, verständliche Antworten auf Erziehungsfragen, zusammengefasst aus vier Elternpodcasts – mit Tipps zum Ausprobieren und der Stelle zum Nachhören.</p>
       <form class="search" role="search" onsubmit="return false">
         <svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
         <input id="q" type="search" autocomplete="off" spellcheck="false"
@@ -178,6 +175,6 @@
   <script src="wissen.js"></script>
   <script src="folgen.js"></script>
   <script src="suche.js?v=25"></script>
-  <script src="app.js?v=65"></script>
+  <script src="app.js?v=66"></script>
 </body>
 </html>

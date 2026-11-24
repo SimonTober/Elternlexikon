@@ -904,3 +904,9 @@ body.fp-offen { overflow: hidden; }
 .player[data-pod="artgerecht"] { --cover: url(cover/artgerecht.webp); --pc: var(--p-artgerecht); }
 .player[data-pod="gfk"] { --cover: url(cover/gfk.jpg); --pc: var(--p-gfk); }
 .player[data-pod="wunschkind"] { --cover: url(cover/wunschkind.jpg); --pc: var(--p-wunschkind); }
+
+/* ---- Start: Suche im Fokus, kurzer Einleitungssatz (24.11.) ---- */
+.hero-sub { margin: -8px 0 18px; color: var(--muted); font-size: 16px; line-height: 1.5; max-width: 52ch; }
+body:not(.start) .hero-sub, body.compact .hero-sub { display: none; }
+body.start .search input { min-height: 60px; font-size: 19px; border-width: 2px; border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); box-shadow: 0 6px 22px color-mix(in srgb, var(--accent) 16%, transparent); }
+@media (max-width: 999px) { body.start .hero-sub { margin: -4px 0 14px; font-size: 15px; } }

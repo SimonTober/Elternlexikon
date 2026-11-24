@@ -1299,15 +1299,7 @@
   schriftSetzen();
 
   /* ---------- Start ---------- */
-  if (W.meta && (W.meta.hinweis || W.meta.platzhalter)) {
-    var bn = $("#placeholder-banner"), bnZu = lies("bannerZu", "");
-    if (W.meta.hinweis && bnZu !== W.meta.hinweis) {
-      bn.innerHTML = '<span></span><button type="button" class="hint-x" aria-label="Hinweis schließen">×</button>';
-      bn.firstChild.textContent = W.meta.hinweis;
-      bn.querySelector("button").addEventListener("click", function () { bn.hidden = true; schreib("bannerZu", W.meta.hinweis); });
-      bn.hidden = false;
-    }
-  }
+  // Testversion-Hinweis (W.meta.hinweis) bewusst nicht mehr eingeblendet; Fachprüfung siehe Fußzeile
   if (W.meta && W.meta.stand) $("#stand").textContent = "Stand: " + datumDe(W.meta.stand) + ".";
   baueFilter();
   podLeiste();
