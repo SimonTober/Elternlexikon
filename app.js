@@ -642,7 +642,7 @@
     setzeNav("");
 
     var tags = (a.alter || []).map(function (k) { return '<span class="tag age">' + esc(W.alter[k] || k) + "</span>"; }).join("") +
-      (a.bereiche || []).map(function (k) { return '<span class="tag">' + esc(W.bereiche[k] || k) + "</span>"; }).join("");
+      (a.bereiche || []).map(function (k) { return '<button type="button" class="tag tag-link" data-bereich="' + esc(k) + '" aria-label="Alle Themen im Bereich ' + esc(W.bereiche[k] || k) + '">' + esc(W.bereiche[k] || k) + "</button>"; }).join("");
 
     // Vertrauenszeile: wie viele Folgen und welche Podcasts stecken dahinter
     var folgenSet = new Set((a.quellen || []).map(function (q) { return q.podcast + "|" + q.nr; }));
@@ -836,8 +836,10 @@
       input.value = t.dataset.q; zustand.q = t.dataset.q; $("#q-clear").hidden = false; zeigeListe(); return;
     }
     if ((t = e.target.closest("[data-bereich]"))) {
-      zustand.filter.bereich.clear(); zustand.filter.bereich.add(t.dataset.bereich); aktualisiereChips(); zeigeListe();
-      $("#filters").scrollIntoView({ block: "nearest" }); return;
+      zustand.q = ""; input.value = ""; $("#q-clear").hidden = true;
+      zustand.filter.bereich.clear(); zustand.filter.bereich.add(t.dataset.bereich); aktualisiereChips();
+      if (location.hash && location.hash !== "#/") { location.hash = "#/"; window.scrollTo(0, 0); return; }
+      zeigeListe(); $("#filters").scrollIntoView({ block: "nearest" }); return;
     }
     if ((t = e.target.closest("[data-fav]"))) {
       toggleFavorit(t.dataset.fav); t.setAttribute("aria-pressed", istFavorit(t.dataset.fav)); return;

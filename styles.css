@@ -735,3 +735,5 @@ body.start .filters { margin-top: 4px; }
 #size-btn[data-stufe="2"] { color: var(--accent); font-size: 18px; }
 .top-inner { gap: 4px; }
 #size-btn { margin-left: auto; }
+.tag-link { font: inherit; cursor: pointer; border: 1px solid var(--line); background: var(--surface); color: var(--muted); }
+.tag-link:hover { border-color: var(--accent); color: var(--text); }
