@@ -633,6 +633,26 @@
     document.title = "Podcasts · Elternlexikon";
   }
 
+  function lesedauer(a) {
+    var text = [a.kurz].concat(a.tipps || [], (a.sichtweisen || []).map(function (x) { return x.text; })).join(" ");
+    var min = Math.max(1, Math.round(text.split(/\s+/).length / 200));
+    return "Lesezeit etwa " + min + (min === 1 ? " Minute." : " Minuten.");
+  }
+  function naechstes(a) {
+    // Kleinsten Bereich des Artikels wählen, dort das nächste Thema in der Kernreihenfolge bzw. von A bis Z vorschlagen
+    var bereiche = (a.bereiche || []).slice().sort(function (x, y) { return zaehleBereich(x) - zaehleBereich(y); });
+    for (var i = 0; i < bereiche.length; i++) {
+      var b = bereiche[i], kern = BEREICH_KERN[b] || [];
+      var liste = W.artikel.filter(function (x) { return (x.bereiche || []).indexOf(b) >= 0 && x.id !== a.id && !x.medizinisch; }).sort(function (x, y) {
+        var kx = kern.indexOf(x.id), ky = kern.indexOf(y.id);
+        return (kx < 0 ? 999 : kx) - (ky < 0 ? 999 : ky) || x.titel.localeCompare(y.titel, "de");
+      });
+      if (liste.length) return { bereich: b, artikel: liste[0] };
+    }
+    return null;
+  }
+  function zaehleBereich(b) { return W.artikel.filter(function (x) { return (x.bereiche || []).indexOf(b) >= 0; }).length; }
+
   function zeigeArtikel(id) {
     var a = NACH_ID[id];
     if (!a) { location.hash = "#/"; return; }
@@ -648,7 +668,7 @@
     var folgenSet = new Set((a.quellen || []).map(function (q) { return q.podcast + "|" + q.nr; }));
     var pods = podcastsVon(a).map(function (k) { return W.podcasts[k].name; });
     var vertrauen = '<p class="trust">Zusammengefasst aus ' + folgenSet.size + (folgenSet.size === 1 ? " Folge" : " Folgen") +
-      (pods.length ? " von " + esc(pods.join(", ")) : "") + ". Eigene Zusammenfassung mit Verweis auf die Quelle.</p>";
+      (pods.length ? " von " + esc(pods.join(", ")) : "") + ". Eigene Zusammenfassung mit Verweis auf die Quelle. " + lesedauer(a) + "</p>";
 
     var html = '<article class="article">' +
       '<button type="button" class="back" data-back>← Zurück</button>' +
@@ -728,7 +748,12 @@
       verwandtHtml = '<section class="passt-dazu"><h2>Passt auch dazu</h2><div class="related">' +
         verwandt.map(function (v) { return '<a href="#/artikel/' + encodeURIComponent(v.id) + '">' + esc(v.titel) + "</a>"; }).join("") + "</div></section>";
     }
-    html += stimmen + nachhoeren + verwandtHtml;
+    var nx = naechstes(a), weiter = "";
+    if (nx) {
+      weiter = '<a class="weiter-card" href="#/artikel/' + encodeURIComponent(nx.artikel.id) + '"><span class="weiter-label">Weiterlesen in „' + esc(W.bereiche[nx.bereich]) + '“</span>' +
+        "<strong>" + esc(nx.artikel.titel) + "</strong></a>";
+    }
+    html += stimmen + nachhoeren + verwandtHtml + weiter;
     if (mehr) {
       html += '<details class="mehr"><summary><span>Mehr dazu<small>Weitere Hinweise</small></span></summary>' + mehr + "</details>";
     }

@@ -737,3 +737,9 @@ body.start .filters { margin-top: 4px; }
 #size-btn { margin-left: auto; }
 .tag-link { font: inherit; cursor: pointer; border: 1px solid var(--line); background: var(--surface); color: var(--muted); }
 .tag-link:hover { border-color: var(--accent); color: var(--text); }
+
+/* ---- Weiterlesen am Artikelende ---- */
+.weiter-card { display: grid; gap: 4px; margin: 28px 0 8px; padding: 16px 18px; border-radius: 16px; background: var(--accent-soft); border: 1px solid var(--line); text-decoration: none; color: var(--text); }
+.weiter-card:hover { border-color: var(--accent); }
+.weiter-label { font-size: 13px; color: var(--muted); }
+.weiter-card strong { font-family: var(--serif); font-size: 19px; line-height: 1.3; }
