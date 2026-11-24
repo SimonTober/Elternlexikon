@@ -743,3 +743,17 @@ body.start .filters { margin-top: 4px; }
 .weiter-card:hover { border-color: var(--accent); }
 .weiter-label { font-size: 13px; color: var(--muted); }
 .weiter-card strong { font-family: var(--serif); font-size: 19px; line-height: 1.3; }
+
+/* ---- Schmale Handys: Quellenkarten dürfen nicht breiter werden als der Bildschirm ---- */
+.sources, .sources > li, .listen .source, .s-row, .s-body, .s-links { min-width: 0; max-width: 100%; }
+.s-links > * { max-width: 100%; }
+@media (max-width: 360px) {
+  .plat-btn { padding: 7px 10px 7px 8px; gap: 6px; }
+  .listen .source { padding: 12px 12px 12px 14px; }
+}
+
+/* ---- Lange deutsche Wörter dürfen umbrechen und trennen ---- */
+.article-head h1, .article-head { min-width: 0; }
+h1, h2, h3, .card h3, .answer, .tips li, .stimme p, .s-topic, .s-title, .weiter-card strong, .related a { overflow-wrap: anywhere; hyphens: auto; -webkit-hyphens: auto; }
+@media (max-width: 380px) { .article h1 { font-size: 26px; line-height: 1.2; } }
+.tag.tag-link { font: 500 12.5px/1.4 var(--sans); padding: 2px 9px; }
