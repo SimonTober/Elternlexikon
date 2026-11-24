@@ -1,6 +1,6 @@
 {
-  "name": "Elternlexikon",
-  "short_name": "Elternlexikon",
+  "name": "Eli – das Elternlexikon",
+  "short_name": "Eli",
   "description": "Erziehungsratgeber als Lexikon für Kinder von 0 bis 10 Jahren.",
   "lang": "de",
   "start_url": "./",
@@ -22,7 +22,7 @@
       "purpose": "any"
     },
     {
-      "src": "icon-512.png",
+      "src": "icon-maskable-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"

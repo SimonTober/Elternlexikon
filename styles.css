@@ -954,3 +954,14 @@ body.start .search input { min-height: 60px; font-size: 19px; border-width: 2px;
 @media (max-width: 520px) { .wk-slides { margin: 0 -16px; } .wk-slide { padding: 0 16px; } }
 .alter-wahl + .cards { margin-top: 16px; }
 .gruss { margin: 22px 0 -6px; }
+
+.brand-name { display: inline-flex; flex-direction: column; line-height: 1; }
+.brand-name small { font: 500 11px/1.2 var(--sans); color: var(--muted); letter-spacing: .02em; margin-top: 2px; }
+.wk-eulen { display: block; width: 104px; height: 104px; margin: 0 auto 12px; }
+.wk-eulen .eye { transform-box: fill-box; transform-origin: center; animation: wkBlink 4.5s infinite; }
+.wk-eulen .bob { animation: wkBob 3s ease-in-out infinite; }
+.wk-eulen .pulse { transform-box: fill-box; transform-origin: center; animation: wkPuls 2s ease-in-out infinite; }
+@keyframes wkBlink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(.1); } }
+@keyframes wkBob { 50% { transform: translateY(-6px); } }
+@keyframes wkPuls { 50% { transform: scale(1.15); } }
+@media (prefers-reduced-motion: reduce) { .wk-eulen * { animation: none !important; } }
